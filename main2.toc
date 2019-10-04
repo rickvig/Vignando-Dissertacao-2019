@@ -1,0 +1,36 @@
+\babel@toc {brazil}{}
+\contentsline {chapter}{\numberline {1}Introdu\c co}{10}
+\contentsline {section}{\numberline {1.1}Contextualiza\c co}{10}
+\contentsline {section}{\numberline {1.2}Motiva\c co e Justificativa}{11}
+\contentsline {section}{\numberline {1.3}Objetivos}{12}
+\contentsline {section}{\numberline {1.4}Metodologia de Desenvolvimento}{12}
+\contentsline {subsection}{\numberline {1.4.1}Empacotamento}{14}
+\contentsline {section}{\numberline {1.5}Organiza\c co do texto}{15}
+\contentsline {chapter}{\numberline {2}Fundamenta\c co Terica}{16}
+\contentsline {section}{\numberline {2.1}Linha de Produto de Software}{16}
+\contentsline {section}{\numberline {2.2}Experimentos e \textit {Quasi}-Experimento em Engenharia de Software}{19}
+\contentsline {section}{\numberline {2.3}Qualidade de Experimentos em Engenharia de Software}{22}
+\contentsline {section}{\numberline {2.4}Ontologia}{24}
+\contentsline {section}{\numberline {2.5}Sistema de Recomenda\c co}{25}
+\contentsline {subsection}{\numberline {2.5.1}Sistemas de Recomenda\c co Tradicional}{26}
+\contentsline {subsection}{\numberline {2.5.2}Sistema de Recomenda\c co em Engenharia de Software}{29}
+\contentsline {section}{\numberline {2.6}Trabalhos Relacionados}{31}
+\contentsline {chapter}{\numberline {3}Uma Ontologia para Experimentos em LPS}{34}
+\contentsline {section}{\numberline {3.1}Concep\c co}{34}
+\contentsline {section}{\numberline {3.2}Projeto}{38}
+\contentsline {subsection}{\numberline {3.2.1}Proteg\'e}{38}
+\contentsline {subsubsection}{Defini\c co de classes}{38}
+\contentsline {subsubsection}{Defini\c co das propriedades de objetos}{39}
+\contentsline {subsubsection}{Defini\c co das propriedades dos dados}{39}
+\contentsline {subsubsection}{Artefato gerado pelo Prot\'eg\'e}{40}
+\contentsline {subsection}{\numberline {3.2.2}Pyton}{40}
+\contentsline {subsubsection}{Script}{41}
+\contentsline {subsubsection}{Manipula\c co dos Dados}{44}
+\contentsline {subsubsection}{Inser\c co do indiv\'{\i }duos e cria\c co dos relacionamentos}{46}
+\contentsline {subsubsection}{Artefato e valida\c co}{48}
+\contentsline {section}{\numberline {3.3}Exemplo de Aplica\c co}{49}
+\contentsline {section}{\numberline {3.4}Avalia\c co Emp\'{\i }rica}{51}
+\contentsline {subsection}{\numberline {3.4.1}Perspectivas de Melhorias}{54}
+\contentsline {chapter}{\numberline {4}Recomendando Experimentos de LPS}{57}
+\contentsline {chapter}{\numberline {5}Avalia\c co Emp\'{\i }rica do Sistema de Recomenda\c co}{58}
+\contentsline {chapter}{\numberline {6}Concluso}{61}
