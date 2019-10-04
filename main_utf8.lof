@@ -6,7 +6,7 @@
 \contentsline {figure}{\numberline {Figura - 2.1}{\ignorespaces Um modelo de Caracter\IeC {\'\i }sticas. Traduzido de \citet {sommerville2011software} }}{17}
 \contentsline {figure}{\numberline {Figura - 2.2}{\ignorespaces \textit {Framework} de Engenharia de LPS (Pohl et al., 2005). Traduzido por Geraldi (2015) }}{19}
 \contentsline {figure}{\numberline {Figura - 2.3}{\ignorespaces Conceitos Essenciais de um Experimento. Traduzido de \citet {wohlin2012experimentation} }}{20}
-\contentsline {figure}{\numberline {Figura - 2.4}{\ignorespaces Vis\IeC {\~a}o Geral do Processo Experimental. Traduzido de \citet {wohlin2012experimentation}}}{21}
+\contentsline {figure}{\numberline {Figura - 2.4}{\ignorespaces Vis\IeC {\~a}o Geral do Processo Experimental. Traduzido de \citet {wohlin2012experimentation}}}{22}
 \contentsline {figure}{\numberline {Figura - 2.5}{\ignorespaces Estrutura de uma Ontologia. Autor}}{25}
 \contentsline {figure}{\numberline {Figura - 2.6}{\ignorespaces Exemplo de uma Ontologia para o dom\IeC {\'\i }nio: Destino de Viagem. Autor}}{26}
 \contentsline {figure}{\numberline {Figura - 2.7}{\ignorespaces Passos de Constru\IeC {\c c}\IeC {\~a}o para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{30}
@@ -19,6 +19,10 @@
 \contentsline {figure}{\numberline {Figura - 3.6}{\ignorespaces Defini\IeC {\c c}\IeC {\~a}o da propriedade de dado nameSPLUsed no Prot\IeC {\'e}g\IeC {\'e}.}}{41}
 \contentsline {figure}{\numberline {Figura - 3.7}{\ignorespaces Grafo da modelagem da ontologia - gerado pelo WbVOWL.}}{42}
 \contentsline {figure}{\numberline {Figura - 3.8}{\ignorespaces Graph Path to Recommendation Example.}}{50}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
