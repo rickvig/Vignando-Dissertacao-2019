@@ -1,0 +1,305 @@
+%% -------------------------------------------------------------------------------
+%% Pacote para inserção de Capa e Folha de Rosto das qualificações do PCC
+%% Autora: Valéria Delisandra Feltrim
+%% Data: Janeiro de 2008
+%% 1a Atualização: Julho de 2010
+%% 2a Atualização: Agosto de 2014
+%% -------------------------------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{capaUEMquali}
+
+\RequirePackage{ifthen}
+\RequirePackage{calc}
+
+%\def \formatotitulo [#1] {\large #1}
+%% -------------------------------------------------------------------------------
+%% Definição de comandos para receber e armazenar dados para capa e folha de rosto.
+
+\providecommand{\dadoAutor}{}
+\newcommand{\Jautor}[1]{\renewcommand{\dadoAutor}{#1}}
+\providecommand{\dadoOrientador}{}
+\newcommand{\Jorientador}[1]{\renewcommand{\dadoOrientador}{#1}}
+\providecommand{\dadoCoorientador}{}{}
+\newcommand{\Jcoorientador}[2]{\renewcommand{\dadoCoorientador}
+    {\ifthenelse{\equal{#1}{o}}
+        {#2}{}}}
+\providecommand{\dadoTitulo}{}
+\newcommand{\Jtitulo}[1]{\renewcommand{\dadoTitulo}{#1}}
+
+%% adcionado em 22/08/2014
+\providecommand{\dadoSubTitulo}{}
+\newcommand{\Jsubtitulo}[1]{\renewcommand{\dadoSubTitulo}{#1}}
+%%
+\providecommand{\dadoInstituicaoA}{}
+\newcommand{\JinstituicaoA}[1]{\renewcommand{\dadoInstituicaoA}{#1}}
+\providecommand{\dadoInstituicaoB}{}
+\newcommand{\JinstituicaoB}[1]{\renewcommand{\dadoInstituicaoB}{#1}}
+\providecommand{\dadoBancaA}{}
+\newcommand{\JbancaA}[1]{\renewcommand{\dadoBancaA}{#1}}
+\providecommand{\dadoBancaB}{}
+\newcommand{\JbancaB}[1]{\renewcommand{\dadoBancaB}{#1}}
+\providecommand{\dadoTipoBancaA}{}
+\newcommand{\JtipobancaA}[1]{\renewcommand{\dadoTipoBancaA}{\ifthenelse{\equal{#1}{o}}
+{Prof. Dr.}{Profª. Drª.}}}
+\providecommand{\dadoTipoBancaB}{}
+\newcommand{\JtipobancaB}[1]{\renewcommand{\dadoTipoBancaB}{\ifthenelse{\equal{#1}{o}}
+{Prof. Dr.}{Profª. Drª.}}}
+\providecommand{\dadoTipoBancaC}{}
+\newcommand{\JtipobancaC}[1]{\renewcommand{\dadoTipoBancaC}{\ifthenelse{\equal{#1}{o}}
+{Prof. Dr.}{Profª. Drª.}}}
+
+\providecommand{\dadoDataDef}{}
+\newcommand{\Jdatadefesa}[1]{\renewcommand{\dadoDataDef}{#1}}
+\providecommand{\dadoLocalDef}{}
+\newcommand{\Jlocaldefesa}[1]{\renewcommand{\dadoLocalDef}{#1}}
+
+\providecommand{\dadoTituloAbs}{}
+\newcommand{\Jtituloabs}[1]{\renewcommand{\dadoTituloAbs}{#1}}
+
+%% adcionado em 22/08/2014
+\providecommand{\dadoSubTituloAbs}{}
+\newcommand{\Jsubtituloabs}[1]{\renewcommand{\dadoSubTituloAbs}{#1}}
+%%
+\providecommand{\dadoData}{}
+\newcommand{\Jdata}[1]{\renewcommand{\dadoData}{#1}}
+%\providecommand{\dadoLocal}{}
+%\newcommand{\Jlocal}[1]{\renewcommand{\dadoLocal}{#1}}
+%\providecommand{\dadoComent}{}
+%\newcommand{\Jcomentario}[1]{\renewcommand{\dadoComent}{#1}}
+%\providecommand{\dadoCab}{}
+%\newcommand{\Jcabecalho}[1]{\renewcommand{\dadoCab}{#1}}
+\providecommand{\dadoDataDef}{}
+\newcommand{\JdataDefesa}[1]{\renewcommand{\dadoDataDef}{#1}}
+\providecommand{\dadoTipoOrient}{}
+\newcommand{\Jtipoorientador}[1]{\renewcommand{\dadoTipoOrient}{\ifthenelse{\equal{#1}{o}}
+{Orientador: Prof. Dr.}{Orientadora: Profª. Drª.}}}
+%%{Orientadora: Profª. Drª.}}}
+\providecommand{\dadoTipoCo}{}
+\newcommand{\Jtipocoorientador}[1]{\renewcommand{\dadoTipoCo}
+    {\ifthenelse{\equal{#1}{o}}
+        {Coorientador: Prof. Dr.}
+        {\ifthenelse {\equal {#1}{a}}
+            {Coorientadora: Profª. Drª.}
+            {}}}}
+
+%% -------------------------------------------------------------------------------
+
+%% CAPA
+\newcommand{\Jcapa}{
+\begingroup
+
+    \begin{center}
+    \thispagestyle{empty}
+    \centering
+    %\textrm
+            {\normalsize 
+								UNIVERSIDADE ESTADUAL DE MARINGÁ\\
+								CENTRO DE TECNOLOGIA\\
+								DEPARTAMENTO DE INFORMÁTICA\\
+								PROGRAMA DE PÓS-GRADUAÇÃO EM CIÊNCIA DA COMPUTAÇÃO}\\
+            \normalsize
+            \vspace*{1.5cm}
+						{\Large{Projeto de Dissertação de Mestrado}}\\
+						\vspace*{1.5cm}
+            {\dadoAutor}\\
+            \vspace*{6.5cm}
+            {\large\bf\dadoTitulo}
+						%% adicionado em 22/08/2014
+						{\large\dadoSubTitulo}\\
+						%%
+						\normalsize
+            %\vspace*{9cm}
+            \vfill
+            {Maringá}\\
+            \vspace*{0.1cm}
+            {\dadoData}
+        \\
+
+    \end{center}
+
+%%    \clearpage{\pagestyle{empty}} % ----> VERIFICAR
+  \endgroup
+    }
+
+
+%% -------------------------------------------------------------------------------
+
+%% FOLHA DE ROSTO
+\newcommand{\Jfolhaderosto}{
+\begingroup
+    \begin{center}
+    \begin{singlespace}
+       \thispagestyle{empty}
+        \centering
+            {\dadoAutor}\\
+            \vspace*{8cm}
+            {\large\bf\dadoTitulo}
+						%% adicionado em 22/08/2014
+						{\large\dadoSubTitulo}\\
+						%%
+            \normalsize
+            \vspace*{3.5cm}
+        \begin{flushright}
+        \begin{minipage}[t]{.5\linewidth}
+       \thispagestyle{empty}
+						{\hyphenpenalty=10000
+Projeto de dissertação apresentado ao Programa de Pós-Graduação em Ciência da Computação do Departamento de Informática, Centro de Tecnologia da Universidade Estadual de Maringá, como requisito parcial para obtenção do título de Mestre em Ciência da Computação.}\\
+            \flushleft{{\dadoTipoOrient} {\dadoOrientador}\\
+                       {\dadoTipoCo} {\dadoCoorientador}}
+        \end{minipage}
+        \end{flushright}
+        \vspace*{1.3cm}
+        \vfill
+        {Maringá}\\
+        %\vspace*{0.1cm}
+       {\dadoData}
+    \end{singlespace}
+    \end{center}
+
+\endgroup }
+
+%% -------------------------------------------------------------------------------
+
+%% FICHA CATALOGRÁFICA ????
+\newcommand{\Jfichacatalografica}{
+\begingroup
+    \begin{center}
+       \newpage
+       \thispagestyle{empty}
+
+            \textit{Nesta página será inserida, posteriormente, a ficha catalográfica a ser feita pela biblioteca.}\\
+            \newpage
+        \vfill
+        
+    \end{center}
+
+\endgroup }
+
+
+%% -------------------------------------------------------------------------------
+
+%% FOLHA DE APROVAÇÃO
+\newcommand{\Jfolhaaprovacao}{
+\begingroup
+    \clearpage
+    \thispagestyle{empty}
+	\begin{singlespace}
+    \begin{center}
+         {\large {FOLHA DE APROVAÇÃO}}\\
+         \normalsize
+         \vspace*{1.3cm}
+         {\dadoAutor}\\
+         \vspace*{1.3cm}
+         {\large\bf\dadoTitulo}
+				 %% adicionado em 22/08/2014
+				 {\large\dadoSubTitulo}\\
+				 %%
+    \end{center}
+    \normalsize
+    \vspace*{1.6cm}
+    \noindent Projeto de dissertação apresentado ao Programa de Pós-Graduação em Ciência da Computação do Departamento de Informática, Centro de Tecnologia da Universidade Estadual de Maringá, como requisito parcial para obtenção do título de Mestre em Ciência da Computação pela Comissão Julgadora composta pelos membros:\\
+
+    \begin{center}
+        \vspace*{2.8cm}
+        {BANCA EXAMINADORA}\\
+        \vspace*{2.5cm}
+        {\dadoTipoBancaC} {\dadoOrientador}\\
+        {Universidade Estadual de Maringá --- DIN/UEM}\\
+        \vspace*{1.2cm}
+        {\dadoTipoBancaA} {\dadoBancaA}\\
+        {\dadoInstituicaoA}\\
+        \vspace*{1.2cm}
+        {\dadoTipoBancaB} {\dadoBancaB}\\
+        {\dadoInstituicaoB}\\
+        %\vspace*{1.5cm}
+    \end{center}
+    \vfill
+    \flushleft
+        {Aprovada em: \dadoDataDef}\\
+        \vspace*{0.1cm}
+        {Local da defesa: \dadoLocalDef}\\
+    \end{singlespace}
+  \endgroup
+
+}
+
+
+%% -------------------------------------------------------------------------------
+
+\newenvironment{resumo}{
+        \clearpage
+        \thispagestyle{empty}
+        \begin{center}
+            {\large\bf\dadoTitulo}
+						%% adicionado em 22/08/2014
+						{\large\dadoSubTitulo}\\
+						%%
+            \normalsize
+            \vspace*{2cm}
+            {\textbf{RESUMO}}\\
+        \end{center}
+        %\narrower
+
+}
+
+
+\newenvironment{abstract}{
+        \clearpage
+        \thispagestyle{empty}
+        \begin{center}
+            {\large\bf\dadoTituloAbs}
+						%% adicionado em 22/08/2014
+						{\large\dadoSubTituloAbs}\\
+						%%
+            \normalsize
+            \vspace*{2cm}
+            {\textbf{\textit{ABSTRACT}}}\\
+        \end{center}
+        %\narrower
+
+}
+
+\newenvironment{listaabreviaturas}{
+        \clearpage
+        \thispagestyle{empty}
+        \begin{center}
+            {\large LISTA DE ABREVIATURAS E SIGLAS}\\
+            \normalsize
+            \vspace*{0.5cm}
+        \end{center}
+}
+
+
+\newenvironment{dedicatoria}{
+        \clearpage
+        \thispagestyle{empty}
+        \begin{singlespace}
+        \begin{center}
+            {\large DEDICATÓRIA(S)}\\
+        \end{center}
+         \normalsize
+         \vspace*{0pt plus 1fill}
+         \vspace*{0pt plus 1fill}
+         \vspace*{0pt plus 1fill}
+         \vspace*{0pt plus 1fill}
+         \vspace*{0pt plus 1fill}
+         \vspace*{0pt plus 1fill}
+         \hspace*{0pt plus 1fill}
+         \end{singlespace}
+         \flushright
+
+}
+
+\newenvironment{agradecimento}{
+        \clearpage
+        \thispagestyle{empty}
+        \begin{center}
+            {\large AGRADECIMENTO(S)}\\
+        \end{center}
+         \normalsize
+         \vspace*{1cm}
+         \noindent
+
+}
+

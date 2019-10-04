@@ -1,0 +1,722 @@
+
+
+\appendix{Apêndice B}
+
+\section{Saída Da Opção \textsc{time-flags} com os \textit{Breakpoints} \texttt{.dijkstra e .main}}
+
+\scriptsize
+\begin{verbatim}
+-----------------------------------------------------------------------------------------
+-     TOOLCHAIN  UNB-RISC16                   -                                          
+-     Energy Profile Version 1.00             -                                            
+-                                             -                                            
+-     Trip Time Flags                         -                                            
+-     Options: time-flags & BreakPoints: .dijkstra and .main 
+-                                             -         Sumary                       
+-     Program   dijkstra.o
+-                                             -                                      
+-                                             -         1-Times                      
+-                                             -            1.1    Real time           
+-                                             -            1.2    Processor Time      
+-                                             -         2-Flags Reached
+------------------------------------------------------------------------------------------
+- Section 1 [Times]                                                                       
+-                                                                                         
+-      1.1  Time Consumption - Real Time (in seconds):                 0                 
+-      1.2  Time Consumption - Processor UNB-RISC16 (in seconds):      0,000000688                  
+------------------------------------------------------------------------------------------
+
+- Function .d Reached After 0 Cycles From the Last Begin                
+- Function .main Reached After 8 Cycles From the Last Point                
+------------------------------------------------------------------------------------------
+
+\end{verbatim}
+
+\section{Saída da Opção \textsc{energy-log}}
+\scriptsize  
+\begin{verbatim} 
+-------------------------------------------------------------------------------------
+-     TOOLCHAIN  UNB-RISC16                   -                                     
+-     Energy Profile Version 1.00             -                                     
+-     Energy Consumption Estimative           -                                     
+-     Options: energy-log & seconds = 0
+-     Program  dijkstra.oc
+-                                             -            Sumary                                 
+-                                             -             1-Cycles                     
+-                                             -             2-Times                      
+-                                             -               2.1    Real time           
+-                                             -               2.2    Processor Time      
+-                                             -             3-Energy Consumption         
+--------------------------------------------------------------------------------------
+- Section 1 [Cycles]                                                                      
+-                                                                                         
+- Cycles Consumption                                                   3363                 
+--------------------------------------------------------------------------------------
+- Section 2 [Times]                                                                       
+-                                                                                         
+-      2.1  Time Consumption - Real Time (in seconds):                 0.000000                 
+-      2.2  Time Consumption - Processor UNB-RISC16 (in seconds):      0.000210                 
+--------------------------------------------------------------------------------------
+- Section 3 [Energy Consumption]                                                          
+-                                                                                         
+- Section                                   Energy Spending (Joules)
+-  <.main>:                                           1.2692307690
+-  <.fimPrimeiroFor>:                                 0.1586538461
+-  <.fimTerceiroFor>:                                 6.1874999989
+-  <.fimTerceiroIf>:                                  37.1249999933
+-  <.atualizarDi>:                                    10.1538461520
+-  <.terceiroIf>:                                     116.1346153635
+-  <.finalizarSegundoIf>:                             0.0000000000
+-  <.fimMult1>:                                       68.5384615260
+-  <.mult1>:                                          91.3846153680
+-  <.codigoTerceiroFor>:                              11.4230769210
+-  <.fimSegundoFor>:                                  9.5192307675
+-  <.fimPrimeiroIf>:                                  37.1249999933
+-  <.X>:                                              2.0624999996
+-  <.segundoIfInterno>:                               44.2644230689
+-  <.gotoX1>:                                         2.8557692302
+-  <.corpoPrimeiroIf>:                                27.1298076874
+-  <.codigoSegundoFor>:                               58.5432692201
+-  <.codigoPrimeiroFor>:                              5.7115384605
+-  <.dijkstra>:                                       2.6971153841
+-  <._start>                                          1.1105769229
+                                                    ---------------------
+- Total                                             533.3942306723 x10^-6
+---------------------------------------------------------------------------------------
+\end{verbatim}
+
+\section{Saída da Opção \textsc{exec}}
+\scriptsize
+\begin{verbatim}
+-------------------------------------------------------------------------------------
+-     TOOLCHAIN  UNB-RISC16                   -                                     
+-     Energy Profile Version 1.00             -                                     
+-                                             -                                            
+-     Energy Consumption Estimative           -                                     
+-     Options: exec & seconds = 0
+-                                             -           Sumary                       
+-     Program  dijkstra.oc
+-                                             -                                            
+-                                             -             1-Cycles                     
+-                                             -             2-Times                      
+-                                             -               2.1    Real time           
+-                                             -               2.2    Processor Time      
+-                                             -             3-Functions Calls         
+--------------------------------------------------------------------------------------
+- Section 1 [Cycles]                                                                      
+-                                                                                         
+- Cycles Consumption                                                   3363                 
+--------------------------------------------------------------------------------------
+- Section 2 [Times]                                                                       
+-                                                                                         
+-      2.1  Time Consumption - Real Time (in seconds):                 0.000000                 
+-      2.2  Time Consumption - Processor UNB-RISC16 (in seconds):      0.000210                 
+--------------------------------------------------------------------------------------
+- Section 3 [Functions Calls]       
+
+Section  <.main>: Call! On Cycle 8 
+Section  <.dijkstra>: Call! On Cycle 15 
+Section  <.X>: Call! On Cycle 56 
+Section  <.codigoSegundoFor>: Call! On Cycle 64 
+Section  <.segundoIfInterno>: Call! On Cycle 82 
+Section  <.codigoSegundoFor>: Call! On Cycle 107
+Section  <.segundoIfInterno>: Call! On Cycle 125 
+Section  <.fimPrimeiroIf>: Call! On Cycle 145 
+Section  <.codigoSegundoFor>: Call! On Cycle 152 
+Section  <.segundoIfInterno>: Call! On Cycle 170 
+Section  <.fimPrimeiroIf>: Call! On Cycle 190 
+...
+Section  <.codigoTerceiroFor>: Call! On Cycle 3188 
+Section  <.terceiroIf>: Call! On Cycle 3203 
+Section  <.fimTerceiroIf>: Call! On Cycle 3224
+Section  <.codigoTerceiroFor>: Call! On Cycle 3231
+Section  <.terceiroIf>: Call! On Cycle 3246 
+Section  <.fimTerceiroIf>: Call! On Cycle 3267 
+Section  <.codigoTerceiroFor>: Call! On Cycle 3274 
+Section  <.terceiroIf>: Call! On Cycle 3289 
+Section  <.fimTerceiroIf>: Call! On Cycle 3310 
+Section  <.codigoTerceiroFor>: Call! On Cycle 3317
+Section  <.terceiroIf>: Call! On Cycle 3332 
+Section  <.fimTerceiroIf>: Call! On Cycle 3353 
+Section  <.main>: Call! On Cycle 3362 
+--------------------------------------------------------------------------------------
+\end{verbatim}
+
+\section{Saída da Opção \textsc{instructions-Show + stack-size}}
+\scriptsize
+\begin{verbatim}
+-----------------------------------------------------------------------------------------
+-     TOOLCHAIN  UNB-RISC16                   -                                          
+-     Energy Profile Version 1.00             -                                             
+-                                             -                                            
+-     Options: instructions-Show & stack-size                                            
+-     & Seconds = 0
+-                                             -                                            
+-                                             -         Sumary                       
+-     Program   dijkstra.oc
+-                                             -                                            
+-                                             -         1-Cycles                     
+-                                             -         2-Times                      
+-                                             -            2.1    Real time           
+-                                             -            2.2    Processor Time      
+-                                             -         3-Instructions Calls          
+------------------------------------------------------------------------------------------
+- Section 1 [Cycles]                                                                      
+-                                                                                         
+- Cycles Consumption                                                   0                 
+------------------------------------------------------------------------------------------
+- Section 2 [Times]                                                                       
+-                                                                                         
+-      2.1  Time Consumption - Real Time (in seconds):                0.000000                 
+-      2.2  Time Consumption - Processor UNB-RISC16 (in seconds):     0.000210                 
+------------------------------------------------------------------------------------------
+- Section 3 [Instructions Calls]                                                          
+
+- 6ddd  b1ff  9188  b1fe  5d1d  b101  9188  e18c  6111  b170  6222  b201 
+- 12d0  f100  6111  b106  3dd1  6777  27d0  8706  0770  6111  2170  9181 
+- 6222  b258  2112  1010  6999  6aaa  bafe  b1ff  9188  5aa1  6888  6111 
+- 2180  9181  6222  b264  2112  0110  c108  6111  b1fe  b2ff  9288  5112 
+- c1a8  6111  b1ec  e100  2a80  8801  6111  b106  c188  6111  b19a  e100 
+- 6111  2180  9181  6222  b264  2112  0110  c108  6111  b1fe  b2ff  9288 
+...
+
+- 2280  9281  6333  b358  2223  0220  d128  b301  9388  e36e  8801  6111 
+- b106  c188  b101  9188  e10e  6333  6111  c3ac  9181  6222  2280  9281 
+- 2112  8110  0110  c108  b201  9288  e23a  6222  22a0  9281  6333  b358 
+- 2223  0220  2112  6222  2280  9281  6333  b358  2223  0220  d128  b301 
+- 9388  e36e  8801  6111  b106  c188  b101  9188  e10e  6333  6111  c3ac 
+- 9181  6222  2280  9281  2112  8110  0110  c108  b201  9288  e23a  6222 
+- 22a0  9281  6333  b358  2223  0220  2112  6222  2280  9281  6333  b358 
+- 2223  0220  d128  b301  9388  e36e  8801  6111  b106  c188  8901  6111 
+- b106  c198  ef00  8cff 
+------------------------------------------------------------------------------------------
+
+  The Program Stack Height is 65534  
+
+------------------------------------------------------------------------------------------
+\end{verbatim}
+
+
+\section{Saída do Modo Dinâmico}
+\scriptsize
+\begin{verbatim}
+Load Dynamic configuration ! Please Wait ... 
+START ... 
+Interrupt 1 Done!!!
+Interrupt 2 Done!!!
+Sleep For Dynamic Rule!
+Interrupts Occurred: 
+ Interrupt By AD-Conversor Device! 
+ Interrupt By Communication Device! 
+ Interrupt By Serial Device! 
+ Interrupt By AD-Conversor Device! 
+ Interrupt By Communication Device! 
+ Interrupt By Communication Device! 
+On Sleep!
+Sleep For Dynamic Rule!
+Sleep For Dynamic Rule!
+Awake!
+Sleep For Dynamic Rule!
+Interrupts Occurred: 
+ Interrupt By Communication Device! 
+On Sleep!
+Sleep For Dynamic Rule!
+-----------------------------------------------------------------------------------------
+-     TOOLCHAIN  UNB-RISC16                   -                                          
+-     Energy Profile Version 1.00                                                         
+-                                             -                                            
+-     Dynamic Mode Statistcs                  -                                            
+-     Options: dynamic & Seconds = 2       
+-                                             -                                            
+-                                             -             Sumary                       
+-     Program   dijkstra.oc
+-                                             -             1-Cycles                     
+-                                             -             2-Times                      
+-                                             -               2.1    Real time           
+-                                             -               2.2    Processor Time      
+-                                             -             3-Statistics
+------------------------------------------------------------------------------------------
+- Section 1 [Cycles]                                                                      
+-                                                                                         
+- Cycles Consumption                                                   32000000                 
+------------------------------------------------------------------------------------------
+- Section 2 [Times]                                                                       
+-                                                                                         
+-      2.1  Time Consumption - Real Time (in seconds):                 30                 
+-      2.2  Time Consumption - Processor UNB-RISC16 (in seconds):      2                 
+------------------------------------------------------------------------------------------
+- Section 3 [Statistics]                                                  
+-                                                                                         
+- Efetive Cycles: 14880547
+- No Efetive Cycles: 17119454
+- System Energy Consuption: 2392955.000000 x10^-6 Joules
+- System Life Time:  4.727273 hours
+-----------------------------------------------------------------------------------------
+\end{verbatim}
+
+\section{Saída da Opção \textsc{instructions-profiler}}
+\scriptsize
+\begin{verbatim}
+-----------------------------------------------------------------------------------------
+-     TOOLCHAIN  UNB-RISC16                   -                                          
+-     Energy Profile Version 1.00             -                                            
+-     Instructions Hystogram                  -                                            
+-     Options: instructions-profiler & seconds = 0
+-     Program   dijkstra.oc                                   Sumary   
+-                                             -               1-Cycles                     
+-                                             -               2-Times                      
+-                                             -                 2.1    Real time           
+-                                             -                 2.2    Processor Time      
+-                                             -               3-Hystogram Per Instruction  
+-                                             -               4-hystogram Per Class        
+------------------------------------------------------------------------------------------
+- Section 1 [Cycles]                                                                      
+-                                                                                         
+- Cycles Consumption                                                   3363                 
+------------------------------------------------------------------------------------------
+- Section 2 [Times]                                                                       
+-                                                                                         
+-      2.1  Time Consumption - Real Time (in seconds):                0.000000                 
+-      2.2  Time Consumption - Processor UNB-RISC16 (in seconds):     0.000210                 
+------------------------------------------------------------------------------------------
+- Section 3 [Hystogram Per Instruction]                                                   
+-                                                                                         
+- Instruction                   Executed-Times             Per Cent of Total Instruction  
+- Add                           428                            13.493064                        
+- Sub                           1                              0.031526                        
+- Addi                          296                            9.331652                        
+- Shift                         438                            13.808323                        
+- And                           0                              0.000000                        
+- Or                            28                             0.882724                        
+- Not                           0                              0.000000                        
+- Xor                           616                            19.419924                        
+- Slt                           0                              0.000000                        
+- Lw                            175                            5.517024                        
+- Sw                            16                             0.504414                        
+- Lui                           560                            17.654477                        
+- Beq                           297                            9.363178                        
+- Blt                           51                             1.607818                        
+- J                             265                            8.354351                        
+- Jal                           1                              0.031526                        
+------------------------------------------------------------------------------------------
+- Total                         3172                                                          
+------------------------------------------------------------------------------------------
+- Section 4 [Hystogram Per Instruction Class]                                                   
+-                                                                                               
+- Class                         Executed-Times             Per Cent of Total Instruction  
+- Arithmetic                      1163                         36.6645649433                              
+- Logic                           644                          20.3026481715                              
+- Transfer                        751                          23.6759142497                              
+- Conditional Branches            348                          10.9709962169                              
+- Inconditional Branches          266                          8.3858764187                              
+\end{verbatim}
+
+\section{Saída da Opção \textsc{memory}}
+\scriptsize
+\begin{verbatim}
+-----------------------------------------------------------------------------------------
+-     TOOLCHAIN  UNB-RISC16                   -                                          
+-     Energy Profile Version 1.00             -                                            
+-     Memory Hystogram                        -                                            
+-     Options: memory & Seconds = 0
+-     Program   dijkstra.oc                             Sumary 
+-                                             -         1-Cycles                     
+-                                             -         2-Times                      
+-                                             -            2.1    Real time           
+-                                             -            2.2    Processor Time      
+-                                             -         3-Hystogram Per Memory Position
+-                                             -         4-Hystogram Per Read/Writen Access
+------------------------------------------------------------------------------------------
+- Section 1 [Cycles]                                                                      
+-                                                                                         
+- Cycles Consumption                                                   3363                 
+------------------------------------------------------------------------------------------
+- Section 2 [Times]                                                                       
+-                                                                                         
+-      2.1  Time Consumption - Real Time (in seconds):                0.000000                 
+-      2.2  Time Consumption - Processor UNB RISC16 (in seconds):     0.000210                 
+------------------------------------------------------------------------------------------
+- Section 3 [Hystogram Per Memory Position]                                               
+-                                                                                         
+- Memory Position         Access-Times         Read        Writen         Per Cent        
+-                                                                                         
+- 0                       23                  23         0             12.0418848168                
+- 1                       15                  15         0             7.8534031414                
+- 3                       2                   2          0             1.0471204188                
+- 6                       1                   1          0             0.5235602094                
+- 7                       2                   2          0             1.0471204188                
+- 12                      2                   2          0             1.0471204188                
+- 14                      10                  9          1             5.2356020942                
+- 16                      2                   2          0             1.0471204188                
+- 19                      2                   2          0             1.0471204188                
+- 21                      2                   2          0             1.0471204188                
+- 27                      2                   2          0             1.0471204188                
+- 28                      1                   1          0             0.5235602094                
+- 29                      2                   2          0             1.0471204188                
+- 30                      1                   1          0             0.5235602094                
+- 31                      2                   2          0             1.0471204188                
+...
+             
+- 149                     1                   1          0             0.5235602094                
+- 1023                    8                   8          0             4.1884816754                
+------------------------------------------------------------------------------------------
+- Section 4 [Hystogram Per Read/Writen Acess]                                             
+-                                                                                         
+- Total Reads                           175 (91.623037 percent)                                        
+- Total Writes                          16 (8.376963 percent)   
+------------------------------------------------------------------------------------------                                      
+\end{verbatim}
+
+\section{Saída da Opção \textsc{energy-profiler}}
+\scriptsize
+\begin{verbatim}
+-----------------------------------------------------------------------------------------
+-     TOOLCHAIN  UNB-RISC16                   -                                          
+-     Energy Profile Version 1.00             -                                            
+-                                             -                                            
+-     Instructions Profile                    -                                            
+-     Options: energy-profiler & Seconds = 0       
+-                                             -                                            
+-                                             -             Sumary                       
+-     Program   dijkstra.o
+-                                             -             1-Cycles                     
+-                                             -             2-Times                      
+-                                             -               2.1    Real time           
+-                                             -               2.2    Processor Time      
+-                                             -             3-Profile for Each Instructions
+------------------------------------------------------------------------------------------
+- Section 1 [Cycles]                                                                      
+-                                                                                         
+- Cycles Consumption                                                   3363                 
+------------------------------------------------------------------------------------------
+- Section 2 [Times]                                                                       
+-                                                                                         
+-      2.1  Time Consumption - Real Time (in seconds):                 0.000000                 
+-      2.2  Time Consumption - Processor UNB RISC 16 (in seconds):     0.000210                 
+------------------------------------------------------------------------------------------
+- Section 3 [Profile for Each Instructions]                                               
+-                                                                                         
+-Section Begin Position | Instruction | Memory Position |  Access Times | Energy Spending
+
+:-Section <.main>:  
+-396                        8cff         408                 1              0.1586538461 x10^-6 
+-396                        f100         406                 1              0.1586538461 x10^-6 
+-396                        12d0         404                 1              0.3173076922 x10^-6 
+-396                        b201         402                 1              0.1586538461 x10^-6 
+-396                        6222         400                 1              0.1586538461 x10^-6 
+-396                        b170         398                 1              0.1586538461 x10^-6 
+-396                        6111         396                 1              0.1586538461 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.main>:  1.2692307690 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.fimPrimeiroFor>:  
+-394                        ef00         394                 1              0.1586538461 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.fimPrimeiroFor>:  0.1586538461 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.fimTerceiroFor>:  
+-380                        e100         392                 5              0.7932692306 x10^-6 
+-380                        b18e         390                 5              0.7932692306 x10^-6 
+-380                        6111         388                 5              0.7932692306 x10^-6 
+-380                        c198         386                 6              0.9519230767 x10^-6 
+-380                        b106         384                 6              0.9519230767 x10^-6 
+-380                        6111         382                 6              0.9519230767 x10^-6 
+-380                        8901         380                 6              0.9519230767 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.fimTerceiroFor>:  6.1874999989 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.fimTerceiroIf>:  
+-366                        e10e         378                 30              4.7596153837 x10^-6 
+-366                        9188         376                 30              4.7596153837 x10^-6 
+-366                        b101         374                 30              4.7596153837 x10^-6 
+-366                        c188         372                 36              5.7115384605 x10^-6 
+-366                        b106         370                 36              5.7115384605 x10^-6 
+-366                        6111         368                 36              5.7115384605 x10^-6 
+-366                        8801         366                 36              5.7115384605 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.fimTerceiroIf>:  37.1249999933 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.atualizarDi>:  
+-352                        1120         364                 8              2.5384615380 x10^-6 
+-352                        2223         362                 8              1.2692307690 x10^-6 
+-352                        b358         360                 8              1.2692307690 x10^-6 
+-352                        6333         358                 8              1.2692307690 x10^-6 
+-352                        9281         356                 8              1.2692307690 x10^-6 
+-352                        2280         354                 8              1.2692307690 x10^-6 
+-352                        6222         352                 8              1.2692307690 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.atualizarDi>:  10.1538461520 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.terceiroIf>:  
+-314                        e36e         350                 28              4.4423076915 x10^-6 
+-314                        9388         348                 28              4.4423076915 x10^-6 
+-314                        b301         346                 28              4.4423076915 x10^-6 
+-314                        d128         344                 36              5.7115384605 x10^-6 
+-314                        0220         342                 36              11.4230769210 x10^-6 
+-314                        2223         340                 36              5.7115384605 x10^-6 
+-314                        b358         338                 36              5.7115384605 x10^-6 
+-314                        6333         336                 36              5.7115384605 x10^-6 
+-314                        9281         334                 36              5.7115384605 x10^-6 
+-314                        2280         332                 36              5.7115384605 x10^-6 
+-314                        6222         330                 36              5.7115384605 x10^-6 
+-314                        2112         328                 36              5.7115384605 x10^-6 
+-314                        0220         326                 36              11.4230769210 x10^-6 
+-314                        2223         324                 36              5.7115384605 x10^-6 
+-314                        b358         322                 36              5.7115384605 x10^-6 
+-314                        6333         320                 36              5.7115384605 x10^-6 
+-314                        9281         318                 36              5.7115384605 x10^-6 
+-314                        22a0         316                 36              5.7115384605 x10^-6 
+-314                        6222         314                 36              5.7115384605 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.terceiroIf>:  116.1346153635 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.finalizarSegundoIf>:  
+-308                        e16e         312                 0              0.0000000000 x10^-6 
+-308                        9188         310                 0              0.0000000000 x10^-6 
+-308                        b101         308                 0              0.0000000000 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.finalizarSegundoIf>:  0.0000000000 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.fimMult1>:  
+-286                        e23a         306                 36              5.7115384605 x10^-6 
+-286                        9288         304                 36              5.7115384605 x10^-6 
+-286                        b201         302                 36              5.7115384605 x10^-6 
+-286                        c108         300                 36              5.7115384605 x10^-6 
+-286                        0110         298                 36              11.4230769210 x10^-6 
+-286                        8110         296                 36              5.7115384605 x10^-6 
+-286                        2112         294                 36              5.7115384605 x10^-6 
+-286                        9281         292                 36              5.7115384605 x10^-6 
+-286                        2280         290                 36              5.7115384605 x10^-6 
+-286                        6222         288                 36              5.7115384605 x10^-6 
+-286                        9181         286                 36              5.7115384605 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.fimMult1>:  68.5384615260 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.mult1>:  
+-274                        e212         284                 90              14.2788461513 x10^-6 
+-274                        9288         282                 90              14.2788461513 x10^-6 
+-274                        b201         280                 90              14.2788461513 x10^-6 
+-274                        8106         278                 90              14.2788461513 x10^-6 
+-274                        8301         276                 90              14.2788461513 x10^-6 
+-274                        c3ac         274                 126              19.9903846117 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.mult1>:  91.3846153680 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.codigoTerceiroFor>:  
+-270                        6111         272                 36              5.7115384605 x10^-6 
+-270                        6333         270                 36              5.7115384605 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.codigoTerceiroFor>:  11.4230769210 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.fimSegundoFor>:  
+-252                        6888         268                 6              0.9519230767 x10^-6 
+-252                        1210         266                 6              1.9038461535 x10^-6 
+-252                        b201         264                 6              0.9519230767 x10^-6 
+-252                        2112         262                 6              0.9519230767 x10^-6 
+-252                        b264         260                 6              0.9519230767 x10^-6 
+-252                        6222         258                 6              0.9519230767 x10^-6 
+-252                        9181         256                 6              0.9519230767 x10^-6 
+-252                        21a0         254                 6              0.9519230767 x10^-6 
+-252                        6111         252                 6              0.9519230767 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.fimSegundoFor>:  9.5192307675 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.fimPrimeiroIf>:  
+-238                        e100         250                 30              4.7596153837 x10^-6 
+-238                        b19a         248                 30              4.7596153837 x10^-6 
+-238                        6111         246                 30              4.7596153837 x10^-6 
+-238                        c188         244                 36              5.7115384605 x10^-6 
+-238                        b106         242                 36              5.7115384605 x10^-6 
+-238                        6111         240                 36              5.7115384605 x10^-6 
+-238                        8801         238                 36              5.7115384605 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.fimPrimeiroIf>:  37.1249999933 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.X>:  
+-236                        2a80         236                 13              2.0624999996 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.X>:  2.0624999996 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.segundoIfInterno>:  
+-200                        e100         234                 8              1.2692307690 x10^-6 
+-200                        b1ee         232                 8              1.2692307690 x10^-6 
+-200                        6111         230                 8              1.2692307690 x10^-6 
+-200                        d128         228                 15              2.3798076919 x10^-6 
+-200                        0220         226                 15              4.7596153837 x10^-6 
+-200                        2223         224                 15              2.3798076919 x10^-6 
+-200                        b358         222                 15              2.3798076919 x10^-6 
+-200                        6333         220                 15              2.3798076919 x10^-6 
+-200                        9281         218                 15              2.3798076919 x10^-6 
+-200                        22a0         216                 15              2.3798076919 x10^-6 
+-200                        6222         214                 15              2.3798076919 x10^-6 
+-200                        0110         212                 15              4.7596153837 x10^-6 
+-200                        2112         210                 15              2.3798076919 x10^-6 
+-200                        b258         208                 15              2.3798076919 x10^-6 
+-200                        6222         206                 15              2.3798076919 x10^-6 
+-200                        9181         204                 15              2.3798076919 x10^-6 
+-200                        2180         202                 15              2.3798076919 x10^-6 
+-200                        6111         200                 15              2.3798076919 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.segundoIfInterno>:  44.2644230689 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.gotoX1>:  
+-194                        e100         198                 6              0.9519230767 x10^-6 
+-194                        b1ec         196                 6              0.9519230767 x10^-6 
+-194                        6111         194                 6              0.9519230767 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.gotoX1>:  2.8557692302 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.corpoPrimeiroIf>:  
+-176                        e100         192                 15              2.3798076919 x10^-6 
+-176                        b1c8         190                 15              2.3798076919 x10^-6 
+-176                        6111         188                 15              2.3798076919 x10^-6 
+-176                        c1a8         186                 21              3.3317307686 x10^-6 
+-176                        5112         184                 21              3.3317307686 x10^-6 
+-176                        9288         182                 21              3.3317307686 x10^-6 
+-176                        b2ff         180                 21              3.3317307686 x10^-6 
+-176                        b1fe         178                 21              3.3317307686 x10^-6 
+-176                        6111         176                 21              3.3317307686 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.corpoPrimeiroIf>:  27.1298076874 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.codigoSegundoFor>:  
+-154                        e100         174                 15              2.3798076919 x10^-6 
+-154                        b1ee         172                 15              2.3798076919 x10^-6 
+-154                        6111         170                 15              2.3798076919 x10^-6 
+-154                        c108         168                 36              5.7115384605 x10^-6 
+-154                        0110         166                 36              11.4230769210 x10^-6 
+-154                        2112         164                 36              5.7115384605 x10^-6 
+-154                        b264         162                 36              5.7115384605 x10^-6 
+-154                        6222         160                 36              5.7115384605 x10^-6 
+-154                        9181         158                 36              5.7115384605 x10^-6 
+-154                        2180         156                 36              5.7115384605 x10^-6 
+-154                        6111         154                 36              5.7115384605 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.codigoSegundoFor>:  58.5432692201 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.codigoPrimeiroFor>:  
+-142                        6888         152                 6              0.9519230767 x10^-6 
+-142                        5aa1         150                 6              0.9519230767 x10^-6 
+-142                        9188         148                 6              0.9519230767 x10^-6 
+-142                        b1ff         146                 6              0.9519230767 x10^-6 
+-142                        bafe         144                 6              0.9519230767 x10^-6 
+-142                        6aaa         142                 6              0.9519230767 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.codigoPrimeiroFor>:  5.7115384605 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.dijkstra>:  
+-112                        6999         140                 1              0.1586538461 x10^-6 
+-112                        1010         138                 1              0.3173076922 x10^-6 
+-112                        2112         136                 1              0.1586538461 x10^-6 
+-112                        b258         134                 1              0.1586538461 x10^-6 
+-112                        6222         132                 1              0.1586538461 x10^-6 
+-112                        9181         130                 1              0.1586538461 x10^-6 
+-112                        2170         128                 1              0.1586538461 x10^-6 
+-112                        6111         126                 1              0.1586538461 x10^-6 
+-112                        0770         124                 1              0.3173076922 x10^-6 
+-112                        8706         122                 1              0.1586538461 x10^-6 
+-112                        27d0         120                 1              0.1586538461 x10^-6 
+-112                        6777         118                 1              0.1586538461 x10^-6 
+-112                        3dd1         116                 1              0.1586538461 x10^-6 
+-112                        b106         114                 1              0.1586538461 x10^-6 
+-112                        6111         112                 1              0.1586538461 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.dijkstra>:  2.6971153841 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.visited>:  
+-                                                                                          
+-Energy Consumption By Section <.visited>:  0.0000000000 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.d>:  
+-88                        ffff         98                 0              0.0000000000 x10^-6 
+-88                        ffff         96                 0              0.0000000000 x10^-6 
+-88                        ffff         94                 0              0.0000000000 x10^-6 
+-88                        ffff         92                 0              0.0000000000 x10^-6 
+-88                        ffff         90                 0              0.0000000000 x10^-6 
+-88                        ffff         88                 0              0.0000000000 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.d>:  0.0000000000 x 10^-6 Joules
+-                                                                                          
+
+:-Section <.dist>:  
+-16                        0013         86                 0              0.0000000000 x10^-6 
+-16                        001b         84                 0              0.0000000000 x10^-6 
+-16                        003d         82                 0              0.0000000000 x10^-6 
+-16                        0003         80                 0              0.0000000000 x10^-6 
+-16                        0047         78                 0              0.0000000000 x10^-6 
+-16                        005e         76                 0              0.0000000000 x10^-6 
+-16                        002d         74                 0              0.0000000000 x10^-6 
+-16                        004f         72                 0              0.0000000000 x10^-6 
+-16                        004e         70                 0              0.0000000000 x10^-6 
+-16                        000e         68                 0              0.0000000000 x10^-6 
+-16                        0007         66                 0              0.0000000000 x10^-6 
+-16                        003b         64                 0              0.0000000000 x10^-6 
+-16                        001d         62                 0              0.0000000000 x10^-6 
+-16                        005e         60                 0              0.0000000000 x10^-6 
+-16                        000e         58                 0              0.0000000000 x10^-6 
+-16                        0035         56                 0              0.0000000000 x10^-6 
+-16                        0010         54                 0              0.0000000000 x10^-6 
+-16                        0050         52                 0              0.0000000000 x10^-6 
+-16                        0015         50                 0              0.0000000000 x10^-6 
+-16                        003d         48                 0              0.0000000000 x10^-6 
+-16                        0028         46                 0              0.0000000000 x10^-6 
+-16                        004b         44                 0              0.0000000000 x10^-6 
+-16                        001f         42                 0              0.0000000000 x10^-6 
+-16                        0026         40                 0              0.0000000000 x10^-6 
+-16                        0045         38                 0              0.0000000000 x10^-6 
+-16                        0059         36                 0              0.0000000000 x10^-6 
+-16                        000e         34                 0              0.0000000000 x10^-6 
+-16                        0041         32                 0              0.0000000000 x10^-6 
+-16                        0036         30                 0              0.0000000000 x10^-6 
+-16                        004c         28                 0              0.0000000000 x10^-6 
+-16                        0038         26                 0              0.0000000000 x10^-6 
+-16                        0034         24                 0              0.0000000000 x10^-6 
+-16                        000c         22                 0              0.0000000000 x10^-6 
+-16                        0036         20                 0              0.0000000000 x10^-6 
+-16                        0020         18                 0              0.0000000000 x10^-6 
+-16                        0020         16                 0              0.0000000000 x10^-6 
+-                                                                                          
+-Energy Consumption By Section <.dist>:  0.0000000000 x 10^-6 Joules
+------------------------------------------------------------------------------------------
+\end{verbatim}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
