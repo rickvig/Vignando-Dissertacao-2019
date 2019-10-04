@@ -8,11 +8,11 @@
 %\usepackage[none]{hyphenat}	para evitar hifenizacao
 \hyphenpenalty=2000 		% (nao ta funcionando)
 \tolerance=400			%
-\clubpenalty=10000		% Altera��o Vin�cius
+\clubpenalty=10000		% Alterao Vincius
 \widowpenalty=10000		%
 \displaywidowpenalty=10000	%
 
-% alteracao Vin�cius
+% alteracao Vincius
 %\usepackage{tocloft}
 
 %\newlength\mylena
@@ -48,7 +48,7 @@
 \newcommand{\tripla}[3]{\langle #1,#2,#3 \rangle}
 \newcommand{\parord}[2]{\langle #1,#2 \rangle}
 
-%ambiente para defini��es, teoremas etc...
+%ambiente para definies, teoremas etc...
 \newtheorem{defi}{Definição}[chapter]
 \newtheorem{propri}{Propriedade}[chapter]
 \newtheorem{conce}{Conceito}[chapter]
@@ -76,14 +76,14 @@
 \usepackage{amssymb, amsmath}
 %% --------------------------------------------------------------
 %% se for quali, substitua "capaUEM" por "capaUEMquali" 
-\usepackage{capaUEMquali}      % Para formata��o de capa e folhas de rosto
+\usepackage{capaUEMquali}      % Para formatao de capa e folhas de rosto
 %%
 %% ---------------------------------------------------------------
 \usepackage[
     sort&compress,
     %numbers,
     authoryear,
-    ]{natbib} % Para usar estilo novo de refer�ncias
+    ]{natbib} % Para usar estilo novo de referncias
 \usepackage{verbatim}
 \usepackage{titlesec}
 \usepackage{enumerate}
@@ -120,7 +120,7 @@
 \citeauthor{#3}, \citeyear{#3}%
 \ifthenelse{\equal{#1}{\empty}}{}{, #1}\citeclose}
 
-\let\cite=\citep    % O natbib requer \citep para refer�ncias. Ent�o, se vc j� escreveu muita coisa usando \cite, este comando substitui na hora de compilar
+\let\cite=\citep    % O natbib requer \citep para referncias. Ento, se vc j escreveu muita coisa usando \cite, este comando substitui na hora de compilar
 
 \usepackage[a4paper, top=3cm, bottom=2cm, %   footskip=15pt,
     verbose,
@@ -139,13 +139,13 @@
 \newcommand{\atributo}[1]{\textbf{\textit{#1}}}
 
 
-%% Limpa os cabe�alhos, deixando s� o n�mero da p�gina
+%% Limpa os cabealhos, deixando s o nmero da pgina
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancyplain}
 \fancyhf{}
 \rhead{\fancyplain{}{\thepage}}
 
-%% Muda a formata�ao dos t�tulos das listas de figuras, tabelas e sum�rio
+%% Muda a formataao dos ttulos das listas de figuras, tabelas e sumrio
 \makeatletter
 
 \def\tableofcontents{
@@ -182,12 +182,12 @@
 \hyphenation{cate-goria}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Estilos diferentes para cabe�alho de cap�tulo - by Adenilso
+% Estilos diferentes para cabealho de captulo - by Adenilso
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \makeatletter  %usado para que o @ seja considerado
  \newcounter{capkind}
- \setcounter{capkind}{1}   % define qual tipo de cabe�alho usar
+ \setcounter{capkind}{1}   % define qual tipo de cabealho usar
     
      
  \ifcase\value{capkind}
@@ -239,7 +239,7 @@
           \hline
           \color{white} \large \scshape % \@chapapp{} \\
           %\hline
-          \vspace{-2ex}\\ %coloquei para aumentar o espa�o entre o t�tulo e o n�mero
+          \vspace{-2ex}\\ %coloquei para aumentar o espao entre o ttulo e o nmero
           \Huge \slshape \scaletoheight{1cm}{\thechapter} \\ \hline
       \end{tabular}     
       }
@@ -256,7 +256,7 @@
  \endgroup
      }
                                
- \def\@makeschapterhead#1{%       Essa parte configura o cabe�alho do cap�tulo refer�ncias
+ \def\@makeschapterhead#1{%       Essa parte configura o cabealho do captulo referncias
   
  \begingroup
    \vspace*{30\p@}%
@@ -304,35 +304,35 @@
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% DADOS PARA CAPA, FOLHA DE ROSTO E FOLHA DE APROVA��O
+%% DADOS PARA CAPA, FOLHA DE ROSTO E FOLHA DE APROVAO
 
 % Dados autor
 \Jautor{HENRIQUE VIGNANDO}
 
-% Dados trabalho: t�tulo e subt�tulo (opcional)
-\Jtitulo{Recomendação de Experimentos e Quasi-Experimentos Controlados para Linha de Produto de Software}
-%\Jsubtitulo{: uma nova solu��o ...} %% descomente essa linha caso haja um subt�tulo
+% Dados trabalho: ttulo e subttulo (opcional)
+\Jtitulo{Uma Ontologia para Experimentos e Quasi-Experimentos Controlados para Linha de Produto de Software - SMartOntology}
+%\Jsubtitulo{: uma nova soluo ...} %% descomente essa linha caso haja um subttulo
 %\Jtituloabs{Efficient neighborhood ... applied to the ...}
-%\Jsubtituloabs{: a new solution...} %% descomente essa linha caso haja um subt�tulo
+%\Jsubtituloabs{: a new solution...} %% descomente essa linha caso haja um subttulo
 
 % Ano da defesa
-\Jdata{2018}
+\Jdata{2020}
 
-% Dados orienta��o
+% Dados orientação
 \Jtipoorientador{o} %% caso seja orientador
 \Jorientador{Edson A. Oliveira Junior}
-%\JtipobancaC{o} %% caso seja professor (usado na folha de aprova��o)
+%\JtipobancaC{o} %% caso seja professor (usado na folha de aprovao)
 
-%\Jcoorientador{o}{Edson Oliveira Junior} %% caso n�o haja coorientador(a) comente esta linha e a pr�xima
+%\Jcoorientador{o}{Edson Oliveira Junior} %% caso no haja coorientador(a) comente esta linha e a prxima
 %\Jtipocoorientador{o} %% caso seja coorientador
 %\Jtipocoorientador{a} %% caso seja coorientadora
-%\JtipobancaC{a}  %% caso seja professora (usado na folha de aprova��o)
+%\JtipobancaC{a}  %% caso seja professora (usado na folha de aprovao)
 
 % Dados da banca
 %\JtipobancaA{a} %% caso seja professora
 %\JtipobancaA{o}  %% caso seja professor
 %\JbancaA{Fulano 1}
-%\JinstituicaoA{Universidade Estadual de Maring� --- DIN/UEM}
+%\JinstituicaoA{Universidade Estadual de Maring --- DIN/UEM}
 
 %\JtipobancaB{a}  %% caso seja professora
 %\JtipobancaB{o} %% caso seja professor
@@ -341,7 +341,7 @@
 
 % Dados da defesa
 %\Jdatadefesa{21 de Fevereiro de 2015.}
-%\Jlocaldefesa{Sala 101, Bloco C56, \textit{campus} da Universidade Estadual de Maring�.}
+%\Jlocaldefesa{Sala 101, Bloco C56, \textit{campus} da Universidade Estadual de Maring.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -371,26 +371,14 @@
 \listoftables
 
 \include{texto/_abreviaturas}
-\include{texto/_abreviaturas2}
 
 \tableofcontents
 
-% T�pico 1
 \include{texto/_introducao}
-
-% T�pico 2
-%\include{texto/_problema_horarios}
-
-% T�pico 3
-\include{texto/_revisao_literatura}
-
-% T�pico 4
-\include{texto/_proposta}
-
-% T�pico 5 
-%\include{texto/_experimentos_computacionais}
-
-% T�pico 6 
+\include{texto/_fundamentacao_teorica}
+\include{texto/_ontologia}
+\include{texto/_avalicao_da_ontologia}
+\include{texto/_melhorias}
 \include{texto/_conclusao} 
 
 % Fancyhead
@@ -398,7 +386,6 @@
 \fancyhead[RO,LE]{\thepage}
 
 % Bibliografia
-
 \renewcommand{\bibname}{REFERÊNCIAS} 
 %\setlength\bibindent{0mm}
 \setlength\bibhang{0mm} 
@@ -406,8 +393,7 @@
 \bibliographystyle{icmc2}
 \bibliography{texto/RevisaoLiteratura}
 
-% Ap�ndices
-
+% Apndices
 \initappendix
 
 \include{texto/apendicea}
