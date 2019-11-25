@@ -1,0 +1,12 @@
+\begin{thebibliography}{0}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname bibbhook\endcsname\relax\let\bibbhook\relax\fi
+\expandafter\ifx\csname bibehook\endcsname\relax\let\bibehook\relax\fi
+\input babelbst.tex
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\end{thebibliography}

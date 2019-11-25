@@ -1,0 +1,1294 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  25 NOV 2019 15:00
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.tex
+(/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/icmc.cls
+Document Class: icmc 2000/12/07 v1.0a ICMC document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/caption.sty
+Package: caption 1995/04/05 v1.4b caption package (HS)
+
+Package: caption v1.4b <1995/04/05> (Harald Sommerfeldt)
+\captionmargin=\skip43
+\as@captionbox=\box26
+\as@captionwidth=\skip44
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/titlesec.sty
+Package: titlesec 1999/08/04 v2.1.1 Sectioning titles
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/fancyhdr.sty
+\headwidth=\dimen103
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks14
+\float@box=\box27
+\@float@everytoks=\toks15
+\@floatcapt=\box28
+)) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\lst@mode=\count89
+\lst@gtempboxa=\box29
+\lst@token=\toks17
+\lst@length=\count90
+\lst@currlwidth=\dimen104
+\lst@column=\count91
+\lst@pos=\count92
+\lst@lostspace=\dimen105
+\lst@width=\dimen106
+\lst@newlines=\count93
+\lst@lineno=\count94
+\lst@maxwidth=\dimen107
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
+\lst@framebox=\box30
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count97
+\calc@Bcount=\count98
+\calc@Adimen=\dimen108
+\calc@Bdimen=\dimen109
+\calc@Askip=\skip45
+\calc@Bskip=\skip46
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count99
+\calc@Cskip=\skip47
+) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen110
+\Gin@req@width=\dimen111
+)
+\AM@pagewidth=\dimen112
+\AM@pageheight=\dimen113
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box31
+\AM@global@opts=\toks18
+\AM@toc@title=\toks19
+\c@AM@survey=\count100
+\AM@templatesizebox=\box32
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+) (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count101
+\U@D=\dimen114
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count102
+)
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+ (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+)) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/multirow.sty
+\bigstrutjot=\dimen115
+)
+\c@defi=\count103
+\c@propri=\count104
+\c@conce=\count105
+\c@propo=\count106
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+\@float@every@algorithm=\toks22
+\c@algorithm=\count107
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/clrscode3e.sty
+Package: clrscode3e 
+\c@codelinenumber=\count108
+\c@indent=\count109
+\digitwidth=\skip48
+\savecode=\box33
+\codeboxwidth=\skip49
+\c@thisindent=\count110
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count111
+\c@@ppsavesec=\count112
+\c@@ppsaveapp=\count113
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/isoaccent.sty
+Document Style Option `isoaccent' -- Released 12 April 1994
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip50
+\LTright=\skip51
+\LTpre=\skip52
+\LTpost=\skip53
+\LTchunksize=\count114
+\LTcapwidth=\dimen116
+\LT@head=\box34
+\LT@firsthead=\box35
+\LT@foot=\box36
+\LT@lastfoot=\box37
+\LT@cols=\count115
+\LT@rows=\count116
+\c@LT@tables=\count117
+\c@LT@chunks=\count118
+\LT@p@ftn=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/subfigure.sty
+Package: subfigure 1995/03/06 v2.0 subfigure package
+
+Package: subfigure 1995/03/06 v2.0
+\c@subfigure=\count119
+\c@lofdepth=\count120
+\c@subtable=\count121
+\c@lotdepth=\count122
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks24
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen117
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen118
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count123
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count124
+\leftroot@=\count125
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count126
+\DOTSCASE@=\count127
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box38
+\strutbox@=\box39
+\big@size=\dimen119
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count128
+\c@MaxMatrixCols=\count129
+\dotsspace@=\muskip10
+\c@parentequation=\count130
+\dspbrk@lvl=\count131
+\tag@help=\toks26
+\row@=\count132
+\column@=\count133
+\maxfields@=\count134
+\andhelp@=\toks27
+\eqnshift@=\dimen120
+\alignsep@=\dimen121
+\tagshift@=\dimen122
+\tagwidth@=\dimen123
+\totwidth@=\dimen124
+\lineht@=\dimen125
+\@envbody=\toks28
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks29
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/capaUEM.sty
+
+LaTeX Warning: You have requested package `capaUEM',
+               but the package provides `capaUEMquali'.
+
+Package: capaUEMquali 
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip57
+\bibsep=\skip58
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count135
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks30
+\verbatim@line=\toks31
+\verbatim@in@stream=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks32
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen126
+\extrarowheight=\dimen127
+\NC@list=\toks33
+\extratabsurround=\skip59
+\backup@length=\skip60
+)
+\everycr=\toks34
+\minrowclearance=\skip61
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/textfit.sty
+Package: textfit 1994/04/15
+\mags@f@r=\count136
+\desired@size=\dimen128
+\r@mainder=\count137
+\m@gstepcount=\count138
+\m@gsteplimit=\count139
+\m@gstepvalue=\count140
+\m@gstepdimen=\dimen129
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen130
+\TX@old@table=\dimen131
+\TX@old@col=\dimen132
+\TX@target=\dimen133
+\TX@delta=\dimen134
+\TX@cols=\count141
+\TX@ftn=\toks35
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count142
+\rotFPtop=\skip62
+\rotFPbot=\skip63
+\rot@float@box=\box40
+\rot@mess@toks=\toks36
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks37
+\AP@partial=\box41
+\AP@footins=\box42
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen135
+\lightrulewidth=\dimen136
+\cmidrulewidth=\dimen137
+\belowrulesep=\dimen138
+\belowbottomsep=\dimen139
+\aboverulesep=\dimen140
+\abovetopsep=\dimen141
+\cmidrulesep=\dimen142
+\cmidrulekern=\dimen143
+\defaultaddspace=\dimen144
+\@cmidla=\count143
+\@cmidlb=\count144
+\@aboverulesep=\dimen145
+\@belowrulesep=\dimen146
+\@thisruleclass=\count145
+\@lastruleclass=\count146
+\@thisrulewidth=\dimen147
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks38
+\XKV@tempa@toks=\toks39
+)
+\XKV@depth=\count147
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+ (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box43
+)
+\tc@llx=\dimen148
+\tc@lly=\dimen149
+\tc@urx=\dimen150
+\tc@ury=\dimen151
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen152
+\adjbox@Height=\dimen153
+\adjbox@Depth=\dimen154
+\adjbox@Totalheight=\dimen155
+ (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count148
+) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box44
+\sift@deathcycles=\count149
+\@vwid@loff=\dimen156
+\@vwid@roff=\dimen157
+)) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/geometry.sty
+Package: geometry 1998/04/08 v2.0a Page Geometry
+\geom@cnth=\count150
+\geom@cntv=\count151
+)
+\c@capkind=\count152
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.aux (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_agradecimentos.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_resumo.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abstract.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abreviaturas.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_introducao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_fundamentacao_teorica.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_ontologia.aux
+
+LaTeX Warning: Label `sec:ontologia' multiply defined.
+
+
+LaTeX Warning: Label `sec:concidaracoes_iniciais' multiply defined.
+
+
+LaTeX Warning: Label `sec:concidaracoes_finais' multiply defined.
+
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_avalicao_da_ontologia.aux
+
+LaTeX Warning: Label `sec:concidaracoes_iniciais' multiply defined.
+
+
+LaTeX Warning: Label `sec:objetivos' multiply defined.
+
+
+LaTeX Warning: Label `sec:metodologia' multiply defined.
+
+
+LaTeX Warning: Label `sec:avaliacao' multiply defined.
+
+
+LaTeX Warning: Label `sec:concidaracoes_finais' multiply defined.
+
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_melhorias.aux
+
+LaTeX Warning: Label `sec:concidaracoes_iniciais' multiply defined.
+
+
+LaTeX Warning: Label `sec:concidaracoes_finais' multiply defined.
+
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.aux
+
+LaTeX Warning: Label `sec:concidaracoes_iniciais' multiply defined.
+
+
+LaTeX Warning: Label `sec:concidaracoes_finais' multiply defined.
+
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+\c@lstlisting=\count153
+\AtBeginShipoutBox=\box45
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count154
+\scratchdimen=\dimen158
+\scratchbox=\box46
+\nofMPsegments=\count155
+\nofMParguments=\count156
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count157
+\MPscratchDim=\dimen159
+\MPnumerator=\count158
+\makeMPintoPDFobject=\count159
+\everyMPtoPDFconversion=\toks41
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+ (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+))
+----------------------- Geometry parameters
+mode: a4paper pdftex 
+h-parts: 3cm, 455.24411pt, 2cm
+v-parts: 3cm, 702.78308pt, 2cm
+----------------------- Page layout dimensions
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  455.24411pt
+\textheight 646.94972pt
+\oddsidemargin  13.08827pt
+\evensidemargin 13.08827pt
+\topmargin  13.08827pt
+\headheight 15.50002pt
+\headsep    10.33334pt
+\footskip   30.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 1253) in paragraph at lines 349--349
+[]\OT1/cmr/m/n/12 Disserta^^Xc~ao apre-sen-tada ao Pro-grama de
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 349--349
+\OT1/cmr/m/n/12 de Tec-no-lo-gia da Uni-ver-si-dade Es-ta-dual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+
+ []
+
+[2
+
+]
+\openout2 = `texto/_agradecimentos.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_agradecimentos.tex) [3
+
+
+]
+\openout2 = `texto/_resumo.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_resumo.tex
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+[4
+
+
+
+]) [5]
+\openout2 = `texto/_abstract.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+[6
+
+
+
+] [7]) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.lof
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Package natbib Warning: Citation `sommerville2011software' on page 8 undefined on input line 6.
+
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 8 undefined on input line 8.
+
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 8 undefined on input line 9.
+
+
+Package natbib Warning: Citation `maki2016systematic' on page 8 undefined on input line 12.
+
+)
+\tf@lof=\write3
+\openout3 = `main.lof'.
+
+ [8
+
+] (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.lot
+
+Package natbib Warning: Citation `kitchenham2007large' on page 9 undefined on input line 4.
+
+
+Package natbib Warning: Citation `maki2016systematic' on page 9 undefined on input line 5.
+
+)
+\tf@lot=\write4
+\openout4 = `main.lot'.
+
+ [9]
+\openout2 = `texto/_abreviaturas.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abreviaturas.tex) [10
+
+] (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.toc [11
+
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [12]
+\openout2 = `texto/_introducao.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_introducao.tex
+Cap\'{\i }tulo 1.
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <14.4> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 1.
+
+
+Package natbib Warning: Citation `kitchenham2007large' on page 13 undefined on input line 6.
+
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 13 undefined on input line 6.
+
+
+Package natbib Warning: Citation `robillard2010recommendation' on page 13 undefined on input line 8.
+
+[13
+
+
+] [14]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
+<figuras/metodologia_flow.png, id=62, 1140.26pt x 416.55624pt>
+File: figuras/metodologia_flow.png Graphic file (type png)
+<use figuras/metodologia_flow.png>
+Package pdftex.def Info: figuras/metodologia_flow.png  used on input line 48.
+(pdftex.def)             Requested size: 456.09592pt x 166.61954pt.
+
+Overfull \hbox (0.8518pt too wide) in paragraph at lines 48--49
+ [][] 
+ []
+
+[15] [16 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia_flow.png>]
+<figuras/RSSE-overview.png, id=72, 869.2475pt x 351.3125pt>
+File: figuras/RSSE-overview.png Graphic file (type png)
+<use figuras/RSSE-overview.png>
+Package pdftex.def Info: figuras/RSSE-overview.png  used on input line 68.
+(pdftex.def)             Requested size: 434.62268pt x 175.6558pt.
+
+Overfull \hbox (41.33408pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/12 Todo pro-jeto est^^Sa sendo ver-si-o-nado no Github pelo link: https://github.com/rickvig/pcc-pesquisa. 
+ []
+
+[17 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png>]) [18]
+\openout2 = `texto/_fundamentacao_teorica.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_fundamentacao_teorica.tex
+Cap\'{\i }tulo 2.
+
+Package natbib Warning: Citation `northrop2007framework' on page 19 undefined on input line 15.
+
+
+Package natbib Warning: Citation `van2007product' on page 19 undefined on input line 17.
+
+
+Package natbib Warning: Citation `apel2013analytic' on page 19 undefined on input line 19.
+
+
+Package natbib Warning: Citation `apel2013analytic' on page 19 undefined on input line 19.
+
+[19
+
+
+
+]
+
+Package natbib Warning: Citation `halmans2003communicating' on page 20 undefined on input line 26.
+
+<figuras/exemplo_lps_pt.png, id=84, 1406.3742pt x 685.6014pt>
+File: figuras/exemplo_lps_pt.png Graphic file (type png)
+<use figuras/exemplo_lps_pt.png>
+Package pdftex.def Info: figuras/exemplo_lps_pt.png  used on input line 32.
+(pdftex.def)             Requested size: 464.10493pt x 226.24916pt.
+
+Overfull \hbox (8.86082pt too wide) in paragraph at lines 32--33
+ [][] 
+ []
+
+
+Package natbib Warning: Citation `sommerville2011software' on page 20 undefined on input line 34.
+
+
+Package natbib Warning: Citation `sommerville2011software' on page 20 undefined on input line 34.
+
+[20 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_lps_pt.png>]
+
+Package natbib Warning: Citation `pohl2005software' on page 21 undefined on input line 61.
+
+[21]
+<figuras/framewor_lps.png, id=92, 1179.40625pt x 927.465pt>
+File: figuras/framewor_lps.png Graphic file (type png)
+<use figuras/framewor_lps.png>
+Package pdftex.def Info: figuras/framewor_lps.png  used on input line 71.
+(pdftex.def)             Requested size: 436.37349pt x 343.15668pt.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 78.
+
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 22 undefined on input line 81.
+
+[22 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/framewor_lps.png>]
+
+Package natbib Warning: Citation `kitchenham2015evidence' on page 23 undefined on input line 83.
+
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 23 undefined on input line 83.
+
+<figuras/experimento.png, id=96, 1108.14pt x 772.8875pt>
+File: figuras/experimento.png Graphic file (type png)
+<use figuras/experimento.png>
+Package pdftex.def Info: figuras/experimento.png  used on input line 87.
+(pdftex.def)             Requested size: 410.00539pt x 285.9639pt.
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 23 undefined on input line 89.
+
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 23 undefined on input line 89.
+
+
+Package natbib Warning: Citation `kitchenham2015evidence' on page 23 undefined on input line 97.
+
+[23 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/experimento.png>]
+
+Package natbib Warning: Citation `kitchenham2015evidence' on page 24 undefined on input line 100.
+
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 24 undefined on input line 102.
+
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 24 undefined on input line 104.
+
+<figuras/proc_exp.png, id=100, 1124.2pt x 738.76pt>
+File: figuras/proc_exp.png Graphic file (type png)
+<use figuras/proc_exp.png>
+Package pdftex.def Info: figuras/proc_exp.png  used on input line 108.
+(pdftex.def)             Requested size: 415.9475pt x 273.33691pt.
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 24 undefined on input line 110.
+
+
+Package natbib Warning: Citation `wohlin2012experimentation' on page 24 undefined on input line 110.
+
+
+Package natbib Warning: Citation `kitchenham2015evidence' on page 24 undefined on input line 118.
+
+[24]
+
+Package natbib Warning: Citation `dieste2013challenges' on page 25 undefined on input line 130.
+
+
+Package natbib Warning: Citation `dieste2013challenges' on page 25 undefined on input line 130.
+
+[25 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/proc_exp.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!htb') on input line 136.
+
+
+Package natbib Warning: Citation `kitchenham2007large' on page 26 undefined on input line 139.
+
+
+Package natbib Warning: Citation `kitchenham2007large' on page 26 undefined on input line 139.
+
+
+Package natbib Warning: Citation `dieste2011systematic' on page 26 undefined on input line 150.
+
+
+Package natbib Warning: Citation `dieste2013challenges' on page 26 undefined on input line 150.
+
+
+Package natbib Warning: Citation `dieste2011systematic' on page 26 undefined on input line 150.
+
+
+Package natbib Warning: Citation `dieste2011systematic' on page 26 undefined on input line 152.
+
+
+Package natbib Warning: Citation `dieste2013challenges' on page 26 undefined on input line 152.
+
+
+Package natbib Warning: Citation `teixeira2014analise' on page 26 undefined on input line 152.
+
+
+Package natbib Warning: Citation `kampenes2007quality' on page 26 undefined on input line 154.
+
+[26]
+
+Package natbib Warning: Citation `kitchenham2007large' on page 27 undefined on input line 159.
+
+
+Package natbib Warning: Citation `kitchenham2015evidence' on page 27 undefined on input line 161.
+
+
+Package natbib Warning: Citation `dieste2011systematic' on page 27 undefined on input line 163.
+
+
+Package natbib Warning: Citation `kitchenham2007large' on page 27 undefined on input line 163.
+
+
+Package natbib Warning: Citation `wolff1962philosophia' on page 27 undefined on input line 170.
+
+
+Package natbib Warning: Citation `gruber1993ontology' on page 27 undefined on input line 170.
+
+[27]
+
+Package natbib Warning: Citation `calvanese2005dl' on page 28 undefined on input line 174.
+
+<figuras/estrutura_ontologia.png, id=114, 357.4956pt x 296.7888pt>
+File: figuras/estrutura_ontologia.png Graphic file (type png)
+<use figuras/estrutura_ontologia.png>
+Package pdftex.def Info: figuras/estrutura_ontologia.png  used on input line 180.
+(pdftex.def)             Requested size: 250.24521pt x 207.75073pt.
+<figuras/exemplo_ontologia.png, id=115, 979.66pt x 683.55376pt>
+File: figuras/exemplo_ontologia.png Graphic file (type png)
+<use figuras/exemplo_ontologia.png>
+Package pdftex.def Info: figuras/exemplo_ontologia.png  used on input line 188.
+(pdftex.def)             Requested size: 440.84293pt x 307.59634pt.
+
+Package natbib Warning: Citation `ricci2011introduction' on page 28 undefined on input line 200.
+
+
+Package natbib Warning: Citation `mahmood2009improving' on page 28 undefined on input line 200.
+
+[28 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/estrutura_ontologia.png>]
+
+Package natbib Warning: Citation `allen2001econometric' on page 29 undefined on input line 204.
+
+
+Package natbib Warning: Citation `murthi2003role' on page 29 undefined on input line 204.
+
+
+Package natbib Warning: Citation `kwong1992dynamic' on page 29 undefined on input line 204.
+
+
+Package natbib Warning: Citation `resnick1997recommender' on page 29 undefined on input line 204.
+
+[29 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_ontologia.png>]
+\c@mydef=\count160
+
+
+Package natbib Warning: Citation `robillard2010recommendation' on page 30 undefined on input line 226.
+
+
+Package natbib Warning: Citation `robillard2010recommendation' on page 30 undefined on input line 226.
+
+
+Overfull \hbox (43.44154pt too wide) in paragraph at lines 225--227
+[]\OT1/cmr/bx/it/12 Collaborative Fil-te-ring\OT1/cmr/bx/n/12 : \OT1/cmr/m/n/12 A Fil-tra-gem Co-la-bo-ra-tiva baseia-se na ideia de "boca-a-boca"em
+ []
+
+[30]
+
+Package natbib Warning: Citation `robillard2010recommendation' on page 31 undefined on input line 229.
+
+
+Package natbib Warning: Citation `robillard2010recommendation' on page 31 undefined on input line 229.
+
+
+Package natbib Warning: Citation `jannach2010recommender' on page 31 undefined on input line 235.
+
+
+Package natbib Warning: Citation `rahman2013ide' on page 31 undefined on input line 239.
+
+
+Package natbib Warning: Citation `rahman2013ide' on page 31 undefined on input line 239.
+
+[31]
+
+Package natbib Warning: Citation `robillard2010recommendation' on page 32 undefined on input line 251.
+
+
+Package natbib Warning: Citation `robillard2010recommendation' on page 32 undefined on input line 253.
+
+[32]
+
+Package natbib Warning: Citation `robillard2010recommendation' on page 33 undefined on input line 266.
+
+
+Package natbib Warning: Citation `rahman2014towards' on page 33 undefined on input line 268.
+
+<figuras/rsse.png, id=136, 833.1125pt x 507.8975pt>
+File: figuras/rsse.png Graphic file (type png)
+<use figuras/rsse.png>
+Package pdftex.def Info: figuras/rsse.png  used on input line 272.
+(pdftex.def)             Requested size: 416.55524pt x 253.94814pt.
+
+Package natbib Warning: Citation `maki2016systematic' on page 33 undefined on input line 274.
+
+
+Package natbib Warning: Citation `maki2016systematic' on page 33 undefined on input line 274.
+
+
+Package natbib Warning: Citation `maki2016systematic' on page 33 undefined on input line 280.
+
+[33 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!htb') on input line 298.
+
+
+Package natbib Warning: Citation `maki2016systematic' on page 34 undefined on input line 300.
+
+
+Package natbib Warning: Citation `maki2016systematic' on page 34 undefined on input line 300.
+
+
+Overfull \hbox (37.84239pt too wide) in paragraph at lines 302--316
+ [][] 
+ []
+
+
+Package natbib Warning: Citation `garcia2008ontology' on page 34 undefined on input line 326.
+
+
+Package natbib Warning: Citation `scatalon2011packaging' on page 34 undefined on input line 326.
+
+
+Package natbib Warning: Citation `da2012foundational' on page 34 undefined on input line 326.
+
+
+Package natbib Warning: Citation `blondet2016ode' on page 34 undefined on input line 326.
+
+
+Package natbib Warning: Citation `soldatova2006ontology' on page 34 undefined on input line 326.
+
+
+Package natbib Warning: Citation `gelernter2016challenges' on page 34 undefined on input line 326.
+
+
+Package natbib Warning: Citation `cruzes2007extracting' on page 34 undefined on input line 326.
+
+[34]
+
+Package natbib Warning: Citation `garcia2008ontology' on page 35 undefined on input line 328.
+
+
+Package natbib Warning: Citation `scatalon2011packaging' on page 35 undefined on input line 328.
+
+
+Package natbib Warning: Citation `da2012foundational' on page 35 undefined on input line 328.
+
+
+Package natbib Warning: Citation `garcia2008ontology' on page 35 undefined on input line 328.
+
+
+Package natbib Warning: Citation `scatalon2011packaging' on page 35 undefined on input line 328.
+
+
+Package natbib Warning: Citation `garcia2008ontology' on page 35 undefined on input line 328.
+
+
+Package natbib Warning: Citation `da2012foundational' on page 35 undefined on input line 328.
+
+
+Package natbib Warning: Citation `blondet2016ode' on page 35 undefined on input line 330.
+
+
+Package natbib Warning: Citation `soldatova2006ontology' on page 35 undefined on input line 330.
+
+
+Package natbib Warning: Citation `blondet2016ode' on page 35 undefined on input line 330.
+
+
+Package natbib Warning: Citation `soldatova2006ontology' on page 35 undefined on input line 330.
+
+[35]
+
+Package natbib Warning: Citation `gelernter2016challenges' on page 36 undefined on input line 332.
+
+
+Package natbib Warning: Citation `cruzes2007extracting' on page 36 undefined on input line 334.
+
+) [36]
+\openout2 = `texto/_ontologia.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_ontologia.tex
+Cap\'{\i }tulo 3.
+
+Package natbib Warning: Citation `almeida2003visao' on page 37 undefined on input line 17.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!htb') on input line 19.
+
+
+Overfull \hbox (201.34377pt too wide) in paragraph at lines 22--33
+[][] 
+ []
+
+
+Package natbib Warning: Citation `fernanda2007modelagem' on page 37 undefined on input line 37.
+
+[37
+
+
+
+]
+<figuras/graph-all-class.pdf, id=154, 597.50786pt x 654.41339pt>
+File: figuras/graph-all-class.pdf Graphic file (type pdf)
+<use figuras/graph-all-class.pdf>
+Package pdftex.def Info: figuras/graph-all-class.pdf  used on input line 51.
+(pdftex.def)             Requested size: 312.9803pt x 342.78331pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!htb') on input line 58.
+
+
+LaTeX Warning: Float too large for page by 98.53354pt on input line 109.
+
+
+Package natbib Warning: Citation `Furtado2018' on page 38 undefined on input line 111.
+
+[38]
+
+Package natbib Warning: Citation `wohlin2012' on page 39 undefined on input line 113.
+
+<figuras/conceptual-model-clustering.pdf, id=158, 1330.9725pt x 2032.59375pt>
+File: figuras/conceptual-model-clustering.pdf Graphic file (type pdf)
+<use figuras/conceptual-model-clustering.pdf>
+Package pdftex.def Info: figuras/conceptual-model-clustering.pdf  used on input line 117.
+(pdftex.def)             Requested size: 266.18979pt x 406.51155pt.
+[39 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/graph-all-class.pdf>]
+<figuras/class-diagram-ontology.png, id=164, 2086.79625pt x 1045.9075pt>
+File: figuras/class-diagram-ontology.png Graphic file (type png)
+<use figuras/class-diagram-ontology.png>
+Package pdftex.def Info: figuras/class-diagram-ontology.png  used on input line 128.
+(pdftex.def)             Requested size: 417.35185pt x 209.1778pt.
+
+
+Package natbib Warning: Citation `DBLP:journals/aimatters/Musen15' on page 40 undefined on input line 135.
+
+[40 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/conceptual-model-clustering.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!htb') on input line 171.
+
+<figuras/entidades-protege.png, id=2037, 905.3825pt x 810.02625pt>
+File: figuras/entidades-protege.png Graphic file (type png)
+<use figuras/entidades-protege.png>
+Package pdftex.def Info: figuras/entidades-protege.png  used on input line 173.
+(pdftex.def)             Requested size: 271.61684pt x 243.00975pt.
+[41 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/class-diagram-ontology.png (PNG copy)>]
+<figuras/entidades-protege-object-properties.png, id=2041, 920.43875pt x 841.1425pt>
+File: figuras/entidades-protege-object-properties.png Graphic file (type png)
+<use figuras/entidades-protege-object-properties.png>
+Package pdftex.def Info: figuras/entidades-protege-object-properties.png  used on input line 183.
+(pdftex.def)             Requested size: 284.52756pt x 260.0199pt.
+<figuras/entidades-protege-data-properties.png, id=2042, 920.43875pt x 841.1425pt>
+File: figuras/entidades-protege-data-properties.png Graphic file (type png)
+<use figuras/entidades-protege-data-properties.png>
+Package pdftex.def Info: figuras/entidades-protege-data-properties.png  used on input line 193.
+(pdftex.def)             Requested size: 284.52756pt x 260.0199pt.
+
+
+Package natbib Warning: Citation `lohmann2016visualizing' on page 42 undefined on input line 200.
+
+[42 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege.png>]
+<figuras/ontology-populate-valid-owl-2.pdf, id=2047, 594.72188pt x 707.64375pt>
+File: figuras/ontology-populate-valid-owl-2.pdf Graphic file (type pdf)
+<use figuras/ontology-populate-valid-owl-2.pdf>
+Package pdftex.def Info: figuras/ontology-populate-valid-owl-2.pdf  used on input line 204.
+(pdftex.def)             Requested size: 284.52756pt x 338.54218pt.
+ [43 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-object-properties.png>]
+
+Package natbib Warning: Citation `PER-GRA:2007' on page 44 undefined on input line 218.
+
+
+Package natbib Warning: Citation `mckinney-proc-scipy-2010' on page 44 undefined on input line 220.
+
+[44 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-data-properties.png>] [45 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/ontology-populate-valid-owl-2.pdf>] [46] [47] [48]
+Overfull \hbox (86.26433pt too wide) in paragraph at lines 277--278
+\OT1/cmr/m/n/12 PLE[]RANDOM[]SAMPLING, SYS-TE-MA-TIC[]SAMPLING, STRA-TI-FIED[]RANDOM[]SAMPLING,
+ []
+
+
+Overfull \hbox (145.38028pt too wide) in paragraph at lines 279--280
+\OT1/cmr/m/n/12 [ONE[]FACTOR[]WITH[]TWO[]TREATMENTS, ONE[]FACTOR[]WITH[]MORE[]THAN[]TWO[]TREATMENTS,
+ []
+
+
+Overfull \hbox (200.03053pt too wide) in paragraph at lines 279--280
+\OT1/cmr/m/n/12 TWO[]FACTORS[]WITH[]TWO[]TREATMENTS, MORE[]THAN[]TWO[]FACTORS[]EACH[]WITH[]TWO[]TREATMENTS]
+ []
+
+[49] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) [50]
+Overfull \hbox (26.03435pt too wide) in paragraph at lines 321--322
+[]\OT1/cmr/m/n/12 O m^^Setodo re-gis-tre-Ex-pe-ri-ment-Com-mons re-cebe uma inst^ancia tanto de onto.ExperimentSPL
+ []
+
+
+Overfull \hbox (73.7532pt too wide) in paragraph at lines 323--324
+\OT1/cmr/m/n/12 ning-Com-mons e re-torna uma inst^ancia de in-div^^S^^Pduo da on-to-lo-gia da classe onto.ExperimentPlanningSPL. 
+ []
+
+
+Overfull \hbox (29.69531pt too wide) in paragraph at lines 325--326
+\OT1/cmr/m/n/12 Com-mons e re-torna uma inst^ancia de in-div^^S^^Pduo da on-to-lo-gia da classe onto.ExperimentPlanning. 
+ []
+
+
+Overfull \hbox (117.74452pt too wide) in paragraph at lines 327--328
+[]\OT1/cmr/m/n/12 O m^^Setodo re-gis-tre-Ex-pe-ri-ment-Plan-ning-Com-mons re-cebe uma inst^ancia tanto de onto.ExperimentPlanningSPL
+ []
+
+
+Overfull \hbox (13.37059pt too wide) in paragraph at lines 333--334
+[]\OT1/cmr/m/n/12 O m^^Setodo re-gis-tre-Dis-cus-si-on-Com-mons re-cebe uma inst^ancia tanto de onto.DiscussionSPL
+ []
+
+[51]
+
+LaTeX Warning: Reference `code:...' on page 52 undefined on input line 351.
+
+<figuras/filter-in-ontology-path.png, id=2084, 418.56375pt x 499.8675pt>
+File: figuras/filter-in-ontology-path.png Graphic file (type png)
+<use figuras/filter-in-ontology-path.png>
+Package pdftex.def Info: figuras/filter-in-ontology-path.png  used on input line 357.
+(pdftex.def)             Requested size: 184.9429pt x 220.86528pt.
+[52] [53 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/filter-in-ontology-path.png>] [54] [55] [56]) [57] [58] [59]
+\openout2 = `texto/_avalicao_da_ontologia.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_avalicao_da_ontologia.tex
+Cap\'{\i }tulo 4.
+) [60
+
+
+
+]
+\openout2 = `texto/_melhorias.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_melhorias.tex
+Cap\'{\i }tulo 5.
+) [61
+
+
+
+]
+\openout2 = `texto/_conclusao.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.tex
+Cap\'{\i }tulo 6.
+[62
+
+
+
+]) [63] (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.bbl (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/babelbst.tex)
+
+Package natbib Warning: Empty `thebibliography' environment on input line 12.
+
+) [64
+
+
+]
+\openout2 = `texto/apendice_a.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.tex
+Ap\^endice A.
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 4.
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 4.
+
+Overfull \hbox (38.42119pt too wide) in paragraph at lines 4--4
+ |[]\OT1/cmss/bx/it/17.28 Sa^^S^^Pda Da Op^^Xc~ao time-flags com os Bre-ak-points \OT1/cmtt/m/n/17.28 .dijkstra
+ []
+
+) [65
+
+
+]
+\openout2 = `texto/apendice_b.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.tex
+Ap\^endice B.
+) [66
+
+
+
+]
+\openout2 = `texto/apendice_c.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.tex
+Ap\^endice C.
+) [67
+
+
+
+]
+\openout2 = `texto/apendice_d.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.tex
+Ap\^endice D.
+) [68
+
+
+
+]
+
+Package natbib Warning: There were undefined citations.
+
+(/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.aux (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_agradecimentos.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_resumo.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abstract.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abreviaturas.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_introducao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_fundamentacao_teorica.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_ontologia.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_avalicao_da_ontologia.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_melhorias.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 347 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 9200 strings out of 492982
+ 135660 string characters out of 6134896
+ 254502 words of memory out of 5000000
+ 12385 multiletter control sequences out of 15000+600000
+ 21164 words of font info for 80 fonts, out of 8000000 for 9000
+ 1147 hyphenation exceptions out of 8191
+ 42i,17n,76p,2815b,1430s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.pdf (69 pages, 3558410 bytes).
+PDF statistics:
+ 2198 PDF objects out of 2487 (max. 8388607)
+ 1452 compressed objects within 15 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+
