@@ -1,0 +1,34 @@
+\chapter{Revisão de literatura}
+\label{sec:revisao}
+
+
+Neste tópico é feita a revisão de alguns conceitos sobre ...
+
+
+\section{Conceitos básicos}
+\label{sec:conc_basicos}
+
+Em um problema...
+
+\subsection{\textit{Iterated Local Search}}
+
+A metaheurística \textit{Iterated Local Search - ILS} ...
+
+O algoritmo \ref{alg:ILS_framework} esboça um pseudocódigo do método \textit{ILS}.
+
+%Modelo de algoritmo usando clrscode3e.sty do Cormen
+\begin{algorithm}
+	\caption{\textit{Framework} da metaheurística \textit{ILS}}
+	\label{alg:ILS_framework}
+	\begin{codebox}
+		\Procname{$\proc{Iterated-Local-Search}()$}
+			\li $\id{Z_0} \gets \proc{Generate-Initial-Solution}()$
+			\li $\id{Z^*} \gets \proc{Local-Search}(Z_0)$	
+			\li \Repeat
+				\li $\id{Z^\prime} \gets \proc{Perturbation}(Z^*)$
+				\li $\id{Z^{*\prime}} \gets \proc{Local-Search}(Z^\prime)$
+				\li $\id{Z^*} \gets \proc{Acceptance-Criterion}(Z^*,Z^{*\prime})$
+			\li \Until ($stop~criterion~met$)
+			\li \Return $Z^*$
+\end{codebox}
+\end{algorithm}
