@@ -1,24 +1,25 @@
 \babel@toc {brazil}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 1.1}{\ignorespaces Etapas da Metodologia de Desenvolvimento de Pesquisa}}{16}
-\contentsline {figure}{\numberline {Figura - 1.2}{\ignorespaces Modelagem geral da RSSE proposta}}{17}
+\contentsline {figure}{\numberline {Figura - 1.1}{\ignorespaces Etapas da Metodologia de Desenvolvimento de Pesquisa}}{17}
+\contentsline {figure}{\numberline {Figura - 1.2}{\ignorespaces Modelagem geral da RSSE proposta}}{18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 2.1}{\ignorespaces Um modelo de Caracter\'{\i }sticas. Traduzido de \citet {sommerville2011software} }}{20}
-\contentsline {figure}{\numberline {Figura - 2.2}{\ignorespaces \textit {Framework} de Engenharia de LPS (Pohl et al., 2005). Traduzido por Geraldi (2015) }}{22}
-\contentsline {figure}{\numberline {Figura - 2.3}{\ignorespaces Conceitos Essenciais de um Experimento. Traduzido de \citet {wohlin2012experimentation} }}{23}
-\contentsline {figure}{\numberline {Figura - 2.4}{\ignorespaces Vis\~ao Geral do Processo Experimental. Traduzido de \citet {wohlin2012experimentation}}}{25}
-\contentsline {figure}{\numberline {Figura - 2.5}{\ignorespaces Estrutura de uma Ontologia. Autor}}{28}
-\contentsline {figure}{\numberline {Figura - 2.6}{\ignorespaces Exemplo de uma Ontologia para o dom\'{\i }nio: Destino de Viagem. Autor}}{29}
-\contentsline {figure}{\numberline {Figura - 2.7}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{33}
+\contentsline {figure}{\numberline {Figura - 2.1}{\ignorespaces Um modelo de Caracter\'{\i }sticas. Traduzido de \citet {sommerville2011software} }}{21}
+\contentsline {figure}{\numberline {Figura - 2.2}{\ignorespaces \textit {Framework} de Engenharia de LPS (Pohl et al., 2005). Traduzido por Geraldi (2015) }}{23}
+\contentsline {figure}{\numberline {Figura - 2.3}{\ignorespaces Conceitos Essenciais de um Experimento. Traduzido de \citet {wohlin2012experimentation} }}{24}
+\contentsline {figure}{\numberline {Figura - 2.4}{\ignorespaces Vis\~ao Geral do Processo Experimental. Traduzido de \citet {wohlin2012experimentation}}}{26}
+\contentsline {figure}{\numberline {Figura - 2.5}{\ignorespaces Estrutura de uma Ontologia. Autor}}{29}
+\contentsline {figure}{\numberline {Figura - 2.6}{\ignorespaces Exemplo de uma Ontologia para o dom\'{\i }nio: Destino de Viagem. Autor}}{30}
+\contentsline {figure}{\numberline {Figura - 2.7}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 3.1}{\ignorespaces Initial graph of ontology.}}{39}
-\contentsline {figure}{\numberline {Figura - 3.2}{\ignorespaces Conceptual Model Clustering.}}{40}
-\contentsline {figure}{\numberline {Figura - 3.3}{\ignorespaces Class Diagram for proposal of the ontology model.}}{41}
-\contentsline {figure}{\numberline {Figura - 3.4}{\ignorespaces Defini\c c\~ao da classe Experiment no Prot\'eg\'e.}}{42}
-\contentsline {figure}{\numberline {Figura - 3.5}{\ignorespaces Defini\c c\~ao da propriedade de objeto documentation no Prot\'eg\'e.}}{43}
-\contentsline {figure}{\numberline {Figura - 3.6}{\ignorespaces Defini\c c\~ao da propriedade de dado nameSPLUsed no Prot\'eg\'e.}}{44}
-\contentsline {figure}{\numberline {Figura - 3.7}{\ignorespaces Grafo da modelagem da ontologia - gerado pelo WbVOWL.}}{45}
-\contentsline {figure}{\numberline {Figura - 3.8}{\ignorespaces Graph Path to Recommendation Example.}}{53}
+\contentsline {figure}{\numberline {Figura - 3.1}{\ignorespaces Initial graph of ontology.}}{40}
+\contentsline {figure}{\numberline {Figura - 3.2}{\ignorespaces Conceptual Model Clustering.}}{41}
+\contentsline {figure}{\numberline {Figura - 3.3}{\ignorespaces Class Diagram for proposal of the ontology model.}}{42}
+\contentsline {figure}{\numberline {Figura - 3.4}{\ignorespaces Defini\c c\~ao da classe Experiment no Prot\'eg\'e.}}{43}
+\contentsline {figure}{\numberline {Figura - 3.5}{\ignorespaces Defini\c c\~ao da propriedade de objeto documentation no Prot\'eg\'e.}}{44}
+\contentsline {figure}{\numberline {Figura - 3.6}{\ignorespaces Defini\c c\~ao da propriedade de dado nameSPLUsed no Prot\'eg\'e.}}{45}
+\contentsline {figure}{\numberline {Figura - 3.7}{\ignorespaces Grafo da modelagem da ontologia - gerado pelo WbVOWL.}}{46}
+\contentsline {figure}{\numberline {Figura - 3.8}{\ignorespaces Graph Path to Recommendation Example.}}{54}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

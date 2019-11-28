@@ -140,7 +140,7 @@ Posteriormente, definimos usar a ferramenta Protégé para a construção oficial da
 
 Definimos a criação da ontologia usando OWL construindo as classes e subclasses para representar os elementos da ontologia.
 
-\subsection{Protegé}
+\subsection{Modelagem com Protegé}
 \label{sec:protege}
 
 O padrão OWL foi usado no SMartyOntology para definir todos os elementos, classes e subclasses.
@@ -206,7 +206,7 @@ Ao final, o Protégé gera um arquivo .owl contendo a definição do modelo. A \ref{
 	\label{figure:graph_ontology_model}
 \end{figure}
 
-\subsection{Pyton}
+\subsection{Povoamento com Pyton}
 \label{sec:python}
 
 A próxima etapa, após a modelagem da ontologia, foi inserir os indivíduos na mesma, ou seja, popular a ontologia para realização de inferências futuras. Apesar do Protégé ter capacidade para realizar essa operação, optamos por utilizar um script para realizar tal tarefa, visto que, no Protégé o processo de inserir indivíduos na ontologia é realizado de modo manual, por meio do menu ?Individuals by Class?, onde é preciso selecionar propriedade por propriedade para cada indivíduo. Sabendo que para cada indivíduo temos 84 propriedades de dados mais 8 propriedade de objetos, somando um total de 92 relacionamentos para cada indivíduo. Portanto, sabendo que temos 174 indivíduos a serem inseridos em uma carga inicial, seriam mais de 16000 iterações manuais no Protégé.

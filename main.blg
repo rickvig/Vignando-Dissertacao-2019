@@ -9,6 +9,7 @@ A level-1 auxiliary file: texto/_introducao.aux
 A level-1 auxiliary file: texto/_fundamentacao_teorica.aux
 A level-1 auxiliary file: texto/_ontologia.aux
 A level-1 auxiliary file: texto/_avalicao_da_ontologia.aux
+A level-1 auxiliary file: texto/_recsys.aux
 A level-1 auxiliary file: texto/_melhorias.aux
 A level-1 auxiliary file: texto/_conclusao.aux
 The style file: icmc2.bst
@@ -61,7 +62,7 @@ Warning--I didn't find a database entry for "PER-GRA:2007"
 Warning--I didn't find a database entry for "mckinney-proc-scipy-2010"
 You've used 0 entries,
             2729 wiz_defined-function locations,
-            675 strings with 6481 characters,
+            676 strings with 6498 characters,
 and the built_in function-call counts, 39 in all, are:
 = -- 0
 > -- 0
