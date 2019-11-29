@@ -1,4 +1,4 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{40}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -8,5 +8,352 @@
 \input babelbst.tex
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{Allen e Fildes(2001)}]{allen2001econometric}
+
+\bibbhook\relax
+\textsc{Allen, P.~G.; Fildes, R.}\ \ \  Econometric forecasting.\ \ \
+  \capitalize\bblin{}: \textit{Principles of forecasting}, Springer, \bblpp{}
+  303--362, 2001.
+\bibehook\relax
+
+\bibitem[{Almeida e Bax(2003)}]{almeida2003visao}
+
+\bibbhook\relax
+\textsc{Almeida, M.~B.; Bax, M.~P.}\ \ \  Uma vis{\~a}o geral sobre ontologias:
+  pesquisa sobre defini{\c{c}}{\~o}es, tipos, aplica{\c{c}}{\~o}es, m{\'e}todos
+  de avalia{\c{c}}{\~a}o e de constru{\c{c}}{\~a}o.\ \ \ \textit{Ci{\^e}ncia da
+  informa{\c{c}}{\~a}o}, \bblvol{}~32, \bblno{}~3, \bblpp{}~7--20, 2003.
+\bibehook\relax
+
+\bibitem[{Apel(2013)}]{apel2013analytic}
+
+\bibbhook\relax
+\textsc{Apel, K.-O.}\ \ \  \emph{Analytic philosophy of language and the
+  geisteswissenschaften}.\ \ \ Springer, 2013.
+\bibehook\relax
+
+\bibitem[{Blondet \bbletal{}(2016)Blondet, Le~Duigou e
+  Boudaoud}]{blondet2016ode}
+
+\bibbhook\relax
+\textsc{Blondet, G.; Le~Duigou, J.; Boudaoud, N.}\ \ \  Ode: an ontology for
+  numerical design of experiments.\ \ \ \textit{Procedia CIRP}, \bblvol{}~50,
+  \bblpp{}~496--501, 2016.
+\bibehook\relax
+
+\bibitem[{Calvanese \bbletal{}(2005)Calvanese, De~Giacomo, Lembo, Lenzerini e
+  Rosati}]{calvanese2005dl}
+
+\bibbhook\relax
+\textsc{Calvanese, D.; De~Giacomo, G.; Lembo, D.; Lenzerini, M.; Rosati, R.}\ \
+  \  Dl-lite: Tractable description logics for ontologies.\ \ \
+  \capitalize\bblin{}: \textit{AAAI}, 2005, \bblpp{} 602--607.
+\bibehook\relax
+
+\bibitem[{da~Cruz \bbletal{}(2012)da~Cruz, Campos e
+  Mattoso}]{da2012foundational}
+
+\bibbhook\relax
+\textsc{da~Cruz, S. M.~S.; Campos, M. L.~M.; Mattoso, M.}\ \ \  A foundational
+  ontology to support scientific experiments.\ \ \ \capitalize\bblin{}:
+  \textit{ONTOBRAS-MOST}, ACM: USA, 2012, \bblpp{} 144--155.
+\bibehook\relax
+
+\bibitem[{Cruzes \bbletal{}(2007)Cruzes, Mendonca, Basili, Shull e
+  Jino}]{cruzes2007extracting}
+
+\bibbhook\relax
+\textsc{Cruzes, D.; Mendonca, M.; Basili, V.; Shull, F.; Jino, M.}\ \ \
+  Extracting information from experimental software engineering papers.\ \ \
+  \capitalize\bblin{}: \textit{XXVI International Conference of the Chilean
+  Society of Computer Science (SCCC'07)}, USA: IEEE, 2007, \bblpp{} 105--114.
+\bibehook\relax
+
+\bibitem[{Dieste e Juristo(2011)}]{dieste2011systematic}
+
+\bibbhook\relax
+\textsc{Dieste, O.; Juristo, N.}\ \ \  Systematic review and aggregation of
+  empirical studies on elicitation techniques.\ \ \ \textit{IEEE Transactions
+  on Software Engineering}, \bblvol{}~37, \bblno{}~2, \bblpp{}~283--304, 2011.
+\bibehook\relax
+
+\bibitem[{Dieste e Juristo(2013)}]{dieste2013challenges}
+
+\bibbhook\relax
+\textsc{Dieste, O.; Juristo, N.}\ \ \  Challenges of evaluating the quality of
+  software engineering experiments.\ \ \ \capitalize\bblin{}:
+  \textit{Perspectives on the Future of Software Engineering}, Springer,
+  \bblpp{} 159--177, 2013.
+\bibehook\relax
+
+\bibitem[{Fernanda(2007)}]{fernanda2007modelagem}
+
+\bibbhook\relax
+\textsc{Fernanda, M.}\ \ \  Modelagem conceitual: a constru{\c{c}}{\~a}o de uma
+  ontologia sobre avalia{\c{c}}{\~a}o do ciclo de vida (acv) para fomentar a
+  dissemina{\c{c}}{\~a}o de seus conceitos.\ \ \ 2007.
+\bibehook\relax
+
+\bibitem[{Furtado(2018)}]{Furtado2018}
+
+\bibbhook\relax
+\textsc{Furtado, V.~R.}\ \ \  \emph{Guidelines for software product line
+  experiment evaluation}.\ \ \ \bblmthesis{}, State University of Maringá,
+  Maringá-PR. Brazil, in Portuguese, 2018.
+\bibehook\relax
+
+\bibitem[{Garcia \bbletal{}(2008)Garcia, H{\"o}hn, Barbosa e
+  Maldonado}]{garcia2008ontology}
+
+\bibbhook\relax
+\textsc{Garcia, R.~E.; H{\"o}hn, E.~N.; Barbosa, E.~F.; Maldonado, J.~C.}\ \ \
+  An ontology for controlled experiments on software engineering.\ \ \
+  \capitalize\bblin{}: \textit{SEKE}, USA: ACM, 2008, \bblpp{} 685--690.
+\bibehook\relax
+
+\bibitem[{Gelernter e Jha(2016)}]{gelernter2016challenges}
+
+\bibbhook\relax
+\textsc{Gelernter, J.; Jha, J.}\ \ \  Challenges in ontology evaluation.\ \ \
+  \textit{Journal of Data and Information Quality (JDIQ)}, \bblvol{}~7,
+  \bblno{}~3, \bblp{}~11, 2016.
+\bibehook\relax
+
+\bibitem[{Gruber(1993)}]{gruber1993ontology}
+
+\bibbhook\relax
+\textsc{Gruber, T.}\ \ \  What is an ontology.\ \ \ \textit{WWW Site
+  http://www-ksl. stanford. edu/kst/whatis-an-ontology. html (accessed on
+  07-09-2004)}, 1993.
+\bibehook\relax
+
+\bibitem[{Halmans e Pohl(2003)}]{halmans2003communicating}
+
+\bibbhook\relax
+\textsc{Halmans, G.; Pohl, K.}\ \ \  Communicating the variability of a
+  software-product family to customers.\ \ \ \textit{Software and Systems
+  Modeling}, \bblvol{}~2, \bblno{}~1, \bblpp{}~15--36, 2003.
+\bibehook\relax
+
+\bibitem[{Kampenes(2007)}]{kampenes2007quality}
+
+\bibbhook\relax
+\textsc{Kampenes, V.}\ \ \  Quality of design, analysis and reporting of
+  software engineering experiments: A systematic review.\ \ \ 2007.
+\bibehook\relax
+
+\bibitem[{Kitchenham \bbletal{}(2007)Kitchenham, Budgen, Brereton, Turner,
+  Charters e Linkman}]{kitchenham2007large}
+
+\bibbhook\relax
+\textsc{Kitchenham, B.; Budgen, D.; Brereton, P.; Turner, M.; Charters, S.;
+  Linkman, S.}\ \ \  Large-scale software engineering questions--expert opinion
+  or empirical evidence?\ \ \ \textit{IET software}, \bblvol{}~1, \bblno{}~5,
+  \bblpp{}~161--171, 2007.
+\bibehook\relax
+
+\bibitem[{Kitchenham \bbletal{}(2015)Kitchenham, Budgen e
+  Brereton}]{kitchenham2015evidence}
+
+\bibbhook\relax
+\textsc{Kitchenham, B.~A.; Budgen, D.; Brereton, P.}\ \ \  \emph{Evidence-based
+  software engineering and systematic reviews}, \bblvol{}~4.\ \ \ CRC Press,
+  2015.
+\bibehook\relax
+
+\bibitem[{Kwong \bbletal{}(1992)Kwong, Belliveau, Chesler, Goldberg, Weisskoff,
+  Poncelet, Kennedy, Hoppel, Cohen e Turner}]{kwong1992dynamic}
+
+\bibbhook\relax
+\textsc{Kwong, K.~K.; Belliveau, J.~W.; Chesler, D.~A.; Goldberg, I.~E.;
+  Weisskoff, R.~M.; Poncelet, B.~P.; Kennedy, D.~N.; Hoppel, B.~E.; Cohen,
+  M.~S.; Turner, R.}\ \ \  Dynamic magnetic resonance imaging of human brain
+  activity during primary sensory stimulation.\ \ \ \textit{Proceedings of the
+  National Academy of Sciences}, \bblvol{}~89, \bblno{}~12,
+  \bblpp{}~5675--5679, 1992.
+\bibehook\relax
+
+\bibitem[{Van~der Linden \bbletal{}(2007)Van~der Linden, Schmid e
+  Rommes}]{van2007product}
+
+\bibbhook\relax
+\textsc{Van~der Linden, F.; Schmid, K.; Rommes, E.}\ \ \  The product line
+  engineering approach.\ \ \ \capitalize\bblin{}: \textit{Software Product
+  Lines in Action}, Springer, \bblpp{} 3--20, 2007.
+\bibehook\relax
+
+\bibitem[{Lohmann \bbletal{}(2016)Lohmann, Negru, Haag e
+  Ertl}]{lohmann2016visualizing}
+
+\bibbhook\relax
+\textsc{Lohmann, S.; Negru, S.; Haag, F.; Ertl, T.}\ \ \  Visualizing
+  ontologies with vowl.\ \ \ \textit{Semantic Web}, \bblvol{}~7, \bblno{}~4,
+  \bblpp{}~399--419, 2016.
+\bibehook\relax
+
+\bibitem[{Mahmood e Ricci(2009)}]{mahmood2009improving}
+
+\bibbhook\relax
+\textsc{Mahmood, T.; Ricci, F.}\ \ \  Improving recommender systems with
+  adaptive conversational strategies.\ \ \ \capitalize\bblin{}:
+  \textit{Proceedings of the 20th ACM conference on Hypertext and hypermedia},
+  ACM, 2009, \bblpp{} 73--82.
+\bibehook\relax
+
+\bibitem[{Maki(2016)}]{maki2016systematic}
+
+\bibbhook\relax
+\textsc{Maki, S.}\ \ \  \emph{Systematic review of recommendation systems in
+  software engineering}.\ \ \ \bblphdthesis{}, {\'E}cole de technologie
+  sup{\'e}rieure, 2016.
+\bibehook\relax
+
+\bibitem[{McKinney(2010)}]{mckinney-proc-scipy-2010}
+
+\bibbhook\relax
+\textsc{McKinney, W.}\ \ \  Data structures for statistical computing in
+  python.\ \ \ \capitalize\bblin{}: \textit{Proceedings of the 9th Python in
+  Science Conference}, USA, 2010, \bblpp{} 51 -- 56.
+\bibehook\relax
+
+\bibitem[{Murthi e Sarkar(2003)}]{murthi2003role}
+
+\bibbhook\relax
+\textsc{Murthi, B.; Sarkar, S.}\ \ \  The role of the management sciences in
+  research on personalization.\ \ \ \textit{Management Science}, \bblvol{}~49,
+  \bblno{}~10, \bblpp{}~1344--1362, 2003.
+\bibehook\relax
+
+\bibitem[{Musen(2015)}]{DBLP:journals/aimatters/Musen15}
+
+\bibbhook\relax
+\textsc{Musen, M.~A.}\ \ \  The prot{\'{e}}g{\'{e}} project: a look back and a
+  look forward.\ \ \ \textit{{AI} Matters}, \bblvol{}~1, \bblno{}~4,
+  \bblpp{}~4--12, 2015.
+\newline Disponível em \url{https://doi.org/10.1145/2757001.2757003}
+\bibehook\relax
+
+\bibitem[{Northrop \bbletal{}(2007)Northrop, Clements, Bachmann, Bergey,
+  Chastek, Cohen, Donohoe, Jones, Krut, Little
+  \bbletal{}}]{northrop2007framework}
+
+\bibbhook\relax
+\textsc{Northrop, L.; Clements, P.; Bachmann, F.; Bergey, J.; Chastek, G.;
+  Cohen, S.; Donohoe, P.; Jones, L.; Krut, R.; Little, R.; \bbletal{}}\ \ \  A
+  framework for software product line practice, version 5.0.\ \ \
+  \textit{SEI.--2007--http://www. sei. cmu. edu/productlines/index. html},
+  2007.
+\bibehook\relax
+
+\bibitem[{P\'erez e Granger(2007)}]{PER-GRA:2007}
+
+\bibbhook\relax
+\textsc{P\'erez, F.; Granger, B.~E.}\ \ \  {IP}ython: a system for interactive
+  scientific computing.\ \ \ \textit{Computing in Science and Engineering},
+  \bblvol{}~9, \bblno{}~3, \bblpp{}~21--29, 2007.
+\newline Disponível em \url{https://ipython.org}
+\bibehook\relax
+
+\bibitem[{Pohl \bbletal{}(2005)Pohl, B{\"o}ckle e van
+  Der~Linden}]{pohl2005software}
+
+\bibbhook\relax
+\textsc{Pohl, K.; B{\"o}ckle, G.; van Der~Linden, F.~J.}\ \ \  \emph{Software
+  product line engineering: foundations, principles and techniques}.\ \ \
+  Springer Science \& Business Media, 2005.
+\bibehook\relax
+
+\bibitem[{Rahman \bbletal{}(2014)Rahman, Yeasmin e Roy}]{rahman2014towards}
+
+\bibbhook\relax
+\textsc{Rahman, M.~M.; Yeasmin, S.; Roy, C.~K.}\ \ \  Towards a context-aware
+  ide-based meta search engine for recommendation about programming errors and
+  exceptions.\ \ \ \capitalize\bblin{}: \textit{Software Maintenance,
+  Reengineering and Reverse Engineering (CSMR-WCRE), 2014 Software Evolution
+  Week-IEEE Conference on}, IEEE, 2014, \bblpp{} 194--203.
+\bibehook\relax
+
+\bibitem[{Resnick e Varian(1997)}]{resnick1997recommender}
+
+\bibbhook\relax
+\textsc{Resnick, P.; Varian, H.~R.}\ \ \  Recommender systems.\ \ \
+  \textit{Communications of the ACM}, \bblvol{}~40, \bblno{}~3,
+  \bblpp{}~56--58, 1997.
+\bibehook\relax
+
+\bibitem[{Ricci \bbletal{}(2011)Ricci, Rokach e
+  Shapira}]{ricci2011introduction}
+
+\bibbhook\relax
+\textsc{Ricci, F.; Rokach, L.; Shapira, B.}\ \ \  Introduction to recommender
+  systems handbook.\ \ \ \capitalize\bblin{}: \textit{Recommender systems
+  handbook}, Springer, \bblpp{} 1--35, 2011.
+\bibehook\relax
+
+\bibitem[{Robillard \bbletal{}(2010)Robillard, Walker e
+  Zimmermann}]{robillard2010recommendation}
+
+\bibbhook\relax
+\textsc{Robillard, M.; Walker, R.; Zimmermann, T.}\ \ \  Recommendation systems
+  for software engineering.\ \ \ \textit{IEEE software}, \bblvol{}~27,
+  \bblno{}~4, \bblpp{}~80--86, 2010.
+\bibehook\relax
+
+\bibitem[{Scatalon \bbletal{}(2011)Scatalon, Garcia e
+  Correia}]{scatalon2011packaging}
+
+\bibbhook\relax
+\textsc{Scatalon, L.~P.; Garcia, R.~E.; Correia, R. C.~M.}\ \ \  Packaging
+  controlled experiments using an evolutionary approach based on ontology (s).\
+  \ \ \capitalize\bblin{}: \textit{SEKE}, 2011, \bblpp{} 408--413.
+\bibehook\relax
+
+\bibitem[{Soldatova e King(2006)}]{soldatova2006ontology}
+
+\bibbhook\relax
+\textsc{Soldatova, L.~N.; King, R.~D.}\ \ \  An ontology of scientific
+  experiments.\ \ \ \textit{Journal of the Royal Society Interface},
+  \bblvol{}~3, \bblno{}~11, \bblpp{}~795--803, 2006.
+\bibehook\relax
+
+\bibitem[{Sommerville(2011)}]{sommerville2011software}
+
+\bibbhook\relax
+\textsc{Sommerville, I.}\ \ \  Software engineering, boston, massachusetts:
+  Pearson education.\ \ \ 2011.
+\bibehook\relax
+
+\bibitem[{Teixeira(2014)}]{teixeira2014analise}
+
+\bibbhook\relax
+\textsc{Teixeira, E.~O.}\ \ \  An{\'a}lise da qualidade de experimentos
+  controlados no contexto da engenharia de software emp{\'\i}rica.\ \ \ 2014.
+\bibehook\relax
+
+\bibitem[{Wohlin \bbletal{}(2012{\natexlab{a}})Wohlin, Runeson, H{\"o}st,
+  Ohlsson, Regnell e Wessl{\'e}n}]{wohlin2012experimentation}
+
+\bibbhook\relax
+\textsc{Wohlin, C.; Runeson, P.; H{\"o}st, M.; Ohlsson, M.~C.; Regnell, B.;
+  Wessl{\'e}n, A.}\ \ \  \emph{Experimentation in software engineering}.\ \ \
+  Springer Science \& Business Media, 2012{\natexlab{a}}.
+\bibehook\relax
+
+\bibitem[{Wohlin \bbletal{}(2012{\natexlab{b}})Wohlin, Runeson, H\"{o}st,
+  Ohlsson, Regnell e Wessl{\'e}n}]{wohlin2012}
+
+\bibbhook\relax
+\textsc{Wohlin, C.; Runeson, P.; H\"{o}st, M.; Ohlsson, M.~C.; Regnell, B.;
+  Wessl{\'e}n, A.}\ \ \  \emph{{Experimentation in Software Engineering}}.\ \ \
+  Springer Science \& Business Media, 2012{\natexlab{b}}.
+\bibehook\relax
+
+\bibitem[{Wolff e {\'E}cole(1962)}]{wolff1962philosophia}
+
+\bibbhook\relax
+\textsc{Wolff, C.; {\'E}cole, J.}\ \ \  Philosophia prima sive ontologia.\ \ \
+  1962.
+\bibehook\relax
 
 \end{thebibliography}

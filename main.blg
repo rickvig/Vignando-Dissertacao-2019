@@ -17,85 +17,51 @@ A level-1 auxiliary file: texto/apendice_b.aux
 A level-1 auxiliary file: texto/apendice_c.aux
 A level-1 auxiliary file: texto/apendice_d.aux
 Database file #1: texto/RevisaoLiteratura.bib
-Warning--I didn't find a database entry for "sommerville2011software"
-Warning--I didn't find a database entry for "wohlin2012experimentation"
-Warning--I didn't find a database entry for "maki2016systematic"
-Warning--I didn't find a database entry for "kitchenham2007large"
-Warning--I didn't find a database entry for "robillard2010recommendation"
-Warning--I didn't find a database entry for "northrop2007framework"
-Warning--I didn't find a database entry for "van2007product"
-Warning--I didn't find a database entry for "apel2013analytic"
-Warning--I didn't find a database entry for "halmans2003communicating"
-Warning--I didn't find a database entry for "pohl2005software"
-Warning--I didn't find a database entry for "kitchenham2015evidence"
-Warning--I didn't find a database entry for "dieste2013challenges"
-Warning--I didn't find a database entry for "dieste2011systematic"
-Warning--I didn't find a database entry for "teixeira2014analise"
-Warning--I didn't find a database entry for "kampenes2007quality"
-Warning--I didn't find a database entry for "wolff1962philosophia"
-Warning--I didn't find a database entry for "gruber1993ontology"
-Warning--I didn't find a database entry for "calvanese2005dl"
-Warning--I didn't find a database entry for "ricci2011introduction"
-Warning--I didn't find a database entry for "mahmood2009improving"
-Warning--I didn't find a database entry for "allen2001econometric"
-Warning--I didn't find a database entry for "murthi2003role"
-Warning--I didn't find a database entry for "kwong1992dynamic"
-Warning--I didn't find a database entry for "resnick1997recommender"
-Warning--I didn't find a database entry for "rahman2014towards"
-Warning--I didn't find a database entry for "garcia2008ontology"
-Warning--I didn't find a database entry for "scatalon2011packaging"
-Warning--I didn't find a database entry for "da2012foundational"
-Warning--I didn't find a database entry for "blondet2016ode"
-Warning--I didn't find a database entry for "soldatova2006ontology"
-Warning--I didn't find a database entry for "gelernter2016challenges"
-Warning--I didn't find a database entry for "cruzes2007extracting"
-Warning--I didn't find a database entry for "almeida2003visao"
-Warning--I didn't find a database entry for "fernanda2007modelagem"
-Warning--I didn't find a database entry for "Furtado2018"
-Warning--I didn't find a database entry for "wohlin2012"
-Warning--I didn't find a database entry for "DBLP:journals/aimatters/Musen15"
-Warning--I didn't find a database entry for "lohmann2016visualizing"
-Warning--I didn't find a database entry for "PER-GRA:2007"
-Warning--I didn't find a database entry for "mckinney-proc-scipy-2010"
-You've used 0 entries,
+Warning--empty journal in fernanda2007modelagem
+Warning--empty journal in kampenes2007quality
+Warning--Last access date missing in DBLP:journals/aimatters/Musen15
+Warning--Last access date missing in PER-GRA:2007
+Warning--empty journal in teixeira2014analise
+Warning--empty journal in wolff1962philosophia
+You've used 40 entries,
             2729 wiz_defined-function locations,
-            673 strings with 6443 characters,
-and the built_in function-call counts, 39 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 8
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
-int.to.chr$ -- 1
+            857 strings with 12860 characters,
+and the built_in function-call counts, 22492 in all, are:
+= -- 2090
+> -- 1024
+< -- 48
++ -- 409
+- -- 354
+* -- 1979
+:= -- 3713
+add.period$ -- 80
+call.type$ -- 40
+change.case$ -- 318
+chr.to.int$ -- 39
+cite$ -- 46
+duplicate$ -- 1081
+empty$ -- 1645
+format.name$ -- 478
+if$ -- 4596
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 12
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 50
+newline$ -- 254
+num.names$ -- 160
+pop$ -- 363
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 277
 quote$ -- 0
-skip$ -- 1
+skip$ -- 823
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 1186
+swap$ -- 333
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 345
+warning$ -- 6
+while$ -- 196
 width$ -- 0
-write$ -- 11
-(There were 40 warnings)
+write$ -- 529
+(There were 6 warnings)
