@@ -10,7 +10,6 @@ A level-1 auxiliary file: texto/_fundamentacao_teorica.aux
 A level-1 auxiliary file: texto/_ontologia.aux
 A level-1 auxiliary file: texto/_avalicao_da_ontologia.aux
 A level-1 auxiliary file: texto/_recsys.aux
-A level-1 auxiliary file: texto/_melhorias.aux
 A level-1 auxiliary file: texto/_conclusao.aux
 The style file: icmc2.bst
 A level-1 auxiliary file: texto/apendice_a.aux
@@ -42,8 +41,6 @@ Warning--I didn't find a database entry for "allen2001econometric"
 Warning--I didn't find a database entry for "murthi2003role"
 Warning--I didn't find a database entry for "kwong1992dynamic"
 Warning--I didn't find a database entry for "resnick1997recommender"
-Warning--I didn't find a database entry for "jannach2010recommender"
-Warning--I didn't find a database entry for "rahman2013ide"
 Warning--I didn't find a database entry for "rahman2014towards"
 Warning--I didn't find a database entry for "garcia2008ontology"
 Warning--I didn't find a database entry for "scatalon2011packaging"
@@ -62,7 +59,7 @@ Warning--I didn't find a database entry for "PER-GRA:2007"
 Warning--I didn't find a database entry for "mckinney-proc-scipy-2010"
 You've used 0 entries,
             2729 wiz_defined-function locations,
-            676 strings with 6498 characters,
+            673 strings with 6443 characters,
 and the built_in function-call counts, 39 in all, are:
 = -- 0
 > -- 0
@@ -101,4 +98,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 11
-(There were 42 warnings)
+(There were 40 warnings)
