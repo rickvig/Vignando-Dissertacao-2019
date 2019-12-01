@@ -7,7 +7,7 @@
 \label{sec:fundamentos_concidaracoes_iniciais}
 
 
-Este capítulo apresenta conceitos importantes sobre a fundamentação teórica, necessárias para a compreensão desta pesquisa como LPS, experimento e \textit{quasi}-experimento em ES, qualidade de experimentos e \textit{quasi}-experimento em ES, ontologia, sistemas de recomendação e trabalhos relacionados. Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:linha_de_produto_software} apresenta os principais pontos de LPS e variabilidades; na Seção \ref{sec:experimentos_em_engenharia_de_software} é apresentado uma visão geral de experimento e \textit{quasi}-experimento em ES; na Seção \ref{sec:qualidade_de_experimento_em_engenharia_de_software} são apresentados infromações preliminares sobre qualidade de experimentos e \textit{quasi}-experimento em ES; A Seção \ref{sec:fundamentos_ontologia} descreve os fundamentos sobre o que é uma ontologia e sua finalidade; na Seção \ref{sec:sistema_de_recmendacao} são apresentados os principais modelos para implementação de sistemas de recomendação, os tradicionais, e voltado para ES; Seção \ref{sec:trabalhos_relacionados} são discutidos os trabalhos relacionados; e na Seção \ref{sec:fundamentos_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo.
+Este capítulo apresenta conceitos importantes sobre a fundamentação teórica, necessárias para a compreensão desta pesquisa como LPS, experimento e \textit{quasi}-experimento em ES, qualidade de experimentos e \textit{quasi}-experimento em ES, ontologia, sistemas de recomendação e trabalhos relacionados. Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:linha_de_produto_software} apresenta os principais pontos de LPS e variabilidades; na Seção \ref{sec:experimentos_em_engenharia_de_software} é apresentado uma visão geral de experimento e \textit{quasi}-experimento em ES; na Seção \ref{sec:qualidade_de_experimento_em_engenharia_de_software} são apresentados infromações preliminares sobre qualidade de experimentos e \textit{quasi}-experimento em ES; A Seção \ref{sec:fundamentos_ontologia} descreve os fundamentos sobre o que é uma ontologia e sua finalidade; Seção \ref{sec:trabalhos_relacionados} são discutidos os trabalhos relacionados; e na Seção \ref{sec:fundamentos_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo.
 
 
 \section{Linha de Produto de Software}
@@ -195,132 +195,6 @@ Portanto uma ontologia para a representação de um conhecimento possui a seguinte
 A \ref{fig:exemplo_ont} apresenta um exemplo de ontologia, por meio de um grafo, para o domínio: "destino de viagem". Os vértices ovais representam as classes, e os vértices retangulares representam os indivíduos (instâncias da classe). As arestas comuns representa um relacionamento de classe e subclasse, as arestas tracejadas representam um relacionamento de propriedade, já as arestas que começam com um losango indica a definição de uma propriedade, especificando sua tipagem.
 
 
-\section{Sistema de Recomendação}
-\label{sec:sistema_de_recmendacao}
-
-Os sistemas de recomendação são aplicativos de software que visam dar suporte para usuário na tomada de decisões ao interagir com grandes espaços de informação. Estes softwares recomendam itens de interesse para os usuários com base em preferências que tenham sido expressas explicitamente ou implicitamente \cite{ricci2011introduction}. Segundo \citet{mahmood2009improving} os sistemas de recomendação são técnicas ou ferramentas de software, que podem reduzir a sobrecarga de informações para os usuários, sugerindo itens, conteúdos ou serviços, entre outros.
-
-% \subsection{Sistemas de Recomendação Tradicional}
-
-Os sistemas de recomendação surgiram nos trabalhos extensivos das ciências cognitivas, teoria de aproximação, recuperação da informação e teoria de previsões e também possuem influências das ciências de administração e marketing \cite{allen2001econometric, murthi2003role}. O primeiro sistema de recomendação proposto foi o \textit{Tapestry}, nesse sistema criou-se um modelo mais usados em sistemas de recomendação, onde a recomendação de conteúdo é auxiliada pela colaboração de um grupo de pessoas, batizada como "filtragem  colaborativa". Neste trabalho, iniciou o desafio de casar corretamente os que dados recomendados com os usuários que o recebem, analisando o real relacionamento de interesse \cite{kwong1992dynamic, resnick1997recommender}.
-
-% Podemos apresentar uma definição formal para sistema de recomendação da seguinte forma: 
-
-% \newtheorem{mydef}{Definição}
-% \begin{mydef}
-% 	Seja $C$ o conjunto de todos os usuários de um determinado sistema, e seja $S'$ o conjunto de todos os possíveis itens que podem ser recomendados como livros, filmes, restaurantes etc. Seja $u$ a função utilidade que mede o quão útil é um determinado item s para um determinado usuário $c$, \textbf{\textit{u}:C x S $\rightarrow$ R}, onde $R$ é um conjunto totalmente ordenado segundo a função utilidade. Então, para cada usuário \textbf{\textit{c} $\in$ C}, procura-se um item \textbf{\textit{s'} $\in$ S} que maximiza a utilidade do usuário. Isto pode ser expressado pela equação \ref{eq:form_sis_rec}:
-	
-% 	\begin{equation}
-% 	\label{eq:form_sis_rec}
-% 	\forall c \in C, s'_{c} = argmax_{s \in S u(c, s)}
-% 	\end{equation}
-	
-% 	Em um sistema de recomendação a utilidade de um item é geralmente representada por uma avaliação que indica o quanto um determinado usuário gosta de um item. No entanto, conforme descrito na definição acima, a função de utilidade pode ser uma função arbitrária.
-	
-% 	Cada elemento dos usuários $C$ pode ser definido por um perfil que inclui as características do usuário, por exemplo, a sua idade, sexo, etc. No caso mais simples, o perfil pode conter um único elemento como um identificador único (ID). Da mesma forma, cada item de $S$ pode ser definido por um conjunto de características. Por exemplo, na recomendação de filmes, na qual $S$ é a coleção de filmes, cada filme pode ser representado não apenas pelo seu ID, mas também pelo seu título, gênero, diretor, ano de lançamento, etc.
-% \end{mydef}
-
-Existem cinco abordagens mais usadas em sistemas de recomendação, três tradicionais: Filtragem Colaborativa (\textit{Collaborative Filtering}), Filtragem Baseada em Conteúdo (\textit{Content-based Filtering}) e Recomendação Baseada no Conhecimento (\textit{Knowledge-Based Recommendation}), e duas modernas: Sistemas de Recomendação Híbridos \textit{(Hybrid Recommender Systems}) e Sistemas de Recomendação usando Informações de Contexto (\textit{Context-aware Recommender Systems}). 
-
-Dado que este trabalho trata o sistema de recomendação como uma prova de conceito para realização de inferência sobre a SMartOntology, estará descrito a seguir somente o modelo implementado no projeto de sistema de recomendação.
-
-\subsubsection{Collaborative Filtering}
-\label{sec:collaborative_filtering}
-
-A Filtragem Colaborativa baseia-se na idéia de "boca-a-boca" em que a informação passada de pessoa a pessoa desempenha um papel importante ao tomar uma decisão. Abstraindo, as pessoas são substituídas pelos chamados vizinhos mais próximos (NN) que são usuários com um padrão de preferência ou comportamento semelhante ao usuário atual. \cite{robillard2010recommendation}. Filtragem Colaborativa depende de dois tipos diferentes de dados: (1) um conjunto de usuários e (2) um conjunto de itens. A relação entre usuários e itens é expressada principalmente em termos de \textit{ratings} fornecidos pelos usuários e explorados em futuras sessões de recomendação para prever a classificação de um usuário \cite{robillard2010recommendation}.
-
-% \begin{itemize}
-% 	\item \textbf{\textit{Collaborative Filtering}:}
-	
-% 	\item \textbf{\textit{Content-based Filtering}:}
-% 	A Filtragem Baseada em Conteúdo tem como característica principal o pressuposto de interesses pessoais, por exemplo, os usuários interessados no tópico de qualidade de experimentos em LPS normalmente não alteram seu interesse de um dia para outro, mas também estarão interessados em um tópico próximo, como por exemplo experimentos em Sistema de Sistemas. Abstraindo, as abordagens de recomendação baseadas em conteúdo são aplicadas, por exemplo, quando se trata da recomendação de sites (notícias com conteúdo semelhante em comparação com o conjunto de notícias já consumidas) \cite{robillard2010recommendation}. Filtragem Baseada em Conteúdo depende de dois tipos diferentes de dados: (i) um conjunto de usuários e (ii) um conjunto de categorias (ou palavras-chave) atribuídas ou extraídas dos itens (descrições de itens). Os sistemas de recomendação de filtragem baseados em conteúdo calculam um conjunto de itens que são mais parecidos com itens já conhecidos pelo usuário atual \cite{robillard2010recommendation}.
-
-% 	\item \textbf{\textit{Knowledge-Based Recommendation}:} 
-% 	A recomendação baseada no conhecimento, baseia-se nos seguintes	dados básicos: (i) um conjunto de regras (restrições) ou métricas de similaridade e (ii) um conjunto de itens. Dependendo dos requisitos do usuário, regras (restrições) que descrevam quais itens devem ser recomendados. O usuário atual articula suas necessidades (preferências) em termos de especificações e propriedades de itens que são internamente bem representados em termos de regras (restrições).
-	
-% 	\item \textbf{\textit{Hybrid Recommender System}:}
-% 	São algoritmos que combinam \textit{Collaborative Filtering} com \textit{Content-based Filtering} e podem ser feitos de diversas formas diferentes, por exemplo, aplicando os dois separados e juntando os resultados depois, adicionando a saída de um ao outro ou unificando as duas abordagens em um único modelo. Alguns exemplos são as abordagens baseada em pesos, misturadas a cascatas \cite{jannach2010recommender}.
-	
-	
-% 	\item \textbf{\textit{Context-aware Recommender Systems}:} 
-% 	Existem casos de recomendações que não podem levar em consideração somente os dados do item ou do usuário, como conteúdo personalizado de um site de filmes, sites de viagens e até sites de notícias. A incorporação do contexto permite personalizar ainda mais a recomendação e criar experiências realmente válidas ao usuário. Segundo \citet{rahman2013ide} \textit{Context-aware Recommender Systems}, segue as abordagens anteriores assumindo a existência de certos fatores contextuais como, por exemplo, o tempo e a localização, que identificam o contexto no qual as recomendações são fornecidas. Eles assumem que cada um desses fatores contextuais podem ter uma estrutura. O fator Tempo, por exemplo, pode ser definido em termos de segundos, minutos, horas, dias, meses e anos. \citet{rahman2013ide} cita como classificar o contexto baseando-se nos seguintes aspectos, (i) o que um sistema de recomendação pode saber sobre esses fatores contextuais e (ii) como os fatores contextuais mudam ao longo do tempo. Desta forma podemos definir este tipo de sistema de recomendação pela formula \ref{eq:form_sis_rec_ca}
-	
-% 	\begin{equation}
-% 		\label{eq:form_sis_rec_ca}
-% 		f:User \times Item \times Context \rightarrow Rating
-% 	\end{equation}
-
-% \end{itemize}
-
-
-\subsection{Sistema de Recomendação em Engenharia de Software}
-
-Em Engenharia de Software (\textit{Recommendation System in Software Engineering} - RSSEs), sistemas de recomendação desempenham importantes funções a fim de ajudar a equipe de software a lidar com sobrecarga de informações, filtrando e fornecendo informações úteis. São ferramentas de software introduzidas especificamente para ajudar equipes de desenvolvimento de software e partes interessadas a lidar com a busca de informações em um determinado contexto em ES \cite{robillard2010recommendation}.
-
-\citet{robillard2010recommendation} comenta que, em um ambiente de desenvolvimento de software aplicando ES existe um \textit{landscape} de informações sobre o projeto em desenvolvimento, e este espaço de informações pode ser categorizados por:
-
-\begin{itemize}
-	\item Código fonte do projeto;
-	\item História do projeto;
-	\item Arquivos de comunicação;
-	\item Dependências de API em outras fontes;
-	\item Ambiente de desenvolvimento;
-	\item Logs de interação entre os usuários;
-	\item Logs de execução e;
-	\item A web.
-\end{itemize}
-
-Um RSSE pode trazer simultaneamente dois aspectos distintos: (i) novidade e surpresa, porque as RSSEs ajudam a descobrir novas informações e (ii) traz familiaridade e reforço, pois as RSSEs suportam a confirmação do conhecimento existente. Finalmente, referenciar uma tarefa e um contexto específicos, distingue RSSEs de ferramentas de pesquisa genéricas, por exemplo, uma ferramentas de RSSR para ajudar os desenvolvedores a encontrar exemplos de código fonte \cite{robillard2010recommendation}.
-
-RSSE compreende três componentes principais, (i) um mecanismo para coletar dados, (ii) um mecanismo de recomendação para analisar dados e gerar recomendações e (iii) uma interface de usuário para fornecer recomendações \cite{rahman2014towards}.
-
-\begin{figure}[htb]
-	\centering					
-	{\includegraphics[scale=.5]{rsse.png}}
-	
-	\caption{Passos de Construção para um RSSE. Traduzido e Adaptado de \citet{maki2016systematic}}
-	\label{fig:rsse}
-\end{figure}
-
-A \ref{fig:rsse} apresenta de forma geral como é construído um RSSE, partindo da entradas dos dados pelo \textit{input}, passando pela extração de contexto, seguindo para aplicação de alguma técnica de recomendação, na qual sofre um inferência do corpo de conhecimento (normalmente específico para cada área de ES), depois segue para um processo de filtragem dos resultados, e como saída a recomendação em si.
-
-Foi encontrado uma revisão sistemáticas (trabalho da \citealp{maki2016systematic}), que aborda métodos e modelos de implementação de um RSSE apresentando vários aspectos de SR em ES, principalmente no tipo de corpo de conhecimento aplicado a RSSE. Nessa revisão foi possível identificar algumas áreas da ES que utiliza SR, apresentadas a seguir.
-
-\begin{itemize}
-	\item SR para exploração código fonte;
-	\item SR para reuso de software;
-	\item SR para refatoração de código fonte (por exemplo, \textit{class} em POO);
-	\item SR para reuso de componentes de software;
-	\item SR na exploração de APIs;
-	\item SR na depuração de código (\textit{debugging})
-	\item SR na recomendação de agentes \textit{Agile}
-	\item SR na descoberta de requisitos;
-	\item SR na mudança do ciclo de vida;
-	\item SR na evolução do ciclo de vida e;
-	\item SR na busca de \textit{bugs}.
-\end{itemize}
-
-% Por meio deste estudo, foi possível identificar em qual domínio de aplicação da industria de ES estão aplicando qual técnica de SR, apresentados na \ref{tab:tec_x_doman} a seguir.
-
-% \begin{table}[]
-% 	\centering
-% 	\caption{Sumário de técnicas de recomendação em cada domínio, Traduzido e Adaptado de \citet{maki2016systematic} }
-% 	\label{tab:tec_x_doman}
-% 	\begin{tabular}{@{}llllllllll@{}}
-% 		\toprule
-% 		\multicolumn{1}{c}{\textbf{Domínios}} & \multicolumn{8}{c}{\textbf{Técnicas}} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Número de \\ Referências\end{tabular}}} \\ \midrule
-% 		& CBF & CF & KBF & Hibrido & IA & \begin{tabular}[c]{@{}l@{}}Redes \\ Sociais\end{tabular} & \begin{tabular}[c]{@{}l@{}}Info. de\\ Contexto\end{tabular} & \begin{tabular}[c]{@{}l@{}}Grupo de \\ agregação\end{tabular} &  \\ \midrule
-% 		Governo & 1 & 5 & 1 & 5 & 4 &  &  &  & 9 \\
-% 		Negócios &  & 1 & 3 & 3 & 4 &  &  &  & 5 \\
-% 		Comercio & 3 & 1 & 4 & 1 & 4 & 2 &  &  & 8 \\
-% 		Livraria & 2 & 2 &  & 3 & 1 &  &  &  & 6 \\
-% 		Escolas & 2 &  & 11 &  & 1 &  &  &  & 10 \\
-% 		Turismo & 5 & 9 & 9 & 9 & 2 & 2 & 11 &  & 18 \\
-% 		Pesquisa & 9 & 16 & 6 & 15 & 3 & 1 & 1 &  & 27 \\
-% 		\begin{tabular}[c]{@{}l@{}}Grupo de \\ Atividade\end{tabular} & 9 & 5 & 2 & 5 & 8 &  &  & 2 & 21 \\
-% 		\textbf{Total} & \textbf{31} & \textbf{39} & \textbf{36} & \textbf{41} & \textbf{27} & \textbf{5} & \textbf{12} & \textbf{2} & \textbf{104} \\ \bottomrule
-% 	\end{tabular}
-% \end{table}
 
 \section{Trabalhos Relacionados}
 \label{sec:trabalhos_relacionados}
@@ -345,13 +219,11 @@ Até o momento não há trabalhos de sistema de recomendações para voltados a exper
 \section{Considerações Finais}
 \label{sec:fundamentos_concidaracoes_finais}
 
-Este cap??tulo apresentou os conceitos essenciais sobre a abordagem de LPS como variabilidades e variantes, apresentando o \textit{MobileMedia} como exemplo para melhor entendimento dos conceitos, bem como o framework de engenharia de LPS proposto por /cite{Pohl et al. (2005)}?. 
+Este capítulo apresentou os conceitos essenciais sobre a abordagem de LPS como variabilidades e variantes, apresentando o \textit{MobileMedia} como exemplo para melhor entendimento dos conceitos, bem como o framework de engenharia de LPS proposto por /cite{Pohl et al. (2005)}?. 
 
 Em relação à experimentação em ES, foi apresentado os principais elementos como as variáveis dependentes e independentes, as atividades de um processo experimental como definição, planejamento, operação, análise e interpretação, apresentação e empacotamento. Sobre qualidade de experimentos em ES foi introduzido conceitos preliminares sobre a qualidade de experimentos como viés, validade interna e validade externa e também algumas abordagens para aplicar uma avaliação de qualidade sobre os experimentos em ES. 
 
 Quando foi tratado de ontologia, foi descrito a definição universal de ontologia e a definição voltada para computação. Nessa temos que a ontologia é uma modelagem formal de dados para representação de um determinado domínio, para isso, existe a \textit{TBox} para representar a lógica descritiva e a \textit{ABox} para representar os indivíduos pertencentes a ontologia. Assim como em LPS foi apresentado um exemplo (Destino de Viagem) para facilitar o entendimento dos conceitos abordados. 
-
-Sobre sistemas de recomendação foram apresentados os modelos básico de sistemas de recomendação tradicionais, como \textit{collaborative filtering} e \textit{content-based filtering}. Na sequência foi apresentado como os sistemas de recomendação são tratados na ES e alguns exemplos de aplicação.
 
 Por fim, temos os trabalhos relacionados traçando um paralelo de modelagem para representação do domínio de LPS eom este trabalho.
 

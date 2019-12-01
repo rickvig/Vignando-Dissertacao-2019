@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  28 NOV 2019 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  1 DEC 2019 07:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -533,24 +533,24 @@ v-parts: 3cm, 702.78308pt, 2cm
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 1253) in paragraph at lines 349--349
+Underfull \hbox (badness 1253) in paragraph at lines 350--350
 []\OT1/cmr/m/n/12 Disserta^^Xc~ao apre-sen-tada ao Pro-grama de
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 349--349
+Underfull \hbox (badness 2126) in paragraph at lines 350--350
 \OT1/cmr/m/n/12 de Tec-no-lo-gia da Uni-ver-si-dade Es-ta-dual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
 
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 355--355
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 
  []
 
@@ -628,34 +628,22 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <14.4> not available
 
 
 ] [15]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
-<figuras/metodologia_flow.png, id=65, 1140.26pt x 416.55624pt>
-File: figuras/metodologia_flow.png Graphic file (type png)
-<use figuras/metodologia_flow.png>
-Package pdftex.def Info: figuras/metodologia_flow.png  used on input line 48.
-(pdftex.def)             Requested size: 456.09592pt x 166.61954pt.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+ [16]
+<figuras/metodologia.pdf, id=68, 585.14606pt x 154.6578pt>
+File: figuras/metodologia.pdf Graphic file (type pdf)
+<use figuras/metodologia.pdf>
+Package pdftex.def Info: figuras/metodologia.pdf  used on input line 59.
+(pdftex.def)             Requested size: 438.85846pt x 115.99306pt.
+ [17 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia.pdf
 
-Overfull \hbox (0.8518pt too wide) in paragraph at lines 48--49
- [][] 
- []
-
-[16] [17 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia_flow.png>]
-<figuras/RSSE-overview.png, id=75, 869.2475pt x 351.3125pt>
-File: figuras/RSSE-overview.png Graphic file (type png)
-<use figuras/RSSE-overview.png>
-Package pdftex.def Info: figuras/RSSE-overview.png  used on input line 68.
-(pdftex.def)             Requested size: 434.62268pt x 175.6558pt.
-
-Overfull \hbox (41.33408pt too wide) in paragraph at lines 90--91
-\OT1/cmr/m/n/12 Todo pro-jeto est^^Sa sendo ver-si-o-nado no Github pelo link: https://github.com/rickvig/pcc-pesquisa. 
- []
-
-[18 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png>]) [19]
+pdfTeX warning: pdflatex (file /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]) [18] [19]
 \openout2 = `texto/_fundamentacao_teorica.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_fundamentacao_teorica.tex
@@ -665,7 +653,7 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<figuras/exemplo_lps_pt.png, id=87, 1406.3742pt x 685.6014pt>
+<figuras/exemplo_lps_pt.png, id=97, 1406.3742pt x 685.6014pt>
 File: figuras/exemplo_lps_pt.png Graphic file (type png)
 <use figuras/exemplo_lps_pt.png>
 Package pdftex.def Info: figuras/exemplo_lps_pt.png  used on input line 33.
@@ -676,7 +664,7 @@ Overfull \hbox (8.86082pt too wide) in paragraph at lines 33--34
  []
 
 [21] [22 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_lps_pt.png>]
-<figuras/framewor_lps.png, id=95, 1179.40625pt x 927.465pt>
+<figuras/framewor_lps.png, id=106, 1179.40625pt x 927.465pt>
 File: figuras/framewor_lps.png Graphic file (type png)
 <use figuras/framewor_lps.png>
 Package pdftex.def Info: figuras/framewor_lps.png  used on input line 72.
@@ -687,13 +675,13 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 79.
 
 [23 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/framewor_lps.png>]
-<figuras/experimento.png, id=99, 1108.14pt x 772.8875pt>
+<figuras/experimento.png, id=110, 1108.14pt x 772.8875pt>
 File: figuras/experimento.png Graphic file (type png)
 <use figuras/experimento.png>
 Package pdftex.def Info: figuras/experimento.png  used on input line 88.
 (pdftex.def)             Requested size: 410.00539pt x 285.9639pt.
  [24]
-<figuras/proc_exp.png, id=104, 1124.2pt x 738.76pt>
+<figuras/proc_exp.png, id=115, 1124.2pt x 738.76pt>
 File: figuras/proc_exp.png Graphic file (type png)
 <use figuras/proc_exp.png>
 Package pdftex.def Info: figuras/proc_exp.png  used on input line 109.
@@ -704,162 +692,167 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!htb') on input line 137.
 
 [27] [28]
-<figuras/estrutura_ontologia.png, id=117, 357.4956pt x 296.7888pt>
+<figuras/estrutura_ontologia.png, id=128, 357.4956pt x 296.7888pt>
 File: figuras/estrutura_ontologia.png Graphic file (type png)
 <use figuras/estrutura_ontologia.png>
 Package pdftex.def Info: figuras/estrutura_ontologia.png  used on input line 181.
 (pdftex.def)             Requested size: 250.24521pt x 207.75073pt.
-<figuras/exemplo_ontologia.png, id=118, 979.66pt x 683.55376pt>
+<figuras/exemplo_ontologia.png, id=129, 979.66pt x 683.55376pt>
 File: figuras/exemplo_ontologia.png Graphic file (type png)
 <use figuras/exemplo_ontologia.png>
 Package pdftex.def Info: figuras/exemplo_ontologia.png  used on input line 189.
 (pdftex.def)             Requested size: 440.84293pt x 307.59634pt.
- [29] [30 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/estrutura_ontologia.png>] [31 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_ontologia.png>]
-<figuras/rsse.png, id=130, 833.1125pt x 507.8975pt>
-File: figuras/rsse.png Graphic file (type png)
-<use figuras/rsse.png>
-Package pdftex.def Info: figuras/rsse.png  used on input line 279.
-(pdftex.def)             Requested size: 416.55524pt x 253.94814pt.
- [32] [33 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png>] [34] [35]) [36]
+ [29] [30 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/estrutura_ontologia.png>] [31 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_ontologia.png>]) [32] [33]
 \openout2 = `texto/_ontologia.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_ontologia.tex
 Cap\'{\i }tulo 3.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 19.
+               Default added (so using `!htb') on input line 17.
 
 
-Overfull \hbox (201.34377pt too wide) in paragraph at lines 22--33
+Overfull \hbox (201.34377pt too wide) in paragraph at lines 20--31
 [][] 
  []
 
-[37
+[34
 
 
 
 ]
-<figuras/graph-all-class.pdf, id=151, 597.50786pt x 654.41339pt>
+<figuras/graph-all-class.pdf, id=150, 597.50786pt x 654.41339pt>
 File: figuras/graph-all-class.pdf Graphic file (type pdf)
 <use figuras/graph-all-class.pdf>
-Package pdftex.def Info: figuras/graph-all-class.pdf  used on input line 51.
+Package pdftex.def Info: figuras/graph-all-class.pdf  used on input line 49.
 (pdftex.def)             Requested size: 312.9803pt x 342.78331pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 58.
+               Default added (so using `!htb') on input line 56.
 
 
-LaTeX Warning: Float too large for page by 98.53354pt on input line 109.
+LaTeX Warning: Float too large for page by 98.53354pt on input line 107.
 
-[38]
-<figuras/conceptual-model-clustering.pdf, id=155, 1330.9725pt x 2032.59375pt>
+<figuras/conceptual-model-clustering.pdf, id=151, 1330.9725pt x 2032.59375pt>
 File: figuras/conceptual-model-clustering.pdf Graphic file (type pdf)
 <use figuras/conceptual-model-clustering.pdf>
-Package pdftex.def Info: figuras/conceptual-model-clustering.pdf  used on input line 117.
+Package pdftex.def Info: figuras/conceptual-model-clustering.pdf  used on input line 115.
 (pdftex.def)             Requested size: 266.18979pt x 406.51155pt.
- [39 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/graph-all-class.pdf>]
-<figuras/class-diagram-ontology.png, id=161, 2086.79625pt x 1045.9075pt>
+[35]
+<figuras/class-diagram-ontology.png, id=155, 2086.79625pt x 1045.9075pt>
 File: figuras/class-diagram-ontology.png Graphic file (type png)
 <use figuras/class-diagram-ontology.png>
-Package pdftex.def Info: figuras/class-diagram-ontology.png  used on input line 128.
+Package pdftex.def Info: figuras/class-diagram-ontology.png  used on input line 126.
 (pdftex.def)             Requested size: 417.35185pt x 209.1778pt.
- [40 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/conceptual-model-clustering.pdf>] [41 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/class-diagram-ontology.png (PNG copy)>]
+ [36 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/graph-all-class.pdf>] [37 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/conceptual-model-clustering.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 171.
+               Default added (so using `!htb') on input line 169.
 
-<figuras/entidades-protege.png, id=2037, 905.3825pt x 810.02625pt>
+<figuras/entidades-protege.png, id=2034, 905.3825pt x 810.02625pt>
 File: figuras/entidades-protege.png Graphic file (type png)
 <use figuras/entidades-protege.png>
-Package pdftex.def Info: figuras/entidades-protege.png  used on input line 173.
+Package pdftex.def Info: figuras/entidades-protege.png  used on input line 171.
 (pdftex.def)             Requested size: 271.61684pt x 243.00975pt.
+[38 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/class-diagram-ontology.png (PNG copy)>]
 <figuras/entidades-protege-object-properties.png, id=2038, 920.43875pt x 841.1425pt>
 File: figuras/entidades-protege-object-properties.png Graphic file (type png)
 <use figuras/entidades-protege-object-properties.png>
-Package pdftex.def Info: figuras/entidades-protege-object-properties.png  used on input line 183.
+Package pdftex.def Info: figuras/entidades-protege-object-properties.png  used on input line 181.
 (pdftex.def)             Requested size: 284.52756pt x 260.0199pt.
-[42 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege.png>]
-<figuras/entidades-protege-data-properties.png, id=2043, 920.43875pt x 841.1425pt>
+<figuras/entidades-protege-data-properties.png, id=2039, 920.43875pt x 841.1425pt>
 File: figuras/entidades-protege-data-properties.png Graphic file (type png)
 <use figuras/entidades-protege-data-properties.png>
-Package pdftex.def Info: figuras/entidades-protege-data-properties.png  used on input line 193.
+Package pdftex.def Info: figuras/entidades-protege-data-properties.png  used on input line 191.
 (pdftex.def)             Requested size: 284.52756pt x 260.0199pt.
-<figuras/ontology-populate-valid-owl-2.pdf, id=2044, 594.72188pt x 707.64375pt>
+ [39 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege.png>]
+<figuras/ontology-populate-valid-owl-2.pdf, id=2043, 594.72188pt x 707.64375pt>
 File: figuras/ontology-populate-valid-owl-2.pdf Graphic file (type pdf)
 <use figuras/ontology-populate-valid-owl-2.pdf>
-Package pdftex.def Info: figuras/ontology-populate-valid-owl-2.pdf  used on input line 204.
+Package pdftex.def Info: figuras/ontology-populate-valid-owl-2.pdf  used on input line 202.
 (pdftex.def)             Requested size: 284.52756pt x 338.54218pt.
- [43 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-object-properties.png>] [44 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-data-properties.png>] [45 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/ontology-populate-valid-owl-2.pdf>] [46] [47] [48]
-Overfull \hbox (86.26433pt too wide) in paragraph at lines 277--278
+ [40 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-object-properties.png>] [41 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-data-properties.png>] [42 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/ontology-populate-valid-owl-2.pdf>] [43] [44] [45]
+Overfull \hbox (86.26433pt too wide) in paragraph at lines 275--276
 \OT1/cmr/m/n/12 PLE[]RANDOM[]SAMPLING, SYS-TE-MA-TIC[]SAMPLING, STRA-TI-FIED[]RANDOM[]SAMPLING,
  []
 
 
-Overfull \hbox (145.38028pt too wide) in paragraph at lines 279--280
+Overfull \hbox (145.38028pt too wide) in paragraph at lines 277--278
 \OT1/cmr/m/n/12 [ONE[]FACTOR[]WITH[]TWO[]TREATMENTS, ONE[]FACTOR[]WITH[]MORE[]THAN[]TWO[]TREATMENTS,
  []
 
 
-Overfull \hbox (200.03053pt too wide) in paragraph at lines 279--280
+Overfull \hbox (200.03053pt too wide) in paragraph at lines 277--278
 \OT1/cmr/m/n/12 TWO[]FACTORS[]WITH[]TWO[]TREATMENTS, MORE[]THAN[]TWO[]FACTORS[]EACH[]WITH[]TWO[]TREATMENTS]
  []
 
-[49] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[46] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [50]
-Overfull \hbox (26.03435pt too wide) in paragraph at lines 321--322
+) [47]
+Overfull \hbox (26.03435pt too wide) in paragraph at lines 319--320
 []\OT1/cmr/m/n/12 O m^^Setodo re-gis-tre-Ex-pe-ri-ment-Com-mons re-cebe uma inst^ancia tanto de onto.ExperimentSPL
  []
 
 
-Overfull \hbox (73.7532pt too wide) in paragraph at lines 323--324
+Overfull \hbox (73.7532pt too wide) in paragraph at lines 321--322
 \OT1/cmr/m/n/12 ning-Com-mons e re-torna uma inst^ancia de in-div^^S^^Pduo da on-to-lo-gia da classe onto.ExperimentPlanningSPL. 
  []
 
 
-Overfull \hbox (29.69531pt too wide) in paragraph at lines 325--326
+Overfull \hbox (29.69531pt too wide) in paragraph at lines 323--324
 \OT1/cmr/m/n/12 Com-mons e re-torna uma inst^ancia de in-div^^S^^Pduo da on-to-lo-gia da classe onto.ExperimentPlanning. 
  []
 
 
-Overfull \hbox (117.74452pt too wide) in paragraph at lines 327--328
+Overfull \hbox (117.74452pt too wide) in paragraph at lines 325--326
 []\OT1/cmr/m/n/12 O m^^Setodo re-gis-tre-Ex-pe-ri-ment-Plan-ning-Com-mons re-cebe uma inst^ancia tanto de onto.ExperimentPlanningSPL
  []
 
 
-Overfull \hbox (13.37059pt too wide) in paragraph at lines 333--334
+Overfull \hbox (13.37059pt too wide) in paragraph at lines 331--332
 []\OT1/cmr/m/n/12 O m^^Setodo re-gis-tre-Dis-cus-si-on-Com-mons re-cebe uma inst^ancia tanto de onto.DiscussionSPL
  []
 
-[51]
+[48]
 
-LaTeX Warning: Reference `code:...' on page 52 undefined on input line 351.
+LaTeX Warning: Reference `code:...' on page 49 undefined on input line 349.
 
 <figuras/filter-in-ontology-path.png, id=2081, 418.56375pt x 499.8675pt>
 File: figuras/filter-in-ontology-path.png Graphic file (type png)
 <use figuras/filter-in-ontology-path.png>
-Package pdftex.def Info: figuras/filter-in-ontology-path.png  used on input line 357.
+Package pdftex.def Info: figuras/filter-in-ontology-path.png  used on input line 355.
 (pdftex.def)             Requested size: 184.9429pt x 220.86528pt.
-[52] [53 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/filter-in-ontology-path.png>] [54] [55] [56]) [57] [58] [59]
+[49] [50 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/filter-in-ontology-path.png>] [51] [52] [53]) [54] [55] [56]
 \openout2 = `texto/_avalicao_da_ontologia.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_avalicao_da_ontologia.tex
 Cap\'{\i }tulo 4.
-[60
+[57
 
 
 
-] [61] [62] [63] [64] [65] [66] [67]) [68]
+] [58] [59] [60] [61] [62] [63]) [64]
 \openout2 = `texto/_recsys.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_recsys.tex
 Cap\'{\i }tulo 5.
-) [69
+<figuras/RSSE-overview.png, id=2133, 869.2475pt x 351.3125pt>
+File: figuras/RSSE-overview.png Graphic file (type png)
+<use figuras/RSSE-overview.png>
+Package pdftex.def Info: figuras/RSSE-overview.png  used on input line 13.
+(pdftex.def)             Requested size: 434.62268pt x 175.6558pt.
+[65
 
 
 
-]
+ </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png>] [66] [67]
+<figuras/rsse.png, id=2145, 833.1125pt x 507.8975pt>
+File: figuras/rsse.png Graphic file (type png)
+<use figuras/rsse.png>
+Package pdftex.def Info: figuras/rsse.png  used on input line 114.
+(pdftex.def)             Requested size: 416.55524pt x 253.94814pt.
+ [68 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png>]) [69]
 \openout2 = `texto/_conclusao.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.tex
@@ -935,21 +928,21 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 347 (\begingroup)
+### semi simple group (level 1) entered at line 348 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  9284 strings out of 492982
- 138437 string characters out of 6134896
- 255839 words of memory out of 5000000
+ 138433 string characters out of 6134896
+ 256438 words of memory out of 5000000
  12469 multiletter control sequences out of 15000+600000
  21164 words of font info for 80 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 42i,17n,76p,2981b,1947s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,17n,76p,2976b,1421s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.pdf (80 pages, 3563172 bytes).
+Output written on /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.pdf (80 pages, 3537440 bytes).
 PDF statistics:
- 2222 PDF objects out of 2487 (max. 8388607)
- 1468 compressed objects within 15 object streams
+ 2235 PDF objects out of 2487 (max. 8388607)
+ 1478 compressed objects within 15 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

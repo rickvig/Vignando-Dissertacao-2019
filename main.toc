@@ -1,76 +1,64 @@
 \babel@toc {brazil}{}
 \contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{14}
 \contentsline {section}{\numberline {1.1}Contextualiza\c c\~ao}{14}
-\contentsline {section}{\numberline {1.2}Motiva\c c\~ao e Justificativa}{15}
+\contentsline {section}{\numberline {1.2}Motiva\c c\~ao e Justificativa}{16}
 \contentsline {section}{\numberline {1.3}Objetivos}{16}
-\contentsline {section}{\numberline {1.4}Metodologia de Desenvolvimento}{16}
-\contentsline {subsection}{\numberline {1.4.1}Empacotamento}{19}
-\contentsline {section}{\numberline {1.5}Organiza\c c\~ao do texto}{19}
+\contentsline {section}{\numberline {1.4}Metodologia de Desenvolvimento}{17}
+\contentsline {section}{\numberline {1.5}Organiza\c c\~ao do texto}{18}
 \contentsline {chapter}{\numberline {2}Fundamenta\c c\~ao Te\'orica}{20}
 \contentsline {section}{\numberline {2.1}Considera\c c\~oes Iniciais}{20}
 \contentsline {section}{\numberline {2.2}Linha de Produto de Software}{20}
 \contentsline {section}{\numberline {2.3}Experimentos e \textit {Quasi}-Experimento em Engenharia de Software}{24}
 \contentsline {section}{\numberline {2.4}Qualidade de Experimentos em Engenharia de Software}{27}
 \contentsline {section}{\numberline {2.5}Ontologia}{28}
-\contentsline {section}{\numberline {2.6}Sistema de Recomenda\c c\~ao}{29}
-\contentsline {subsubsection}{Collaborative Filtering}{31}
-\contentsline {subsection}{\numberline {2.6.1}Sistema de Recomenda\c c\~ao em Engenharia de Software}{32}
-\contentsline {section}{\numberline {2.7}Trabalhos Relacionados}{34}
-\contentsline {section}{\numberline {2.8}Considera\c c\~oes Finais}{35}
-\contentsline {chapter}{\numberline {3}Uma Ontologia para Experimentos em LPS - SMartOntology}{37}
-\contentsline {section}{\numberline {3.1}Considera\c c\~oes Iniciais}{37}
-\contentsline {section}{\numberline {3.2}Concep\c c\~ao}{37}
-\contentsline {section}{\numberline {3.3}Projeto}{41}
-\contentsline {subsection}{\numberline {3.3.1}Modelagem com Proteg\'e}{41}
-\contentsline {subsubsection}{Defini\c c\~ao de classes}{42}
-\contentsline {subsubsection}{Defini\c c\~ao das propriedades de objetos}{42}
-\contentsline {subsubsection}{Defini\c c\~ao das propriedades dos dados}{42}
-\contentsline {subsubsection}{Artefato gerado pelo Prot\'eg\'e}{43}
-\contentsline {subsection}{\numberline {3.3.2}Povoamento com Pyton}{43}
-\contentsline {subsubsection}{Script}{44}
-\contentsline {subsubsection}{Manipula\c c\~ao dos Dados}{47}
-\contentsline {subsubsection}{Inser\c c\~ao do indiv\'{\i }duos e cria\c c\~ao dos relacionamentos}{50}
-\contentsline {subsubsection}{Artefato e valida\c c\~ao}{52}
-\contentsline {section}{\numberline {3.4}Exemplo de Aplica\c c\~ao}{52}
-\contentsline {section}{\numberline {3.5}Avalia\c c\~ao Emp\'{\i }rica}{54}
-\contentsline {subsection}{\numberline {3.5.1}Perspectivas de Melhorias}{57}
-\contentsline {section}{\numberline {3.6}Considera\c c\~oes Finais}{57}
-\contentsline {chapter}{\numberline {4}Avalia\c c\~ao da SMartOntology: Um estudo Quantitativo}{60}
-\contentsline {section}{\numberline {4.1}Considera\c c\~oes Iniciais}{60}
-\contentsline {subsection}{\numberline {4.1.1}Precis\~ao}{61}
-\contentsline {subsection}{\numberline {4.1.2}Adaptabilidade}{61}
-\contentsline {subsection}{\numberline {4.1.3}Clareza}{61}
-\contentsline {subsection}{\numberline {4.1.4}Completude}{62}
-\contentsline {subsection}{\numberline {4.1.5}Efici\^encia computacional}{62}
-\contentsline {subsection}{\numberline {4.1.6}Concis\~ao}{62}
-\contentsline {subsection}{\numberline {4.1.7}Consist\^encia}{62}
-\contentsline {subsection}{\numberline {4.1.8}Capacidade organizacional}{63}
-\contentsline {subsection}{\numberline {4.1.9}Escala Likert}{63}
-\contentsline {section}{\numberline {4.2}Defini\c c\~ao do Estudo}{64}
-\contentsline {section}{\numberline {4.3}Planejamento do Estudo}{64}
-\contentsline {section}{\numberline {4.4}Execu\c c\~ao do Estudo}{65}
-\contentsline {section}{\numberline {4.5}An\'alise e Discuss\~ao dos Resultados}{65}
-\contentsline {subsection}{\numberline {4.5.1}Perfil dos Especialistas}{66}
-\contentsline {subsection}{\numberline {4.5.2}Frequ\^encia Likert}{66}
-\contentsline {subsection}{\numberline {4.5.3}Teste de Normalidade}{66}
-\contentsline {subsection}{\numberline {4.5.4}Teste Estat\'{\i }stico}{66}
-\contentsline {subsection}{\numberline {4.5.5}Correla\c c\~ao dos Crit\'erios}{66}
-\contentsline {subsection}{\numberline {4.5.6}Melhorias}{66}
-\contentsline {section}{\numberline {4.6}Amea\c cas \`a Validade}{66}
-\contentsline {subsection}{\numberline {4.6.1}Amea\c cas \`a Validade Interna}{66}
-\contentsline {subsection}{\numberline {4.6.2}Amea\c cas \`a Validade Externa}{67}
-\contentsline {subsection}{\numberline {4.6.3}Amea\c cas \`a Validade de \textit {Constructo}}{67}
-\contentsline {subsection}{\numberline {4.6.4}Amea\c cas \`a Validade de Conclus\~ao}{67}
-\contentsline {section}{\numberline {4.7}Empacotamento e Compartilhamento}{67}
-\contentsline {section}{\numberline {4.8}Propostas de Melhoria para SMartOntology}{68}
-\contentsline {section}{\numberline {4.9}Considera\c c\~oes Finais}{68}
-\contentsline {chapter}{\numberline {5}Um Sistema de Recomenda\c c\~ao para Experimentos em LPS (Prova de Conceito) - RecSysSMart}{69}
-\contentsline {section}{\numberline {5.1}Considera\c c\~oes Iniciais}{69}
-\contentsline {section}{\numberline {5.2}Concep\c c\~ao}{69}
-\contentsline {section}{\numberline {5.3}Projeto}{69}
-\contentsline {section}{\numberline {5.4}Ambiente de Desenvolvimento}{69}
-\contentsline {section}{\numberline {5.5}Interface com Usu\'ario}{69}
-\contentsline {section}{\numberline {5.6}Melhorias}{69}
+\contentsline {section}{\numberline {2.6}Trabalhos Relacionados}{29}
+\contentsline {section}{\numberline {2.7}Considera\c c\~oes Finais}{32}
+\contentsline {chapter}{\numberline {3}Uma Ontologia para Experimentos em LPS - SMartOntology}{34}
+\contentsline {section}{\numberline {3.1}Considera\c c\~oes Iniciais}{34}
+\contentsline {section}{\numberline {3.2}Concep\c c\~ao}{34}
+\contentsline {section}{\numberline {3.3}Projeto}{38}
+\contentsline {subsection}{\numberline {3.3.1}Modelagem com Proteg\'e}{38}
+\contentsline {subsubsection}{Defini\c c\~ao de classes}{38}
+\contentsline {subsubsection}{Defini\c c\~ao das propriedades de objetos}{39}
+\contentsline {subsubsection}{Defini\c c\~ao das propriedades dos dados}{39}
+\contentsline {subsubsection}{Artefato gerado pelo Prot\'eg\'e}{40}
+\contentsline {subsection}{\numberline {3.3.2}Povoamento com Pyton}{40}
+\contentsline {subsubsection}{Script}{41}
+\contentsline {subsubsection}{Manipula\c c\~ao dos Dados}{44}
+\contentsline {subsubsection}{Inser\c c\~ao do indiv\'{\i }duos e cria\c c\~ao dos relacionamentos}{46}
+\contentsline {subsubsection}{Artefato e valida\c c\~ao}{49}
+\contentsline {section}{\numberline {3.4}Exemplo de Aplica\c c\~ao}{49}
+\contentsline {section}{\numberline {3.5}Avalia\c c\~ao Emp\'{\i }rica}{51}
+\contentsline {section}{\numberline {3.6}Considera\c c\~oes Finais}{54}
+\contentsline {chapter}{\numberline {4}Avalia\c c\~ao da SMartOntology: Um estudo Quantitativo}{57}
+\contentsline {section}{\numberline {4.1}Considera\c c\~oes Iniciais}{57}
+\contentsline {section}{\numberline {4.2}Escala Likert}{59}
+\contentsline {section}{\numberline {4.3}Defini\c c\~ao do Estudo}{60}
+\contentsline {section}{\numberline {4.4}Planejamento do Estudo}{60}
+\contentsline {section}{\numberline {4.5}Execu\c c\~ao do Estudo}{61}
+\contentsline {section}{\numberline {4.6}An\'alise e Discuss\~ao dos Resultados}{61}
+\contentsline {subsection}{\numberline {4.6.1}Perfil dos Especialistas}{62}
+\contentsline {subsection}{\numberline {4.6.2}Frequ\^encia Likert}{62}
+\contentsline {subsection}{\numberline {4.6.3}Teste de Normalidade}{62}
+\contentsline {subsection}{\numberline {4.6.4}Teste Estat\'{\i }stico}{62}
+\contentsline {subsection}{\numberline {4.6.5}Correla\c c\~ao dos Crit\'erios}{62}
+\contentsline {subsection}{\numberline {4.6.6}Melhorias}{62}
+\contentsline {section}{\numberline {4.7}Amea\c cas \`a Validade}{62}
+\contentsline {subsection}{\numberline {4.7.1}Amea\c cas \`a Validade Interna}{62}
+\contentsline {subsection}{\numberline {4.7.2}Amea\c cas \`a Validade Externa}{63}
+\contentsline {subsection}{\numberline {4.7.3}Amea\c cas \`a Validade de \textit {Constructo}}{63}
+\contentsline {subsection}{\numberline {4.7.4}Amea\c cas \`a Validade de Conclus\~ao}{63}
+\contentsline {section}{\numberline {4.8}Empacotamento e Compartilhamento}{64}
+\contentsline {section}{\numberline {4.9}Propostas de Melhoria para SMartOntology}{64}
+\contentsline {section}{\numberline {4.10}Considera\c c\~oes Finais}{64}
+\contentsline {chapter}{\numberline {5}Um Sistema de Recomenda\c c\~ao para Experimentos em LPS (Prova de Conceito) - RecSysExper-SPL}{65}
+\contentsline {section}{\numberline {5.1}Considera\c c\~oes Iniciais}{65}
+\contentsline {section}{\numberline {5.2}Sistema de Recomenda\c c\~ao}{66}
+\contentsline {subsubsection}{Collaborative Filtering}{67}
+\contentsline {section}{\numberline {5.3}Concep\c c\~ao}{69}
+\contentsline {section}{\numberline {5.4}Projeto}{69}
+\contentsline {section}{\numberline {5.5}Ambiente de Desenvolvimento}{69}
+\contentsline {section}{\numberline {5.6}Interface com Usu\'ario}{69}
 \contentsline {section}{\numberline {5.7}Considera\c c\~oes Finais}{69}
 \contentsline {chapter}{\numberline {6}Conclus\~ao}{70}
 \contentsline {section}{\numberline {6.1}Considera\c c\~oes Iniciais}{70}

@@ -303,13 +303,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia_flow.png
-INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia_flow.png
-INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia_flow.png
-INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png
-INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png
-INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia.pdf
+INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia.pdf
+INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/metodologia.pdf
 OUTPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_fundamentacao_teorica.aux
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_fundamentacao_teorica.tex
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_fundamentacao_teorica.tex
@@ -331,9 +327,6 @@ INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/fig
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_ontologia.png
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_ontologia.png
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_ontologia.png
-INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png
-INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png
-INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png
 OUTPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_ontologia.aux
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_ontologia.tex
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_ontologia.tex
@@ -346,6 +339,7 @@ INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/fig
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/class-diagram-ontology.png
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/class-diagram-ontology.png
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/class-diagram-ontology.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege.png
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege.png
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege.png
@@ -369,6 +363,12 @@ INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/tex
 OUTPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_recsys.aux
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_recsys.tex
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_recsys.tex
+INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png
+INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png
+INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png
+INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png
+INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png
+INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png
 OUTPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.aux
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.tex
 INPUT /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.tex

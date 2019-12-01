@@ -1,6 +1,6 @@
 \chapter{Avaliação da SMartOntology: Um estudo Quantitativo}
 \pagestyle{plain}
-\label{sec:avaliacao_da_smartontology}
+\label{sec:avaliacao}
 
 \section{Considerações Iniciais}
 \label{sec:concidaracoes_iniciais}
@@ -8,59 +8,31 @@
 Este capítulo apresenta um estudo quantitativo realizado para avaliar a SMartOntology proposta no Capítulo 3, com base em um questionário contendo onze questões, oito com critérios de qualidade no estilo escala Likert /cite{Likert}, uma avaliação de frequência da escala Likert, teste estatístico e sua correlação entre os oito critérios.
 
 Os oito critérios de qualidade foram identificados e definidos na Parte I da tese \textit{Ontology Evaluation} de /cite{Denny Vrandecic}, são eles:
+
 \begin{itemize}
-    \item Precisão;
-    \item Adaptabilidade;
-    \item Clareza;
-    \item Completude;
-    \item Eficiência computacional;
-    \item Concisão;
-    \item Consistência; e
-    \item Capacidade Organizacional.
+    \item \textbf{Precisão:} um critério que determina se os axiomas da ontologia estão em conformidade com o conhecimento das partes interessadas sobre o domínio. Uma maior precisão vem das definições e descrições corretas de classes, propriedades e indivíduos. A correção neste caso pode significar conformidade com ?padrões-ouro? definidos, sejam outras fontes de dados, conceituações ou mesmo realidade. /cite(Ceusters e Smith (2006)), introduz uma abordagem para usar a realidade como referência, ou seja, os termos da ontologia captura as partes pretendidas da realidade. Os axiomas devem restringir as possíveis interpretações de uma ontologia para que os modelos resultantes sejam compatíveis com as conceituações dos usuários;
+
+    \item \textbf{Adaptabilidade:} mede até que ponto a ontologia antecipa seus usos. Uma ontologia deve oferecer a base conceitual para uma série de tarefas antecipadas (idealmente, na Web, também deve oferecer a base para tarefas nunca antecipadas). Deve ser possível estender e especializar a ontologia monotonicamente, ou seja, sem a necessidade de remover axiomas (observe que em OWL, a monotonicidade semântica é dada pela monotonicidade sintática, ou seja, para retrair inferências, axiomas explícitos e explícitos precisam ser retraídos). Uma ontologia deve reagir de forma previsível e intuitiva a pequenas mudanças nos axiomas. Deve permitir metodologias para extensão, integração e adaptação, ou seja, incluir metadados necessários. Novas ferramentas e situações inesperadas devem poder usar a ontologia;
+
+    \item \textbf{Clareza:} mede com que eficácia a ontologia comunica o significado pretendido dos termos definidos. As definições devem ser objetivas e independentes do contexto. Os nomes dos elementos devem ser compreensíveis e inequívocos. Uma ontologia deve usar definições em vez de descrições para classes. As entidades devem ser documentadas o suficiente e estar totalmente rotuladas em todos os idiomas necessários. Axiomas complexos devem ser documentados. As escolhas de representação não devem ser feitas para a conveniência da notação ou implementação, ou seja, o viés de codificação deve ser minimizado;
+
+    \item \textbf{Completude:} O critério Completude mede se o domínio de interesse está coberto adequadamente. Todas as perguntas que a ontologia deve poder responder podem ser respondidas. Existem diferentes aspectos da completude: completude no que diz respeito ao idioma (tudo o que é declarado que poderia ser declarado usando o idioma fornecido?), Completude no que diz respeito ao domínio (todos os indivíduos estão presentes, todos os conceitos relevantes são capturados?), Completude com em relação aos requisitos de aplicação (todos os dados necessários estão presentes?), etc. A abrangência também abrange a granularidade e a riqueza da ontologia;
+
+    \item \textbf{Eficiência Computacional:} mede a capacidade das ferramentas usadas de trabalhar com a ontologia, em particular a velocidade que os raciocinadores precisam para executar as tarefas necessárias, seja resposta de consulta, classificação ou verificação de consistência. Alguns tipos de axiomas podem causar problemas para certos racionadores. O tamanho da ontologia também afeta a eficiência da ontologia;
+    
+    \item \textbf{Concisão:} determina se a ontologia inclui elementos irrelevantes em relação ao domínio a ser coberto (ou seja, uma ontologia sobre livros, incluindo axiomas sobre leões africanos) ou representações redundantes da semântica. Uma ontologia deve impor um compromisso ontológico mínimo, ou seja, especificar a teoria mais fraca possível. Somente termos essenciais devem ser definidos. As suposições subjacentes da ontologia sobre o domínio mais amplo (especialmente sobre a realidade) devem ser tão fracas quanto possível, a fim de permitir a reutilização interna e a comunicação entre as partes interessadas que se comprometem com diferentes teorias;
+
+    \item \textbf{Consistência:} mede que a ontologia não inclui ou permite contradições. Enquanto a precisão declara a conformidade da ontologia com uma fonte externa, a consistência indica que a própria ontologia pode ser interpretada. A consistência lógica é apenas uma parte dela, mas também as descrições formais e informais na ontologia devem ser consistentes, ou seja, a documentação e os comentários devem estar alinhados com os axiomas. Outros princípios de ordenação podem ser definidos com os quais a ontologia deve ser consistente, como as restrições OntoClean à taxonomia (Guarino e Welty, 2002); e
+
+    \item \textbf{Capacidade Organizacional:} agrega vários critérios que decidem com que facilidade uma ontologia pode ser implantada dentro de uma organização. Ferramentas, bibliotecas, fontes de dados e outras ontologias usadas restringem a ontologia, e a ontologia deve atender a essas restrições. As ontologias são frequentemente especificadas usando uma metodologia de engenharia de ontologia ou usando conjuntos de dados específicos. Os metadados da ontologia podem descrever as metodologias, ferramentas e fontes de dados aplicadas e a organização. Esses metadados podem ser usados pela organização para decidir se uma ontologia deve ser aplicada ou não.
+
 \end{itemize}
 
-\subsection{Precisão}
 
-A Precisão é, um critério que determina se os axiomas da ontologia estão em conformidade com o conhecimento das partes interessadas sobre o domínio. Uma maior precisão vem das definições e descrições corretas de classes, propriedades e indivíduos. A correção neste caso pode significar conformidade com ?padrões-ouro? definidos, sejam outras fontes de dados, conceituações ou mesmo realidade. /cite(Ceusters e Smith (2006)), introduz uma abordagem para usar a realidade como referência, ou seja, os termos da ontologia captura as partes pretendidas da realidade. Os axiomas devem restringir as possíveis interpretações de uma ontologia para que os modelos resultantes sejam compatíveis com as conceituações dos usuários.
+\section{Escala Likert}
+\label{sec:escala_likert}
 
-
-\subsection{Adaptabilidade}
-
-O critério de Adaptabilidade mede até que ponto a ontologia antecipa seus usos. Uma ontologia deve oferecer a base conceitual para uma série de tarefas antecipadas (idealmente, na Web, também deve oferecer a base para tarefas nunca antecipadas). Deve ser possível estender e especializar a ontologia monotonicamente, ou seja, sem a necessidade de remover axiomas (observe que em OWL, a monotonicidade semântica é dada pela monotonicidade sintática, ou seja, para retrair inferências, axiomas explícitos e explícitos precisam ser retraídos). Uma ontologia deve reagir de forma previsível e intuitiva a pequenas mudanças nos axiomas. Deve permitir metodologias para extensão, integração e adaptação, ou seja, incluir metadados necessários. Novas ferramentas e situações inesperadas devem poder usar a ontologia.
-
-
-\subsection{Clareza}
-
-O critério Clareza mede com que eficácia a ontologia comunica o significado pretendido dos termos definidos. As definições devem ser objetivas e independentes do contexto. Os nomes dos elementos devem ser compreensíveis e inequívocos. Uma ontologia deve usar definições em vez de descrições para classes. As entidades devem ser documentadas o suficiente e estar totalmente rotuladas em todos os idiomas necessários. Axiomas complexos devem ser documentados. As escolhas de representação não devem ser feitas para a conveniência da notação ou implementação, ou seja, o viés de codificação deve ser minimizado.
-
-
-\subsection{Completude}
-
-O critério Completude mede se o domínio de interesse está coberto adequadamente. Todas as perguntas que a ontologia deve poder responder podem ser respondidas. Existem diferentes aspectos da completude: completude no que diz respeito ao idioma (tudo o que é declarado que poderia ser declarado usando o idioma fornecido?), Completude no que diz respeito ao domínio (todos os indivíduos estão presentes, todos os conceitos relevantes são capturados?), Completude com em relação aos requisitos de aplicação (todos os dados necessários estão presentes?), etc. A abrangência também abrange a granularidade e a riqueza da ontologia.
-
-
-\subsection{Eficiência computacional}
-
-O critério de Eficiência Computacional mede a capacidade das ferramentas usadas de trabalhar com a ontologia, em particular a velocidade que os raciocinadores precisam para executar as tarefas necessárias, seja resposta de consulta, classificação ou verificação de consistência. Alguns tipos de axiomas podem causar problemas para certos racionadores. O tamanho da ontologia também afeta a eficiência da ontologia.
-
-
-\subsection{Concisão}
-
-Concisão é o critério que determina se a ontologia inclui elementos irrelevantes em relação ao domínio a ser coberto (ou seja, uma ontologia sobre livros, incluindo axiomas sobre leões africanos) ou representações redundantes da semântica. Uma ontologia deve impor um compromisso ontológico mínimo, ou seja, especificar a teoria mais fraca possível. Somente termos essenciais devem ser definidos. As suposições subjacentes da ontologia sobre o domínio mais amplo (especialmente sobre a realidade) devem ser tão fracas quanto possível, a fim de permitir a reutilização interna e a comunicação entre as partes interessadas que se comprometem com diferentes teorias.
-
-
-\subsection{Consistência}
-
-O critério de Consistência mede que a ontologia não inclui ou permite contradições. Enquanto a precisão declara a conformidade da ontologia com uma fonte externa, a consistência indica que a própria ontologia pode ser interpretada. A consistência lógica é apenas uma parte dela, mas também as descrições formais e informais na ontologia devem ser consistentes, ou seja, a documentação e os comentários devem estar alinhados com os axiomas. Outros princípios de ordenação podem ser definidos com os quais a ontologia deve ser consistente, como as restrições OntoClean à taxonomia (Guarino e Welty, 2002).
-
-
-\subsection{Capacidade organizacional}
-
-O critério de Capacidade Organizacional agrega vários critérios que decidem com que facilidade uma ontologia pode ser implantada dentro de uma organização. Ferramentas, bibliotecas, fontes de dados e outras ontologias usadas restringem a ontologia, e a ontologia deve atender a essas restrições. As ontologias são frequentemente especificadas usando uma metodologia de engenharia de ontologia ou usando conjuntos de dados específicos. Os metadados da ontologia podem descrever as metodologias, ferramentas e fontes de dados aplicadas e a organização. Esses metadados podem ser usados pela organização para decidir se uma ontologia deve ser aplicada ou não.
-
-\subsection{Escala Likert}
-
-A tese de /cite{Denny Vrandecic} não expoem uma forma clara para mensurar os oito critérios definidos por ele. Neste ponto foi definido que uma escala Likert poderia auxiliar nesse sentido. Segundo /cite{Likert} uma escala Likert para gerar bons resultados deve possuir três elementos fundamentais, (i) um negativo, (ii) um neutro e (iii) um positivo.
+A tese de /cite{Denny Vrandecic} não expoem uma forma clara para mensurar os oito critérios. Neste ponto foi definido que uma escala Likert poderia auxiliar. Segundo /cite{Likert} uma escala Likert para gerar bons resultados deve possuir três elementos fundamentais, (i) um negativo, (ii) um neutro e (iii) um positivo.
 
 Os itens Likert são usados para medir as atitudes dos entrevistados em relação a uma pergunta ou afirmação específica. Essas escalas permitem determinar o nível de concordância ou discordância dos respondentes.
 
