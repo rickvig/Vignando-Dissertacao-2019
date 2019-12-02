@@ -12,6 +12,7 @@ A level-1 auxiliary file: texto/_avalicao_da_ontologia.aux
 A level-1 auxiliary file: texto/_recsys.aux
 A level-1 auxiliary file: texto/_conclusao.aux
 The style file: icmc2.bst
+A level-1 auxiliary file: texto/apendice_a_tipologia.aux
 A level-1 auxiliary file: texto/apendice_a.aux
 A level-1 auxiliary file: texto/apendice_b.aux
 A level-1 auxiliary file: texto/apendice_c.aux
@@ -25,7 +26,7 @@ Warning--empty journal in teixeira2014analise
 Warning--empty journal in wolff1962philosophia
 You've used 40 entries,
             2729 wiz_defined-function locations,
-            857 strings with 12860 characters,
+            858 strings with 12890 characters,
 and the built_in function-call counts, 22492 in all, are:
 = -- 2090
 > -- 1024

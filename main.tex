@@ -4,9 +4,18 @@
     12pt,
         ]{icmc}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
 %\voffset=0pt
 %\usepackage[none]{hyphenat}	para evitar hifenizacao
-\hyphenpenalty=2000 		% (nao ta funcionando)
+% \hyphenpenalty=2000 		% (nao ta funcionando)
 \tolerance=400			%
 \clubpenalty=10000		% Alteração Vinícius
 \widowpenalty=10000		%
@@ -98,6 +107,8 @@
 
 \usepackage{booktabs}
 \usepackage{adjustbox}
+
+\usepackage{threeparttable}
 
 %\singlespacing
 \onehalfspacing
@@ -329,17 +340,17 @@
 % Dados da banca
 %\JtipobancaA{a} %% caso seja professora
 \JtipobancaA{o}  %% caso seja professor
-\JbancaA{Fulano 1}
+\JbancaA{Aline Maria Malachini Miotto Amaral}
 \JinstituicaoA{Universidade Estadual de Maringá --- DIN/UEM}
 
 %\JtipobancaB{a}  %% caso seja professora
 \JtipobancaB{o} %% caso seja professor
-\JbancaB{Fulano 2}
-\JinstituicaoB{Universidade Federal do Fim do Mundo --- DEINFO/UFFM}
+\JbancaB{Katia Romero Felizardo Scannavino}
+\JinstituicaoB{Universidade Tecnológica Federal do Paraná --- UTFPR}
 
 % Dados da defesa
-\Jdatadefesa{21 de Fevereiro de 2019.}
-\Jlocaldefesa{Sala 101, Bloco C56, \textit{campus} da Universidade Estadual de Maringá.}
+% \Jdatadefesa{21 de Fevereiro de 2019.}
+% \Jlocaldefesa{Sala 120, Bloco C56, \textit{campus} da Universidade Estadual de Maringá.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -395,6 +406,7 @@
 % Apêndices
 \initappendix
 
+\include{texto/apendice_a_tipologia}
 \include{texto/apendice_a}
 \include{texto/apendice_b}
 \include{texto/apendice_c}

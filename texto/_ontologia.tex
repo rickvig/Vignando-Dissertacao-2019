@@ -1,4 +1,4 @@
-\chapter{Uma Ontologia para Experimentos em LPS - SMartOntology}
+\chapter{Uma Ontologia para Experimentos em LPS - OntoExper-LPS}
 \pagestyle{plain}
 \label{sec:ontologia}
 
@@ -6,33 +6,17 @@
 \section{Considerações Iniciais}
 \label{sec:concidaracoes_iniciais}
 
-Este tópico apresenta conceitos fundamentais sobre a proposta de ontologia SMartyOntology. Inicialmente foi realizado um processo de concepção do modelo em seguida foi desenvolvido o projeto desenvolvido se obter modelo. Com a finalidade de avaliação foi desenvolvido um exemplo de aplicação por meio de uma predição de recomendação qual artefato de LPS pode ser usado por um dado templete de experimento. Ao final desse capitulo foi realizado uma avaliação empírica do modelo, por meio de uma ferramenta que avalia pontos de falha do modelo.
+Este capítulo apresenta a elaboração da proposta de ontologia OntoExper-LPS, sua concepção, a construção do projeto, exemplos de aplicação, uma breve avaliação empírica e considerações finais. Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:concepcao} apresenta o processo de concepção do modelo seguindo a tipologia de \cite{almeida2003visao} bem como a elaboração de um grafo como modelagem inicial da ontologia, seguindo como base um modelo conceitual clusterizado sobre elementos experimentais de ES em LPS; na Seção \ref{sec:projeto} foi desenvolvido o projeto da OntoExper-LPS para se obter modelo ontológico, foi utilizado como tecnologia base OWL (\textit{Ontology Web Language}) juntamente com a Ferramenta Protégé, o resultado final foi um artefato do tipo OWL contendo toda modelagem de classes, subclasses, propriedades de objeto e propriedades dos dados, além da modelagem, foi criado nesta seção, um programa automatizado para povoar a ontologia utilizando os metadados levantados pelo GReater, este programa conta com a utilização da linguagem de programação Python e a biblioteca OwlReady2; na Seção \ref{sec:exemplo} foi elaborado uma consulta SPARQL para demonstrar como interagir com a ontologia e uma breve explicação deste procedimento; na Seção \ref{sec:avaliacao_empirica} foi realizado uma avaliação empírica do modelo, por meio da ferramenta OOPS! que avalia pontos de falha do modelo, nesta seção discutimos como estes ponto de falham impacta no modelo proposto por este trabalho.
 
 
 \section{Concepção}
 \label{sec:concepcao}
 
-Com base na tipologia proposta por \cite{almeida2003visao} definimos o tipo de ontologia proposto na Tabela \ref{tab:type_ontology}:
+Com base na tipologia proposta por \cite{almeida2003visao} definimos o tipo da ontologia proposto neste trabalho, descrito na Tabela \ref{tab:tipo-modelo-ontologia}. Todas as tipologias para ontologias podem ser encontradas no Apêndice \ref{apendice:a-tipologia}
 
-\begin{table}[]
-	\caption{Type of the Proposed Ontology}
-	\label{tab:type_ontology}
-	\begin{tabular}{@{}lll@{}}
-		\toprule
-		Approach & Rating & Description \\ \midrule
-		\begin{tabular}[c]{@{}l@{}}As for the Mizoguchi function; \\ Vanwelkenbuyse; Ikeda (1995)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Domain ontologies\end{tabular} & \begin{tabular}[c]{@{}l@{}}Reusable in the domain, they provide vocabulary \\ about concepts and their relationships, about the \\ activities and rules that govern them\end{tabular} \\
-		\begin{tabular}[c]{@{}l@{}}As for the degree of Uschold formalism; \\ Gruninger (1996)\end{tabular} & Semi-formal & \begin{tabular}[c]{@{}l@{}}Expressed in natural language in a restricted \\ and structured way\end{tabular} \\
-		\begin{tabular}[c]{@{}l@{}}As for the Jasper application; \\ Uschold (1999)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Ontologies as specification\end{tabular} & \begin{tabular}[c]{@{}l@{}}An ontology is created for a domain, which is used \\ for documentation and maintenance in the \\ development of software.\end{tabular} \\
-		\begin{tabular}[c]{@{}l@{}}As for the Haav structure; \\ Lubi (2001)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Domain ontologies\end{tabular} & \begin{tabular}[c]{@{}l@{}}Describe vocabulary related to a domain, \\ such as medicine or automobiles\end{tabular} \\
-		\begin{tabular}[c]{@{}l@{}}As for Van-Heijist content; \\ Schreiber; Wielinga (2002)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Knowledge modeling ontologies\end{tabular} & \begin{tabular}[c]{@{}l@{}}Specify knowledge conceptualizations, have a \\ semantically rich internal structure, and are refined \\ for use in the domain of knowledge they describe\end{tabular} \\
-		& \begin{tabular}[c]{@{}l@{}}Application ontologies\end{tabular} & \begin{tabular}[c]{@{}l@{}}Contains the definitions needed to model knowledge\\ in an application\end{tabular} \\
-		& \begin{tabular}[c]{@{}l@{}}Domain ontologies\end{tabular} & \begin{tabular}[c]{@{}l@{}}Express concepts that are specific to a \\ given domain of knowledge\end{tabular} \\ \bottomrule
-	\end{tabular}
-\end{table}
+Ou seja, podemos tipificar o modelo proposto como; \textbf{quanto à função:} é uma ontologia de domínio, \textbf{quanto ao grau de formalismo:} é uma ontologia semi formal, \textbf{quanto à aplicação:} é uma ontologia de especificação, \textbf{quanto à estrutura:} é uma ontologia de domínio e \textbf{quanto ao conteúdo:} é tanto uma ontologia para modelagem de conhecimento quanto para aplicação de domínio.
 
-Ou seja, quanto à função é uma ontologia de domínio, quanto ao grau de formalismo é uma ontologia semi formal, quanto à aplicação é uma ontologia de especificação, quanto à estrutura é uma ontologia de domínio e quanto ao conteúdo é tanto uma ontologia para modelagem de conhecimento quanto para aplicação e de domínio.
-
-Foi aplicado o seguinte processo de elaboração da ontologia \cite{fernanda2007modelagem}:
+Também foi aplicado o seguinte processo de elaboração da ontologia, seguindo os processos proposto por \cite{fernanda2007modelagem}:
 
 \begin{itemize}
 	\item Definição e estruturação dos termos por meio de classes;  
@@ -42,221 +26,301 @@ Foi aplicado o seguinte processo de elaboração da ontologia \cite{fernanda2007mo
 	\item Elaboração de sentenças para restringir inferências de conhecimento baseadas na estrutura.
 \end{itemize}
 
-Inicialmente foi desenvolvido um grafo para o modelo inicial da ontologia SMartyOntology, principalmente para validar os termos por meio de classes, subclasses e os relacionamento entre elas.
+\begin{landscape}
+	\topskip0pt
+    \vspace*{\fill}
+	\begin{table}[]
+		\label{tab:tipo-modelo-ontologia}
+		\caption{Tipagem da ontologia proposta}
+		\centering
+		\begin{tabular}{@{}lll@{}}
+			\toprule
+			Abordagem & Classificação & Descrição \\ \midrule
+			\begin{tabular}[c]{@{}l@{}}Quanto à função \\ Mizoguchi; Vanwelkenbuyse \\ n; Ikeda (1995)\end{tabular} & Ontologias de domínio & \begin{tabular}[c]{@{}l@{}}Reutilizáveis no domínio, fornecem vocabulário \\ sobre conceitos e seus relacionamentos, sobre as \\ atividades e regras que os governam.\end{tabular} \\
+			\begin{tabular}[c]{@{}l@{}}Quanto ao grau de formalismo \\ Uschold; Gruninger (1996)\end{tabular} & Ontologias semi informais & \begin{tabular}[c]{@{}l@{}}Expressa em linguagem natural de forma restrita \\ e estruturada.\end{tabular} \\
+			\begin{tabular}[c]{@{}l@{}}Quanto à aplicação \\ Jasper; Uschold (1999)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Ontologias como \\ especificação\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cria-se uma ontologia para um domínio, a qual é \\ usada para documentação e manutenção no \\ desenvolvimento de softwares.\end{tabular} \\
+			\begin{tabular}[c]{@{}l@{}}Quanto à estrutura \\ Haav; Lubi (2001)\end{tabular} & Ontologias de domínio & \begin{tabular}[c]{@{}l@{}}Descrevem o vocabulário relacionado a um domínio, \\ como, por exemplo, medicina ou automóveis\end{tabular} \\
+			\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Quanto ao conteúdo \\ Van-Heijist; Schreiber; \\ Wielinga (2002)\end{tabular}} & \begin{tabular}[c]{@{}l@{}}Ontologias de modelagem\\ do conhecimento\end{tabular} & \begin{tabular}[c]{@{}l@{}}Especificam conceituações do conhecimento, têm uma \\ estrutura interna semanticamente rica e são refinadas\\ para uso no domínio do conhecimento que descrevem\end{tabular} \\
+			& Ontologias de aplicação & \begin{tabular}[c]{@{}l@{}}Contêm as definições necessárias para modelar o \\ conhecimento em uma aplicação.\end{tabular} \\
+			& Ontologias de domínio & \begin{tabular}[c]{@{}l@{}}Expressam conceituações que são específicas para \\ um determinado domínio do conhecimento.\end{tabular} \\ \bottomrule
+		\end{tabular}
+	\end{table}
+	\vspace*{\fill}
+\end{landscape}
 
-\begin{figure}[ht]
+O primeiro passo foi desenvolver um grafo como modelo inicial da ontologia OntoExper-LPS, o objetivo principal foi de externalizar idéias iniciais do modelo e visualizar hierarquias e relacionamentos entre os termos inicialmente propostos.
+
+\begin{figure}[]
 	\centering 
-	\includegraphics[width=11cm]{graph-all-class.pdf}
-	\caption{Initial graph of ontology.}
+	\includegraphics[scale=0.5]{grafo-inicial.pdf}
+	\caption{Grafo inicial da proposta de ontologia.}
 	\label{figure:graph-all-class}
 \end{figure}
 
-A \ref{figure:graph-all-class} representa este modelo inicial contendo a definição principal das classe de mais alto nível para o experimento, SPL Experiment, Documentation, Template, Evaluation, Discussion, Analysis, Execution e Planning. Em seguida evoluímos para possíveis subclasses delas, onde definimos as sub-classes em \ref{tab:class_sub_class_ontology}:
+A \ref{figure:graph-all-class} representa este modelo inicial contendo a definição principal dos termos para o experimento, Experimento SPL, Documentação, Template, Avaliação, Discussão, Análise, Execução e Planejamento. Em seguida evoluímos para possíveis termos de mais baixa hierarquia, que estão definidas a seguir:
 
-\begin{table}[]
-	\caption{Classes and Sub-classes of ontology prototype}
-	\label{tab:class_sub_class_ontology}
-	\begin{tabular}{@{}lll@{}}
-		\toprule
-		Class & Sub-class & Sub-class \\ \midrule
-		\multirow{19}{*}{Documentation} & \multirow{6}{*}{Abstract} & Keyword \\
-		&  & Limitations \\
-		&  & Conclusions \\
-		&  & Results \\
-		&  & Method \\
-		&  & Goal \\
-		& \multirow{3}{*}{Introduction} & Context \\
-		&  & Research Objective \\ & & (GQM) \\
-		&  & Issue Issues \\
-		& \multirow{4}{*}{Related Work} & Related Studies \\
-		&  & Technology under \\ & & Investigation \\
-		&  & Alternative Technology \\
-		&  & Relevance in Practice \\
-		& Template & Observation \\
-		& References &  \\
-		& Acknowledgment &  \\
-		& Conclusion &  \\
-		& Appendix &  \\
-		& SPL Domain &  \\
-		\multirow{11}{*}{Planning} & Context & Local \\
-		& Experimental Unit & Selection of Participants \\
-		& Experimental Material & SPL artifacts \\
-		& Experimental Design &  \\
-		& Goals &  \\
-		& Hypotheses &  \\
-		& Tasks &  \\
-		& Parameters &  \\
-		& Variables &  \\
-		& Procedures &  \\
-		& Analysis of procedures &  \\
-		\multirow{3}{*}{Execution} & Preparation &  \\
-		& Execution & Pilot \\
-		& Deviation from Planning &  \\
-		Analyze & Type of Analysis & Type of Hypothesis \\ & & Analysis \\
-		& Hypothesis Testing &  \\
-		& Descriptive statistics &  \\
-		& Qualitative analysis &  \\
-		& Preparing the Dataset &  \\
-		Discussion & Threats to Validity & Threat to Validity \\ & & in SPL \\
-		& Evaluation of Results &  \\
-		& Inferences &  \\
-		&  &  \\
-		Packaging &  &  \\
-		Evaluation &  &  \\ \bottomrule
-	\end{tabular}
-\end{table}
 
-A criação deste modelo inicial de ontologia se baseada no trabalho de mapeamento sistemático de experimentos em SPL \cite{Furtado2018}, por meio de uma análise exploratória dos dados levantados nesse mapeamento. O mapeamento servir como guia de informações e metadados de experimentos.
+\begin{itemize}
+	\item Documentação;
+	\begin{itemize}
+		\item Domínio em LPS;
+		\item \textit{Abstract}:
+		\begin{itemize}
+			\item Palavra Chave; 
+			\item Limitações;
+			\item Conclusões;
+			\item Resultados;
+			\item Métodos; e
+			\item Objetivos.			
+		\end{itemize}
+		\item Introdução:
+		\begin{itemize}
+			\item Contexto;
+			\item Objetivo da Pesquisa (GQM); e
+			\item Questões do Problema.
+		\end{itemize}
+		\item Trabalhos Relacionados:
+		\begin{itemize}
+			\item Estudos Relacionados;
+			\item Tecnologia sob Investigação;
+			\item Tecnologia Alternativa; e
+			\item Relevância na Prática.
+		\end{itemize} 
+		\item Template:
+		\begin{itemize}
+			\item Observação.
+		\end{itemize}
+		\item Referências;
+		\item Agradecimentos;
+		\item Conclusão; e
+		\item Apêndice.
+	\end{itemize}
+	\item Planejamento:
+	\begin{itemize}
+		\item Contexto:
+		\begin{itemize}
+			\item Local.
+		\end{itemize} 
+		\item Unidade Experimental:
+		\begin{itemize}
+			\item Seleção dos Participantes;
+		\end{itemize} 
+		\item Material Experimental:
+		\begin{itemize}
+			\item Artefatos de SPL;
+			\begin{itemize}
+				\item Fonte
+			\end{itemize} 
+		\end{itemize} 
+		\item Projeto Experimental;
+		\item Parâmetros;
+		\item Variáveis;
+		\item Procedimentos;
+		\item Objetivo;
+		\item Hipóteses;
+		\item Tarefas;
+		\item Análises de procedimentos;
+	\end{itemize} 
+	\item Execução:
+	\begin{itemize}
+		\item Preparação:
+		\begin{itemize}
+			\item Projeto Piloto;
+		\end{itemize}	 
+		\item Execução; e
+		\item Desvio do Planejamento;
+	\end{itemize}
+	\item Análise:
+	\begin{itemize}
+		\item Tipo de Análise:
+		\begin{itemize}
+			\item Meta Análise
+			\item Tipo de Análise de Hipótese;
+		\end{itemize} 
+		\item Teste de Hipótese:
+		\begin{itemize}
+			\item P-value
+		\end{itemize} 
+		\item Estatística Descritiva;
+		\item Análise qualitativa;
+		\item Preparação do \textit{Dataset};
+	\end{itemize} 
+	\item Discussão:
+	\begin{itemize}
+		\item Ameaças a Validade:
+		\begin{itemize}
+			\item Ameaça a Validade em LPS.
+		\end{itemize} 
+		\item Avaliação dos Resultados;
+		\item Inferências;
+		\item Lições Aprendidas;
+	\end{itemize}	 
+	\item Empacotamento:
+	\begin{itemize}
+		\item Pacote Experimental.
+	\end{itemize} 
+	\item Avaliação:
+	\begin{itemize}
+		\item Abordagem de Avaliação.
+	\end{itemize} 
 
-O mapeamento sistemático se baseou no temple experimental de Wohlin, que traz 5 pilares para elaboração de ESE, são eles: Definição, Planejamento, Operação, Análise e Interpretação \cite{wohlin2012}.
+\end{itemize}
 
-\begin{figure}[htb]
-	\centering 
-	\includegraphics[scale=.2]{conceptual-model-clustering.pdf}
-	\caption{Conceptual Model Clustering.}
-	\label{figure:conceptual_model_clustering}
-\end{figure}
+Esta modelagem inicial da ontologia foi baseada no trabalho de mapeamento sistemático de experimentos em LPS de \cite{Furtado2018}, por meio de uma análise exploratória dos dados levantados nesse mapeamento, foi possível usa-lo como guia de informações e metadados de ESE em LPS.
 
-A \ref{figure:conceptual_model_clustering}, apresenta uma modificação do modelo conceitual original, aplicando uma clusterização baseada nos pilares do Wohlin. Esta clusterização foi necessária para compreensão mais abstrata das relações entre os termos do domínio levantados no modelo conceitual original. Dessa forma foi possível validar as classes pai do grafo inicialmente proposto.
+O mapeamento sistemático levou em consideração o temple experimental de Wohlin, que traz cinco fases para elaboração de ESE, são eles, Definição, Planejamento, Operação, Análise e Interpretação \cite{wohlin2012}.
+
+\begin{landscape}
+	\topskip0pt
+    \vspace*{\fill}
+	\begin{figure}[]
+		\centering 
+		\includegraphics[scale=.65]{modelo-conceitual-clusterizado.pdf}
+		\caption{Modelo Conceitual Clusterizado.}
+		\label{figure:conceptual_model_clustering}
+	\end{figure}
+	\vspace*{\fill}
+\end{landscape}
+
+A \ref{figure:conceptual_model_clustering}, apresenta uma modificação do modelo conceitual original, elaborada no trabalho de \cite{Furtado2018}, onde foi aplicado a clusterização separando cada cluster para cada fase do template experimental de Wohlin. Esta clusterização foi necessária para compreensão mais abstrata das relações entre os termos do domínio levantados no modelo conceitual original e as fases do template do Wholin. Dessa forma foi possível validar cada termo do grafo inicialmente proposto.
 	
-Em seguida, um diagrama de classes foi criado para uma representação mais formal da modelagem inicial. Nessa representação, a relação entre os termos (classes) e suas propriedades (atributos) ficou mais clara, o modelo TBox. Essa forma de representação destacou a relação principal quando definimos a composição da classe Experiment e ExperimentSPL em quase todas as outras subclasses. Nesta representação também foi explícita a tipificação das propriedades, modelo ABox.
+Em seguida, um diagrama de classes foi elaborado para representar de uma maneira mais intuitiva a modelagem inicial, realizada com grafos. O objetivo é transformar cada termos do grafo em uma classe do conceito de Orientação a Objetos. Nessa representação, a modelagem da \textit{TBox}, ou seja, a relação entre os termos (classes) e suas propriedades (atributos) ficou mais clara. Essa forma de representação destacou a relação principal quando definimos a composição da classe Experiment e ExperimentSPL em quase todas as outras subclasses. Nesta representação também ficou explícita a tipificação das propriedades, para posteriormente executar a inserção da \textit{ABox} na modelagem.
 
-\begin{figure}[htb]
-	\centering
-	\includegraphics[scale=.2]{class-diagram-ontology.png}
-	\caption{Class Diagram for proposal of the ontology model.}
-	\label{figure:class_diagram_ontology}
-\end{figure}
+A \ref{figure:class_diagram_ontology} apresenta o diagrama de classe gerado para o modelagem da ontologia. Este diagrama representa todas composições de classes que existe com Experiment e ExperimentSPL, bem como as relações hierárquicas como por exemplo, ExperimentSPL é uma subclasse de Experiment.
 
-A \ref{figure:class_diagram_ontology} apresenta  diagrama de classe gerado para SMartyOntology.
+\begin{landscape}
+	\topskip0pt
+    \vspace*{\fill}
+	\begin{figure}[]
+		\centering
+		\includegraphics[scale=.3]{class-diagram-ontology.png}
+		\caption{Diagrama de Classe para proposta da modelagem da ontologia.}
+		\label{figure:class_diagram_ontology}
+	\end{figure}
+	\vspace*{\fill}
+\end{landscape}
 
-Posteriormente, definimos usar a ferramenta Protégé para a construção oficial da ontologia. Esta ferramenta dispõe de uma interface gráfica para edição de ontologias e uma arquitetura para a criação de ferramentas baseadas em conhecimento. Pode ser usada tanto por desenvolvedores de sistema como por especialistas em domínio para criar bases de conhecimento, permitindo representar facilmente o conhecimento de uma área. Este editor é capaz de tratar classes, com sua definição e exemplos, simultaneamente \cite{DBLP:journals/aimatters/Musen15}.
+Posteriormente, foi utilizada a ferramenta Protégé para construção oficial da ontologia, seguindo os padrões OWL.
 
 
 \section{Projeto}
 \label{sec:projeto}
 
-Definimos a criação da ontologia usando OWL construindo as classes e subclasses para representar os elementos da ontologia.
+Definimos a criação da ontologia usando a tecnologia OWL, foram construídas as classes e subclasses para representar os elementos da ontologia, por meio da ferramenta Protégé.
 
-\subsection{Modelagem com Protegé}
+\subsection{Modelagem com Protégé}
 \label{sec:protege}
 
-O padrão OWL foi usado no SMartyOntology para definir todos os elementos, classes e subclasses.
+A ferramenta Protégé é um ambiente de desenvolvimento voltado para criação de ontologias. Ela dispõe de uma interface gráfica para edição de ontologias e uma arquitetura para a criação de ferramentas baseadas em conhecimento. Pode ser usada tanto por, desenvolvedores de sistema, como por especialistas em domínio, para criar bases de conhecimento, permitindo representar facilmente o conhecimento de uma área. Este editor é capaz de tratar classes, com sua definição e exemplos, simultaneamente propriedades de objetos e de dados \cite{DBLP:journals/aimatters/Musen15}.
 
-Fazendo uma analogia ao diagrama de classe, no Protégé, classes, os atributos de classes e seus relacionamentos estão em um contexto de entidades. As classes e hierarquias são definidos na aba Class, os relacionamentos são definidos na aba Propriedades de Objetos e os atributos são definidos na aba Propriedade dos Dados.
+% O padrão OWL foi usado no OntoExper-LPS para definir todos os elementos, classes, propriedades de objetos e dados.
+
+Fazendo uma analogia ao diagrama de classe, no Protégé, as classes, os atributos de classes e seus relacionamentos estão em um contexto de entidades. As classes e hierarquias são definidos na aba \textbf{Classes}, os relacionamentos são definidos na aba \textbf{Propriedades de Objetos} e os atributos são definidos na aba \textbf{Propriedade dos Dados}.
 
 Definimos nossas entidades com base do diagrama de classe construído na fase de concepção, com a seguinte estrutura (i) definição de classes (ii) definição das propriedades de objetos, (iii) definição das propriedades dos dados.
 
-% \begin{table}[htbp]
-% 	\caption{Ontology Design - Classes and Properties modeling}
-% 	\label{tab:ontology_design_classes_properties}
-% 	\centering
-% 	\begin{tabu} to \textwidth {| p{1.4cm} | p{15.6cm} |}
-% 		\hline
-% 		\centering \textbf{Element} & \centering \textbf{Definition} \\ \hline
-		
-% 		Classes & Abstract, Acknowledgments, Analysis, Appendices, ConclusionsFutureWork, Discussion, DiscussionSPL, Documentation, Evaluation, ExecutionSection, Experiment, ExperimentSPL, ExperimentPlanning, ExperimentPlanningSPL, Introduction, Package, References, RelatatedWork, TypeContextExperiment, TypeContextSelection, TypeDesignExperiment, TypeEsperiment, TypeEsperimentSPL, TypeSelectioParticipantObjects \\ \hline
-		
-% 		Object Properties & documentation, experiment, typeContextxperiment, typeContextSelection, typeDesignExperiment, typeExperiment, typeExperimentSPL, typeSelectionOfParticipants \\ \hline
-		
-% 		Data \mbox{Properties} & idExperiment, title, authorship, publicationYear, publicationType, publicationVenue, pagesNumber, idExperimentSPL, nameSPLUsed, wasTheSPLSourceUsedInformed, idDocumentation, useTemplate, template, observationsAboutTemplateUsed, idAbstract, objective, abstractBackground, methods, results, limitations, conclusions, keywords, idIntroduction, problemStatement, researchObjective, context, idRelatedWork, technologyUnderInvestigation, alternativeTechnologies, relatedStudies, relevancePractice, idConclusionsFutureWork, summary, impact, futureWork, idExperimentPlanning, goals, experimentalUnits, experimentalMaterial, tasks, hypotheses, parameters, variables, experimentDesign, procedureProcedure, explicitQuesiExperimentInStudy, isAQuasiExperiment, idExperimentPlanningSPL, artifactSPLused, idExecutionSection, preparation, deviations, pilotProjectCarriedOut, howManyPilotProjectCarriedOut, idAnalysis, descriptiveStatistics, datasetPreparation, hyp othesisTesting, whatQualitativeAnalysisPerformed, howDatahasBeenAnalyzed, experimentAnalysisBasedPValue, hasQualitativeAnalysisOfExperiment, studyHasPerformMetaAnalysis, idDiscussion, evaluationOfResultsAndImplications, inferences, lessonsLearned, threatsValidity, isFollowThreatsByWohlin, idDiscussionSPL, threatsValiditySPL, idAcknowledgements, acknowledgments, idReferences, references, idAppendices, appendicies, idEvaluation, theAuthorsConcernedEvaluatingTheQuality, idPackage, isExperimentalPackageInformed, url, isLinkAvailable \\ \hline
-% 	\end{tabu}
-% \end{table}
-
 \subsubsection{Definição de classes}
-No Protégé, definimos uma classe raiz chamada Thing na qual todas as outras classes são filhas dela. A \ref{figure:class_defition_protege} apresenta a definição da classe Experiment dentro do modelo, neste momento a definição é composta pelo nome da classe e seus principais relacionamentos (Equivalent To e SubClass Of).
 
-\begin{figure}[]
+No Protégé, definimos uma classe raiz chamada \textit{Thing} na qual todas as outras classes são filhas dela. A \ref{figure:class_defition_protege} apresenta a definição da classe Experiment dentro do modelo, neste momento a definição é composta pelo nome da classe e seus principais relacionamentos \textit{(Equivalent To e SubClass Of)}.
+
+\begin{figure}[htb]
 	\centering 
-	\includegraphics[scale=.3]{entidades-protege.png}
+	\includegraphics[scale=.5]{entidades-protege.png}
 	\caption{Definição da classe Experiment no Protégé.}
 	\label{figure:class_defition_protege}
 \end{figure}
 
 \subsubsection{Definição das propriedades de objetos}
-No Protégé, definimos uma propriedade de objeto raiz chamada topObjectProperty na qual todas as outras propriedades são filhas dela. A \ref{figure:object_prop_defition_protege} Figura apresenta a definição de propriedade de objeto para chamada ?documentation? dentro do modelo, neste momento a definição é composta pelo nome da propriedade e seus relacionamentos com classes, Domains e Ranges.
 
-\begin{figure}[htb]
+No Protégé, definimos uma propriedade de objeto raiz chamada \textit{topObjectProperty} na qual todas as outras propriedades são filhas dela. A \ref{figure:object_prop_defition_protege} apresenta a definição de propriedade de objeto para propriedade \textit{documentation}, neste momento a definição é composta pelo nome da propriedade e seus relacionamentos com classes, Domínio \textit{(Domains)} e Alcance \textit{(Ranges)}.
+
+\begin{figure}[!htb]
 	\centering 
-	\includegraphics[width=10cm]{entidades-protege-object-properties.png}
+	\includegraphics[scale=.5]{entidades-protege-object-properties.png}
 	\caption{Definição da propriedade de objeto documentation no Protégé.}
 	\label{figure:object_prop_defition_protege}
 \end{figure}
 
 \subsubsection{Definição das propriedades dos dados}
-No Protégé, definimos uma propriedade de dados raiz chamada topDataProperty na qual todas as outras propriedades são filhas dela. Para cada Propriedade de Dado definimos um conjunto de classes de seu Domínio e um conjunto de tipos de dados (predefinido) de seu Alcance, por exemplo, a propriedade de dado ?nameSPLUsed? possui como classe de domínio ExperimentSPL e como alcance um xsd:string. A \ref{figure:data_prop_defition_protege} apresenta a definição de propriedade de dado para chamada ?nameSPLUsed? dentro do modelo, neste momento a definição é composta pelo nome da propriedade e seus relacionamentos, Domains (uma classe) e Ranges (uma tipagem).
+
+No Protégé, definimos uma propriedade de dados raiz chamada \textit{topDataProperty} na qual todas as outras propriedades são filhas dela. Para cada Propriedade de dado definimos um conjunto de classes de seu Domínio e um conjunto de tipos de dados (predefinido) de seu Alcance, por exemplo, a propriedade de dado \textit{nameSPLUsed} possui como classe de domínio ExperimentSPL e como alcance um \textit{xsd:string}. A \ref{figure:data_prop_defition_protege} apresenta a definição de propriedade de dado para chamada \textit{nameSPLUsed}, neste momento a definição é composta pelo nome da propriedade e seus relacionamentos, Domínio (uma classe) e Alcance (uma tipagem).
 
 \begin{figure}[htb]
 	\centering 
-	\includegraphics[width=10cm]{entidades-protege-data-properties.png}
+	\includegraphics[scale=.5]{entidades-protege-data-properties.png}
 	\caption{Definição da propriedade de dado nameSPLUsed no Protégé.}
 	\label{figure:data_prop_defition_protege}
 \end{figure}
 
 \subsubsection{Artefato gerado pelo Protégé}
 
-Ao final, o Protégé gera um arquivo .owl contendo a definição do modelo. A \ref{figure:graph_ontology_model} fornece uma visão geral do formato do grafo do projeto, contendo todas as classes e suas propriedades de objeto e propriedade de dados. Usamos a ferramenta WebVOWL \cite{lohmann2016visualizing} para gerar essa visão.
+Ao final, o Protégé gera um arquivo \textit{.owl} contendo toda a definição do modelo. A \ref{figure:graph_ontology_model} fornece uma visão geral no formato de grafo do projeto, contendo todas as classes. Usamos a ferramenta WebVOWL \cite{lohmann2016visualizing} para gerar essa visão.
 
 \begin{figure}[htb]
 	\centering 
-	\includegraphics[width=10cm]{ontology-populate-valid-owl-2.pdf}
+	\includegraphics[scale=.6]{ontology-populate-valid-owl-2.pdf}
 	\caption{Grafo da modelagem da ontologia - gerado pelo WbVOWL.}
 	\label{figure:graph_ontology_model}
 \end{figure}
 
-\subsection{Povoamento com Pyton}
+\subsection{Povoamento com Python}
 \label{sec:python}
 
-A próxima etapa, após a modelagem da ontologia, foi inserir os indivíduos na mesma, ou seja, popular a ontologia para realização de inferências futuras. Apesar do Protégé ter capacidade para realizar essa operação, optamos por utilizar um script para realizar tal tarefa, visto que, no Protégé o processo de inserir indivíduos na ontologia é realizado de modo manual, por meio do menu ?Individuals by Class?, onde é preciso selecionar propriedade por propriedade para cada indivíduo. Sabendo que para cada indivíduo temos 84 propriedades de dados mais 8 propriedade de objetos, somando um total de 92 relacionamentos para cada indivíduo. Portanto, sabendo que temos 174 indivíduos a serem inseridos em uma carga inicial, seriam mais de 16000 iterações manuais no Protégé.
+A próxima etapa, após a modelagem da ontologia, foi inserir os indivíduos na mesma, ou seja, popular a ontologia para realização de inferências futuras. Apesar do Protégé ter capacidade para realizar essa operação, optamos por utilizar um script para realizar tal tarefa, visto que, no Protégé o processo de inserir indivíduos na ontologia é realizado de modo manual, por meio do menu \textit{Individuals by Class}, onde é preciso selecionar propriedade por propriedade para cada indivíduo. Sabendo que para cada indivíduo temos 84 propriedades de dados mais 8 propriedade de objetos, somando um total de 92 relacionamentos para cada indivíduo. Portanto, sabendo que temos aproximadamente duzentos indivíduos a serem inseridos em uma carga inicial, seriam aproximadamente mais de 184.000 iterações manuais no Protégé. Este cálculo está descrito na Equação \ref{eq:numero_iteracoes_manuais}.
 
-Dado essa estimativa de operações manuais optamos pela utilização de uma ferramenta script a fim de facilitar e automatizar a inserção dos indivíduos e posteriormente a inserção de novos indivíduos. Escolhemos a linguagem de programação Python por fornecer bibliotecas prontas, tanto para manipulação de dados em planilhas (Pandas), como para ontologia em arquivos .owl (OwlReady2).
+\begin{equation}
+	\label{eq:numero_iteracoes_manuais}
+	n^{\circ}\, iteracoes\, manuais = n^{\circ}\, relacionamentos * n^{\circ}\, individuos
+\end{equation}
+
+Dado essa estimativa de operações manuais optamos pela utilização de uma ferramenta script, a fim de facilitar e automatizar a inserção dos indivíduos e posteriormente a inserção de novos indivíduos. Escolhemos a linguagem de programação Python por fornecer bibliotecas prontas, tanto para manipulação de dados em planilhas (Pandas), como para ontologia em arquivos .owl (OwlReady2), para tal finalidade.
 
 \subsubsection{Script}
 
-Para criação do script utilizamos outra ferramenta do Python chamada Jupyter Notebook \cite{PER-GRA:2007} para auxiliar na execução e validação de código. O processo do script se assemelha a um processo de ETL (Extract Transform Load), onde extraímos os dados originais da planilha, desenvolvida no trabalho de revisão sistemática sobre experimentos em LPS, e manipulamos estes dados para inserir na ontologia, seguindo a modelagem inicial construída no Protégé.
+Para o ambiente de desenvolvimento do script, utilizamos outra ferramenta do Python chamada Jupyter Notebook \cite{PER-GRA:2007} para auxiliar na execução e validação de código. O processo do script se assemelha a um processo de ETL \textit{(Extract Transform Load)}, onde extraímos os dados originais da planilha, desenvolvida no trabalho de revisão sistemática sobre experimentos em LPS, e manipulamos estes dados para inserir na ontologia, seguindo a modelagem inicial construída no Protégé.
 
-Para  leitura dos dados da planilha usamos a biblioteca Pandas \cite{mckinney-proc-scipy-2010}, ela nos retorna um objeto do tipo Dataframe que chamamos de ?df?, no qual é a representação da própria planilha no ambiente de programação Python.
+Para  leitura dos dados da planilha usamos a biblioteca Pandas \cite{mckinney-proc-scipy-2010}, ela nos retorna um objeto do tipo \textit{Dataframe}, no qual é a representação da própria planilha no ambiente de programação Python.
 
-Os dados da planilha estão estruturados na seguinte forma, cada linha representa um artigo encontrado no mapeamento sistemático, e cada coluna representa um dado extraído deste artigo. Segue o mapeamento de cada dado. 
+Os dados da planilha estão estruturados na seguinte forma, cada linha representa um artigo encontrado no mapeamento sistemático, e cada coluna representa um dado extraído deste artigo. Segue o mapeamento de cada coluna. 
 
-Com relação ao Experimento temos:  ID,  Title, Authorship, Publication year, Publication type, Publication venue, Pages number, dados de Experimentos em SPL temos: Is it Real or Academic SPL?, SPL Name used, Was the SPL source used informed? (Y/N) (If yes, which one?). 
+Com relação ao \textit{Experiment} temos:  \textit{ID, Title, Authorship, Publication year, Publication type, Publication venue, Pages number, dados de Experimentos em SPL temos: Is it Real or Academic SPL?, SPL Name used, Was the SPL source used informed? (Y/N) (If yes, which one?)}. 
 
-Com relação a Documentation temos: Does it use template? (Y/N)?,  If yes, what template?, Observations about the template used. Para o Abstract temos: Objective (What is the question addressed with this research?), Abstract - Background (Why is this research important?), Methods (What is the statistical context and methods applied?), Results (What are the main findings? Practical implications?), Limitations (What are the weakness of this research?), Conclusions (What is the conclusion?) e Keywords. Para o Introduction Section temos: Problem statement (What is the problem? Where does it occur? Who has observed it? Why is it important to be solved?), Research objective (GQM) (What is the research question to be answered by this study?), Context (What information is necessary to understand whether the research relates to a specific situation (environment)?). Para o Related Work Section temos: Technology under investigation (What is necessary for a reader to know about the tecnology to reproduce its application?), Alternative technologies (How does this research relate to alternative technologies? What is the control treatment?), Related studies (How this research relates to existing research (studies)? What were the results from these studies?), Relevance to practice (How does it relate to state of the practice?). Para o Conclusions and Future Work Section temos: Summary (The purpose of this section is to provide a concise summary of the research and its results as presented in the former sections), Impact (Description of impacts with regard to cost, schedule, and quality, circumstances under which the approarch presumably will not yield the expected benefit), Future Work (What other experiments could be run to further investigate the results yielded or evolve the Body of Knowledge).
+Com relação a \textit{Documentation} temos: \textit{Does it use template? (Y/N)?,  If yes, what template?, Observations about the template used. Para o Abstract temos: Objective (What is the question addressed with this research?), Abstract - Background (Why is this research important?), Methods (What is the statistical context and methods applied?), Results (What are the main findings? Practical implications?), Limitations (What are the weakness of this research?), Conclusions (What is the conclusion?) e Keywords. Para o Introduction Section temos: Problem statement (What is the problem? Where does it occur? Who has observed it? Why is it important to be solved?), Research objective (GQM) (What is the research question to be answered by this study?), Context (What information is necessary to understand whether the research relates to a specific situation (environment)?). Para o Related Work Section temos: Technology under investigation (What is necessary for a reader to know about the technology to reproduce its application?), Alternative technologies (How does this research relate to alternative technologies? What is the control treatment?), Related studies (How this research relates to existing research (studies)? What were the results from these studies?), Relevance to practice (How does it relate to state of the practice?). Para o Conclusions and Future Work Section temos: Summary (The purpose of this section is to provide a concise summary of the research and its results as presented in the former sections), Impact (Description of impacts with regard to cost, schedule, and quality, circumstances under which the approach presumably will not yield the expected benefit), Future Work (What other experiments could be run to further investigate the results yielded or evolve the Body of Knowledge)}.
 
-Com relação ao Experiment Planning temos: Goals (Formalization of goals, refine the important constructs of the experiment's goal), Experimental Units (From which population will the sample be drawn? How will the groups be formed (assignment to treatments)? Any kind of randomization and blinding has to be described?), Experimental Material (Which objects are selected and why?), Tasks (Which tasks have to be performed by the subjects?), Hypotheses (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment), Parameters (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment), Variables (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment), Experiment Design (What type of expimental design has been chosen?), Procedure (How will the experiment (i.e., data collection) be performed? What instruments, materials, tools will be used and how?) Analysis Procedure (How will the data be analyzed?), Is it a quasi-experiment? (Y/N) If yes, is it explicit in the study?, Is it an Original or Replicated Experiment?,	How was the selection of participants/experimental objects? - Simple random sampling; - Systematic sampling; - Stratified random sampling; - Convenience sampling; - Quota sampling, Context of the experiment (in vivo, in vitro, ...), Design Experimental: - One factor with two treatments; - One factor with more than two treatments; - Two factors with two treatments; - More than two factors each with two treatments, SPL artifact used, Context Selection (Off-line vs. on-line, Student vs. professional, Toy vs. real problems, Specific vs. general).
+Com relação ao \textit{Experiment Planning} temos: \textit{Goals (Formalization of goals, refine the important constructs of the experiment's goal), Experimental Units (From which population will the sample be drawn? How will the groups be formed (assignment to treatments)? Any kind of randomization and blinding has to be described?), Experimental Material (Which objects are selected and why?), Tasks (Which tasks have to be performed by the subjects?), Hypotheses (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment), Parameters (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment), Variables (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment), Experiment Design (What type of experimental design has been chosen?), Procedure (How will the experiment (i.e., data collection) be performed? What instruments, materials, tools will be used and how?) Analysis Procedure (How will the data be analyzed?), Is it a quasi-experiment? (Y/N) If yes, is it explicit in the study?, Is it an Original or Replicated Experiment?,	How was the selection of participants/experimental objects? - Simple random sampling; - Systematic sampling; - Stratified random sampling; - Convenience sampling; - Quota sampling, Context of the experiment (in vivo, in vitro, ...), Design Experimental: - One factor with two treatments; - One factor with more than two treatments; - Two factors with two treatments; - More than two factors each with two treatments, SPL artifact used, Context Selection (Off-line vs. on-line, Student vs. professional, Toy vs. real problems, Specific vs. general)}.
 
-Com relação a Execution (Operation) temos: Preparation (What has been done to prepare the execution of the experiment (i.e., schedule, training), Deviations from the Plan (Describe any deviations from the plan, e.g., how was the data collection actually performed?), The pilot project was carried out? (Y/N) If Yes, how many?
+Com relação a \textit{Execution (Operation)} temos: \textit{Preparation (What has been done to prepare the execution of the experiment (i.e., schedule, training), Deviations from the Plan (Describe any deviations from the plan, e.g., how was the data collection actually performed?), The pilot project was carried out? (Y/N) If Yes, how many?}.
 
-Com relação a Analysis (Analysis and Interpretation) temos: Descriptive statistics (What are the results from descriptive statistics?), Data set preparation (What was done to prepare the data set, why, and how?), Hypothesis testing (How was the data evaluated and was the analysis model validated?), Do it have qualitative analysis of the experiment? (Y/N), If yes, what qualitative analysis was performed?, How the data has been analyzed? (Ex: Correlation, Hypothesis Test, meta-analysis), Is the conclusion of the experiment analysis based on P-value? (Y/N), Did the study perform meta-analysis? (Y/N).
+Com relação a \textit{Analysis (Analysis and Interpretation)} temos: \textit{Descriptive statistics (What are the results from descriptive statistics?), Data set preparation (What was done to prepare the data set, why, and how?), Hypothesis testing (How was the data evaluated and was the analysis model validated?), Do it have qualitative analysis of the experiment? (Y/N), If yes, what qualitative analysis was performed?, How the data has been analyzed? (Ex: Correlation, Hypothesis Test, meta-analysis), Is the conclusion of the experiment analysis based on P-value? (Y/N), Did the study perform meta-analysis? (Y/N)}.
 
-Com relação a Discussion temos: Evaluation of Results and Implications (Explain the results and the relation of the results to earlier research, especially those mentioned in the Background section), Threats to Validity (How is validity of the experimental results assured? How was the data actually validated?) (Follow are the 4 threats proposed by Wohlin: internal, external, construct and conclusion? (Y/N)), Inferences (Inferences drawn from the data to more general conditions), Lessons learned (Which experience was collected during the course of the experiment), Threats to validity in SPL.
+Com relação a \textit{Discussion} temos: \textit{Evaluation of Results and Implications (Explain the results and the relation of the results to earlier research, especially those mentioned in the Background section), Threats to Validity (How is validity of the experimental results assured? How was the data actually validated?) (Follow are the 4 threats proposed by Wohlin: internal, external, construct and conclusion? (Y/N)), Inferences (Inferences drawn from the data to more general conditions), Lessons learned (Which experience was collected during the course of the experiment), Threats to validity in SPL}.
 
-Com relação a Evaluation temos: The authors were concerned with evaluating the quality of the experiments? (Y/N)
+Com relação a \textit{Evaluation} temos: \textit{The authors were concerned with evaluating the quality of the experiments? (Y/N)}.
 
-Com relação a Package temos: Is the experimental package informed? (Y/N) (If yes, what URL? And the link is still available? (Y/N))
+Com relação a \textit{Package} temos: \textit{Is the experimental package informed? (Y/N) (If yes, what URL? And the link is still available? (Y/N))}
 
-Outros dados: Acknowledgements Section (Sponsors, participants, and contributors who do not fullfit the requirements for authorship should be mentioned), References Section (All cited literature has to be presented in the format requested by the publisher, Appendices Section (Experimental materials, raw data, and detailed analyses, which might be helpful for others to build upon the reported work should be provided)
+Outros dados: \textit{Acknowledgements Section (Sponsors, participants, and contributors who do not fulfil the requirements for authorship should be mentioned), References Section (All cited literature has to be presented in the format requested by the publisher, Appendices Section (Experimental materials, raw data, and detailed analyses, which might be helpful for others to build upon the reported work should be provided)}.
 
 \subsubsection{Manipulação dos Dados}
 
-Para inserir os indivíduos na SMartyOntology, foi preciso manipular os dados da planilha com as seguintes operações.
+Para inserir os indivíduos na OntoExper-LPS, foi preciso manipular os dados da planilha com as seguintes operações.
 
-Primeira operação, split de dados de uma única coluna para duas propriedades de dados da ontologia. Este caso ocorreu para os seguintes dados, as propriedades e prefixadas com ?\_? foram tratadas no próximo passo:
+\textbf{Primeira operação:} separação \textit{(split)} de dados de uma única coluna para duas propriedades de dados da ontologia. Este caso ocorreu para os seguintes dados, as propriedades e prefixadas com "\_" foram tratadas no próximo passo:
 
 \begin{itemize}
-	\item ?Was the SPL source used informed? (Y/N) (If yes, which one?)? para \_informedSPL e sourceSPL;
-	\item ?The pilot project was carried out? (Y/N) If Yes, how many?? para \_hasPilot e \_howManyPilot;
-	\item ?Is it a quasi-experiment? (Y/N) If yes, is it explicit in the study?? para \_hasQuasiExperiment e quasiExperiment;
-	\item ?'Threats to Validity (How is validity of the experimental results assured? 'How was the data actually validated?) (Follow are the 4 threats proposed by Wohlin: internal, external, construct and conclusion? (Y/N)))? para \_hasThreatsValidityByWolin e threatsValidity.
+	\item \textit{Was the SPL source used informed? (Y/N) (If yes, which one?)} para \_informedSPL e sourceSPL;
+	\item \textit{The pilot project was carried out? (Y/N) If Yes, how many?} para \_hasPilot e \_howManyPilot;
+	\item \textit{Is it a quasi-experiment? (Y/N) If yes, is it explicit in the study?} para \\\_hasQuasiExperiment e quasiExperiment;
+	\item \textit{Threats to Validity (How is validity of the experimental results assured? 'How was the data actually validated?) (Follow are the 4 threats proposed by Wohlin: internal, external, construct and conclusion? (Y/N)))} para \_hasThreatsValidityByWolin e threatsValidity.
 \end{itemize}
 
-Segunda operação, transformação de dados booleanos, strings vazias e números. Foi desenvolvido tres funções de conversão, (i) convertToBoolean, (ii) convertStringEmpty e (iii) convertToNumber. Este caso ocorreu para os seguintes dados:
+\textbf{Segunda operação:} transformação de dados booleanos, strings vazias e números. Foi desenvolvido tres funções de conversão, (i) convertToBoolean, (ii) convertStringEmpty e (iii) convertToNumber. Este caso ocorreu para os seguintes dados:
 
 \begin{itemize}
-	\item ?Does it use template? (Y/N)?? para useTemplate aplicando o método convertToBoolean;
-	\item ?If yes, what template?? para template aplicando o método convertStringEmpty;
-	\item ?Do it have qualitative analysis of the experiment? (Y/N)? para hasQualitativeAnalysis aplicando o método convertToBoolean;
-	\item ?Did the study perform meta-analysis? (Y/N)? para hasMetaAnalysis aplicando o método convertToBoolean;
+	\item \textit{Does it use template? (Y/N)?} para useTemplate aplicando o método convertToBoolean;
+	\item \textit{If yes, what template?} para template aplicando o método convertStringEmpty;
+	\item \textit{Do it have qualitative analysis of the experiment? (Y/N)} para hasQualitativeAnalysis aplicando o método convertToBoolean;
+	\item \textit{Did the study perform meta-analysis? (Y/N)} para hasMetaAnalysis aplicando o método convertToBoolean;
 	\item \_informedSPL para informedSPL aplicando o método convertToBoolean;
 	\item \_hasQuasiExperiment para hasAQuasiExperiment aplicando o método convertToBoolean;
 	\item \_hasPilot para hasPilot aplicando o método convertToBoolean;
@@ -265,129 +329,129 @@ Segunda operação, transformação de dados booleanos, strings vazias e números. Fo
 	\item \_hasPackage para hasExperimentalPackage aplicando o método convertToBoolean;
 \end{itemize}
 
-Terceira operação, separação do conjunto de dados com informação explícita de SPL. Separamos o conjunto total de 174 artigos em artigos de experimentos que contêm informações explícitas de SPL (152) e artigos que não contêm informação explícitas de SPL (22), para criação dos indivíduos conforme as classes modeladas na ontologia com atributos pertinentes a SPL.
+\textbf{Terceira operação:} separação do conjunto de dados com informação explícita de LPS. Separamos o conjunto total de artigos em um conjunto de artigos que contêm informações explícitas de LPS, e outro conjunto de artigos que não contêm informação explícitas de LPS para criação dos indivíduos conforme as classes modeladas na ontologia com atributos pertinentes a SPL.
 
-Quarta operação, padronização de dados constantes e faltantes. Foi preciso padronizar os dados em casos faltantes foi atribuído um padrão. Isso ocorreu para os seguintes dados:
+\textbf{Quarta operação:} padronização de dados constantes e faltantes. Foi preciso padronizar os dados em casos faltantes foi atribuído um padrão. Isso ocorreu para os seguintes dados:
 
 \begin{itemize}
-	\item "Is it Real or Academic SPL?" foi definido o seguinte conjunto de dados [REAL, ACADEMY] sendo o padrão "ACADEMY";
-	\item "Is it an Original or Replicated Experiment?" foi definido o seguinte conjunto de dados [ORIGINAL, REPLICATED] sendo o padrão "REPLICATED"
-	\item "How was the selection of participants/experimental objects? - Simple random sampling; - Systematic sampling; - Stratified random sampling; - Convenience sampling; - Quota sampling." foi definido o seguinte conjunto de dados [SIMPLE\_RANDOM\_SAMPLING, SYSTEMATIC\_SAMPLING, STRATIFIED\_RANDOM\_SAMPLING,	CONVENIENCE\_SAMPLING, QUOTA\_SAMPLING] sendo o padrão "CONVENIENCE\_SAMPLING";
-	\item "Context of the experiment (in vivo, in vitro, ...)" foi definido o seguinte conjunto de dados [IN\_VIVO, IN\_VITRO] sendo o padrão "IN\_VITRO";
-	\item "Design Experimental: - One factor with two treatments; - One factor with more than two treatments; - Two factors with two treatments; - More than two factors each with two treatments." foi definido o seguinte conjunto de dados [ONE\_FACTOR\_WITH\_TWO\_TREATMENTS, ONE\_FACTOR\_WITH\_MORE\_THAN\_TWO\_TREATMENTS, TWO\_FACTORS\_WITH\_TWO\_TREATMENTS, MORE\_THAN\_TWO\_FACTORS\_EACH\_WITH\_TWO\_TREATMENTS] sendo o padrão "ONE\_FACTOR\_WITH\_TWO\_TREATMENTS";
-	\item "Context Selection (Off-line vs. on-line, Student vs. professional, Toy vs. real problems, Specific vs. general)" foi definido o seguinte conjunto de dados [OFFLINE, ONLINE, STUDENT, PROFESSIONAL, TOY, REAL\_PROBLEMS, SPECIFIC, GENERAL] sendoo padrão "GENERAL";
+	\item \textit{Is it Real or Academic SPL?} foi definido o seguinte conjunto de dados [REAL, ACADEMY] sendo o padrão "ACADEMY";
+	\item \textit{Is it an Original or Replicated Experiment?} foi definido o seguinte conjunto de dados [ORIGINAL, REPLICATED] sendo o padrão "REPLICATED"
+	\item \textit{How was the selection of participants/experimental objects? - Simple random sampling; - Systematic sampling; - Stratified random sampling; - Convenience sampling; - Quota sampling.} foi definido o seguinte conjunto de dados [SIMPLE\_RANDOM\_SAMPLING, SYSTEMATIC\_SAMPLING, \\STRATIFIED\_RANDOM\_SAMPLING, CONVENIENCE\_SAMPLING, \\QUOTA\_SAMPLING] sendo o padrão "CONVENIENCE\_SAMPLING";
+	\item \textit{Context of the experiment (in vivo, in vitro, ...)} foi definido o seguinte conjunto de dados [IN\_VIVO, IN\_VITRO] sendo o padrão "IN\_VITRO";
+	\item \textit{Design Experimental: - One factor with two treatments; - One factor with more than two treatments; - Two factors with two treatments; - More than two factors each with two treatments.} foi definido o seguinte conjunto de dados \newline [ONE\_FACTOR\_WITH\_TWO\_TREATMENTS, \newline ONE\_FACTOR\_WITH\_MORE\_THAN\_TWO\_TREATMENTS, \newline TWO\_FACTORS\_WITH\_TWO\_TREATMENTS, \newline MORE\_THAN\_TWO\_FACTORS\_EACH\_WITH\_TWO\_TREATMENTS] sendo o \newline padrão "ONE\_FACTOR\_WITH\_TWO\_TREATMENTS";
+	\item \textit{Context Selection (Off-line vs. on-line, Student vs. professional, Toy vs. real problems, Specific vs. general)} foi definido o seguinte conjunto de dados [OFFLINE, ONLINE, STUDENT, PROFESSIONAL, TOY, REAL\_PROBLEMS, SPECIFIC, GENERAL] sendoo padrão "GENERAL";
 \end{itemize}
 
 \subsubsection{Inserção do indivíduos e criação dos relacionamentos}
 
-Inicialmente fazemos a leitura do modelo da ontologia gerada pelo Protégé (arquivo .owl) por meio da biblioteca Owlready2, com isso temos um objeto chamado ?onto? onde a partir dele podemos executar operações de inserção de indivíduos e outras operações na ontologia no ambiente de programação Python.
+Inicialmente executa a leitura do modelo da ontologia gerada pelo Protégé (arquivo .owl) por meio da biblioteca Owlready2, com isso temos um objeto na programação que representa o modelo, onde a partir dele podemos executar operações de inserção de indivíduos e outras operações na ontologia no ambiente de programação Python.
 
 O processo de inserção dos dados extraídos da planilha se dá por, percorrer linha a linha da planilha, e criar os indivíduos um a um de cada classe modelada na ontologia com seus respectivos atributos. Para isso foi necessário criar vários métodos a fim de facilitar a compreensão do script.
 
-Foi criado dois laços para percorre os dois subconjuntos de dados, um com informações explícitas de SPL chamado de df\_spl  e outro chamado df\_exp. O primeiro laço sobre df\_spl invoca a seguinte sequencia de métodos: registreExperimentSPL > registreExperimentPlanningSPL > registreDiscussionSPL > registerCommons. O segundo laço sobre df\_exp invoca a seguinte sequencia de métodos: registreExperiment > registreExperimentPlanning > registreDiscussion > registerCommons.
+Foi criado dois laços para percorre os dois subconjuntos de dados, um com informações explícitas de LPS e outro sem. O primeiro laço sobre o conjunto de LPS, invoca a seguinte sequencia de métodos: \textit{registreExperimentSPL $>$ registreExperimentPlanningSPL $>$ registreDiscussionSPL $>$ registerCommons}, a Listagem \ref{lst:first-loop} apresenta este laço. O segundo laço sobre o conjunto sem informações de LPS, invoca a seguinte sequência de métodos: \textit{registreExperiment $>$ registreExperimentPlanning $>$ registreDiscussion $>$ registerCommons}, a Listagem \ref{lst:second-loop} apresenta este laço.
 
-\begin{lstlisting}[language=Python, caption=The first loop on \texttt{df\_spl}, label=lst:first-loop]
+\begin{lstlisting}[language=Python, caption=Primeiro Laço, label=lst:first-loop]
 for idx, row in df_spl.iterrows():
-experimentSPL = registreExperimentSPL(idx, row)
+	experimentSPL = registreExperimentSPL(idx, row)
 
-experimentPlanningSPL = registreExperimentPlanningSPL(idx, row)
-experimentPlanningSPL.experiment.append(experimentSPL)
+	experimentPlanningSPL = 
+		registreExperimentPlanningSPL(idx, row)
+	experimentPlanningSPL.experiment.append(experimentSPL)
 
-discussion = registreDiscussionSPL(idx, row)
-discussion.experiment.append(experimentSPL)
+	discussion = registreDiscussionSPL(idx, row)
+	discussion.experiment.append(experimentSPL)
 
-registerCommons(experimentSPL, idx, row)
+	registerCommons(experimentSPL, idx, row)
 \end{lstlisting}
 
-\begin{lstlisting}[language=Python, caption=The second loop on \texttt{df\_exp}, label=lst:second-loop]
+\begin{lstlisting}[language=Python, caption=Segundo Laço, label=lst:second-loop]
 for idx, row in df_exp.iterrows():
-experiment = registreExperiment(idx, row)
+	experiment = registreExperiment(idx, row)
 
-experimentPlanning = registreExperimentPlanning(idx, row)
-experimentPlanning.experiment.append(experiment)
+	experimentPlanning = registreExperimentPlanning(idx, row)
+	experimentPlanning.experiment.append(experiment)
 
-discussion = registreDiscussion(idx, row)
-discussion.experiment.append(experiment)
+	discussion = registreDiscussion(idx, row)
+	discussion.experiment.append(experiment)
 
-registerCommons(experiment, idx, row)
+	registerCommons(experiment, idx, row)
 \end{lstlisting}
 
-O método registreExperimentSPL executa o método registreExperimentCommons e retorna uma instância de indivíduo da ontologia da classe onto.ExperimentSPL.
+O método \textit{registreExperimentSPL} executa o método registreExperimentCommons e retorna uma instância de indivíduo da ontologia da classe onto.ExperimentSPL.
 
-O método registreExperiment executa o método registreExperimentCommons e retorna uma instância de indivíduo da ontologia da classe onto.Experiment.
+O método \textit{registreExperiment} executa o método registreExperimentCommons e retorna uma instância de indivíduo da ontologia da classe onto.Experiment.
 
-O método registreExperimentCommons recebe uma instância tanto de onto.ExperimentSPL ou onto.Experiment e atribui as variáveis comuns para ambas as classes.
+O método \textit{registreExperimentCommons} recebe uma instância tanto de \newline onto.ExperimentSPL ou onto.Experiment e atribui as variáveis comuns para ambas as classes.
 
-O método registreExperimentPlanningSPL executa o método registreExperimentPlanningCommons e retorna uma instância de indivíduo da ontologia da classe onto.ExperimentPlanningSPL.
+O método \textit{registreExperimentPlanningSPL} executa o método registreExperimentPlanningCommons e retorna uma instância de indivíduo da ontologia da classe \newline onto.ExperimentPlanningSPL.
 
-O método registreExperimentPlanning executa o método registreExperimentPlanningCommons e retorna uma instância de indivíduo da ontologia da classe onto.ExperimentPlanning.
+O método \textit{registreExperimentPlanning} executa o método \newline registreExperimentPlanningCommons e retorna uma instância de indivíduo da ontologia da classe onto.ExperimentPlanning.
 
-O método registreExperimentPlanningCommons recebe uma instância tanto de onto.ExperimentPlanningSPL ou onto.ExperimentPlanning e atribui as variáveis comuns para ambas as classes.
+O método \textit{registreExperimentPlanningCommons} recebe uma instância tanto de \newline onto.ExperimentPlanningSPL ou onto.ExperimentPlanning e atribui as variáveis comuns para ambas as classes.
 
-O método registreDiscussionSPL executa o método registreDiscussionCommons e retorna uma instância de indivíduo da ontologia da classe onto.DiscussionSPL.
+O método \textit{registreDiscussionSPL} executa o método registreDiscussionCommons e retorna uma instância de indivíduo da ontologia da classe onto.DiscussionSPL.
 
-O método registreDiscussion executa o método registreDiscussionCommons e retorna uma instância de indivíduo da ontologia da classe onto.Discussion.
+O método \textit{registreDiscussion} executa o método registreDiscussionCommons e retorna uma instância de indivíduo da ontologia da classe onto.Discussion.
 
-O método registreDiscussionCommons recebe uma instância tanto de onto.DiscussionSPL ou onto.Discussion e atribui as variáveis comuns para ambas as classes.
+O método \textit{registreDiscussionCommons} recebe uma instância tanto de \newline onto.DiscussionSPL ou onto.Discussion e atribui as variáveis comuns para ambas as classes.
 
-O método registerCommons que recebe uma instância tanto de onto.ExperimentSPL ou onto.Experiment e executa a sequência de métodos:  registreDocumentation - que retorna uma instância de onto.Documentation e atribui a instância de experiment a ela > registreAbstract - que retorna uma instância de onto.Abstract e atribui a instância de documentation a ela > registreIntroduction - que retorna uma instância de onto.Introduction e atribui a instância de documentation a ela > registreRelatedWork - que retorna uma instância de onto.RelatedWork e atribui a instância de documentation a ela > registreConclusionsFutureWork - que retorna uma instância de onto.ConclusionsFutureWork e atribui a instância de documentation a ela > registreExecutionSection - que retorna uma instância de onto.ExecutionSection e atribui a instância de experiment a ela > registreAnalysis - que retorna uma instância de onto.Analysis e atribui a instância de experiment a ela > registreAcknowledgements - que retorna uma instância de onto.Acknowledgements e atribui a instância de experiment a ela > registreReferences - que retorna uma instância de onto.References e atribui a instância de experiment a ela > registreAppendices - que retorna uma instância de onto.Appendices e atribui a instância de experiment a ela > registreEvaluation - que retorna uma instância de onto.Evaluation e atribui a instância de experiment a ela > registrePackage - que retorna uma instância de onto.Package e atribui a instância de experiment a ela.
+O método \textit{registerCommons} que recebe uma instância tanto de onto.ExperimentSPL ou onto.Experiment e executa a sequência de métodos:  \textit{registreDocumentation} - que retorna uma instância de onto.Documentation e atribui a instância de experiment a ela $>$ \textit{registreAbstract} - que retorna uma instância de onto.Abstract e atribui a instância de documentation a ela $>$ \textit{registreIntroduction} - que retorna uma instância de onto.Introduction e atribui a instância de documentation a ela $>$ \textit{registreRelatedWork} - que retorna uma instância de onto.RelatedWork e atribui a instância de documentation a ela $>$ \textit{registreConclusionsFutureWork} - que retorna uma instância de onto.ConclusionsFutureWork e atribui a instância de documentation a ela $>$ \textit{registreExecutionSection} - que retorna uma instância de onto.ExecutionSection e atribui a instância de experiment a ela $>$ \textit{registreAnalysis} - que retorna uma instância de onto.Analysis e atribui a instância de experiment a ela $>$ \textit{registreAcknowledgements} - que retorna uma instância de onto.Acknowledgements e atribui a instância de experiment a ela $>$ \textit{registreReferences} - que retorna uma instância de onto.References e atribui a instância de experiment a ela $>$ \textit{registreAppendices} - que retorna uma instância de onto.Appendices e atribui a instância de experiment a ela $>$ \textit{registreEvaluation} - que retorna uma instância de onto.Evaluation e atribui a instância de experiment a ela $>$ \textit{registrePackage} - que retorna uma instância de onto.Package e atribui a instância de experiment a ela.
 
 \subsubsection{Artefato e validação}
-Ao final dos dois laços temos o objeto ?onto? populado com com os indivíduos, e por meio da biblioteca Owlready2 geramos um novo arquivo .owl contendo a modelagem da ontologia mais a população de indivíduos. O arquivo da modelagem inicial contém 66,3 kB, e o arquivo populado contém 4,8 MB.
 
-No final do script tem existe um passo de validação onde conferimos a quantidade de linhas da planilha com a quantidade de indivíduos inserido na ontologia, pode ser visto em \ref{lst:stap-validation}.
+Ao final dos dois laços temos o objeto que representa a ontologia populado com com os indivíduos, e por meio da biblioteca Owlready2 geramos um novo arquivo .owl contendo a modelagem da ontologia mais a população de indivíduos. O arquivo da modelagem inicial contém aproximadamente 66 kB, e o arquivo populado contém aproximadamente 5 MB.
 
-\begin{lstlisting}[language=Python, caption=Stap validation, label=lst:stap-validation]
-assert len (onto.Experiment.instances ()) == df.shape [0]
+No final do script existe um passo de validação onde conferimos a quantidade de linhas da planilha com a quantidade de indivíduos inserido na ontologia, pode ser visto em \ref{lst:step-validation}.
+
+\begin{lstlisting}[language=Python, caption=Passo de Validação, label=lst:step-validation]
+	assert len(onto.Experiment.instances()) == df.shape[0]
 \end{lstlisting}
 
 \section{Exemplo de Aplicação}
 \label{sec:exemplo}
 
-Foi criado também um exemplo de recomendação com a seguinte questão de recomendação, ?Qual artefato de SPL usar dos experimentos que usam a mesma template experimental mais recorrente?. Com base nesta questão foi criado um script Python utilizando as bibliotecas Pandas e OwlReady2, para responder a mesma.
+Foi criado um exemplo simples de consulta que retorna a quantidade dos templates usados pelos indivíduos da ontologia. Foi utilizado a tecnologia SPARQL, para executar a mesma.
 
-O script começa carregando a ontologia preenchida e, em seguida, executamos a consulta SPARQL \ref{code:...} para retornar os agrupados pela template experimental, estes indivíduos são do tipo Documentation. Na sequência, filtramos da lista inicial de indivíduos que usam modelos, aqueles que usam o modelo mais recorrente. Com esses indivíduos em mãos, buscamos seu relacionamento com indivíduos do tipo ExperimentPlanningSPL para extrair informações de artefatos de SPL. Assim, podemos recomendar qual artefato de SPL, com base no artefato mais usado desses indivíduos filtrados.
+SPARQL é uma linguagem de consulta e um protocolo para acesso a RDF elaborado pelo W3C RDF Data Access Working Group. Como uma linguagem de consulta, SPARQL é orientada a dados de forma que só consulta as informações presentes nos modelos, não há inferência propriamente dita nesta linguagem de consulta /cite{Apache Jena}
 
-O script começa carregando a ontologia povoada, e em seguida extrai os indivíduos que usam template experimental, estes indivíduos são do tipo Documentation. Atribuímos este resultado a um objeto do tipo Pandas para executar a função .values\_counts() que retorna o agrupamento somado das templates mais usadas. Na sequência, filtramos da lista inicial dos indivíduos que usam templates, aqueles que usam a template mais recorrente. Com estes indivíduos em mãos, buscamos o relacionamento deles com os indivíduos do tipo ExperimentPlanningSPL para extrair a informação dos artefatos de SPL. Então podemos recomendar qual artefato de SPL, com base no artefato mais usado destes individuos filtrados.
+\begin{lstlisting}[language=SPARQL, caption=Consulta SPARQL exemplo, label=lst:consuta-sparql-exemplo]
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://www.semanticweb.org/henrique/ontologies/
+			2019/3/onto-exper-lps#>
+SELECT ?template (count(?template) as ?count)
+	WHERE {
+		?doc rdf:type :Documentation .
+		?doc :template ?template .
+	}
+GROUP BY ?template
+\end{lstlisting}
 
-\begin{figure}[ht]
- 	\centering 
- 	\includegraphics[width=6.5cm]{filter-in-ontology-path.png}
- 	\caption{Graph Path to Recommendation Example.}
- 	\label{figure:graph_path_to_recomendation}
- \end{figure}
+A consulta SPARQL é apresentada pela Listagem \ref{lst:consuta-sparql-exemplo} onde são definidos quais prefixos RDF será usada, bem como a OntoExper-LPS. A primeira linha realiza contagem do termo \textit{template}. O bloco \textit{WHERE} aplica a restrição da consulta, nesta restrição só buscamos elementos RDF do tipo \textit{Documentation} e que possuem a propriedade \textit{template}. Por fim a cláusula \textit{GROUP BY} realiza o agrupamento da restrição, assim podendo executar a operação \textit{count} da primeira linha.
 
-O grafo da \ref{figure:graph_path_to_recomendation} mostra o caminho percorrido entre as classes e propriedades de objetos e dados para chegar no artefato de SPL a ser recomendado.
+Este exemplo percorre uma classes (\textit{Documentation}) das 24 classes existentes no modelo, uma propriedades de dados (\textit{template}) de 87 propriedades de dados do modelo proposto. O cálculo da descrito em \ref{eq:percent_uso_ontologia}, estima que neste exemplo estamos usando 0,0004\% da capacidade de resposta que o modelo possa responder.
 
-O exemplo de recomendação apresenta como podemos criar mecanismos de inferência no modelo de ontologia proposto neste trabalho. Foi possível avaliar que com algumas consultas e verificações é possível extrair informações e meta informações sobre experimentos em SPL. 
-
-Este exemplo percorre três classes (Documentation, ExperimentSPL e ExperimentPlanningSPL) de 24 classes, duas propriedades de objetos (documentation e experimet) de 8 propriedades e três propriedades de dados (useTemplate, template e artifactSPLused) de 87 propriedades de dados do modelo proposto. O cálculo . estima que neste exemplo estamos usando 0,1% da capacidade de resposta que o modelo possa responder.
-
-%uso de classe * %uso de propriedade de objeto * %uso de propriedade de dados = %uso da ontologia.
-
-O exemplo apresenta como podemos criar mecanismos de inferência no modelo de ontologia proposto neste trabalho. Foi possível avaliar que com algumas consultas e verificações é possível extrair informações e meta informações sobre experimentos em SPL. 
-
-Este exemplo percorre três classes (Documentation, ExperimentSPL e ExperimentPlanningSPL) de 24 classes, duas propriedades de objetos (documentation e experimet) de 8 propriedades e três propriedades de dados (useTemplate, template e artifactSPLused) de 87 propriedades de dados do modelo proposto. O cálculo . estima que neste exemplo estamos usando 0,1\% da capacidade de resposta que o modelo possa responder.
-
-%uso de classe * %uso de propriedade de objeto * %uso de propriedade de dados = %uso da ontologia.
+\begin{equation}
+	\label{eq:percent_uso_ontologia}
+	\%\, uso\, da\, ontologia = \%\, classe * \%\, prop\, de\, objeto * \%\, prop\, de\, dados
+\end{equation}
 
 %****CÁLCULO DO USO ESTIMADO DA ONTOLOGIA*** POSSIBILIDADES DE CAMINHOS ENTRE CLASSES E PROPRIEDADES.
 
-No caso do exemplo de recomendação a primeira parte do retorna a template mais recorrente. O resultado é a saída do script: ?Template more frequency is Wohlin? seguida da Fig. que representa os dados da Tabela.
+Este simples exemplo de consulta apresenta como podemos criar mecanismos de inferência no modelo de ontologia proposto neste trabalho. Dessa forma, foi possível validar empiricamente que é possível extrair informações sobre experimentos em SPL usando a OntoExper-LPS.
 
-E segunda parte encontra qual artefato de SPL dos indivíduos que usam a template encontrada na primeira etapa. o resultado é a saída do script: ?Artifact more used is the "test cases" to template: Wohlin? seguido da Fig.
 
 \section{Avaliação Empírica}
-\label{sec:ontologia_avaliacao}
+\label{sec:avaliacao_empirica}
 
-Para avaliação da ontologia seguimos duas estratégias, uma para avaliar possíveis armadilhas e falhas no modelo de ontologia proposto.
+Para esta avaliação empírica da proposta de ontologia, seguimos duas estratégias, (i) uma para avaliar as possíveis armadilhas e (ii) outra para levantar falhas no modelo.
 
-Usamos a ferramenta OOPS! para gerar avaliação do modelo de ontologia proposto. A ferramenta ajuda a detectar algumas das armadilhas mais comuns que aparecem ao desenvolver ontologias [referência].
+Foi utilizada a ferramenta OOPS! para gerar avaliação do modelo de ontologia proposto. A ferramenta ajuda a detectar algumas das armadilhas mais comuns que aparecem ao desenvolver ontologias [referência]. Segue abaixo os pontos de falha que a ferramenta avalia.
 
 \begin{itemize}
 	\item P01. Criando elementos polissêmicos;
 	\item P02. Criando sinônimos como classes;
-	\item P03. Criando o relacionamento `` is '' em vez de usar `` rdfs: subClassOf ''; `` rdf: type '' ou `` owl: sameAs '';
+	\item P03. Criando o relacionamento ``is'' em vez de usar ``rdfs: subClassOf''; ``rdf: type'' ou ``owl: sameAs'';
 	\item P04. Criando elementos de ontologia não conectados;
 	\item P05. Definindo relações inversas erradas;
 	\item P06. Incluindo ciclos em uma hierarquia de classes;
@@ -398,8 +462,8 @@ Usamos a ferramenta OOPS! para gerar avaliação do modelo de ontologia proposto. 
 	\item P11. Domínio ou intervalo ausente nas propriedades;
 	\item P12. Propriedades equivalentes não explicitamente declaradas;
 	\item P13. Relações inversas não explicitamente declaradas;
-	\item P14. Uso indevido de `` owl: allValuesFrom '';
-	\item P15. Usando `` alguns não '' no lugar de `` não alguns '';
+	\item P14. Uso indevido de ``owl: allValuesFrom'';
+	\item P15. Usando ``alguns não'' no lugar de ``não alguns'';
 	\item P16. Usando uma classe primitiva no lugar de uma definida;
 	\item P17. Superespecialização de uma hierarquia;
 	\item P18. Superespecialização do domínio ou intervalo;
@@ -424,40 +488,41 @@ Usamos a ferramenta OOPS! para gerar avaliação do modelo de ontologia proposto. 
 	\item P37. Ontologia não disponível na Web;
 	\item P38. Nenhuma declaração de ontologia OWL;
 	\item P39. Namespace ambíguo;
-	\item P40. Sequestro de namespace;
+	\item P40. Sequestro de namespace; e
 	\item P41. Nenhuma licença declarada.
 \end{itemize}
 
-Apesar da ferramenta OOPS! ter 41 pontos de avaliação ela executa apenas 34 pontos semi-automaticamente, pois os outros dependem de domínio específico da ontologia e eles encorajam os usuários a melhorarem a ferramenta. O resultado dado pela ferramenta sugere como os elementos da ontologia poderiam ser modificados para melhorar a qualidade da ontologia. No entanto, nem todas as armadilhas identificadas devem ser interpretadas como erro,, mas como sugestões que devem ser revisadas manualmente em alguns casos. 
+Apesar da ferramenta OOPS! ter 41 pontos de avaliação ela executa apenas 34 pontos semi-automaticamente, pois os outros dependem de domínio específico da ontologia e eles encorajam os usuários a melhorarem a ferramenta. O resultado dado pela ferramenta sugere como os elementos da ontologia poderiam ser modificados para melhorar a qualidade da ontologia. No entanto, nem todas as armadilhas identificadas devem ser interpretadas como erro, mas sim como sugestões que devem ser revisadas manualmente em alguns casos. 
 
-Esta avaliação pode ajudar a descobrir erros que foram escondidos por causa da falta de informação. Por exemplo, algumas armadilhas são detectadas pela comparação de domínios e intervalos em propriedades, se não estiverem definidas, as armadilhas não podem ser identificadas. Nesse sentido, corrigindo a armadilha "Falta do domínio ou intervalo em propriedades"  faz com que a ferramenta para encontrar outras armadilhas, por exemplo, ?Definir relações simétricas que não possuem o mesmo domínio e alcance?.
+Esta avaliação pode ajudar a descobrir erros que foram escondidos por causa da falta de informação preliminar. Por exemplo, algumas armadilhas são detectadas pela comparação de domínios e intervalos em propriedades, se não estiverem definidas, as armadilhas não podem ser identificadas. Nesse sentido, corrigindo a armadilha "Falta do domínio ou intervalo em propriedades" faz com que a ferramenta pare de encontrar outras armadilhas, como por exemplo, "Definir relações simétricas que não possuem o mesmo domínio e alcance".
 
-A ferramenta elenca cada armadilha como:
+A ferramenta elenca os resultados de cada armadilha como:
 
 \begin{itemize}
-	\item \textbf{Critical}: Corrigir a armadilha é crucial. Caso contrário, isso poderia afetar a consistência, raciocínio, aplicabilidade, etc. da ontologia;
-	\item \textbf{Importante}: Embora não seja crítico para a função de ontologia, é importante corrigir este tipo de armadilha;
-	\item \textbf{Minor}: Não é realmente um problema, mas ao consertá-lo, tornaremos a ontologia mais agradável.
+	\item \textit{\textbf{Critical:}} Corrigir a armadilha é crucial. Caso contrário, isso poderia afetar a consistência, raciocínio, aplicabilidade, etc. da ontologia;
+	\item \textit{\textbf{Importante:}} Embora não seja crítico para a função de ontologia, é importante corrigir este tipo de armadilha;
+	\item \textit{\textbf{Minor:}} Não é realmente um problema, mas ao consertá-lo, tornaremos a ontologia mais agradável.
 \end{itemize}
 
-A Tabela. apresenta o resumo do resultado ao rodar nosso modelo de ontologia proposto na ferramenta OOPS!.
+A Tabela. apresenta o resumo do resultado ao rodar nosso proposta de modelo de ontologia na ferramenta OOPS!.
 
 \begin{table*}[!ht]
-	\caption{Result Summary of the OOPS! evaluation!}
+	\caption{Resumo dos resultado da avaliação executada por OOPS!}
 	\label{tab:result_of_evaluation}
 	\begin{tabular}{@{}lll@{}}
 		\toprule
 		\textbf{Pitfall} & \textbf{Description} & \textbf{Critical Level} \\ \midrule
-		P08 & \begin{tabular}[c]{@{}l@{}}Missing annotations in 119 cases\end{tabular} & Minor \\
-		P10 & \begin{tabular}[c]{@{}l@{}}Missing disjointness on ontology*\end{tabular} & Important \\
-		P12 & \begin{tabular}[c]{@{}l@{}}Equivalent properties not explicitly declared in 1 case\end{tabular} & Important \\
-		P13 & \begin{tabular}[c]{@{}l@{}}Inverse relationships not explicitly declared in 8 cases\end{tabular} & Minor \\
-		P19 & \begin{tabular}[c]{@{}l@{}}Defining multiple domains or ranges in properties in 6 cases\end{tabular} & Critical \\
-		P41 & \begin{tabular}[c]{@{}l@{}}No license declared on ontology\end{tabular} & Important \\ \bottomrule
+		P08 & \begin{tabular}[c]{@{}l@{}}Anotações ausentes em 119 casos\end{tabular} & \textit{Minor} \\
+		P10 & \begin{tabular}[c]{@{}l@{}}Falta de disjunção na ontologia *\end{tabular} & \textit{Important} \\
+		P12 & \begin{tabular}[c]{@{}l@{}}Propriedades equivalentes não declaradas explicitamente em 1 caso\end{tabular} & \textit{Important} \\
+		P13 & \begin{tabular}[c]{@{}l@{}}Relações inversas não declaradas explicitamente em 8 casos\end{tabular} & \textit{Minor} \\
+		P19 & \begin{tabular}[c]{@{}l@{}}Definindo vários domínios ou intervalos nas propriedades em 6 casos\end{tabular} & \textit{Critical} \\
+		P41 & \begin{tabular}[c]{@{}l@{}}Nenhuma licença declarada na ontologia *\end{tabular} & \textit{Important} \\ \bottomrule
 	\end{tabular}
 \end{table*}
-
-No caso P08, essa armadilha consiste em criar um elemento de ontologia e não fornecer anotações legíveis a ele. Consequentemente, os elementos de ontologia não possuem propriedades de anotação que os identificam (por exemplo, rdfs: label, lemon: LexicalEntry, skos: prefLabel ou skos: altLabel) ou que os definem (por exemplo, rdfs: comment ou dc: description). Essa armadilha está relacionada às diretrizes fornecidas em [referencia 5 do OOPS].
+	
+* Armadilha que se aplica à ontologia em geral, em vez de elementos específicos.
+No caso P08, essa armadilha consiste em criar um elemento de ontologia e não fornecer anotações legíveis a ele. Consequentemente, os elementos de ontologia não possuem propriedades de anotação que os identificam (por exemplo, rdfs: label, lemon: LexicalEntry, skos: prefLabel ou skos: altLabel) ou que os definem (por exemplo, rdfs: comment ou dc: description). Essa armadilha está relacionada às diretrizes fornecidas em [referência 5 do OOPS].
 
 No caso P10, a ontologia não possui axiomas desarticulados entre classes ou entre propriedades que devem ser definidas como disjuntas. Esta armadilha está relacionada com as orientações fornecidas em [6], [2] e [7].
 
@@ -469,12 +534,23 @@ No caso P19, o domínio ou intervalo (ou ambos) de uma propriedade (relacionament
 
 No caso P41, os metadados de ontologia omitem informações sobre a licença que se aplica à ontologia.
 
-* Armadilha que se aplica à ontologia em geral, em vez de elementos específicos.
 
-Dada a análise da ferramenta OOPS! o próximo passo será corrigir as armadilhas apresentada na avaliação e reavaliar a ontologia de modo geral, principalmente os pontos que a ferramenta não está automatizada.
+Dada a análise da ferramenta OOPS! o próximo passo será corrigir as armadilhas apresentada na avaliação e reavaliar a ontologia de modo geral, principalmente os pontos que a ferramenta não está automatizada. Estes pontos de melhorias serão tratados na seção \ref{sec:propostas_de_melhorias}.
 
 
 \section{Considerações Finais}
 \label{sec:concidaracoes_finais}
 
-...
+
+Este capítulo apresentou a elaboração da proposta de ontologia OntoExper-LPS. foram discutidas quatro partes importantes neste capítulo, (i) concepção do modelo da OntoExper-LPS, (ii) construção do modelo e povoamento da OntoExper-LPS, (iii) um exemplo de inferência sobre a ontologia com SPARQL e (iv) uma avaliação empírica apontando 41 pontos de possíveis falhas na OntoExper-LPS.
+
+Em relação à concepção do modelo, foi apresentado uma tipologia na qual se descreve como uma ontologia de domínio semi-formal, uma ontologia de especificação que serve tanto para modelagem do conhecimento como para aplicação de domínio. Para concepção do modelo, também foi elaborado um modelo conceitual clusterizado sobre os metadados, bem como um diagrama de classe, que serviram de apoio para elaboração do modelo.
+
+Para construção do modelo, além do modelo conceitual e do diagrama de classe, foi utilizado a tecnologia OWL e a ferramenta Protégé como instrumentos efetivos de apoio, por meio deste, foi possível entregar um artefato do tipo OWL contendo toda modelagem. Ainda nessa seção foi elaborado um programa automatizada que, utilizando os metadados pré definidos, popula o modelo proposto como indivíduos da ontologia, este programa também é armazenado como um artefato resultado deste trabalho de mestrado.
+
+Na seção posterior, foi tratado um exemplo de inferência sobre a OntoExper-LPS. Neste exemplo, usando a tecnologia SPARQL, foi possível consultar do modelo, indivíduos com determinados critérios, provando que a realização de inferência no modelo funciona.
+
+Por fim, temos uma breve avaliação empírica do modelo proposto, onde foi aplicado um ferramenta (OOPS!) que avalia 41 pontos de possíveis pontos falhas na ontologia, os pontos de falhas relatado pela ferramenta, serão tratados na seção \ref{sec:propostas_de_melhorias}.
+
+No próximo capítulo, será apresentado uma avaliação da OntoExper-SPL como um estudo qualitativo.
+
