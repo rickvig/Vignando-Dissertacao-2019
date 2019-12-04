@@ -4,91 +4,46 @@
 
 
 \section{Considerações Iniciais}
-\label{sec:concidaracoes_iniciais}
+\label{sec:concideracoes_iniciais}
 
-Este tópico apresenta uma prova de conceito por meio de um sistema de recomendação aplicando inferencia sobre a SMartOntology.
+Este capítulo apresenta uma prova de conceito sobre a realização de inferência no modelo de ontologia proposto neste trabalho de mestrado, a OntoExper-LPS, por meio de uma implementação de um sistema de recomendação (SR). Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:sistema_de_recmendacao} apresenta um breve contexto sobre SR e sua origem, seus principais modelos de implementação e como os SR são visto pela ES; na Seção \ref{sec:concepcao_recsys}apresenta como as consultas iniciais na OntoExper-LPS levou a implementação do SR e como ele encaixa como motor de inferência na OntoExper-LPS, bem como sua interação com o usuários; na Seção \ref{sec:projeto_recsys} apresenta as quatro fase de construção SR, (i) a \textbf{Fase 1} apresenta a criação do projeto de sistema web usando Django Framework e a implementação de um prototipação da tela de iteração do usuário com SR, (ii) a \textbf{Fase 2} apresenta como a OntoExper-LPS é carregada no SR e como foi implementado os mecanismos de consultas na OntoExper-LPS, a \textbf{Fase 3} apresenta implementação da avaliação dos usuários no SR e como esta é armazenado no SR, esta avaliação é denominada \textit{Ratings}, por fim a \textbf{Fase 4} apresenta com foi implementado do modelo de recomendação, na qual, foi usado  o conceito de filtragem colaborativa aplicando cálculo da distância Euclidiana, bem como também apresenta como foi implementação a questão da da partida fria do modelo de recomendação para novos usuários; na Seção \ref{sec:ambiente_de_desenvolvimento} apresenta quais foram as tecnologias e ferramentas usadas para o desenvolvimento do SR; e na Seção \ref{sec:recsys_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo.
 
-\begin{figure}[htb]
-	\centering					
-	{\includegraphics[scale=.5]{RSSE-overview.png}}
-	
-	\caption{Modelagem geral da RSSE proposta}
-	\label{fig:RSSE-overview}
-\end{figure}
-
-A \ref{fig:RSSE-overview} apresenta o conceito geral da metodologia deste projeto. Iniciando pela entrada dos usuários, depois extraímos as preferencias dele, e em seguida será feita a extração de informações de contexto utilizando a base de meta dados em LPS, para então fazer inferência nos itens (que são experimentos em LPS), por meio dessa inferência será obtido as recomendações.
-
-Inicialmente, a entrada de dados dos usuários está sendo definido da seguinte forma:
-
-\begin{itemize}
-	\item Informações de LPS:
-	\subitem Dominio;
-	\subitem Sub-dominio;
-	\subitem Tipos de artefatos e;
-	\subitem Feature module.
-	\item Experimentos
-	\subitem filtrar por qualidade.
-\end{itemize}
 
 \section{Sistema de Recomendação}
 \label{sec:sistema_de_recmendacao}
 
 Os sistemas de recomendação são aplicativos de software que visam dar suporte para usuário na tomada de decisões ao interagir com grandes espaços de informação. Estes softwares recomendam itens de interesse para os usuários com base em preferências que tenham sido expressas explicitamente ou implicitamente \cite{ricci2011introduction}. Segundo \citet{mahmood2009improving} os sistemas de recomendação são técnicas ou ferramentas de software, que podem reduzir a sobrecarga de informações para os usuários, sugerindo itens, conteúdos ou serviços, entre outros.
 
-% \subsection{Sistemas de Recomendação Tradicional}
+Os sistemas de recomendação surgiram nos trabalhos extensivos das ciências cognitivas, teoria de aproximação, recuperação da informação e teoria de previsões e também possuem influências das ciências de administração e marketing \cite{allen2001econometric, murthi2003role}. O primeiro sistema de recomendação proposto que se tem conhecimento, foi o \textit{Tapestry}, nesse sistema criou-se o modelo mais usados em sistemas de recomendação, onde a recomendação de conteúdo é auxiliada pela colaboração de um grupo de pessoas, batizada como "filtragem  colaborativa". Neste trabalho, iniciou o desafio de casar corretamente os dados recomendados com os usuários que o recebem, analisando o real relacionamento de interesse \cite{kwong1992dynamic, resnick1997recommender}.
 
-Os sistemas de recomendação surgiram nos trabalhos extensivos das ciências cognitivas, teoria de aproximação, recuperação da informação e teoria de previsões e também possuem influências das ciências de administração e marketing \cite{allen2001econometric, murthi2003role}. O primeiro sistema de recomendação proposto foi o \textit{Tapestry}, nesse sistema criou-se um modelo mais usados em sistemas de recomendação, onde a recomendação de conteúdo é auxiliada pela colaboração de um grupo de pessoas, batizada como "filtragem  colaborativa". Neste trabalho, iniciou o desafio de casar corretamente os que dados recomendados com os usuários que o recebem, analisando o real relacionamento de interesse \cite{kwong1992dynamic, resnick1997recommender}.
+Podemos apresentar uma definição formal para sistema de recomendação da seguinte forma: 
 
-% Podemos apresentar uma definição formal para sistema de recomendação da seguinte forma: 
-
-% \newtheorem{mydef}{Definição}
-% \begin{mydef}
-% 	Seja $C$ o conjunto de todos os usuários de um determinado sistema, e seja $S'$ o conjunto de todos os possíveis itens que podem ser recomendados como livros, filmes, restaurantes etc. Seja $u$ a função utilidade que mede o quão útil é um determinado item s para um determinado usuário $c$, \textbf{\textit{u}:C x S $\rightarrow$ R}, onde $R$ é um conjunto totalmente ordenado segundo a função utilidade. Então, para cada usuário \textbf{\textit{c} $\in$ C}, procura-se um item \textbf{\textit{s'} $\in$ S} que maximiza a utilidade do usuário. Isto pode ser expressado pela equação \ref{eq:form_sis_rec}:
+\newtheorem{mydef}{Definição}
+\begin{mydef}
+	Seja $C$ o conjunto de todos os usuários de um determinado sistema, e seja $S'$ o conjunto de todos os possíveis itens que podem ser recomendados como livros, filmes, restaurantes etc. Seja $u$ a função utilidade que mede o quão útil é um determinado item s para um determinado usuário $c$, \textbf{\textit{u}:C x S $\rightarrow$ R}, onde $R$ é um conjunto totalmente ordenado segundo a função utilidade. Então, para cada usuário \textbf{\textit{c} $\in$ C}, procura-se um item \textbf{\textit{s'} $\in$ S} que maximiza a utilidade do usuário. Isto pode ser expressado pela equação \ref{eq:form_sis_rec}:
 	
-% 	\begin{equation}
-% 	\label{eq:form_sis_rec}
-% 	\forall c \in C, s'_{c} = argmax_{s \in S u(c, s)}
-% 	\end{equation}
+	\begin{equation}
+	\label{eq:form_sis_rec}
+	\forall c \in C, s'_{c} = argmax_{s \in S u(c, s)}
+	\end{equation}
 	
-% 	Em um sistema de recomendação a utilidade de um item é geralmente representada por uma avaliação que indica o quanto um determinado usuário gosta de um item. No entanto, conforme descrito na definição acima, a função de utilidade pode ser uma função arbitrária.
+	Em um sistema de recomendação a utilidade de um item é geralmente representada por uma avaliação que indica o quanto um determinado usuário gosta de um item. No entanto, conforme descrito na definição acima, a função de utilidade pode ser uma função arbitrária.
 	
-% 	Cada elemento dos usuários $C$ pode ser definido por um perfil que inclui as características do usuário, por exemplo, a sua idade, sexo, etc. No caso mais simples, o perfil pode conter um único elemento como um identificador único (ID). Da mesma forma, cada item de $S$ pode ser definido por um conjunto de características. Por exemplo, na recomendação de filmes, na qual $S$ é a coleção de filmes, cada filme pode ser representado não apenas pelo seu ID, mas também pelo seu título, gênero, diretor, ano de lançamento, etc.
-% \end{mydef}
+	Cada elemento dos usuários $C$ pode ser definido por um perfil que inclui as características do usuário, por exemplo, a sua idade, sexo, etc. No caso mais simples, o perfil pode conter um único elemento como um identificador único (ID). Da mesma forma, cada item de $S$ pode ser definido por um conjunto de características. Por exemplo, na recomendação de filmes, na qual $S$ é a coleção de filmes, cada filme pode ser representado não apenas pelo seu ID, mas também pelo seu título, gênero, diretor, ano de lançamento, etc.
+\end{mydef}
 
-Existem cinco abordagens mais usadas em sistemas de recomendação, três tradicionais: Filtragem Colaborativa (\textit{Collaborative Filtering}), Filtragem Baseada em Conteúdo (\textit{Content-based Filtering}) e Recomendação Baseada no Conhecimento (\textit{Knowledge-Based Recommendation}), e duas modernas: Sistemas de Recomendação Híbridos \textit{(Hybrid Recommender Systems}) e Sistemas de Recomendação usando Informações de Contexto (\textit{Context-aware Recommender Systems}). 
+Existem cinco abordagens mais usadas em sistemas de recomendação, três consideradas como tradicionais: Filtragem Colaborativa (\textit{Collaborative Filtering}), Filtragem Baseada em Conteúdo (\textit{Content-based Filtering}) e Recomendação Baseada no Conhecimento (\textit{Knowledge-Based Recommendation}), e duas consideradas mais atuais: Sistemas de Recomendação Híbridos \textit{(Hybrid Recommender Systems}) e Sistemas de Recomendação usando Informações de Contexto (\textit{Context-aware Recommender Systems}). 
 
-Dado que este trabalho trata o sistema de recomendação como uma prova de conceito para realização de inferência sobre a SMartOntology, estará descrito a seguir somente o modelo implementado no projeto de sistema de recomendação.
 
-\subsubsection{Collaborative Filtering}
+\subsection{\textit{Collaborative Filtering}}
 \label{sec:collaborative_filtering}
 
-A Filtragem Colaborativa baseia-se na idéia de "boca-a-boca" em que a informação passada de pessoa a pessoa desempenha um papel importante ao tomar uma decisão. Abstraindo, as pessoas são substituídas pelos chamados vizinhos mais próximos (NN) que são usuários com um padrão de preferência ou comportamento semelhante ao usuário atual. \cite{robillard2010recommendation}. Filtragem Colaborativa depende de dois tipos diferentes de dados: (1) um conjunto de usuários e (2) um conjunto de itens. A relação entre usuários e itens é expressada principalmente em termos de \textit{ratings} fornecidos pelos usuários e explorados em futuras sessões de recomendação para prever a classificação de um usuário \cite{robillard2010recommendation}.
+A Filtragem Colaborativa baseia-se na idéia de "boca-a-boca" em que a informação passada de pessoa a pessoa desempenha um papel importante ao tomar uma decisão. Abstraindo, as pessoas são substituídas pelos, chamados, vizinhos mais próximos (NN) que são usuários com um padrão de preferência ou comportamento semelhante ao usuário atual. \cite{robillard2010recommendation}. Filtragem Colaborativa depende de dois tipos diferentes de dados: (1) um conjunto de usuários e (2) um conjunto de itens. A relação entre usuários e itens é expressada principalmente em termos de \textit{ratings} fornecidos pelos usuários e explorados em futuras sessões de recomendação para prever a classificação de um usuário \cite{robillard2010recommendation}.
 
-% \begin{itemize}
-% 	\item \textbf{\textit{Collaborative Filtering}:}
-	
-% 	\item \textbf{\textit{Content-based Filtering}:}
-% 	A Filtragem Baseada em Conteúdo tem como característica principal o pressuposto de interesses pessoais, por exemplo, os usuários interessados no tópico de qualidade de experimentos em LPS normalmente não alteram seu interesse de um dia para outro, mas também estarão interessados em um tópico próximo, como por exemplo experimentos em Sistema de Sistemas. Abstraindo, as abordagens de recomendação baseadas em conteúdo são aplicadas, por exemplo, quando se trata da recomendação de sites (notícias com conteúdo semelhante em comparação com o conjunto de notícias já consumidas) \cite{robillard2010recommendation}. Filtragem Baseada em Conteúdo depende de dois tipos diferentes de dados: (i) um conjunto de usuários e (ii) um conjunto de categorias (ou palavras-chave) atribuídas ou extraídas dos itens (descrições de itens). Os sistemas de recomendação de filtragem baseados em conteúdo calculam um conjunto de itens que são mais parecidos com itens já conhecidos pelo usuário atual \cite{robillard2010recommendation}.
-
-% 	\item \textbf{\textit{Knowledge-Based Recommendation}:} 
-% 	A recomendação baseada no conhecimento, baseia-se nos seguintes	dados básicos: (i) um conjunto de regras (restrições) ou métricas de similaridade e (ii) um conjunto de itens. Dependendo dos requisitos do usuário, regras (restrições) que descrevam quais itens devem ser recomendados. O usuário atual articula suas necessidades (preferências) em termos de especificações e propriedades de itens que são internamente bem representados em termos de regras (restrições).
-	
-% 	\item \textbf{\textit{Hybrid Recommender System}:}
-% 	São algoritmos que combinam \textit{Collaborative Filtering} com \textit{Content-based Filtering} e podem ser feitos de diversas formas diferentes, por exemplo, aplicando os dois separados e juntando os resultados depois, adicionando a saída de um ao outro ou unificando as duas abordagens em um único modelo. Alguns exemplos são as abordagens baseada em pesos, misturadas a cascatas \cite{jannach2010recommender}.
-	
-	
-% 	\item \textbf{\textit{Context-aware Recommender Systems}:} 
-% 	Existem casos de recomendações que não podem levar em consideração somente os dados do item ou do usuário, como conteúdo personalizado de um site de filmes, sites de viagens e até sites de notícias. A incorporação do contexto permite personalizar ainda mais a recomendação e criar experiências realmente válidas ao usuário. Segundo \citet{rahman2013ide} \textit{Context-aware Recommender Systems}, segue as abordagens anteriores assumindo a existência de certos fatores contextuais como, por exemplo, o tempo e a localização, que identificam o contexto no qual as recomendações são fornecidas. Eles assumem que cada um desses fatores contextuais podem ter uma estrutura. O fator Tempo, por exemplo, pode ser definido em termos de segundos, minutos, horas, dias, meses e anos. \citet{rahman2013ide} cita como classificar o contexto baseando-se nos seguintes aspectos, (i) o que um sistema de recomendação pode saber sobre esses fatores contextuais e (ii) como os fatores contextuais mudam ao longo do tempo. Desta forma podemos definir este tipo de sistema de recomendação pela formula \ref{eq:form_sis_rec_ca}
-	
-% 	\begin{equation}
-% 		\label{eq:form_sis_rec_ca}
-% 		f:User \times Item \times Context \rightarrow Rating
-% 	\end{equation}
-
-% \end{itemize}
+Dado que este trabalho trata o sistema de recomendação como uma prova de conceito para realização de inferência sobre a OntoExper-LPS, utilizaremos a abordagem Filtragem Colaborativa, na próxima seção estará descrito o como este modelo de SR foi implementado e incorporado no projeto.
 
 
-% \subsection{Sistema de Recomendação em Engenharia de Software}
+\subsection{Sistema de Recomendação em Engenharia de Software}
 
 Em Engenharia de Software (\textit{Recommendation System in Software Engineering} - RSSEs), sistemas de recomendação desempenham importantes funções a fim de ajudar a equipe de software a lidar com sobrecarga de informações, filtrando e fornecendo informações úteis. São ferramentas de software introduzidas especificamente para ajudar equipes de desenvolvimento de software e partes interessadas a lidar com a busca de informações em um determinado contexto em ES \cite{robillard2010recommendation}.
 
@@ -119,7 +74,7 @@ RSSE compreende três componentes principais, (i) um mecanismo para coletar dados
 
 A \ref{fig:rsse} apresenta de forma geral como é construído um RSSE, partindo da entradas dos dados pelo \textit{input}, passando pela extração de contexto, seguindo para aplicação de alguma técnica de recomendação, na qual sofre um inferência do corpo de conhecimento (normalmente específico para cada área de ES), depois segue para um processo de filtragem dos resultados, e como saída a recomendação em si.
 
-Foi encontrado uma revisão sistemáticas (trabalho da \citealp{maki2016systematic}), que aborda métodos e modelos de implementação de um RSSE apresentando vários aspectos de SR em ES, principalmente no tipo de corpo de conhecimento aplicado a RSSE. Nessa revisão foi possível identificar algumas áreas da ES que utiliza SR, apresentadas a seguir.
+Foi encontrado uma revisão sistemática (trabalho da \citealp{maki2016systematic}), que aborda métodos e modelos de implementação de um RSSE apresentando vários aspectos de SR em ES, principalmente no tipo de corpo de conhecimento aplicado a RSSE. Nessa revisão foi possível identificar algumas áreas da ES que utiliza SR, apresentadas a seguir.
 
 \begin{itemize}
 	\item SR para exploração código fonte;
@@ -135,45 +90,317 @@ Foi encontrado uma revisão sistemáticas (trabalho da \citealp{maki2016systematic
 	\item SR na busca de \textit{bugs}.
 \end{itemize}
 
-% Por meio deste estudo, foi possível identificar em qual domínio de aplicação da industria de ES estão aplicando qual técnica de SR, apresentados na \ref{tab:tec_x_doman} a seguir.
+Por meio deste estudo, foi possível identificar em qual domínio de aplicação da industria de ES estão aplicando qual técnica de SR, apresentados na \ref{tab:tec_x_doman} a seguir.
 
-% \begin{table}[]
-% 	\centering
-% 	\caption{Sumário de técnicas de recomendação em cada domínio, Traduzido e Adaptado de \citet{maki2016systematic} }
-% 	\label{tab:tec_x_doman}
-% 	\begin{tabular}{@{}llllllllll@{}}
-% 		\toprule
-% 		\multicolumn{1}{c}{\textbf{Domínios}} & \multicolumn{8}{c}{\textbf{Técnicas}} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Número de \\ Referências\end{tabular}}} \\ \midrule
-% 		& CBF & CF & KBF & Hibrido & IA & \begin{tabular}[c]{@{}l@{}}Redes \\ Sociais\end{tabular} & \begin{tabular}[c]{@{}l@{}}Info. de\\ Contexto\end{tabular} & \begin{tabular}[c]{@{}l@{}}Grupo de \\ agregação\end{tabular} &  \\ \midrule
-% 		Governo & 1 & 5 & 1 & 5 & 4 &  &  &  & 9 \\
-% 		Negócios &  & 1 & 3 & 3 & 4 &  &  &  & 5 \\
-% 		Comercio & 3 & 1 & 4 & 1 & 4 & 2 &  &  & 8 \\
-% 		Livraria & 2 & 2 &  & 3 & 1 &  &  &  & 6 \\
-% 		Escolas & 2 &  & 11 &  & 1 &  &  &  & 10 \\
-% 		Turismo & 5 & 9 & 9 & 9 & 2 & 2 & 11 &  & 18 \\
-% 		Pesquisa & 9 & 16 & 6 & 15 & 3 & 1 & 1 &  & 27 \\
-% 		\begin{tabular}[c]{@{}l@{}}Grupo de \\ Atividade\end{tabular} & 9 & 5 & 2 & 5 & 8 &  &  & 2 & 21 \\
-% 		\textbf{Total} & \textbf{31} & \textbf{39} & \textbf{36} & \textbf{41} & \textbf{27} & \textbf{5} & \textbf{12} & \textbf{2} & \textbf{104} \\ \bottomrule
-% 	\end{tabular}
-% \end{table}
+\begin{landscape}
+	\topskip0pt
+    \vspace*{\fill}
+	\begin{table}[]
+		\centering
+		\caption{Sumário de técnicas de recomendação em cada domínio, Traduzido e Adaptado de \citet{maki2016systematic} }
+		\label{tab:tec_x_doman}
+		\begin{tabular}{@{}llllllllll@{}}
+			\toprule
+			\multicolumn{1}{c}{\textbf{Domínios}} & \multicolumn{8}{c}{\textbf{Técnicas}} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Número de \\ Referências\end{tabular}}} \\ \midrule
+			& CBF & CF & KBF & Hibrido & IA & \begin{tabular}[c]{@{}l@{}}Redes \\ Sociais\end{tabular} & \begin{tabular}[c]{@{}l@{}}Info. de\\ Contexto\end{tabular} & \begin{tabular}[c]{@{}l@{}}Grupo de \\ agregação\end{tabular} &  \\ \midrule
+			Governo & 1 & 5 & 1 & 5 & 4 &  &  &  & 9 \\
+			Negócios &  & 1 & 3 & 3 & 4 &  &  &  & 5 \\
+			Comercio & 3 & 1 & 4 & 1 & 4 & 2 &  &  & 8 \\
+			Livraria & 2 & 2 &  & 3 & 1 &  &  &  & 6 \\
+			Escolas & 2 &  & 11 &  & 1 &  &  &  & 10 \\
+			Turismo & 5 & 9 & 9 & 9 & 2 & 2 & 11 &  & 18 \\
+			Pesquisa & 9 & 16 & 6 & 15 & 3 & 1 & 1 &  & 27 \\
+			\begin{tabular}[c]{@{}l@{}}Grupo de \\ Atividade\end{tabular} & 9 & 5 & 2 & 5 & 8 &  &  & 2 & 21 \\
+			\textbf{Total} & \textbf{31} & \textbf{39} & \textbf{36} & \textbf{41} & \textbf{27} & \textbf{5} & \textbf{12} & \textbf{2} & \textbf{104} \\ \bottomrule
+		\end{tabular}
+	\end{table}
+	\vspace*{\fill}
+\end{landscape}
 
 
 \section{Concepção}
-\label{sec:concepcao}
+\label{sec:concepcao_recsys}
+
+Após a construção da proposta de ontologia e seu povoamento, iniciou-se um processo empírico de validação dos dados inseridos, realizando inferências a OntoExper-LPS por meio de consultas, como foi apresentado na Seção \ref{sec:exemplo}. No decorrer deste estudo foi utilizado a biblioteca OWLReady2 para criação das consultas mais elaboradas, algumas destas serviram de bases para implementar o SR.
+
+Dado essas considerações iniciais sobre consultas preliminares na ontologia proposta, foi possível esboçar um SR para realizar, como prova de conceito, inferência na OntoExper-LPS. Dessa forma, foi elaborado um projeto de SR que possa conectar os usuários aos itens (experimentos de ES em LPS).
+
+\begin{figure}[htb]
+	\centering					
+	{\includegraphics[scale=.5]{RSSE-overview.png}}
+	
+	\caption{Modelagem geral do SR como prova de conceito para OntoExper-SPL}
+	\label{fig:RSSE-overview}
+\end{figure}
+
+A \ref{fig:RSSE-overview} apresenta o conceito geral da metodologia deste projeto. Iniciando pela entrada dos usuários, depois extraímos as preferências dele (por meio de ratings), e em seguida realizada a extração de informações de contexto utilizando a base de metadados em LPS (OntoExper-LPS), para então fazer inferência nos itens, por meio dessa inferência é possível obter as recomendações (itens ranqueadas para cada usuário).
+
+Inicialmente, a entrada de dados dos usuários está sendo definido da seguinte forma:
+
+\begin{itemize}
+	\item Artefatos de LPS:
+	\item Tipo do experimento LPS
+\end{itemize}
+
+Posteriormente, foi definido algumas tecnologias para o desenvolvimento do SR, seguindo as boa práticas de desenvolvimento de sistemas. Por meio dessas tecnologias foi possível construir o SR descrito na próxima seção.
 
 \section{Projeto}
-\label{sec:projeto}
+\label{sec:projeto_recsys}
+
+Para o desenvolvimento o SR foi necessário encontrar tecnologias que atendesse os requisitos, tanto de SR como de ontologias. A linguagem de programação Python foi escolhida novamente por atender estes dois requisitos. Quanto a ontologia, porque ela já foi utilizada para manipulação da ontologia por meio da biblioteca OWLReady2. Quanto ao SR por possuir facilidade de implementação de algoritmos complexos e manipulação de dados com Pandas. Um viés para esta implementação foi o conhecimento do pesquisador em desenvolvimento web, isso motivou o uso do Framework Django para desenvolvimento web com Python. Dessa forma toda \textit{stack} de desenvolvimento do SR foi baseada na linguagem Python.
+
+O desenvolvimento deste projeto foi dividido em quatro fases.
+
+\begin{itemize}
+	\item \textbf{Fase 1:} criação do projeto de aplicação web usando Django Framework e implementação de um prototipação da tela de iteração do usuário com SR;
+	\item \textbf{Fase 2:} carregamento da OntoExper-LPS no SR e implementação dos mecanismos de consultas na OntoExper-LPS;
+	\item \textbf{Fase 3:} \textit{ratings} dos usuários no SR e armazenado da avaliação no SR; e
+	\item \textbf{Fase 4:} implementação do modelo de recomendação, implementação da o conceito de filtragem colaborativa.
+\end{itemize}
+
+\subsection{Fase 1: O Projeto de SR Usando Django Framework}
+
+O Django Framework é um framework \textit{open source} para desenvolvimento de aplicações web para linguagem Python. Ele  implementa o modelo para desenvolvimento em camadas chamado MTV \textit{(Model, Template, View)}, este conceito é semelhante a arquitetura MVC \textit{(Model, View, Controller)} , porém com outra nomenclatura. Abaixo está descrito qual a responsabilidade de cada camada no Django.
+
+% TODO \cite{http://heim.ifi.uio.no/~trygver/1979/mvc-2/1979-12-MVC.pdf}
+
+\begin{itemize}
+	\item \textbf{A camada do modelo:} fornece uma camada de abstração para estruturar e manipular os dados da aplicação da web.
+	\item \textbf{A camada de visualização:} tem o conceito de "visualizações" para encapsular a lógica responsável pelo processamento da solicitação de um usuário e pelo retorno da resposta.
+	\item \textbf{A camada de template:} fornece uma sintaxe amigável para o desenvolvedor renderizar as informações a serem apresentadas ao usuário.
+\end{itemize}
+
+Além de implementar este padrão de modelo de desenvolvimento, o Django oferece outras características, como um processo intuitivo e claro de configuração por meio de um arquivo \textit{settings.py}, a possibilidades de encapsulamento de processos com criação de pequenas aplicações dentro do projeto, possibilidade de internacionalização, implementação de autenticação e segurança, configuração de \textit{timezone}, além de uma implementação pronta para administração da aplicação, chamado Django Admin. 
+
+Uma das parte do Django admin é o site, ela oferece a geração de páginas automáticas com base nos metadados dos modelos de negócio criado pelo desenvolvedor.
+
+Outro recurso que o Django trás é parte de autenticação de segurança, por meio deste recurso é possível criar e gerenciar contas de usuários, grupo de usuários, permissões de acesso e os \textit{cookies} de sessão do usuário.
+
+Dessa forma, com o Django Framework, foi possível implementar um SR robusto, garantindo as principais funcionalidades de uma aplicação web. 
+
+A aplicação construída conta com a seguinte árvore de diretórios apresentada na \ref{figure:dir-recsys-onto}
+
+\begin{figure}[htb]
+	\centering 
+	\includegraphics[scale=1]{dir-recsys-onto.png}
+	\caption{Árvore de diretórios da aplicação SR com Django Framework.}
+	\label{figure:dir-recsys-onto}
+\end{figure}
+
+O diretório \lstinline{recsys-onto-exper-lps} é o diretório raiz do projeto, todo código fonte da aplicação se encontra nele.
+
+O diretório \lstinline{ratings} é uma aplicação dentro do projeto, nela contém a modelagem de dados para o armazenamento das avaliações dos usuários
+
+O diretório \lstinline{recsys} é o diretório de configuração principal do projeto, nela contém o arquivo \textit{settings.py} (confiuguração global do projeto) e \textit{views.py} que é o principal aquivo deste projeto. Nele contém toda regra e controle das funcionalidades implementada neste projeto - nas próximas subseções será detalhada estas funcionalidades. Neste diretório tbm contém o arquivo \textit{collaborativeFilter.py} que implementa o modelo de recomendação.
+
+O diretório \lstinline{templates} é o diretório responsável por encapsular todas as partes da única tela que o projeto implementa. São cinco arquivos HTML que são apresentados em uma única tela para o usuário no navegador.
+
+O arquivo \textit{.gitignore} é responsável por configurar quais arquivos e diretórios não serão versionados pelo sistema de controle de versionamento (Git).
+
+O arquivo \textit{db.sqlite3} é próprio banco de dados. O banco de dados do projeto será detalhado na Seção \ref{sec:banco_dados}.
+
+O arquivo \textit{manage.py} é responsável por prover a execução da aplicação Django Framework.
+
+O arquivo \textit{ontology-populate-valid.owl} é a própria OntoExper-LPS povoada com seus indivíduos, na qual o projeto realiza inferências.
+
+O arquivo \textit{README.md} é um arquivo de marcação que descreve o projeto.
+
+
+\subsection{Fase 2: Carregamento da OntoExper-LPS no SR}
+
+Como foi apresentado na seção anterior, o arquivo \lstinline{ontology-populate-valid.owl} está localizado na raiz do projeto, para nosso SR manusear este arquivo, foi preciso criar uma configuração no arquivo \textit{settings.py} apresentado na Listagem \ref{lst:config-onto}
+
+\begin{lstlisting}[language=Python, caption=Configuração do arquivo da OntoExper-LPS, label=lst:config-onto]
+
+ONTOLOGY_FILE = 'ontology-populate-valid.owl'
+
+\end{lstlisting}
+
+Dado essa configuração foi possivel no arquivo \textit{views.py} realizar o carregamento da ontologia utilizando a biblioteca OWLReady2, dessa forma, transformando a OntoExper-LPS em um objeto manipulável pela linguagem de programação. Este passo é apresentado na Listagem \ref{lst:carregando-onto}
+
+\begin{lstlisting}[language=Python, caption=Carregando a OntoExper-LPS, label=lst:carregando-onto]
+
+import os
+from owlready2 import *
+
+def home(request):
+	onto = get_ontology(
+		os.path.join(settings.BASE_DIR, 
+		settings.ONTOLOGY_FILE)).load()
+
+\end{lstlisting}
+
+A função \textit{get\_ontology()} foi importada da biblioteca OWLReady2, ela retorna um objeto que chamamos de \textbf{onto}, com ele é possível executar outras operações que a biblioteca oferece.
+
+A partir desse momento foi possível realizar as inferências na OntoExper-LPS. Foi criado um métodos \textit{\_getTypesFrom()} que recebe como parâmetro uma classe da ontologia e retorna seus indivíduos, onde dessa forma, foi possível buscar as informações de tipagem encontrados na ontologia. Os tipos mapeados em classes que consultamos neste momento são.
+
+\begin{itemize}
+	\item onto.TypeExperiment;
+	\item onto.TypeContextExperiment;
+	\item onto.TypeContextSelection;
+	\item onto.TypeDesignExperiment;
+	\item onto.TypeSelectionParticipantsObjects; e
+	\item onto.TypeExperimentSPL.
+\end{itemize}
+
+\begin{figure}[htb]
+	\centering 
+	\includegraphics[scale=.35]{tela-recsys-onto.png}
+	\caption{Tela do SR.}
+	\label{figure:tela-recsys-onto}
+\end{figure}
+
+A \ref{figure:tela-recsys-onto} apresenta a tela construída para SR. Nesta tela existem dois campos de consultas, (i) Artefatos de LPS e (ii) Tipo de experimento em LPS. Quando o usuário seleciona qualquer um dos dois campos, o SR invoca o método \textit{filter\_experiment()} passando os dados selecionados como parâmetro. Neste método é realizar a inferência na ontologia, segundo os valores que o usuário selecionou na tela. Na listagem \ref{lst:inferencia-onto} apresenta o código da consulta realizada.
+
+\begin{lstlisting}[language=Python, caption=Inferência na OntoExper-LPS, label=lst:inferencia-onto]
+result = onto.search(is_a=onto.Abstract,
+	documentation=onto.search(is_a=onto.Documentation,
+	  experiment=onto.search(
+	    wasTheSPLSourceUsedInformed="*%s*" % sourceSPL,
+	    typeExperimentSPL=instance_typeExperimentSPL, 
+	    _case_sensitive=False
+	    )
+	  )
+	)
+\end{lstlisting}
+ 
+
+\subsection{Fase 3: \textit{Ratings} dos Usuários no SR}
+
+Existem duas formas de gerar avaliação aos itens em SR, o \textit{rating} explícitos e o \textit{rating} implícito.
+
+\begin{itemize}
+	\item No \textit{rating} explícitos o usuário dá uma nota a um item manualmente;
+	\item No \textit{rating} implícito a nota de um item é inferida a partir do comportamento do usuário.
+\end{itemize}
+
+Neste projeto de SR foi implementado o modelo de avaliação explícito, onde cada usuário dá uma nota a um experimento em LPS. Após o usuário realizar um consulta ele pode navegar nos resultados e ao selecionar um experimento na lateral direita é carregado o resumo do mesmo. Nesta lateral foi implementada a opção do usuário dar sua nota. Aqui foi utilizado o modelo estrela, ou seja, o usuário tem a opção de dar de uma a cinco estrelas por experimento. A \ref{figure:rating-recsys-onto} apresenta a tela que com as opções de \textit{rating} explícito.
+
+\begin{figure}[htb]
+	\centering 
+	\includegraphics[scale=.5]{rating-recsys-onto.png}
+	\caption{\textit{Rating} Explícito no SR.}
+	\label{figure:rating-recsys-onto}
+\end{figure}
+
+Quando o usuário dá sua nota, o SR invoca o método \textit{rating\_experiment()} que recebe como parâmetro o experimento e a nota dada pelo usuário e realiza a persistência desses dados em um banco de dados relacional, na Seção \ref{sec:banco_dados} está detalhado a modelagem destes dados.
+
+
+\subsection{Fase 4: Modelagem de Recomendação, Um Algoritmo para Filtragem Colaborativa}
+
+Neste projeto foi utilizado como abordagem de recomendação a filtragem colaborativa. Esse modelo foi implementado utilizando o cálculo da distância Euclidiana a fim de encontrar a similaridade entre os usuários do SR, em seguida, calcular as possíveis notas dos itens que o usuário em questão ainda não avaliou e ranques-las, dessa forma sendo possível recomendar, sugerindo determinada prioridade, os itens que o usuário ainda não se relacionou no SR e provavelmente gostaria de interagir.
+
+Para tal resultado o algoritmo está dividido em três partes, (i) criação do \textit{dataset} para o algoritmo, (ii) cálculo da similaridade - utilizando o cálculo da distância Euclidiana e (iii) cálculo da nota para os itens ainda não avaliados.
+
+\begin{itemize}
+	\item \textbf{Criação do \textit{dataset} para o algoritmo:} esta parte consulta o banco de dados e agrupa as notas dos experimentos por usuário, dessa forma gerando uma lista de usuário e as notas que ele deu para cada experimento. Por exemplo a lista: ['usuário-1': {69: 5.0, 1: 4.0, 5: 1.0, 129: 5.0, 170: 2.0, 97: 4.0}, 'usuário-2' {102: 3.0, 117: 4.0, 125: 3.0, 13: 2.0, 9: 3.0, 129: 4.0, 170: 4.0}], neste caso podemos observar que o usuário-1 avaliou seis experimentos e usuário-2 sete sendo eles \#102, \#117, \#125, \#13, \#9, \#129 e o \#170 (estes números representam o identificador de cada experimento no SR), cada um com sua respectiva nota. Essa modelagem de dados é necessária para os próximos passos do algoritmo.
+	
+	\item \textbf{Cálculo da similaridade:} a fundamentação da distância Euclidiana é medir a distância entre dois pontos ou mais, como descrita na Equação \ref{eq:distancia_eucliana}. 
+	
+	\begin{equation}
+		\label{eq:distancia_eucliana}
+		DE(x,y) = \sqrt{\sum_{i}^{p}{(x_i-y_i)²}}
+	\end{equation}
+	
+	Usamos este fundamento para encontrar a distância das notas dadas pelos usuários. Por exemplo, dado um determinado experimento com identificador \#170 usuário-1 deu nota 2.0 e o usuário-2 deu nota 4.0, pelo cálculo da distância Euclidiana temos que o usuário-1 é distante do usuário-2 por um valor 2. Este cálculo fica mais interessante quando aplicamos mais dimensões, cada dimensão no no nosso cenários pode ser associada a um experimento, por exemplo, se incluirmos no cálculo o experimento \#129, temos que o usuário-1 deu nota 5.0 e o usuário-2 deu nota 4.0 logo calculo fica $\sqrt{(2-4)^2+(5-4)^2}$, retornando 3. O próximo passo é normalizar esse valor de retorno da distância Euclidiana entre 0 e 1, simplesmente aplicando a Equação \ref{eq:normalizacao_de}. Dessa forma podemos afirmar que neste exemplo a similaridade entre o usuário-1 e o usuário-2 é 0.25
+
+	\begin{equation}
+		\label{eq:normalizacao_de}
+		sim = \frac{1}{(1+de)}
+	\end{equation}
+
+	Todo algoritmo e cálculos que foram implementados estão no arquivo \textit{collaborativeFilter.py} e está disponível no Apêndice \ref{}.
+
+	\item \textbf{Cálculo da nota para os itens ainda não avaliados:} esta parte do algoritmo, busca prever uma nota para os itens ainda não avaliados pelo usuário, para tal efeito é necessário realizar um cálculo de média ponderada usando o cálculo de similaridade descrito anteriormente, este cálculo está descrito na Equação \ref{eq:nota_previsao}. Para melhor entendimento do cálculo, segue o exemplo, dado os experimentos \#129 e \#170, o usuário-1 deu nota 2.0 para o \#129 e nota 3.0 para \#170, o usuário-2 deu nota 4.0 para o \#129 e nota 5.0 para \#170 e o o usuário-3 não deu nota para o \#129 e nota 4.0 para \#170, temos um usuário-4 queremos encontrar qual nota que ele daria para os experimentos \#129 e \#170, sabendo que o usuário-4 tem uma similaridade 0,4 com usuário-1, 0,25 com usuário-2 e 0,18 com usuário-3. a tabela \ref{tab:calculo-ponderado} apresenta os resultados deste cálculo. Dessa forma podemos dizer que o usuário-4 daria nota 3,82 para \#170 e 2,77 \#129, portanto SR recomendaria o experimento que \#170 por ter maior nota.
+	
+	\begin{equation}
+		\label{eq:nota_previsao}
+		NOTA_p() = \frac{\sum_{i}^{usuarios}{(sim_i*nota_i)}}{\sum_{i}^{usuariosTemNota}{(sim_i)}}
+	\end{equation}
+
+	\begin{table}[]
+		\centering
+		\caption{Cálculo para previsão de nota}
+		\label{tab:calculo-ponderado}
+		\begin{tabular}{llllll}
+		& Sim & Nota \#129 & Sim X \#129 & Nota \#170 & Sim X \#170 \\ \hline
+		usuário-1 & \textbf{0,40} & \multicolumn{1}{c}{2} & \textbf{0,80} & \multicolumn{1}{c}{3} & 1,20 \\
+		usuário-2 & \textbf{0,25} & \multicolumn{1}{c}{4} & \textbf{1,00} & \multicolumn{1}{c}{5} & 1,25 \\
+		usuário-3 & \textbf{0,18} &  & \textbf{0,00} & \multicolumn{1}{c}{4} & 0,72 \\ \hline
+		Total &  &  & 1,80 &  & 3,17 \\
+		Soma Sim &  &  & 0,65 &  & 0,83 \\
+		Total / Soma &  &  & 2,77 &  & 3,82 \\ \hline
+		\textbf{usuário-4} &  & \textbf{2,77} &  & \textbf{3,82} & 
+		\end{tabular}
+	\end{table}
+
+\end{itemize}
+
+O modelo de recomendação usando foi a filtragem colaborativa com \textit{rating} explícito gera o problema da partida fria, ou seja, não temos dados o suficientes no SR quando ainda não há avaliações lançadas, isso implica em resultados não satisfatórios de recomendação. Foi implementado um modelo de nota aleatória para resolver este problema. Porém a melhor solução seria implementar a filtragem baseada em conteúdo, pois este modelo não se baseia nos \textit{ratings} dados pelos usuários.
+
+\section{Banco de Dados}
+\label{sec:banco_dados}
+
+Para o banco de dado do SR foi utilizado o SGBD SQLite, ele foi utilizado por ser o banco de dados padrão para Django Framework, dessa forma não foi preciso realizar nenhuma outra configuração a mais. O SQLite é um dos bandos de dados mais simples, todos os registros de metadados são armazenados em um único arquivo. 
+
+As tabelas existentes no banco de dados, são.
+
+\begin{itemize}
+	\item auth\_group;
+	\item auth\_group\_permissions;
+	\item auth\_permission;
+	\item auth\_user;
+	\item auth\_user\_groups;
+	\item auth\_user\_user\_permissions;
+	\item django\_admin\_log;
+	\item django\_content\_type;
+	\item django\_migrations;
+	\item django\_session;
+	\item rating\_rating; e
+	\item sqlite\_sequence.
+\end{itemize}
+
+As tabelas com prefixo \textit{auth} e \textit{django} são geradas e mantidas pelo próprio Django Framework. A tabela \textit{rating\_rating} foi gerada pela aplicação \textit{rating} dentro do projeto, a \ref{tab:tabela-rating} descreve sua estrutura. Sua função é armazenar as avaliações dos usuário, a coluna \textit{user} armazena o login do usuário, a coluna rating armazena a nota dada, a coluna id\_experiment armazena o id do experimento e a coluna title\_experiment armazena o título do experimento.
+
+\begin{table}[]
+	\centering
+	\caption{Tabela \textit{rating\_rating} do Banco de Dados}
+	\label{tab:tabela-rating}
+	\begin{tabular}{@{}ll@{}}
+	\toprule
+	Coluna & Tipo \\ \midrule
+	id & integer \\
+	user & varchar(50) \\
+	rating & real \\
+	id\_experiment & integer \\
+	title\_experiment & varchar(255) \\ \bottomrule
+	\end{tabular}
+\end{table}
+
 
 \section{Ambiente de Desenvolvimento}
 \label{sec:ambiente_de_desenvolvimento}
 
-\section{Interface com Usuário}
-\label{sec:interface_com_usuario}
+Para desenvimento do SR, foi necessária algumas ferramentas de apoio, além do Django Framework e do SQLite já citado, foi utilizado outras tecnologias como HTML CSS e JS, com o apoio dos \textit{frameworks} Bootstrap e jQuery.
 
-% \section{Melhorias}
-% \label{sec:melhorias}
+Para ambiente de desenvolvimento de código fonte foi utilizado o editor de texto VSCode da Microsoft e a ferramenta Jupyter-Notebook e Jupyter-Lab, para visualização do SR o navegador Google Chrome e FireFox e para o banco de dados o DB Browser. Todas estas ferramentas são \textit{open source} e estão disponivel para \textit{download} até a data de escrita deste trabalho.
+
+Foram escolhidas estas ferramentas, pois o pesquisador já possuía habilidades nelas e por possuir maturidade e reconhecimento na indústria de desenvolvimento de software.
+
+%TODO
+\section{Empacotamento e Compartilhamento}
+\label{sec:recsys_concidaracoes_finais}
+Os  documentos  disponibilizados  aos  participantes  e  resultados  deste  estudo  qualitativoest ?ao dispon ??veis em:  https://doi.org/..., visando dissemina ?c ?ao dos dados
+
 
 \section{Considerações Finais}
-\label{sec:concidaracoes_finais}
+\label{sec:recsys_concidaracoes_finais}
 
-Inicialmente foi apresentados os modelos básico de sistemas de recomendação tradicionais, como \textit{collaborative filtering} e \textit{content-based filtering}. Na sequência foi apresentado como os sistemas de recomendação são tratados na ES e alguns exemplos de aplicação.
+Este capítulo apresentou um SR provando que é possível realizar inferências no modelo de ontologia proposto por este trabalho de mestrado, a OntoExper-LPS. Por meio das inferências implementadas no SR, foi possível implementar o modelo de recomendação \textit{collaborative filtering} e gerar recomendações para os usuários que interagirem com o SR.
+
+Inicialmente, a termo de contexto, foi apresentados os conceitos básico de sistemas de recomendação e uma breve descrição do modelo \textit{collaborative filtering}. Na sequência foi apresentado como os sistemas de recomendação são tratados na ES e alguns exemplos de aplicação.
+
+Foi apresentado na seção de concepção do SR, a modelagem inicial da aplicação, as principais tecnologias abordadas antes da fase de implementação, o ecossistema Python serviu como base para o desenvolvimen geral do SR, desde a inferências iniciais até a implementação de modelo de recomendação. Já na seção de projeto foi tratado especificamente de como as tecnologias e ferramentas auxiliaram em cada fase do projeto, que foram divididas em quatro fases, (i)criação do projeto de aplicação web usando Django Framework, (ii) carregamento da OntoExper-LPS no SR, (iii) \textit{ratings} dos usuários no SR e (iv) implementação do modelo de recomendação. O Django Framework se destaca pois ele foi a base de implementação da aplicação web, pois ele foi construído para esse propósito, implementando principalmente os conceitos de MVC. Posteriormente foi apresenta o banco de dados e sua principal tabela para SR, a tabela que armazena os \textit{ratings} do usuário. Por fim, foi apresentado o ambiente de desenvolvimento utilizado para elaborar do SR, a principal ferramente para este fim foi o editor de texto VSCode.
+
+No próximo cap??tulo, será apresentado a conclusão final deste trabalho de mestrado.
+

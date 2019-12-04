@@ -18,8 +18,11 @@
 \contentsline {figure}{\numberline {Figura - 3.7}{\ignorespaces Grafo da modelagem da ontologia - gerado pelo WbVOWL.}}{48}{figure.3.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 5.1}{\ignorespaces Modelagem geral da RSSE proposta}}{71}{figure.5.1}
-\contentsline {figure}{\numberline {Figura - 5.2}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{74}{figure.5.2}
+\contentsline {figure}{\numberline {Figura - 5.1}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{75}{figure.5.1}
+\contentsline {figure}{\numberline {Figura - 5.2}{\ignorespaces Modelagem geral do SR como prova de conceito para OntoExper-SPL}}{78}{figure.5.2}
+\contentsline {figure}{\numberline {Figura - 5.3}{\ignorespaces \'Arvore de diret\'orios da aplica\c c\~ao SR com Django Framework.}}{80}{figure.5.3}
+\contentsline {figure}{\numberline {Figura - 5.4}{\ignorespaces Tela do SR.}}{83}{figure.5.4}
+\contentsline {figure}{\numberline {Figura - 5.5}{\ignorespaces \textit {Rating} Expl\'{\i }cito no SR.}}{84}{figure.5.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -6,7 +6,7 @@
 \section{Considerações Iniciais}
 \label{sec:concidaracoes_iniciais}
 
-Este capítulo apresenta a elaboração da proposta de ontologia OntoExper-LPS, sua concepção, a construção do projeto, exemplos de aplicação, uma breve avaliação empírica e considerações finais. Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:concepcao} apresenta o processo de concepção do modelo seguindo a tipologia de \cite{almeida2003visao} bem como a elaboração de um grafo como modelagem inicial da ontologia, seguindo como base um modelo conceitual clusterizado sobre elementos experimentais de ES em LPS; na Seção \ref{sec:projeto} foi desenvolvido o projeto da OntoExper-LPS para se obter modelo ontológico, foi utilizado como tecnologia base OWL (\textit{Ontology Web Language}) juntamente com a Ferramenta Protégé, o resultado final foi um artefato do tipo OWL contendo toda modelagem de classes, subclasses, propriedades de objeto e propriedades dos dados, além da modelagem, foi criado nesta seção, um programa automatizado para povoar a ontologia utilizando os metadados levantados pelo GReater, este programa conta com a utilização da linguagem de programação Python e a biblioteca OwlReady2; na Seção \ref{sec:exemplo} foi elaborado uma consulta SPARQL para demonstrar como interagir com a ontologia e uma breve explicação deste procedimento; na Seção \ref{sec:avaliacao_empirica} foi realizado uma avaliação empírica do modelo, por meio da ferramenta OOPS! que avalia pontos de falha do modelo, nesta seção discutimos como estes ponto de falham impacta no modelo proposto por este trabalho.
+Este capítulo apresenta a elaboração da proposta de ontologia OntoExper-LPS, sua concepção, a construção do projeto, exemplos de aplicação, uma breve avaliação empírica e considerações finais. Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:concepcao} apresenta o processo de concepção do modelo seguindo a tipologia de \cite{almeida2003visao} bem como a elaboração de um grafo como modelagem inicial da ontologia, seguindo como base um modelo conceitual clusterizado sobre elementos experimentais de ES em LPS; na Seção \ref{sec:projeto} foi desenvolvido o projeto da OntoExper-LPS para se obter modelo ontológico, foi utilizado como tecnologia base OWL (\textit{Ontology Web Language}) juntamente com a Ferramenta Protégé, o resultado final foi um artefato do tipo OWL contendo toda modelagem de classes, subclasses, propriedades de objeto e propriedades dos dados, além da modelagem, foi criado nesta seção, um programa automatizado para povoar a ontologia utilizando os metadados levantados pelo GReater, este programa conta com a utilização da linguagem de programação Python e a biblioteca OwlReady2; na Seção \ref{sec:exemplo} foi elaborado uma consulta SPARQL para demonstrar como interagir com a ontologia e uma breve explicação deste procedimento; na Seção \ref{sec:avaliacao_empirica} foi realizado uma avaliação empírica do modelo, por meio da ferramenta OOPS! que avalia pontos de falha do modelo, nesta seção discutimos como estes ponto de falham impacta no modelo proposto por este trabalho; e na Seção \ref{sec:fundamentos_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo..
 
 
 \section{Concepção}
@@ -504,7 +504,7 @@ A ferramenta elenca os resultados de cada armadilha como:
 	\item \textit{\textbf{Minor:}} Não é realmente um problema, mas ao consertá-lo, tornaremos a ontologia mais agradável.
 \end{itemize}
 
-A Tabela. apresenta o resumo do resultado ao rodar nosso proposta de modelo de ontologia na ferramenta OOPS!.
+A \ref{tab:result_of_evaluation} apresenta o resumo do resultado ao rodar nosso proposta de modelo de ontologia na ferramenta OOPS!.
 
 \begin{table*}[!ht]
 	\caption{Resumo dos resultado da avaliação executada por OOPS!}
@@ -539,7 +539,7 @@ Dada a análise da ferramenta OOPS! o próximo passo será corrigir as armadilhas a
 
 
 \section{Considerações Finais}
-\label{sec:concidaracoes_finais}
+\label{sec:ontologia_concidaracoes_finais}
 
 
 Este capítulo apresentou a elaboração da proposta de ontologia OntoExper-LPS. foram discutidas quatro partes importantes neste capítulo, (i) concepção do modelo da OntoExper-LPS, (ii) construção do modelo e povoamento da OntoExper-LPS, (iii) um exemplo de inferência sobre a ontologia com SPARQL e (iv) uma avaliação empírica apontando 41 pontos de possíveis falhas na OntoExper-LPS.

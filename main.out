@@ -48,23 +48,30 @@
 \BOOKMARK [0][-]{chapter.5}{Um Sistema de Recomenda\347\343o para Experimentos em LPS \(Prova de Conceito\) - RecSysExper-SPL}{}% 48
 \BOOKMARK [1][-]{section.5.1}{Considera\347\365es Iniciais}{chapter.5}% 49
 \BOOKMARK [1][-]{section.5.2}{Sistema de Recomenda\347\343o}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.3}{Concep\347\343o}{chapter.5}% 51
-\BOOKMARK [1][-]{section.5.4}{Projeto}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.5}{Ambiente de Desenvolvimento}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.6}{Interface com Usu\341rio}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.7}{Considera\347\365es Finais}{chapter.5}% 55
-\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 56
-\BOOKMARK [1][-]{section.6.1}{Considera\347\365es Iniciais}{chapter.6}% 57
-\BOOKMARK [1][-]{section.6.2}{Considera\347\365es Finais}{chapter.6}% 58
-\BOOKMARK [0][-]{chapter*.1}{REFER\312NCIAS}{}% 59
-\BOOKMARK [0][-]{section*.2}{Ap\352ndice A: Tipologias para Ontologias}{}% 60
-\BOOKMARK [1][-]{section.A.1}{Quanto \340 fun\347\343o Mizoguchi; Vanwelkenbuyse n; Ikeda \(1995\)}{section*.2}% 61
-\BOOKMARK [1][-]{section.A.2}{Quanto ao grau de formalismo Uschold; Gruninger \(1996\)}{section*.2}% 62
-\BOOKMARK [1][-]{section.A.3}{Quanto \340 aplica\347\343o Jasper; Uschold \(1999\)}{section*.2}% 63
-\BOOKMARK [1][-]{section.A.4}{Quanto \340 estrutura Haav; Lubi \(2001\)}{section*.2}% 64
-\BOOKMARK [1][-]{section.A.5}{Quanto ao conte\372do Van-Heijist; Schreiber; Wielinga \(2002\)}{section*.2}% 65
-\BOOKMARK [0][-]{section*.3}{Ap\352ndice A: C\363digo Fonte do Modelo da SMartOntology}{}% 66
-\BOOKMARK [1][-]{section.B.1}{Sa\355da Da Op\347\343o time-flags com os Breakpoints .dijkstra e .main}{section*.3}% 67
-\BOOKMARK [0][-]{section*.4}{Ap\352ndice B: C\363digo Fonte do Povoamento de Dados no Modelo SMartOntology}{}% 68
-\BOOKMARK [0][-]{section*.5}{Ap\352ndice C: Question\341rio de Avalia\347\343o e Respostas Aplicado \340 SMartOntology}{}% 69
-\BOOKMARK [0][-]{section*.6}{Ap\352ndice D: C\363digo Fonte dos Exemplos de Aplica\347\343o de Recomenda\347\343o Usando SMartOntology }{}% 70
+\BOOKMARK [2][-]{subsection.5.2.1}{Collaborative Filtering}{section.5.2}% 51
+\BOOKMARK [2][-]{subsection.5.2.2}{Sistema de Recomenda\347\343o em Engenharia de Software}{section.5.2}% 52
+\BOOKMARK [1][-]{section.5.3}{Concep\347\343o}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.4}{Projeto}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.4.1}{Fase 1: O Projeto de SR Usando Django Framework}{section.5.4}% 55
+\BOOKMARK [2][-]{subsection.5.4.2}{Fase 2: Carregamento da OntoExper-LPS no SR}{section.5.4}% 56
+\BOOKMARK [2][-]{subsection.5.4.3}{Fase 3: Ratings dos Usu\341rios no SR}{section.5.4}% 57
+\BOOKMARK [2][-]{subsection.5.4.4}{Fase 4: Modelagem de Recomenda\347\343o, Um Algoritmo para Filtragem Colaborativa}{section.5.4}% 58
+\BOOKMARK [1][-]{section.5.5}{Banco de Dados}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.6}{Ambiente de Desenvolvimento}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.7}{Empacotamento e Compartilhamento}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.8}{Considera\347\365es Finais}{chapter.5}% 62
+\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 63
+\BOOKMARK [1][-]{section.6.1}{Considera\347\365es Iniciais}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.2}{Considera\347\365es Finais}{chapter.6}% 65
+\BOOKMARK [0][-]{chapter*.1}{REFER\312NCIAS}{}% 66
+\BOOKMARK [0][-]{section*.2}{Ap\352ndice A: Tipologias para Ontologias}{}% 67
+\BOOKMARK [1][-]{section.A.1}{Quanto \340 fun\347\343o Mizoguchi; Vanwelkenbuyse n; Ikeda \(1995\)}{section*.2}% 68
+\BOOKMARK [1][-]{section.A.2}{Quanto ao grau de formalismo Uschold; Gruninger \(1996\)}{section*.2}% 69
+\BOOKMARK [1][-]{section.A.3}{Quanto \340 aplica\347\343o Jasper; Uschold \(1999\)}{section*.2}% 70
+\BOOKMARK [1][-]{section.A.4}{Quanto \340 estrutura Haav; Lubi \(2001\)}{section*.2}% 71
+\BOOKMARK [1][-]{section.A.5}{Quanto ao conte\372do Van-Heijist; Schreiber; Wielinga \(2002\)}{section*.2}% 72
+\BOOKMARK [0][-]{section*.3}{Ap\352ndice A: C\363digo Fonte do Modelo da SMartOntology}{}% 73
+\BOOKMARK [1][-]{section.B.1}{Sa\355da Da Op\347\343o time-flags com os Breakpoints .dijkstra e .main}{section*.3}% 74
+\BOOKMARK [0][-]{section*.4}{Ap\352ndice B: C\363digo Fonte do Povoamento de Dados no Modelo SMartOntology}{}% 75
+\BOOKMARK [0][-]{section*.5}{Ap\352ndice C: Question\341rio de Avalia\347\343o e Respostas Aplicado \340 SMartOntology}{}% 76
+\BOOKMARK [0][-]{section*.6}{Ap\352ndice D: C\363digo Fonte dos Exemplos de Aplica\347\343o de Recomenda\347\343o Usando SMartOntology }{}% 77

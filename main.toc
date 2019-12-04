@@ -57,24 +57,30 @@
 \contentsline {chapter}{\numberline {5}Um Sistema de Recomenda\c c\~ao para Experimentos em LPS (Prova de Conceito) - RecSysExper-SPL}{71}{chapter.5}
 \contentsline {section}{\numberline {5.1}Considera\c c\~oes Iniciais}{71}{section.5.1}
 \contentsline {section}{\numberline {5.2}Sistema de Recomenda\c c\~ao}{72}{section.5.2}
-\contentsline {subsubsection}{Collaborative Filtering}{73}{section.5.2}
-\contentsline {section}{\numberline {5.3}Concep\c c\~ao}{75}{section.5.3}
-\contentsline {section}{\numberline {5.4}Projeto}{75}{section.5.4}
-\contentsline {section}{\numberline {5.5}Ambiente de Desenvolvimento}{75}{section.5.5}
-\contentsline {section}{\numberline {5.6}Interface com Usu\'ario}{75}{section.5.6}
-\contentsline {section}{\numberline {5.7}Considera\c c\~oes Finais}{75}{section.5.7}
-\contentsline {chapter}{\numberline {6}Conclus\~ao}{76}{chapter.6}
-\contentsline {section}{\numberline {6.1}Considera\c c\~oes Iniciais}{76}{section.6.1}
-\contentsline {section}{\numberline {6.2}Considera\c c\~oes Finais}{77}{section.6.2}
-\contentsline {chapter}{REFER\^ENCIAS}{78}{chapter*.1}
-\contentsline {chapter}{\numberline {A}Ap\^endice A: Tipologias para Ontologias}{82}{section*.2}
-\contentsline {section}{\numberline {A.1}Quanto \`a fun\c c\~ao Mizoguchi; Vanwelkenbuyse n; Ikeda (1995)}{82}{section.A.1}
-\contentsline {section}{\numberline {A.2}Quanto ao grau de formalismo Uschold; Gruninger (1996)}{82}{section.A.2}
-\contentsline {section}{\numberline {A.3}Quanto \`a aplica\c c\~ao Jasper; Uschold (1999)}{83}{section.A.3}
-\contentsline {section}{\numberline {A.4}Quanto \`a estrutura Haav; Lubi (2001)}{83}{section.A.4}
-\contentsline {section}{\numberline {A.5}Quanto ao conte\'udo Van-Heijist; Schreiber; Wielinga (2002)}{83}{section.A.5}
-\contentsline {chapter}{\numberline {B}Ap\^endice A: C\'odigo Fonte do Modelo da SMartOntology}{85}{section*.3}
-\contentsline {section}{\numberline {B.1}Sa\'{\i }da Da Op\c c\~ao \textsc {time-flags} com os \textit {Breakpoints} \texttt {.dijkstra e .main}}{85}{section.B.1}
-\contentsline {chapter}{\numberline {C}Ap\^endice B: C\'odigo Fonte do Povoamento de Dados no Modelo SMartOntology}{86}{section*.4}
-\contentsline {chapter}{\numberline {D}Ap\^endice C: Question\'ario de Avalia\c c\~ao e Respostas Aplicado \`a SMartOntology}{87}{section*.5}
-\contentsline {chapter}{\numberline {E}Ap\^endice D: C\'odigo Fonte dos Exemplos de Aplica\c c\~ao de Recomenda\c c\~ao Usando SMartOntology }{88}{section*.6}
+\contentsline {subsection}{\numberline {5.2.1}\textit {Collaborative Filtering}}{73}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Sistema de Recomenda\c c\~ao em Engenharia de Software}{73}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Concep\c c\~ao}{78}{section.5.3}
+\contentsline {section}{\numberline {5.4}Projeto}{79}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Fase 1: O Projeto de SR Usando Django Framework}{79}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Fase 2: Carregamento da OntoExper-LPS no SR}{81}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Fase 3: \textit {Ratings} dos Usu\'arios no SR}{83}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Fase 4: Modelagem de Recomenda\c c\~ao, Um Algoritmo para Filtragem Colaborativa}{84}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Banco de Dados}{86}{section.5.5}
+\contentsline {section}{\numberline {5.6}Ambiente de Desenvolvimento}{88}{section.5.6}
+\contentsline {section}{\numberline {5.7}Empacotamento e Compartilhamento}{88}{section.5.7}
+\contentsline {section}{\numberline {5.8}Considera\c c\~oes Finais}{88}{section.5.8}
+\contentsline {chapter}{\numberline {6}Conclus\~ao}{90}{chapter.6}
+\contentsline {section}{\numberline {6.1}Considera\c c\~oes Iniciais}{90}{section.6.1}
+\contentsline {section}{\numberline {6.2}Considera\c c\~oes Finais}{91}{section.6.2}
+\contentsline {chapter}{REFER\^ENCIAS}{92}{chapter*.1}
+\contentsline {chapter}{\numberline {A}Ap\^endice A: Tipologias para Ontologias}{96}{section*.2}
+\contentsline {section}{\numberline {A.1}Quanto \`a fun\c c\~ao Mizoguchi; Vanwelkenbuyse n; Ikeda (1995)}{96}{section.A.1}
+\contentsline {section}{\numberline {A.2}Quanto ao grau de formalismo Uschold; Gruninger (1996)}{96}{section.A.2}
+\contentsline {section}{\numberline {A.3}Quanto \`a aplica\c c\~ao Jasper; Uschold (1999)}{97}{section.A.3}
+\contentsline {section}{\numberline {A.4}Quanto \`a estrutura Haav; Lubi (2001)}{97}{section.A.4}
+\contentsline {section}{\numberline {A.5}Quanto ao conte\'udo Van-Heijist; Schreiber; Wielinga (2002)}{97}{section.A.5}
+\contentsline {chapter}{\numberline {B}Ap\^endice A: C\'odigo Fonte do Modelo da SMartOntology}{99}{section*.3}
+\contentsline {section}{\numberline {B.1}Sa\'{\i }da Da Op\c c\~ao \textsc {time-flags} com os \textit {Breakpoints} \texttt {.dijkstra e .main}}{99}{section.B.1}
+\contentsline {chapter}{\numberline {C}Ap\^endice B: C\'odigo Fonte do Povoamento de Dados no Modelo SMartOntology}{100}{section*.4}
+\contentsline {chapter}{\numberline {D}Ap\^endice C: Question\'ario de Avalia\c c\~ao e Respostas Aplicado \`a SMartOntology}{101}{section*.5}
+\contentsline {chapter}{\numberline {E}Ap\^endice D: C\'odigo Fonte dos Exemplos de Aplica\c c\~ao de Recomenda\c c\~ao Usando SMartOntology }{102}{section*.6}
