@@ -21,48 +21,48 @@
 \BOOKMARK [1][-]{section.3.4}{Exemplo de Aplica\347\343o}{chapter.3}% 21
 \BOOKMARK [1][-]{section.3.5}{Avalia\347\343o Emp\355rica}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.6}{Considera\347\365es Finais}{chapter.3}% 23
-\BOOKMARK [0][-]{chapter.4}{Avalia\347\343o da SMartOntology: Um estudo Quantitativo}{}% 24
+\BOOKMARK [0][-]{chapter.4}{Avalia\347\343o da OntoExer-LPS: Um estudo Quantitativo}{}% 24
 \BOOKMARK [1][-]{section.4.1}{Considera\347\365es Iniciais}{chapter.4}% 25
 \BOOKMARK [1][-]{section.4.2}{Escala Likert}{chapter.4}% 26
 \BOOKMARK [1][-]{section.4.3}{Defini\347\343o do Estudo}{chapter.4}% 27
 \BOOKMARK [1][-]{section.4.4}{Planejamento do Estudo}{chapter.4}% 28
 \BOOKMARK [1][-]{section.4.5}{Execu\347\343o do Estudo}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.6}{An\341lise e Discuss\343o dos Resultados}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.6}{An\341lise dos Resultados}{chapter.4}% 30
 \BOOKMARK [2][-]{subsection.4.6.1}{Perfil dos Especialistas}{section.4.6}% 31
 \BOOKMARK [2][-]{subsection.4.6.2}{Frequ\352ncia Likert}{section.4.6}% 32
 \BOOKMARK [2][-]{subsection.4.6.3}{Teste de Normalidade}{section.4.6}% 33
 \BOOKMARK [2][-]{subsection.4.6.4}{Teste Estat\355stico}{section.4.6}% 34
 \BOOKMARK [2][-]{subsection.4.6.5}{Correla\347\343o dos Crit\351rios}{section.4.6}% 35
-\BOOKMARK [2][-]{subsection.4.6.6}{Melhorias}{section.4.6}% 36
-\BOOKMARK [1][-]{section.4.7}{Amea\347as \340 Validade}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.7.1}{Amea\347as \340 Validade Interna}{section.4.7}% 38
-\BOOKMARK [2][-]{subsection.4.7.2}{Amea\347as \340 Validade Externa}{section.4.7}% 39
-\BOOKMARK [2][-]{subsection.4.7.3}{Amea\347as \340 Validade de Constructo}{section.4.7}% 40
-\BOOKMARK [2][-]{subsection.4.7.4}{Amea\347as \340 Validade de Conclus\343o}{section.4.7}% 41
-\BOOKMARK [1][-]{section.4.8}{Empacotamento e Compartilhamento}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.9}{Propostas de Melhorias}{chapter.4}% 43
-\BOOKMARK [2][-]{subsection.4.9.1}{Melhorias apontada pelos especilistas}{section.4.9}% 44
-\BOOKMARK [2][-]{subsection.4.9.2}{Melhorias do OOPS! - Pontos de Falhas}{section.4.9}% 45
-\BOOKMARK [2][-]{subsection.4.9.3}{Outras Melhorias}{section.4.9}% 46
-\BOOKMARK [1][-]{section.4.10}{Considera\347\365es Finais}{chapter.4}% 47
-\BOOKMARK [0][-]{chapter.5}{Um Sistema de Recomenda\347\343o para Experimentos em LPS \(Prova de Conceito\) - RecSysExper-SPL}{}% 48
-\BOOKMARK [1][-]{section.5.1}{Considera\347\365es Iniciais}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.2}{Sistema de Recomenda\347\343o}{chapter.5}% 50
-\BOOKMARK [2][-]{subsection.5.2.1}{Collaborative Filtering}{section.5.2}% 51
-\BOOKMARK [2][-]{subsection.5.2.2}{Sistema de Recomenda\347\343o em Engenharia de Software}{section.5.2}% 52
-\BOOKMARK [1][-]{section.5.3}{Concep\347\343o}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.4}{Projeto}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.4.1}{Fase 1: O Projeto de SR Usando Django Framework}{section.5.4}% 55
-\BOOKMARK [2][-]{subsection.5.4.2}{Fase 2: Carregamento da OntoExper-LPS no SR}{section.5.4}% 56
-\BOOKMARK [2][-]{subsection.5.4.3}{Fase 3: Ratings dos Usu\341rios no SR}{section.5.4}% 57
-\BOOKMARK [2][-]{subsection.5.4.4}{Fase 4: Modelagem de Recomenda\347\343o, Um Algoritmo para Filtragem Colaborativa}{section.5.4}% 58
-\BOOKMARK [1][-]{section.5.5}{Banco de Dados}{chapter.5}% 59
-\BOOKMARK [1][-]{section.5.6}{Ambiente de Desenvolvimento}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.7}{Empacotamento e Compartilhamento}{chapter.5}% 61
-\BOOKMARK [1][-]{section.5.8}{Considera\347\365es Finais}{chapter.5}% 62
-\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 63
-\BOOKMARK [1][-]{section.6.1}{Considera\347\365es Iniciais}{chapter.6}% 64
-\BOOKMARK [1][-]{section.6.2}{Considera\347\365es Finais}{chapter.6}% 65
+\BOOKMARK [1][-]{section.4.7}{Discuss\343o dos Resultados}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.8}{Amea\347as \340 Validade}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.8.1}{Amea\347as \340 Validade Interna}{section.4.8}% 38
+\BOOKMARK [2][-]{subsection.4.8.2}{Amea\347as \340 Validade Externa}{section.4.8}% 39
+\BOOKMARK [2][-]{subsection.4.8.3}{Amea\347as \340 Validade de Constructo}{section.4.8}% 40
+\BOOKMARK [2][-]{subsection.4.8.4}{Amea\347as \340 Validade de Conclus\343o}{section.4.8}% 41
+\BOOKMARK [1][-]{section.4.9}{Empacotamento e Compartilhamento}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.10}{Propostas de Melhorias}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.10.1}{Melhorias apontada pelos especialistas}{section.4.10}% 44
+\BOOKMARK [2][-]{subsection.4.10.2}{Melhorias do OOPS! - Armadilhas}{section.4.10}% 45
+\BOOKMARK [1][-]{section.4.11}{Considera\347\365es Finais}{chapter.4}% 46
+\BOOKMARK [0][-]{chapter.5}{Um Sistema de Recomenda\347\343o para Experimentos em LPS \(Prova de Conceito\) - RecSysExper-SPL}{}% 47
+\BOOKMARK [1][-]{section.5.1}{Considera\347\365es Iniciais}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.2}{Sistema de Recomenda\347\343o}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.2.1}{Collaborative Filtering}{section.5.2}% 50
+\BOOKMARK [2][-]{subsection.5.2.2}{Sistema de Recomenda\347\343o em Engenharia de Software}{section.5.2}% 51
+\BOOKMARK [1][-]{section.5.3}{Concep\347\343o}{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.4}{Projeto}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.5.4.1}{Fase 1: O Projeto de SR Usando Django Framework}{section.5.4}% 54
+\BOOKMARK [2][-]{subsection.5.4.2}{Fase 2: Carregamento da OntoExper-LPS no SR}{section.5.4}% 55
+\BOOKMARK [2][-]{subsection.5.4.3}{Fase 3: Ratings dos Usu\341rios no SR}{section.5.4}% 56
+\BOOKMARK [2][-]{subsection.5.4.4}{Fase 4: Modelagem de Recomenda\347\343o, Um Algoritmo para Filtragem Colaborativa}{section.5.4}% 57
+\BOOKMARK [1][-]{section.5.5}{Banco de Dados}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.6}{Ambiente de Desenvolvimento}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.7}{Empacotamento e Compartilhamento}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.8}{Considera\347\365es Finais}{chapter.5}% 61
+\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 62
+\BOOKMARK [1][-]{section.6.1}{Contribui\347\365es}{chapter.6}% 63
+\BOOKMARK [1][-]{section.6.2}{Limita\347\365es}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.3}{Trabalhos Futuros}{chapter.6}% 65
 \BOOKMARK [0][-]{chapter*.1}{REFER\312NCIAS}{}% 66
 \BOOKMARK [0][-]{section*.2}{Ap\352ndice A: Tipologias para Ontologias}{}% 67
 \BOOKMARK [1][-]{section.A.1}{Quanto \340 fun\347\343o Mizoguchi; Vanwelkenbuyse n; Ikeda \(1995\)}{section*.2}% 68

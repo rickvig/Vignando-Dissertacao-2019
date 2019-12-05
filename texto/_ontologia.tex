@@ -506,7 +506,8 @@ A ferramenta elenca os resultados de cada armadilha como:
 
 A \ref{tab:result_of_evaluation} apresenta o resumo do resultado ao rodar nosso proposta de modelo de ontologia na ferramenta OOPS!.
 
-\begin{table*}[!ht]
+\begin{table*}[!htb]
+	\centering
 	\caption{Resumo dos resultado da avaliação executada por OOPS!}
 	\label{tab:result_of_evaluation}
 	\begin{tabular}{@{}lll@{}}
@@ -514,19 +515,18 @@ A \ref{tab:result_of_evaluation} apresenta o resumo do resultado ao rodar nosso 
 		\textbf{Pitfall} & \textbf{Description} & \textbf{Critical Level} \\ \midrule
 		P08 & \begin{tabular}[c]{@{}l@{}}Anotações ausentes em 119 casos\end{tabular} & \textit{Minor} \\
 		P10 & \begin{tabular}[c]{@{}l@{}}Falta de disjunção na ontologia *\end{tabular} & \textit{Important} \\
-		P12 & \begin{tabular}[c]{@{}l@{}}Propriedades equivalentes não declaradas explicitamente em 1 caso\end{tabular} & \textit{Important} \\
-		P13 & \begin{tabular}[c]{@{}l@{}}Relações inversas não declaradas explicitamente em 8 casos\end{tabular} & \textit{Minor} \\
-		P19 & \begin{tabular}[c]{@{}l@{}}Definindo vários domínios ou intervalos nas propriedades em 6 casos\end{tabular} & \textit{Critical} \\
+		% P12 & \begin{tabular}[c]{@{}l@{}}Propriedades equivalentes não \\declaradas explicitamente em 1 caso\end{tabular} & \textit{Important} \\
+		P13 & \begin{tabular}[c]{@{}l@{}}Relações inversas não declaradas \\explicitamente em 8 casos\end{tabular} & \textit{Minor} \\
+		P19 & \begin{tabular}[c]{@{}l@{}}Definindo vários domínios ou \\intervalos nas propriedades em 6 casos\end{tabular} & \textit{Critical} \\
 		P41 & \begin{tabular}[c]{@{}l@{}}Nenhuma licença declarada na ontologia *\end{tabular} & \textit{Important} \\ \bottomrule
 	\end{tabular}
 \end{table*}
 	
-* Armadilha que se aplica à ontologia em geral, em vez de elementos específicos.
+*Armadilha que se aplica à ontologia em geral, em vez de elementos específicos.
+
 No caso P08, essa armadilha consiste em criar um elemento de ontologia e não fornecer anotações legíveis a ele. Consequentemente, os elementos de ontologia não possuem propriedades de anotação que os identificam (por exemplo, rdfs: label, lemon: LexicalEntry, skos: prefLabel ou skos: altLabel) ou que os definem (por exemplo, rdfs: comment ou dc: description). Essa armadilha está relacionada às diretrizes fornecidas em [referência 5 do OOPS].
 
 No caso P10, a ontologia não possui axiomas desarticulados entre classes ou entre propriedades que devem ser definidas como disjuntas. Esta armadilha está relacionada com as orientações fornecidas em [6], [2] e [7].
-
-No caso P12, a ontologia carece de informações sobre propriedades equivalentes (owl: equivalentProperty) nos casos de relacionamentos e / ou atributos duplicados. Os seguintes atributos podem ser definidos como equivalentes: wasTheSPLSourceUsedInformed e wastheSPLSourceUsedInformed.
 
 No caso P13, essa armadilha aparece quando qualquer relacionamento (exceto aqueles que são definidos como propriedades simétricas usando owl: SymmetricProperty) não tem uma relação inversa (owl: inverseOf) definida dentro da ontologia. Esta armadilha aparece nos seguintes elementos: typeSelectionOfParticipants, typeExperimentSPL, typeExperiment, typeDesignExperiment, typeContextSelection, typeContextExperiment, experiment, documentation 
 
@@ -534,8 +534,7 @@ No caso P19, o domínio ou intervalo (ou ambos) de uma propriedade (relacionament
 
 No caso P41, os metadados de ontologia omitem informações sobre a licença que se aplica à ontologia.
 
-
-Dada a análise da ferramenta OOPS! o próximo passo será corrigir as armadilhas apresentada na avaliação e reavaliar a ontologia de modo geral, principalmente os pontos que a ferramenta não está automatizada. Estes pontos de melhorias serão tratados na seção \ref{sec:propostas_de_melhorias}.
+Dada a análise da ferramenta OOPS! o próximo passo será corrigir as armadilhas apresentada nesta avaliação. Estes pontos de melhorias serão tratados na seção \ref{sec:propostas_de_melhorias}.
 
 
 \section{Considerações Finais}
@@ -552,5 +551,5 @@ Na seção posterior, foi tratado um exemplo de inferência sobre a OntoExper-LPS. 
 
 Por fim, temos uma breve avaliação empírica do modelo proposto, onde foi aplicado um ferramenta (OOPS!) que avalia 41 pontos de possíveis pontos falhas na ontologia, os pontos de falhas relatado pela ferramenta, serão tratados na seção \ref{sec:propostas_de_melhorias}.
 
-No próximo capítulo, será apresentado uma avaliação da OntoExper-SPL como um estudo qualitativo.
+No próximo capítulo, será apresentado uma avaliação da OntoExer-LPS como um estudo qualitativo.
 
