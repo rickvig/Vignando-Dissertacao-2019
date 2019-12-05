@@ -2,12 +2,12 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {Figura - 1.1}{\ignorespaces Etapas da Metodologia de Desenvolvimento de Pesquisa}}{17}{figure.1.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 2.1}{\ignorespaces Um modelo de Caracter\'{\i }sticas. Traduzido de \citet {sommerville2011software} }}{21}{figure.2.1}
+\contentsline {figure}{\numberline {Figura - 2.1}{\ignorespaces Um modelo de Caracter\IeC {\'\i }sticas. Traduzido de \citet {sommerville2011software} }}{21}{figure.2.1}
 \contentsline {figure}{\numberline {Figura - 2.2}{\ignorespaces \textit {Framework} de Engenharia de LPS (Pohl et al., 2005). Traduzido por Geraldi (2015) }}{22}{figure.2.2}
 \contentsline {figure}{\numberline {Figura - 2.3}{\ignorespaces Conceitos Essenciais de um Experimento. Traduzido de \citet {wohlin2012experimentation} }}{24}{figure.2.3}
 \contentsline {figure}{\numberline {Figura - 2.4}{\ignorespaces Vis\~ao Geral do Processo Experimental. Traduzido de \citet {wohlin2012experimentation}}}{25}{figure.2.4}
 \contentsline {figure}{\numberline {Figura - 2.5}{\ignorespaces Estrutura de uma Ontologia. Autor}}{29}{figure.2.5}
-\contentsline {figure}{\numberline {Figura - 2.6}{\ignorespaces Exemplo de uma Ontologia para o dom\'{\i }nio: Destino de Viagem. Autor}}{30}{figure.2.6}
+\contentsline {figure}{\numberline {Figura - 2.6}{\ignorespaces Exemplo de uma Ontologia para o dom\IeC {\'\i }nio: Destino de Viagem. Autor}}{30}{figure.2.6}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {Figura - 3.1}{\ignorespaces Grafo inicial da proposta de ontologia.}}{36}{figure.3.1}
 \contentsline {figure}{\numberline {Figura - 3.2}{\ignorespaces Modelo Conceitual Clusterizado.}}{40}{figure.3.2}
@@ -25,7 +25,7 @@
 \contentsline {figure}{\numberline {Figura - 5.2}{\ignorespaces Modelagem geral do SR como prova de conceito para OntoExer-LPS}}{86}{figure.5.2}
 \contentsline {figure}{\numberline {Figura - 5.3}{\ignorespaces \'Arvore de diret\'orios da aplica\c c\~ao SR com Django Framework.}}{88}{figure.5.3}
 \contentsline {figure}{\numberline {Figura - 5.4}{\ignorespaces Tela do SR.}}{91}{figure.5.4}
-\contentsline {figure}{\numberline {Figura - 5.5}{\ignorespaces \textit {Rating} Expl\'{\i }cito no SR.}}{92}{figure.5.5}
+\contentsline {figure}{\numberline {Figura - 5.5}{\ignorespaces \textit {Rating} Expl\IeC {\'\i }cito no SR.}}{92}{figure.5.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

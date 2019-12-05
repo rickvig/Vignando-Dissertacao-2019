@@ -25,10 +25,10 @@
 \contentsline {subsection}{\numberline {3.3.2}Povoamento com Python}{47}{subsection.3.3.2}
 \contentsline {subsubsection}{Script}{48}{equation.3.3.1}
 \contentsline {subsubsection}{Manipula\c c\~ao dos Dados}{50}{equation.3.3.1}
-\contentsline {subsubsection}{Inser\c c\~ao do indiv\'{\i }duos e cria\c c\~ao dos relacionamentos}{53}{equation.3.3.1}
+\contentsline {subsubsection}{Inser\c c\~ao do indiv\IeC {\'\i }duos e cria\c c\~ao dos relacionamentos}{53}{equation.3.3.1}
 \contentsline {subsubsection}{Artefato e valida\c c\~ao}{55}{lstnumber.3.2.10}
 \contentsline {section}{\numberline {3.4}Exemplo de Aplica\c c\~ao}{55}{section.3.4}
-\contentsline {section}{\numberline {3.5}Avalia\c c\~ao Emp\'{\i }rica}{56}{section.3.5}
+\contentsline {section}{\numberline {3.5}Avalia\c c\~ao Emp\IeC {\'\i }rica}{56}{section.3.5}
 \contentsline {section}{\numberline {3.6}Considera\c c\~oes Finais}{60}{section.3.6}
 \contentsline {chapter}{\numberline {4}Avalia\c c\~ao da OntoExer-LPS: Um estudo Quantitativo}{62}{chapter.4}
 \contentsline {section}{\numberline {4.1}Considera\c c\~oes Iniciais}{62}{section.4.1}
@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {4.6.1}Perfil dos Especialistas}{67}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Frequ\^encia Likert}{68}{subsection.4.6.2}
 \contentsline {subsection}{\numberline {4.6.3}Teste de Normalidade}{69}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Teste Estat\'{\i }stico}{71}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.4}Teste Estat\IeC {\'\i }stico}{71}{subsection.4.6.4}
 \contentsline {subsection}{\numberline {4.6.5}Correla\c c\~ao dos Crit\'erios}{71}{subsection.4.6.5}
 \contentsline {section}{\numberline {4.7}Discuss\~ao dos Resultados}{72}{section.4.7}
 \contentsline {section}{\numberline {4.8}Amea\c cas \`a Validade}{73}{section.4.8}
@@ -80,7 +80,7 @@
 \contentsline {section}{\numberline {A.4}Quanto \`a estrutura Haav; Lubi (2001)}{106}{section.A.4}
 \contentsline {section}{\numberline {A.5}Quanto ao conte\'udo Van-Heijist; Schreiber; Wielinga (2002)}{106}{section.A.5}
 \contentsline {chapter}{\numberline {B}Ap\^endice A: C\'odigo Fonte do Modelo da SMartOntology}{108}{section*.3}
-\contentsline {section}{\numberline {B.1}Sa\'{\i }da Da Op\c c\~ao \textsc {time-flags} com os \textit {Breakpoints} \texttt {.dijkstra e .main}}{108}{section.B.1}
+\contentsline {section}{\numberline {B.1}Sa\IeC {\'\i }da Da Op\c c\~ao \textsc {time-flags} com os \textit {Breakpoints} \texttt {.dijkstra e .main}}{108}{section.B.1}
 \contentsline {chapter}{\numberline {C}Ap\^endice B: C\'odigo Fonte do Povoamento de Dados no Modelo SMartOntology}{109}{section*.4}
 \contentsline {chapter}{\numberline {D}Ap\^endice C: Question\'ario de Avalia\c c\~ao e Respostas Aplicado \`a SMartOntology}{110}{section*.5}
 \contentsline {chapter}{\numberline {E}Ap\^endice D: C\'odigo Fonte dos Exemplos de Aplica\c c\~ao de Recomenda\c c\~ao Usando SMartOntology }{111}{section*.6}
