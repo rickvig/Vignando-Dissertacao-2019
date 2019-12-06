@@ -12,56 +12,56 @@ A level-1 auxiliary file: texto/_avalicao_da_ontologia.aux
 A level-1 auxiliary file: texto/_recsys.aux
 A level-1 auxiliary file: texto/_conclusao.aux
 The style file: icmc2.bst
-A level-1 auxiliary file: texto/apendice_a_tipologia.aux
 A level-1 auxiliary file: texto/apendice_a.aux
 A level-1 auxiliary file: texto/apendice_b.aux
 A level-1 auxiliary file: texto/apendice_c.aux
 A level-1 auxiliary file: texto/apendice_d.aux
+A level-1 auxiliary file: texto/apendice_e.aux
 Database file #1: texto/RevisaoLiteratura.bib
 Warning--empty journal in fernanda2007modelagem
 Warning--empty journal in mendonca2015ontoforinfoscience
 Warning--Last access date missing in DBLP:journals/aimatters/Musen15
 Warning--Last access date missing in PER-GRA:2007
 Warning--empty journal in wolff1962philosophia
-You've used 40 entries,
+You've used 50 entries,
             2729 wiz_defined-function locations,
-            864 strings with 13215 characters,
-and the built_in function-call counts, 22112 in all, are:
-= -- 2062
-> -- 984
-< -- 46
-+ -- 393
-- -- 339
-* -- 1944
-:= -- 3654
-add.period$ -- 80
-call.type$ -- 40
-change.case$ -- 314
-chr.to.int$ -- 38
-cite$ -- 45
-duplicate$ -- 1069
-empty$ -- 1627
-format.name$ -- 461
-if$ -- 4521
-int.to.chr$ -- 3
+            917 strings with 15183 characters,
+and the built_in function-call counts, 27335 in all, are:
+= -- 2552
+> -- 1228
+< -- 55
++ -- 486
+- -- 423
+* -- 2385
+:= -- 4547
+add.period$ -- 100
+call.type$ -- 50
+change.case$ -- 391
+chr.to.int$ -- 49
+cite$ -- 55
+duplicate$ -- 1318
+empty$ -- 2002
+format.name$ -- 569
+if$ -- 5579
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 50
-newline$ -- 254
-num.names$ -- 160
-pop$ -- 358
+missing$ -- 60
+newline$ -- 314
+num.names$ -- 200
+pop$ -- 436
 preamble$ -- 1
-purify$ -- 273
+purify$ -- 340
 quote$ -- 0
-skip$ -- 809
+skip$ -- 1009
 stack$ -- 0
-substring$ -- 1164
-swap$ -- 329
-text.length$ -- 25
+substring$ -- 1429
+swap$ -- 396
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 342
+type$ -- 429
 warning$ -- 5
-while$ -- 192
+while$ -- 240
 width$ -- 0
-write$ -- 529
+write$ -- 655
 (There were 5 warnings)

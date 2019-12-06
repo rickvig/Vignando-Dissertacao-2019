@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  6 DEC 2019 02:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  6 DEC 2019 12:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -527,7 +527,7 @@ LaTeX Warning: Label `sec:concidaracoes_iniciais' multiply defined.
 
 LaTeX Warning: Label `sec:recsys_concidaracoes_finais' multiply defined.
 
-) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a_tipologia.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.aux))
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_e.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 311.
@@ -689,12 +689,12 @@ Overfull \hbox (15.19014pt too wide) in paragraph at lines 83--83
  []
 
 
-Overfull \hbox (43.9988pt too wide) in paragraph at lines 95--95
+Overfull \hbox (43.9988pt too wide) in paragraph at lines 94--94
  [] [][][]\OT1/cmr/bx/n/12 Ap^endice B: C^^Sodigo Fonte do Po-vo-a-mento de Da-dos no Mo-delo OntoExper-SPL[][] []  
  []
 
 
-Overfull \hbox (41.18907pt too wide) in paragraph at lines 96--96
+Overfull \hbox (41.18907pt too wide) in paragraph at lines 95--95
  [] [][][]\OT1/cmr/bx/n/12 Ap^endice C: Ques-tion^^Sario de Ava-lia^^Xc~ao e Res-pos-tas Apli-cado ^^Ra OntoExper-SPL[][] []  
  []
 
@@ -721,7 +721,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
-<figuras/metodologia.pdf, id=646, 585.14606pt x 154.6578pt>
+<figuras/metodologia.pdf, id=642, 585.14606pt x 154.6578pt>
 File: figuras/metodologia.pdf Graphic file (type pdf)
 <use figuras/metodologia.pdf>
 Package pdftex.def Info: figuras/metodologia.pdf  used on input line 67.
@@ -739,7 +739,7 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<figuras/exemplo_lps_pt.png, id=696, 1406.3742pt x 685.6014pt>
+<figuras/exemplo_lps_pt.png, id=697, 1406.3742pt x 685.6014pt>
 File: figuras/exemplo_lps_pt.png Graphic file (type png)
 <use figuras/exemplo_lps_pt.png>
 Package pdftex.def Info: figuras/exemplo_lps_pt.png  used on input line 35.
@@ -750,37 +750,37 @@ Overfull \hbox (8.86082pt too wide) in paragraph at lines 35--36
  []
 
 [20 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_lps_pt.png>] [21]
-<figuras/framewor_lps.png, id=718, 1179.40625pt x 927.465pt>
+<figuras/framewor_lps.png, id=720, 1179.40625pt x 927.465pt>
 File: figuras/framewor_lps.png Graphic file (type png)
 <use figuras/framewor_lps.png>
 Package pdftex.def Info: figuras/framewor_lps.png  used on input line 73.
 (pdftex.def)             Requested size: 436.37349pt x 343.15668pt.
  [22 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/framewor_lps.png>]
-<figuras/experimento.png, id=730, 1108.14pt x 772.8875pt>
+<figuras/experimento.png, id=732, 1108.14pt x 772.8875pt>
 File: figuras/experimento.png Graphic file (type png)
 <use figuras/experimento.png>
 Package pdftex.def Info: figuras/experimento.png  used on input line 89.
 (pdftex.def)             Requested size: 410.00539pt x 285.9639pt.
  [23 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/experimento.png>]
-<figuras/proc_exp.png, id=749, 1124.2pt x 738.76pt>
+<figuras/proc_exp.png, id=751, 1124.2pt x 738.76pt>
 File: figuras/proc_exp.png Graphic file (type png)
 <use figuras/proc_exp.png>
 Package pdftex.def Info: figuras/proc_exp.png  used on input line 109.
 (pdftex.def)             Requested size: 415.9475pt x 273.33691pt.
  [24] [25 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/proc_exp.png>]
-<figuras/estrutura_ontologia.png, id=772, 357.4956pt x 296.7888pt>
+<figuras/estrutura_ontologia.png, id=774, 357.4956pt x 296.7888pt>
 File: figuras/estrutura_ontologia.png Graphic file (type png)
 <use figuras/estrutura_ontologia.png>
 Package pdftex.def Info: figuras/estrutura_ontologia.png  used on input line 186.
 (pdftex.def)             Requested size: 250.24521pt x 207.75073pt.
  [26] [27 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/estrutura_ontologia.png>]
-<figuras/exemplo_ontologia.png, id=793, 979.66pt x 683.55376pt>
+<figuras/exemplo_ontologia.png, id=795, 979.66pt x 683.55376pt>
 File: figuras/exemplo_ontologia.png Graphic file (type png)
 <use figuras/exemplo_ontologia.png>
 Package pdftex.def Info: figuras/exemplo_ontologia.png  used on input line 222.
 (pdftex.def)             Requested size: 440.84293pt x 307.59634pt.
  [28]
-<figuras/ontologia-para-ES.pdf, id=803, 688.49219pt x 286.1892pt>
+<figuras/ontologia-para-ES.pdf, id=805, 688.49219pt x 286.1892pt>
 File: figuras/ontologia-para-ES.pdf Graphic file (type pdf)
 <use figuras/ontologia-para-ES.pdf>
 Package pdftex.def Info: figuras/ontologia-para-ES.pdf  used on input line 239.
@@ -930,74 +930,49 @@ Cap\'{\i }tulo 3.
 
 
 
-]
-
-LaTeX Warning: Reference `apendice:a-tipologia' on page 36 undefined on input line 26.
-
-[36]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 43.
-
-[37
+] [36] [37] [38
 
 ]
-Overfull \hbox (25.87323pt too wide) in paragraph at lines 62--63
-[]\OT1/cmr/m/n/12 O pri-meiro passo foi de-sen-vol-ver um grafo como mo-delo ini-cial da on-to-lo-gia OntoExper-SPL,
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 64.
-
-<figuras/grafo-inicial.pdf, id=935, 789.91106pt x 990.8217pt>
+<figuras/grafo-inicial.pdf, id=950, 789.91106pt x 990.8217pt>
 File: figuras/grafo-inicial.pdf Graphic file (type pdf)
 <use figuras/grafo-inicial.pdf>
-Package pdftex.def Info: figuras/grafo-inicial.pdf  used on input line 66.
+Package pdftex.def Info: figuras/grafo-inicial.pdf  used on input line 71.
 (pdftex.def)             Requested size: 394.95456pt x 495.40964pt.
-[38
+ [39
 
- </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/grafo-inicial.pdf
+] [40] [41] [42 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/grafo-inicial.pdf
 
 pdfTeX warning: pdflatex (file /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/grafo-inicial.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] [39] [40] [41]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 187.
-
-<figuras/modelo-conceitual-clusterizado.pdf, id=982, 845.07718pt x 597.19106pt>
+>]
+<figuras/modelo-conceitual-clusterizado.pdf, id=994, 845.07718pt x 597.19106pt>
 File: figuras/modelo-conceitual-clusterizado.pdf Graphic file (type pdf)
 <use figuras/modelo-conceitual-clusterizado.pdf>
-Package pdftex.def Info: figuras/modelo-conceitual-clusterizado.pdf  used on input line 189.
+Package pdftex.def Info: figuras/modelo-conceitual-clusterizado.pdf  used on input line 190.
 (pdftex.def)             Requested size: 549.29366pt x 388.16959pt.
-[42
+ [43
 
- </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/modelo-conceitual-clusterizado.pdf
+] [44 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/modelo-conceitual-clusterizado.pdf
 
 pdfTeX warning: pdflatex (file /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/modelo-conceitual-clusterizado.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] [43
+>] [45
 
 ]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 205.
-
-<figuras/class-diagram-ontology.png, id=999, 2086.79625pt x 1045.9075pt>
+<figuras/class-diagram-ontology.png, id=1014, 2086.79625pt x 1045.9075pt>
 File: figuras/class-diagram-ontology.png Graphic file (type png)
 <use figuras/class-diagram-ontology.png>
-Package pdftex.def Info: figuras/class-diagram-ontology.png  used on input line 207.
+Package pdftex.def Info: figuras/class-diagram-ontology.png  used on input line 208.
 (pdftex.def)             Requested size: 626.04372pt x 313.77467pt.
-[44
+ [46
 
- </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/class-diagram-ontology.png (PNG copy)>] [45
+ </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/class-diagram-ontology.png (PNG copy)>] [47
 
 ]
-<figuras/entidades-protege.png, id=1012, 905.3825pt x 810.02625pt>
+<figuras/entidades-protege.png, id=1030, 905.3825pt x 810.02625pt>
 File: figuras/entidades-protege.png Graphic file (type png)
 <use figuras/entidades-protege.png>
 Package pdftex.def Info: figuras/entidades-protege.png  used on input line 239.
 (pdftex.def)             Requested size: 452.69014pt x 405.01213pt.
-<figuras/entidades-protege-object-properties.png, id=1014, 920.43875pt x 841.1425pt>
+<figuras/entidades-protege-object-properties.png, id=1032, 920.43875pt x 841.1425pt>
 File: figuras/entidades-protege-object-properties.png Graphic file (type png)
 <use figuras/entidades-protege-object-properties.png>
 Package pdftex.def Info: figuras/entidades-protege-object-properties.png  used on input line 250.
@@ -1007,8 +982,8 @@ Overfull \hbox (4.97414pt too wide) in paragraph at lines 250--251
  [][] 
  []
 
-[46 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege.png>] [47 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-object-properties.png>]
-<figuras/entidades-protege-data-properties.png, id=1025, 920.43875pt x 841.1425pt>
+[48 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege.png>] [49 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-object-properties.png>]
+<figuras/entidades-protege-data-properties.png, id=1043, 920.43875pt x 841.1425pt>
 File: figuras/entidades-protege-data-properties.png Graphic file (type png)
 <use figuras/entidades-protege-data-properties.png>
 Package pdftex.def Info: figuras/entidades-protege-data-properties.png  used on input line 261.
@@ -1018,46 +993,46 @@ Overfull \hbox (4.97414pt too wide) in paragraph at lines 261--262
  [][] 
  []
 
-<figuras/ontology-populate-valid-owl-2.pdf, id=1029, 594.72188pt x 707.64375pt>
+<figuras/ontology-populate-valid-owl-2.pdf, id=1048, 594.72188pt x 707.64375pt>
 File: figuras/ontology-populate-valid-owl-2.pdf Graphic file (type pdf)
 <use figuras/ontology-populate-valid-owl-2.pdf>
 Package pdftex.def Info: figuras/ontology-populate-valid-owl-2.pdf  used on input line 272.
 (pdftex.def)             Requested size: 356.83588pt x 424.58952pt.
-[48 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-data-properties.png>] [49 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/ontology-populate-valid-owl-2.pdf>] [50] [51] [52] [53] [54] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[50 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-data-properties.png>] [51 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/ontology-populate-valid-owl-2.pdf>] [52] [53] [54] [55] [56] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 364.
- [55] [56] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 366.
+ [57] [58] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2015/06/04 1.6 listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 429.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 431.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 429.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 431.
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 429.
- [57] [58] [59] [60] [61] [62]) [63]
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 431.
+ [59] [60] [61] [62] [63] [64]) [65]
 \openout2 = `texto/_avalicao_da_ontologia.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_avalicao_da_ontologia.tex
 Cap\'{\i }tulo 4.
-[64
+[66
 
 
 
-] [65] [66] [67] [68]
+] [67] [68] [69] [70]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!htb') on input line 118.
 
-[69] [70]
-<figuras/frequencia-likert.pdf, id=1199, 216.24095pt x 441.01773pt>
+[71] [72]
+<figuras/frequencia-likert.pdf, id=1247, 216.24095pt x 441.01773pt>
 File: figuras/frequencia-likert.pdf Graphic file (type pdf)
 <use figuras/frequencia-likert.pdf>
 Package pdftex.def Info: figuras/frequencia-likert.pdf  used on input line 184.
@@ -1067,150 +1042,2070 @@ Package pdftex.def Info: figuras/frequencia-likert.pdf  used on input line 184.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!htb') on input line 194.
 
-<figuras/curva-normal.png, id=1201, 435.6275pt x 304.13625pt>
+<figuras/curva-normal.png, id=1249, 435.6275pt x 304.13625pt>
 File: figuras/curva-normal.png Graphic file (type png)
 <use figuras/curva-normal.png>
 Package pdftex.def Info: figuras/curva-normal.png  used on input line 223.
 (pdftex.def)             Requested size: 348.50247pt x 243.30933pt.
-[71 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/frequencia-likert.pdf>] [72 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/curva-normal.png>]
-<figuras/correlacao-criterios.png, id=1242, 524.96124pt x 431.6125pt>
+[73 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/frequencia-likert.pdf>] [74 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/curva-normal.png>]
+<figuras/correlacao-criterios.png, id=1290, 524.96124pt x 431.6125pt>
 File: figuras/correlacao-criterios.png Graphic file (type png)
 <use figuras/correlacao-criterios.png>
 Package pdftex.def Info: figuras/correlacao-criterios.png  used on input line 280.
 (pdftex.def)             Requested size: 419.96956pt x 345.29045pt.
- [73] [74 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/correlacao-criterios.png>] [75]
+ [75] [76 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/correlacao-criterios.png>] [77]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 324.
 
-[76] [77] [78] [79]) [80]
+[78] [79] [80] [81]) [82]
 \openout2 = `texto/_recsys.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_recsys.tex
 Cap\'{\i }tulo 5.
-[81
+[83
 
 
 
 ]
 \c@mydef=\count171
- [82] [83]
-<figuras/rsse.png, id=1332, 833.1125pt x 507.8975pt>
+ [84] [85]
+<figuras/rsse.png, id=1382, 833.1125pt x 507.8975pt>
 File: figuras/rsse.png Graphic file (type png)
 <use figuras/rsse.png>
 Package pdftex.def Info: figuras/rsse.png  used on input line 69.
 (pdftex.def)             Requested size: 416.55524pt x 253.94814pt.
- [84] [85 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png>] [86]
+ [86] [87 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png>] [88]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!htb') on input line 98.
 
-[87
+[89
 
 ]
 Overfull \hbox (24.27187pt too wide) in paragraph at lines 126--127
 \OT1/cmr/m/n/12 foi poss^^S^^Pvel esbo^^Xcar um SR para re-a-li-zar, como prova de con-ceito, in-fer^encia na OntoExper-SPL.
  []
 
-<figuras/RSSE-overview.png, id=1365, 869.2475pt x 351.3125pt>
+<figuras/RSSE-overview.png, id=1414, 869.2475pt x 351.3125pt>
 File: figuras/RSSE-overview.png Graphic file (type png)
 <use figuras/RSSE-overview.png>
 Package pdftex.def Info: figuras/RSSE-overview.png  used on input line 130.
 (pdftex.def)             Requested size: 434.62268pt x 175.6558pt.
-[88
+[90
 
- </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png>] [89]
-<figuras/dir-recsys-onto.png, id=1378, 241.65282pt x 217.5628pt>
+ </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png>] [91]
+<figuras/dir-recsys-onto.png, id=1427, 241.65282pt x 217.5628pt>
 File: figuras/dir-recsys-onto.png Graphic file (type png)
 <use figuras/dir-recsys-onto.png>
 Package pdftex.def Info: figuras/dir-recsys-onto.png  used on input line 185.
 (pdftex.def)             Requested size: 241.65222pt x 217.56227pt.
- [90 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/dir-recsys-onto.png (PNG copy)>] [91]
-<figuras/tela-recsys-onto.png, id=1396, 1240.635pt x 807.015pt>
+ [92 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/dir-recsys-onto.png (PNG copy)>] [93]
+<figuras/tela-recsys-onto.png, id=1444, 1240.635pt x 807.015pt>
 File: figuras/tela-recsys-onto.png Graphic file (type png)
 <use figuras/tela-recsys-onto.png>
 Package pdftex.def Info: figuras/tela-recsys-onto.png  used on input line 248.
 (pdftex.def)             Requested size: 434.22876pt x 282.45947pt.
- [92] [93 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/tela-recsys-onto.png>]
-<figuras/rating-recsys-onto.png, id=1426, 863.47594pt x 446.41782pt>
+ [94] [95 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/tela-recsys-onto.png>]
+<figuras/rating-recsys-onto.png, id=1474, 863.47594pt x 446.41782pt>
 File: figuras/rating-recsys-onto.png Graphic file (type png)
 <use figuras/rating-recsys-onto.png>
 Package pdftex.def Info: figuras/rating-recsys-onto.png  used on input line 281.
 (pdftex.def)             Requested size: 431.73691pt x 223.20836pt.
- [94 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rating-recsys-onto.png (PNG copy)>]
+ [96 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rating-recsys-onto.png (PNG copy)>]
 
-LaTeX Warning: Reference `' on page 95 undefined on input line 312.
+LaTeX Warning: Reference `' on page 97 undefined on input line 312.
 
-[95]
+[97]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!htb') on input line 321.
 
-[96]
+[98]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!htb') on input line 365.
 
-[97] [98]) [99]
+[99] [100]) [101]
 \openout2 = `texto/_conclusao.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.tex
 Cap\'{\i }tulo 6.
-[100
+[102
 
 
 
-] [101]) [102] (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.bbl (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/babelbst.tex) [103
+] [103]) [104] (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.bbl (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/babelbst.tex) [105
 
 
 ]
-Underfull \hbox (badness 1675) in paragraph at lines 109--113
+Underfull \hbox (badness 1675) in paragraph at lines 143--147
 []\OT1/cmr/m/sc/12 Gruber, T.   \OT1/cmr/m/n/12 What is an on-to-logy.   \OT1/cmr/m/it/12 WWW Site http://www-ksl. stan-ford.
  []
 
-[104] [105]) [106]
-\openout2 = `texto/apendice_a_tipologia.aux'.
+[106] [107]
+Underfull \hbox (badness 6428) in paragraph at lines 330--335
+[]\OT1/cmr/m/sc/12 Poveda-Villal[]on, M.; G[]omez-P[]erez, A.; Su[]arez-Figueroa, M. C.
+ []
 
- (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a_tipologia.tex
-Ap\^endice A.
-[107
-
-
-] [108] [109] [110] [111] [112] [113] [114] [115]) [116]
+[108]) [109]
 \openout2 = `texto/apendice_a.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.tex
-Ap\^endice B.
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/sc' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 4.
-
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 4.
-
-Overfull \hbox (38.42119pt too wide) in paragraph at lines 4--4
- |[]\OT1/cmss/bx/it/17.28 Sa^^S^^Pda Da Op^^Xc~ao time-flags com os Bre-ak-points \OT1/cmtt/m/n/17.28 .dijkstra
- []
-
-) [117
+Ap\^endice A.
+[110
 
 
-
-]
+] [111] [112] [113] [114] [115] [116] [117] [118]) [119]
 \openout2 = `texto/apendice_b.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.tex
-Ap\^endice C.
-) [118
+Ap\^endice B.
+
+Overfull \hbox (25.01279pt too wide) in paragraph at lines 14--14
+[]        \OT1/cmtt/m/n/8 <owl:Ontology rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology"/>[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 21--21
+[]        \OT1/cmtt/m/n/8 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#documentation">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 22--22
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 23--23
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 24--24
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 25--25
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 26--26
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>[] 
+ []
+
+
+Overfull \hbox (93.01376pt too wide) in paragraph at lines 29--29
+[]        \OT1/cmtt/m/n/8 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experiment">[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 30--30
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 31--31
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 32--32
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 33--33
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 34--34
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL"/>[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 35--35
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 36--36
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 37--37
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 38--38
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 39--39
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 40--40
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 41--41
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>[] 
+ []
+
+
+Overfull \hbox (93.01376pt too wide) in paragraph at lines 42--42
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 43--43
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (37.76297pt too wide) in paragraph at lines 45--45
+[]        \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextExperiment -->[] 
+ []
+
+
+Overfull \hbox (139.76443pt too wide) in paragraph at lines 46--46
+[]        \OT1/cmtt/m/n/8 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextExperiment">[] 
+ []
+
+[120
 
 
 
 ]
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 47--47
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 48--48
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (139.76443pt too wide) in paragraph at lines 49--49
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>[] 
+ []
+
+
+Overfull \hbox (33.51291pt too wide) in paragraph at lines 51--51
+[]        \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextSelection -->[] 
+ []
+
+
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 52--52
+[]        \OT1/cmtt/m/n/8 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextSelection">[] 
+ []
+
+
+Overfull \hbox (139.76443pt too wide) in paragraph at lines 53--53
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (139.76443pt too wide) in paragraph at lines 54--54
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>[] 
+ []
+
+
+Overfull \hbox (50.51315pt too wide) in paragraph at lines 56--56
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeDesignExperiment -->[] 
+ []
+
+
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 57--57
+[]        \OT1/cmtt/m/n/8 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeDesignExperiment">[] 
+ []
+
+
+Overfull \hbox (139.76443pt too wide) in paragraph at lines 58--58
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 59--59
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (139.76443pt too wide) in paragraph at lines 60--60
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>[] 
+ []
+
+
+Overfull \hbox (25.01279pt too wide) in paragraph at lines 62--62
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperiment -->[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 63--63
+[]        \OT1/cmtt/m/n/8 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperiment">[] 
+ []
+
+
+Overfull \hbox (114.26407pt too wide) in paragraph at lines 64--64
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 65--65
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (139.76443pt too wide) in paragraph at lines 66--66
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>[] 
+ []
+
+
+Overfull \hbox (37.76297pt too wide) in paragraph at lines 68--68
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperimentSPL -->[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 69--69
+[]        \OT1/cmtt/m/n/8 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperimentSPL">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 70--70
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 71--71
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (80.26358pt too wide) in paragraph at lines 73--73
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeSelectionOfParticipants -->[] 
+ []
+
+
+Overfull \hbox (165.2648pt too wide) in paragraph at lines 74--74
+[]        \OT1/cmtt/m/n/8 <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeSelectionOfParticipants">[] 
+ []
+
+
+Overfull \hbox (190.76517pt too wide) in paragraph at lines 75--75
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 76--76
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (139.76443pt too wide) in paragraph at lines 77--77
+[]            \OT1/cmtt/m/n/8 <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>[] 
+ []
+
+
+Overfull \hbox (42.01303pt too wide) in paragraph at lines 86--86
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#abstractBackground -->[] 
+ []
+
+
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 87--87
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#abstractBackground">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 88--88
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (33.51291pt too wide) in paragraph at lines 91--91
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#acknowledgements -->[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 92--92
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#acknowledgements">[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 93--93
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>[] 
+ []
+
+
+Overfull \hbox (63.26334pt too wide) in paragraph at lines 96--96
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#alternativeTechnologies -->[] 
+ []
+
+
+Overfull \hbox (156.76468pt too wide) in paragraph at lines 97--97
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#alternativeTechnologies">[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 98--98
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>[] 
+ []
+
+[121]
+Overfull \hbox (37.76297pt too wide) in paragraph at lines 101--101
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#analysisProcedure -->[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 102--102
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#analysisProcedure">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 103--103
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (12.2626pt too wide) in paragraph at lines 106--106
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#appendicies -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 107--107
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#appendicies">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 108--108
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>[] 
+ []
+
+
+Overfull \hbox (29.26285pt too wide) in paragraph at lines 111--111
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#artifactSPLused -->[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 112--112
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#artifactSPLused">[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 113--113
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 117--117
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#authorship">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 118--118
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (12.2626pt too wide) in paragraph at lines 121--121
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#conclusions -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 122--122
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#conclusions">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 123--123
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 127--127
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#context">[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 128--128
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>[] 
+ []
+
+
+Overfull \hbox (42.01303pt too wide) in paragraph at lines 131--131
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#datasetPreparation -->[] 
+ []
+
+
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 132--132
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#datasetPreparation">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 133--133
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (54.76321pt too wide) in paragraph at lines 136--136
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#descriptiveStatistics -->[] 
+ []
+
+
+Overfull \hbox (148.26456pt too wide) in paragraph at lines 137--137
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#descriptiveStatistics">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 138--138
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 142--142
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#deviations">[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 143--143
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 146--146
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#evaluationOfResultsAndImplications -->[] 
+ []
+
+
+Overfull \hbox (203.51535pt too wide) in paragraph at lines 147--147
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#evaluationOfResultsAndImplications">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 148--148
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 151--151
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentAnalysisBasedPValue -->[] 
+ []
+
+
+Overfull \hbox (182.26505pt too wide) in paragraph at lines 152--152
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentAnalysisBasedPValue">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 153--153
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+[122]
+Overfull \hbox (33.51291pt too wide) in paragraph at lines 156--156
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDesign -->[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 157--157
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDesign">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 158--158
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (33.51291pt too wide) in paragraph at lines 161--161
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDomain -->[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 162--162
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDomain">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 163--163
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (50.51315pt too wide) in paragraph at lines 166--166
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalMaterial -->[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 167--167
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalMaterial">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 168--168
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (37.76297pt too wide) in paragraph at lines 171--171
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalUnits -->[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 172--172
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalUnits">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 173--173
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (93.01376pt too wide) in paragraph at lines 176--176
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#explicitQuasiExperimentInStudy -->[] 
+ []
+
+
+Overfull \hbox (186.5151pt too wide) in paragraph at lines 177--177
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#explicitQuasiExperimentInStudy">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 178--178
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 182--182
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#futureWork">[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 183--183
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>[] 
+ []
+
+
+Overfull \hbox (80.26358pt too wide) in paragraph at lines 187--187
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#goals">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 188--188
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 191--191
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hasQualitativeAnalysisOfExperiment -->[] 
+ []
+
+
+Overfull \hbox (203.51535pt too wide) in paragraph at lines 192--192
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hasQualitativeAnalysisOfExperiment">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 193--193
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (59.01328pt too wide) in paragraph at lines 196--196
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howDatahasBeenAnalyzed -->[] 
+ []
+
+
+Overfull \hbox (152.51462pt too wide) in paragraph at lines 197--197
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howDatahasBeenAnalyzed">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 198--198
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 201--201
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howManyPilotProjectCarriedOut -->[] 
+ []
+
+
+Overfull \hbox (182.26505pt too wide) in paragraph at lines 202--202
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howManyPilotProjectCarriedOut">[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 203--203
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 207--207
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypotheses">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 208--208
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+[123]
+Overfull \hbox (37.76297pt too wide) in paragraph at lines 211--211
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypothesisTesting -->[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 212--212
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypothesisTesting">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 213--213
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 217--217
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAbstract">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 218--218
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (42.01303pt too wide) in paragraph at lines 221--221
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAcknowledgements -->[] 
+ []
+
+
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 222--222
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAcknowledgements">[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 223--223
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 227--227
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAnalysis">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 228--228
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (16.51266pt too wide) in paragraph at lines 231--231
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAppendices -->[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 232--232
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAppendices">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 233--233
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>[] 
+ []
+
+
+Overfull \hbox (63.26334pt too wide) in paragraph at lines 236--236
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idConclusionsFutureWork -->[] 
+ []
+
+
+Overfull \hbox (156.76468pt too wide) in paragraph at lines 237--237
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idConclusionsFutureWork">[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 238--238
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>[] 
+ []
+
+
+Overfull \hbox (16.51266pt too wide) in paragraph at lines 241--241
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussion -->[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 242--242
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussion">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 243--243
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>[] 
+ []
+
+
+Overfull \hbox (29.26285pt too wide) in paragraph at lines 246--246
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussionSPL -->[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 247--247
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussionSPL">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 248--248
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL"/>[] 
+ []
+
+
+Overfull \hbox (29.26285pt too wide) in paragraph at lines 251--251
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDocumentation -->[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 252--252
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDocumentation">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 253--253
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>[] 
+ []
+
+
+Overfull \hbox (16.51266pt too wide) in paragraph at lines 256--256
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idEvaluation -->[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 257--257
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idEvaluation">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 258--258
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>[] 
+ []
+
+
+Overfull \hbox (42.01303pt too wide) in paragraph at lines 261--261
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExecutionSection -->[] 
+ []
+
+
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 262--262
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExecutionSection">[] 
+ []
+
+[124]
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 263--263
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>[] 
+ []
+
+
+Overfull \hbox (16.51266pt too wide) in paragraph at lines 266--266
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperiment -->[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 267--267
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperiment">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 268--268
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (50.51315pt too wide) in paragraph at lines 271--271
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanning -->[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 272--272
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanning">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 273--273
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (63.26334pt too wide) in paragraph at lines 276--276
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanningSPL -->[] 
+ []
+
+
+Overfull \hbox (156.76468pt too wide) in paragraph at lines 277--277
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanningSPL">[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 278--278
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>[] 
+ []
+
+
+Overfull \hbox (29.26285pt too wide) in paragraph at lines 281--281
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentSPL -->[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 282--282
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentSPL">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 283--283
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (25.01279pt too wide) in paragraph at lines 286--286
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idIntroduction -->[] 
+ []
+
+
+Overfull \hbox (118.51413pt too wide) in paragraph at lines 287--287
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idIntroduction">[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 288--288
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 292--292
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idPackage">[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 293--293
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>[] 
+ []
+
+
+Overfull \hbox (16.51266pt too wide) in paragraph at lines 296--296
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idReferences -->[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 297--297
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idReferences">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 298--298
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>[] 
+ []
+
+
+Overfull \hbox (20.76273pt too wide) in paragraph at lines 301--301
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idRelatedWork -->[] 
+ []
+
+
+Overfull \hbox (114.26407pt too wide) in paragraph at lines 302--302
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idRelatedWork">[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 303--303
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 307--307
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#impact">[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 308--308
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 312--312
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#inferences">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 313--313
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>[] 
+ []
+
+
+Overfull \hbox (42.01303pt too wide) in paragraph at lines 316--316
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isAQuasiExperiment -->[] 
+ []
+
+[125]
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 317--317
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isAQuasiExperiment">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 318--318
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 321--321
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isExperimentalPackageInformed -->[] 
+ []
+
+
+Overfull \hbox (182.26505pt too wide) in paragraph at lines 322--322
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isExperimentalPackageInformed">[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 323--323
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>[] 
+ []
+
+
+Overfull \hbox (63.26334pt too wide) in paragraph at lines 326--326
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isFollowThreatsByWohlin -->[] 
+ []
+
+
+Overfull \hbox (156.76468pt too wide) in paragraph at lines 327--327
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isFollowThreatsByWohlin">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 328--328
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>[] 
+ []
+
+
+Overfull \hbox (29.26285pt too wide) in paragraph at lines 331--331
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isLinkAvailable -->[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 332--332
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isLinkAvailable">[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 333--333
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>[] 
+ []
+
+
+Overfull \hbox (93.01376pt too wide) in paragraph at lines 337--337
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#keywords">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 338--338
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (25.01279pt too wide) in paragraph at lines 341--341
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#lessonsLearned -->[] 
+ []
+
+
+Overfull \hbox (118.51413pt too wide) in paragraph at lines 342--342
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#lessonsLearned">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 343--343
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>[] 
+ []
+
+
+Overfull \hbox (12.2626pt too wide) in paragraph at lines 346--346
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#limitations -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 347--347
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#limitations">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 348--348
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 352--352
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#methods">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 353--353
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (12.2626pt too wide) in paragraph at lines 356--356
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#nameSPLUsed -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 357--357
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#nameSPLUsed">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 358--358
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 362--362
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#objective">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 363--363
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 366--366
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#observationsAboutTemplateUsed -->[] 
+ []
+
+
+Overfull \hbox (182.26505pt too wide) in paragraph at lines 367--367
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#observationsAboutTemplateUsed">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 368--368
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>[] 
+ []
+
+[126]
+Overfull \hbox (12.2626pt too wide) in paragraph at lines 371--371
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pagesNumber -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 372--372
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pagesNumber">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 373--373
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 377--377
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#parameters">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 378--378
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (59.01328pt too wide) in paragraph at lines 381--381
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pilotProjectCarriedOut -->[] 
+ []
+
+
+Overfull \hbox (152.51462pt too wide) in paragraph at lines 382--382
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pilotProjectCarriedOut">[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 383--383
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>[] 
+ []
+
+
+Overfull \hbox (12.2626pt too wide) in paragraph at lines 386--386
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#preparation -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 387--387
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#preparation">[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 388--388
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>[] 
+ []
+
+
+Overfull \hbox (33.51291pt too wide) in paragraph at lines 391--391
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#problemStatement -->[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 392--392
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#problemStatement">[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 393--393
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 397--397
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#procedure">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 398--398
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (29.26285pt too wide) in paragraph at lines 401--401
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationType -->[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 402--402
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationType">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 403--403
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (33.51291pt too wide) in paragraph at lines 406--406
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationVenue -->[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 407--407
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationVenue">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 408--408
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (29.26285pt too wide) in paragraph at lines 411--411
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationYear -->[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 412--412
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationYear">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 413--413
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 417--417
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#references">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 418--418
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>[] 
+ []
+
+
+Overfull \hbox (25.01279pt too wide) in paragraph at lines 421--421
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relatedStudies -->[] 
+ []
+
+
+Overfull \hbox (118.51413pt too wide) in paragraph at lines 422--422
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relatedStudies">[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 423--423
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>[] 
+ []
+
+[127]
+Overfull \hbox (37.76297pt too wide) in paragraph at lines 426--426
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relevancePractice -->[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 427--427
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relevancePractice">[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 428--428
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>[] 
+ []
+
+
+Overfull \hbox (37.76297pt too wide) in paragraph at lines 431--431
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#researchObjective -->[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 432--432
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#researchObjective">[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 433--433
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 437--437
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#results">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 438--438
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (80.26358pt too wide) in paragraph at lines 441--441
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#studyHasPerformMetaAnalysis -->[] 
+ []
+
+
+Overfull \hbox (173.76492pt too wide) in paragraph at lines 442--442
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#studyHasPerformMetaAnalysis">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 443--443
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 447--447
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#summary">[] 
+ []
+
+
+Overfull \hbox (144.0145pt too wide) in paragraph at lines 448--448
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>[] 
+ []
+
+
+Overfull \hbox (80.26358pt too wide) in paragraph at lines 452--452
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#tasks">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 453--453
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 456--456
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#technologyUnderInvestigation -->[] 
+ []
+
+
+Overfull \hbox (178.01498pt too wide) in paragraph at lines 457--457
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#technologyUnderInvestigation">[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 458--458
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>[] 
+ []
+
+
+Overfull \hbox (93.01376pt too wide) in paragraph at lines 462--462
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#template">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 463--463
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 466--466
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#theAuthorsConcernedEvaluatingTheQuality -->[] 
+ []
+
+
+Overfull \hbox (224.76566pt too wide) in paragraph at lines 467--467
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#theAuthorsConcernedEvaluatingTheQuality">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 468--468
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>[] 
+ []
+
+
+Overfull \hbox (29.26285pt too wide) in paragraph at lines 471--471
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValidity -->[] 
+ []
+
+
+Overfull \hbox (122.76419pt too wide) in paragraph at lines 472--472
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValidity">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 473--473
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>[] 
+ []
+
+
+Overfull \hbox (42.01303pt too wide) in paragraph at lines 476--476
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValiditySPL -->[] 
+ []
+
+
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 477--477
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValiditySPL">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 478--478
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL"/>[] 
+ []
+
+[128]
+Overfull \hbox (80.26358pt too wide) in paragraph at lines 482--482
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#title">[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 483--483
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (71.76346pt too wide) in paragraph at lines 487--487
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#url">[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 488--488
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>[] 
+ []
+
+
+Overfull \hbox (16.51266pt too wide) in paragraph at lines 491--491
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#urlOfPackage -->[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 492--492
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#urlOfPackage">[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 493--493
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>[] 
+ []
+
+
+Overfull \hbox (12.2626pt too wide) in paragraph at lines 496--496
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#useTemplate -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 497--497
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#useTemplate">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 498--498
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 502--502
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#variables">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 503--503
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (80.26358pt too wide) in paragraph at lines 506--506
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wasTheSPLSourceUsedInformed -->[] 
+ []
+
+
+Overfull \hbox (173.76492pt too wide) in paragraph at lines 507--507
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wasTheSPLSourceUsedInformed">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 508--508
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (80.26358pt too wide) in paragraph at lines 511--511
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wastheSPLSourceUsedInformed -->[] 
+ []
+
+
+Overfull \hbox (173.76492pt too wide) in paragraph at lines 512--512
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wastheSPLSourceUsedInformed">[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 513--513
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 516--516
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#whatQualitativeAnalysisPerformed -->[] 
+ []
+
+
+Overfull \hbox (195.01523pt too wide) in paragraph at lines 517--517
+[]        \OT1/cmtt/m/n/8 <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#whatQualitativeAnalysisPerformed">[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 518--518
+[]            \OT1/cmtt/m/n/8 <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (50.51315pt too wide) in paragraph at lines 529--529
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>[] 
+ []
+
+
+Overfull \hbox (33.51291pt too wide) in paragraph at lines 530--530
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements -->[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 531--531
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>[] 
+ []
+
+[129]
+Overfull \hbox (50.51315pt too wide) in paragraph at lines 533--533
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>[] 
+ []
+
+
+Overfull \hbox (59.01328pt too wide) in paragraph at lines 535--535
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>[] 
+ []
+
+
+Overfull \hbox (54.76321pt too wide) in paragraph at lines 536--536
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 537--537
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>[] 
+ []
+
+
+Overfull \hbox (59.01328pt too wide) in paragraph at lines 539--539
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>[] 
+ []
+
+
+Overfull \hbox (20.76273pt too wide) in paragraph at lines 540--540
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL -->[] 
+ []
+
+
+Overfull \hbox (67.5134pt too wide) in paragraph at lines 541--541
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL">[] 
+ []
+
+
+Overfull \hbox (114.26407pt too wide) in paragraph at lines 542--542
+[]            \OT1/cmtt/m/n/8 <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>[] 
+ []
+
+
+Overfull \hbox (20.76273pt too wide) in paragraph at lines 544--544
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation -->[] 
+ []
+
+
+Overfull \hbox (71.76346pt too wide) in paragraph at lines 545--545
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>[] 
+ []
+
+
+Overfull \hbox (59.01328pt too wide) in paragraph at lines 547--547
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>[] 
+ []
+
+
+Overfull \hbox (33.51291pt too wide) in paragraph at lines 548--548
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection -->[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 549--549
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>[] 
+ []
+
+
+Overfull \hbox (59.01328pt too wide) in paragraph at lines 551--551
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (42.01303pt too wide) in paragraph at lines 552--552
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning -->[] 
+ []
+
+
+Overfull \hbox (93.01376pt too wide) in paragraph at lines 553--553
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (54.76321pt too wide) in paragraph at lines 554--554
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL -->[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 555--555
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL">[] 
+ []
+
+
+Overfull \hbox (148.26456pt too wide) in paragraph at lines 556--556
+[]            \OT1/cmtt/m/n/8 <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>[] 
+ []
+
+
+Overfull \hbox (20.76273pt too wide) in paragraph at lines 558--558
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL -->[] 
+ []
+
+
+Overfull \hbox (67.5134pt too wide) in paragraph at lines 559--559
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL">[] 
+ []
+
+
+Overfull \hbox (114.26407pt too wide) in paragraph at lines 560--560
+[]            \OT1/cmtt/m/n/8 <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>[] 
+ []
+
+
+Overfull \hbox (16.51266pt too wide) in paragraph at lines 562--562
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction -->[] 
+ []
+
+
+Overfull \hbox (67.5134pt too wide) in paragraph at lines 563--563
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>[] 
+ []
+
+
+Overfull \hbox (46.26309pt too wide) in paragraph at lines 565--565
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>[] 
+ []
+
+
+Overfull \hbox (59.01328pt too wide) in paragraph at lines 567--567
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>[] 
+ []
+
+
+Overfull \hbox (12.2626pt too wide) in paragraph at lines 568--568
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork -->[] 
+ []
+
+
+Overfull \hbox (63.26334pt too wide) in paragraph at lines 569--569
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>[] 
+ []
+
+
+Overfull \hbox (54.76321pt too wide) in paragraph at lines 570--570
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 571--571
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>[] 
+ []
+
+
+Overfull \hbox (50.51315pt too wide) in paragraph at lines 572--572
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection -->[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 573--573
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (50.51315pt too wide) in paragraph at lines 574--574
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment -->[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 575--575
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>[] 
+ []
+
+
+Overfull \hbox (25.01279pt too wide) in paragraph at lines 576--576
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment -->[] 
+ []
+
+
+Overfull \hbox (76.01352pt too wide) in paragraph at lines 577--577
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>[] 
+ []
+
+
+Overfull \hbox (37.76297pt too wide) in paragraph at lines 578--578
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL -->[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 579--579
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 580--580
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects -->[] 
+ []
+
+
+Overfull \hbox (152.51462pt too wide) in paragraph at lines 581--581
+[]        \OT1/cmtt/m/n/8 <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>[] 
+ []
+
+[130]
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 590--590
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ACADEMY">[] 
+ []
+
+
+Overfull \hbox (114.26407pt too wide) in paragraph at lines 591--591
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (50.51315pt too wide) in paragraph at lines 593--593
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#CONVENIENCE_SAMPLING -->[] 
+ []
+
+
+Overfull \hbox (139.76443pt too wide) in paragraph at lines 594--594
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#CONVENIENCE_SAMPLING">[] 
+ []
+
+
+Overfull \hbox (178.01498pt too wide) in paragraph at lines 595--595
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 598--598
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#GENERAL">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 599--599
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 602--602
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VITRO">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 603--603
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 606--606
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VIVO">[] 
+ []
+
+
+Overfull \hbox (131.26431pt too wide) in paragraph at lines 607--607
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>[] 
+ []
+
+
+Overfull \hbox (161.01474pt too wide) in paragraph at lines 609--609
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#MORE_THAN_TWO_FACTORS_EACH_WITH_TWO_TREATMENTS -->[] 
+ []
+
+
+Overfull \hbox (250.26602pt too wide) in paragraph at lines 610--610
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#MORE_THAN_TWO_FACTORS_EACH_WITH_TWO_TREATMENTS">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 611--611
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 614--614
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#OFFLINE">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 615--615
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 617--617
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_MORE_THAN_TWO_TREATMENTS -->[] 
+ []
+
+
+Overfull \hbox (224.76566pt too wide) in paragraph at lines 618--618
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_MORE_THAN_TWO_TREATMENTS">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 619--619
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>[] 
+ []
+
+
+Overfull \hbox (93.01376pt too wide) in paragraph at lines 621--621
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_TWO_TREATMENTS -->[] 
+ []
+
+
+Overfull \hbox (182.26505pt too wide) in paragraph at lines 622--622
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_TWO_TREATMENTS">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 623--623
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>[] 
+ []
+
+
+Overfull \hbox (80.26358pt too wide) in paragraph at lines 626--626
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONLINE">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 627--627
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 630--630
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ORIGINAL">[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 631--631
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>[] 
+ []
+
+
+Overfull \hbox (16.51266pt too wide) in paragraph at lines 633--633
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#PROFESSIONAL -->[] 
+ []
+
+
+Overfull \hbox (105.76395pt too wide) in paragraph at lines 634--634
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#PROFESSIONAL">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 635--635
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (25.01279pt too wide) in paragraph at lines 637--637
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#QUOTA_SAMPLING -->[] 
+ []
+
+
+Overfull \hbox (114.26407pt too wide) in paragraph at lines 638--638
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#QUOTA_SAMPLING">[] 
+ []
+
+
+Overfull \hbox (178.01498pt too wide) in paragraph at lines 639--639
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>[] 
+ []
+
+[131]
+Overfull \hbox (71.76346pt too wide) in paragraph at lines 642--642
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL">[] 
+ []
+
+
+Overfull \hbox (114.26407pt too wide) in paragraph at lines 643--643
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>[] 
+ []
+
+
+Overfull \hbox (20.76273pt too wide) in paragraph at lines 645--645
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL_PROBLEMS -->[] 
+ []
+
+
+Overfull \hbox (110.014pt too wide) in paragraph at lines 646--646
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL_PROBLEMS">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 647--647
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 650--650
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REPLICATED">[] 
+ []
+
+
+Overfull \hbox (101.51389pt too wide) in paragraph at lines 651--651
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>[] 
+ []
+
+
+Overfull \hbox (59.01328pt too wide) in paragraph at lines 653--653
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SIMPLE_RANDOM_SAMPLING -->[] 
+ []
+
+
+Overfull \hbox (148.26456pt too wide) in paragraph at lines 654--654
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SIMPLE_RANDOM_SAMPLING">[] 
+ []
+
+
+Overfull \hbox (178.01498pt too wide) in paragraph at lines 655--655
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>[] 
+ []
+
+
+Overfull \hbox (88.7637pt too wide) in paragraph at lines 658--658
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SPECIFIC">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 659--659
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (76.01352pt too wide) in paragraph at lines 661--661
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STRATIFIED_RANDOM_SAMPLING -->[] 
+ []
+
+
+Overfull \hbox (165.2648pt too wide) in paragraph at lines 662--662
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STRATIFIED_RANDOM_SAMPLING">[] 
+ []
+
+
+Overfull \hbox (178.01498pt too wide) in paragraph at lines 663--663
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>[] 
+ []
+
+
+Overfull \hbox (84.51364pt too wide) in paragraph at lines 666--666
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STUDENT">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 667--667
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (46.26309pt too wide) in paragraph at lines 669--669
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SYSTEMATIC_SAMPLING -->[] 
+ []
+
+
+Overfull \hbox (135.51437pt too wide) in paragraph at lines 670--670
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SYSTEMATIC_SAMPLING">[] 
+ []
+
+
+Overfull \hbox (178.01498pt too wide) in paragraph at lines 671--671
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>[] 
+ []
+
+
+Overfull \hbox (67.5134pt too wide) in paragraph at lines 674--674
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TOY">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 675--675
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>[] 
+ []
+
+
+Overfull \hbox (97.26382pt too wide) in paragraph at lines 677--677
+[]            \OT1/cmtt/m/n/8 <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TWO_FACTORS_WITH_TWO_TREATMENTS -->[] 
+ []
+
+
+Overfull \hbox (186.5151pt too wide) in paragraph at lines 678--678
+[]        \OT1/cmtt/m/n/8 <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TWO_FACTORS_WITH_TWO_TREATMENTS">[] 
+ []
+
+
+Overfull \hbox (127.01425pt too wide) in paragraph at lines 679--679
+[]            \OT1/cmtt/m/n/8 <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>[] 
+ []
+
+) [132]
 \openout2 = `texto/apendice_c.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.tex
-Ap\^endice D.
-) [119
+Ap\^endice C.
+) [133
 
 
 
@@ -1218,19 +3113,28 @@ Ap\^endice D.
 \openout2 = `texto/apendice_d.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.tex
+Ap\^endice D.
+) [134
+
+
+
+]
+\openout2 = `texto/apendice_e.aux'.
+
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_e.tex
 Ap\^endice E.
-) [120
+) [135
 
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
- (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.aux (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_agradecimentos.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_resumo.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abstract.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abreviaturas.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_introducao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_fundamentacao_teorica.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_ontologia.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_avalicao_da_ontologia.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_recsys.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a_tipologia.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.aux))
+ (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.aux (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_agradecimentos.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_resumo.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abstract.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_abreviaturas.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_introducao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_fundamentacao_teorica.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_ontologia.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_avalicao_da_ontologia.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_recsys.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_e.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 119D17417C67A8D663B8469999F2AE82;7328.
+(rerunfilecheck)             Checksum: 84942B9DD267E142D60954EDCF3D3012;7198.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1248,20 +3152,28 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 415.
 ### semi simple group (level 1) entered at line 359 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13415 strings out of 492982
- 200808 string characters out of 6134896
- 350697 words of memory out of 5000000
- 16139 multiletter control sequences out of 15000+600000
- 21164 words of font info for 80 fonts, out of 8000000 for 9000
+ 13463 strings out of 492982
+ 201666 string characters out of 6134896
+ 351040 words of memory out of 5000000
+ 16160 multiletter control sequences out of 15000+600000
+ 20995 words of font info for 79 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 40i,19n,76p,3015b,2150s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,19n,76p,3015b,2146s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.pdf (121 pages, 3583279 bytes).
+Output written on /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.pdf (136 pages, 3608687 bytes).
 PDF statistics:
- 1784 PDF objects out of 2073 (max. 8388607)
- 1557 compressed objects within 16 object streams
- 429 named destinations out of 1000 (max. 500000)
- 820 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1894 PDF objects out of 2073 (max. 8388607)
+ 1651 compressed objects within 17 object streams
+ 456 named destinations out of 1000 (max. 500000)
+ 812 words of extra memory for PDF output out of 10000 (max. 10000000)
 

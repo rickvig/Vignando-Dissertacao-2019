@@ -15,9 +15,9 @@ Este capítulo apresenta conceitos importantes, necessários para a compreensão de
 \section{Linha de Produto de Software}
 \label{sec:linha_de_produto_software}
 
-Uma Linha de Produto de Software (LPS) é um conjunto de produtos que endereçam a um determinado segmento de mercado ou missão particular \cite{van2007software}. Esse conjunto de produtos também é denominado família de produtos, no qual os membros desta família são produtos específicos gerados a partir da reutilização de uma infraestrutura comum, denominada núcleo de artefatos (\textit{Core assets}). 
+Uma Linha de Produto de Software (LPS) é um conjunto de produtos que endereçam a um determinado segmento de mercado ou missão particular \cite{clements2002}. Esse conjunto de produtos também é denominado família de produtos, no qual os membros desta família são produtos específicos gerados a partir da reutilização de uma infraestrutura comum, denominada núcleo de artefatos (\textit{Core assets}). 
 
-O núcleo de artefatos é composto de conjunto de características comuns chamadas de similaridades, e características variáveis chamadas de variabilidades \cite{van2007product}. Tal núcleo forma a base de uma LPS que determina a Arquitetura de uma LPS, formado por, componentes reusáveis, modelos de domínios, requisitos da LPS, planos de testes e modelos de características de variabilidades /cite{cappel}.
+O núcleo de artefatos é composto de conjunto de características comuns chamadas de similaridades, e características variáveis chamadas de variabilidades \cite{van2007product}. Tal núcleo forma a base de uma LPS que determina a Arquitetura de uma LPS, formado por, componentes reusáveis, modelos de domínios, requisitos da LPS, planos de testes e modelos de características de variabilidades \cite{Capilla:2013:SSV:2517766}.
 
 O modelo de características contém todas as características de uma LPS e os seus inter-relacionamentos. De acordo com \citet{apel2013analytic}, "uma característica é um comportamento característico ou visível ao usuário final de um sistema de software". Uma característica pode ser obrigatória, opcional ou alternativa. O modelo de características representa as variabilidades e as variantes de uma LPS.
 
@@ -26,7 +26,7 @@ O modelo de características contém todas as características de uma LPS e os seus
 	\item Variantes são representadas pelos: possíveis elementos que podem ser escolhidos para resolver um ponto de variação.
 \end{itemize}
 
-Restrições entre variantes, estabelecem os relacionamentos entre uma ou mais variantes, com o objetivo de resolver seus respectivos pontos de variação ou variabilidade em um dado tempo de resolução /cite{oliveiraJr, 2010}.
+Restrições entre variantes, estabelecem os relacionamentos entre uma ou mais variantes, com o objetivo de resolver seus respectivos pontos de variação ou variabilidade em um dado tempo de resolução \cite{junior2010empirical}.
 
 A \textit{MobileMedia} é um exemplo didático de LPS, o produto final é um software que gerencia as mídias de um aparelho celular. O núcleo de artefatos deve conter  as seguintes características: opções de criar, visualizar, remover e editar a legenda da imagem. As características opcionais podem ser, a capturar uma nova imagem, ordenar e favoritar imagens. As características variantes alternativas podem ser os diversos tamanhos de tela. O produto final deve possuir ao menos uma variante alternativa.
 
@@ -98,11 +98,11 @@ Um dos principais elementos de um experimento são as variáveis dependentes e ind
 	\item \textbf{Variáveis dependentes:} estão associadas ao efeito e resultam nas mudanças que o experimentador realiza nas variáveis independentes \cite{kitchenham2015evidence}. 
 \end{itemize}
 
-Segundo \citealt{kitchenham2015evidence}, existe uma característica dita fator de confusão em experimentos de ES que envolvem seres humanos. Esse fator pode ser representado pela presença de algum elemento indesejável no estudo que dificulta distinguir entre duas ou mais causas possíveis de um efeito que foi medido pela variável dependente como, por exemplo, os níveis de habilidade dos participantes e a extensão de suas experiências anteriores com o objeto experimental.
+Segundo \citet{kitchenham2015evidence}, existe uma característica dita fator de confusão em experimentos de ES que envolvem seres humanos. Esse fator pode ser representado pela presença de algum elemento indesejável no estudo que dificulta distinguir entre duas ou mais causas possíveis de um efeito que foi medido pela variável dependente como, por exemplo, os níveis de habilidade dos participantes e a extensão de suas experiências anteriores com o objeto experimental.
 
 Em Engenharia de Software, especialmente em LPS, é difícil de se executar experimentos dado que estes devem possuir aleatoriedade completa em suas variáveis. Isto se deve à dificuldade de alocar os participantes e/ou objetos a diferentes tratamentos de maneira aleatória, bem como, à falta de representatividade do número de participantes em uma amostra da população. Portanto, os experimentos realizados nesta área são, frequentemente, \textit{quasi}-experimentos, nos quais não há aleatoriedade dos participantes e/ou dos objetos experimentais, em ES chamados de artefatos de software, podendo ser processos ou ferramentas \cite{wohlin2012experimentation}.
 
-Segundo \citealt{wohlin2012experimentation} a realização de um experimento pode ser dividido em um processo contendo cinco atividades, conforme apresentadas na \ref{fig:proc_exp} e descritas a seguir:
+Segundo \citet{wohlin2012experimentation} a realização de um experimento pode ser dividido em um processo contendo cinco atividades, conforme apresentadas na \ref{fig:proc_exp} e descritas a seguir:
 
 \begin{figure}[htb]
 	\centering					

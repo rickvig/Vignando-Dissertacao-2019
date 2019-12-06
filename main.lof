@@ -10,23 +10,23 @@
 \contentsline {figure}{\numberline {Figura - 2.6}{\ignorespaces Exemplo de uma Ontologia para o dom\IeC {\'\i }nio: Destino de Viagem. Autor}}{29}{figure.2.6}
 \contentsline {figure}{\numberline {Figura - 2.7}{\ignorespaces Ontologias para formalizar o conhecimento em ES. Adaptado de \citet {isotani2015ontology}}}{30}{figure.2.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 3.1}{\ignorespaces Grafo inicial da proposta de ontologia.}}{38}{figure.3.1}
-\contentsline {figure}{\numberline {Figura - 3.2}{\ignorespaces Modelo Conceitual Clusterizado.}}{42}{figure.3.2}
-\contentsline {figure}{\numberline {Figura - 3.3}{\ignorespaces Diagrama de Classe para proposta da modelagem da ontologia.}}{44}{figure.3.3}
-\contentsline {figure}{\numberline {Figura - 3.4}{\ignorespaces Defini\c c\~ao da classe Experiment no Prot\'eg\'e.}}{46}{figure.3.4}
-\contentsline {figure}{\numberline {Figura - 3.5}{\ignorespaces Defini\c c\~ao da propriedade de objeto documentation no Prot\'eg\'e.}}{47}{figure.3.5}
-\contentsline {figure}{\numberline {Figura - 3.6}{\ignorespaces Defini\c c\~ao da propriedade de dado nameSPLUsed no Prot\'eg\'e.}}{48}{figure.3.6}
-\contentsline {figure}{\numberline {Figura - 3.7}{\ignorespaces Grafo da modelagem da ontologia - gerado pelo WbVOWL.}}{49}{figure.3.7}
+\contentsline {figure}{\numberline {Figura - 3.1}{\ignorespaces Grafo inicial da proposta de ontologia. Fonte o Autor}}{42}{figure.3.1}
+\contentsline {figure}{\numberline {Figura - 3.2}{\ignorespaces Modelo Conceitual Clusterizado. Fonte o Autor}}{44}{figure.3.2}
+\contentsline {figure}{\numberline {Figura - 3.3}{\ignorespaces Diagrama de classes para a modelagem da ontologia. Fonte o Autor}}{46}{figure.3.3}
+\contentsline {figure}{\numberline {Figura - 3.4}{\ignorespaces Defini\c c\~ao da classe Experiment no Prot\'eg\'e.}}{48}{figure.3.4}
+\contentsline {figure}{\numberline {Figura - 3.5}{\ignorespaces Defini\c c\~ao da propriedade de objeto \texttt {documentation} no Prot\'eg\'e.}}{49}{figure.3.5}
+\contentsline {figure}{\numberline {Figura - 3.6}{\ignorespaces Defini\c c\~ao da propriedade de dado \texttt {nameSPLUsed} no Prot\'eg\'e.}}{50}{figure.3.6}
+\contentsline {figure}{\numberline {Figura - 3.7}{\ignorespaces Grafo da modelagem da ontologia - gerado pela ferramenta WbVOWL.}}{51}{figure.3.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 4.1}{\ignorespaces Frequ\^encia das Respostas em \%}}{71}{figure.4.1}
-\contentsline {figure}{\numberline {Figura - 4.2}{\ignorespaces Histograma da Somat\'oria}}{72}{figure.4.2}
-\contentsline {figure}{\numberline {Figura - 4.3}{\ignorespaces Correla\c c\~ao do s crit\'erios}}{74}{figure.4.3}
+\contentsline {figure}{\numberline {Figura - 4.1}{\ignorespaces Frequ\^encia das Respostas em \%}}{73}{figure.4.1}
+\contentsline {figure}{\numberline {Figura - 4.2}{\ignorespaces Histograma da Somat\'oria}}{74}{figure.4.2}
+\contentsline {figure}{\numberline {Figura - 4.3}{\ignorespaces Correla\c c\~ao do s crit\'erios}}{76}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 5.1}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{85}{figure.5.1}
-\contentsline {figure}{\numberline {Figura - 5.2}{\ignorespaces Modelagem geral do SR como prova de conceito para OntoExer-LPS}}{88}{figure.5.2}
-\contentsline {figure}{\numberline {Figura - 5.3}{\ignorespaces \'Arvore de diret\'orios da aplica\c c\~ao SR com Django Framework.}}{90}{figure.5.3}
-\contentsline {figure}{\numberline {Figura - 5.4}{\ignorespaces Tela do SR.}}{93}{figure.5.4}
-\contentsline {figure}{\numberline {Figura - 5.5}{\ignorespaces \textit {Rating} Expl\IeC {\'\i }cito no SR.}}{94}{figure.5.5}
+\contentsline {figure}{\numberline {Figura - 5.1}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{87}{figure.5.1}
+\contentsline {figure}{\numberline {Figura - 5.2}{\ignorespaces Modelagem geral do SR como prova de conceito para OntoExer-LPS}}{90}{figure.5.2}
+\contentsline {figure}{\numberline {Figura - 5.3}{\ignorespaces \'Arvore de diret\'orios da aplica\c c\~ao SR com Django Framework.}}{92}{figure.5.3}
+\contentsline {figure}{\numberline {Figura - 5.4}{\ignorespaces Tela do SR.}}{95}{figure.5.4}
+\contentsline {figure}{\numberline {Figura - 5.5}{\ignorespaces \textit {Rating} Expl\IeC {\'\i }cito no SR.}}{96}{figure.5.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
