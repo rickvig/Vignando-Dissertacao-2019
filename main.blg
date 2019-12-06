@@ -19,50 +19,49 @@ A level-1 auxiliary file: texto/apendice_c.aux
 A level-1 auxiliary file: texto/apendice_d.aux
 Database file #1: texto/RevisaoLiteratura.bib
 Warning--empty journal in fernanda2007modelagem
-Warning--empty journal in kampenes2007quality
+Warning--empty journal in mendonca2015ontoforinfoscience
 Warning--Last access date missing in DBLP:journals/aimatters/Musen15
 Warning--Last access date missing in PER-GRA:2007
-Warning--empty journal in teixeira2014analise
 Warning--empty journal in wolff1962philosophia
 You've used 40 entries,
             2729 wiz_defined-function locations,
-            858 strings with 12890 characters,
-and the built_in function-call counts, 22492 in all, are:
-= -- 2090
-> -- 1024
-< -- 48
-+ -- 409
-- -- 354
-* -- 1979
-:= -- 3713
+            864 strings with 13215 characters,
+and the built_in function-call counts, 22112 in all, are:
+= -- 2062
+> -- 984
+< -- 46
++ -- 393
+- -- 339
+* -- 1944
+:= -- 3654
 add.period$ -- 80
 call.type$ -- 40
-change.case$ -- 318
-chr.to.int$ -- 39
-cite$ -- 46
-duplicate$ -- 1081
-empty$ -- 1645
-format.name$ -- 478
-if$ -- 4596
-int.to.chr$ -- 2
+change.case$ -- 314
+chr.to.int$ -- 38
+cite$ -- 45
+duplicate$ -- 1069
+empty$ -- 1627
+format.name$ -- 461
+if$ -- 4521
+int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 50
 newline$ -- 254
 num.names$ -- 160
-pop$ -- 363
+pop$ -- 358
 preamble$ -- 1
-purify$ -- 277
+purify$ -- 273
 quote$ -- 0
-skip$ -- 823
+skip$ -- 809
 stack$ -- 0
-substring$ -- 1186
-swap$ -- 333
-text.length$ -- 26
+substring$ -- 1164
+swap$ -- 329
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 345
-warning$ -- 6
-while$ -- 196
+type$ -- 342
+warning$ -- 5
+while$ -- 192
 width$ -- 0
 write$ -- 529
-(There were 6 warnings)
+(There were 5 warnings)

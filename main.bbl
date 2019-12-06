@@ -70,23 +70,6 @@
   Society of Computer Science (SCCC'07)}, USA: IEEE, 2007, \bblpp{} 105--114.
 \bibehook\relax
 
-\bibitem[{Dieste e Juristo(2011)}]{dieste2011systematic}
-
-\bibbhook\relax
-\textsc{Dieste, O.; Juristo, N.}\ \ \  Systematic review and aggregation of
-  empirical studies on elicitation techniques.\ \ \ \textit{IEEE Transactions
-  on Software Engineering}, \bblvol{}~37, \bblno{}~2, \bblpp{}~283--304, 2011.
-\bibehook\relax
-
-\bibitem[{Dieste e Juristo(2013)}]{dieste2013challenges}
-
-\bibbhook\relax
-\textsc{Dieste, O.; Juristo, N.}\ \ \  Challenges of evaluating the quality of
-  software engineering experiments.\ \ \ \capitalize\bblin{}:
-  \textit{Perspectives on the Future of Software Engineering}, Springer,
-  \bblpp{} 159--177, 2013.
-\bibehook\relax
-
 \bibitem[{Fernanda(2007)}]{fernanda2007modelagem}
 
 \bibbhook\relax
@@ -128,19 +111,23 @@
   07-09-2004)}, 1993.
 \bibehook\relax
 
-\bibitem[{Halmans e Pohl(2003)}]{halmans2003communicating}
+\bibitem[{GUIZZARDI(2000)}]{guizzardi2000desenvolvimento}
 
 \bibbhook\relax
-\textsc{Halmans, G.; Pohl, K.}\ \ \  Communicating the variability of a
-  software-product family to customers.\ \ \ \textit{Software and Systems
-  Modeling}, \bblvol{}~2, \bblno{}~1, \bblpp{}~15--36, 2003.
+\textsc{GUIZZARDI, G.}\ \ \  \emph{Desenvolvimento para e com reuso: um estudo
+  de caso no dom{\'\i}nio de v{\'\i}deo sob demanda. 2000. 202 f}.\ \ \
+  \bblphdthesis{}, Disserta{\c{c}}{\~a}o (Mestrado)--Universidade Federal do
+  Esp{\'\i}rito Santo, 2000.
 \bibehook\relax
 
-\bibitem[{Kampenes(2007)}]{kampenes2007quality}
+\bibitem[{Isotani \bbletal{}(2015)Isotani, Bittencourt, Barbosa, Dermeval e
+  Paiva}]{isotani2015ontology}
 
 \bibbhook\relax
-\textsc{Kampenes, V.}\ \ \  Quality of design, analysis and reporting of
-  software engineering experiments: A systematic review.\ \ \ 2007.
+\textsc{Isotani, S.; Bittencourt, I.~I.; Barbosa, E.~F.; Dermeval, D.; Paiva,
+  R. O.~A.}\ \ \  Ontology driven software engineering: a review of challenges
+  and opportunities.\ \ \ \textit{IEEE Latin America Transactions},
+  \bblvol{}~13, \bblno{}~3, \bblpp{}~863--869, 2015.
 \bibehook\relax
 
 \bibitem[{Kitchenham \bbletal{}(2007)Kitchenham, Budgen, Brereton, Turner,
@@ -174,13 +161,22 @@
   \bblpp{}~5675--5679, 1992.
 \bibehook\relax
 
-\bibitem[{Van~der Linden \bbletal{}(2007)Van~der Linden, Schmid e
+\bibitem[{Van~der Linden \bbletal{}(2007{\natexlab{a}})Van~der Linden, Schmid e
   Rommes}]{van2007product}
 
 \bibbhook\relax
 \textsc{Van~der Linden, F.; Schmid, K.; Rommes, E.}\ \ \  The product line
   engineering approach.\ \ \ \capitalize\bblin{}: \textit{Software Product
-  Lines in Action}, Springer, \bblpp{} 3--20, 2007.
+  Lines in Action}, Springer, \bblpp{} 3--20, 2007{\natexlab{a}}.
+\bibehook\relax
+
+\bibitem[{Van~der Linden \bbletal{}(2007{\natexlab{b}})Van~der Linden, Schmid e
+  Rommes}]{van2007software}
+
+\bibbhook\relax
+\textsc{Van~der Linden, F.~J.; Schmid, K.; Rommes, E.}\ \ \  \emph{Software
+  product lines in action: the best industrial practice in product line
+  engineering}.\ \ \ Springer Science \& Business Media, 2007{\natexlab{b}}.
 \bibehook\relax
 
 \bibitem[{Lohmann \bbletal{}(2016)Lohmann, Negru, Haag e
@@ -217,6 +213,23 @@
   Science Conference}, USA, 2010, \bblpp{} 51 -- 56.
 \bibehook\relax
 
+\bibitem[{Mendonca(2015)}]{mendonca2015ontoforinfoscience}
+
+\bibbhook\relax
+\textsc{Mendonca, F.~M.}\ \ \  Ontoforinfoscience: metodologia para
+  constru{\c{c}}{\~a}o de ontologias pelos cientistas da
+  informa{\c{c}}{\~a}o-uma aplica{\c{c}}{\~a}o pr{\'a}tica no desenvolvimento
+  da ontologia sobre componentes do sangue humano (hemonto).\ \ \ 2015.
+\bibehook\relax
+
+\bibitem[{Morais e Ambr{\'o}sio(2007)}]{morais2007ontologias}
+
+\bibbhook\relax
+\textsc{Morais, E. A.~M.; Ambr{\'o}sio, A. P.~L.}\ \ \  Ontologias: conceitos,
+  usos, tipos, metodologias, ferramentas e linguagens.\ \ \
+  \textit{Relat{\'o}rio T{\'e}cnico--RT-INF-001/07, dez}, 2007.
+\bibehook\relax
+
 \bibitem[{Murthi e Sarkar(2003)}]{murthi2003role}
 
 \bibbhook\relax
@@ -232,18 +245,6 @@
   look forward.\ \ \ \textit{{AI} Matters}, \bblvol{}~1, \bblno{}~4,
   \bblpp{}~4--12, 2015.
 \newline Disponível em \url{https://doi.org/10.1145/2757001.2757003}
-\bibehook\relax
-
-\bibitem[{Northrop \bbletal{}(2007)Northrop, Clements, Bachmann, Bergey,
-  Chastek, Cohen, Donohoe, Jones, Krut, Little
-  \bbletal{}}]{northrop2007framework}
-
-\bibbhook\relax
-\textsc{Northrop, L.; Clements, P.; Bachmann, F.; Bergey, J.; Chastek, G.;
-  Cohen, S.; Donohoe, P.; Jones, L.; Krut, R.; Little, R.; \bbletal{}}\ \ \  A
-  framework for software product line practice, version 5.0.\ \ \
-  \textit{SEI.--2007--http://www. sei. cmu. edu/productlines/index. html},
-  2007.
 \bibehook\relax
 
 \bibitem[{P\'erez e Granger(2007)}]{PER-GRA:2007}
@@ -324,11 +325,14 @@
   Pearson education.\ \ \ 2011.
 \bibehook\relax
 
-\bibitem[{Teixeira(2014)}]{teixeira2014analise}
+\bibitem[{Viviane R.~Furtado e OliveiraJr(2019)}]{Furtado2019JCR}
 
 \bibbhook\relax
-\textsc{Teixeira, E.~O.}\ \ \  An{\'a}lise da qualidade de experimentos
-  controlados no contexto da engenharia de software emp{\'\i}rica.\ \ \ 2014.
+\textsc{Viviane R.~Furtado, Henrique~Vignando, V.~F.; OliveiraJr, E.}\ \ \
+  Comparing approaches for quality evaluation of software engineering
+  experiments: An empirical study on software product line experiments.\ \ \
+  \textit{Journal of Computer Science}, \bblvol{}~15, \bblno{}~10,
+  \bblpp{}~1396--1429, 2019.
 \bibehook\relax
 
 \bibitem[{Wohlin \bbletal{}(2012{\natexlab{a}})Wohlin, Runeson, H{\"o}st,

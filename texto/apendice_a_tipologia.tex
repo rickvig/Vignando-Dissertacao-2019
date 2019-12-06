@@ -1,51 +1,297 @@
-\appendix{Apêndice A: Tipologias para Ontologias}
-\label{apendice:a-tipologia}
+\appendix{Apêndice A: Ontologias - Tipologias e Metodologias de Construção}
+\label{apendice:ontologias}
 
-\section{Quanto à função Mizoguchi; Vanwelkenbuyse n; Ikeda (1995)}
+\section{Metodologias de Construção}
+\label{apendice:a-metodologias}
+
+\subsection{Metodologia TOVE (Grüninger Fox, 1995)}
 
 \begin{itemize}
-    \item \textbf{Ontologias de domínio:} reutilizáveis no domínio, fornecem vocabulário sobre conceitos e seus relacionamentos, sobre as atividades e regras que os governam;
-    \item \textbf{Ontologias de tarefa:} fornecem um vocabulário sistematizado de termos, por meio da especificação de tarefas que podem ou não estar no mesmo domínio;
-    \item \textbf{Ontologias gerais:} incluem um vocabulário relacionado a coisas, eventos, tempo, espaço, casualidade, comportamento, funções etc.
+    \item \textbf{Origem e Propósito Principal:} criada com base no desenvolvimento do projeto Toronto Virtual Enterprise (TOVE), cujo objetivo era o de criar um modelo de senso comum ou conhecimento compartilhado sobre empresas. Esta metodologia serviu de base para o projeto e avaliação de ontologias integradas em domínios corporativos, incluindo propostas de construção de ontologias e extensões de ontologias já existentes;
+    
+    \item \textbf{Domínio de aplicação:} Negócios (empresarial);
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item Elaboração de cenários de motivação, que objetivam identificar problemas no ambiente atual;
+        \item Especificação de questões de competência informal, que objetivam especificar em linguagem natural os requisitos que a ontologia deverá ser capaz de atender;
+        \item Concepção da terminologia formal, em que, mediante declarações em lógica de primeira ordem, osconceitos e suas propriedades são organizados em uma taxonomia;
+        \item Especificação de questões de competência formal, em que problemas são definidos de modo consistente perante os axiomas na ontologia;
+        \item Especificação de axiomas formais, que restringem a interpretação dos termos envolvidos nas questões de competência formal;
+        \item Verificação de teoremas completos, que determinam as condições sobre as quais as soluções das questões são completas.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Metodologia de Uschold e King - ENTERPRISE (USCHOLD e KING, 1995)}
+
+\begin{itemize}
+    \item \textbf{Origem e Propósito Principal:} Método desenvolvido com base na prática da construção da ontologia de alto nível Enterprise Ontology. Tem como propósito principal descrever o conhecimento sobre domínios corporativos ou de negócios;
+    
+    \item \textbf{Domínio de aplicação:} Negócios (empresarial);
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item Identificação do propósito da ontologia, que objetiva identificar a necessidade de construção, o grau de formalismo (desde o informal com uso de linguagem natural até o rigorosamente formal com uso de declarações lógicas) e as classes de usuários da ontologia, incluindo desenvolvedores, mantenedores e usuários das aplicações;
+        \item Construção da ontologia em três etapas:
+        \begin{itemize}
+            \item captura ou concepção da conceitualização da ontologia;
+            \item codificação ou implementação através de uma linguagem de representação de ontologias;
+            \item integração com ontologias já existentes;
+        \end{itemize} 
+        \item Avaliação da ontologia através dos requisitos especificados;
+        \item Documentação acerca das pretensões da ontologia e das primitivas usadas para expressar as definições na ontologia.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Methontology (GÓMEZ-PEREZ, FERNANDEZ-LOPES e VICENTE, 1996)}
+
+\begin{itemize}
+    \item \textbf{Origem e Propósito Principal:} Metodologia desenvolvida no Laboratório de Inteligência Artificial da Universidade Politécnica de Madri entre 1996 e 1997, possibilita a construção de uma ontologia por reengenharia sobre outra ontologia ou a criação de uma ontologia totalmente nova, utilizando-se do conhecimento do domínio tratado. Tal metodologia pode ser usada, segundo seus autores, em quaisquer domínios do conhecimento;
+    
+    \item \textbf{Domínio de aplicação:} Diversos;
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item \textbf{Especificação:} identificar o propósito da ontologia, incluindo os usuários pretendidos, cenários de uso, o grau de formalidade requerido, etc., e o escopo da ontologia, incluindo o conjunto de termos a ser representados.
+        \item \textbf{Aquisição }de Conhecimento: etapa realizada em paralelo com a etapa (1). Esta etapa é não-prescritiva e, assim, qualquer método pode ser usado, embora seja mais comum as entrevistas com especialistas e análises de textos do domínio tratado.
+        \item \textbf{Conceitualização:} identificação de termos do domínio, tais como conceitos, instâncias, relações verbais e propriedades, com cada termo tendo uma representação intermediária.
+        \item \textbf{Integração:} deve-se analisar termos de outras ontologias, tal como o padrão Ontolingua, que possam ser reutilizados na ontologia em construção.
+        \item \textbf{Implementação:} a ontologia deve ser representada formalmente através de uma linguagem formal, tais como a Ontolingua e a lógica descritiva.
+        \item \textbf{Avaliação:} são usadas técnicas baseadas nos métodos de validação e verificação dos sistemas de base de conhecimento. Há também um conjunto de diretrizes para avaliar incompletudes, inconsistências e redundâncias.
+        \item \textbf{Documentação:} recomenda-se a especificação de uma documentação em linguagem natural ao final de cada fase do ciclo de vida do desenvolvimento da ontologia.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Método Kactus (BERNARAS, LARESGOTTI, CORERA, 1996)}
+
+\begin{itemize}
+    \item \textbf{Origem e Propósito Principal:} Método recursivo derivado do projeto Kactus que permitiu a reutilização de conhecimento em sistemas de complexidade técnica, tal como o domínio de redes elétricas, e a construção de ontologias nesse domínio como suporte a tais sistemas;
+    
+    \item \textbf{Domínio de aplicação:} Sistemas de complexidade técnica;
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item Desenvolvimento de uma lista de necessidades ou requisitos que precisam ser atendidos pela aplicação;
+        \item Identificação de termos relevantes para o domínio da aplicação a partir de tais requisitos, construindo, assim, um modelo preliminar;
+        \item Refinar e estruturar a ontologia a fim de obter um modelo definitivo;
+        \item Buscar por ontologias já desenvolvidas por outras aplicações no sentido de sua reutilização.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Método Sensus (SWARTOUT et al., 1996)}
+
+\begin{itemize}
+    \item \textbf{Origem e Propósito Principal:} Método derivado da ontologia Sensus, a qual foi desenvolvida pelo grupo Information Sciences Institute (ISI) com o propósito de ser usada para fins de processamento de linguagem natural. O método Sensus propõe alguns processos para estabelecer as ligações entre os termos específicos e os termos da ontologia de alto nível, que corresponde à ontologia Sensus. Na prática, o método Sensus foi aplicado no desenvolvimento de uma ontologia no domínio de planejamento de uma operação militar aérea;
+
+    \item \textbf{Domínio de aplicação:} Diversos;
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item Identificar termos-chave do domínio;
+        \item Ligar manualmente os termos-chave à ontologia SENSUS;
+        \item Adicionar caminhos até o conceito de hierarquia superiorda Sensus;
+        \item Adicionar novos termos para o domínio;
+        \item Adicionar subárvores completas.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Método 101 (NOY e GUINESS, 2001)}
+
+\begin{itemize}
+    \item \textbf{Origem e Propósito Principal:} Método concebido a partir da experiência no desenvolvimento de uma ontologia de vinhos e alimentos, utilizando o editor de ontologias Protégé;
+    
+    \item \textbf{Domínio de aplicação:} Diversos;
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item Determinar escopo da ontologia;
+        \item Considerar o reuso de termos de outras ontologias;
+        \item Enumerar termos;
+        \item Definir classes na ontologia;
+        \item Organizar as classes em uma taxonomia;
+        \item Definir propriedades (slots) e descrever seus valores permitidos (facetas), através de restrições;
+        \item Adicionar valores de slots para as instâncias, isto é, criar instâncias.
+    \end{enumerate}
 \end{itemize}
 
 
-\section{Quanto ao grau de formalismo Uschold; Gruninger (1996)}
+\subsection{Método CYC (REED, LENAT, 2002)}
 
 \begin{itemize}
-    \item \textbf{Ontologias altamente informais:} expressa livremente em linguagem natural;
-    \item \textbf{Ontologias semiinformais:} expressa em linguagem natural de forma restrita e estruturada;
-    \item \textbf{Ontologias semiformais:} expressa em uma linguagem artificial definida formalment;
-    \item \textbf{Ontologias rigorosamente formais:} os termos são definidos com semântica formal, teoremas e provas.
+    \item \textbf{Origem e Propósito Principal:} Método usado na construção da ontologia CYC, que considera o conhecimento consensual do mundo e é indicada pelos autores na criação de ontologias para fundamentar sistemas inteligentes;
+    
+    \item \textbf{Domínio de aplicação:} Diversos;
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item Extração manual do conhecimento de senso comum;
+        \item Extração auxiliada por computador de senso comum;
+        \item Extração gerenciada por computador de senso comum;
+        \item Desenvolvimento de representação do conhecimento e ontologia de alto nível (CYC) contendo os
+        \item conceitos mais abstratos;
+        \item Representação do conhecimento de diferentes domínios usando tais primitivas.
+    \end{enumerate}
 \end{itemize}
 
 
-\section{Quanto à aplicação Jasper; Uschold (1999)}
+\subsection{On-to-Knowledge Methodology (OTKM) (SURE, STAAB e STUBER, 2003)}
 
 \begin{itemize}
-    \item \textbf{Ontologias de autoria neutra:} uma ontologia escrita em uma única língua e depois convertida para uso em diversos sistemas, reutilizando-se as informações;
-    \item \textbf{Ontologias como especificação:} cria-se uma ontologia para um domínio, a qual é usada para documentação e manutenção no desenvolvimento de softwares;
-    \item \textbf{Ontologias de acesso comum à informação:} quando o vocabulário é inacessível, a ontologia torna inteligível a informação, proporcionando conhecimento compartilhado dos termo.
+    \item \textbf{Origem e Propósito Principal:} Metodologia desenvolvida para a construção de ontologias para aplicações de gestão do conhecimento, com o foco em Processo de Conhecimento (Knowledge Process) e em Conhecimento do Processo Meta (Knowledge Meta Process). Na prática, tal metodologia foi aplicada em um estudo de caso em gestão de competências de uma empresa internacional localizada na Suíça ? a Swiss Life;
+    
+    \item \textbf{Domínio de aplicação:} Gestão do conhecimento empresarial;
+    
+    \item \textbf{Etapas:}
+    \\\textbf{Conhecimento do Processo Meta (Knowledge Meta Process)} 
+    \begin{enumerate}
+        \item \textbf{Estudo de viabilidade:} identificação de problemas e oportunidades das áreas e potenciais soluções.
+        \item \textbf{Kickoff:} compreende dois passos principais:(i) captura da especificação de requisitos a partir do documento de especificação de requisitos da ontologia - Ontology Requirements Specification Document(ORSD); e (ii) criação da descrição de uma ontologia semi-formal. 
+        \item \textbf{Refinamento:} engloba três passos: (i) refinamento da descrição da ontologia semi-formal; (ii) formalização da ontologia semi-formal para ontologia-alvo; (iii) criação do protótipo.
+        \item \textbf{Avaliação:} consiste na avaliação do projeto em três tipos de avaliação: (i) focada em tecnologia; (ii) focada no usuário; (iii) focada na ontologia.
+        \item \textbf{Aplicação e Evolução:} nesta etapa tem-se a aplicação da ontologia nos sistemas produtivos ou, mais especificamente, o uso dos sistemas baseados em ontologias. Além dessa tarefa, a evolução da ontologia como um processo organizacional.
+    \end{enumerate}
+    \textbf{Processo de Conhecimento (Knowledge Process)}
+    \begin{enumerate}
+        \item Geração de conhecimento e/ou importação de documentos e meta-dados.
+        \item Captura dos itens de conhecimento a fim de elucidar a importância ou a interligação entre eles.
+        \item Recuperação e acesso aos conhecimentos requeridos.
+        \item Recuperação dos conhecimentos para posterior utilização em seu contexto.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Metodologia UP for ONtology (UPON) (DE NICOLA, MISSIKOFF e NAVIGLI, 2009)}
+
+\begin{itemize}
+    \item \textbf{Origem e Propósito Principal:} Metodologia de construção de ontologias derivada e baseada no padrão de engenharia de software conhecido como Processo Unificado ? do inglês Unified Software Development Process ou Unified Process (UP) ? do qual foram derivados metodologias de software como o Rational Unified Process (RUP) e o PRocesso para Aplicativos eXtensíveis e Interativos (PRAXIS). Apesar da UP for ONtology poder ser usada em diferentes domínios do conhecimento, segundo seus autores, seu uso mais comum é no domínio do e-bussines;
+    
+    \item \textbf{Domínio de aplicação:} Negócios (e-business);
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item \textbf{Workflow de Requisitos:} envolve as seguintes atividades: (i) determinação do domínio de interesse e escopo da ontologia; (ii) definição do propósito do negócio ou cenário de motivação, com usuários e seus objetivos; (iii) especificação de um ou mais storyboards (contextos de modelagem e situação de maneira narrativa); (iv) criação de um Léxico de Análise, usando ferramentas automáticas para extração de conhecimento de documentos textuais (OntoLearn, Text-to-Onto, etc.); (v) identificação de questões de competência; (vi) identificação e priorização de casos de uso.
+        \item \textbf{Workflow de Análise:} consiste no refinamento e estruturação dos requisitos ontológicos identificados no workflow anterior. Engloba as seguintes tarefas: (i) aquisição dos recursos do domínio e construção de um Léxico do Domínio; (ii) construção de um Léxico de Referência; (iii) modelagem do cenário de aplicação da ontologia usando diagramas UML; (iv) construção do Glossário de Referência.
+        \item \textbf{Workflow de Desenvolvimento:} o objetivo deste workflow é construir a estrutura ontológica para o conjunto de entradas do Glossário de Referência. Para tanto, tem-se as seguintes atividades: (i) modelagem de conceitos, \\categorizando-os em três tipos primários: ator do negócio, objeto do negócio e processo do negócio; e dois complementares: messagem e atributo; (ii) modelagem de hierarquias de conceitos e relacionamentos específicos do domínio.
+        \item \textbf{Workflow de Implementação:} consiste em codificar a ontologia em uma rigorosa linguagem formal. Tem-se duas etapas neste workflow: (i) seleção de uma linguagem formal; e (ii) formalização da ontologia nesta linguagem, por exemplo em OWL.
+        \item \textbf{Workflow de Teste:} o objetivo deste workflow é verificar a qualidade semântica e pragmática da ontologia desenvolvida. A qualidade pragmática é assegurada pela codificação em OWL, enquanto a qualidade semântica é medida pela verificação da consistência da ontologia, realizada da seguinte maneira: verificação da cobertura da ontologia e das respostas da ontologia às questões de competência elaboradas anteriormente.    
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Metodologia NeON (SUARÉZ - FIGUEROA, 2010)}
+
+\begin{itemize}
+    \item \textbf{Origem e Propósito Principal:} Metodologia para construção de redes ontológicas baseado em um desenvolvimento colaborativo e argumentativo de ontologias. Tal metodologia foi desenvolvida em uma abordagem híbrida que combina o trabalho metodológico da área de Engenharia de Software e algumas metodologias para construção de ontologias, especificamente, a Methontology, a On-To-Knowledge, a DILIGENT e outros métodos ontológicos, como o de Grüninger e Fox. A NeOn Methontology inclui: (i) o Glossário NeOn de Processos e Atividades (ao todos tem-se 59 processos e atividades definidos), o qual identifica e define os processos e atividades potencialmente envolvidos quando redes ontológicas são construídas colaborativamente; e (ii) duas redes ontológicas sobre os modelos de ciclo de vida;
+    
+    \item \textbf{Domínio de aplicação:} Diversos
+    
+    \item \textbf{Etapas:}
+    \\Os 59 processos e atividades contidos no Glossário NeOn de Atividades e Processos são agrupados em três grandes grupos de atividades, conforme a seguir:
+    \begin{enumerate}
+        \item \textbf{Gerenciamento de processos e atividades:} inclui o escalonamento, controle e medida da qualidade da ontologia.
+        \item \textbf{Desenvolvimento orientado de processos e atividades:} é divido em três partes:
+        \begin{itemize}
+            \item \textbf{Pré-desenvolvimento de processos e atividades:} (i) estudo do ambiente; (ii) estudo de viabilidade; (iii) reuso de ontologias; (iv) reengenharia ontológica; (v) reuso de recursos não-ontológicos; e (vi) reengenharia de recursos não-ontológicos.
+            \item \textbf{Desenvolvimento de processos e atividades:} (i) especificação de requisitos da ontologia; (ii) conceitualização da ontologia; (iii) formalização; (iv) implementação da ontologia; (v) integração com outras ontologias; (vi) modularização da ontologia; (vii) reestruturação da ontologia; (viii) merge da ontologia; (ix) alinhamento da ontologia; (x) atualização da ontologia; (xi) modificação da ontologia; (xii) localização da ontologia; (xiii) tradução da ontologia; (xiv) anotação da ontologia; (xv) customização.
+            \item \textbf{Pós-desenvolvimento de processos e atividades:} (i) atualização da ontologia; (ii) versionamento da ontologia; (iii) evolução da ontologia.
+        \end{itemize} 
+        \item \textbf{Suporte aos processos e atividades:} engloba as seguintes etapas: (i) aquisição de conhecimento; (ii) avaliação da ontologia; (iii) documentação da ontologia; (iv) resumo da ontologia; (v) avaliação da ontologia; e (vi) gerenciamento da configuração da ontologia.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Metodologia MFPFO (LIM, LIU e LEE, 2011)}
+\label{apendice:a-metodologia-mfpfo}
+
+\begin{itemize}
+    \item \textbf{Origem e Propósito Principal:} Metodologia de construção de ontologia multi-\\facetada, anotada semanticamente, para a modelagem de uma família de produtos. Tal metodologia é capaz de sugerir, automaticamente, anotações semanticamente relacionadas, baseadas no design e no repositório de construção;
+    
+    \item \textbf{Domínio de aplicação:} Domínios que possuem uma família de produtos;
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item Construção de uma taxonomia da família de produtos;
+        \item Extração de entidades;
+        \item Identificação do conceito e geração da unidade facetada;
+        \item Anotação semântica e modelagem faceta;
+        \item Construção de uma ontologia de família de produtos multi-facetada e anotada semanticamente;
+        \item Avaliação e validação da ontologia.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Ciclo de Vida de Schiessl e Bräscher (2011)}
+
+\begin{itemize}
+    \item \textbf{Origem e Propósito Principal:} Embora não seja propriamente uma metodologia de construção de ontologias ou associado ao ciclo de vida ontológico, Schiessl e Bräscher (2011) incluem todas as etapas necessárias no processo de construção de ontologias, destacando o papel de cada etapa e as tarefas contidas em cada uma delas;
+    
+    \item \textbf{Domínio de aplicação:} Diversos;
+    
+    \item \textbf{Etapas:}
+    \begin{enumerate}
+        \item \textbf{Especificação:} identifica o propósito e o âmbito da ontologia;
+        \item \textbf{Conceitualização:} descreve, em modelo conceitual, a ontologia a ser construída, de forma que atenda às especificações do passo anterior. O modelo conceitual de ontologia consiste no domínio de conceitos e as relações entre eles. As relações reforçam as conexões mais fortes entre grupos de conceitos. Os grupos de conceitos fortemente relacionados geralmente correspondem a diferentes módulos (subontologias) em que o domínio pode ser decomposto;
+        \item \textbf{Formalização:} transforma a descrição conceitual em modelo formal, isto é, a descrição do domínio no passo anterior é representada em linguagem formal, ainda que não seja a forma final. Conceitos são normalmente definidos através de axiomas que delimitam as interpretações possíveis para o significado desses conceitos. Conceitos são geralmente organizados hierarquicamente através de uma relação estruturante, tal como ?é-um? (classe-superclasse, instância-classe) ou ?parte-de?;
+        \item \textbf{Aplicação:} implementa a ontologia formalizada em linguagem de representação de conhecimento. Para isso, escolhe-se uma linguagem para representação e escreve-se o modelo formal na linguagem escolhida;
+        \item \textbf{Manutenção:} atualiza e corrige a ontologia aplicada. Reforça-se que o encadeamento das atividades não pretende ser o melhor recurso, pois não é este o foco. Elos são uma opção viável e consolidada por estudos anteriores e, como tudo em ciência, são passíveis de melhoramentos. Logo, esses passos não esgotam o tema, pois há atividades paralelas ao ciclo de vida que podem e devem ser realizadas. São elas:
+        \begin{itemize}
+            \item \textbf{Aquisição de conhecimento:} adquire o conhecimento sobre o assunto utilizando técnicas de dedução junto aos especialistas de domínio ou por referência à bibliografia relevante. Várias técnicas podem ser utilizadas para a aquisição de conhecimentos, tais como o brainstorming, entrevistas, questionários, análise de textos, análise e técnicas de indução;
+            \item \textbf{Avaliação:} Julgamento técnico, baseado em técnicas disponíveis, da qualidade da ontologia;
+            \item \textbf{Documentação:} relata o que foi realizado, como foi feito e o porquê. A documentação associada aos termos representados na ontologia é particularmente importante não apenas para melhorar sua clareza, mas também para facilitar a manutenção, a utilização e a reutilização.
+        \end{itemize} 
+    \end{enumerate}
 \end{itemize}
 
 
-\section{Quanto à estrutura Haav; Lubi (2001)}
-
-\begin{itemize}
-    \item \textbf{Ontologias de alto nível:} descrevem conceitos gerais relacionados a todos os elementos da ontologia (espaço, tempo, matéria, objeto, evento etc.), os quais são independentes do problema ou domínio;
-    \item \textbf{Ontologias de domínio:} descrevem o vocabulário relacionado a um domínio, como, por exemplo, medicina ou automóveis;
-    \item \textbf{Ontologias de tarefa:} descrevem uma tarefa ou atividade, como por exemplo, diagnósticos ou compras, mediante inserção de termos especializados na ontologia.
-\end{itemize}
 
 
-\section{Quanto ao conteúdo Van-Heijist; Schreiber; Wielinga (2002)}
 
-\begin{itemize}
-    \item \textbf{Ontologias de informação:} Especificam a estrutura de registros de bancos de dados (por exemplo, os esquemas de bancos de dados);
-    \item \textbf{Ontologias terminológicas:} Especificam termos que serão usados para representar o conhecimento em um domínio (por exemplo, os léxicos);
-    \item \textbf{Ontologias de modelagem do conhecimento:} Especificam conceituações do conhecimento, têm uma estrutura interna semanticamente rica e são refinadas para uso no domínio do conhecimento que descreve;
-    \item \textbf{Ontologias de aplicação:} Contêm as definições necessárias para modelar o conhecimento em uma aplicação;
-    \item \textbf{Ontologias de domínio:} Expressam conceituações que são específicas para um determinado domínio do conhecimento;
-    \item \textbf{Ontologias genéricas:} Similares às ontologias de domínio, mas os conceitos que as definem são considerados genéricos e comuns a vários campo;
-    \item \textbf{Ontologias de representação:} Explicam as conceituações que estão por trás dos formalismos de representação do conhecimento.
-\end{itemize}
+
+
+% \section{Tipologia}
+% \label{apendice:a-tipologia}
+
+% \subsection{Quanto à função Mizoguchi; Vanwelkenbuyse n; Ikeda (1995)}
+
+% \begin{itemize}
+%     \item \textbf{Ontologias de domínio:} reutilizáveis no domínio, fornecem vocabulário sobre conceitos e seus relacionamentos, sobre as atividades e regras que os governam;
+%     \item \textbf{Ontologias de tarefa:} fornecem um vocabulário sistematizado de termos, por meio da especificação de tarefas que podem ou não estar no mesmo domínio;
+%     \item \textbf{Ontologias gerais:} incluem um vocabulário relacionado a coisas, eventos, tempo, espaço, casualidade, comportamento, funções etc.
+% \end{itemize}
+
+
+% \subsection{Quanto ao grau de formalismo Uschold; Gruninger (1996)}
+
+% \begin{itemize}
+%     \item \textbf{Ontologias altamente informais:} expressa livremente em linguagem natural;
+%     \item \textbf{Ontologias semiinformais:} expressa em linguagem natural de forma restrita e estruturada;
+%     \item \textbf{Ontologias semiformais:} expressa em uma linguagem artificial definida formalment;
+%     \item \textbf{Ontologias rigorosamente formais:} os termos são definidos com semântica formal, teoremas e provas.
+% \end{itemize}
+
+
+% \subsection{Quanto à aplicação Jasper; Uschold (1999)}
+
+% \begin{itemize}
+%     \item \textbf{Ontologias de autoria neutra:} uma ontologia escrita em uma única língua e depois convertida para uso em diversos sistemas, reutilizando-se as informações;
+%     \item \textbf{Ontologias como especificação:} cria-se uma ontologia para um domínio, a qual é usada para documentação e manutenção no desenvolvimento de softwares;
+%     \item \textbf{Ontologias de acesso comum à informação:} quando o vocabulário é inacessível, a ontologia torna inteligível a informação, proporcionando conhecimento compartilhado dos termo.
+% \end{itemize}
+
+
+% \subsection{Quanto à estrutura Haav; Lubi (2001)}
+
+% \begin{itemize}
+%     \item \textbf{Ontologias de alto nível:} descrevem conceitos gerais relacionados a todos os elementos da ontologia (espaço, tempo, matéria, objeto, evento etc.), os quais são independentes do problema ou domínio;
+%     \item \textbf{Ontologias de domínio:} descrevem o vocabulário relacionado a um domínio, como, por exemplo, medicina ou automóveis;
+%     \item \textbf{Ontologias de tarefa:} descrevem uma tarefa ou atividade, como por exemplo, diagnósticos ou compras, mediante inserção de termos especializados na ontologia.
+% \end{itemize}
+
+
+% \subsection{Quanto ao conteúdo Van-Heijist; Schreiber; Wielinga (2002)}
+
+% \begin{itemize}
+%     \item \textbf{Ontologias de informação:} Especificam a estrutura de registros de bancos de dados (por exemplo, os esquemas de bancos de dados);
+%     \item \textbf{Ontologias terminológicas:} Especificam termos que serão usados para representar o conhecimento em um domínio (por exemplo, os léxicos);
+%     \item \textbf{Ontologias de modelagem do conhecimento:} Especificam conceituações do conhecimento, têm uma estrutura interna semanticamente rica e são refinadas para uso no domínio do conhecimento que descreve;
+%     \item \textbf{Ontologias de aplicação:} Contêm as definições necessárias para modelar o conhecimento em uma aplicação;
+%     \item \textbf{Ontologias de domínio:} Expressam conceituações que são específicas para um determinado domínio do conhecimento;
+%     \item \textbf{Ontologias genéricas:} Similares às ontologias de domínio, mas os conceitos que as definem são considerados genéricos e comuns a vários campo;
+%     \item \textbf{Ontologias de representação:} Explicam as conceituações que estão por trás dos formalismos de representação do conhecimento.
+% \end{itemize}

@@ -6,7 +6,7 @@
 \section{Considerações Iniciais}
 \label{sec:concideracoes_iniciais}
 
-Este capítulo apresenta uma prova de conceito sobre a realização de inferência no modelo de ontologia proposto neste trabalho de mestrado, a OntoExper-LPS, por meio de uma implementação de um sistema de recomendação (SR). Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:sistema_de_recmendacao} apresenta um breve contexto sobre SR e sua origem, seus principais modelos de implementação e como os SR são visto pela ES; na Seção \ref{sec:concepcao_recsys}apresenta como as consultas iniciais na OntoExper-LPS levou a implementação do SR e como ele encaixa como motor de inferência na OntoExper-LPS, bem como sua interação com o usuários; na Seção \ref{sec:projeto_recsys} apresenta as quatro fase de construção SR, (i) a \textbf{Fase 1} apresenta a criação do projeto de sistema web usando Django Framework e a implementação de um prototipação da tela de iteração do usuário com SR, (ii) a \textbf{Fase 2} apresenta como a OntoExper-LPS é carregada no SR e como foi implementado os mecanismos de consultas na OntoExper-LPS, a \textbf{Fase 3} apresenta implementação da avaliação dos usuários no SR e como esta é armazenado no SR, esta avaliação é denominada \textit{Ratings}, por fim a \textbf{Fase 4} apresenta com foi implementado do modelo de recomendação, na qual, foi usado  o conceito de filtragem colaborativa aplicando cálculo da distância Euclidiana, bem como também apresenta como foi implementação a questão da da partida fria do modelo de recomendação para novos usuários; na Seção \ref{sec:ambiente_de_desenvolvimento} apresenta quais foram as tecnologias e ferramentas usadas para o desenvolvimento do SR; e na Seção \ref{sec:recsys_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo.
+Este capítulo apresenta uma prova de conceito sobre a realização de inferência no modelo de ontologia proposto neste trabalho de mestrado, a OntoExper-SPL, por meio de uma implementação de um sistema de recomendação (SR). Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:sistema_de_recmendacao} apresenta um breve contexto sobre SR e sua origem, seus principais modelos de implementação e como os SR são visto pela ES; na Seção \ref{sec:concepcao_recsys}apresenta como as consultas iniciais na OntoExper-SPL levou a implementação do SR e como ele encaixa como motor de inferência na OntoExper-SPL, bem como sua interação com o usuários; na Seção \ref{sec:projeto_recsys} apresenta as quatro fase de construção SR, (i) a \textbf{Fase 1} apresenta a criação do projeto de sistema web usando Django Framework e a implementação de um prototipação da tela de iteração do usuário com SR, (ii) a \textbf{Fase 2} apresenta como a OntoExper-SPL é carregada no SR e como foi implementado os mecanismos de consultas na OntoExper-SPL, a \textbf{Fase 3} apresenta implementação da avaliação dos usuários no SR e como esta é armazenado no SR, esta avaliação é denominada \textit{Ratings}, por fim a \textbf{Fase 4} apresenta com foi implementado do modelo de recomendação, na qual, foi usado  o conceito de filtragem colaborativa aplicando cálculo da distância Euclidiana, bem como também apresenta como foi implementação a questão da da partida fria do modelo de recomendação para novos usuários; na Seção \ref{sec:ambiente_de_desenvolvimento} apresenta quais foram as tecnologias e ferramentas usadas para o desenvolvimento do SR; e na Seção \ref{sec:recsys_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo.
 
 
 \section{Sistema de Recomendação}
@@ -40,7 +40,7 @@ Existem cinco abordagens mais usadas em sistemas de recomendação, três considera
 
 A Filtragem Colaborativa baseia-se na idéia de "boca-a-boca" em que a informação passada de pessoa a pessoa desempenha um papel importante ao tomar uma decisão. Abstraindo, as pessoas são substituídas pelos, chamados, vizinhos mais próximos (NN) que são usuários com um padrão de preferência ou comportamento semelhante ao usuário atual. \cite{robillard2010recommendation}. Filtragem Colaborativa depende de dois tipos diferentes de dados: (1) um conjunto de usuários e (2) um conjunto de itens. A relação entre usuários e itens é expressada principalmente em termos de \textit{ratings} fornecidos pelos usuários e explorados em futuras sessões de recomendação para prever a classificação de um usuário \cite{robillard2010recommendation}.
 
-Dado que este trabalho trata o sistema de recomendação como uma prova de conceito para realização de inferência sobre a OntoExper-LPS, utilizaremos a abordagem Filtragem Colaborativa, na próxima seção estará descrito o como este modelo de SR foi implementado e incorporado no projeto.
+Dado que este trabalho trata o sistema de recomendação como uma prova de conceito para realização de inferência sobre a OntoExper-SPL, utilizaremos a abordagem Filtragem Colaborativa, na próxima seção estará descrito o como este modelo de SR foi implementado e incorporado no projeto.
 
 
 \subsection{Sistema de Recomendação em Engenharia de Software}
@@ -121,9 +121,9 @@ Por meio deste estudo, foi possível identificar em qual domínio de aplicação da 
 \section{Concepção}
 \label{sec:concepcao_recsys}
 
-Após a construção da proposta de ontologia e seu povoamento, iniciou-se um processo empírico de validação dos dados inseridos, realizando inferências a OntoExper-LPS por meio de consultas, como foi apresentado na Seção \ref{sec:exemplo}. No decorrer deste estudo foi utilizado a biblioteca OWLReady2 para criação das consultas mais elaboradas, algumas destas serviram de bases para implementar o SR.
+Após a construção da proposta de ontologia e seu povoamento, iniciou-se um processo empírico de validação dos dados inseridos, realizando inferências a OntoExper-SPL por meio de consultas, como foi apresentado na Seção \ref{sec:exemplo}. No decorrer deste estudo foi utilizado a biblioteca OWLReady2 para criação das consultas mais elaboradas, algumas destas serviram de bases para implementar o SR.
 
-Dado essas considerações iniciais sobre consultas preliminares na ontologia proposta, foi possível esboçar um SR para realizar, como prova de conceito, inferência na OntoExper-LPS. Dessa forma, foi elaborado um projeto de SR que possa conectar os usuários aos itens (experimentos de ES em LPS).
+Dado essas considerações iniciais sobre consultas preliminares na ontologia proposta, foi possível esboçar um SR para realizar, como prova de conceito, inferência na OntoExper-SPL. Dessa forma, foi elaborado um projeto de SR que possa conectar os usuários aos itens (experimentos de ES em LPS).
 
 \begin{figure}[htb]
 	\centering					
@@ -133,7 +133,7 @@ Dado essas considerações iniciais sobre consultas preliminares na ontologia prop
 	\label{fig:RSSE-overview}
 \end{figure}
 
-A \ref{fig:RSSE-overview} apresenta o conceito geral da metodologia deste projeto. Iniciando pela entrada dos usuários, depois extraímos as preferências dele (por meio de ratings), e em seguida realizada a extração de informações de contexto utilizando a base de metadados em LPS (OntoExper-LPS), para então fazer inferência nos itens, por meio dessa inferência é possível obter as recomendações (itens ranqueadas para cada usuário).
+A \ref{fig:RSSE-overview} apresenta o conceito geral da metodologia deste projeto. Iniciando pela entrada dos usuários, depois extraímos as preferências dele (por meio de ratings), e em seguida realizada a extração de informações de contexto utilizando a base de metadados em LPS (OntoExper-SPL), para então fazer inferência nos itens, por meio dessa inferência é possível obter as recomendações (itens ranqueadas para cada usuário).
 
 Inicialmente, a entrada de dados dos usuários está sendo definido da seguinte forma:
 
@@ -153,7 +153,7 @@ O desenvolvimento deste projeto foi dividido em quatro fases.
 
 \begin{itemize}
 	\item \textbf{Fase 1:} criação do projeto de aplicação web usando Django Framework e implementação de um prototipação da tela de iteração do usuário com SR;
-	\item \textbf{Fase 2:} carregamento da OntoExper-LPS no SR e implementação dos mecanismos de consultas na OntoExper-LPS;
+	\item \textbf{Fase 2:} carregamento da OntoExper-SPL no SR e implementação dos mecanismos de consultas na OntoExper-SPL;
 	\item \textbf{Fase 3:} \textit{ratings} dos usuários no SR e armazenado da avaliação no SR; e
 	\item \textbf{Fase 4:} implementação do modelo de recomendação, implementação da o conceito de filtragem colaborativa.
 \end{itemize}
@@ -201,24 +201,24 @@ O arquivo \textit{db.sqlite3} é próprio banco de dados. O banco de dados do proj
 
 O arquivo \textit{manage.py} é responsável por prover a execução da aplicação Django Framework.
 
-O arquivo \textit{ontology-populate-valid.owl} é a própria OntoExper-LPS povoada com seus indivíduos, na qual o projeto realiza inferências.
+O arquivo \textit{ontology-populate-valid.owl} é a própria OntoExper-SPL povoada com seus indivíduos, na qual o projeto realiza inferências.
 
 O arquivo \textit{README.md} é um arquivo de marcação que descreve o projeto.
 
 
-\subsection{Fase 2: Carregamento da OntoExper-LPS no SR}
+\subsection{Fase 2: Carregamento da OntoExper-SPL no SR}
 
 Como foi apresentado na seção anterior, o arquivo \lstinline{ontology-populate-valid.owl} está localizado na raiz do projeto, para nosso SR manusear este arquivo, foi preciso criar uma configuração no arquivo \textit{settings.py} apresentado na Listagem \ref{lst:config-onto}
 
-\begin{lstlisting}[language=Python, caption=Configuração do arquivo da OntoExper-LPS, label=lst:config-onto]
+\begin{lstlisting}[language=Python, caption=Configuração do arquivo da OntoExper-SPL, label=lst:config-onto]
 
 ONTOLOGY_FILE = 'ontology-populate-valid.owl'
 
 \end{lstlisting}
 
-Dado essa configuração foi possivel no arquivo \textit{views.py} realizar o carregamento da ontologia utilizando a biblioteca OWLReady2, dessa forma, transformando a OntoExper-LPS em um objeto manipulável pela linguagem de programação. Este passo é apresentado na Listagem \ref{lst:carregando-onto}
+Dado essa configuração foi possivel no arquivo \textit{views.py} realizar o carregamento da ontologia utilizando a biblioteca OWLReady2, dessa forma, transformando a OntoExper-SPL em um objeto manipulável pela linguagem de programação. Este passo é apresentado na Listagem \ref{lst:carregando-onto}
 
-\begin{lstlisting}[language=Python, caption=Carregando a OntoExper-LPS, label=lst:carregando-onto]
+\begin{lstlisting}[language=Python, caption=Carregando a OntoExper-SPL, label=lst:carregando-onto]
 
 import os
 from owlready2 import *
@@ -232,7 +232,7 @@ def home(request):
 
 A função \textit{get\_ontology()} foi importada da biblioteca OWLReady2, ela retorna um objeto que chamamos de \textbf{onto}, com ele é possível executar outras operações que a biblioteca oferece.
 
-A partir desse momento foi possível realizar as inferências na OntoExper-LPS. Foi criado um métodos \textit{\_getTypesFrom()} que recebe como parâmetro uma classe da ontologia e retorna seus indivíduos, onde dessa forma, foi possível buscar as informações de tipagem encontrados na ontologia. Os tipos mapeados em classes que consultamos neste momento são.
+A partir desse momento foi possível realizar as inferências na OntoExper-SPL. Foi criado um métodos \textit{\_getTypesFrom()} que recebe como parâmetro uma classe da ontologia e retorna seus indivíduos, onde dessa forma, foi possível buscar as informações de tipagem encontrados na ontologia. Os tipos mapeados em classes que consultamos neste momento são.
 
 \begin{itemize}
 	\item onto.TypeExperiment;
@@ -252,7 +252,7 @@ A partir desse momento foi possível realizar as inferências na OntoExper-LPS. Fo
 
 A \ref{figure:tela-recsys-onto} apresenta a tela construída para SR. Nesta tela existem dois campos de consultas, (i) Artefatos de LPS e (ii) Tipo de experimento em LPS. Quando o usuário seleciona qualquer um dos dois campos, o SR invoca o método \textit{filter\_experiment()} passando os dados selecionados como parâmetro. Neste método é realizar a inferência na ontologia, segundo os valores que o usuário selecionou na tela. Na listagem \ref{lst:inferencia-onto} apresenta o código da consulta realizada.
 
-\begin{lstlisting}[language=Python, caption=Inferência na OntoExper-LPS, label=lst:inferencia-onto]
+\begin{lstlisting}[language=Python, caption=Inferência na OntoExper-SPL, label=lst:inferencia-onto]
 result = onto.search(is_a=onto.Abstract,
 	documentation=onto.search(is_a=onto.Documentation,
 	  experiment=onto.search(
@@ -396,11 +396,11 @@ Os  documentos  disponibilizados  aos  participantes  e  resultados  deste  estu
 \section{Considerações Finais}
 \label{sec:recsys_concidaracoes_finais}
 
-Este capítulo apresentou um SR provando que é possível realizar inferências no modelo de ontologia proposto por este trabalho de mestrado, a OntoExper-LPS. Por meio das inferências implementadas no SR, foi possível implementar o modelo de recomendação \textit{collaborative filtering} e gerar recomendações para os usuários que interagirem com o SR.
+Este capítulo apresentou um SR provando que é possível realizar inferências no modelo de ontologia proposto por este trabalho de mestrado, a OntoExper-SPL. Por meio das inferências implementadas no SR, foi possível implementar o modelo de recomendação \textit{collaborative filtering} e gerar recomendações para os usuários que interagirem com o SR.
 
 Inicialmente, a termo de contexto, foi apresentados os conceitos básico de sistemas de recomendação e uma breve descrição do modelo \textit{collaborative filtering}. Na sequência foi apresentado como os sistemas de recomendação são tratados na ES e alguns exemplos de aplicação.
 
-Foi apresentado na seção de concepção do SR, a modelagem inicial da aplicação, as principais tecnologias abordadas antes da fase de implementação, o ecossistema Python serviu como base para o desenvolvimen geral do SR, desde a inferências iniciais até a implementação de modelo de recomendação. Já na seção de projeto foi tratado especificamente de como as tecnologias e ferramentas auxiliaram em cada fase do projeto, que foram divididas em quatro fases, (i)criação do projeto de aplicação web usando Django Framework, (ii) carregamento da OntoExper-LPS no SR, (iii) \textit{ratings} dos usuários no SR e (iv) implementação do modelo de recomendação. O Django Framework se destaca pois ele foi a base de implementação da aplicação web, pois ele foi construído para esse propósito, implementando principalmente os conceitos de MVC. Posteriormente foi apresenta o banco de dados e sua principal tabela para SR, a tabela que armazena os \textit{ratings} do usuário. Por fim, foi apresentado o ambiente de desenvolvimento utilizado para elaborar do SR, a principal ferramente para este fim foi o editor de texto VSCode.
+Foi apresentado na seção de concepção do SR, a modelagem inicial da aplicação, as principais tecnologias abordadas antes da fase de implementação, o ecossistema Python serviu como base para o desenvolvimen geral do SR, desde a inferências iniciais até a implementação de modelo de recomendação. Já na seção de projeto foi tratado especificamente de como as tecnologias e ferramentas auxiliaram em cada fase do projeto, que foram divididas em quatro fases, (i)criação do projeto de aplicação web usando Django Framework, (ii) carregamento da OntoExper-SPL no SR, (iii) \textit{ratings} dos usuários no SR e (iv) implementação do modelo de recomendação. O Django Framework se destaca pois ele foi a base de implementação da aplicação web, pois ele foi construído para esse propósito, implementando principalmente os conceitos de MVC. Posteriormente foi apresenta o banco de dados e sua principal tabela para SR, a tabela que armazena os \textit{ratings} do usuário. Por fim, foi apresentado o ambiente de desenvolvimento utilizado para elaborar do SR, a principal ferramente para este fim foi o editor de texto VSCode.
 
 No próximo cap??tulo, será apresentado a conclusão final deste trabalho de mestrado.
 

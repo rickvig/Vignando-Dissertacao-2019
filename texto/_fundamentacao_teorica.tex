@@ -7,26 +7,28 @@
 \label{sec:fundamentos_concidaracoes_iniciais}
 
 
-Este capítulo apresenta conceitos importantes sobre a fundamentação teórica, necessárias para a compreensão desta pesquisa como LPS, experimento e \textit{quasi}-experimento em ES, qualidade de experimentos e \textit{quasi}-experimento em ES, ontologia, sistemas de recomendação e trabalhos relacionados. Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:linha_de_produto_software} apresenta os principais pontos de LPS e variabilidades; na Seção \ref{sec:experimentos_em_engenharia_de_software} é apresentado uma visão geral de experimento e \textit{quasi}-experimento em ES; na Seção \ref{sec:qualidade_de_experimento_em_engenharia_de_software} são apresentados infromações preliminares sobre qualidade de experimentos e \textit{quasi}-experimento em ES; A Seção \ref{sec:fundamentos_ontologia} descreve os fundamentos sobre o que é uma ontologia e sua finalidade; Seção \ref{sec:trabalhos_relacionados} são discutidos os trabalhos relacionados; e na Seção \ref{sec:fundamentos_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo.
+Este capítulo apresenta conceitos importantes, necessários para a compreensão desta pesquisa como LPS, experimentos de ES, ontologias e trabalhos relacionados. O conceito de LPS é fundamental para entendimento dos termos elaboradas na OntoExper-SPL, pois sua construção se baseia nas característica que determina uma LPS. Entender experimentação em ES é imprescindível, pois é o cerne deste trabalho e toda modelagem da ontologia proposta foi criada a partir dos elementos experimentais descritos neste capítulo. O conceito de ontologia dirige solução apresentada, de modo que a base fundamental apresentada neste capítulo serviu diretamente para elaboração da OntoExper-SPL.
+
+% Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:linha_de_produto_software} apresenta os principais pontos de LPS e variabilidades; na Seção \ref{sec:experimentos_em_engenharia_de_software} é apresentado uma visão geral de experimento e \textit{quasi}-experimento em ES; na Seção \ref{sec:qualidade_de_experimento_em_engenharia_de_software} são apresentados infromações preliminares sobre qualidade de experimentos e \textit{quasi}-experimento em ES; A Seção \ref{sec:fundamentos_ontologia} descreve os fundamentos sobre o que é uma ontologia e sua finalidade; Seção \ref{sec:trabalhos_relacionados} são discutidos os trabalhos relacionados; e na Seção \ref{sec:fundamentos_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo.
 
 
 \section{Linha de Produto de Software}
 \label{sec:linha_de_produto_software}
 
-Uma Linha de Produto de Software (LPS) é um conjunto de produtos que endereçam a um determinado segmento de mercado ou missão particular \cite{northrop2007framework}. Esse conjunto de produtos também é denominado família de produtos, no qual os membros desta família são produtos específicos gerados a partir da reutilização de uma infraestrutura comum, denominada núcleo de artefatos (\textit{Core assets}). 
+Uma Linha de Produto de Software (LPS) é um conjunto de produtos que endereçam a um determinado segmento de mercado ou missão particular \cite{van2007software}. Esse conjunto de produtos também é denominado família de produtos, no qual os membros desta família são produtos específicos gerados a partir da reutilização de uma infraestrutura comum, denominada núcleo de artefatos (\textit{Core assets}). 
 
-O núcleo de artefatos é composto por um conjunto de características comuns chamadas de similaridades, e características variáveis chamadas de variabilidades \cite{van2007product}. Este núcleo forma a base da LPS que determina a Arquitetura de uma LPS, que são eles, componentes reusáveis, modelos de domínios, requisitos da LPS, planos de testes e modelos de características de variabilidades.
+O núcleo de artefatos é composto de conjunto de características comuns chamadas de similaridades, e características variáveis chamadas de variabilidades \cite{van2007product}. Tal núcleo forma a base de uma LPS que determina a Arquitetura de uma LPS, formado por, componentes reusáveis, modelos de domínios, requisitos da LPS, planos de testes e modelos de características de variabilidades /cite{cappel}.
 
-O modelo de características contém todas as características de uma LPS e os seus inter-relacionamentos. De acordo com \citeauthor{apel2013analytic}, "uma característica é um comportamento característico ou visível ao usuário final de um sistema de software". Uma característica pode ser obrigatória, opcional ou alternativa. O modelo de características representa as variabilidades e as variantes de uma LPS \cite{apel2013analytic}.
+O modelo de características contém todas as características de uma LPS e os seus inter-relacionamentos. De acordo com \citet{apel2013analytic}, "uma característica é um comportamento característico ou visível ao usuário final de um sistema de software". Uma característica pode ser obrigatória, opcional ou alternativa. O modelo de características representa as variabilidades e as variantes de uma LPS.
 
 \begin{itemize}
 	\item Variabilidades são descritas por: ponto de variação que permite a resolução de variabilidades em artefatos genéricos de uma LPS, e; 
-	\item Variantes são representadas pelos: possessíveis elementos que podem ser escolhidos para resolver um ponto de variação.
+	\item Variantes são representadas pelos: possíveis elementos que podem ser escolhidos para resolver um ponto de variação.
 \end{itemize}
 
-Restrições entre variantes, estabelecem os relacionamentos entre uma ou mais variantes, com o objetivo de resolver seus respectivos pontos de variação ou variabilidade em um dado tempo de resolução \cite{halmans2003communicating}.
+Restrições entre variantes, estabelecem os relacionamentos entre uma ou mais variantes, com o objetivo de resolver seus respectivos pontos de variação ou variabilidade em um dado tempo de resolução /cite{oliveiraJr, 2010}.
 
-O \textit{MobileMedia} é um exemplo didático de LPS, o produto final é um software que gerencia as mídias de um aparelho celular. O núcleo de artefatos deve conter algumas das seguintes características, opções de criar, visualizar, remover e editar a legenda da imagem. As características variantes opcionais podem ser, a capturar uma nova imagem, ordenar e favoritar imagens. As características variantes alternativas podem ser os diversos tamanhos de tela. O produto final deve possuir ao menos uma variante alternativa.
+A \textit{MobileMedia} é um exemplo didático de LPS, o produto final é um software que gerencia as mídias de um aparelho celular. O núcleo de artefatos deve conter  as seguintes características: opções de criar, visualizar, remover e editar a legenda da imagem. As características opcionais podem ser, a capturar uma nova imagem, ordenar e favoritar imagens. As características variantes alternativas podem ser os diversos tamanhos de tela. O produto final deve possuir ao menos uma variante alternativa.
 
 \begin{figure}[htb]
 	\centering					
@@ -35,7 +37,7 @@ O \textit{MobileMedia} é um exemplo didático de LPS, o produto final é um softwa
 	\label{fig:exemplo-lps}
 \end{figure}
 
-A \ref{fig:exemplo-lps} apresenta um grafo com o Modelo de Características da LPS \textit{MobileMedia}. As arestas com círculos preenchido representa as características pertencentes ao \textit{core asset}. As arestas com círculos vazios representam características opcionais. As arestas ligadas por um triângulo, como as que saem do vértice Seleção de Mídia, representam características alternativas, por exemplo, uma instância desta LPS deve possuir ao menos um tipo de seleção de mídia, seja ele, por Foto, Música ou Vídeo. 
+A \ref{fig:exemplo-lps} apresenta um modelo de características da LPS \textit{MobileMedia}. As arestas com círculos preenchidos representam as características obrigatórias. As arestas com círculos vazios representam características opcionais. As arestas ligadas por um triângulo, como as que saem do vértice Seleção de Mídia, representam características alternativas, por exemplo, uma instância desta LPS deve possuir ao menos um tipo de seleção de mídia, seja ele, por Foto, Música ou Vídeo. 
 
 Uma instância deste exemplo teria as seguintes características no seu produto de software final:
 \begin{itemize}
@@ -58,12 +60,12 @@ Uma instância deste exemplo teria as seguintes características no seu produto de
 	\subitem Capturar Foto			
 \end{itemize}
 
-\citeauthor*{pohl2005software} desenvolveram o \textit{framework} para engenharia de LPS. O objetivo deste de \textit{framework} é incorporar os conceitos centrais da engenharia de linha de produto tradicional, proporcionando a reutilização de artefatos e a customização em massa por meio de variabilidades. O \textit{framework} está dividido em dois processos, o de Engenharia de Domínio e o de Engenharia de Aplicação, conforme apresentado na \ref{fig:framework-lps}.
+\citet*{pohl2005software} desenvolveram o \textit{framework} para engenharia de LPS. O objetivo deste de \textit{framework} é incorporar os conceitos centrais da engenharia de linha de produto tradicional, proporcionando a reutilização de artefatos e a customização em massa por meio de variabilidades. O \textit{framework} está dividido em dois processos, o de Engenharia de Domínio e o de Engenharia de Aplicação, conforme apresentado na \ref{fig:framework-lps}:
 
 \begin{itemize}
-	\item \textbf{Engenharia de Domínio:} processo em que as similaridades e as variabilidades das LPSs são identificadas e realizadas. No qual, é composto de cinco subprocessos principais, sendo eles: Gerenciamento de Produto, Engenharia de Requisitos do Domínio, Projeto do Domínio, Realização do Domínio e Teste de Domínio;
+	\item \textbf{Engenharia de Domínio:} processo em que as similaridades e as variabilidades das LPSs são identificadas e realizadas, composto de cinco subprocessos principais: Gerenciamento de Produto, Engenharia de Requisitos do Domínio, Projeto do Domínio, Realização do Domínio e Teste de Domínio;
 
-	\item \textbf{Engenharia de Aplicação:} processo em que as aplicações de uma LPS são construídas por meio da reutilização de artefatos de domínio, explorando as variabilidades de uma linha de produto. No qual, é composto pelos subprocessos: Engenharia de Requisitos da Aplicação, Projeto da Aplicação, Realização da Aplicação e Teste da Aplicação.
+	\item \textbf{Engenharia de Aplicação:} processo em que as aplicações de uma LPS são construídas por meio da reutilização de artefatos de domínio, explorando as variabilidades de uma LPS, composta dos subprocessos: Engenharia de Requisitos da Aplicação, Projeto da Aplicação, Realização da Aplicação e Teste da Aplicação.
 \end{itemize}
 
 \begin{figure}[htb]
@@ -75,7 +77,7 @@ Uma instância deste exemplo teria as seguintes características no seu produto de
 \end{figure}
 
 
-\section{Experimentos e \textit{Quasi}-Experimento em Engenharia de Software}
+\section{Experimentação em Engenharia de Software}
 \label{sec:experimentos_em_engenharia_de_software}
 
 Existe uma diferença relevante entre experimento e \textit{quasi}-experimento, esta diferença está relacionada a amostra do experimento. Quando se trata de um experimento a amostra é uma representação aleatória e válida de uma determinada população, ou seja, a amostra é uma representação da população. Quando se trata de \textit{quasi}-experimento a amostra não é aleatória e não representa sua população. É difícil realizar experimentos em LPS, devido a dificuldade de determinar uma amostra representativa e aleatória da população, pois normalmente estas amostras são pessoas \cite{wohlin2012experimentation}.
@@ -85,7 +87,6 @@ Por meio de um modelo teórico entre dois ou mais fenômenos relacionados a fim de
 \begin{figure}[htb]
 	\centering					
 	{\includegraphics[scale=.37]{experimento.png}}
-	
 	\caption{Conceitos Essenciais de um Experimento. Traduzido de \citet{wohlin2012experimentation} }
 	\label{fig:experimento}
 \end{figure}
@@ -106,7 +107,6 @@ Segundo \citealt{wohlin2012experimentation} a realização de um experimento pode 
 \begin{figure}[htb]
 	\centering					
 	{\includegraphics[scale=.37]{proc_exp.png}}
-	
 	\caption{Visão Geral do Processo Experimental. Traduzido de \citet{wohlin2012experimentation}}
 	\label{fig:proc_exp}
 \end{figure}
@@ -124,54 +124,60 @@ Segundo \citealt{wohlin2012experimentation} a realização de um experimento pode 
 	\item \textbf{Apresentação e Empacotamento:} nessa atividade, os resultados são reportados, por exemplo, como artigos em conferência e/ou periódico, relatórios de tomada de decisão e empacotados para permitir a replicação do experimento, como material educativo, entre outros.
 \end{itemize}
 
-\section{Qualidade de Experimentos em Engenharia de Software}
-\label{sec:qualidade_de_experimento_em_engenharia_de_software}
 
-Segundo \citet{dieste2013challenges}, o conceito de qualidade de experimentos em ES pode ser visto em dois pontos de vista diferentes, o primeiro é considerar a qualidade como o resultado da validade interna de um bom experimento e o segundo é tornar a qualidade operacional assim como a quantidade de vieses nos resultados experimentais. Outro ponto colocado por \citeauthor{dieste2013challenges}, é a validade externa que também tem uma função chave ao analisar se um experimento tem boa qualidade, porém essa função é contrária à validade interna.
+\section{Experimentos de LPS}
+\label{sec:experimento_de_lps}
 
-Na \ref{tab:conceito_qualidade} são apresentadas as definições dos conceitos de qualidade citados anteriormente.
+....apresentar um resumo do MS da Viviane, os trabalhos que ela leu, como foi construído o modelo conceitual para o leitor poderá entender como surgiu a sua ontologia...
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-\begin{table}[]
-	\centering
-	\caption{Definições dos conceitos de qualidade em experimentos em Engenharia de
-		Software. Traduzido de \citet{kitchenham2007large}}
-	\label{tab:conceito_qualidade}
-	\begin{tabular}{@{}lll@{}}
-		\toprule
-		Termo & Sinônimo & Definição \\ \midrule
-		Viés & Erro sistemático & \begin{tabular}[c]{@{}l@{}}Uma tendência para produzir resultados \\ que partem sistematicamente de resultados \\ "verdadeiros". Resultados sem viés são\\ válidos internamente.\end{tabular} \\
-		Validade Interna & Validade & \begin{tabular}[c]{@{}l@{}}O alcance em que o projeto e a condução \\ do estudo são possíveis de evitar erro sistemático. \\ A validade interna é um pré-requisito \\ para a validade externa.\end{tabular} \\
-		Validade Externa & \begin{tabular}[c]{@{}l@{}}Generabilidade, \\ Aplicabilidade\end{tabular} & \begin{tabular}[c]{@{}l@{}}O alcance em que os efeitos observados no estudo \\ são aplicáveis fora do estudo.\end{tabular} \\ \bottomrule
-	\end{tabular}
-\end{table}
+% \section{Qualidade de Experimentos em Engenharia de Software}
+% \label{sec:qualidade_de_experimento_em_engenharia_de_software}
 
-Segundo \citet{dieste2011systematic} os experimentos de boa qualidade são aqueles livres de vieses. O viés está relacionado com a validade interna, por exemplo, quão bem os experimentos são planejados, executados e analisados \cite{dieste2013challenges}. Para minimizar os vieses existem alguns métodos como, aleatorização para criar grupos experimentais homogêneos, imparcialidade para alocar os indivíduos. Desta forma os resultados podem ser analisados mesmo depois do experimento ter sido realizado com replicações. Enquanto os experimentos de baixa qualidade seriam os que usam pouco ou nenhum dos métodos citados \cite{dieste2011systematic}.
+% Segundo \citet{dieste2013challenges}, o conceito de qualidade de experimentos em ES pode ser visto em dois pontos de vista diferentes, o primeiro é considerar a qualidade como o resultado da validade interna de um bom experimento e o segundo é tornar a qualidade operacional assim como a quantidade de vieses nos resultados experimentais. Outro ponto colocado por \citeauthor{dieste2013challenges}, é a validade externa que também tem uma função chave ao analisar se um experimento tem boa qualidade, porém essa função é contrária à validade interna.
 
-Como o viés não pode ser medido, existem algumas abordagens para avaliá-lo. Os instrumentos de Avaliação de Qualidade (AQ), são projetados para avaliar a validade interna e inferir a qualidade de experimentos, tais como, abordagens simples (questionários), \textit{checklists} (contém ou não contém), escalas de qualidade, opinião de especialista \cite{dieste2011systematic,dieste2013challenges,teixeira2014analise}.
+% Na \ref{tab:conceito_qualidade} são apresentadas as definições dos conceitos de qualidade citados anteriormente.
 
-Por outro lado a qualidade de um experimento em ES também pode ser avaliada considerando o projeto e análise dos experimentos, em termos de poder estatístico, análise do tamanho de efeito (resultado), \textit{quasi}-experimentais e relatório de experimento \cite{kampenes2007quality}.
+% % Please add the following required packages to your document preamble:
+% % \usepackage{booktabs}
+% \begin{table}[]
+% 	\centering
+% 	\caption{Definições dos conceitos de qualidade em experimentos em Engenharia de
+% 		Software. Traduzido de \citet{kitchenham2007large}}
+% 	\label{tab:conceito_qualidade}
+% 	\begin{tabular}{@{}lll@{}}
+% 		\toprule
+% 		Termo & Sinônimo & Definição \\ \midrule
+% 		Viés & Erro sistemático & \begin{tabular}[c]{@{}l@{}}Uma tendência para produzir resultados \\ que partem sistematicamente de resultados \\ "verdadeiros". Resultados sem viés são\\ válidos internamente.\end{tabular} \\
+% 		Validade Interna & Validade & \begin{tabular}[c]{@{}l@{}}O alcance em que o projeto e a condução \\ do estudo são possíveis de evitar erro sistemático. \\ A validade interna é um pré-requisito \\ para a validade externa.\end{tabular} \\
+% 		Validade Externa & \begin{tabular}[c]{@{}l@{}}Generabilidade, \\ Aplicabilidade\end{tabular} & \begin{tabular}[c]{@{}l@{}}O alcance em que os efeitos observados no estudo \\ são aplicáveis fora do estudo.\end{tabular} \\ \bottomrule
+% 	\end{tabular}
+% \end{table}
 
-Até o momento não se tem conhecimento de trabalhos que tratam a qualidade de experimentos em área específica de ES. Entretanto, foram recuperados alguns trabalhos, por meio de pesquisas não sistemáticas, que estão relacionados com a avaliação de qualidade dos experimentos em Engenharia de Software, descritos a seguir:
+% Segundo \citet{dieste2011systematic} os experimentos de boa qualidade são aqueles livres de vieses. O viés está relacionado com a validade interna, por exemplo, quão bem os experimentos são planejados, executados e analisados \cite{dieste2013challenges}. Para minimizar os vieses existem alguns métodos como, aleatorização para criar grupos experimentais homogêneos, imparcialidade para alocar os indivíduos. Desta forma os resultados podem ser analisados mesmo depois do experimento ter sido realizado com replicações. Enquanto os experimentos de baixa qualidade seriam os que usam pouco ou nenhum dos métodos citados \cite{dieste2011systematic}.
 
-\begin{itemize}
-	\item \citet{kitchenham2007large} propõem um \textit{checklist} de avaliação de qualidade de experimentos em ES contendo cinquenta questões para avaliar a qualidade de experimentos, em que sugerem que os pesquisadores selecionam apenas as questões do \textit{checklist} mais adequadas ao contexto de suas próprias questões de pesquisa.
+% Como o viés não pode ser medido, existem algumas abordagens para avaliá-lo. Os instrumentos de Avaliação de Qualidade (AQ), são projetados para avaliar a validade interna e inferir a qualidade de experimentos, tais como, abordagens simples (questionários), \textit{checklists} (contém ou não contém), escalas de qualidade, opinião de especialista \cite{dieste2011systematic,dieste2013challenges,teixeira2014analise}.
+
+% Por outro lado a qualidade de um experimento em ES também pode ser avaliada considerando o projeto e análise dos experimentos, em termos de poder estatístico, análise do tamanho de efeito (resultado), \textit{quasi}-experimentais e relatório de experimento \cite{kampenes2007quality}.
+
+% Até o momento não se tem conhecimento de trabalhos que tratam a qualidade de experimentos em área específica de ES. Entretanto, foram recuperados alguns trabalhos, por meio de pesquisas não sistemáticas, que estão relacionados com a avaliação de qualidade dos experimentos em Engenharia de Software, descritos a seguir:
+
+% \begin{itemize}
+% 	\item \citet{kitchenham2007large} propõem um \textit{checklist} de avaliação de qualidade de experimentos em ES contendo cinquenta questões para avaliar a qualidade de experimentos, em que sugerem que os pesquisadores selecionam apenas as questões do \textit{checklist} mais adequadas ao contexto de suas próprias questões de pesquisa.
 	
-	\item \citet{kitchenham2015evidence} apresentam um \textit{checklist} de avaliação de qualidade de experimentos em ES com nove questões, onde cada questão possui subquestões	categorizadas em: (i) "Questões sobre objetivo", (ii) "Questões sobre o projeto, coleta de dados e análise do dados" e (iii) "Questões sobre o resultado do estudo".
+% 	\item \citet{kitchenham2015evidence} apresentam um \textit{checklist} de avaliação de qualidade de experimentos em ES com nove questões, onde cada questão possui subquestões	categorizadas em: (i) "Questões sobre objetivo", (ii) "Questões sobre o projeto, coleta de dados e análise do dados" e (iii) "Questões sobre o resultado do estudo".
 	
-	\item \citet{dieste2011systematic}  desenvolveram uma escala de qualidade para determinar a qualidade de experimentos, contendo dez questões baseadas nas cinco dimensões de \citet{kitchenham2007large}, sendo: contexto experimental, projeto experimental, análise, interpretação dos resultados e apresentação dos resultados. As respostas de cada questão são "sim" ou "não".	
-\end{itemize}
+% 	\item \citet{dieste2011systematic}  desenvolveram uma escala de qualidade para determinar a qualidade de experimentos, contendo dez questões baseadas nas cinco dimensões de \citet{kitchenham2007large}, sendo: contexto experimental, projeto experimental, análise, interpretação dos resultados e apresentação dos resultados. As respostas de cada questão são "sim" ou "não".	
+% \end{itemize}
 
 
-\section{Ontologia}
+\section{Ontologias}
 \label{sec:fundamentos_ontologia}
 
 A palavra ontologia é formada por meio dos termos gregos ontos (ser) e logos (estudo, discurso), que engloba algumas questões abstratas como a existência de determinadas entidades, o que se pode dizer que existe, qual o significado do ser, etc. Segundo \citet{wolff1962philosophia}, ontologia é um ramo da filosofia que estuda a realidade e existência, ou o ser enquanto ser. Em outras palavras, é o estudo da descrição de coisas do mundo real. Outro ponto de vista proposto por \citet{gruber1993ontology}, diz que ontologias são uma especificação formal de uma contextualização e uma contextualização é uma visão abstrata e simplificada do mundo.
 
 Ontologia em Computação, Sistemas de Informação e Ciência da Informação, é definida como um modelo de dados que representa um conjunto de conceitos dentro de um domínio e os relacionamentos entre estes. Uma ontologia é utilizada para realizar inferência sobre os objetos do domínio. No cenário atual, as ontologia em ciências da informação são utilizadas como uma forma de representação de conhecimento lógico, possibilitando a inferência de novos fatos com base nos dados armazenados na ontologia.
 
-Uma ontologia define primitivas/diretrizes de um domínio de conhecimento, estas primitivas/diretrizes podem ser definidas como classes, atributos, propriedades e restrições. Essas definições seguem o padrão de representação conhecido como lógica descritiva. A lógica descritiva representa os conceitos de um domínio (chamado de \textbf{TBox} - \textit{Terminological Box}) separadamente dos indivíduos (chamado de \textbf{ABox} - \textit{Assertion Box}) \cite{calvanese2005dl}. A lógica descritiva é mais representativa e eficiente que a lógica proposicional e a lógica de predicados (usados em linguagens de programação lógica, como Prolog).
+Uma ontologia define primitivas/diretrizes de um domínio de conhecimento, estas primitivas/diretrizes podem ser definidas como classes, atributos, propriedades e restrições. Essas definições seguem o padrão de representação conhecido como lógica descritiva. A lógica descritiva representa os conceitos de um domínio (chamado de \textbf{TBox} - \textit{Terminological Box}) separadamente dos indivíduos (chamado de \textbf{ABox} - \textit{Assertion Box}) \cite{calvanese2005dl}. A lógica descritiva é mais representativa e eficiente que a lógica proposicional e a lógica de predicados (usados em linguagens de programação lógica, como em Prolog).
 
 Portanto uma ontologia para a representação de um conhecimento possui a seguinte estrutura: Uma base de conhecimento onde estão os dois conjuntos de conhecimento terminológico (\textbf{TBox}) e o conjunto de conhecimento sobre objetos (\textbf{ABox}), seguido de um mecanismo de inferência e uma aplicação para atuar na manipulação de informações extraídas do mecanismo de inferência, A \ref{fig:estrct_onto} apresenta essa estrutura.
 
@@ -183,48 +189,140 @@ Portanto uma ontologia para a representação de um conhecimento possui a seguinte
 	\label{fig:estrct_onto}
 \end{figure}
 
+Na prática uma ontologia têm o propósito permitir o compartilhamento de conteúdos conceitualizados formalizando o conhecimento de um determinado domínio. Abordando com um conjunto de termos que serão usados para a elaboração de consultas de conteúdos. Estas consultas são chamadas de inferência.
+
+Segundo \citet{morais2007ontologias}, A ontologia define as regras de combinação entre os termos e seus relacionamentos, estes relacionamentos são criados por especialistas, e os usuários formulam consultas usando os conceitos especificados. Dessa forma o usuário que está interagindo com uma aplicação que realiza inferência na ontologia, pode navegar pela ontologia em busca de conceitos adequados para a representação do objeto em estudo.
+
+O benefícios de se usar ontologias pode ser descritos em 3 áreas \cite{guizzardi2000desenvolvimento}:
+
+\begin{itemize}
+	\item \textbf{Comunicação:} As ontologias possibilitam a comunicação entre pessoas acerca de determinado conhecimento, pois permitem raciocínio e entendimento sobre um domínio;
+	
+	\item \textbf{Formalização:} A formalização está relacionada à especificação da ontologia, que permite eliminar contradições e inconsistências na representação de conhecimento, além de não ser ambígua. Além disso, essa especificação pode ser testada, validada e verificada;
+	
+	\item \textbf{Representação de Conhecimento:} As ontologias formam um vocabulário de consenso que permite representar conhecimento de um domínio em seu nível mais alto de abstração, desta forma, aumentando o potencial de reutilização.
+\end{itemize}
+
+Assim \citet{guizzardi2000desenvolvimento} classificou as ontologias em cinco categorias, uma para cada foco em específico:
+
+\begin{itemize}
+	\item \textbf{Ontologias genéricas:} descrevem conceitos bastante gerais, tais como, espaço, tempo, matéria, objeto, evento, ação, etc., que são independentes de um problema ou domínio particular. Geralmente buscam por meio deste tipo de ontologia relacionar ao sentido filosófico de categorização e lingüística, tal como sobre as teorias básicas do mundo, de modo bem abrangente aplicando ao conhecimento de senso comum;
+	
+	\item \textbf{Ontologias de domínio:} expressam conceituações de domínios particulares, descrevendo o vocabulário relacionado a um domínio genérico, tal como Medicina, Direito ou Computação. Este tipo de ontologia é o mais comum, sendo aplicado para representar um micro-mundo ao qual o domínio está vinculado;
+	
+	\item \textbf{Ontologias de tarefas:} expressam conceituações sobre a resolução de problemas, independentemente do domínio em que ocorram, isto é, descrevem o vocabulário relacionado a uma atividade ou tarefa genérica, tal como, diagnose ou vendas. Tendo como destaque a facilidade em interligar conhecimentos de tarefas e domínio, buscando esta interligação de modo uniforme e consistente;
+	
+	\item \textbf{Ontologias de aplicação:} descrevem conceitos dependentes do domínio e da tarefa particulares. Estes conceitos frequentemente correspondem a papéis desempenhados por entidades do domínio quando da realização de uma certa atividade;
+	
+	\item \textbf{Ontologias de representação:} explicam as conceituações que fundamentam os formalismos de representação de conhecimento, tendo como foco deixar claras as informações contidas nesse formalismo.
+\end{itemize}
+
 \begin{figure}[htb]
 	\centering					
 	{\includegraphics[scale=0.45]{exemplo_ontologia.png}}
-	
 	\caption{Exemplo de uma Ontologia para o domínio: Destino de Viagem. Autor}
 	\label{fig:exemplo_ont}
 \end{figure}
 
-A \ref{fig:exemplo_ont} apresenta um exemplo de ontologia, por meio de um grafo, para o domínio: "destino de viagem". Os vértices ovais representam as classes, e os vértices retangulares representam os indivíduos (instâncias da classe). As arestas comuns representa um relacionamento de classe e subclasse, as arestas tracejadas representam um relacionamento de propriedade, já as arestas que começam com um losango indica a definição de uma propriedade, especificando sua tipagem.
+A \ref{fig:exemplo_ont} apresenta um exemplo de ontologia, por meio de um grafo, para o domínio: ``destino de viagem''. Os vértices ovais representam as classes, e os vértices retangulares representam os indivíduos (instâncias da classe). As arestas comuns representa um relacionamento de classe e subclasse, as arestas tracejadas representam um relacionamento de propriedade, já as arestas que começam com um losango indica a definição de uma propriedade, especificando sua tipagem.
+
+\subsection{Ontologias para ES}
+\label{sec:metodologias_contrucao_ontologia}
+
+As ontologia pode estar associada à Ciência da Computação em diferentes visões, sendo elas: (i) Recuperação de informações na Internet, onde se utiliza de sistemas on-line que possibilitam a pesquisa sobre a contextualização de fatos, como também permite o desenvolvimento de sites baseados em ontologia na web-semântica, (ii) Gestão do Conhecimento, visto que pode-se criar um sistema de armazenamento e acesso a informações, educacionais ou empresariais, através do uso de ontologias, (iii) Web-Semântica, esta área da Ciência da Computação dita como a visão para o futuro da internet, onde temos informações associadas a um significado explícito, deixando mais fácil o processamento e interpretação de informações para máquinas, (iv) Educação, onde se permite utilizar uma ontologia em um ambiente de aprendizagem sobre diversos conceitos associados à Ciência da Computação, possibilitando a interpretação de domínios, e no auxílio de pesquisas dinâmicas \cite{morais2007ontologias}.
+
+O trabalho de \citet{isotani2015ontology}, apresenta a \textit{Ontology-Driven Software Engineering} a ES baseada em Ontologias. Esse tema é tratado como uma subárea da ES e tem como objetivo estudar as diversas formas de como as ontologias, engenharia de ontologias e outras tecnologias procedentes podem contribuir para o processo de desenvolvimento de software.
 
 
+\begin{figure}[htb]
+	\centering					
+	{\includegraphics[scale=.65]{ontologia-para-ES.pdf}}
+	\caption{Ontologias para formalizar o conhecimento em ES. Adaptado de \citet{isotani2015ontology}}
+	\label{fig:ontologia_es}
+\end{figure}
+
+
+A \ref{fig:ontologia_es} apresenta a formalização do conhecimento de ES via ontologias de domínio, dessa forma podem ser  explorados os conhecimentos dos diversos processos de análise, desenvolvimento, artefatos, entre outros conhecimentos que podem ser representados por uma ontologia. A formalização do sub-domínio do conhecimento de ES contendo informações específicas sobre conceitos relacionados ao domínio, por exemplo o sub-domínio de LPS. Por fim a instância de conhecimento sobre ES apresentando um espaço que consta a consolidação e relações de conhecimento contido na ontologia para explorar os conceitos associados ao domínio de ES.
+
+As ontologias garantem que a mesma linguagem, métodos, processos e entendimento sobre a área de ES sejam utilizados e compartilhados formalmente, mesmo que os envolvidos estejam espalhados em diferentes localidades \citet{isotani2015ontology}.
+
+\subsection{Tipos de Ontologias}
+\label{sec:tipos_de_ontologia}
+
+Na literatura existem diferentes aplicações, conteúdos e funções para as ontologias. Tal diversidade dificulta sua tipificação ao mesmo tempo em que aumenta a quantidade de abordagens para elaboração de ontologias. \citet{almeida2003visao} diferenciar alguns tipos de ontologias classificando-as em abordagens: (i) quanto à função, (ii) ao grau de formalismo, (iii) à aplicação, (iv) à estrutura e (v) ao conteúdo. a \ref{tab:tipos-ontologia} apresenta um breve resumo dessa tipologia.
+
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.5\hsize}X}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Tipos de Ontologia}
+	\label{tab:tipos-ontologia}
+	\begin{tabularx}{\textwidth}{ssb}
+	\toprule
+	\textbf{Abordagem} & \textbf{Classificação} & \textbf{Descrição} \\ \midrule
+	\textbf{Quanto à função} Mizoguchi; Vanwelkenbuyse n; Ikeda (1995) & Ontologias de domínio & Reutilizáveis no domínio, fornecem vocabulário sobre conceitos e seus relacionamentos, sobre as atividades e regras que os governam. \\
+	 & Ontologias de tarefa & Fornecem um vocabulário sistematizado de termos, por meio da especificação de tarefas que podem ou não estar no mesmo domínio. \\
+	 & Ontologias gerais & Incluem um vocabulário relacionado a coisas, eventos, tempo, espaço, causalidade, comportamento, funções etc. \\
+	 \textbf{Quanto ao grau de formalismo} Uschold; Gruninger (1996) & Ontologias altamente informais & Expressa livremente em linguagem natural. \\
+	 & Ontologias semi informais & Expressa em linguagem natural de forma restrita e estruturada. \\
+	 & Ontologias semi formais & Expressa em uma linguagem artificial definida formalmente \\
+	 & Ontologias rigorosamente formais & Os termos são definidos com semântica formal, teoremas e provas. \\
+	\textbf{Quanto à aplicação Jasper}; Uschold (1999) & Ontologias de autoria neutra & Uma ontologia escrita em uma única língua e depois convertida para uso em diversos sistemas, utilizando-se as informações. \\
+	 & Ontologias como especificação & Cria-se uma ontologia para um domínio, a qual é usada para documentação e manutenção no desenvolvimento de softwares. \\
+	 & Ontologias de acesso comum à informação & Quando o vocabulário é inacessível, a ontologia torna inteligível a informação, proporcionando conhecimento compartilhado dos termos \\
+	 \textbf{Quanto à estrutura} Haav; Lubi (2001) & Ontologias de alto nível & Descrevem conceitos gerais relacionados a todos os elementos da ontologia (espaço, tempo, matéria, objeto, evento etc.), os quais são independentes do problema ou domínio. \\
+	 & Ontologias de domínio & Descrevem o vocabulário relacionado a um domínio, como, por exemplo, medicina ou automóveis \\
+	 & Ontologias de tarefa & Descrevem uma tarefa ou atividade, como por exemplo, diagnósticos ou compras, mediante inserção de termos especializados na ontologia. \\
+	\textbf{Quanto ao conteúdo} Van-Heijist; Schreiber; Wielinga (2002) & Ontologias de informação & Especificam a estrutura de registros de bancos de dados (por exemplo, os esquemas de bancos de dados). \\
+	 & Ontologias terminológicas & Especificam termos que serão usados para representar o conhecimento em um domínio (por exemplo, os léxicos). \\
+	 & Ontologias de modelagem do conhecimento & Especificam conceituações do conhecimento, têm uma estrutura interna semanticamente rica e são refinadas para uso no domínio do conhecimento que descrevem \\
+	 & Ontologias de aplicação & Contêm as definições necessárias para modelar o conhecimento em uma aplicação. \\
+	 & Ontologias de domínio & Expressam conceituações que são específicas para um determinado domínio do conhecimento. \\
+	 & Ontologias genéricas & Similares às ontologias de domínio, mas os conceitos que as definem são considerados genéricos e comuns a vários campos \\
+	 & Ontologias de representação & Explicam as conceituações que estão por trás dos formalismos de representação do conhecimento. \\ \cmidrule(l){2-3} 
+	\end{tabularx}
+\end{table}
+
+
+\subsection{Metodologias para Construção de Ontologias}
+\label{sec:metodologias_contrucao_ontologia}
+
+As metodologias para construção de ontologias têm como objetivo sistematizar o projeto de desenvolvimento das mesmas.
+
+A tese de \citet{mendonca2015ontoforinfoscience} relaciona as principais metodologias / métodos e etapas de cada metodologia/método para construção de ontologias, esses métodos estão descritos no Apêndice \ref{apendice:a-metodologias}. Segundo ele o processo de construção de uma ontologia é complexo, pois envolve a criação de modelos semânticos ou descrições simplificadas da realidade de um dado domínio e também exige dos desenvolvedores conhecimentos técnicos em modelagem conceitual, em lógica formal e em alguns aspectos filosóficos.
+
+A escolha da metodologia para a construção da ontologia impacta diretamente o modelo final, sendo necessário um estudo sobre suas etapas e processos a serem executados.
 
 \section{Trabalhos Relacionados}
 \label{sec:trabalhos_relacionados}
 
-Durante uma revisão não sistemática (\textit{ad hoc}) da literatura foram encontrados alguns estudos que propuseram abordagens para representar formalmente dados sobre experimentos em ES. A revisão da literatura mostrou que a maioria dos estudos focou e representar todo o domínio do ES, ou experimentos em geral, esse fator é um agravante para elaboração dos modelos, pois, à quantidade de detalhes pode variar significativamente. Estes trabalhos estão descritos a seguir. A contribuição deles é discutida ao final desta sessão.
+Durante uma revisão não sistemática (\textit{ad hoc}) da literatura foram encontrados alguns estudos que propõem abordagens para representar formalmente dados sobre experimentos em ES. A revisão da literatura mostrou que a maioria dos estudos focou em representar todo o domínio do ES, ou experimentos em geral, o que é um fator agravante para elaboração dos modelos, por causa da quantidade de detalhes que pode variar significativamente. Estes trabalhos estão descritos a seguir. A contribuição deles é discutida ao final desta seção.
 
-Durante nossa revisão de literatura encontramos: \cite{garcia2008ontology} Ontologia para Experimentos Controlados em Engenharia de Software, \cite{scatalon2011packaging} Empacotando Experimentos Controlados Usando uma Abordagem Evolutiva Baseada em Ontologia (S), \cite{da2012foundational} Uma Ontologia Fundamental para Apoiar Experimentos Científicos, \cite{blondet2016ode} ODE: uma Ontologia para Projeto Numérico de Experimentos, \cite{soldatova2006ontology} Uma Ontologia de Experimentos Científicos, \cite{gelernter2016challenges} Desafios na Avaliação de Ontologia, \cite{cruzes2007extracting} Extraindo Informações da Engenharia de Software Experimental papéis. No entanto, todos esses trabalhos não tratam experimentos de LPS.
+% Durante nossa revisão de literatura encontramos: \cite{garcia2008ontology} Ontologia para Experimentos Controlados em Engenharia de Software, \cite{scatalon2011packaging} Empacotando Experimentos Controlados Usando uma Abordagem Evolutiva Baseada em Ontologia (S), \cite{da2012foundational} Uma Ontologia Fundamental para Apoiar Experimentos Científicos, \cite{blondet2016ode} ODE: uma Ontologia para Projeto Numérico de Experimentos, \cite{soldatova2006ontology} Uma Ontologia de Experimentos Científicos, \cite{gelernter2016challenges} Desafios na Avaliação de Ontologia, \cite{cruzes2007extracting} Extraindo Informações da Engenharia de Software Experimental papéis. No entanto, todos esses trabalhos não tratam experimentos de LPS.
 
-O trabalho de Garcia et al. \cite{garcia2008ontology}, Poveda-Villalón et al. \cite{scatalon2011packaging} e Cruz et al. \cite{da2012foundational} se destaca em nosso contexto por propor e modelar ontologias específicas para experimentos em engenharia de software. O trabalho de \cite{garcia2008ontology} propõe, através de diagramas de classes UML, uma ontologia para experimentos controlados em engenharia de software denominada EXPEROntology. Com o objetivo de ser uma ferramenta de transferência de conhecimento para auxiliares de pesquisadores e revisores, além de propor meta-análises, conduzir e avaliar experimentos controlados. O trabalho de Poveda-Villalón et al. \cite{scatalon2011packaging} é uma evolução do trabalho de Garcia et al. \cite{garcia2008ontology}, mas focado na evolução desta ontologia proposta. O trabalho de Cruz et al. \cite{da2012foundational} apresenta uma ontologia chamada OVO (Open onVence Ontology) na qual é inspirada por três teorias: (i) O ciclo de vida de experimentos científicos, (ii) Open Provent (OPM) e (iii) Unified Foundational Ontology ( OVNI) Este modelo OVO pretende ser uma referência para modelos conceituais que podem ser usados ??por pesquisadores para explorar a semântica de metadados.
+Os trabalhos de \citet{garcia2008ontology}, \citet{scatalon2011packaging} e \citet{da2012foundational} se destacam em nosso contexto por propor e modelar ontologias específicas para experimentos em engenharia de software. O trabalho de \citet{garcia2008ontology} propõe, por meio de diagramas de classes UML, uma ontologia para experimentos controlados em engenharia de software denominada EXPEROntology. Com o objetivo de ser uma ferramenta de transferência de conhecimento para pesquisadores e revisores, além de propor meta-análises, conduzir e avaliar experimentos controlados. O trabalho de \citet{scatalon2011packaging} é uma evolução do trabalho de \citet{garcia2008ontology}, mas focado na evolução da ontologia proposta. O trabalho de \citet{da2012foundational} apresenta uma ontologia chamada OVO \textit{(Open onVence Ontology)} na qual é inspirada por três teorias: (i) O ciclo de vida de experimentos científicos, (ii) \textit{Open Provent (OPM)} e (iii) \textit{Unified Foundational Ontology (OVNI)}. Este modelo OVO pretende ser uma referência para modelos conceituais que podem ser usados por pesquisadores para explorar a semântica de metadados.
 
-Por outro lado, os trabalhos de Blondet et al. \cite{blondet2016ode} e Soldatova e King \cite{soldatova2006ontology} tratam ontologias no contexto geral de experimentos. O trabalho de Blondet et al. \cite{blondet2016ode} traz uma proposta de ontologia para DoE (Designs of Experiments) para apoiar as decisões de processo sobre o DoE. O trabalho de Soldatova e King \cite{soldatova2006ontology} propõe a ontologia da EXPO que é uma mediana da ontologia SUMO (Suggested Upper Merged Ontology). Esta ontologia visa especificar os experimentos formalizando e generalizando os conceitos de design, metodologias e representação de resultados. Este trabalho é o único que usa o modelo OWL-DL para representar a ontologia.
+Por outro lado, os trabalhos de \citet{blondet2016ode} e \citet{soldatova2006ontology} tratam ontologias no contexto geral de experimentos. O trabalho de \citet{blondet2016ode} traz uma proposta de ontologia para DoE \textit{(Designs of Experiments)} para apoiar as decisões de processo de experimentação. O trabalho de \citet{soldatova2006ontology} propõe a ontologia EXPO que é uma cerne da ontologia SUMO \textit{(Suggested Upper Merged Ontology)}. Esta ontologia visa especificar os experimentos formalizando e generalizando os conceitos de \textit{design}, metodologias e representação de resultados. Este trabalho é o único que usa o modelo OWL-DL para representar a ontologia.
 
-O trabalho de Gelernter e Jha \cite{gelernter2016challenges} dá uma visão geral sobre os desafios de avaliar uma ontologia, mas não trata da ontologia para experimentos.
+O trabalho de \citet{gelernter2016challenges} fornece uma visão geral sobre os desafios de avaliar uma ontologia, mas não trata da ontologia para experimentos.
 
-Finalmente, o trabalho de Cruzes et al. \cite{cruzes2007extracting} trata de uma técnica para extrair meta-informação de experimentos em engenharia de software, entendemos que este assunto está relacionado a este artigo, pois estaremos gerando através da ontologia proposta diversos metadados sobre experimentos em SPL.
+Finalmente, o trabalho de \citet{cruzes2007extracting} trata de uma técnica para extrair meta-informação de experimentos em ES, o que está assunto está relacionado a este trabalho, pois a OntoExper-SPL toma como base metadados sobre experimentos em SPL.
 
-Apesar de não haver um padrão para modelar o conhecimento de experimentação em ES a literatura apresenta estratégias diferentes neste sentido, como pode ser notado nos trablahos de \cite{garcia2008ontology} e \cite{scatalon2011packaging}. Desse modo a modelagem de otologia de para este trabalho será aplicado para experimento em LPS, de tal modo que, será possível fazer inferência de LPS na ontologia e extrair informações. Assim tais trabalhos relacionados são fundamentais para realização deste trabalho de mestrado.
+Apesar de não haver um padrão para modelar o conhecimento de experimentação em ES a literatura apresenta estratégias diferentes neste sentido, como pode ser notado nos trablahos de \citet{garcia2008ontology} e \citet{scatalon2011packaging}
+. Entretanto as modelagens propostas por estes trabalho serviram como \textit{insights} para fases de criação da OntoExper-SPL. Desse modo, a modelagem de ontologia para este trabalho será aplicada para experimento em LPS, de tal modo que, será possível fazer inferência de LPS na ontologia e extrair informações. Assim, a OntoExper-SPL se diferencia das outras propostas por ser puramente construída usando o padrão OWL.
 
-Até o momento não há trabalhos de sistema de recomendações para voltados a experimentos em ES, e nem em LPS. Outros trabalhos relacionados mais próximos já foram apresentado na Seção \ref{sec:qualidade_de_experimento_em_engenharia_de_software} e não são objetos de evolução de experimento gerais em ES.
-
+% Até o momento não há trabalhos de sistema de recomendações para voltados a experimentos em ES, e nem em LPS. Outros trabalhos relacionados mais próximos já foram apresentado na Seção \ref{sec:qualidade_de_experimento_em_engenharia_de_software} e não são objetos de evolução de experimento gerais em ES.
 
 \section{Considerações Finais}
 \label{sec:fundamentos_concidaracoes_finais}
 
-Este capítulo apresentou os conceitos essenciais sobre a abordagem de LPS como variabilidades e variantes, apresentando o \textit{MobileMedia} como exemplo para melhor entendimento dos conceitos, bem como o framework de engenharia de LPS proposto por /cite{Pohl et al. (2005)}?. 
+Este capítulo apresentou os conceitos essenciais sobre a abordagem de LPS como variabilidades e variantes, apresentando o \textit{MobileMedia} como exemplo para melhor entendimento dos conceitos, bem como o framework de engenharia de LPS proposto por \citet{pohl2005software}. 
 
 Em relação à experimentação em ES, foi apresentado os principais elementos como as variáveis dependentes e independentes, as atividades de um processo experimental como definição, planejamento, operação, análise e interpretação, apresentação e empacotamento. Sobre qualidade de experimentos em ES foi introduzido conceitos preliminares sobre a qualidade de experimentos como viés, validade interna e validade externa e também algumas abordagens para aplicar uma avaliação de qualidade sobre os experimentos em ES. 
 
-Quando foi tratado de ontologia, foi descrito a definição universal de ontologia e a definição voltada para computação. Nessa temos que a ontologia é uma modelagem formal de dados para representação de um determinado domínio, para isso, existe a \textit{TBox} para representar a lógica descritiva e a \textit{ABox} para representar os indivíduos pertencentes a ontologia. Assim como em LPS foi apresentado um exemplo (Destino de Viagem) para facilitar o entendimento dos conceitos abordados. 
+Quando foi tratado de ontologia, foi descrito a definição universal de ontologia e a definição voltada para computação, mais especificamente para ES. Nessa temos que a ontologia é uma modelagem formal de conhecimento para representação de um determinado domínio, para isso, existe a \textit{TBox} para representar a lógica descritiva e a \textit{ABox} para representar os indivíduos pertencentes a ontologia. Assim como em LPS foi apresentado um exemplo (Destino de Viagem) para facilitar o entendimento dos conceitos abordados. 
 
 Por fim, temos os trabalhos relacionados traçando um paralelo de modelagem para representação do domínio de LPS eom este trabalho.
 
-No próximo capítulo, será apresentado uma ontologia para experimento em LPS, a SMartOntology.
-
+No próximo capítulo, será apresentado uma ontologia para experimento em LPS, a OntoExper-SPL.

@@ -1,4 +1,4 @@
-\chapter{Uma Ontologia para Experimentos em LPS - OntoExper-LPS}
+\chapter{Uma Ontologia para Experimentos em LPS - OntoExper-SPL}
 \pagestyle{plain}
 \label{sec:ontologia}
 
@@ -6,13 +6,24 @@
 \section{Considerações Iniciais}
 \label{sec:concidaracoes_iniciais}
 
-Este capítulo apresenta a elaboração da proposta de ontologia OntoExper-LPS, sua concepção, a construção do projeto, exemplos de aplicação, uma breve avaliação empírica e considerações finais. Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:concepcao} apresenta o processo de concepção do modelo seguindo a tipologia de \cite{almeida2003visao} bem como a elaboração de um grafo como modelagem inicial da ontologia, seguindo como base um modelo conceitual clusterizado sobre elementos experimentais de ES em LPS; na Seção \ref{sec:projeto} foi desenvolvido o projeto da OntoExper-LPS para se obter modelo ontológico, foi utilizado como tecnologia base OWL (\textit{Ontology Web Language}) juntamente com a Ferramenta Protégé, o resultado final foi um artefato do tipo OWL contendo toda modelagem de classes, subclasses, propriedades de objeto e propriedades dos dados, além da modelagem, foi criado nesta seção, um programa automatizado para povoar a ontologia utilizando os metadados levantados pelo GReater, este programa conta com a utilização da linguagem de programação Python e a biblioteca OwlReady2; na Seção \ref{sec:exemplo} foi elaborado uma consulta SPARQL para demonstrar como interagir com a ontologia e uma breve explicação deste procedimento; na Seção \ref{sec:avaliacao_empirica} foi realizado uma avaliação empírica do modelo, por meio da ferramenta OOPS! que avalia pontos de falha do modelo, nesta seção discutimos como estes ponto de falham impacta no modelo proposto por este trabalho; e na Seção \ref{sec:fundamentos_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo..
+Este capítulo apresenta a elaboração da proposta de ontologia OntoExper-SPL, sua concepção, a construção do projeto, exemplos de aplicação, uma breve avaliação empírica e considerações finais. Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:concepcao} apresenta o processo de concepção do modelo seguindo a tipologia de \cite{almeida2003visao} bem como a elaboração de um grafo como modelagem inicial da ontologia, seguindo como base um modelo conceitual clusterizado sobre elementos experimentais de ES em LPS; na Seção \ref{sec:projeto} foi desenvolvido o projeto da OntoExper-SPL para se obter modelo ontológico, foi utilizado como tecnologia base OWL (\textit{Ontology Web Language}) juntamente com a Ferramenta Protégé, o resultado final foi um artefato do tipo OWL contendo toda modelagem de classes, subclasses, propriedades de objeto e propriedades dos dados, além da modelagem, foi criado nesta seção, um programa automatizado para povoar a ontologia utilizando os metadados levantados pelo GReater, este programa conta com a utilização da linguagem de programação Python e a biblioteca OwlReady2; na Seção \ref{sec:exemplo} foi elaborado uma consulta SPARQL para demonstrar como interagir com a ontologia e uma breve explicação deste procedimento; na Seção \ref{sec:avaliacao_empirica} foi realizado uma avaliação empírica do modelo, por meio da ferramenta OOPS! que avalia pontos de falha do modelo, nesta seção discutimos como estes ponto de falham impacta no modelo proposto por este trabalho; e na Seção \ref{sec:fundamentos_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo..
 
 
 \section{Concepção}
 \label{sec:concepcao}
 
-Com base na tipologia proposta por \cite{almeida2003visao} definimos o tipo da ontologia proposto neste trabalho, descrito na Tabela \ref{tab:tipo-modelo-ontologia}. Todas as tipologias para ontologias podem ser encontradas no Apêndice \ref{apendice:a-tipologia}
+A metodologia aplicada na contrução desta proposta, foi a \textbf{Metodologia MFPFO}, descrita no Apêndice \ref{apendice:a-metodologia-mfpfo}. As etapas de construção desse método são:
+
+\begin{enumerate}
+	\item Construção de uma taxonomia da família de produtos;
+	\item Extração de entidades;
+	\item Identificação do conceito e geração da unidade facetada;
+	\item Anotação semântica e modelagem faceta;
+	\item Construção de uma ontologia de família de produtos multi-facetada e anotada semanticamente;
+	\item Avaliação e validação da ontologia.
+\end{enumerate}
+
+Com base nas tipologias proposta por \cite{almeida2003visao} definimos o tipo da ontologia proposta neste trabalho, descrito na Tabela \ref{tab:tipo-modelo-ontologia}. Todas as tipologias para ontologias podem ser encontradas no Apêndice \ref{apendice:a-tipologia}
 
 Ou seja, podemos tipificar o modelo proposto como; \textbf{quanto à função:} é uma ontologia de domínio, \textbf{quanto ao grau de formalismo:} é uma ontologia semi formal, \textbf{quanto à aplicação:} é uma ontologia de especificação, \textbf{quanto à estrutura:} é uma ontologia de domínio e \textbf{quanto ao conteúdo:} é tanto uma ontologia para modelagem de conhecimento quanto para aplicação de domínio.
 
@@ -48,7 +59,7 @@ Também foi aplicado o seguinte processo de elaboração da ontologia, seguindo os 
 	\vspace*{\fill}
 \end{landscape}
 
-O primeiro passo foi desenvolver um grafo como modelo inicial da ontologia OntoExper-LPS, o objetivo principal foi de externalizar idéias iniciais do modelo e visualizar hierarquias e relacionamentos entre os termos inicialmente propostos.
+O primeiro passo foi desenvolver um grafo como modelo inicial da ontologia OntoExper-SPL, o objetivo principal foi de externalizar idéias iniciais do modelo e visualizar hierarquias e relacionamentos entre os termos inicialmente propostos.
 
 \begin{figure}[]
 	\centering 
@@ -213,7 +224,7 @@ Definimos a criação da ontologia usando a tecnologia OWL, foram construídas as c
 
 A ferramenta Protégé é um ambiente de desenvolvimento voltado para criação de ontologias. Ela dispõe de uma interface gráfica para edição de ontologias e uma arquitetura para a criação de ferramentas baseadas em conhecimento. Pode ser usada tanto por, desenvolvedores de sistema, como por especialistas em domínio, para criar bases de conhecimento, permitindo representar facilmente o conhecimento de uma área. Este editor é capaz de tratar classes, com sua definição e exemplos, simultaneamente propriedades de objetos e de dados \cite{DBLP:journals/aimatters/Musen15}.
 
-% O padrão OWL foi usado no OntoExper-LPS para definir todos os elementos, classes, propriedades de objetos e dados.
+% O padrão OWL foi usado no OntoExper-SPL para definir todos os elementos, classes, propriedades de objetos e dados.
 
 Fazendo uma analogia ao diagrama de classe, no Protégé, as classes, os atributos de classes e seus relacionamentos estão em um contexto de entidades. As classes e hierarquias são definidos na aba \textbf{Classes}, os relacionamentos são definidos na aba \textbf{Propriedades de Objetos} e os atributos são definidos na aba \textbf{Propriedade dos Dados}.
 
@@ -303,7 +314,7 @@ Outros dados: \textit{Acknowledgements Section (Sponsors, participants, and cont
 
 \subsubsection{Manipulação dos Dados}
 
-Para inserir os indivíduos na OntoExper-LPS, foi preciso manipular os dados da planilha com as seguintes operações.
+Para inserir os indivíduos na OntoExper-SPL, foi preciso manipular os dados da planilha com as seguintes operações.
 
 \textbf{Primeira operação:} separação \textit{(split)} de dados de uma única coluna para duas propriedades de dados da ontologia. Este caso ocorreu para os seguintes dados, as propriedades e prefixadas com "\_" foram tratadas no próximo passo:
 
@@ -427,7 +438,7 @@ SELECT ?template (count(?template) as ?count)
 GROUP BY ?template
 \end{lstlisting}
 
-A consulta SPARQL é apresentada pela Listagem \ref{lst:consuta-sparql-exemplo} onde são definidos quais prefixos RDF será usada, bem como a OntoExper-LPS. A primeira linha realiza contagem do termo \textit{template}. O bloco \textit{WHERE} aplica a restrição da consulta, nesta restrição só buscamos elementos RDF do tipo \textit{Documentation} e que possuem a propriedade \textit{template}. Por fim a cláusula \textit{GROUP BY} realiza o agrupamento da restrição, assim podendo executar a operação \textit{count} da primeira linha.
+A consulta SPARQL é apresentada pela Listagem \ref{lst:consuta-sparql-exemplo} onde são definidos quais prefixos RDF será usada, bem como a OntoExper-SPL. A primeira linha realiza contagem do termo \textit{template}. O bloco \textit{WHERE} aplica a restrição da consulta, nesta restrição só buscamos elementos RDF do tipo \textit{Documentation} e que possuem a propriedade \textit{template}. Por fim a cláusula \textit{GROUP BY} realiza o agrupamento da restrição, assim podendo executar a operação \textit{count} da primeira linha.
 
 Este exemplo percorre uma classes (\textit{Documentation}) das 24 classes existentes no modelo, uma propriedades de dados (\textit{template}) de 87 propriedades de dados do modelo proposto. O cálculo da descrito em \ref{eq:percent_uso_ontologia}, estima que neste exemplo estamos usando 0,0004\% da capacidade de resposta que o modelo possa responder.
 
@@ -438,7 +449,7 @@ Este exemplo percorre uma classes (\textit{Documentation}) das 24 classes existe
 
 %****CÁLCULO DO USO ESTIMADO DA ONTOLOGIA*** POSSIBILIDADES DE CAMINHOS ENTRE CLASSES E PROPRIEDADES.
 
-Este simples exemplo de consulta apresenta como podemos criar mecanismos de inferência no modelo de ontologia proposto neste trabalho. Dessa forma, foi possível validar empiricamente que é possível extrair informações sobre experimentos em SPL usando a OntoExper-LPS.
+Este simples exemplo de consulta apresenta como podemos criar mecanismos de inferência no modelo de ontologia proposto neste trabalho. Dessa forma, foi possível validar empiricamente que é possível extrair informações sobre experimentos em SPL usando a OntoExper-SPL.
 
 
 \section{Avaliação Empírica}
@@ -541,13 +552,13 @@ Dada a análise da ferramenta OOPS! o próximo passo será corrigir as armadilhas a
 \label{sec:ontologia_concidaracoes_finais}
 
 
-Este capítulo apresentou a elaboração da proposta de ontologia OntoExper-LPS. foram discutidas quatro partes importantes neste capítulo, (i) concepção do modelo da OntoExper-LPS, (ii) construção do modelo e povoamento da OntoExper-LPS, (iii) um exemplo de inferência sobre a ontologia com SPARQL e (iv) uma avaliação empírica apontando 41 pontos de possíveis falhas na OntoExper-LPS.
+Este capítulo apresentou a elaboração da proposta de ontologia OntoExper-SPL. foram discutidas quatro partes importantes neste capítulo, (i) concepção do modelo da OntoExper-SPL, (ii) construção do modelo e povoamento da OntoExper-SPL, (iii) um exemplo de inferência sobre a ontologia com SPARQL e (iv) uma avaliação empírica apontando 41 pontos de possíveis falhas na OntoExper-SPL.
 
 Em relação à concepção do modelo, foi apresentado uma tipologia na qual se descreve como uma ontologia de domínio semi-formal, uma ontologia de especificação que serve tanto para modelagem do conhecimento como para aplicação de domínio. Para concepção do modelo, também foi elaborado um modelo conceitual clusterizado sobre os metadados, bem como um diagrama de classe, que serviram de apoio para elaboração do modelo.
 
 Para construção do modelo, além do modelo conceitual e do diagrama de classe, foi utilizado a tecnologia OWL e a ferramenta Protégé como instrumentos efetivos de apoio, por meio deste, foi possível entregar um artefato do tipo OWL contendo toda modelagem. Ainda nessa seção foi elaborado um programa automatizada que, utilizando os metadados pré definidos, popula o modelo proposto como indivíduos da ontologia, este programa também é armazenado como um artefato resultado deste trabalho de mestrado.
 
-Na seção posterior, foi tratado um exemplo de inferência sobre a OntoExper-LPS. Neste exemplo, usando a tecnologia SPARQL, foi possível consultar do modelo, indivíduos com determinados critérios, provando que a realização de inferência no modelo funciona.
+Na seção posterior, foi tratado um exemplo de inferência sobre a OntoExper-SPL. Neste exemplo, usando a tecnologia SPARQL, foi possível consultar do modelo, indivíduos com determinados critérios, provando que a realização de inferência no modelo funciona.
 
 Por fim, temos uma breve avaliação empírica do modelo proposto, onde foi aplicado um ferramenta (OOPS!) que avalia 41 pontos de possíveis pontos falhas na ontologia, os pontos de falhas relatado pela ferramenta, serão tratados na seção \ref{sec:propostas_de_melhorias}.
 
