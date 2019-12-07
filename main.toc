@@ -68,7 +68,7 @@
 \contentsline {subsection}{\numberline {5.4.2}Fase 2: Carregamento da OntoExper-SPL no SR}{97}{subsection.5.4.2}
 \contentsline {subsection}{\numberline {5.4.3}Fase 3: \textit {Ratings} dos Usu\'arios no SR}{99}{subsection.5.4.3}
 \contentsline {subsection}{\numberline {5.4.4}Fase 4: Modelagem de Recomenda\c c\~ao, Um Algoritmo para Filtragem Colaborativa}{100}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Banco de Dados}{102}{section.5.5}
+\contentsline {section}{\numberline {5.5}Banco de Dados}{103}{section.5.5}
 \contentsline {section}{\numberline {5.6}Ambiente de Desenvolvimento}{104}{section.5.6}
 \contentsline {section}{\numberline {5.7}Empacotamento e Compartilhamento}{104}{section.5.7}
 \contentsline {section}{\numberline {5.8}Considera\c c\~oes Finais}{104}{section.5.8}

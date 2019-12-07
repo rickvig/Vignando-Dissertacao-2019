@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  7 DEC 2019 04:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  7 DEC 2019 05:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -526,11 +526,7 @@ LaTeX Warning: Label `sec:concidaracoes_iniciais' multiply defined.
 
 LaTeX Warning: Label `sec:escala_likert' multiply defined.
 
-) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_recsys.aux
-
-LaTeX Warning: Label `sec:recsys_concidaracoes_finais' multiply defined.
-
-) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.aux
+) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_recsys.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_b.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_c.aux) (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.aux
 
 LaTeX Warning: Label `fig:frequencia-likert' multiply defined.
 
@@ -753,7 +749,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
-<figuras/metodologia.pdf, id=661, 585.14606pt x 154.6578pt>
+<figuras/metodologia.pdf, id=668, 585.14606pt x 154.6578pt>
 File: figuras/metodologia.pdf Graphic file (type pdf)
 <use figuras/metodologia.pdf>
 Package pdftex.def Info: figuras/metodologia.pdf  used on input line 67.
@@ -771,7 +767,7 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<figuras/exemplo_lps_pt.png, id=715, 1406.3742pt x 685.6014pt>
+<figuras/exemplo_lps_pt.png, id=722, 1406.3742pt x 685.6014pt>
 File: figuras/exemplo_lps_pt.png Graphic file (type png)
 <use figuras/exemplo_lps_pt.png>
 Package pdftex.def Info: figuras/exemplo_lps_pt.png  used on input line 35.
@@ -782,37 +778,37 @@ Overfull \hbox (8.86082pt too wide) in paragraph at lines 35--36
  []
 
 [21 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/exemplo_lps_pt.png>] [22]
-<figuras/framewor_lps.png, id=738, 1179.40625pt x 927.465pt>
+<figuras/framewor_lps.png, id=745, 1179.40625pt x 927.465pt>
 File: figuras/framewor_lps.png Graphic file (type png)
 <use figuras/framewor_lps.png>
 Package pdftex.def Info: figuras/framewor_lps.png  used on input line 73.
 (pdftex.def)             Requested size: 436.37349pt x 343.15668pt.
  [23 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/framewor_lps.png>]
-<figuras/experimento.png, id=750, 1108.14pt x 772.8875pt>
+<figuras/experimento.png, id=757, 1108.14pt x 772.8875pt>
 File: figuras/experimento.png Graphic file (type png)
 <use figuras/experimento.png>
 Package pdftex.def Info: figuras/experimento.png  used on input line 89.
 (pdftex.def)             Requested size: 410.00539pt x 285.9639pt.
  [24 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/experimento.png>]
-<figuras/proc_exp.png, id=770, 1124.2pt x 738.76pt>
+<figuras/proc_exp.png, id=777, 1124.2pt x 738.76pt>
 File: figuras/proc_exp.png Graphic file (type png)
 <use figuras/proc_exp.png>
 Package pdftex.def Info: figuras/proc_exp.png  used on input line 109.
 (pdftex.def)             Requested size: 415.9475pt x 273.33691pt.
  [25] [26 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/proc_exp.png>]
-<figuras/estrutura_ontologia.png, id=793, 357.4956pt x 296.7888pt>
+<figuras/estrutura_ontologia.png, id=800, 357.4956pt x 296.7888pt>
 File: figuras/estrutura_ontologia.png Graphic file (type png)
 <use figuras/estrutura_ontologia.png>
 Package pdftex.def Info: figuras/estrutura_ontologia.png  used on input line 186.
 (pdftex.def)             Requested size: 250.24521pt x 207.75073pt.
  [27] [28 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/estrutura_ontologia.png>]
-<figuras/exemplo_ontologia.png, id=813, 979.66pt x 683.55376pt>
+<figuras/exemplo_ontologia.png, id=820, 979.66pt x 683.55376pt>
 File: figuras/exemplo_ontologia.png Graphic file (type png)
 <use figuras/exemplo_ontologia.png>
 Package pdftex.def Info: figuras/exemplo_ontologia.png  used on input line 222.
 (pdftex.def)             Requested size: 440.84293pt x 307.59634pt.
  [29]
-<figuras/ontologia-para-ES.pdf, id=823, 688.49219pt x 286.1892pt>
+<figuras/ontologia-para-ES.pdf, id=830, 688.49219pt x 286.1892pt>
 File: figuras/ontologia-para-ES.pdf Graphic file (type pdf)
 <use figuras/ontologia-para-ES.pdf>
 Package pdftex.def Info: figuras/ontologia-para-ES.pdf  used on input line 239.
@@ -965,7 +961,7 @@ Cap\'{\i }tulo 3.
 ] [37] [38] [39
 
 ]
-<figuras/grafo-inicial.pdf, id=968, 789.91106pt x 990.8217pt>
+<figuras/grafo-inicial.pdf, id=975, 789.91106pt x 990.8217pt>
 File: figuras/grafo-inicial.pdf Graphic file (type pdf)
 <use figuras/grafo-inicial.pdf>
 Package pdftex.def Info: figuras/grafo-inicial.pdf  used on input line 71.
@@ -976,7 +972,7 @@ Package pdftex.def Info: figuras/grafo-inicial.pdf  used on input line 71.
 
 pdfTeX warning: pdflatex (file /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/grafo-inicial.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
-<figuras/modelo-conceitual-clusterizado.pdf, id=1012, 845.07718pt x 597.19106pt>
+<figuras/modelo-conceitual-clusterizado.pdf, id=1019, 845.07718pt x 597.19106pt>
 File: figuras/modelo-conceitual-clusterizado.pdf Graphic file (type pdf)
 <use figuras/modelo-conceitual-clusterizado.pdf>
 Package pdftex.def Info: figuras/modelo-conceitual-clusterizado.pdf  used on input line 190.
@@ -989,7 +985,7 @@ pdfTeX warning: pdflatex (file /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vign
 >] [46
 
 ]
-<figuras/class-diagram-ontology.png, id=1033, 2086.79625pt x 1045.9075pt>
+<figuras/class-diagram-ontology.png, id=1040, 2086.79625pt x 1045.9075pt>
 File: figuras/class-diagram-ontology.png Graphic file (type png)
 <use figuras/class-diagram-ontology.png>
 Package pdftex.def Info: figuras/class-diagram-ontology.png  used on input line 208.
@@ -999,12 +995,12 @@ Package pdftex.def Info: figuras/class-diagram-ontology.png  used on input line 
  </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/class-diagram-ontology.png (PNG copy)>] [48
 
 ]
-<figuras/entidades-protege.png, id=1049, 905.3825pt x 810.02625pt>
+<figuras/entidades-protege.png, id=1056, 905.3825pt x 810.02625pt>
 File: figuras/entidades-protege.png Graphic file (type png)
 <use figuras/entidades-protege.png>
 Package pdftex.def Info: figuras/entidades-protege.png  used on input line 239.
 (pdftex.def)             Requested size: 452.69014pt x 405.01213pt.
-<figuras/entidades-protege-object-properties.png, id=1051, 920.43875pt x 841.1425pt>
+<figuras/entidades-protege-object-properties.png, id=1058, 920.43875pt x 841.1425pt>
 File: figuras/entidades-protege-object-properties.png Graphic file (type png)
 <use figuras/entidades-protege-object-properties.png>
 Package pdftex.def Info: figuras/entidades-protege-object-properties.png  used on input line 250.
@@ -1015,7 +1011,7 @@ Overfull \hbox (4.97414pt too wide) in paragraph at lines 250--251
  []
 
 [49 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege.png>] [50 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/entidades-protege-object-properties.png>]
-<figuras/entidades-protege-data-properties.png, id=1061, 920.43875pt x 841.1425pt>
+<figuras/entidades-protege-data-properties.png, id=1068, 920.43875pt x 841.1425pt>
 File: figuras/entidades-protege-data-properties.png Graphic file (type png)
 <use figuras/entidades-protege-data-properties.png>
 Package pdftex.def Info: figuras/entidades-protege-data-properties.png  used on input line 261.
@@ -1025,7 +1021,7 @@ Overfull \hbox (4.97414pt too wide) in paragraph at lines 261--262
  [][] 
  []
 
-<figuras/ontology-populate-valid-owl-2.pdf, id=1066, 594.72188pt x 707.64375pt>
+<figuras/ontology-populate-valid-owl-2.pdf, id=1073, 594.72188pt x 707.64375pt>
 File: figuras/ontology-populate-valid-owl-2.pdf Graphic file (type pdf)
 <use figuras/ontology-populate-valid-owl-2.pdf>
 Package pdftex.def Info: figuras/ontology-populate-valid-owl-2.pdf  used on input line 272.
@@ -1059,7 +1055,7 @@ Cap\'{\i }tulo 4.
 
 
 ] [68] [69] [70] [71] [72] [73]
-<figuras/frequencia-likert-2.pdf, id=1306, 216.24095pt x 469.47046pt>
+<figuras/frequencia-likert-2.pdf, id=1313, 216.24095pt x 469.47046pt>
 File: figuras/frequencia-likert-2.pdf Graphic file (type pdf)
 <use figuras/frequencia-likert-2.pdf>
 Package pdftex.def Info: figuras/frequencia-likert-2.pdf  used on input line 199.
@@ -1074,13 +1070,13 @@ Overfull \hbox (14.22519pt too wide) in paragraph at lines 199--200
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!htb') on input line 210.
 
-<figuras/curva-normal.png, id=1343, 435.6275pt x 304.13625pt>
+<figuras/curva-normal.png, id=1350, 435.6275pt x 304.13625pt>
 File: figuras/curva-normal.png Graphic file (type png)
 <use figuras/curva-normal.png>
 Package pdftex.def Info: figuras/curva-normal.png  used on input line 241.
 (pdftex.def)             Requested size: 348.50247pt x 243.30933pt.
 [75] [76 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/curva-normal.png>]
-<figuras/correlacao-criterios.png, id=1360, 524.96124pt x 431.6125pt>
+<figuras/correlacao-criterios.png, id=1367, 524.96124pt x 431.6125pt>
 File: figuras/correlacao-criterios.png Graphic file (type png)
 <use figuras/correlacao-criterios.png>
 Package pdftex.def Info: figuras/correlacao-criterios.png  used on input line 298.
@@ -1101,60 +1097,74 @@ Cap\'{\i }tulo 5.
 
 ]
 \c@mydef=\count171
- [89] [90]
-<figuras/rsse.png, id=1472, 833.1125pt x 507.8975pt>
+ [89]
+<figuras/filtragem-colaborativa.pdf, id=1466, 477.70468pt x 196.8153pt>
+File: figuras/filtragem-colaborativa.pdf Graphic file (type pdf)
+<use figuras/filtragem-colaborativa.pdf>
+Package pdftex.def Info: figuras/filtragem-colaborativa.pdf  used on input line 48.
+(pdftex.def)             Requested size: 429.93024pt x 177.13213pt.
+ [90 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/filtragem-colaborativa.pdf
+
+pdfTeX warning: pdflatex (file /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/filtragem-colaborativa.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
+<figuras/rsse.png, id=1510, 833.1125pt x 507.8975pt>
 File: figuras/rsse.png Graphic file (type png)
 <use figuras/rsse.png>
-Package pdftex.def Info: figuras/rsse.png  used on input line 74.
+Package pdftex.def Info: figuras/rsse.png  used on input line 79.
 (pdftex.def)             Requested size: 416.55524pt x 253.94814pt.
- [91 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png>] [92]
+ [91] [92 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rsse.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 102.
+               Default added (so using `!htb') on input line 107.
 
 [93
 
 ]
-<figuras/RSSE-overview.png, id=1500, 869.2475pt x 351.3125pt>
+<figuras/RSSE-overview.png, id=1539, 869.2475pt x 351.3125pt>
 File: figuras/RSSE-overview.png Graphic file (type png)
 <use figuras/RSSE-overview.png>
-Package pdftex.def Info: figuras/RSSE-overview.png  used on input line 136.
+Package pdftex.def Info: figuras/RSSE-overview.png  used on input line 141.
 (pdftex.def)             Requested size: 434.62268pt x 175.6558pt.
  [94
 
  </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/RSSE-overview.png>] [95]
-<figuras/dir-recsys-onto.png, id=1512, 241.65282pt x 217.5628pt>
+<figuras/dir-recsys-onto.png, id=1555, 241.65282pt x 217.5628pt>
 File: figuras/dir-recsys-onto.png Graphic file (type png)
 <use figuras/dir-recsys-onto.png>
-Package pdftex.def Info: figuras/dir-recsys-onto.png  used on input line 189.
+Package pdftex.def Info: figuras/dir-recsys-onto.png  used on input line 192.
 (pdftex.def)             Requested size: 241.65222pt x 217.56227pt.
  [96 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/dir-recsys-onto.png (PNG copy)>] [97]
-<figuras/tela-recsys-onto.png, id=1530, 1240.635pt x 807.015pt>
+<figuras/tela-recsys-onto.png, id=1573, 1240.635pt x 807.015pt>
 File: figuras/tela-recsys-onto.png Graphic file (type png)
 <use figuras/tela-recsys-onto.png>
-Package pdftex.def Info: figuras/tela-recsys-onto.png  used on input line 252.
+Package pdftex.def Info: figuras/tela-recsys-onto.png  used on input line 255.
 (pdftex.def)             Requested size: 434.22876pt x 282.45947pt.
  [98] [99 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/tela-recsys-onto.png>]
-<figuras/rating-recsys-onto.png, id=1560, 863.47594pt x 446.41782pt>
+<figuras/rating-recsys-onto.png, id=1603, 863.47594pt x 446.41782pt>
 File: figuras/rating-recsys-onto.png Graphic file (type png)
 <use figuras/rating-recsys-onto.png>
-Package pdftex.def Info: figuras/rating-recsys-onto.png  used on input line 285.
+Package pdftex.def Info: figuras/rating-recsys-onto.png  used on input line 288.
 (pdftex.def)             Requested size: 431.73691pt x 223.20836pt.
  [100 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/rating-recsys-onto.png (PNG copy)>]
 
-LaTeX Warning: Reference `' on page 101 undefined on input line 316.
+LaTeX Warning: Reference `' on page 101 undefined on input line 319.
 
 [101]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 325.
+               Default added (so using `!htb') on input line 328.
 
 [102]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!htb') on input line 369.
+               Default added (so using `!htb') on input line 372.
 
-[103] [104]) [105]
+[103]
+Overfull \hbox (14.715pt too wide) in paragraph at lines 401--402
+\OT1/cmr/m/n/12 Os ar-te-fa-tos uti-li-zado para o de-sen-vol-vi-mento do SR est~ao dis-pon^^S^^Pveis em: https://doi.org/...,
+ []
+
+[104]) [105]
 \openout2 = `texto/_conclusao.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/_conclusao.tex
@@ -1171,12 +1181,12 @@ Underfull \hbox (badness 1675) in paragraph at lines 166--170
 []\OT1/cmr/m/sc/12 Gruber, T.   \OT1/cmr/m/n/12 What is an on-to-logy.   \OT1/cmr/m/it/12 WWW Site http://www-ksl. stan-ford.
  []
 
-[110] [111]
-Underfull \hbox (badness 6428) in paragraph at lines 400--405
+[110] [111] [112]
+Underfull \hbox (badness 6428) in paragraph at lines 410--415
 []\OT1/cmr/m/sc/12 Poveda-Villal[]on, M.; G[]omez-P[]erez, A.; Su[]arez-Figueroa, M. C.
  []
 
-[112] [113]) [114]
+[113]) [114]
 \openout2 = `texto/apendice_a.aux'.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_a.tex
@@ -3142,17 +3152,17 @@ Ap\^endice C.
 
  (/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/texto/apendice_d.tex
 Ap\^endice D.
-<figuras/avaliacao-google-forms-page1.pdf, id=1818, 597.50786pt x 845.04686pt>
+<figuras/avaliacao-google-forms-page1.pdf, id=1871, 597.50786pt x 845.04686pt>
 File: figuras/avaliacao-google-forms-page1.pdf Graphic file (type pdf)
 <use figuras/avaliacao-google-forms-page1.pdf>
 Package pdftex.def Info: figuras/avaliacao-google-forms-page1.pdf  used on input line 8.
 (pdftex.def)             Requested size: 268.87605pt x 380.26758pt.
-<figuras/avaliacao-google-forms-page2.pdf, id=1819, 597.50786pt x 845.04686pt>
+<figuras/avaliacao-google-forms-page2.pdf, id=1872, 597.50786pt x 845.04686pt>
 File: figuras/avaliacao-google-forms-page2.pdf Graphic file (type pdf)
 <use figuras/avaliacao-google-forms-page2.pdf>
 Package pdftex.def Info: figuras/avaliacao-google-forms-page2.pdf  used on input line 14.
 (pdftex.def)             Requested size: 418.25264pt x 591.52878pt.
-<figuras/avaliacao-google-forms-page3.pdf, id=1820, 597.50786pt x 845.04686pt>
+<figuras/avaliacao-google-forms-page3.pdf, id=1873, 597.50786pt x 845.04686pt>
 File: figuras/avaliacao-google-forms-page3.pdf Graphic file (type pdf)
 <use figuras/avaliacao-google-forms-page3.pdf>
 Package pdftex.def Info: figuras/avaliacao-google-forms-page3.pdf  used on input line 20.
@@ -3162,31 +3172,31 @@ Package pdftex.def Info: figuras/avaliacao-google-forms-page3.pdf  used on input
 
 
  </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/avaliacao-google-forms-page1.pdf>]
-<figuras/avaliacao-google-forms-page4.pdf, id=1853, 597.50786pt x 845.04686pt>
+<figuras/avaliacao-google-forms-page4.pdf, id=1907, 597.50786pt x 845.04686pt>
 File: figuras/avaliacao-google-forms-page4.pdf Graphic file (type pdf)
 <use figuras/avaliacao-google-forms-page4.pdf>
 Package pdftex.def Info: figuras/avaliacao-google-forms-page4.pdf  used on input line 26.
 (pdftex.def)             Requested size: 418.25264pt x 591.52878pt.
  [140 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/avaliacao-google-forms-page2.pdf>]
-<figuras/avaliacao-google-forms-page5.pdf, id=1874, 597.50786pt x 845.04686pt>
+<figuras/avaliacao-google-forms-page5.pdf, id=1928, 597.50786pt x 845.04686pt>
 File: figuras/avaliacao-google-forms-page5.pdf Graphic file (type pdf)
 <use figuras/avaliacao-google-forms-page5.pdf>
 Package pdftex.def Info: figuras/avaliacao-google-forms-page5.pdf  used on input line 32.
 (pdftex.def)             Requested size: 418.25264pt x 591.52878pt.
  [141 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/avaliacao-google-forms-page3.pdf>]
-<figuras/avaliacao-google-forms-page6.pdf, id=1902, 597.50786pt x 845.04686pt>
+<figuras/avaliacao-google-forms-page6.pdf, id=1955, 597.50786pt x 845.04686pt>
 File: figuras/avaliacao-google-forms-page6.pdf Graphic file (type pdf)
 <use figuras/avaliacao-google-forms-page6.pdf>
 Package pdftex.def Info: figuras/avaliacao-google-forms-page6.pdf  used on input line 38.
 (pdftex.def)             Requested size: 418.25264pt x 591.52878pt.
  [142 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/avaliacao-google-forms-page4.pdf>]
-<figuras/avaliacao-google-forms-page7.pdf, id=1915, 597.50786pt x 845.04686pt>
+<figuras/avaliacao-google-forms-page7.pdf, id=1968, 597.50786pt x 845.04686pt>
 File: figuras/avaliacao-google-forms-page7.pdf Graphic file (type pdf)
 <use figuras/avaliacao-google-forms-page7.pdf>
 Package pdftex.def Info: figuras/avaliacao-google-forms-page7.pdf  used on input line 44.
 (pdftex.def)             Requested size: 418.25264pt x 591.52878pt.
  [143 </home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/figuras/avaliacao-google-forms-page5.pdf>]
-<figuras/avaliacao-google-forms-page8.pdf, id=1940, 597.50786pt x 845.04686pt>
+<figuras/avaliacao-google-forms-page8.pdf, id=1993, 597.50786pt x 845.04686pt>
 File: figuras/avaliacao-google-forms-page8.pdf Graphic file (type pdf)
 <use figuras/avaliacao-google-forms-page8.pdf>
 Package pdftex.def Info: figuras/avaliacao-google-forms-page8.pdf  used on input line 50.
@@ -3225,13 +3235,25 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 415.
 ### semi simple group (level 1) entered at line 359 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13567 strings out of 492982
- 204609 string characters out of 6134896
- 351935 words of memory out of 5000000
- 16224 multiletter control sequences out of 15000+600000
+ 13585 strings out of 492982
+ 205065 string characters out of 6134896
+ 352326 words of memory out of 5000000
+ 16233 multiletter control sequences out of 15000+600000
  20995 words of font info for 79 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  40i,19n,76p,3015b,2143s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
@@ -3247,10 +3269,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.pdf (148 pages, 4348371 bytes).
+Output written on /home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Vignando-Dissertacao-2019/main.pdf (148 pages, 4418625 bytes).
 PDF statistics:
- 2190 PDF objects out of 2487 (max. 8388607)
- 1877 compressed objects within 19 object streams
- 488 named destinations out of 1000 (max. 500000)
- 844 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2245 PDF objects out of 2487 (max. 8388607)
+ 1920 compressed objects within 20 object streams
+ 496 named destinations out of 1000 (max. 500000)
+ 849 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{61}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -249,6 +249,16 @@
   \textsc{Loizides, F.; Schmidt, B.}, \bbleds{} \textit{Positioning and Power
   in Academic Publishing: Players, Agents and Agendas}, IOS Press, 2016,
   \bblpp{} 87 -- 90.
+\bibehook\relax
+
+\bibitem[{Krasner \bbletal{}(1988)Krasner, Pope
+  \bbletal{}}]{krasner1988description}
+
+\bibbhook\relax
+\textsc{Krasner, G.~E.; Pope, S.~T.; \bbletal{}}\ \ \  A description of the
+  model-view-controller user interface paradigm in the smalltalk-80 system.\ \
+  \ \textit{Journal of object oriented programming}, \bblvol{}~1, \bblno{}~3,
+  \bblpp{}~26--49, 1988.
 \bibehook\relax
 
 \bibitem[{Kwong \bbletal{}(1992)Kwong, Belliveau, Chesler, Goldberg, Weisskoff,

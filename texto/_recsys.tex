@@ -8,7 +8,7 @@
 
 Este capítulo apresenta um protótipo de Sistema de Recomendação (SR) para a realização de inferências no modelo de ontologia proposto neste trabalho de mestrado, a OntoExper-SPL. O protótipo serve como uma forma de demonstrar a importância do modelo ontológico e também como uma forma de avalia a viabilidade de SR para experimento de LPS.
 
-% , por meio de uma implementação de um sistema de recomendação (SR). Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:sistema_de_recmendacao} apresenta um breve contexto sobre SR e sua origem, seus principais modelos de implementação e como os SR são visto pela ES; na Seção \ref{sec:concepcao_recsys}apresenta como as consultas iniciais na OntoExper-SPL levou a implementação do SR e como ele encaixa como motor de inferência na OntoExper-SPL, bem como sua interação com o usuários; na Seção \ref{sec:projeto_recsys} apresenta as quatro fase de construção SR, (i) a \textbf{Fase 1} apresenta a criação do projeto de sistema web usando Django Framework e a implementação de um prototipação da tela de iteração do usuário com SR, (ii) a \textbf{Fase 2} apresenta como a OntoExper-SPL é carregada no SR e como foi implementado os mecanismos de consultas na OntoExper-SPL, a \textbf{Fase 3} apresenta implementação da avaliação dos usuários no SR e como esta é armazenado no SR, esta avaliação é denominada \textit{Ratings}, por fim a \textbf{Fase 4} apresenta com foi implementado do modelo de recomendação, na qual, foi usado  o conceito de filtragem colaborativa aplicando cálculo da distância Euclidiana, bem como também apresenta como foi implementação a questão da da partida fria do modelo de recomendação para novos usuários; na Seção \ref{sec:ambiente_de_desenvolvimento} apresenta quais foram as tecnologias e ferramentas usadas para o desenvolvimento do SR; e na Seção \ref{sec:recsys_concidaracoes_finais} são apresentadas as Considerações finais deste capítulo.
+% , por meio de uma implementação de um sistema de recomendação (SR). Dessa forma a estrutura deste capítulo fica, na Seção \ref{sec:sistema_de_recmendacao} apresenta um breve contexto sobre SR e sua origem, seus principais modelos de implementação e como os SR são visto pela ES; na Seção \ref{sec:concepcao_recsys}apresenta como as consultas iniciais na OntoExper-SPL levou a implementação do SR e como ele encaixa como motor de inferência na OntoExper-SPL, bem como sua interação com o usuários; na Seção \ref{sec:projeto_recsys} apresenta as quatro fase de construção SR, (i) a \textbf{Fase 1} apresenta a criação do projeto de sistema web usando Django Framework e a implementação de um prototipação da tela de iteração do usuário com SR, (ii) a \textbf{Fase 2} apresenta como a OntoExper-SPL é carregada no SR e como foi implementado os mecanismos de consultas na OntoExper-SPL, a \textbf{Fase 3} apresenta implementação da avaliação dos usuários no SR e como esta é armazenado no SR, esta avaliação é denominada \textit{Ratings}, por fim a \textbf{Fase 4} apresenta com foi implementado do modelo de recomendação, na qual, foi usado  o conceito de filtragem colaborativa aplicando cálculo da distância Euclidiana, bem como também apresenta como foi implementação a questão da da partida fria do modelo de recomendação para novos usuários; na Seção \ref{sec:ambiente_de_desenvolvimento} apresenta quais foram as tecnologias e ferramentas usadas para o desenvolvimento do SR;
 
 
 \section{Sistema de Recomendação}
@@ -41,9 +41,14 @@ Existem cinco abordagens mais usadas em sistemas de recomendação, Três considera
 \subsection{\textit{Collaborative Filtering}}
 \label{sec:collaborative_filtering}
 
-A Filtragem Colaborativa baseia-se na idéia de ``boca-a-boca'' em que a informação passada de pessoa a pessoa desempenha um papel importante ao tomar uma decisão. Abstraindo, as pessoas são substituídas pelos, chamados, vizinhos mais próximos (NN) que são usuários com um padrão de preferência ou comportamento semelhante ao usuário atual \cite{robillard2010recommendation}. A filtragem Colaborativa depende de dois tipos diferentes de dados: (1) um conjunto de usuários e (2) um conjunto de itens. A relação entre usuários e itens é expressada principalmente em termos de \textit{ratings} fornecidos pelos usuários e explorados em futuras sessões de recomendação para prever a classificação de um usuário \cite{robillard2010recommendation}.
+A Filtragem Colaborativa baseia-se na idéia de ``boca-a-boca'' em que a informação passada de pessoa a pessoa desempenha um papel importante ao tomar uma decisão. Abstraindo, as pessoas são substituídas pelos, chamados, vizinhos mais próximos (NN) que são usuários com um padrão de preferência ou comportamento semelhante ao usuário atual \cite{robillard2010recommendation}. A filtragem Colaborativa depende de dois tipos diferentes de dados: (1) um conjunto de usuários e (2) um conjunto de itens. A relação entre usuários e itens é expressada principalmente em termos de \textit{ratings} fornecidos pelos usuários e explorados em futuras sessões de recomendação para prever a classificação de um usuário \cite{robillard2010recommendation}. A \ref{fig:filtragem-colaborativa} apresenta o comportamento desse modelo.
 
-% TODO figurada Colab filter
+\begin{figure}[htb]
+	\centering 
+	\includegraphics[scale=.9]{filtragem-colaborativa.pdf}
+	\caption{Filtragem Colaborativa. Traduzido e Adaptado de \citet{robillard2010recommendation}}
+	\label{fig:filtragem-colaborativa}
+\end{figure}
 
 Dado que este trabalho trata o sistema de recomendação como uma forma de realização de inferência sobre a OntoExper-SPL, utilizou-se a abordagem Filtragem Colaborativa.
 
@@ -151,7 +156,7 @@ Posteriormente, definiu-se algumas tecnologias para o desenvolvimento do SR, seg
 \section{Projeto}
 \label{sec:projeto_recsys}
 
-Para o desenvolvimento do SR foi necessário encontrar tecnologias que atendessem os requisitos, tanto de SR como de ontologias. A linguagem de programação Python foi escolhida novamente por atender estes dois requisitos. Quanto a ontologia, Python já foi utilizada para manipulação da ontologia por meio da biblioteca OWLReady2. Quanto ao SR por possuir facilidade de implementação de algoritmos complexos e manipulação de dados com Pandas. Um viés para esta implementação foi o conhecimento do pesquisador em desenvolvimento web, isso motivou o uso do Framework Django para desenvolvimento web com Python. Dessa forma, toda \textit{stack} de desenvolvimento do SR foi baseada na linguagem Python.
+Para o desenvolvimento do SR foi necessário encontrar tecnologias que atendessem os requisitos, tanto de SR como de ontologias. A linguagem de programação Python foi escolhida novamente por atender estes dois requisitos. Quanto a ontologia, Python já foi utilizada para manipulação da ontologia por meio da biblioteca OWLReady2. Quanto ao SR por possuir facilidade de implementação de algoritmos complexos e manipulação de dados com Pandas. Um viés para esta implementação foi o conhecimento do pesquisador em desenvolvimento web, isso motivou o uso do Django Framework \footnote{https://djangoproject.com} para desenvolvimento web com Python. Dessa forma, toda \textit{stack} de desenvolvimento do SR foi baseada na linguagem Python.
 
 O desenvolvimento deste projeto foi dividido em quatro fases:
 
@@ -164,9 +169,7 @@ O desenvolvimento deste projeto foi dividido em quatro fases:
 
 \subsection{Fase 1: O Projeto de SR Usando Django Framework}
 
-Django Framework é um framework \textit{open source} para desenvolvimento de aplicações web para linguagem Python. Ele  implementa o modelo para desenvolvimento em camadas chamado MTV \textit{(Model, Template, View)}. Este conceito é semelhante a arquitetura MVC \textit{(Model, View, Controller)}, porém com outra nomenclatura. A seguir é descrita qual a responsabilidade de cada camada no Django:
-
-% TODO \cite{http://heim.ifi.uio.no/~trygver/1979/mvc-2/1979-12-MVC.pdf}
+Django Framework é um framework \textit{open source} para desenvolvimento de aplicações web para linguagem Python. Ele  implementa o modelo para desenvolvimento em camadas chamado MTV \textit{(Model, Template, View)}. Este conceito é semelhante a arquitetura MVC \textit{(Model, View, Controller)} \cite{krasner1988description}, porém com outra nomenclatura. A seguir é descrita qual a responsabilidade de cada camada no Django:
 
 \begin{itemize}
 	\item \textbf{A camada do modelo:} fornece uma camada de abstração para estruturar e manipular os dados da aplicação da web;
@@ -345,7 +348,7 @@ O modelo de recomendação usando foi a filtragem colaborativa com \textit{rating}
 \section{Banco de Dados}
 \label{sec:banco_dados}
 
-Para o banco de dado do SR foi utilizado o SGBD SQLite, ele foi utilizado por ser o banco de dados padrão para Django Framework, dessa forma não foi preciso realizar nenhuma outra configuração. O SQLite é um dos bancos de dados mais simples, todos os registros de metadados são armazenados em um único arquivo. 
+Para o banco de dado do SR foi utilizado o SGBD SQLite\footnote{https://www.sqlite.org/index.html}, ele foi utilizado por ser o banco de dados padrão para Django Framework, dessa forma não foi preciso realizar nenhuma outra configuração. O SQLite é um dos bancos de dados mais simples, todos os registros de metadados são armazenados em um único arquivo. 
 
 As entidades existentes no banco de dados, são:
 
@@ -385,27 +388,27 @@ As entidades com prefixo \textit{auth} e \textit{django} são geradas e mantidas 
 \section{Ambiente de Desenvolvimento}
 \label{sec:ambiente_de_desenvolvimento}
 
-% TODO referencias para tecnologias
-Para o desenvimento do SR foram necessárias algumas ferramentas de apoio, além do Django Framework e do SQLite já citado, foram utilizadas outras tecnologias como HTML CSS e JS, com o apoio dos \textit{frameworks} Bootstrap e jQuery.
+Para o desenvimento do SR foram necessárias algumas ferramentas de apoio, além do Django Framework e do SQLite já citado, foram utilizadas outras tecnologias como HTML CSS e JS, com o apoio dos \textit{frameworks} Bootstrap\footnote{https://getbootstrap.com/} e jQuery\footnote{https://jquery.com/}.
 
-Para ambiente de desenvolvimento de código fonte foi utilizado o editor de texto VSCode da Microsoft e a ferramenta Jupyter-Notebook e Jupyter-Lab, para visualização do SR o navegador Google Chrome e FireFox e para o banco de dados o DB Browser. Todas essas ferramentas são \textit{open source} e estão disponiveis para \textit{download} até a data de escrita deste trabalho.
+Para ambiente de desenvolvimento de código fonte foi utilizado o editor de texto VSCode\footnote{https://code.visualstudio.com/} da Microsoft e a ferramenta Jupyter-Notebook e Jupyter-Lab, para visualização do SR o navegador Google Chrome e FireFox e para o banco de dados o DB Browser\footnote{https://sqlitebrowser.org/}. Todas essas ferramentas são \textit{open source} e estão disponiveis para \textit{download} até a data de escrita deste trabalho.
 
 Foram escolhidas essas ferramentas, pois o pesquisador já possuía habilidades nelas e por possuir maturidade e reconhecimento na indústria de desenvolvimento de software.
 
 %TODO
 \section{Empacotamento e Compartilhamento}
-\label{sec:recsys_concidaracoes_finais}
-Os  documentos  disponibilizados  aos  participantes  e  resultados  deste  estudo  qualitativoest ?ao dispon ??veis em:  https://doi.org/..., visando dissemina ?c ?ao dos dados
+\label{sec:recsys_empacotamento}
+
+Os artefatos utilizado para o desenvolvimento do SR estão disponíveis em: https://doi.org/..., visando disseminação dos dados.
 
 
 \section{Considerações Finais}
-\label{sec:recsys_concidaracoes_finais}
+\label{sec:recsys_consideracoes_finais}
 
 Este capítulo apresentou um SR provando que é possível realizar inferências no modelo de ontologia proposto por este trabalho de mestrado, a OntoExper-SPL. Por meio das inferências implementadas no SR, foi possível implementar o modelo de recomendação \textit{collaborative filtering} e gerar recomendações para os usuários que interagirem com o SR.
 
 Inicialmente, a termo de contexto, foi apresentados os conceitos básico de sistemas de recomendação e uma breve descrição do modelo \textit{collaborative filtering}. Na sequência foi apresentado como os sistemas de recomendação são tratados na ES e alguns exemplos de aplicação.
 
-Foi apresentado na seção de concepção do SR, a modelagem inicial da aplicação, as principais tecnologias abordadas antes da fase de implementação, o ecossistema Python serviu como base para o desenvolvimen geral do SR, desde a inferências iniciais até a implementação de modelo de recomendação. Já na seção de projeto foi tratado especificamente de como as tecnologias e ferramentas auxiliaram em cada fase do projeto, que foram divididas em quatro fases, (i)criação do projeto de aplicação web usando Django Framework, (ii) carregamento da OntoExper-SPL no SR, (iii) \textit{ratings} dos usuários no SR e (iv) implementação do modelo de recomendação. O Django Framework se destaca pois ele foi a base de implementação da aplicação web, pois ele foi construído para esse propósito, implementando principalmente os conceitos de MVC. Posteriormente foi apresenta o banco de dados e sua principal tabela para SR, a tabela que armazena os \textit{ratings} do usuário. Por fim, foi apresentado o ambiente de desenvolvimento utilizado para elaborar do SR, a principal ferramente para este fim foi o editor de texto VSCode.
+Foi apresentado na seção de concepção do SR, a modelagem inicial da aplicação, as principais tecnologias abordadas antes da fase de implementação, o ecossistema Python serviu como base para o desenvolvimen geral do SR, desde a inferências iniciais até a implementação de modelo de recomendação. Já na seção de projeto foi tratado especificamente de como as tecnologias e ferramentas auxiliaram em cada fase do projeto, que foram divididas em quatro fases, (i) criação do projeto de aplicação web usando Django Framework, (ii) carregamento da OntoExper-SPL no SR, (iii) \textit{ratings} dos usuários no SR e (iv) implementação do modelo de recomendação. O Django Framework se destaca pois ele foi a base de implementação da aplicação web, pois ele foi construído para esse propósito, implementando principalmente os conceitos de MVC. Posteriormente foi apresenta o banco de dados e sua principal tabela para SR, a tabela que armazena os \textit{ratings} do usuário. Por fim, foi apresentado o ambiente de desenvolvimento utilizado para elaborar do SR, a principal ferramente para este fim foi o editor de texto VSCode.
 
 No próximo capítulo, será apresentado a conclusão final deste trabalho de mestrado.
 

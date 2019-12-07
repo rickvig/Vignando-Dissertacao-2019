@@ -22,11 +22,12 @@
 \contentsline {figure}{\numberline {Figura - 4.2}{\ignorespaces Histograma da Somat\'oria}}{76}{figure.4.2}
 \contentsline {figure}{\numberline {Figura - 4.3}{\ignorespaces Correla\c c\~ao dos crit\'erios de avalia\c c\~ao.}}{78}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 5.1}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{91}{figure.5.1}
-\contentsline {figure}{\numberline {Figura - 5.2}{\ignorespaces Modelagem geral do SR como prova de conceito para OntoExer-LPS}}{94}{figure.5.2}
-\contentsline {figure}{\numberline {Figura - 5.3}{\ignorespaces \'Arvore de diret\'orios da aplica\c c\~ao SR com Django Framework.}}{96}{figure.5.3}
-\contentsline {figure}{\numberline {Figura - 5.4}{\ignorespaces Tela do SR.}}{99}{figure.5.4}
-\contentsline {figure}{\numberline {Figura - 5.5}{\ignorespaces \textit {Rating} Expl\IeC {\'\i }cito no SR.}}{100}{figure.5.5}
+\contentsline {figure}{\numberline {Figura - 5.1}{\ignorespaces Filtragem Colaborativa. Traduzido e Adaptado de \citet {robillard2010recommendation}}}{90}{figure.5.1}
+\contentsline {figure}{\numberline {Figura - 5.2}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{92}{figure.5.2}
+\contentsline {figure}{\numberline {Figura - 5.3}{\ignorespaces Modelagem geral do SR como prova de conceito para OntoExer-LPS}}{94}{figure.5.3}
+\contentsline {figure}{\numberline {Figura - 5.4}{\ignorespaces \'Arvore de diret\'orios da aplica\c c\~ao SR com Django Framework.}}{96}{figure.5.4}
+\contentsline {figure}{\numberline {Figura - 5.5}{\ignorespaces Tela do SR.}}{99}{figure.5.5}
+\contentsline {figure}{\numberline {Figura - 5.6}{\ignorespaces \textit {Rating} Expl\IeC {\'\i }cito no SR.}}{100}{figure.5.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
