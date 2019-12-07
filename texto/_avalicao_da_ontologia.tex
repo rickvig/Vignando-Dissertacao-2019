@@ -1,16 +1,50 @@
-\chapter{Avaliação da OntoExer-LPS: Um estudo Quantitativo}
+\chapter{Avaliação Empírica da OntoExer-SPL}
 \pagestyle{plain}
 \label{sec:avaliacao}
 
 \section{Considerações Iniciais}
 \label{sec:concidaracoes_iniciais}
 
-Este capítulo apresenta um estudo quantitativo realizado para avaliar a OntoExer-LPS proposta no Capítulo 3, com base em um questionário contendo onze questões, oito com critérios de qualidade no estilo escala Likert /cite{Likert}, uma avaliação de frequência da escala Likert, teste estatístico e sua correlação entre os oito critérios.
+Este tópico apresenta um estudo empírico realizado para avaliar a OntoExer-SPL, com base em um questionário contendo onze questões, oito com critérios de qualidade no estilo escala Likert \cite{allen2007likert}, uma avaliação de frequência da escala Likert, teste estatístico e correlação entre os oito critérios.
 
-Os oito critérios de qualidade foram identificados e definidos na Parte I da tese \textit{Ontology Evaluation} de /cite{Denny Vrandecic}, são eles:
+\section{Definição do Estudo}
+\label{sec:definicao_do_estudo}
+
+O propósito principal deste estudo é caracterizar a OntoExer-SPL. Baseado no modelo \textit{Goal-Question-Metric} (GQM) \cite{Basili1988}, este estudo tem por objetivo:
+
+\textbf{Avaliar} a ontologia OntoExer-SPL
+
+\textbf{Com o propósito de} caracterizar a sua viabilidade
+
+\textbf{Referente à} critérios de avaliação definidos
+
+\textbf{Do ponto de vista de} especialistas em LPS e Ontologias
+
+\textbf{No contexto de} pesquisadores das seguintes instituições: Universidade Estadual de Londrina (UEL), Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo (ICMC-USP), Pontifícia Universidade Católica do Paraná (PUC-PR), Universidade Estadual de Maringá (UEM), Universidade Tecnológica Federal do Paraná (UTFPR), Universidade de São Paulo (USP), Sidia Instituto de Ciência e Tecnologia (SIDIA), Pontifícia Universidade Católica do Rio Grande do Sul (PUC-RS), Instituto Federal do Paraná (IFPR) e Universidade Paranaense (Unipar).
+
+
+\section{Planejamento do Estudo}
+\label{sec:planejamento_do_estudo}
+
+O planejamento do estudo é composto das seguintes etapas:
 
 \begin{itemize}
-    \item \textbf{Precisão:} um critério que determina se os axiomas da ontologia estão em conformidade com o conhecimento das partes interessadas sobre o domínio. Uma maior precisão vem das definições e descrições corretas de classes, propriedades e indivíduos. A correção neste caso pode significar conformidade com ?padrões-ouro? definidos, sejam outras fontes de dados, conceituações ou mesmo realidade. /cite(Ceusters e Smith (2006)), introduz uma abordagem para usar a realidade como referência, ou seja, os termos da ontologia captura as partes pretendidas da realidade. Os axiomas devem restringir as possíveis interpretações de uma ontologia para que os modelos resultantes sejam compatíveis com as conceituações dos usuários;
+    \item \textbf{Seleção dos Participantes:} os especialistas foram convidados de forma conveniente não-probabilística, sendo pesquisadores da área de LPS e Ontologia. Dos participantes, 4 são pós-doutor (23,5\%), 6 são doutores (35,3\%), 6 são mestres (35,3\%), 1 é mestrando (5,9\%).
+    
+    \item \textbf{Treinamento:} por causa do nível de conhecimento dos participantes não foi necessária a realização desta etapa.
+    
+    \item \textbf{Instrumentação:} todos os especialistas receberam os seguintes documentos: i) um documento contendo um breve descritivo da avaliação, com os link para ferramentas e tecnologias necessárias; (ii) uma cópia do Instrumento de Avaliação caracterizado por um questionário - Google Forms\footnote[1]{https://www.google.com/forms}; e (iii) uma cópia dos metadados da ontologia, compostos de: um arquivo do tipo OWL do modelo da OntoExer-SPL, um arquivo do tipo OWL da OntoExer-SPL povoada com 174 indivíduos, um arquivo do tipo planilha do Excel contendo os dados originais dos experimentos, a cópia da \ref{figure:class_diagram_ontology}, a cópia da \ref{figure:conceptual_model_clustering}, a cópia da \ref{figure:graph-all-class} e a cópia da \ref{figure:graph_ontology_model}.
+\end{itemize}
+
+A instrumentação fornecida aos especialistas foi suficiente para responder o questionário da avaliação.
+
+\subsubsection{Critérios de Avaliação}
+\label{sec:escala_likert}
+
+Os oito critérios de qualidade foram identificados e definidos na Parte I da tese \textit{Ontology Evaluation} de \citet{vrandecic2010ontology}, são eles:
+
+\begin{itemize}
+    \item \textbf{Precisão:} um critério que determina se os axiomas da ontologia estão em conformidade com o conhecimento das partes interessadas sobre o domínio. Uma maior precisão vem das definições e descrições corretas de classes, propriedades e indivíduos. A correção neste caso pode significar conformidade com ?padrões-ouro? definidos, sejam outras fontes de dados, conceituações ou mesmo realidade \cite{ceusters2006strategies}. introduz uma abordagem para usar a realidade como referência, ou seja, os termos da ontologia captura as partes pretendidas da realidade. Os axiomas devem restringir as possíveis interpretações de uma ontologia para que os modelos resultantes sejam compatíveis com as conceituações dos usuários;
 
     \item \textbf{Adaptabilidade:} mede até que ponto a ontologia antecipa seus usos. Uma ontologia deve oferecer a base conceitual para uma série de tarefas antecipadas (idealmente, na Web, também deve oferecer a base para tarefas nunca antecipadas). Deve ser possível estender e especializar a ontologia monotonicamente, ou seja, sem a necessidade de remover axiomas (observe que em OWL, a monotonicidade semântica é dada pela monotonicidade sintática, ou seja, para retrair inferências, axiomas explícitos e explícitos precisam ser retraídos). Uma ontologia deve reagir de forma previsível e intuitiva a pequenas mudanças nos axiomas. Deve permitir metodologias para extensão, integração e adaptação, ou seja, incluir metadados necessários. Novas ferramentas e situações inesperadas devem poder usar a ontologia;
 
@@ -29,10 +63,10 @@ Os oito critérios de qualidade foram identificados e definidos na Parte I da tes
 \end{itemize}
 
 
-\section{Escala Likert}
+\subsubsection{Escala Likert}
 \label{sec:escala_likert}
 
-A tese de /cite{Denny Vrandecic} não expoem uma forma clara para mensurar os oito critérios. Neste ponto foi definido que uma escala Likert poderia auxiliar. Segundo /cite{Likert} uma escala Likert para gerar bons resultados deve possuir três elementos fundamentais, (i) um negativo, (ii) um neutro e (iii) um positivo.
+A tese de \citet{vrandecic2010ontology} não expõe uma forma clara para mensurar os oito critérios. Neste ponto foi definido que uma escala Likert poderia auxiliar. Segundo \citet{allen2007likert} uma escala Likert para gerar bons resultados deve possuir três elementos fundamentais, (i) um negativo, (ii) um neutro e (iii) um positivo.
 
 Os itens Likert são usados para medir as atitudes dos entrevistados em relação a uma pergunta ou afirmação específica. Essas escalas permitem determinar o nível de concordância ou discordância dos respondentes.
 
@@ -48,42 +82,10 @@ As respostas podem ser oferecidas em diferentes níveis de medição, permitindo es
     \item 5: Concordo totalmente.
 \end{itemize}
 
-
-\section{Definição do Estudo}
-\label{sec:definicao_do_estudo}
-
-O propósito principal deste estudo foi avaliar a OntoExer-LPS proposta no Capítulo 3. Baseado no modelo Goal-Question-Metric (GQM) (Basili e Rombach, 1988), este estudo tem por objetivo:
-
-\textbf{Avaliar} a OntoExer-LPS proposta
-
-\textbf{Com o propósito de} definir valores quantitativo 
-
-\textbf{Referente os} critérios de avaliação
-
-\textbf{Do ponto de vista de} especialistas de ES, LPS e Ontologia
-
-\textbf{No contexto de} pesquisadores das seguintes instituições: UEL, ICMC-USP, PUC-PR, UEM, UTFPR, USP, SIDIA, PUC-RS e Unipar.
-
-
-\section{Planejamento do Estudo}
-\label{sec:planejamento_do_estudo}
-
-O planejamento do estudo é composto das seguintes etapas:
-
-\begin{itemize}
-    \item \textbf{Projeto Piloto:} com a intenção de avaliar a instrumentação do estudo, um projeto piloto foi conduzido em Outubro de 2019, com um mestre e Doutor da Universidade Estadual de Maringá (UEM). Os dados obtidos foram descartados, mas, as considerações sobre erros e melhorias nos questionários foram consideradas.
-    \item \textbf{Treinamento:} por causa do nível de conhecimento dos participantes não foi necessária a realização desta etapa.
-    \item \textbf{Especialistas:} os especialistas convidados foram pesquisadores da área de ES, LPS e Ontologia. Dos participantes, X são pós-doutor (X\%), X são doutores (X\%), X são mestres (X\%), X é mestrando (X\%).
-    \item \textbf{Instrumentação:} todos os especialistas receberam os seguintes documentos: i) um e-mail contendo um breve descritivo da avaliação, com os link para ferramentas e tecnologias necessárias; (ii) uma cópia do Instrumento de Avaliação Quantitativo caracterizado por um questionário - Google Forms; e (iii) uma cópia dos metadados da ontologia, os metadados são compostos por: um arquivo do tipo OWL do modelo da OntoExer-LPS, um arquivo do tipo OWL da OntoExer-LPS povoada com mais de 170 indivíduos, um arquivo do tipo planilha do Excel contendo os dados originais dos experimentos, uma cópia do artigo \textit{An Ontology for Software Product Line Experiments} não publicado até o momento da escrita desta dissertação, uma cópia do capítulo 3 desta dissertação, uma cópia da tese de \textit{Ontology Evaluation} de /cite{Denny Vrandecic}, uma cópia do resumo da tese, uma cópia da Figura(XX)/diagrama de classe, uma cópia da Figura(XX)/modelo conceitual clusterizado, uma cópia da Figura(XX)/grafo inicial da ontologia, uma cópia da Figura(XX)/grafo gerado pela OWLweb.
-\end{itemize}
-
-A instrumentação fornecida aos especialistas foi suficiente para responder o questionário da avaliação.
-
-
 \section{Execução do Estudo}
 \label{sec:execucao_do_estudo}
 
-Esta seção apresenta as etapas seguidas durante a execução deste estudo.
+Foi realizado um \textbf{Projeto Piloto} com a intenção de avaliar a instrumentação do estudo, um projeto piloto foi conduzido em Outubro de 2019, com um Mestre e um Doutor em Ciências da Computação da Universidade Estadual de Maringá (UEM). Os dados obtidos foram descartados, mas, as considerações sobre erros e melhorias nos questionários foram consideradas.
 
 \textbf{Procedimentos de Participação:} a participação de cada especialista no estudo
 ocorreu da seguinte forma:
@@ -91,8 +93,8 @@ ocorreu da seguinte forma:
 \begin{enumerate}
     \item o especialista recebe os documentos, via e-mail, que compõem o estudo (Seção \ref{sec:planejamento_do_estudo});
     \item o especialista faz um estudo prévio dos metadados, esclarece possíveis dúvidas;
-    \item o especialista faz a leitura e preenche o formulário de Avaliação Quantitativo - Google Forms, de acordo
-    com as suas experiências;
+    \item o especialista faz a leitura e preenche o Formulário de Avaliação - Google Forms, de acordo
+    com as suas experiências.
 \end{enumerate}
 
 Os especialistas tiveram um prazo de 40 dias para a finalização do questionário de avaliação. Todo o acompanhamento do estudo foi realizado online.
@@ -107,21 +109,22 @@ Esta seção apresenta a análise dos resultados com relação às seguintes informaçõ
     \item perfil dos especialistas;
     \item apresentação da frequência da escala Likert;
     \item apresentação e análise do teste normalidade dos resultados;
-    \item apresentação e análise do teste estatístico aplicado aos resultados;
-    \item apresentação e análise da correlação entre os critérios de qualidade; e
+    \item apresentação e análise do teste de hipótese aplicado aos resultados; e
+    \item apresentação e análise da correlação entre os critérios de avaliação;
 \end{itemize}
 
 \subsection{Perfil dos Especialistas}
+\label{sec:perfil-especialista}
 
-Foram convidados 40 especialistas em ES, porém apenas 17 aceitaram participar do estudo quantitativo. A \ref{tab:perfil-participantes} apresenta o perfil dos participantes que realizaram o estudo. Foi possível observar que a média de experiência em anos dos participantes é de 7,2 anos, destacamos os especialistas E3 e E12 com 15 anos de experiência e o E1 com 0 anos de experiência.Com relação ao nível de formação, temos quatro pós-Doutor, seis doutores, 6 mestres, e um graduado.
+Foram convidados 40 especialistas em ES, porém apenas 17 aceitaram participar do estudo quantitativo. A \ref{tab:perfil-participantes} apresenta o perfil dos participantes que realizaram o estudo. Foi possível observar que a média de experiência em anos dos participantes é de 7,2. Destacam-se os especialistas E3 e E12 com 15 anos de experiência e o E1 com 0 anos de experiência. Com relação ao nível de formação, temos quatro Pós-Doutor, seis doutores, 6 mestres, e um graduado.
 
-\begin{table}[]
+\begin{table}[htb]
     \centering
-    \caption{Perfil dos Participantes que Realizaram o Estudo Quantitativo}
+    \caption{Perfil dos Participantes do Estudo}
     \label{tab:perfil-participantes}
-    \begin{tabular}{@{}llr@{}}
+    \begin{tabular}{@{}clr@{}}
     \toprule
-    \textbf{Especialista (E)} & \textbf{Nível de Formação} & \textbf{Experiência na Área (em anos)} \\ \midrule
+    \textbf{Especialista (E)} & \textbf{Nível de Formação} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Experiência em LPS \\ e/ou Ontologias (em anos)\end{tabular}}} \\ \midrule
     E1 & Pós-Doutorado & 0 \\
     E2 & Pós-Doutorado & 10 \\
     E3 & Pós-Doutorado & 15 \\
@@ -134,7 +137,7 @@ Foram convidados 40 especialistas em ES, porém apenas 17 aceitaram participar do
     E10 & Doutorado & 9 \\
     E11 & Doutorado & 6 \\
     E12 & Pós-Doutorado & 15 \\
-    E13 & Ensino Superior - Completo & 3 \\
+    E13 & Graduação & 3 \\
     E14 & Mestrado & 5 \\
     E15 & Doutorado & 12 \\
     E16 & Mestrado & 6 \\
@@ -143,10 +146,11 @@ Foram convidados 40 especialistas em ES, porém apenas 17 aceitaram participar do
 \end{table}
 
 \subsection{Frequência Likert}
+\label{sec:frequencia-likert}
 
-Os dados coletados dos especialistas foram analisados por meio de uma análise exploratória de dados usando Jupyter-Lab, como linguagem de programação Python juntamente com as bibliotecas Pandas, Matplotib, SeaBorn, Scipy.
+Os dados coletados dos especialistas foram analisados de forma exploratória usando a ferramenta Jupyter-Lab\footnote[1]{https://jupyter.org/} \cite{Kluyver:2016aa}, como linguagem de programação Python juntamente com as bibliotecas Pandas, Matplotib \cite{Hunter:2007}, SeaBorn \cite{seaborn} e Scipy \cite{scipy}.
 
-Foram oito critérios de qualidades avaliados pelos especialistas no estilo Likert. A \ref{tab:frequencia-likert} apresenta os a frequência das respostas dada pelos especialistas de cada critério em relação a escala de respostas. As opções de respostas estão mapeadas com os seguintes valores na tabela.
+A \ref{tab:frequencia-likert} apresenta a frequência das respostas dos especialistas de cada critério em relação à escala de respostas. As opções de respostas estão mapeadas com os seguintes valores na tabela:
 
 \begin{itemize}
     \item \textbf{\%DT:} Discordo Totalmente, valor: 1;
@@ -157,7 +161,7 @@ Foram oito critérios de qualidades avaliados pelos especialistas no estilo Liker
 \end{itemize}
 
 \begin{table}[htb]
-    \caption{Frequência das Respostas Likert}
+    \caption{Porcentagem de Frequência Amostral das Respostas dos participantes}
     \label{tab:frequencia-likert}
     \begin{tabular}{@{}lcccccr@{}}
     \toprule
@@ -173,23 +177,35 @@ Foram oito critérios de qualidades avaliados pelos especialistas no estilo Liker
     \end{tabular}
 \end{table}
 
-A moda representa o valor mais frequente respondido pelos especialista. Diante disso, foi possível identificar que o critério \textbf{Precisão} teve a moda 5, com uma frequência de 52,94\% para CT; o critério \textbf{Adaptabilidade} teve a moda 5 também, com uma frequência de 64,71\% para CT; o critério \textbf{Clareza} teve a moda 4, porém com uma frequência iguais (47,06\%) para CT e CP; o critério \textbf{Completude} teve a moda 4, com uma frequência de 35,29\% para CP; o critério \textbf{Eficiência Computacional} teve a moda 3, com uma frequência de 47,06\% para N; o critério \textbf{Concisão} teve a moda 5, com uma frequência de 58,82\% para CT; o critério \textbf{Consistência} teve a moda 5, com uma frequência de 64,71\% para CT; e o critério \textbf{Capacidade Organizacional} teve a moda 5, com uma frequência de 52,94\% para CT.
+A moda representa o valor mais frequente respondido pelos especialistas. Sendo assim, segue o resultada de cada critério:
 
-O gráfico da \ref{fig:frequencia-likert} apresenta a distribuição da frequência em barras. Dessa forma foi possível visualizar que o critério que teve o melhor desempenho foi \textbf{Adaptabilidade} com as frequências de, 64,71\% para CT, 29,41\% para CP e 5,88\% para N. E o critério que teve o pior desempenho foi \textbf{Eficiência Computacional} com as frequências de, 29.41\% para CT, 17,65\% para CP, 47,06\% para N e 5,88\% para DT. 
+\begin{itemize}
+    \item \textbf{Precisão} teve a moda 5, com uma frequência de 52,94\% para CT;
+    \item \textbf{Adaptabilidade} teve a moda 5, com uma frequência de 64,71\% para CT;
+    \item \textbf{Clareza} teve a moda 4, porém com uma frequência iguais 47,06\% para CT e CP.;
+    \item \textbf{Completude} teve a moda 4, com uma frequência de 35,29\% para CP;
+    \item \textbf{Eficiência Computacional} teve a moda 3, com uma frequência de 47,06\% para N;
+    \item \textbf{Concisão} teve a moda 5, com uma frequência de 58,82\% para CT;
+    \item \textbf{Consistência} teve a moda 5, com uma frequência de 64,71\% para CT; e
+    \item \textbf{Capacidade Organizacional} teve a moda 5, com uma frequência de 52,94\% para CT.
+\end{itemize}
 
-O critério \textbf{Eficiência Computacional} teve o pior desempenho pois os especialistas E4, E10, E13 e E17 relataram problemas para executar a consulta SPARQL, todos eles marcaram como N neste critério.
+O gráfico da \ref{fig:frequencia-likert} apresenta a distribuição da frequência em barras. Dessa forma foi possível visualizar que o critério que teve o melhor resultado positivo foi \textbf{Adaptabilidade} com as frequências de, 64,71\% para CT, 29,41\% para CP e 5,88\% para N. E o critério que teve o pior resultado negativo foi \textbf{Eficiência Computacional} com as frequências de, 29.41\% para CT, 17,65\% para CP, 47,06\% para N e 5,88\% para DT. 
+
+O critério \textbf{Eficiência Computacional} teve o pior desempenho, pois os especialistas E4, E10, E13 e E17 relataram problemas para executar a consulta SPARQL, todos eles marcaram como resposta N para este critério.
 
 \begin{figure}[htb]
 	\centering					
-	{\includegraphics[angle=270,scale=1]{frequencia-likert.pdf}}
-	\caption{Frequência das Respostas em \%}
+	{\includegraphics[angle=270,scale=1]{frequencia-likert-2.pdf}}
+	\caption{Frequência das Respostas dos Participantes}
 	\label{fig:frequencia-likert}
 \end{figure}	
 
 
 \subsection{Teste de Normalidade}
+\label{sec:teste-normalidade}
 
-Para descrever o teste de normalidade dos resultados, foi aplicado uma abordagem estatística do método aditivo com uma variável dependente (VD) contínua. a VD é o resultado da somatória do valor dado a cada critérios por especialista, a \ref{tab:sum-especialistas} apresenta esse valor.
+Para descrever o teste de normalidade dos resultados foi aplicada uma abordagem estatística do método aditivo com uma variável dependente (VD) contínua. A VD é o resultado da somatória do valor dado a cada critério por especialista. A \ref{tab:sum-especialistas} apresenta esses valores.
 
 \begin{table}[]
     \centering
@@ -197,7 +213,7 @@ Para descrever o teste de normalidade dos resultados, foi aplicado uma abordagem
     \label{tab:sum-especialistas}
     \begin{tabular}{@{}cc@{}}
     \toprule
-    \textbf{Especialista (E)} & \textbf{Somatório} \\ \midrule
+    \textbf{Especialista (E)} & \textbf{Somatório dos Critérios} \\ \midrule
     E1 & 32 \\
     E2 & 37 \\
     E3 & 30 \\
@@ -218,6 +234,8 @@ Para descrever o teste de normalidade dos resultados, foi aplicado uma abordagem
     \end{tabular}
 \end{table}
 
+Plotamos esses valores no gráfico de histograma apresentado na \ref{fig:histograma}. É necessário executar o teste de normalidade. Para isso foi usado o teste de Shapiro-Wilk \cite{shapiro1965analysis}. O teste Shapiro-Wilk testa a hipótese nula de que os dados foram extraídos de uma distribuição normal, considerando que \textit{p-value} $>$ 0,05. 
+
 \begin{figure}[H]
 	\centering					
 	{\includegraphics[scale=.8]{curva-normal.png}}
@@ -225,80 +243,141 @@ Para descrever o teste de normalidade dos resultados, foi aplicado uma abordagem
 	\label{fig:histograma}
 \end{figure}	
 
-%TODO cite --- Shapiro, S. S. & Wilk, M.B (1965). An analysis of variance test for normality (complete samples), Biometrika, Vol. 52, pp. 591-611.
-Colocando estes valores no gráfico de histograma apresentado na \ref{fig:histograma}. O próximo passo foi executar o teste de normalidade, aqui foi aplicado o teste de Shapiro-Wilk. O teste Shapiro-Wilk testa a hipótese nula de que os dados foram extraídos de uma distribuição normal, considerando que \textit{p-value} $>$ 0,05. 
 
-O resultado do teste estatístico de Shapiro-Wilk foi 0,94 e o \textit{p-value} foi 0,44. Sendo assim a distribuição da VD é \textbf{normal}.
-
-% # p > 0.05 é normal
-% # p < 0.05 não é normal
-% ?
-% w, p = stats.shapiro(o)
-% print("teste estatístico: ", w)
-% print("p-value:", p)
-% ?
-% print("normal", p > 0.05)
-% teste estatístico:  0.9493874907493591
-% p-value: 0.4469049870967865
-% normal True
+O resultado do teste estatístico de Shapiro-Wilk foi 0,94 e o \textit{p-value} foi 0,44. Sendo assim, a distribuição da VD é considerado \textbf{normal}.
 
 
-\subsection{Teste Estatístico}
+\subsection{Teste de Hipótese}
+\label{sec:teste-hipotse}
 
-% TODO cite --- H.B. Mann and D.R. Whitney, ?On a Test of Whether one of Two Random Variables is Stochastically Larger than the Other,? The Annals of Mathematical Statistics, vol. 18, no. 1, pp. 50-60, 1947.
+Considerando que a amostra de VD segue uma distribuição normal, pode-se aplicar o teste paramétrico de Mann-Whitney \cite{mann1947test}. Para aplicar este teste foi preciso elaborar hipóteses para este questionário. Considera-se que \textit{p-value:} $>$ 0,05 pode-se rejeitar H0 e quando p-value $<$ 0,05 não se rejeita H0.
 
-Sendo a distribuição da VD uma normal, podemos aplicar o teste estatístico de Mann-\\Whitney. Para aplicar este teste foi preciso elaborar hipóteses para este questionário. Segundo /cite{} ao aplicar teste, quando o \textit{p-value:} $>$ 0,05 poder rejeitar H0 e quando p-value $<$ 0,05 não rejeita H0.
+O primeiro par de hipótese é em relação a \textbf{Nível de Formação} dos especialistas.
 
 \begin{itemize}
-    \item \textbf{Hipótese 1:} Existe diferença no resultado dado o Nível de Formação?
-    \item \textbf{Hipótese 2:} Existe diferença no resultado dado a A Experiência na Área?
+    % \item \textbf{Hipótese 1:} Existe diferença no resultado dado o Nível de Formação?
+    \item \textbf{Hipótese Nula (H0):} não existe diferença na formação do especialista com relação a VD.
+    \item \textbf{Hipótese Alternativa:} existe diferença significativa na formação do especialista com relação a VD.
 \end{itemize}
 
-% mannwhitneyu
-% u=0.00, p=0.00000027
-% existe diferença no resultado DADO grupo_experiencia, False
-% u=0.00, p=0.00000029
-% existe diferença no resultado DADO titulaca_cat, False
+O resultado do teste de Mann-Whitney foi u = 0,000, p-value = 0,00000029 $<$ 0,05, logo é possível rejeitar H0 e afirmar que, \textbf{existe diferenças nos resultado dado o Nível de Formação}.
 
-O resultado do teste de Mann-Whitney para Hipótese 1, foi u = 0.000, p-value = 0.00000029, logo não rejeitamos H0 e podemos afirmar que, \textbf{existe diferenças nos resultado dado o Nível de Formação}.
-
-O resultado do teste de Mann-Whitney para Hipótese 2, foi u = 0.000, p-value = 0.00000027, logo não rejeitamos H0 e podemos afirmar que, \textbf{existe sim diferenças nos resultado dado o Nível de Formação}. Para realização deste teste foi necessário criar 3 grupos representativos dos anos de experiência, os grupos são;
+O outro par de hipótese é em relação a \textbf{Experiência em LPS e/ou Ontologias (em anos)} dos especialista. Para realização deste teste foi necessário criar 3 grupos representativos dos anos de experiência, os grupos são:
 
 \begin{itemize}
     \item \textbf{1:} 0 à 5 anos de experiências;
     \item \textbf{2:} 6 à 10 anos de experiências; e
-    \item \textbf{3:} 11 à 5 anos de experiências.
+    \item \textbf{3:} 11 à 15 anos de experiências.
 \end{itemize}
+
+\begin{itemize}
+    \item \textbf{Hipótese Nula (H0):} não existe diferença na experiência do especialista com relação a VD.
+    \item \textbf{Hipótese Alternativa:} existe diferença significativa na experiência do especialista com relação a VD.
+\end{itemize}
+
+O resultado do teste de Mann-Whitney foi u = 0,000, p-value = 0,00000027 $<$ 0,05, logo é possível rejeitar H0 e afirmar que \textbf{existe sim diferenças nos resultado dado o Experiência em LPS e/ou Ontologias (em anos)}. 
 
 
 \subsection{Correlação dos Critérios}
+\label{sec:correlacao-criterios}
 
-A \ref{fig:correlacao} apresenta um mapa de calor indicando o grau de correção entre os critérios de qualidade. Foi possível observar os critérios com maior grau de correção foram \textbf{Completude} com \textbf{Precisão} com o valor de correlação mais significativo (0,74), \textbf{Capacidade Organizacional} com \textbf{Clareza} com o segundo valor de correlação mais significativo (0,73) e  \textbf{Capacidade Organizacional} com \textbf{Precisão} com o terceiro maior valor de correlação mais significativo.
+Foi aplicado a técnica de correlação de Pearson \cite{pearson}, pode-se realizar a seguinte interpretação:
+
+\begin{itemize}
+    \item \textbf{0.9} para mais ou para menos indica uma correlação muito forte.
+    \item \textbf{0.7 a 0.9} positivo ou negativo indica uma correlação forte.
+    \item \textbf{0.5 a 0.7} positivo ou negativo indica uma correlação moderada.
+    \item \textbf{0.3 a 0.5} positivo ou negativo indica uma correlação fraca.
+    \item \textbf{0 a 0.3} positivo ou negativo indica uma correlação desprezível
+\end{itemize}
+
+A \ref{fig:correlacao} apresenta um mapa de calor indicando o grau de correlação entre os critérios de qualidade. Foi possível observar que os critérios com maior grau de correlação foram \textbf{Completude} com \textbf{Precisão} com o valor de correlação forte \textbf{0,74}, \textbf{Capacidade Organizacional} com \textbf{Completude} com o segundo valor de correlação forte \textbf{0,73} e \textbf{Consistência} com \textbf{Concisão} com o terceiro maior valor de correlação moderada \textbf{0,70}.
 
 \begin{figure}[H]
 	\centering					
 	{\includegraphics[scale=.8]{correlacao-criterios.png}}
-	\caption{Correlação do s critérios}
+	\caption{Correlação dos critérios de avaliação.}
 	\label{fig:correlacao}
 \end{figure}
+
+\begin{table}[H]
+    \centering
+    \caption{\textit{ranking} de correlação dos critérios de avaliação}
+    \label{tab:correlacao-criterios}
+    \begin{tabular}{@{}rllrc@{}}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Posição}} & \textbf{Critério Y} & \textbf{Critério X} & \multicolumn{1}{c}{\textbf{Valor}} & \textbf{Interpretação} \\ \midrule
+    1 & Completude & Precisão & 0,74 & forte \\
+    2 & \begin{tabular}[c]{@{}l@{}}Capacidade \\ Organizacional\end{tabular} & Completude & 0,73 & forte \\
+    3 & Consistência & Concisão & 0,70 & forte \\
+    4 & \begin{tabular}[c]{@{}l@{}}Capacidade \\ Computacional\end{tabular} & \begin{tabular}[c]{@{}l@{}}Eficiência \\ Computacional\end{tabular} & 0,43 & fraca \\
+    5 & \begin{tabular}[c]{@{}l@{}}Eficiência \\ Computacional\end{tabular} & Adaptabilidade & 0,41 & fraca \\
+    6 & \begin{tabular}[c]{@{}l@{}}Capacidade \\ Computacional\end{tabular} & Adaptabilidade & 0,38 & fraca \\
+    7 & Concisão & Adaptabilidade & 0,32 & fraca \\
+    8 & Consistência & Clareza & 0,31 & fraca \\
+    9 & Consistência & Completude & 0,29 & desprezível \\
+    10 & Concisão & Completude & 0,28 & desprezível \\
+    11 & Adaptabilidade & Precisão & 0,27 & desprezível \\
+    12 & \begin{tabular}[c]{@{}l@{}}Eficiência \\ Computacional\end{tabular} & Precisão & 0,27 & desprezível \\
+    13 & Completude & Adaptabilidade & 0,24 & desprezível \\
+    14 & Consistência & Adaptabilidade & 0,24 & desprezível \\
+    15 & Concisão & Clareza & 0,24 & desprezível \\
+    16 & Consistência & Adaptabilidade & 0,24 & desprezível \\
+    17 & Completude & Clareza & 0,23 & desprezível \\
+    18 & Concisão & \begin{tabular}[c]{@{}l@{}}Eficiência \\ Computacional\end{tabular} & 0,22 & desprezível \\
+    19 & \begin{tabular}[c]{@{}l@{}}Capacidade \\ Computacional\end{tabular} & Clareza & 0,21 & desprezível \\
+    20 & Consistência & \begin{tabular}[c]{@{}l@{}}Eficiência \\ Computacional\end{tabular} & 0,092 & desprezível \\
+    21 & Concisão & Precisão & 0,086 & desprezível \\
+    22 & \begin{tabular}[c]{@{}l@{}}Eficiência \\ Computacional\end{tabular} & Completude & 0,078 & desprezível \\
+    23 & Clareza & Adaptabilidade & 0,061 & desprezível \\
+    24 & Consistência & Precisão & 0,036 & desprezível \\
+    25 & \begin{tabular}[c]{@{}l@{}}Capacidade \\ Organizacional\end{tabular} & Consistência & -0,011 & desprezível \\
+    26 & Consistência & Precisão & -0,053 & desprezível \\
+    27 & \begin{tabular}[c]{@{}l@{}}Eficiência \\ Computacional\end{tabular} & Clareza & -0,063 & desprezível \\
+    28 & \begin{tabular}[c]{@{}l@{}}Capacidade \\ Organizacional\end{tabular} & Concisão & -0,079 & desprezível \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+A \ref{tab:correlacao-criterios} apresenta o \textit{ranking} de correlação dos critérios, segundo a interpretação de \citet{pearson} só será considerado as correlações de 1 a 8 no \textit{ranking}. Dessa forma pode-se afirmar que, com base nas correlações positivas na seguinte ordem de valor: 
+
+\begin{itemize}
+    \item quanto melhor a \textbf{Completude} melhor a \textbf{Precisão};
+    \item quanto melhor a \textbf{Consistência} melhor a \textbf{Concisão};
+    \item quanto melhor a \textbf{Capacidade Computacional} melhor a \textbf{Eficiência Computacional};
+    \item quanto melhor a \textbf{Eficiência Computacional} melhor a \textbf{Adaptabilidade};
+    \item quanto melhor a \textbf{Capacidade Computacional} melhor a \textbf{Adaptabilidade};
+    \item quanto melhor a \textbf{Concisão} melhor a \textbf{Adaptabilidade};
+    \item quanto melhor a \textbf{Consistência} melhor a \textbf{Clareza}; e
+    \item quanto melhor a \textbf{Consistência} melhor a \textbf{Completude}.
+\end{itemize}
+
+os valores de correlação negativa não foram o suficiente para serem considerados. Dessa forma, pode-se afirmar não existe  critérios com avaliações inversas, como por exemplo, quanto melhor a \textbf{Eficiência Computacional} pior a \textbf{Concisão}.
 
 
 \section{Discussão dos Resultados}
 \label{sec:discussao_dos_resultados}
 
-A análise dos dados apresentada na seção anterior, demonstra que, segundo os especialistas, a onto possui um grau de qualidade relevante. Isso fica claro quando visualizamos que 70,15\% das respostas foram ``positivas'', ou seja, estão entre CP e CT, o critério \textbf{Adaptabilidade} se destacou nessa avaliação. E apenas 2,95\% foram ``negativas'', ou seja, estão entre DP e DT. Porém o valor de 16,91\% no elemento N apresenta um ponto de atenção, vimos que o critério de qualidade que mais afetou este item foi a \textbf{Eficiência Computacional}. Estes valores estão destacado na \ref{tab:total-respostas}
+Na Seção \ref{sec:perfil-especialista} foi relatado o perfil dos especialista, pode-se notar que os especialistas possuem em média 7,2 anos de experiência em LPS e/ou Ontologias e que 70,61\% são doutores e Pós-doutores. Tal resultado corrobora para o alto grau de especialidades dos participantes.
+
+Durante a Seção \ref{sec:frequencia-likert} foi apresentado os resultados do estudo a análise dos demonstra que, segundo os especialistas, a onto possui um grau de qualidade relevante. Isso fica claro quando visualizamos que 70,15\% das respostas foram ``positivas'', ou seja, estão entre CP e CT, o critério \textbf{Adaptabilidade} se destacou nessa avaliação. E apenas 2,95\% foram ``negativas'', ou seja, estão entre DP e DT. Porém o valor de 16,91\% no elemento N apresenta um ponto de atenção, vimos que o critério de qualidade que mais afetou este item foi a \textbf{Eficiência Computacional}. Estes valores estão destacado na \ref{tab:total-respostas}
 
 \begin{table}[htb]
     \centering
-    \caption{Total de Respostas por Elemento da Escala Likert}
+    \caption{Total de respostas positivas, neutras e negativas}
     \label{tab:total-respostas}
-    \begin{tabular}{@{}cccccc@{}}
-    \toprule
-     & \textbf{DT} & \textbf{DP} & \textbf{N} & \textbf{CP} & \textbf{CT} \\ \midrule
-    Total de respostas & 1 & 3 & 23 & 41 & 68 \\
-    \% & 0,74\% & 2,21\% & 16,91\% & 30,15\% & 50,00\% \\ \bottomrule
+    \begin{tabular}{lccc}
+    \hline
+    \textbf{} & \textbf{Negativo (DT e DP)} & \textbf{Neutro (N)} & \textbf{Positivo (CP e CT)} \\ \hline
+    Total de respostas & 4 & 23 & 109 \\
+    \% & 2,95\% & 16,91\% & 70,15\% \\ \hline
     \end{tabular}
 \end{table}
+
+A Seção \ref{sec:frequencia-likert} foi aplicado o método aditivo para elaborar uma variável dependente. Por meio do teste de Shapiro-Wilk pode-se identificar e a VD é uma distribuição normal. Uma distribuição normal apresenta que os dados estão distribuídos em 68,26\% por 1 desvio, um conjunto central, 95,44\% por 2 desvios e 99,73\% por 3 desvios. Sendo assim essa informa guia a proximos técnica de testes de hipótese.
+
+Logo, na Seção \ref{sec:teste-hipotse} foram elaboradas duas hipóteses para averiguação por meio de teste estatístico de hipótese. Primeira hipótese \textbf{não existe diferença na formação do especialista com relação a VD} que por meio do teste de Mann-Whitney retornou \textit{p-value} $<$ 0,05, dessa forma rejeitando H0, tal resultado demonstra que a VD tem impacto sobre a formação do especialista. Segunda hipótese: \textbf{não existe diferença na experiência do especialista com relação a VD}, que por meio do teste de Mann-Whitney retornou o \textit{p-value} $<$ 0,05, da mesma forma que o anterior, rejeita H0, tal resultado demonstra que a VD tem impacto sobre a formação os anos de experiência do especialista.
+
+Por fim foi na Seção \ref{sec:correlacao-criterios} apresenta o nível de correlação entre os critérios, segundo as respostas dos especialistas. Foi possível notar que das 28 possibilidades só foram encontradas correlações relevantes em oito delas. Foi elaborado um \textit{ranking} das correlações, por meio dele foi possível identificar quais critérios atacar em conjunto para potencializar a uma melhoria na ontologia.
 
 Feito essa análise é possível afirmar que a OntoExper-SPL é altamente adaptável a novas extensões, tornando ela coesa e de fácil extensão a novos axiomas. Porém constata-se que há uma falha com relação a eficiência computacional, ou seja, ela não possui um bom desempenho em sua execução (execução de inferências).
 
@@ -306,14 +385,21 @@ Feito essa análise é possível afirmar que a OntoExper-SPL é altamente adaptável 
 \section{Ameaças à Validade}
 \label{sec:ameca_a_validade}
 
+Esta seção discute a validade identificadas durante o estudo. Para apresentar as ameaças à validade, foram categoriza-los
+em interna, externa, de constructo e de conclusão, de acordo com \citet{wohlin2012}.
+
 \subsection{Ameaças à Validade Interna}
 
 \begin{itemize}
     \item \textbf{Diferenças entre os especialistas:} devido do tamanho da amostra, as variações entre as habilidades dos especialistas foram poucas, assim, os especialistas não foram divididos em grupos. Dessa forma, as tarefas designadas foram idênticas;
-    \item \textbf{Acurácia das respostas dos participantes:} uma vez que as informações referentes da OntoExer-LPS  são apresentadas juntamente com seus metadados e considerando que os participantes são especialistas em ES, LPS e Ontologia, considera-se que as respostas fornecidas são válidas;
-    \item \textbf{Efeito de Fadiga:} os arquivos da OntoExer-LPS (modelagem e povoados com indivíduos) são de difícil leitura pelos seres humanos, logo se faz necessária a utilização de ferramentas para exibição da OntoExer-LPS, bem como os textos auxiliares, para uma maior compreensão dos critérios de avaliação, e das  imagens anexadas ao questionário. Os efeitos de fadiga são uma das principais ameaças, por isso, para tentar minimizar esse problema, a documentação foi enviada aos especialistas por e-mail com um prazo de 40 dias para enviarem as respostas, assim, eles poderiam responder conforme a sua disponibilidade;
+    
+    \item \textbf{Acurácia das respostas dos participantes:} uma vez que as informações referentes da OntoExer-SPL  são apresentadas juntamente com seus metadados e considerando que os participantes são especialistas em ES, LPS e Ontologia, considera-se que as respostas fornecidas são válidas;
+    
+    \item \textbf{Efeito de Fadiga:} os arquivos da OntoExer-SPL (modelagem e povoados com indivíduos) são de difícil leitura pelos seres humanos, logo se faz necessária a utilização de ferramentas para exibição da OntoExer-SPL, bem como os textos auxiliares, para uma maior compreensão dos critérios de avaliação, e das imagens anexadas ao questionário. Os efeitos de fadiga são uma das principais ameaças, por isso, para tentar minimizar esse problema, a documentação foi enviada aos especialistas por e-mail com um prazo de 40 dias para enviarem as respostas, assim, eles poderiam responder conforme a sua disponibilidade;
+    
     \item \textbf{Influência de outros especialistas na avaliação:} a influência entre os especialistas foi mitigada, pois eles não sabiam quem foram convidados para tal estudo; e
-    \item \textbf{Análise dos dados:} a análise dos dados dos especialistas foi realizada somente pelo autor desta dissertação, sem a realização de uma revisão. Dessa forma, tal análise deve ser revisada em trabalhos futuros.
+    
+    \item \textbf{Análise dos dados:} em relação ao critério de avaliação \textbf{Eficiência Computacional} existe uma ameaça pois os participantes relataram que não foi possível executar a tarefa, para tentar minimizar esse problema, a escala Likert atribui o valor N, considerando com baixa significância no resultado. A análise dos dados dos especialistas foi realizada somente pelo autor desta dissertação, sem a realização de uma revisão. Dessa forma, tal análise deve ser revisada em trabalhos futuros.
 \end{itemize}
 
 
@@ -327,18 +413,20 @@ A instrumentação foi avaliada e adequada, conforme projeto piloto realizado. Qua
 
 \subsection{Ameaças à Validade de Conclusão}
 
-A principal ameaça para este estudo está relacionada ao número de especialistas (??). Este número é pequeno, mas o conhecimento dos especialistas que colaboraram com este estudo foi significativo. Além disso, pela característica própria do estudo por prezar a qualidade dos especialistas, muitas vezes o número baixo de especialistas pode ser considerado. Assim, não é possível generalizar as conclusões.
+A principal ameaça para este estudo está relacionada ao número de especialistas (17). Este número é pequeno, mas o conhecimento dos especialistas que colaboraram com este estudo foi significativo. Além disso, pela característica própria do estudo por prezar a qualidade dos especialistas, muitas vezes o número baixo de especialistas pode ser considerado. Assim, não é possível generalizar as conclusões.
 
 \section{Empacotamento e Compartilhamento}
 \label{sec:empacotamento_e_compartihamento}
 
-Os documentos disponibilizados aos participantes e resultados deste estudo qualitativo estão disponíveis em: https://doi.org/..., visando disseminação dos dados.
+Os documentos disponibilizados aos participantes e resultados deste estudo estão disponíveis em: https://doi.org/..., visando disseminação dos dados.
 
 
-\section{Propostas de Melhorias}
+\section{Propostas de Melhorias com Base na Discussão dos Resultados}
 \label{sec:propostas_de_melhorias}
 
-\subsection{Melhorias apontada pelos especialistas}
+Esta Seção discute as melhorias apresentada pelos especialistas que participaram do estudo empírico, bem como armadilhas que a ferramenta OOPS!.
+
+\subsection{Melhorias Apontada pelos Especialistas}
 
 Durante a execução do estudo os especialistas puderam contribuir com um campo aberto a comentários gerais, neste campos eles comentaram os pontos positivos e negativos encontrado durante avaliação dos critérios de qualidade.
 
@@ -352,7 +440,7 @@ Durante a execução do estudo os especialistas puderam contribuir com um campo ab
     \begin{quotation}
         As estruturas e relações foram bem estruturadas na ontologia. Os tópicos básicos de experimentação em engenharia de software estão bem representados e associados a literatura básica de experimentação quantitativa.
 
-        % O primeiro comentário, seria a alteração de "OntoExer-LPS" para "SmartyOntology". É uma contribuição para a abordagem Smarty certo?
+        % O primeiro comentário, seria a alteração de "OntoExer-SPL" para "SmartyOntology". É uma contribuição para a abordagem Smarty certo?
 
         % A instrumentação dessa avaliação foi validada em um estudo piloto? Acredito que a Ontologia poderia conter um tópico chamado "Grupo de Controle" para avaliar a qualidade do experimento em LPS. Na maioria das vezes é difícil entender quais aspectos de determinadas tecnologias podem ser avaliadas em conjunto com LPS. Talvez criar Grupos de Controle como Academia ou Indústria e incluir os participantes em um estudo piloto. Tal grupo de controle pode estar associado a "Pilot Project" já representado na ontologia. 
 
@@ -364,7 +452,7 @@ Durante a execução do estudo os especialistas puderam contribuir com um campo ab
 
         Pensando análise qualitativa dos dados, acho que nenhuma modelagem ou representação foi criada em "Analyze" na Ontologia? 
 
-        Hoje existe um grande interesse na comunidade científica em análises qualitativas, uma sugestão seria estender a OntoExer-LPS para tal contexto de análise. Entretanto, eu entendo que a ontologia foi proposta para experimentos quantitativos, mas isso poderia ser uma extensão ou trabalho futuro bem interessante para a comunidade científica de LPS ou até mesmo para a área de Ontologia em geral.
+        Hoje existe um grande interesse na comunidade científica em análises qualitativas, uma sugestão seria estender a OntoExer-SPL para tal contexto de análise. Entretanto, eu entendo que a ontologia foi proposta para experimentos quantitativos, mas isso poderia ser uma extensão ou trabalho futuro bem interessante para a comunidade científica de LPS ou até mesmo para a área de Ontologia em geral.
     \end{quotation}
 
     \item Comentário do E8:
@@ -404,7 +492,7 @@ Durante a execução do estudo os especialistas puderam contribuir com um campo ab
     \begin{quotation}
         Me deparei com o problema da definição do Reasoner para executar a query. Se executado no arquivo que não está populado, o resultado da query atende aos 2s esperados, contudo, ao meu ver uma query que limita-se em retornar apenas o nome das classes relacionadas não é válida para  a utilização da ontologia definida. Como tal problema pode ser resultado de algo específico na configuração do ambiente de execução (o quê acredito que não seja o caso), assinalei a opção 3.
 
-        Executando a query: Experiment and ExperimentSPL and pagesNumber value 8 não obtive resultado, mesmo tendo navegado e visualizado que há respostas que satisfaçam tal pequisa. Adicionalmente, depois de selecionar para inicializar o reasoner e, após alguns minutos ser apresentada uma lista de inconsistências (para o arquivo \\smart-ontology-populate-validated.owl), o Protege para de responder.
+        Executando a query: Experiment and ExperimentSPL and pagesNumber value 8 não obtive resultado, mesmo tendo navegado e visualizado que há respostas que satisfaçam tal pesquisa. Adicionalmente, depois de selecionar para inicializar o reasoner e, após alguns minutos ser apresentada uma lista de inconsistências (para o arquivo \\smart-ontology-populate-validated.owl), o Protege para de responder.
 
         Tentei executar ainda a query presente no artigo da ontologia, também sem sucesso. 
 
@@ -415,9 +503,9 @@ Durante a execução do estudo os especialistas puderam contribuir com um campo ab
     
 \end{itemize}
 
-No geral foi possível notar que a OntoExer-LPS precisa ser melhorada quanto a sua eficiência computacional. Os pontos de melhoria são, corrigir os termos \textit{Keyworld} para \textit{Keywords}, associar \textit{SPL  artifacts} a \textit{SPL domain}, incluir os axiomas \textit{Results}, \textit{Analyze}, ``Ameaças a Validade'', \textit{Subjects}e modificar o axioma \textit{Package} para \textit{Replication-Package}.
+No geral foi possível notar que a OntoExer-SPL precisa ser melhorada quanto a sua eficiência computacional. Os pontos de melhoria são, corrigir os termos \textit{Keyworld} para \textit{Keywords}, associar \textit{SPL  artifacts} a \textit{SPL domain}, incluir os axiomas \textit{Results}, \textit{Analyze}, ``Ameaças a Validade'', \textit{Subjects}e modificar o axioma \textit{Package} para \textit{Replication-Package}.
 
-\subsection{Melhorias do OOPS! - Armadilhas}
+\subsection{Melhorias com Base em Armadilhas Identificadas na Ferramenta do OOPS!}
 
 Na \ref{tab:result_of_evaluation} foi relatado as armadilhas que a ferramenta encontrou na OntoExer-SPL, a seguir estão descritos as melhorias que devem ser realizada na ontologia para melhorar estes pontos
 
@@ -426,14 +514,12 @@ Na \ref{tab:result_of_evaluation} foi relatado as armadilhas que a ferramenta en
     \item No caso \textbf{P10:} deve-se criar as disjunções dos axiomas;
     \item No caso \textbf{P13:} deve-se criar relacionamentos inverso para os axiomas: \textit{typeSelectionOfParticipants, typeExperimentSPL, typeExperiment, typeDesignExperiment, typeContextSelection, typeContextExperiment, experiment, documentation};
     \item No caso \textbf{P19:} deve-se remover os domínios e alcances desnecessários para os axiomas: \textit{documentation, experiment, typeContextExperiment, typeDesignExperiment, typeExperiment, typeSelectionOfParticipants}; 
-    \item No caso \textbf{P41:} deve-se atribuir uma licença a OntoExer-LPS.
+    \item No caso \textbf{P41:} deve-se atribuir uma licença a OntoExer-SPL.
 \end{itemize}    
 
 \section{Considerações Finais}
 \label{sec:concidaracoes_finais}
 
-Este capítulo apresentou a avaliação quantitativa sobre oito critérios de qualidade aplicados a OntoExer-LPS com especialistas em ES, LPS e Ontologia. Os resultados obtidos permitiram identificar a qualidade da OntoExer-LPS. Assim, os resultados dos dados analisados forneceu evidências que as OntoExer-LPS possui um grau de qualidade relevante. Permitindo assim a evolução de novos estudos sobre a OntoExer-LPS, expandindo-a e melhorando seus pontos de baixa qualidade.
+Este capítulo apresentou a avaliação quantitativa sobre oito critérios de qualidade aplicados a OntoExer-SPL com especialistas em ES, LPS e Ontologia. Os resultados obtidos permitiram identificar a qualidade da OntoExer-SPL. Assim, os resultados dos dados analisados forneceu evidências que as OntoExer-SPL possui um grau de qualidade relevante. Permitindo assim a evolução de novos estudos sobre a OntoExer-SPL, expandindo-a e melhorando seus pontos de baixa qualidade.
 
-Foram sugeridas melhorias à OntoExer-LPS, tanto pelos especialistas como pela ferramenta OOPS!, que devem ser aplicadas em trabalhos futuros. Por fim, compreende-se que novos estudos devem ser realizados com outros especialistas para expandir o corpo de conhecimento.
-
-
+Foram sugeridas melhorias à OntoExer-SPL, tanto pelos especialistas como pela ferramenta OOPS!, que devem ser aplicadas em trabalhos futuros. Por fim, compreende-se que novos estudos devem ser realizados com outros especialistas para expandir o corpo de conhecimento.

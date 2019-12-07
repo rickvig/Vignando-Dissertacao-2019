@@ -19,49 +19,53 @@ A level-1 auxiliary file: texto/apendice_d.aux
 A level-1 auxiliary file: texto/apendice_e.aux
 Database file #1: texto/RevisaoLiteratura.bib
 Warning--empty journal in fernanda2007modelagem
+Warning--Last access date missing in scipy
+Warning--empty chapter and pages in pearson
+Warning--Last access date missing in pearson
 Warning--empty journal in mendonca2015ontoforinfoscience
 Warning--Last access date missing in DBLP:journals/aimatters/Musen15
 Warning--Last access date missing in PER-GRA:2007
+Warning--Last access date missing in seaborn
 Warning--empty journal in wolff1962philosophia
-You've used 50 entries,
+You've used 60 entries,
             2729 wiz_defined-function locations,
-            917 strings with 15183 characters,
-and the built_in function-call counts, 27335 in all, are:
-= -- 2552
-> -- 1228
-< -- 55
-+ -- 486
-- -- 423
-* -- 2385
-:= -- 4547
-add.period$ -- 100
-call.type$ -- 50
-change.case$ -- 391
-chr.to.int$ -- 49
-cite$ -- 55
-duplicate$ -- 1318
-empty$ -- 2002
-format.name$ -- 569
-if$ -- 5579
+            984 strings with 17034 characters,
+and the built_in function-call counts, 33348 in all, are:
+= -- 3124
+> -- 1512
+< -- 70
++ -- 596
+- -- 521
+* -- 2927
+:= -- 5528
+add.period$ -- 119
+call.type$ -- 60
+change.case$ -- 472
+chr.to.int$ -- 59
+cite$ -- 69
+duplicate$ -- 1600
+empty$ -- 2413
+format.name$ -- 705
+if$ -- 6812
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 60
-newline$ -- 314
-num.names$ -- 200
-pop$ -- 436
+missing$ -- 69
+newline$ -- 377
+num.names$ -- 243
+pop$ -- 515
 preamble$ -- 1
-purify$ -- 340
+purify$ -- 410
 quote$ -- 0
-skip$ -- 1009
+skip$ -- 1231
 stack$ -- 0
-substring$ -- 1429
-swap$ -- 396
-text.length$ -- 29
+substring$ -- 1779
+swap$ -- 493
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 429
-warning$ -- 5
-while$ -- 240
+type$ -- 516
+warning$ -- 9
+while$ -- 294
 width$ -- 0
-write$ -- 655
-(There were 5 warnings)
+write$ -- 785
+(There were 9 warnings)

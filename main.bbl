@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{60}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -8,6 +8,13 @@
 \input babelbst.tex
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{Allen e Seaman(2007)}]{allen2007likert}
+
+\bibbhook\relax
+\textsc{Allen, I.~E.; Seaman, C.~A.}\ \ \  Likert scales and data analyses.\ \
+  \ \textit{Quality progress}, \bblvol{}~40, \bblno{}~7, \bblpp{}~64--65, 2007.
+\bibehook\relax
 
 \bibitem[{Allen e Fildes(2001)}]{allen2001econometric}
 
@@ -31,6 +38,14 @@
 \bibbhook\relax
 \textsc{Apel, K.-O.}\ \ \  \emph{Analytic philosophy of language and the
   geisteswissenschaften}.\ \ \ Springer, 2013.
+\bibehook\relax
+
+\bibitem[{Basili e Rombach(1988)}]{Basili1988}
+
+\bibbhook\relax
+\textsc{Basili, V.~R.; Rombach, H.~D.}\ \ \  {The TAME project: Towards
+  improvement-oriented software environments}.\ \ \ \textit{IEEE Transactions
+  on software engineering}, \bblvol{}~14, \bblno{}~6, \bblpp{}~758--773, 1988.
 \bibehook\relax
 
 \bibitem[{Blondet \bbletal{}(2016)Blondet, Le~Duigou e
@@ -58,6 +73,14 @@
 \textsc{Capilla, R.; Bosch, J.; Kang, K.-C.}\ \ \  \emph{Systems and software
   variability management: Concepts, tools and experiences}.\ \ \ Springer
   Publishing Company, Incorporated, 2013.
+\bibehook\relax
+
+\bibitem[{Ceusters e Smith(2006)}]{ceusters2006strategies}
+
+\bibbhook\relax
+\textsc{Ceusters, W.; Smith, B.}\ \ \  Strategies for referent tracking in
+  electronic health records.\ \ \ \textit{Journal of biomedical informatics},
+  \bblvol{}~39, \bblno{}~3, \bblpp{}~362--378, 2006.
 \bibehook\relax
 
 \bibitem[{Clements e Northrop(2002)}]{clements2002}
@@ -154,6 +177,14 @@
   Esp{\'\i}rito Santo, 2000.
 \bibehook\relax
 
+\bibitem[{Hunter(2007)}]{Hunter:2007}
+
+\bibbhook\relax
+\textsc{Hunter, J.~D.}\ \ \  Matplotlib: A 2d graphics environment.\ \ \
+  \textit{Computing in Science \& Engineering}, \bblvol{}~9, \bblno{}~3,
+  \bblpp{}~90--95, 2007.
+\bibehook\relax
+
 \bibitem[{Isotani \bbletal{}(2015)Isotani, Bittencourt, Barbosa, Dermeval e
   Paiva}]{isotani2015ontology}
 
@@ -168,6 +199,23 @@
 
 \bibbhook\relax
 \textsc{Jena, A.}\ \ \  semantic web framework for java.\ \ \ 2007.
+\bibehook\relax
+
+\bibitem[{Jones \bbletal{}(2001--)Jones, Oliphant, Peterson \bbletal{}}]{scipy}
+
+\bibbhook\relax
+\textsc{Jones, E.; Oliphant, T.; Peterson, P.; \bbletal{}}\ \ \  {SciPy}: Open
+  source scientific tools for {Python}.\ \ \ [Online; accessed <today>],
+  2001--.
+\newline Disponível em \url{http://www.scipy.org/}
+\bibehook\relax
+
+\bibitem[{Kirch(2008)}]{pearson}
+
+\bibbhook\relax
+\textsc{Kirch, W.}, \bbled{}\ \ \  \emph{Pearson's correlation coefficient}
+  Dordrecht: Springer Netherlands, \bblpp{} 1090--1091, 2008.
+\newline Disponível em \url{https://doi.org/10.1007/978-1-4020-5614-7_2569}
 \bibehook\relax
 
 \bibitem[{Kitchenham \bbletal{}(2007)Kitchenham, Budgen, Brereton, Turner,
@@ -187,6 +235,20 @@
 \textsc{Kitchenham, B.~A.; Budgen, D.; Brereton, P.}\ \ \  \emph{Evidence-based
   software engineering and systematic reviews}, \bblvol{}~4.\ \ \ CRC Press,
   2015.
+\bibehook\relax
+
+\bibitem[{Kluyver \bbletal{}(2016)Kluyver, Ragan-Kelley, P{\'e}rez, Granger,
+  Bussonnier, Frederic, Kelley, Hamrick, Grout, Corlay, Ivanov, Avila, Abdalla
+  e Willing}]{Kluyver:2016aa}
+
+\bibbhook\relax
+\textsc{Kluyver, T.; Ragan-Kelley, B.; P{\'e}rez, F.; Granger, B.; Bussonnier,
+  M.; Frederic, J.; Kelley, K.; Hamrick, J.; Grout, J.; Corlay, S.; Ivanov, P.;
+  Avila, D.; Abdalla, S.; Willing, C.}\ \ \  Jupyter notebooks -- a publishing
+  format for reproducible computational workflows.\ \ \ \capitalize\bblin{}:
+  \textsc{Loizides, F.; Schmidt, B.}, \bbleds{} \textit{Positioning and Power
+  in Academic Publishing: Players, Agents and Agendas}, IOS Press, 2016,
+  \bblpp{} 87 -- 90.
 \bibehook\relax
 
 \bibitem[{Kwong \bbletal{}(1992)Kwong, Belliveau, Chesler, Goldberg, Weisskoff,
@@ -243,6 +305,14 @@
 \textsc{Maki, S.}\ \ \  \emph{Systematic review of recommendation systems in
   software engineering}.\ \ \ \bblphdthesis{}, {\'E}cole de technologie
   sup{\'e}rieure, 2016.
+\bibehook\relax
+
+\bibitem[{Mann e Whitney(1947)}]{mann1947test}
+
+\bibbhook\relax
+\textsc{Mann, H.~B.; Whitney, D.~R.}\ \ \  On a test of whether one of two
+  random variables is stochastically larger than the other.\ \ \ \textit{The
+  annals of mathematical statistics}, \bblpp{}~50--60, 1947.
 \bibehook\relax
 
 \bibitem[{McKinney(2010)}]{mckinney-proc-scipy-2010}
@@ -389,6 +459,14 @@
   \ \ \capitalize\bblin{}: \textit{SEKE}, 2011, \bblpp{} 408--413.
 \bibehook\relax
 
+\bibitem[{Shapiro e Wilk(1965)}]{shapiro1965analysis}
+
+\bibbhook\relax
+\textsc{Shapiro, S.~S.; Wilk, M.~B.}\ \ \  An analysis of variance test for
+  normality (complete samples).\ \ \ \textit{Biometrika}, \bblvol{}~52,
+  \bblno{} 3/4, \bblpp{}~591--611, 1965.
+\bibehook\relax
+
 \bibitem[{Soldatova e King(2006)}]{soldatova2006ontology}
 
 \bibbhook\relax
@@ -419,6 +497,14 @@
 \bibbhook\relax
 \textsc{Vrandecic, D.}\ \ \  Ontology evaluation [phd thesis].\ \ \
   \textit{KIT, Karlsruhe}, 2010.
+\bibehook\relax
+
+\bibitem[{Waskom \bbletal{}(2017)}]{seaborn}
+
+\bibbhook\relax
+\textsc{Waskom, M.; \bbletal{}}\ \ \  mwaskom/seaborn: v0.8.1 (september
+  2017).\ \ \ 2017.
+\newline Disponível em \url{https://doi.org/10.5281/zenodo.883859}
 \bibehook\relax
 
 \bibitem[{Wohlin \bbletal{}(2012{\natexlab{a}})Wohlin, Runeson, H{\"o}st,
