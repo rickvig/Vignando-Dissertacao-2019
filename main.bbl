@@ -1,4 +1,4 @@
-\begin{thebibliography}{61}
+\begin{thebibliography}{62}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -150,6 +150,15 @@
 \textsc{Gelernter, J.; Jha, J.}\ \ \  Challenges in ontology evaluation.\ \ \
   \textit{Journal of Data and Information Quality (JDIQ)}, \bblvol{}~7,
   \bblno{}~3, \bblp{}~11, 2016.
+\bibehook\relax
+
+\bibitem[{Geraldi(2015)}]{geraldi2015}
+
+\bibbhook\relax
+\textsc{Geraldi, R.~T.}\ \ \  \emph{{SMartyCheck: uma T\'{e}cnica de
+  Inspe\c{c}\~{a}o baseada em Checklist para Diagramas de Casos de Uso e de
+  Classes da Abordagem SMarty}}.\ \ \ \bblmthesis{}, Universidade Estadual de
+  Maring\'{a}, Maring\'{a}, 241 p., 2015.
 \bibehook\relax
 
 \bibitem[{G{\'o}mez-P{\'e}rez(2004)}]{gomez2004ontology}

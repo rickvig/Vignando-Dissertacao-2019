@@ -27,45 +27,45 @@ Warning--Last access date missing in DBLP:journals/aimatters/Musen15
 Warning--Last access date missing in PER-GRA:2007
 Warning--Last access date missing in seaborn
 Warning--empty journal in wolff1962philosophia
-You've used 61 entries,
+You've used 62 entries,
             2729 wiz_defined-function locations,
-            989 strings with 17240 characters,
-and the built_in function-call counts, 33943 in all, are:
-= -- 3182
-> -- 1538
-< -- 71
-+ -- 608
-- -- 530
-* -- 2982
-:= -- 5626
-add.period$ -- 121
-call.type$ -- 61
-change.case$ -- 479
-chr.to.int$ -- 60
-cite$ -- 70
-duplicate$ -- 1629
-empty$ -- 2453
-format.name$ -- 717
-if$ -- 6933
+            995 strings with 17461 characters,
+and the built_in function-call counts, 34285 in all, are:
+= -- 3218
+> -- 1548
+< -- 72
++ -- 612
+- -- 533
+* -- 3008
+:= -- 5694
+add.period$ -- 123
+call.type$ -- 62
+change.case$ -- 486
+chr.to.int$ -- 61
+cite$ -- 71
+duplicate$ -- 1647
+empty$ -- 2477
+format.name$ -- 721
+if$ -- 6998
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 70
-newline$ -- 383
-num.names$ -- 247
-pop$ -- 519
+newline$ -- 389
+num.names$ -- 251
+pop$ -- 521
 preamble$ -- 1
-purify$ -- 416
+purify$ -- 421
 quote$ -- 0
-skip$ -- 1256
+skip$ -- 1269
 stack$ -- 0
-substring$ -- 1816
-swap$ -- 503
+substring$ -- 1829
+swap$ -- 504
 text.length$ -- 37
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 525
+type$ -- 534
 warning$ -- 9
-while$ -- 300
+while$ -- 303
 width$ -- 0
-write$ -- 798
+write$ -- 813
 (There were 9 warnings)

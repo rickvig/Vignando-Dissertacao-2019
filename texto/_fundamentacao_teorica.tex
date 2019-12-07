@@ -32,9 +32,10 @@ A \textit{MobileMedia} é um exemplo didático de LPS, o produto final é um softwa
 
 \begin{figure}[htb]
 	\centering					
+	\caption{Um modelo de Características}
 	{\includegraphics[scale=.33]{exemplo_lps_pt.png}}
-	\caption{Um modelo de Características. Traduzido de \citet{sommerville2011software} }
 	\label{fig:exemplo-lps}
+	\source{Traduzido de \citet{sommerville2011software}}
 \end{figure}
 
 A \ref{fig:exemplo-lps} apresenta um modelo de características da LPS \textit{MobileMedia}. As arestas com círculos preenchidos representam as características obrigatórias. As arestas com círculos vazios representam características opcionais. As arestas ligadas por um triângulo, como as que saem do vértice Seleção de Mídia, representam características alternativas, por exemplo, uma instância desta LPS deve possuir ao menos um tipo de seleção de mídia, seja ele, por Foto, Música ou Vídeo. 
@@ -71,10 +72,10 @@ Uma instância deste exemplo teria as seguintes características no seu produto de
 
 \begin{figure}[htb]
 	\centering					
+	\caption{\textit{Framework} de Engenharia de LPS}
 	{\includegraphics[scale=.37]{framewor_lps.png}}
-	
-	\caption{\textit{Framework} de Engenharia de LPS (Pohl et al., 2005). Traduzido por Geraldi (2015) }
 	\label{fig:framework-lps}
+	\source{\citet{pohl2005software}. Traduzido por \citet{geraldi2015}}
 \end{figure}
 
 
@@ -87,9 +88,10 @@ Por meio de um modelo teórico entre dois ou mais fenômenos relacionados a fim de
 
 \begin{figure}[htb]
 	\centering					
+	\caption{Conceitos Essenciais de um Experimento}
 	{\includegraphics[scale=.37]{experimento.png}}
-	\caption{Conceitos Essenciais de um Experimento. Traduzido de \citet{wohlin2012experimentation} }
 	\label{fig:experimento}
+	\source{Traduzido de \citet{wohlin2012experimentation}}
 \end{figure}
 
 Um dos principais elementos de um experimento são as variáveis dependentes e independentes:
@@ -107,11 +109,11 @@ Segundo \citet{wohlin2012experimentation} a realização de um experimento pode se
 
 \begin{figure}[htb]
 	\centering					
+	\caption{Visão Geral do Processo Experimental}
 	{\includegraphics[scale=.37]{proc_exp.png}}
-	\caption{Visão Geral do Processo Experimental. Traduzido de \citet{wohlin2012experimentation}}
 	\label{fig:proc_exp}
+	\source{Traduzido de \citet{wohlin2012experimentation}}
 \end{figure}
-
 
 \begin{itemize}
 	\item \textbf{Definição:} é a primeira atividade, onde define-se o problema, objetivo e metas do experimento. Caso não seja devidamente estabelecida, pode ocorrer retrabalho ou o experimento não pode ser utilizado para se estudar o que era almejado;
@@ -184,10 +186,10 @@ Portanto uma ontologia para a representação de um conhecimento possui a seguinte
 
 \begin{figure}[htb]
 	\centering					
+	\caption{Estrutura de uma Ontologia}
 	{\includegraphics[scale=.7]{estrutura_ontologia.png}}
-	
-	\caption{Estrutura de uma Ontologia. Autor}
 	\label{fig:estrct_onto}
+	\source{o Autor}
 \end{figure}
 
 Na prática uma ontologia têm o propósito permitir o compartilhamento de conteúdos conceitualizados formalizando o conhecimento de um determinado domínio. Abordando com um conjunto de termos que serão usados para a elaboração de consultas de conteúdos. Estas consultas são chamadas de inferência.
@@ -220,9 +222,10 @@ Assim \citet{guizzardi2000desenvolvimento} classificou as ontologias em cinco ca
 
 \begin{figure}[htb]
 	\centering					
+	\caption{Exemplo de uma Ontologia para o domínio: Destino de Viagem}
 	{\includegraphics[scale=0.45]{exemplo_ontologia.png}}
-	\caption{Exemplo de uma Ontologia para o domínio: Destino de Viagem. Autor}
 	\label{fig:exemplo_ont}
+	\source{o Autor}
 \end{figure}
 
 A \ref{fig:exemplo_ont} apresenta um exemplo de ontologia, por meio de um grafo, para o domínio: ``destino de viagem''. Os vértices ovais representam as classes, e os vértices retangulares representam os indivíduos (instâncias da classe). As arestas comuns representa um relacionamento de classe e subclasse, as arestas tracejadas representam um relacionamento de propriedade, já as arestas que começam com um losango indica a definição de uma propriedade, especificando sua tipagem.
@@ -237,9 +240,10 @@ O trabalho de \citet{isotani2015ontology}, apresenta a \textit{Ontology-Driven S
 
 \begin{figure}[htb]
 	\centering					
+	\caption{Ontologias para formalizar o conhecimento em ES}
 	{\includegraphics[scale=.65]{ontologia-para-ES.pdf}}
-	\caption{Ontologias para formalizar o conhecimento em ES. Adaptado de \citet{isotani2015ontology}}
 	\label{fig:ontologia_es}
+	\source{Adaptado de \citet{isotani2015ontology}}
 \end{figure}
 
 
@@ -256,8 +260,28 @@ Na literatura existem diferentes aplicações, conteúdos e funções para as ontolog
 \newcolumntype{s}{>{\hsize=.5\hsize}X}
 
 % TODO - corrigir tabela
+
+% \begin{table}[h!]
+% 	\centering
+% 	\begin{adjustbox}{max width=\textwidth}
+% 		\begin{tabular}{*{14}{|c}|}%%{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+% 			\hline
+% 			One & Two &Three & Four & Five & Six & Seven & Eight & Nine & Ten & Eleven &
+% 			Twelve & Thirteen & Fourteen\\
+% 			\hline
+% 			\hline
+% 			$1.111$ & $2.222$ & $3.333$ & $4.444$ & $5.555$ & $6.666$ & $7.777$ &
+% 			$8.888$ & $9.999$ & $0.000$ & $1.111$ & $2.222$ & $3.333$ & $4.444$\\
+% 			\hline
+% 			\end{tabular}
+% 	\end{adjustbox}
+% 	\caption{Test Table}
+% 	\label{tab:label_test}
+% \end{table}
+
 \begin{table}[htbp]
 	\centering
+	\tiny
 	\caption{Tipos de Ontologia}
 	\label{tab:tipos-ontologia}
 	\begin{tabularx}{\textwidth}{ssb}
@@ -282,8 +306,9 @@ Na literatura existem diferentes aplicações, conteúdos e funções para as ontolog
 	 & Ontologias de aplicação & Contêm as definições necessárias para modelar o conhecimento em uma aplicação. \\
 	 & Ontologias de domínio & Expressam conceituações que são específicas para um determinado domínio do conhecimento. \\
 	 & Ontologias genéricas & Similares às ontologias de domínio, mas os conceitos que as definem são considerados genéricos e comuns a vários campos \\
-	 & Ontologias de representação & Explicam as conceituações que estão por trás dos formalismos de representação do conhecimento. \\ \cmidrule(l){2-3} 
+	 & Ontologias de representação & Explicam as conceituações que estão por trás dos formalismos de representação do conhecimento. \\ \cmidrule(l){1-3} 
 	\end{tabularx}
+	\source{\citet{almeida2003visao}}
 \end{table}
 
 

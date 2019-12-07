@@ -1,18 +1,18 @@
-\chapter{Avaliação Empírica da OntoExer-SPL}
+\chapter{Avaliação Empírica da OntoExper-SPL}
 \pagestyle{plain}
 \label{sec:avaliacao}
 
 \section{Considerações Iniciais}
 \label{sec:concidaracoes_iniciais}
 
-Este tópico apresenta um estudo empírico realizado para avaliar a OntoExer-SPL, com base em um questionário contendo onze questões, oito com critérios de qualidade no estilo escala Likert \cite{allen2007likert}, uma avaliação de frequência da escala Likert, teste estatístico e correlação entre os oito critérios.
+Este tópico apresenta um estudo empírico realizado para avaliar a OntoExper-SPL, com base em um questionário contendo onze questões, oito com critérios de qualidade no estilo escala Likert \cite{allen2007likert}, uma avaliação de frequência da escala Likert, teste estatístico e correlação entre os oito critérios.
 
 \section{Definição do Estudo}
 \label{sec:definicao_do_estudo}
 
-O propósito principal deste estudo é caracterizar a OntoExer-SPL. Baseado no modelo \textit{Goal-Question-Metric} (GQM) \cite{Basili1988}, este estudo tem por objetivo:
+O propósito principal deste estudo é caracterizar a OntoExper-SPL. Baseado no modelo \textit{Goal-Question-Metric} (GQM) \cite{Basili1988}, este estudo tem por objetivo:
 
-\textbf{Avaliar} a ontologia OntoExer-SPL
+\textbf{Avaliar} a ontologia OntoExper-SPL
 
 \textbf{Com o propósito de} caracterizar a sua viabilidade
 
@@ -33,7 +33,7 @@ O planejamento do estudo é composto das seguintes etapas:
     
     \item \textbf{Treinamento:} por causa do nível de conhecimento dos participantes não foi necessária a realização desta etapa.
     
-    \item \textbf{Instrumentação:} todos os especialistas receberam os seguintes documentos: i) um documento contendo um breve descritivo da avaliação, com os link para ferramentas e tecnologias necessárias; (ii) uma cópia do Instrumento de Avaliação caracterizado por um questionário - Google Forms\footnote[1]{https://www.google.com/forms}; e (iii) uma cópia dos metadados da ontologia, compostos de: um arquivo do tipo OWL do modelo da OntoExer-SPL, um arquivo do tipo OWL da OntoExer-SPL povoada com 174 indivíduos, um arquivo do tipo planilha do Excel contendo os dados originais dos experimentos, a cópia da \ref{figure:class_diagram_ontology}, a cópia da \ref{figure:conceptual_model_clustering}, a cópia da \ref{figure:graph-all-class} e a cópia da \ref{figure:graph_ontology_model}. A instrumentação completa pode ser encontrada no Apêndice \ref{apendice:d}.
+    \item \textbf{Instrumentação:} todos os especialistas receberam os seguintes documentos: i) um documento contendo um breve descritivo da avaliação, com os link para ferramentas e tecnologias necessárias; (ii) uma cópia do Instrumento de Avaliação caracterizado por um questionário - Google Forms\footnote[1]{https://www.google.com/forms}; e (iii) uma cópia dos metadados da ontologia, compostos de: um arquivo do tipo OWL do modelo da OntoExper-SPL, um arquivo do tipo OWL da OntoExper-SPL povoada com 174 indivíduos, um arquivo do tipo planilha do Excel contendo os dados originais dos experimentos, a cópia da \ref{figure:class_diagram_ontology}, a cópia da \ref{figure:conceptual_model_clustering}, a cópia da \ref{figure:graph-all-class} e a cópia da \ref{figure:graph_ontology_model}. A instrumentação completa pode ser encontrada no Apêndice \ref{apendice:d}.
 \end{itemize}
 
 A instrumentação fornecida aos especialistas foi suficiente para responder o questionário da avaliação.
@@ -143,6 +143,7 @@ Foram convidados 40 especialistas em ES, porém apenas 17 aceitaram participar do
     E16 & Mestrado & 6 \\
     E17 & Doutorado & 6 \\ \bottomrule
     \end{tabular}
+    \source{o Autor}
 \end{table}
 
 \subsection{Frequência Likert}
@@ -161,6 +162,7 @@ A \ref{tab:frequencia-likert} apresenta a frequência das respostas dos especiali
 \end{itemize}
 
 \begin{table}[htb]
+    \centering
     \caption{Porcentagem de Frequência Amostral das Respostas dos participantes}
     \label{tab:frequencia-likert}
     \begin{tabular}{@{}lcccccr@{}}
@@ -175,6 +177,7 @@ A \ref{tab:frequencia-likert} apresenta a frequência das respostas dos especiali
     Consistência & 0(0.00\%) & 0(0.00\%) & 2(11.76\%) & 4(23.53\%) & 11(64.71\%) & 5.0 \\
     \begin{tabular}[c]{@{}l@{}}Capacidade \\ Organizacional\end{tabular} & 0(0.00\%) & 1(5.88\%) & 3(17.65\%) & 4(23.53\%) & 9(52.94\%) & 5.0 \\ \bottomrule
     \end{tabular}
+    \source{o Autor}
 \end{table}
 
 A moda representa o valor mais frequente respondido pelos especialistas. Sendo assim, segue o resultada de cada critério:
@@ -196,9 +199,10 @@ O critério \textbf{Eficiência Computacional} teve o pior desempenho, pois os esp
 
 \begin{figure}[htb]
 	\centering					
-	{\includegraphics[angle=270,scale=1]{frequencia-likert-2.pdf}}
 	\caption{Frequência das Respostas dos Participantes}
-	\label{fig:frequencia-likert}
+	{\includegraphics[angle=270,scale=1]{frequencia-likert-2.pdf}}
+    \label{fig:frequencia-likert}
+    \source{o Autor}
 \end{figure}	
 
 
@@ -232,15 +236,17 @@ Para descrever o teste de normalidade dos resultados foi aplicada uma abordagem 
     E16 & 37 \\
     E17 & 38 \\ \bottomrule
     \end{tabular}
+    \source{o Autor}
 \end{table}
 
 Plotamos esses valores no gráfico de histograma apresentado na \ref{fig:histograma}. É necessário executar o teste de normalidade. Para isso foi usado o teste de Shapiro-Wilk \cite{shapiro1965analysis}. O teste Shapiro-Wilk testa a hipótese nula de que os dados foram extraídos de uma distribuição normal, considerando que \textit{p-value} $>$ 0,05. 
 
 \begin{figure}[H]
 	\centering					
-	{\includegraphics[scale=.8]{curva-normal.png}}
 	\caption{Histograma da Somatória}
-	\label{fig:histograma}
+	{\includegraphics[scale=.8]{curva-normal.png}}
+    \label{fig:histograma}
+    \source{o Autor}
 \end{figure}	
 
 
@@ -297,14 +303,15 @@ A \ref{fig:correlacao} apresenta um mapa de calor indicando o grau de correlação
 
 \begin{figure}[H]
 	\centering					
-	{\includegraphics[scale=.8]{correlacao-criterios.png}}
 	\caption{Correlação dos critérios de avaliação.}
-	\label{fig:correlacao}
+	{\includegraphics[scale=.8]{correlacao-criterios.png}}
+    \label{fig:correlacao}
+    \source{o Autor}
 \end{figure}
 
 \begin{table}[H]
     \centering
-    \caption{\textit{ranking} de correlação dos critérios de avaliação}
+    \caption{\textit{Ranking} de correlação dos critérios de avaliação}
     \label{tab:correlacao-criterios}
     \begin{tabular}{@{}rllrc@{}}
     \toprule
@@ -338,11 +345,12 @@ A \ref{fig:correlacao} apresenta um mapa de calor indicando o grau de correlação
     27 & \begin{tabular}[c]{@{}l@{}}Eficiência \\ Computacional\end{tabular} & Clareza & -0,063 & desprezível \\
     28 & \begin{tabular}[c]{@{}l@{}}Capacidade \\ Organizacional\end{tabular} & Concisão & -0,079 & desprezível \\ \bottomrule
     \end{tabular}
+    \source{o Autor}
 \end{table}
 
 A \ref{tab:correlacao-criterios} apresenta o \textit{ranking} de correlação dos critérios, segundo a interpretação de \citet{pearson} só será considerado as correlações de 1 a 8 no \textit{ranking}. Dessa forma pode-se afirmar que, com base nas correlações positivas na seguinte ordem de valor: 
 
-\begin{itemize}
+\begin{itemize} 
     \item quanto melhor a \textbf{Completude} melhor a \textbf{Precisão};
     \item quanto melhor a \textbf{Consistência} melhor a \textbf{Concisão};
     \item quanto melhor a \textbf{Capacidade Computacional} melhor a \textbf{Eficiência Computacional};
@@ -367,12 +375,13 @@ Durante a Seção \ref{sec:frequencia-likert} foi apresentado os resultados do est
     \centering
     \caption{Total de respostas positivas, neutras e negativas}
     \label{tab:total-respostas}
-    \begin{tabular}{lccc}
+    \begin{tabular}{cccc}
     \hline
     \textbf{} & \textbf{Negativo (DT e DP)} & \textbf{Neutro (N)} & \textbf{Positivo (CP e CT)} \\ \hline
     Total de respostas & 4 & 23 & 109 \\
     \% & 2,95\% & 16,91\% & 70,15\% \\ \hline
     \end{tabular}
+    \source{o Autor}
 \end{table}
 
 A Seção \ref{sec:frequencia-likert} foi aplicado o método aditivo para elaborar uma variável dependente. Por meio do teste de Shapiro-Wilk pode-se identificar e a VD é uma distribuição normal. Uma distribuição normal apresenta que os dados estão distribuídos em 68,26\% por 1 desvio, um conjunto central, 95,44\% por 2 desvios e 99,73\% por 3 desvios. Sendo assim essa informa guia a proximos técnica de testes de hipótese.
@@ -397,9 +406,9 @@ A seguir estão listadas as ameaças a validade interna:
 \begin{itemize}
     \item \textbf{Diferenças entre os especialistas:} devido do tamanho da amostra, as variações entre as habilidades dos especialistas foram poucas, assim, os especialistas não foram divididos em grupos. Dessa forma, as tarefas designadas foram idênticas;
     
-    \item \textbf{Acurácia das respostas dos participantes:} uma vez que as informações referentes da OntoExer-SPL  são apresentadas juntamente com seus metadados e considerando que os participantes são especialistas em ES, LPS e Ontologia, considera-se que as respostas fornecidas são válidas;
+    \item \textbf{Acurácia das respostas dos participantes:} uma vez que as informações referentes da OntoExper-SPL  são apresentadas juntamente com seus metadados e considerando que os participantes são especialistas em ES, LPS e Ontologia, considera-se que as respostas fornecidas são válidas;
     
-    \item \textbf{Efeito de Fadiga:} os arquivos da OntoExer-SPL (modelagem e povoados com indivíduos) são de difícil leitura pelos seres humanos, logo se faz necessária a utilização de ferramentas para exibição da OntoExer-SPL, bem como os textos auxiliares, para uma maior compreensão dos critérios de avaliação, e das imagens anexadas ao questionário. Os efeitos de fadiga são uma das principais ameaças, por isso, para tentar minimizar esse problema, a documentação foi enviada aos especialistas por e-mail com um prazo de 40 dias para enviarem as respostas, assim, eles poderiam responder conforme a sua disponibilidade;
+    \item \textbf{Efeito de Fadiga:} os arquivos da OntoExper-SPL (modelagem e povoados com indivíduos) são de difícil leitura pelos seres humanos, logo se faz necessária a utilização de ferramentas para exibição da OntoExper-SPL, bem como os textos auxiliares, para uma maior compreensão dos critérios de avaliação, e das imagens anexadas ao questionário. Os efeitos de fadiga são uma das principais ameaças, por isso, para tentar minimizar esse problema, a documentação foi enviada aos especialistas por e-mail com um prazo de 40 dias para enviarem as respostas, assim, eles poderiam responder conforme a sua disponibilidade;
     
     \item \textbf{Influência de outros especialistas na avaliação:} a influência entre os especialistas foi mitigada, pois eles não sabiam quem foram convidados para tal estudo; e
     
@@ -446,7 +455,7 @@ Durante a execução do estudo os especialistas puderam contribuir com um campo ab
     \begin{quotation}
         As estruturas e relações foram bem estruturadas na ontologia. Os tópicos básicos de experimentação em engenharia de software estão bem representados e associados a literatura básica de experimentação quantitativa.
 
-        % O primeiro comentário, seria a alteração de "OntoExer-SPL" para "SmartyOntology". É uma contribuição para a abordagem Smarty certo?
+        % O primeiro comentário, seria a alteração de "OntoExper-SPL" para "SmartyOntology". É uma contribuição para a abordagem Smarty certo?
 
         % A instrumentação dessa avaliação foi validada em um estudo piloto? Acredito que a Ontologia poderia conter um tópico chamado "Grupo de Controle" para avaliar a qualidade do experimento em LPS. Na maioria das vezes é difícil entender quais aspectos de determinadas tecnologias podem ser avaliadas em conjunto com LPS. Talvez criar Grupos de Controle como Academia ou Indústria e incluir os participantes em um estudo piloto. Tal grupo de controle pode estar associado a "Pilot Project" já representado na ontologia. 
 
@@ -458,7 +467,7 @@ Durante a execução do estudo os especialistas puderam contribuir com um campo ab
 
         Pensando análise qualitativa dos dados, acho que nenhuma modelagem ou representação foi criada em "Analyze" na Ontologia? 
 
-        Hoje existe um grande interesse na comunidade científica em análises qualitativas, uma sugestão seria estender a OntoExer-SPL para tal contexto de análise. Entretanto, eu entendo que a ontologia foi proposta para experimentos quantitativos, mas isso poderia ser uma extensão ou trabalho futuro bem interessante para a comunidade científica de LPS ou até mesmo para a área de Ontologia em geral.
+        Hoje existe um grande interesse na comunidade científica em análises qualitativas, uma sugestão seria estender a OntoExper-SPL para tal contexto de análise. Entretanto, eu entendo que a ontologia foi proposta para experimentos quantitativos, mas isso poderia ser uma extensão ou trabalho futuro bem interessante para a comunidade científica de LPS ou até mesmo para a área de Ontologia em geral.
     \end{quotation}
 
     \item Comentário do E8:
@@ -509,23 +518,23 @@ Durante a execução do estudo os especialistas puderam contribuir com um campo ab
     
 \end{itemize}
 
-No geral foi possível notar que a OntoExer-SPL precisa ser melhorada quanto a sua eficiência computacional. Os pontos de melhoria são, corrigir os termos \textit{Keyworld} para \textit{Keywords}, associar \textit{SPL  artifacts} a \textit{SPL domain}, incluir os axiomas \textit{Results}, \textit{Analyze}, ``Ameaças a Validade'', \textit{Subjects}e modificar o axioma \textit{Package} para \textit{Replication-Package}.
+No geral foi possível notar que a OntoExper-SPL precisa ser melhorada quanto a sua eficiência computacional. Os pontos de melhoria são, corrigir os termos \textit{Keyworld} para \textit{Keywords}, associar \textit{SPL  artifacts} a \textit{SPL domain}, incluir os axiomas \textit{Results}, \textit{Analyze}, ``Ameaças a Validade'', \textit{Subjects}e modificar o axioma \textit{Package} para \textit{Replication-Package}.
 
 \subsection{Melhorias com Base em Armadilhas Identificadas na Ferramenta do OOPS!}
 
-Na \ref{tab:result_of_evaluation} foi relatado as armadilhas que a ferramenta encontrou na OntoExer-SPL, a seguir estão descritos as melhorias que devem ser realizada na ontologia para melhorar estes pontos:
+Na \ref{tab:result_of_evaluation} foi relatado as armadilhas que a ferramenta encontrou na OntoExper-SPL, a seguir estão descritos as melhorias que devem ser realizada na ontologia para melhorar estes pontos:
 
 \begin{itemize}
     \item No caso \textbf{P08:} deve-se criar anotações para os axiomas;
     \item No caso \textbf{P10:} deve-se criar as disjunções dos axiomas;
     \item No caso \textbf{P13:} deve-se criar relacionamentos inverso para os axiomas: \textit{typeSelectionOfParticipants, typeExperimentSPL, typeExperiment, typeDesignExperiment, typeContextSelection, typeContextExperiment, experiment, documentation};
     \item No caso \textbf{P19:} deve-se remover os domínios e alcances desnecessários para os axiomas: \textit{documentation, experiment, typeContextExperiment, typeDesignExperiment, typeExperiment, typeSelectionOfParticipants}; 
-    \item No caso \textbf{P41:} deve-se atribuir uma licença a OntoExer-SPL.
+    \item No caso \textbf{P41:} deve-se atribuir uma licença a OntoExper-SPL.
 \end{itemize}    
 
 \section{Considerações Finais}
 \label{sec:concidaracoes_finais}
 
-Este capítulo apresentou a avaliação quantitativa sobre oito critérios de qualidade aplicados a OntoExer-SPL com especialistas em ES, LPS e Ontologia. Os resultados obtidos permitiram identificar a qualidade da OntoExer-SPL. Assim, os resultados dos dados analisados forneceu evidências que as OntoExer-SPL possui um grau de qualidade relevante. Permitindo assim a evolução de novos estudos sobre a OntoExer-SPL, expandindo-a e melhorando seus pontos de baixa qualidade.
+Este capítulo apresentou a avaliação quantitativa sobre oito critérios de qualidade aplicados a OntoExper-SPL com especialistas em ES, LPS e Ontologia. Os resultados obtidos permitiram identificar a qualidade da OntoExper-SPL. Assim, os resultados dos dados analisados forneceu evidências que as OntoExper-SPL possui um grau de qualidade relevante. Permitindo assim a evolução de novos estudos sobre a OntoExper-SPL, expandindo-a e melhorando seus pontos de baixa qualidade.
 
-Foram sugeridas melhorias à OntoExer-SPL, tanto pelos especialistas como pela ferramenta OOPS!, que devem ser aplicadas em trabalhos futuros. Por fim, compreende-se que novos estudos devem ser realizados com outros especialistas para expandir o corpo de conhecimento.
+Foram sugeridas melhorias à OntoExper-SPL, tanto pelos especialistas como pela ferramenta OOPS!, que devem ser aplicadas em trabalhos futuros. Por fim, compreende-se que novos estudos devem ser realizados com outros especialistas para expandir o corpo de conhecimento.

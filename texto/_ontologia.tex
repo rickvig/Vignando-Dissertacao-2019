@@ -1,4 +1,4 @@
-\chapter{Uma Ontologia para Experimentos em LPS - OntoExper-SPL}
+\chapter{OntoExper-SPL: uma Ontologia para Experimentos de LPS}
 \pagestyle{plain}
 \label{sec:ontologia}
 
@@ -24,7 +24,7 @@ As etapas de construção dessa metodologia são:
 	\item Avaliação e validação da ontologia.
 \end{enumerate}
 
-Com base nas tipologias proposta por \citet{almeida2003visao} definimos o tipo da ontologia proposta neste trabalho, descrito na Tabela \ref{tab:tipo-modelo-ontologia}.
+Com base nas tipologias proposta por \citet{almeida2003visao} e descritos na \ref{tab:tipos-ontologia}, definimos o tipo da ontologia proposta neste trabalho.
 
 O tipo é caracterizado como; \textbf{quanto à função:} é uma ontologia de domínio, \textbf{quanto ao grau de formalismo:} é uma ontologia semi formal, \textbf{quanto à aplicação:} é uma ontologia de especificação, \textbf{quanto à estrutura:} é uma ontologia de domínio e \textbf{quanto ao conteúdo:} é uma ontologia para modelagem de conhecimento e para aplicação de domínio.
 
@@ -38,27 +38,23 @@ Também foi aplicado o seguinte processo de elaboração da ontologia, seguindo os 
 	\item elaboração de sentenças para restringir inferências de conhecimento baseadas na estrutura.
 \end{itemize}
 
-\begin{landscape}
-	\topskip0pt
-    \vspace*{\fill}
-	\begin{table}[H]
-		\label{tab:tipo-modelo-ontologia}
-		\caption{Tipo da ontologia proposta}
-		\centering
-		\begin{tabular}{@{}lll@{}}
-			\toprule
-			Abordagem & Classificação & Descrição \\ \midrule
-			\begin{tabular}[c]{@{}l@{}}Quanto à função \\ (Mizoguchi; Vanwelkenbuyse \\ n; Ikeda, 1995)\end{tabular} & Ontologias de domínio & \begin{tabular}[c]{@{}l@{}}Reutilizáveis no domínio, fornecem vocabulário \\ sobre conceitos e seus relacionamentos, sobre as \\ atividades e regras que os governam.\end{tabular} \\
-			\begin{tabular}[c]{@{}l@{}}Quanto ao grau de formalismo \\ (Uschold; Gruninger, 1996)\end{tabular} & Ontologias semi informais & \begin{tabular}[c]{@{}l@{}}Expressa em linguagem natural de forma restrita \\ e estruturada.\end{tabular} \\
-			\begin{tabular}[c]{@{}l@{}}Quanto à aplicação \\ (Jasper; Uschold, 1999)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Ontologias como \\ especificação\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cria-se uma ontologia para um domínio, a qual é \\ usada para documentação e manutenção no \\ desenvolvimento de softwares.\end{tabular} \\
-			\begin{tabular}[c]{@{}l@{}}Quanto à estrutura \\ (Haav; Lubi, 2001)\end{tabular} & Ontologias de domínio & \begin{tabular}[c]{@{}l@{}}Descrevem o vocabulário relacionado a um domínio, \\ como, por exemplo, medicina ou automóveis\end{tabular} \\
-			\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Quanto ao conteúdo \\ (Van-Heijist; Schreiber; \\ Wielinga, 2002)\end{tabular}} & \begin{tabular}[c]{@{}l@{}}Ontologias de modelagem\\ do conhecimento\end{tabular} & \begin{tabular}[c]{@{}l@{}}Especificam conceituações do conhecimento, têm uma \\ estrutura interna semanticamente rica e são refinadas\\ para uso no domínio do conhecimento que descrevem\end{tabular} \\
-			& Ontologias de aplicação & \begin{tabular}[c]{@{}l@{}}Contêm as definições necessárias para modelar o \\ conhecimento em uma aplicação.\end{tabular} \\
-			& Ontologias de domínio & \begin{tabular}[c]{@{}l@{}}Expressam conceituações que são específicas para \\ um determinado domínio do conhecimento.\end{tabular} \\ \bottomrule
-		\end{tabular}
-	\end{table}
-	\vspace*{\fill}
-\end{landscape}
+
+% \begin{table}[H]
+% 	\label{tab:tipo-modelo-ontologia}
+% 	\caption{Tipo da ontologia proposta}
+% 	\centering
+% 	\begin{tabular}{@{}lll@{}}
+% 		\toprule
+% 		Abordagem & Classificação & Descrição \\ \midrule
+% 		\begin{tabular}[c]{@{}l@{}}Quanto à função \\ (Mizoguchi; Vanwelkenbuyse \\ n; Ikeda, 1995)\end{tabular} & Ontologias de domínio & \begin{tabular}[c]{@{}l@{}}Reutilizáveis no domínio, fornecem vocabulário \\ sobre conceitos e seus relacionamentos, sobre as \\ atividades e regras que os governam.\end{tabular} \\
+% 		\begin{tabular}[c]{@{}l@{}}Quanto ao grau de formalismo \\ (Uschold; Gruninger, 1996)\end{tabular} & Ontologias semi informais & \begin{tabular}[c]{@{}l@{}}Expressa em linguagem natural de forma restrita \\ e estruturada.\end{tabular} \\
+% 		\begin{tabular}[c]{@{}l@{}}Quanto à aplicação \\ (Jasper; Uschold, 1999)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Ontologias como \\ especificação\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cria-se uma ontologia para um domínio, a qual é \\ usada para documentação e manutenção no \\ desenvolvimento de softwares.\end{tabular} \\
+% 		\begin{tabular}[c]{@{}l@{}}Quanto à estrutura \\ (Haav; Lubi, 2001)\end{tabular} & Ontologias de domínio & \begin{tabular}[c]{@{}l@{}}Descrevem o vocabulário relacionado a um domínio, \\ como, por exemplo, medicina ou automóveis\end{tabular} \\
+% 		\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Quanto ao conteúdo \\ (Van-Heijist; Schreiber; \\ Wielinga, 2002)\end{tabular}} & \begin{tabular}[c]{@{}l@{}}Ontologias de modelagem\\ do conhecimento\end{tabular} & \begin{tabular}[c]{@{}l@{}}Especificam conceituações do conhecimento, têm uma \\ estrutura interna semanticamente rica e são refinadas\\ para uso no domínio do conhecimento que descrevem\end{tabular} \\
+% 		& Ontologias de aplicação & \begin{tabular}[c]{@{}l@{}}Contêm as definições necessárias para modelar o \\ conhecimento em uma aplicação.\end{tabular} \\
+% 		& Ontologias de domínio & \begin{tabular}[c]{@{}l@{}}Expressam conceituações que são específicas para \\ um determinado domínio do conhecimento.\end{tabular} \\ \bottomrule
+% 	\end{tabular}
+% \end{table}
 
 Esta modelagem inicial da ontologia foi baseada no trabalho de mapeamento sistemático de experimentos em LPS de \citet{Furtado2018}, por meio de uma análise exploratória dos dados levantados nesse mapeamento. Foi possível usá-lo como guia de informações, metadados de ESE em LPS e o modelo conceitual. 
 
@@ -68,9 +64,10 @@ O primeiro passo foi desenvolver um grafo como modelo inicial da ontologia OntoE
 
 \begin{figure}[htb]
 	\centering 
+	\caption{Grafo inicial da proposta de ontologia}
 	\includegraphics[scale=0.5]{grafo-inicial.pdf}
-	\caption{Grafo inicial da proposta de ontologia. Fonte o Autor}
 	\label{figure:graph-all-class}
+	\source{o Autor}
 \end{figure}
 
 A \ref{figure:graph-all-class} representa este modelo inicial contendo a definição principal dos termos para um experimento: Experimento LPS, Documentação, Template, Avaliação, Discussão, Análise, Execução e Planejamento. Em seguida o grafo foi refinado para termos, de menor granularidade, definidas a seguir:
@@ -181,15 +178,13 @@ A \ref{figure:graph-all-class} representa este modelo inicial contendo a definiç
 \end{itemize}
 
 \begin{landscape}
-	\topskip0pt
-    \vspace*{\fill}
 	\begin{figure}[htb]
 		\centering 
-		\caption{Modelo Conceitual Clusterizado. Fonte o Autor}
-		\includegraphics[scale=.65]{modelo-conceitual-clusterizado.pdf}
+		\caption{Modelo Conceitual Clusterizado}
+		\includegraphics[scale=.7]{modelo-conceitual-clusterizado.pdf}
 		\label{figure:conceptual_model_clustering}
+		\source{o Autor}
 	\end{figure}
-	\vspace*{\fill}
 \end{landscape}
 
 A \ref{figure:conceptual_model_clustering}, apresenta uma modificação do modelo conceitual original de \citet{Furtado2018}, em que foi aplicada a clusterização separando cada cluster para cada fase do template experimental de Wohlin. Essa clusterização foi necessária para a compreensão mais abstrata das relações entre os termos do domínio identificados no modelo conceitual original e as fases do template do Wholin. Dessa forma foi possível validar cada termo do grafo inicialmente proposto.
@@ -199,19 +194,16 @@ Em seguida, um diagrama de classes foi elaborado para representar de uma maneira
 A \ref{figure:class_diagram_ontology} apresenta o diagrama de classes gerado para a modelagem da ontologia. Esse diagrama representa todas as composições de classes que existe com \texttt{Experiment} e \texttt{ExperimentSPL}, bem como as relações hierárquicas como por exemplo, \texttt{ExperimentSPL} é uma subclasse de \texttt{Experiment}.
 
 \begin{landscape}
-	\topskip0pt
-    \vspace*{\fill}
 	\begin{figure}[htb]
 		\centering
-		\caption{Diagrama de classes para a modelagem da ontologia. Fonte o Autor}
-		\includegraphics[scale=.3]{class-diagram-ontology.png}
+		\caption{Diagrama de classes para a modelagem da ontologia}
+		\includegraphics[scale=.33]{class-diagram-ontology.png}
 		\label{figure:class_diagram_ontology}
+		\source{o Autor}
 	\end{figure}
-	\vspace*{\fill}
 \end{landscape}
 
 % Posteriormente, foi utilizada a ferramenta Protégé para construção oficial da ontologia, seguindo os padrões OWL.
-
 
 \section{Projeto}
 \label{sec:projeto}
@@ -235,9 +227,10 @@ No Protégé, é definido uma classe raiz chamada \texttt{Thing} na qual todas as o
 
 \begin{figure}[htb]
 	\centering 
-	\includegraphics[scale=.5]{entidades-protege.png}
-	\caption{Definição da classe Experiment no Protégé.}
+	\caption{Definição da classe \texttt{Experiment} no Protégé}
+	\includegraphics[scale=.4]{entidades-protege.png}
 	\label{figure:class_defition_protege}
+	\source{o Autor}
 \end{figure}
 
 \subsubsection{Definição das propriedades de objetos}
@@ -246,9 +239,10 @@ Uma propriedade de objeto raiz chamada \texttt{topObjectProperty} é definido na 
 
 \begin{figure}[!htb]
 	\centering 
-	\includegraphics[scale=.5]{entidades-protege-object-properties.png}
-	\caption{Definição da propriedade de objeto \texttt{documentation} no Protégé.}
+	\caption{Definição da propriedade de objeto \texttt{documentation} no Protégé}
+	\includegraphics[scale=.4]{entidades-protege-object-properties.png}
 	\label{figure:object_prop_defition_protege}
+	\source{o Autor}
 \end{figure}
 
 \subsubsection{Definição das propriedades dos dados}
@@ -257,9 +251,10 @@ Uma propriedade de dados raiz chamada \texttt{topDataProperty} é definida na qua
 
 \begin{figure}[htb]
 	\centering 
-	\includegraphics[scale=.5]{entidades-protege-data-properties.png}
-	\caption{Definição da propriedade de dado \texttt{nameSPLUsed} no Protégé.}
+	\caption{Definição da propriedade de dado \texttt{nameSPLUsed} no Protégé}
+	\includegraphics[scale=.4]{entidades-protege-data-properties.png}
 	\label{figure:data_prop_defition_protege}
+	\source{o Autor}
 \end{figure}
 
 \subsubsection{Artefato gerado pelo Protégé}
@@ -268,9 +263,10 @@ Ao final, o Protégé gera um arquivo \textit{.owl} contendo a definição da ontolo
 
 \begin{figure}[htb]
 	\centering 
+	\caption{Grafo da modelagem da ontologia gerado pela ferramenta WbVOWL}
 	\includegraphics[scale=.6]{ontology-populate-valid-owl-2.pdf}
-	\caption{Grafo da modelagem da ontologia - gerado pela ferramenta WbVOWL.}
 	\label{figure:graph_ontology_model}
+	\source{o Autor}
 \end{figure}
 
 \subsection{Povoamento com Python}
@@ -297,9 +293,33 @@ Os dados da planilha estão estruturados na seguinte forma: cada linha representa
 
 Com relação ao \textit{Experiment}:  \textit{ID, Title, Authorship, Publication year, Publication type, Publication venue, Pages number, dados de Experimentos em LPS: Is it Real or Academic SPL?, SPL Name used, Was the SPL source used informed? (Y/N) (If yes, which one?)}. 
 
-Com relação a \textit{Documentation}: \textit{Does it use template? (Y/N)?,  If yes, what template?, Observations about the template used. Para o Abstract: Objective (What is the question addressed with this research?), Abstract - Background (Why is this research important?), Methods (What is the statistical context and methods applied?), Results (What are the main findings? Practical implications?), Limitations (What are the weakness of this research?), Conclusions (What is the conclusion?) e Keywords. Para o Introduction Section: Problem statement (What is the problem? Where does it occur? Who has observed it? Why is it important to be solved?), Research objective (GQM) (What is the research question to be answered by this study?), Context (What information is necessary to understand whether the research relates to a specific situation (environment)?). Para o Related Work Section: Technology under investigation (What is necessary for a reader to know about the technology to reproduce its application?), Alternative technologies (How does this research relate to alternative technologies? What is the control treatment?), Related studies (How this research relates to existing research (studies)? What were the results from these studies?), Relevance to practice (How does it relate to state of the practice?). Para o Conclusions and Future Work Section: Summary (The purpose of this section is to provide a concise summary of the research and its results as presented in the former sections), Impact (Description of impacts with regard to cost, schedule, and quality, circumstances under which the approach presumably will not yield the expected benefit), Future Work (What other experiments could be run to further investigate the results yielded or evolve the Body of Knowledge)}.
+Com relação a \textit{Documentation}: \textit{Does it use template? (Y/N)?,  If yes, what template?, Observations about the template used}:
 
-Com relação ao \textit{Experiment Planning}: \textit{Goals (Formalization of goals, refine the important constructs of the experiment's goal), Experimental Units (From which population will the sample be drawn? How will the groups be formed (assignment to treatments)? Any kind of randomization and blinding has to be described?), Experimental Material (Which objects are selected and why?), Tasks (Which tasks have to be performed by the subjects?), Hypotheses (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment), Parameters (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment), Variables (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment), Experiment Design (What type of experimental design has been chosen?), Procedure (How will the experiment (i.e., data collection) be performed? What instruments, materials, tools will be used and how?) Analysis Procedure (How will the data be analyzed?), Is it a quasi-experiment? (Y/N) If yes, is it explicit in the study?, Is it an Original or Replicated Experiment?,	How was the selection of participants/experimental objects? - Simple random sampling; - Systematic sampling; - Stratified random sampling; - Convenience sampling; - Quota sampling, Context of the experiment (in vivo, in vitro, ...), Design Experimental: - One factor with two treatments; - One factor with more than two treatments; - Two factors with two treatments; - More than two factors each with two treatments, SPL artifact used, Context Selection (Off-line vs. on-line, Student vs. professional, Toy vs. real problems, Specific vs. general)}.
+\begin{itemize}
+	\item \textit{Abstract:} \textit{Objective (What is the question addressed with this research?), Abstract - Background (Why is this research important?), Methods (What is the statistical context and methods applied?), Results (What are the main findings? Practical implications?), Limitations (What are the weakness of this research?), Conclusions (What is the conclusion?) e Keywords};
+	\item \textit{Introduction Section}: \textit{Problem statement (What is the problem? Where does it occur? Who has observed it? Why is it important to be solved?), Research objective (GQM) (What is the research question to be answered by this study?), Context (What information is necessary to understand whether the research relates to a specific situation (environment)?)};
+	\item \textit{Related Work Section}: \textit{Technology under investigation (What is necessary for a reader to know about the technology to reproduce its application?), Alternative technologies (How does this research relate to alternative technologies? What is the control treatment?), Related studies (How this research relates to existing research (studies)? What were the results from these studies?), Relevance to practice (How does it relate to state of the practice?)}; e
+	\item \textit{Conclusions and Future Work Section}: \textit{Summary (The purpose of this section is to provide a concise summary of the research and its results as presented in the former sections), Impact (Description of impacts with regard to cost, schedule, and quality, circumstances under which the approach presumably will not yield the expected benefit), Future Work (What other experiments could be run to further investigate the results yielded or evolve the Body of Knowledge)}.
+\end{itemize}
+
+
+Com relação ao \textit{Experiment Planning}: 
+
+\begin{itemize}
+	\item \textit{Goals (Formalization of goals, refine the important constructs of the experiment's goal)};
+	\item \textit{Experimental Units (From which population will the sample be drawn? How will the groups be formed (assignment to treatments)? Any kind of randomization and blinding has to be described?)};
+	\item \textit{Experimental Material (Which objects are selected and why?)};
+	\item \textit{Tasks (Which tasks have to be performed by the subjects?)};
+	\item \textit{Hypotheses (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment)};
+	\item \textit{Parameters (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment)};
+	\item \textit{Variables (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment)};
+	\item \textit{Experiment Design (What type of experimental design has been chosen?)};
+	\item \textit{Procedure (How will the experiment (i.e., data collection) be performed? What instruments, materials, tools will be used and how?) Analysis Procedure (How will the data be analyzed?)};
+	\item \textit{Is it a quasi-experiment? (Y/N) If yes, is it explicit in the study?, Is it an Original or Replicated Experiment?};
+	\item \textit{How was the selection of participants/experimental objects? - Simple random sampling; - Systematic sampling; - Stratified random sampling; - Convenience sampling; - Quota sampling, Context of the experiment (in vivo, in vitro, ...)};
+	\item \textit{Design Experimental: - One factor with two treatments; - One factor with more than two treatments; - Two factors with two treatments; - More than two factors each with two treatments, SPL artifact used}; e
+	\item \textit{Context Selection (Off-line vs. on-line, Student vs. professional, Toy vs. real problems, Specific vs. general)}.
+\end{itemize}
 
 Com relação a \textit{Execution (Operation)}: \textit{Preparation (What has been done to prepare the execution of the experiment (i.e., schedule, training), Deviations from the Plan (Describe any deviations from the plan, e.g., how was the data collection actually performed?), The pilot project was carried out? (Y/N) If Yes, how many?}.
 
@@ -520,7 +540,7 @@ A \ref{tab:result_of_evaluation} apresenta o resumo do resultado ao rodar nosso 
 
 \begin{table*}[!htb]
 	\centering
-	\caption{Resumo dos resultado da avaliação executada por OOPS!. Traduzido e adaptado.}
+	\caption{Resumo dos resultado da avaliação executada por OOPS!}
 	\label{tab:result_of_evaluation}
 	\begin{tabular}{@{}lll@{}}
 		\toprule
@@ -532,6 +552,7 @@ A \ref{tab:result_of_evaluation} apresenta o resumo do resultado ao rodar nosso 
 		P19 & \begin{tabular}[c]{@{}l@{}}Definindo vários domínios ou \\intervalos nas propriedades em 6 casos\end{tabular} & \textit{critico} \\
 		P41 & \begin{tabular}[c]{@{}l@{}}Nenhuma licença declarada na ontologia *\end{tabular} & \textit{importante} \\ \bottomrule
 	\end{tabular}
+	\source{o Autor}
 \end{table*}
 	
 *Armadilha que se aplica à ontologia em geral, em vez de elementos específicos.

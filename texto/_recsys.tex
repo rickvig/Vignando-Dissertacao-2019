@@ -1,4 +1,4 @@
-\chapter{Protótipo de um Sistema de Recomendação para OntoExer-SPL}
+\chapter{Protótipo de um Sistema de Recomendação para OntoExper-SPL}
 \pagestyle{plain}
 \label{sec:recsys}
 
@@ -45,9 +45,10 @@ A Filtragem Colaborativa baseia-se na idéia de ``boca-a-boca'' em que a informaç
 
 \begin{figure}[htb]
 	\centering 
+	\caption{Filtragem Colaborativa}
 	\includegraphics[scale=.9]{filtragem-colaborativa.pdf}
-	\caption{Filtragem Colaborativa. Traduzido e Adaptado de \citet{robillard2010recommendation}}
 	\label{fig:filtragem-colaborativa}
+	\source{Traduzido e Adaptado de \citet{robillard2010recommendation}}
 \end{figure}
 
 Dado que este trabalho trata o sistema de recomendação como uma forma de realização de inferência sobre a OntoExper-SPL, utilizou-se a abordagem Filtragem Colaborativa.
@@ -76,9 +77,10 @@ Um RSSE compreende três componentes principais, (i) um mecanismo para coletar da
 
 \begin{figure}[htb]
 	\centering					
+	\caption{Passos de Construção para um RSSE}
 	{\includegraphics[scale=.5]{rsse.png}}
-	\caption{Passos de Construção para um RSSE. Traduzido e Adaptado de \citet{maki2016systematic}}
 	\label{fig:rsse}
+	\source{Traduzido e Adaptado de \citet{maki2016systematic}}
 \end{figure}
 
 A \ref{fig:rsse} apresenta de forma geral como é construído um RSSE, partindo da entradas dos dados pelo \textit{input}, passando pela extração de contexto, seguindo para aplicação de alguma técnica de recomendação, na qual sofre um inferência do corpo de conhecimento (normalmente específico para cada área de ES), depois segue para um processo de filtragem dos resultados, e como saída a recomendação em si.
@@ -101,30 +103,27 @@ Foi encontrada uma revisão sistemática \cite{maki2016systematic}, que aborda mét
 
 Por meio deste estudo, foi possível identificar qual técnica de SR para qual dominio de aplicação na industria.
 
-\begin{landscape}
-	\topskip0pt
-    \vspace*{\fill}
-	\begin{table}[]
-		\centering
-		\caption{Sumário de técnicas de recomendação em cada domínio, Traduzido e Adaptado de \citet{maki2016systematic} }
-		\label{tab:tec_x_doman}
-		\begin{tabular}{@{}llllllllll@{}}
-			\toprule
-			\multicolumn{1}{c}{\textbf{Domínios}} & \multicolumn{8}{c}{\textbf{Técnicas}} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Número de \\ Referências\end{tabular}}} \\ \midrule
-			& CBF & CF & KBF & Hibrido & IA & \begin{tabular}[c]{@{}l@{}}Redes \\ Sociais\end{tabular} & \begin{tabular}[c]{@{}l@{}}Info. de\\ Contexto\end{tabular} & \begin{tabular}[c]{@{}l@{}}Grupo de \\ agregação\end{tabular} &  \\ \midrule
-			Governo & 1 & 5 & 1 & 5 & 4 &  &  &  & 9 \\
-			Negócios &  & 1 & 3 & 3 & 4 &  &  &  & 5 \\
-			Comercio & 3 & 1 & 4 & 1 & 4 & 2 &  &  & 8 \\
-			Livraria & 2 & 2 &  & 3 & 1 &  &  &  & 6 \\
-			Escolas & 2 &  & 11 &  & 1 &  &  &  & 10 \\
-			Turismo & 5 & 9 & 9 & 9 & 2 & 2 & 11 &  & 18 \\
-			Pesquisa & 9 & 16 & 6 & 15 & 3 & 1 & 1 &  & 27 \\
-			\begin{tabular}[c]{@{}l@{}}Grupo de \\ Atividade\end{tabular} & 9 & 5 & 2 & 5 & 8 &  &  & 2 & 21 \\
-			\textbf{Total} & \textbf{31} & \textbf{39} & \textbf{36} & \textbf{41} & \textbf{27} & \textbf{5} & \textbf{12} & \textbf{2} & \textbf{104} \\ \bottomrule
-		\end{tabular}
-	\end{table}
-	\vspace*{\fill}
-\end{landscape}
+\begin{table}[]
+	\centering
+	\small
+	\caption{Sumário de técnicas de recomendação em cada domínio}
+	\label{tab:tec_x_doman}
+	\begin{tabular}{@{}llllllllll@{}}
+		\toprule
+		\multicolumn{1}{c}{\textbf{Domínios}} & \multicolumn{8}{c}{\textbf{Técnicas}} & \multicolumn{1}{c}{\textbf{\begin{tabular}[c]{@{}c@{}}Número de \\ Referências\end{tabular}}} \\ \midrule
+		& CBF & CF & KBF & Hibrido & IA & \begin{tabular}[c]{@{}l@{}}Redes \\ Sociais\end{tabular} & \begin{tabular}[c]{@{}l@{}}Info. de\\ Contexto\end{tabular} & \begin{tabular}[c]{@{}l@{}}Grupo de \\ agregação\end{tabular} &  \\ \midrule
+		Governo & 1 & 5 & 1 & 5 & 4 &  &  &  & 9 \\
+		Negócios &  & 1 & 3 & 3 & 4 &  &  &  & 5 \\
+		Comercio & 3 & 1 & 4 & 1 & 4 & 2 &  &  & 8 \\
+		Livraria & 2 & 2 &  & 3 & 1 &  &  &  & 6 \\
+		Escolas & 2 &  & 11 &  & 1 &  &  &  & 10 \\
+		Turismo & 5 & 9 & 9 & 9 & 2 & 2 & 11 &  & 18 \\
+		Pesquisa & 9 & 16 & 6 & 15 & 3 & 1 & 1 &  & 27 \\
+		\begin{tabular}[c]{@{}l@{}}Grupo de \\ Atividade\end{tabular} & 9 & 5 & 2 & 5 & 8 &  &  & 2 & 21 \\
+		\textbf{Total} & \textbf{31} & \textbf{39} & \textbf{36} & \textbf{41} & \textbf{27} & \textbf{5} & \textbf{12} & \textbf{2} & \textbf{104} \\ \bottomrule
+	\end{tabular}
+	\source{Traduzido e Adaptado de \citet{maki2016systematic} }
+\end{table}
 
 
 \section{Concepção}
@@ -138,9 +137,10 @@ A \ref{fig:RSSE-overview} apresenta o conceito geral da metodologia deste projet
 
 \begin{figure}[htb]
 	\centering					
-	{\includegraphics[scale=.5]{RSSE-overview.png}}
 	\caption{Modelagem geral do SR como prova de conceito para OntoExer-LPS}
+	{\includegraphics[scale=.5]{RSSE-overview.png}}
 	\label{fig:RSSE-overview}
+	\source{o Autor}
 \end{figure}
 
 
@@ -189,9 +189,10 @@ A aplicação construída conta com a seguinte árvore de diretórios apresentada na 
 
 \begin{figure}[htb]
 	\centering 
+	\caption{Árvore de diretórios da aplicação SR com Django Framework}
 	\includegraphics[scale=1]{dir-recsys-onto.png}
-	\caption{Árvore de diretórios da aplicação SR com Django Framework.}
 	\label{figure:dir-recsys-onto}
+	\source{o Autor}
 \end{figure}
 
 O diretório \lstinline{recsys-onto-exper-lps} é o diretório raiz do projeto, todo código fonte da aplicação se encontra nele.
@@ -252,9 +253,10 @@ A partir desse momento foi possível realizar as inferências na OntoExper-SPL. Fo
 
 \begin{figure}[htb]
 	\centering 
+	\caption{Tela do SR}
 	\includegraphics[scale=.35]{tela-recsys-onto.png}
-	\caption{Tela do SR.}
 	\label{figure:tela-recsys-onto}
+	\source{o Autor}
 \end{figure}
 
 A \ref{figure:tela-recsys-onto} apresenta a tela construída para o SR. Nessa tela existem dois campos de consultas, (i) Artefatos de LPS e (ii) Tipo de experimento em LPS. Quando o usuário seleciona qualquer um dos dois campos, o SR invoca o método \textit{filter\_experiment()} passando os dados selecionados como parâmetro. Nesse método é realizado a inferência na ontologia, segundo os valores que o usuário selecionou na tela. A listagem \ref{lst:inferencia-onto} apresenta o código da consulta realizada.
@@ -285,9 +287,10 @@ Neste projeto de SR foi implementado o modelo de avaliação explícito, onde cada 
 
 \begin{figure}[htb]
 	\centering 
+	\caption{\textit{Rating} Explícito no SR}
 	\includegraphics[scale=.5]{rating-recsys-onto.png}
-	\caption{\textit{Rating} Explícito no SR.}
-	\label{figure:rating-recsys-onto}
+	\label{figure:rating-recsys-onto}	
+	\source{o Autor}
 \end{figure}
 
 Quando o usuário dá a sua nota, o SR invoca o método \textit{rating\_experiment()} que recebe como parâmetro o experimento e a nota dada pelo usuário e realiza a persistência desses dados em um banco de dados relacional, na Seção \ref{sec:banco_dados} está detalhada a modelagem desses dados.
@@ -339,6 +342,7 @@ Para tal resultado o algoritmo está dividido em três partes: (i) criação do \tex
 		Total / Soma &  &  & 2,77 &  & 3,82 \\ \hline
 		\textbf{usuário-4} &  & \textbf{2,77} &  & \textbf{3,82} & 
 		\end{tabular}
+		\source{o Autor}
 	\end{table}
 
 \end{itemize}
@@ -382,6 +386,7 @@ As entidades com prefixo \textit{auth} e \textit{django} são geradas e mantidas 
 	id\_experiment & integer \\
 	title\_experiment & varchar(255) \\ \bottomrule
 	\end{tabular}
+	\source{o Autor}
 \end{table}
 
 
