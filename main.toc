@@ -74,7 +74,7 @@
 \contentsline {section}{\numberline {5.8}Considera\c c\~oes Finais}{100}{section.5.8}
 \contentsline {chapter}{\numberline {6}Conclus\~ao}{101}{chapter.6}
 \contentsline {section}{\numberline {6.1}Contribui\c c\~oes}{102}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limita\c c\~oes}{103}{section.6.2}
+\contentsline {section}{\numberline {6.2}Limita\c c\~oes}{102}{section.6.2}
 \contentsline {section}{\numberline {6.3}Trabalhos Futuros}{103}{section.6.3}
 \contentsline {chapter}{REFER\^ENCIAS}{104}{chapter*.1}
 \contentsline {chapter}{\numberline {A}Ap\^endice A: Ontologias - Tipologias e Metodologias de Constru\c c\~ao}{110}{section*.2}

@@ -3,34 +3,34 @@
 \label{sec:conclusao}
 
 % o problema
-A realização de experimentos de ES em LPS traz informações relevantes para fornecer evidências de uma teoria para o mundo real. A capacidade de compreender, estudar, e replicar experimentos tornam este método mais atrativo para a comunidade. Porém, tem se notado uma carência de documentação formal e estruturada para documentar e armazenar os experimentos, que por sua vez, acabam por dificultar a repetição dos estudos em LPS. Assim, com a organização dos dados e informações sobre experimentos em LPS, acredita ser possível tornar essa tarefa mais fácil e atrativa. Usando das próprias tecnologias adjacentes, como formalização do conhecimento, por meio dos modelos de ontologias, que, posteriormente possibilita a realização de inferências a eles. O resultado acaba sendo, a geração de informações organizada, estrutura, personalizadas e úteis, principalmente pela oportunidade da criação de aplicações auxiliares neste sentido, como por exemplo sistemas de recomendações, bem como objetivo, incentivar a cultura de experimentos pela indústria de software.
+A realização de experimentos de LPS traz informações relevantes para fornecer evidências de uma teoria para o mundo real. A capacidade de compreender, estudar, e replicar experimentos tornam esse método mais atrativo para a comunidade. Porém, tem se notado uma carência de documentação formal e estruturada para documentar e armazenar os experimentos, que por sua vez, acabam por dificultar a repetição dos estudos em LPS. Assim, com a organização dos dados e informações sobre experimentos de LPS, acredita ser possível tornar essa tarefa mais fácil e atrativa. Usando das próprias tecnologias adjacentes, como formalização do conhecimento, por meio dos modelos de ontologias, que, posteriormente possibilita a realização de inferências a eles. O resultado acaba sendo a geração de informações organizadas, estruturadas, personalizadas e úteis, principalmente pela oportunidade da criação de aplicações auxiliares neste sentido, como por exemplo sistemas de recomendações, bem como incentivar a cultura de experimentos pela indústria de software.
 
 % A proposta
-Neste contexto, foi desenvolvido uma proposta a um modelo de ontologia, a OntoExper-\\LPS, com o objetivo de organizar e estruturar o conhecimento adquirido sobre experimentos de ES em LPS. Este corpo de conhecimento foi previamente levantado em um trabalho de dissertação de mestrado do grupo de pesquisa GReater \cite{Furtado2018}, onde foram levantados 211 artigos que relatam experimentos em LPS. Com este levantamento foi possível elaborar um modelo de ontologia a fim de representar o conhecimento sobre experimentos de ES, bem como entendê-lo para LPS, em seguida inserimos os dados dos artigos neste modelo, chamamos esta fase de inserção dos indivíduos na ontologia. Desta forma estruturamos a \textit{TBox} e \textit{Abox} da ontologia proposta. 
+Nesse contexto foi desenvolvida uma ontologia, a OntoExper-SPL, com o objetivo de organizar e estruturar o conhecimento adquirido sobre experimentos de LPS. Esse corpo de conhecimento foi previamente identificado em um trabalho de dissertação de mestrado do grupo de pesquisa GReater \cite{Furtado2018}, em que 211 artigos relatam experimentos de LPS. Com esse levantamento foi possível elaborar um modelo de ontologia a fim de representar o conhecimento sobre experimentos de LPS e em seguida inseri-lo no modelo. 
 
-Com a composição da OntoExper-SPL foi possível responder a questão de pesquisa desta dissertação: \textbf{Como formalizar o conhecimento de experimentação em LPS?}. A OntoExper-SPL foi avaliada por um estudo quantitativo, na qual foram avaliados 8 critérios de qualidade desenvolvidos por \citet{vrandecic2010ontology} em sua tese \textit{Ontology Evaluation}, por meio de uma escala Likert, onde participaram especialista de ES experimental, LPS e Ontologias. Também foi possível realizar uma breve avaliação em relação a algumas armadilhas que o modelo da OntoExper-SPL poderia possuir, usamos a ferramenta OOPS!.
+Com a composição da OntoExper-SPL foi possível responder a questão de pesquisa desta dissertação: \textbf{Como formalizar o conhecimento de experimentação em LPS?}. A OntoExper-SPL foi avaliada por um estudo empírico, o qual foram considerados oito critérios de qualidade desenvolvidos por \citet{vrandecic2010ontology}, por meio de uma escala Likert, em que participaram especialistas de ES experimental, LPS e Ontologias. Também foi possível realizar uma breve avaliação em relação a algumas armadilhas que o modelo da OntoExper-SPL poderia apresentar usando a ferramenta OOPS!.
 
-Os resultados obtidos do estudo quantitativo forneceram evidências preliminares que a OntoExper-SPL é viável para formalizar o conhecimento de experimentação em LPS com um nível de qualidade satisfatório, tornando a OntoExper-SPL possível de ser estendida para outras áreas de experimentos em ES.
+Os resultados obtidos do estudo empírico forneceram evidências preliminares que a OntoExper-SPL é viável para formalizar o conhecimento de experimentação em LPS com nível de qualidade satisfatório.
 
-Foi elaborado um protótipo de sistema de recomendação como uma prova de conceito de que é possível realizar inferência e extrair informações relevantes da OntoExper-SPL. O resultado foi um SR capaz de interagir com usuários e eles podem realizar consultas e receber recomendações a partir de inferências na OntoExper-SPL.
+Foi elaborado um protótipo de sistema de recomendação em que é possível realizar inferência e extrair informações relevantes da OntoExper-SPL. O resultado foi um SR capaz de interagir com usuários, podendo realizar consultas e receber recomendações a partir de inferências na OntoExper-SPL.
 
 \section{Contribuições}
 \label{sec:Contribuicoes}
 
-A principal contribuição desta pesquisa foi a formalização do conhecimento sobre experimentação em LPS. LPS são construída por meio de um domínio de aplicação, similaridades, o core assessments, e variabilidades, o que distingue um produto do outro dentro da família de produtos, todas estas características estão presente na OntoExper-SPL. Entretanto este modelo proposto pode ser facilmente extensível para outros domínios de experimentos em ES, pois todas as classes dentro da ontologia que tratam de LPS são sub-classes de representações de experimentos em geral. Outras contribuições podem ser elencadas:
+A principal contribuição desta pesquisa foi a formalização do conhecimento sobre experimentação em LPS. LPSs são construídas por meio de um domínio de aplicação, similaridades, artefatos e variabilidades, o que distingue um produto do outro dentro da família de produtos. Todas essas características estão presentes na OntoExper-SPL. Entretanto, esse modelo proposto pode ser facilmente estendido para outros domínios de experimentos em ES, pois todas as classes dentro da ontologia que tratam de LPS são sub-classes de representações de experimentos em geral. Outras contribuições podem ser elencadas:
 
 \begin{itemize}
-    \item apresentação de um formato de estudo qualitativo aplicando uma escala Likert para avaliação dos critérios de qualidade a ontologias;
-    \item um protótipo de sistema de recomendação com a finalidade de recomendar experimentos em LPS de maneira mais relevante para o usuário que está interagindo como SR.
+    \item apresentação dos resultados de um estudo empírico aplicando escala Likert para avaliação de critérios de qualidade a ontologias;
+    \item um protótipo de sistema de recomendação com a finalidade de recomendar experimentos em LPS de maneira mais relevante para o usuário que está interagindo com o SR;
     \item possibilidade de incentivo à cultura de experimentos em LPS na academia e na indústria; e
     \item possibilidade de melhoria no ensino de ES Experimental por meio da formalização do conhecimento e do protótipo de SR.
 \end{itemize}
 
-Os seguintes artigos serão submetidos:
+% Os seguintes artigos serão submetidos:
 
-\begin{itemize}
-    \item Vignando, H.; OliveiraJr, E. An Ontology for Software Product Line Experiments - SAC '20: ACM/SiGAPP Symposium on Applied Computing. (Em Preparação)
-\end{itemize}
+% \begin{itemize}
+%     \item Vignando, H.; OliveiraJr, E. An Ontology for Software Product Line Experiments - SAC '20: ACM/SiGAPP Symposium on Applied Computing. (Em Preparação)
+% \end{itemize}
 
 
 \section{Limitações}
@@ -38,9 +38,9 @@ Os seguintes artigos serão submetidos:
 
 As limitações deste trabalho são discutidas nesta seção.
 
-A OntoExper-SPL proposta consideram elementos experimentais gerais e da abordagem de LPS, portanto, não é poss??vel generalizar para outros dom??nios.
+A OntoExper-SPL considera elementos experimentais gerais e da abordagem de LPS, portanto, não é possível generalizar para outros domínios específicos.
 
-O número de especialistas que participaram do estudo quantitativo para avaliar os critérios de qualidade da OntoExper-SPL. Apesar do conhecimento avançado dos participantes, acredita-se que novas avaliações são necessárias, bem como a melhoria do questionários e replicação de tal estudo com um maior número de participantes para expandir a base de conhecimento.
+O número de especialistas que participaram do estudo quantitativo para avaliar os critérios de qualidade da OntoExper-SPL. Apesar do conhecimento avançado dos participantes, acredita-se que novas avaliações são necessárias, bem como a melhoria do questionário e replicação de tal estudo com mais de participantes para expandir a base de conhecimento.
 
 Não foi possível realizar uma avaliação para o protótipo de SR.
 
@@ -51,8 +51,9 @@ Não foi possível realizar uma avaliação para o protótipo de SR.
 A seguir são apresentadas algumas sugestões de trabalhos futuros:
 
 % Trabalhos futuros
-Identificamos que no estudo qualitativo existem vários pontos de melhoria na modelagem da OntoExper-SPL, estes ajustes devem ser realizados para padronizar o modelo com o objetivo de tornar possível a extensão e divulgação da mesma, principalmente em relação a eficiência computacional da mesma, dessa forma viabilizando a implementação de novas aplicações de inferência. 
+Identificou-se que na avaliação empírica existem vários pontos de melhoria na modelagem da OntoExper-SPL. Esses ajustes devem ser realizados para padronizar o modelo com o objetivo de tornar possível a extensão e divulgação da mesma, principalmente em relação à eficiência computacional, dessa forma viabilizando a implementação de novas aplicações de inferência. 
 
-Estender a OntoExper-SPL para incluir metadados de qualidades já definidos no trabalho de \cite{Furtado2018}.
+Estender a OntoExper-SPL para incluir metadados de qualidade já definidos no trabalho de \citet{Furtado2018}.
 
-O desenvolvimento de um sistema de recomendação mais amplo, considerando outros modelos de recomendação que possa explorar ainda mais a OntoExper-SPL, como por exemplo a filtragem baseada em conteúdo. Dessa forma podendo realizar explorações mais profundas no modelo proposto.
+O desenvolvimento de um sistema de recomendação mais amplo, considerando outros modelos de recomendação que possam explorar mais a OntoExper-SPL, como por exemplo a filtragem baseada em conteúdo. Dessa forma, pode-se realizar explorações mais profundas no modelo proposto.
+
