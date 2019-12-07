@@ -27,12 +27,12 @@
 \contentsline {subsubsection}{Artefato gerado pelo Prot\'eg\'e}{46}{figure.3.6}
 \contentsline {subsection}{\numberline {3.3.2}Povoamento com Python}{46}{subsection.3.3.2}
 \contentsline {subsubsection}{Script}{47}{subsection.3.3.2}
-\contentsline {subsubsection}{Manipula\c c\~ao dos Dados}{50}{subsection.3.3.2}
+\contentsline {subsubsection}{Manipula\c c\~ao dos Dados}{51}{subsection.3.3.2}
 \contentsline {subsubsection}{Inser\c c\~ao do indiv\IeC {\'\i }duos e cria\c c\~ao dos relacionamentos}{53}{subsection.3.3.2}
-\contentsline {subsubsection}{Artefato e valida\c c\~ao}{55}{lstnumber.3.2.10}
-\contentsline {section}{\numberline {3.4}Exemplo de Aplica\c c\~ao}{55}{section.3.4}
-\contentsline {section}{\numberline {3.5}Avalia\c c\~ao Preliminar}{56}{section.3.5}
-\contentsline {section}{\numberline {3.6}Considera\c c\~oes Finais}{60}{section.3.6}
+\contentsline {subsubsection}{Artefato e valida\c c\~ao}{56}{lstnumber.3.2.10}
+\contentsline {section}{\numberline {3.4}Exemplo de Aplica\c c\~ao}{56}{section.3.4}
+\contentsline {section}{\numberline {3.5}Avalia\c c\~ao Preliminar}{57}{section.3.5}
+\contentsline {section}{\numberline {3.6}Considera\c c\~oes Finais}{61}{section.3.6}
 \contentsline {chapter}{\numberline {4}Avalia\c c\~ao Emp\IeC {\'\i }rica da OntoExper-SPL}{63}{chapter.4}
 \contentsline {section}{\numberline {4.1}Considera\c c\~oes Iniciais}{63}{section.4.1}
 \contentsline {section}{\numberline {4.2}Defini\c c\~ao do Estudo}{63}{section.4.2}
