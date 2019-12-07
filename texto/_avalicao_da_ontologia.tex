@@ -252,7 +252,7 @@ O resultado do teste estatístico de Shapiro-Wilk foi 0,94 e o \textit{p-value} f
 
 Considerando que a amostra de VD segue uma distribuição normal, pode-se aplicar o teste paramétrico de Mann-Whitney \cite{mann1947test}. Para aplicar este teste foi preciso elaborar hipóteses para este questionário. Considera-se que \textit{p-value:} $>$ 0,05 pode-se rejeitar H0 e quando p-value $<$ 0,05 não se rejeita H0.
 
-O primeiro par de hipótese é em relação a \textbf{Nível de Formação} dos especialistas.
+O primeiro par de hipótese é em relação a \textbf{Nível de Formação} dos especialistas:
 
 \begin{itemize}
     % \item \textbf{Hipótese 1:} Existe diferença no resultado dado o Nível de Formação?
@@ -262,17 +262,19 @@ O primeiro par de hipótese é em relação a \textbf{Nível de Formação} dos especia
 
 O resultado do teste de Mann-Whitney foi u = 0,000, p-value = 0,00000029 $<$ 0,05, logo é possível rejeitar H0 e afirmar que, \textbf{existe diferenças nos resultado dado o Nível de Formação}.
 
-O outro par de hipótese é em relação a \textbf{Experiência em LPS e/ou Ontologias (em anos)} dos especialista. Para realização deste teste foi necessário criar 3 grupos representativos dos anos de experiência, os grupos são:
+O outro par de hipótese é em relação a \textbf{Experiência em LPS e/ou Ontologias (em anos)} dos especialista:
+
+\begin{itemize}
+    \item \textbf{Hipótese Nula (H0):} não existe diferença na experiência do especialista com relação a VD.
+    \item \textbf{Hipótese Alternativa:} existe diferença significativa na experiência do especialista com relação a VD.
+\end{itemize}
+
+Para realização deste teste foi necessário criar 3 grupos representativos dos anos de experiência, os grupos são:
 
 \begin{itemize}
     \item \textbf{1:} 0 à 5 anos de experiências;
     \item \textbf{2:} 6 à 10 anos de experiências; e
     \item \textbf{3:} 11 à 15 anos de experiências.
-\end{itemize}
-
-\begin{itemize}
-    \item \textbf{Hipótese Nula (H0):} não existe diferença na experiência do especialista com relação a VD.
-    \item \textbf{Hipótese Alternativa:} existe diferença significativa na experiência do especialista com relação a VD.
 \end{itemize}
 
 O resultado do teste de Mann-Whitney foi u = 0,000, p-value = 0,00000027 $<$ 0,05, logo é possível rejeitar H0 e afirmar que \textbf{existe sim diferenças nos resultado dado o Experiência em LPS e/ou Ontologias (em anos)}. 
@@ -390,6 +392,8 @@ em interna, externa, de constructo e de conclusão, de acordo com \citet{wohlin20
 
 \subsection{Ameaças à Validade Interna}
 
+A seguir estão listadas as ameaças a validade interna:
+
 \begin{itemize}
     \item \textbf{Diferenças entre os especialistas:} devido do tamanho da amostra, as variações entre as habilidades dos especialistas foram poucas, assim, os especialistas não foram divididos em grupos. Dessa forma, as tarefas designadas foram idênticas;
     
@@ -430,7 +434,7 @@ Esta Seção discute as melhorias apresentada pelos especialistas que participaram
 
 \subsection{Melhorias Apontada pelos Especialistas}
 
-Durante a execução do estudo os especialistas puderam contribuir com um campo aberto a comentários gerais, neste campos eles comentaram os pontos positivos e negativos encontrado durante avaliação dos critérios de qualidade.
+Durante a execução do estudo os especialistas puderam contribuir com um campo aberto a comentários gerais, neste campos eles comentaram os pontos positivos e negativos encontrado durante avaliação dos critérios de qualidade:
 
 \begin{itemize}
     \item Comentário do E4: 
@@ -509,7 +513,7 @@ No geral foi possível notar que a OntoExer-SPL precisa ser melhorada quanto a su
 
 \subsection{Melhorias com Base em Armadilhas Identificadas na Ferramenta do OOPS!}
 
-Na \ref{tab:result_of_evaluation} foi relatado as armadilhas que a ferramenta encontrou na OntoExer-SPL, a seguir estão descritos as melhorias que devem ser realizada na ontologia para melhorar estes pontos
+Na \ref{tab:result_of_evaluation} foi relatado as armadilhas que a ferramenta encontrou na OntoExer-SPL, a seguir estão descritos as melhorias que devem ser realizada na ontologia para melhorar estes pontos:
 
 \begin{itemize}
     \item No caso \textbf{P08:} deve-se criar anotações para os axiomas;

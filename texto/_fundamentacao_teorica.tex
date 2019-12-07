@@ -19,7 +19,7 @@ Uma Linha de Produto de Software (LPS) é um conjunto de produtos que endereçam a
 
 O núcleo de artefatos é composto de conjunto de características comuns chamadas de similaridades, e características variáveis chamadas de variabilidades \cite{van2007product}. Tal núcleo forma a base de uma LPS que determina a Arquitetura de uma LPS, formado por, componentes reusáveis, modelos de domínios, requisitos da LPS, planos de testes e modelos de características de variabilidades \cite{Capilla:2013:SSV:2517766}.
 
-O modelo de características contém todas as características de uma LPS e os seus inter-relacionamentos. De acordo com \citet{apel2013analytic}, "uma característica é um comportamento característico ou visível ao usuário final de um sistema de software". Uma característica pode ser obrigatória, opcional ou alternativa. O modelo de características representa as variabilidades e as variantes de uma LPS.
+O modelo de características contém todas as características de uma LPS e os seus inter-relacionamentos. De acordo com \citet{apel2013analytic}, "uma característica é um comportamento característico ou visível ao usuário final de um sistema de software". Uma característica pode ser obrigatória, opcional ou alternativa. O modelo de características representa as variabilidades e as variantes de uma LPS:
 
 \begin{itemize}
 	\item Variabilidades são descritas por: ponto de variação que permite a resolução de variabilidades em artefatos genéricos de uma LPS, e; 
@@ -40,24 +40,25 @@ A \textit{MobileMedia} é um exemplo didático de LPS, o produto final é um softwa
 A \ref{fig:exemplo-lps} apresenta um modelo de características da LPS \textit{MobileMedia}. As arestas com círculos preenchidos representam as características obrigatórias. As arestas com círculos vazios representam características opcionais. As arestas ligadas por um triângulo, como as que saem do vértice Seleção de Mídia, representam características alternativas, por exemplo, uma instância desta LPS deve possuir ao menos um tipo de seleção de mídia, seja ele, por Foto, Música ou Vídeo. 
 
 Uma instância deste exemplo teria as seguintes características no seu produto de software final:
+
 \begin{itemize}
-	\item Gerenciamento de Álbum; 
+	\item Gerenciamento de Álbum:
 	\subitem Criar Álbum;
-	\subitem Excluir Album;
-	\item Gerenciamento de Mídia;
+	\subitem Excluir Album.
+	\item Gerenciamento de Mídia:
 	\begin{itemize}
-		\item Operações Básicas
-		\subitem Criar Mídia
-		\subitem Excluir Mídia
-		\subitem Editar Legenda Mídia			
-		\item Favoritos;
-		\subitem Marcar Favoritos
-		\subitem Visualizar Favoritos			
+		\item Operações Básicas:
+		\subitem Criar Mídia;
+		\subitem Excluir Mídia; e
+		\subitem Editar Legenda Mídia.
+		\item Favoritos:
+		\subitem Marcar Favoritos;
+		\subitem Visualizar Favoritos.
 	\end{itemize}
-	\item Seleção de Mídia;
-	\subitem Foto
-	\subitem Visualizar Foto
-	\subitem Capturar Foto			
+	\item Seleção de Mídia:
+	\subitem Foto;
+	\subitem Visualizar Foto;
+	\subitem Capturar Foto.		
 \end{itemize}
 
 \citet*{pohl2005software} desenvolveram o \textit{framework} para engenharia de LPS. O objetivo deste de \textit{framework} é incorporar os conceitos centrais da engenharia de linha de produto tradicional, proporcionando a reutilização de artefatos e a customização em massa por meio de variabilidades. O \textit{framework} está dividido em dois processos, o de Engenharia de Domínio e o de Engenharia de Aplicação, conforme apresentado na \ref{fig:framework-lps}:
@@ -91,7 +92,7 @@ Por meio de um modelo teórico entre dois ou mais fenômenos relacionados a fim de
 	\label{fig:experimento}
 \end{figure}
 
-Um dos principais elementos de um experimento são as variáveis dependentes e independentes. 
+Um dos principais elementos de um experimento são as variáveis dependentes e independentes:
 
 \begin{itemize}
 	\item \textbf{Variáveis independentes:} estão associadas à causa e controladas como resultado das atividades do experimentador, também são chamadas de fatores que podem assumir valores denominados tratamentos;
@@ -254,6 +255,7 @@ Na literatura existem diferentes aplicações, conteúdos e funções para as ontolog
 \newcolumntype{b}{X}
 \newcolumntype{s}{>{\hsize=.5\hsize}X}
 
+% TODO - corrigir tabela
 \begin{table}[htbp]
 	\centering
 	\caption{Tipos de Ontologia}

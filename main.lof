@@ -1,44 +1,44 @@
 \babel@toc {brazil}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 1.1}{\ignorespaces Etapas da Metodologia de Desenvolvimento de Pesquisa}}{18}{figure.1.1}
+\contentsline {figure}{\numberline {Figura - 1.1}{\ignorespaces Etapas da Metodologia de Desenvolvimento de Pesquisa}}{17}{figure.1.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 2.1}{\ignorespaces Um modelo de Caracter\IeC {\'\i }sticas. Traduzido de \citet {sommerville2011software} }}{21}{figure.2.1}
-\contentsline {figure}{\numberline {Figura - 2.2}{\ignorespaces \textit {Framework} de Engenharia de LPS (Pohl et al., 2005). Traduzido por Geraldi (2015) }}{23}{figure.2.2}
-\contentsline {figure}{\numberline {Figura - 2.3}{\ignorespaces Conceitos Essenciais de um Experimento. Traduzido de \citet {wohlin2012experimentation} }}{24}{figure.2.3}
-\contentsline {figure}{\numberline {Figura - 2.4}{\ignorespaces Vis\~ao Geral do Processo Experimental. Traduzido de \citet {wohlin2012experimentation}}}{26}{figure.2.4}
-\contentsline {figure}{\numberline {Figura - 2.5}{\ignorespaces Estrutura de uma Ontologia. Autor}}{28}{figure.2.5}
-\contentsline {figure}{\numberline {Figura - 2.6}{\ignorespaces Exemplo de uma Ontologia para o dom\IeC {\'\i }nio: Destino de Viagem. Autor}}{30}{figure.2.6}
-\contentsline {figure}{\numberline {Figura - 2.7}{\ignorespaces Ontologias para formalizar o conhecimento em ES. Adaptado de \citet {isotani2015ontology}}}{31}{figure.2.7}
+\contentsline {figure}{\numberline {Figura - 2.1}{\ignorespaces Um modelo de Caracter\IeC {\'\i }sticas. Traduzido de \citet {sommerville2011software} }}{20}{figure.2.1}
+\contentsline {figure}{\numberline {Figura - 2.2}{\ignorespaces \textit {Framework} de Engenharia de LPS (Pohl et al., 2005). Traduzido por Geraldi (2015) }}{22}{figure.2.2}
+\contentsline {figure}{\numberline {Figura - 2.3}{\ignorespaces Conceitos Essenciais de um Experimento. Traduzido de \citet {wohlin2012experimentation} }}{23}{figure.2.3}
+\contentsline {figure}{\numberline {Figura - 2.4}{\ignorespaces Vis\~ao Geral do Processo Experimental. Traduzido de \citet {wohlin2012experimentation}}}{25}{figure.2.4}
+\contentsline {figure}{\numberline {Figura - 2.5}{\ignorespaces Estrutura de uma Ontologia. Autor}}{27}{figure.2.5}
+\contentsline {figure}{\numberline {Figura - 2.6}{\ignorespaces Exemplo de uma Ontologia para o dom\IeC {\'\i }nio: Destino de Viagem. Autor}}{29}{figure.2.6}
+\contentsline {figure}{\numberline {Figura - 2.7}{\ignorespaces Ontologias para formalizar o conhecimento em ES. Adaptado de \citet {isotani2015ontology}}}{30}{figure.2.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 3.1}{\ignorespaces Grafo inicial da proposta de ontologia. Fonte o Autor}}{43}{figure.3.1}
-\contentsline {figure}{\numberline {Figura - 3.2}{\ignorespaces Modelo Conceitual Clusterizado. Fonte o Autor}}{45}{figure.3.2}
-\contentsline {figure}{\numberline {Figura - 3.3}{\ignorespaces Diagrama de classes para a modelagem da ontologia. Fonte o Autor}}{47}{figure.3.3}
-\contentsline {figure}{\numberline {Figura - 3.4}{\ignorespaces Defini\c c\~ao da classe Experiment no Prot\'eg\'e.}}{49}{figure.3.4}
-\contentsline {figure}{\numberline {Figura - 3.5}{\ignorespaces Defini\c c\~ao da propriedade de objeto \texttt {documentation} no Prot\'eg\'e.}}{50}{figure.3.5}
-\contentsline {figure}{\numberline {Figura - 3.6}{\ignorespaces Defini\c c\~ao da propriedade de dado \texttt {nameSPLUsed} no Prot\'eg\'e.}}{51}{figure.3.6}
-\contentsline {figure}{\numberline {Figura - 3.7}{\ignorespaces Grafo da modelagem da ontologia - gerado pela ferramenta WbVOWL.}}{52}{figure.3.7}
+\contentsline {figure}{\numberline {Figura - 3.1}{\ignorespaces Grafo inicial da proposta de ontologia. Fonte o Autor}}{42}{figure.3.1}
+\contentsline {figure}{\numberline {Figura - 3.2}{\ignorespaces Modelo Conceitual Clusterizado. Fonte o Autor}}{44}{figure.3.2}
+\contentsline {figure}{\numberline {Figura - 3.3}{\ignorespaces Diagrama de classes para a modelagem da ontologia. Fonte o Autor}}{46}{figure.3.3}
+\contentsline {figure}{\numberline {Figura - 3.4}{\ignorespaces Defini\c c\~ao da classe Experiment no Prot\'eg\'e.}}{48}{figure.3.4}
+\contentsline {figure}{\numberline {Figura - 3.5}{\ignorespaces Defini\c c\~ao da propriedade de objeto \texttt {documentation} no Prot\'eg\'e.}}{49}{figure.3.5}
+\contentsline {figure}{\numberline {Figura - 3.6}{\ignorespaces Defini\c c\~ao da propriedade de dado \texttt {nameSPLUsed} no Prot\'eg\'e.}}{50}{figure.3.6}
+\contentsline {figure}{\numberline {Figura - 3.7}{\ignorespaces Grafo da modelagem da ontologia - gerado pela ferramenta WbVOWL.}}{51}{figure.3.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 4.1}{\ignorespaces Frequ\^encia das Respostas dos Participantes}}{74}{figure.4.1}
-\contentsline {figure}{\numberline {Figura - 4.2}{\ignorespaces Histograma da Somat\'oria}}{76}{figure.4.2}
-\contentsline {figure}{\numberline {Figura - 4.3}{\ignorespaces Correla\c c\~ao dos crit\'erios de avalia\c c\~ao.}}{78}{figure.4.3}
+\contentsline {figure}{\numberline {Figura - 4.1}{\ignorespaces Frequ\^encia das Respostas dos Participantes}}{73}{figure.4.1}
+\contentsline {figure}{\numberline {Figura - 4.2}{\ignorespaces Histograma da Somat\'oria}}{75}{figure.4.2}
+\contentsline {figure}{\numberline {Figura - 4.3}{\ignorespaces Correla\c c\~ao dos crit\'erios de avalia\c c\~ao.}}{77}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 5.1}{\ignorespaces Filtragem Colaborativa. Traduzido e Adaptado de \citet {robillard2010recommendation}}}{90}{figure.5.1}
-\contentsline {figure}{\numberline {Figura - 5.2}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{92}{figure.5.2}
-\contentsline {figure}{\numberline {Figura - 5.3}{\ignorespaces Modelagem geral do SR como prova de conceito para OntoExer-LPS}}{94}{figure.5.3}
-\contentsline {figure}{\numberline {Figura - 5.4}{\ignorespaces \'Arvore de diret\'orios da aplica\c c\~ao SR com Django Framework.}}{96}{figure.5.4}
-\contentsline {figure}{\numberline {Figura - 5.5}{\ignorespaces Tela do SR.}}{99}{figure.5.5}
-\contentsline {figure}{\numberline {Figura - 5.6}{\ignorespaces \textit {Rating} Expl\IeC {\'\i }cito no SR.}}{100}{figure.5.6}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura - 5.1}{\ignorespaces Filtragem Colaborativa. Traduzido e Adaptado de \citet {robillard2010recommendation}}}{89}{figure.5.1}
+\contentsline {figure}{\numberline {Figura - 5.2}{\ignorespaces Passos de Constru\c c\~ao para um RSSE. Traduzido e Adaptado de \citet {maki2016systematic}}}{91}{figure.5.2}
+\contentsline {figure}{\numberline {Figura - 5.3}{\ignorespaces Modelagem geral do SR como prova de conceito para OntoExer-LPS}}{93}{figure.5.3}
+\contentsline {figure}{\numberline {Figura - 5.4}{\ignorespaces \'Arvore de diret\'orios da aplica\c c\~ao SR com Django Framework.}}{95}{figure.5.4}
+\contentsline {figure}{\numberline {Figura - 5.5}{\ignorespaces Tela do SR.}}{98}{figure.5.5}
+\contentsline {figure}{\numberline {Figura - 5.6}{\ignorespaces \textit {Rating} Expl\IeC {\'\i }cito no SR.}}{99}{figure.5.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Figura - 4.1}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 1}}{146}{figure.D.1}
-\contentsline {figure}{\numberline {Figura - 4.2}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 2}}{147}{figure.D.2}
-\contentsline {figure}{\numberline {Figura - 4.3}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 3}}{148}{figure.D.3}
-\contentsline {figure}{\numberline {Figura - 4.4}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 4}}{149}{figure.D.4}
-\contentsline {figure}{\numberline {Figura - 4.5}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 5}}{150}{figure.D.5}
-\contentsline {figure}{\numberline {Figura - 4.6}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 6}}{151}{figure.D.6}
-\contentsline {figure}{\numberline {Figura - 4.7}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 7}}{152}{figure.D.7}
-\contentsline {figure}{\numberline {Figura - 4.8}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 8}}{153}{figure.D.8}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Figura - 4.1}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 1}}{145}{figure.D.1}
+\contentsline {figure}{\numberline {Figura - 4.2}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 2}}{146}{figure.D.2}
+\contentsline {figure}{\numberline {Figura - 4.3}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 3}}{147}{figure.D.3}
+\contentsline {figure}{\numberline {Figura - 4.4}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 4}}{148}{figure.D.4}
+\contentsline {figure}{\numberline {Figura - 4.5}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 5}}{149}{figure.D.5}
+\contentsline {figure}{\numberline {Figura - 4.6}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 6}}{150}{figure.D.6}
+\contentsline {figure}{\numberline {Figura - 4.7}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 7}}{151}{figure.D.7}
+\contentsline {figure}{\numberline {Figura - 4.8}{\ignorespaces Instrumento de Avalia\c c\~ao pagina 8}}{152}{figure.D.8}
 \addvspace {10\p@ }

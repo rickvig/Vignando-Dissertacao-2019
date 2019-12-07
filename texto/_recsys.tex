@@ -239,7 +239,7 @@ def home(request):
 
 A função \textit{get\_ontology()} foi importada da biblioteca OWLReady2, ela retorna um objeto que chamamos de \textbf{onto}, com ele é possível executar outras operações que a biblioteca oferece.
 
-A partir desse momento foi possível realizar as inferências na OntoExper-SPL. Foi criado um métodos \textit{\_getTypesFrom()} que recebe como parâmetro uma classe da ontologia e retorna seus indivíduos, onde dessa forma, foi possível buscar as informações de tipagem encontrados na ontologia. Os tipos mapeados em classes que consultamos neste momento são.
+A partir desse momento foi possível realizar as inferências na OntoExper-SPL. Foi criado um métodos \textit{\_getTypesFrom()} que recebe como parâmetro uma classe da ontologia e retorna seus indivíduos, onde dessa forma, foi possível buscar as informações de tipagem encontrados na ontologia. Os tipos mapeados em classes que consultamos neste momento são:
 
 \begin{itemize}
 	\item onto.TypeExperiment;
@@ -274,7 +274,7 @@ result = onto.search(is_a=onto.Abstract,
 
 \subsection{Fase 3: \textit{Ratings} dos Usuários no SR}
 
-Existem duas formas de gerar avaliação aos itens em SR, o \textit{rating} explícito e o \textit{rating} implícito.
+Existem duas formas de gerar avaliação aos itens em SR, o \textit{rating} explícito e o \textit{rating} implícito:
 
 \begin{itemize}
 	\item No \textit{rating} explícito o usuário dá uma nota a um item manualmente;
@@ -297,7 +297,7 @@ Quando o usuário dá a sua nota, o SR invoca o método \textit{rating\_experiment(
 
 Neste projeto foi utilizada como abordagem de recomendação a filtragem colaborativa. Esse modelo foi implementado utilizando o cálculo da distância Euclidiana a fim de encontrar a similaridade entre os usuários do SR, em seguida, calcular as possíveis notas dos itens que o usuário em questão ainda não avaliou e ranquea-las. Dessa forma sendo possível recomendar, sugerindo determinada prioridade, os itens que o usuário ainda não se relacionou no SR e provavelmente gostaria de interagir.
 
-Para tal resultado o algoritmo está dividido em três partes: (i) criação do \textit{dataset} para o algoritmo, (ii) cálculo da similaridade - utilizando o cálculo da distância Euclidiana e (iii) cálculo da nota para os itens ainda não avaliados.
+Para tal resultado o algoritmo está dividido em três partes: (i) criação do \textit{dataset} para o algoritmo, (ii) cálculo da similaridade - utilizando o cálculo da distância Euclidiana e (iii) cálculo da nota para os itens ainda não avaliados:
 
 \begin{itemize}
 	\item \textbf{Criação do \textit{dataset} para o algoritmo:} esta parte consulta o banco de dados e agrupa as notas dos experimentos por usuário, dessa forma gerando uma lista de usuário e as notas que ele deu para cada experimento. Por exemplo a lista: ['usuário-1': {69: 5.0, 1: 4.0, 5: 1.0, 129: 5.0, 170: 2.0, 97: 4.0}, 'usuário-2' {102: 3.0, 117: 4.0, 125: 3.0, 13: 2.0, 9: 3.0, 129: 4.0, 170: 4.0}], pode-se observar que o usuário-1 avaliou seis experimentos e o usuário-2 sete sendo eles \#102, \#117, \#125, \#13, \#9, \#129 e o \#170 (esses números representam o identificador de cada experimento no SR), cada um com sua respectiva nota. Essa modelagem de dados é necessária para os próximos passos do algoritmo.
