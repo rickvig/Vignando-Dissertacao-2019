@@ -1,684 +1,684 @@
 \appendix{Apêndice B: Código Fonte da OntoExper-SPL}
-\label{apendice:a}
+\label{apendice:b}
 
 \scriptsize
 \begin{verbatim}
-    <?xml version="1.0"?>
-    <rdf:RDF xmlns="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#"
-         xml:base="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:xml="http://www.w3.org/XML/1998/namespace"
-         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-        <owl:Ontology rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology"/>
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#"
+        xml:base="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:xml="http://www.w3.org/XML/1998/namespace"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology"/>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    // Object Properties
+    ///////////////////////////////////////////////////////////////////////////////////////
+        -->
+    <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#documentation -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#documentation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
+    </owl:ObjectProperty>
+    <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experiment -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experiment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
+    </owl:ObjectProperty>
+    <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextExperiment -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextExperiment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
+    </owl:ObjectProperty>
+    <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextSelection -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextSelection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
+    </owl:ObjectProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeDesignExperiment -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeDesignExperiment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
+    </owl:ObjectProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperiment -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperiment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
+    </owl:ObjectProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperimentSPL -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperimentSPL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
+    </owl:ObjectProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeSelectionOfParticipants -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeSelectionOfParticipants">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
+    </owl:ObjectProperty>
         <!-- 
-        ///////////////////////////////////////////////////////////////////////////////////////
-        // Object Properties
-        ///////////////////////////////////////////////////////////////////////////////////////
-         -->
-        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#documentation -->
-        <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#documentation">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
-        </owl:ObjectProperty>
-        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experiment -->
-        <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experiment">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
-        </owl:ObjectProperty>
-        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextExperiment -->
-        <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextExperiment">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
-        </owl:ObjectProperty>
-        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextSelection -->
-        <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeContextSelection">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
-        </owl:ObjectProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeDesignExperiment -->
-        <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeDesignExperiment">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
-        </owl:ObjectProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperiment -->
-        <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperiment">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
-        </owl:ObjectProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperimentSPL -->
-        <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeExperimentSPL">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
-        </owl:ObjectProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeSelectionOfParticipants -->
-        <owl:ObjectProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#typeSelectionOfParticipants">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
-        </owl:ObjectProperty>
-            <!-- 
-        ///////////////////////////////////////////////////////////////////////////////////////
-        //
-        // Data properties
-        //
-        ///////////////////////////////////////////////////////////////////////////////////////
-         -->
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#abstractBackground -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#abstractBackground">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#acknowledgements -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#acknowledgements">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#alternativeTechnologies -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#alternativeTechnologies">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#analysisProcedure -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#analysisProcedure">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#appendicies -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#appendicies">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#artifactSPLused -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#artifactSPLused">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#authorship -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#authorship">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#conclusions -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#conclusions">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#context -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#context">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#datasetPreparation -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#datasetPreparation">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#descriptiveStatistics -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#descriptiveStatistics">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#deviations -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#deviations">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#evaluationOfResultsAndImplications -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#evaluationOfResultsAndImplications">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentAnalysisBasedPValue -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentAnalysisBasedPValue">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDesign -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDesign">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDomain -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDomain">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalMaterial -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalMaterial">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalUnits -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalUnits">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#explicitQuasiExperimentInStudy -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#explicitQuasiExperimentInStudy">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#futureWork -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#futureWork">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#goals -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#goals">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hasQualitativeAnalysisOfExperiment -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hasQualitativeAnalysisOfExperiment">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howDatahasBeenAnalyzed -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howDatahasBeenAnalyzed">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howManyPilotProjectCarriedOut -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howManyPilotProjectCarriedOut">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypotheses -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypotheses">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypothesisTesting -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypothesisTesting">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAbstract -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAbstract">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAcknowledgements -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAcknowledgements">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAnalysis -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAnalysis">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAppendices -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAppendices">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idConclusionsFutureWork -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idConclusionsFutureWork">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussion -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussion">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussionSPL -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussionSPL">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDocumentation -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDocumentation">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idEvaluation -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idEvaluation">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExecutionSection -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExecutionSection">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperiment -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperiment">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanning -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanning">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanningSPL -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanningSPL">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentSPL -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentSPL">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idIntroduction -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idIntroduction">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idPackage -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idPackage">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idReferences -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idReferences">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idRelatedWork -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idRelatedWork">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#impact -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#impact">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#inferences -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#inferences">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isAQuasiExperiment -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isAQuasiExperiment">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isExperimentalPackageInformed -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isExperimentalPackageInformed">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isFollowThreatsByWohlin -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isFollowThreatsByWohlin">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isLinkAvailable -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isLinkAvailable">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#keywords -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#keywords">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#lessonsLearned -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#lessonsLearned">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#limitations -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#limitations">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#methods -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#methods">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#nameSPLUsed -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#nameSPLUsed">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#objective -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#objective">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#observationsAboutTemplateUsed -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#observationsAboutTemplateUsed">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pagesNumber -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pagesNumber">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#parameters -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#parameters">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pilotProjectCarriedOut -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pilotProjectCarriedOut">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#preparation -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#preparation">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#problemStatement -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#problemStatement">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#procedure -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#procedure">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationType -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationType">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationVenue -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationVenue">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationYear -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationYear">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#references -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#references">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relatedStudies -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relatedStudies">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relevancePractice -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relevancePractice">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#researchObjective -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#researchObjective">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#results -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#results">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#studyHasPerformMetaAnalysis -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#studyHasPerformMetaAnalysis">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#summary -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#summary">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#tasks -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#tasks">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#technologyUnderInvestigation -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#technologyUnderInvestigation">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#template -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#template">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#theAuthorsConcernedEvaluatingTheQuality -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#theAuthorsConcernedEvaluatingTheQuality">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValidity -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValidity">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValiditySPL -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValiditySPL">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#title -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#title">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#url -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#url">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#urlOfPackage -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#urlOfPackage">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#useTemplate -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#useTemplate">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#variables -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#variables">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wasTheSPLSourceUsedInformed -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wasTheSPLSourceUsedInformed">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wastheSPLSourceUsedInformed -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wastheSPLSourceUsedInformed">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#whatQualitativeAnalysisPerformed -->
-        <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#whatQualitativeAnalysisPerformed">
-            <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        </owl:DatatypeProperty>
-            <!-- 
-        ///////////////////////////////////////////////////////////////////////////////////////
-        //
-        // Classes
-        //
-        ///////////////////////////////////////////////////////////////////////////////////////
-         -->
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL">
-            <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
-        </owl:Class>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL">
-            <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
-        </owl:Class>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL">
-            <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
-        </owl:Class>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects -->
-        <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
-            <!-- 
-        ///////////////////////////////////////////////////////////////////////////////////////
-        //
-        // Individuals
-        //
-        ///////////////////////////////////////////////////////////////////////////////////////
-         -->
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ACADEMY -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ACADEMY">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#CONVENIENCE_SAMPLING -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#CONVENIENCE_SAMPLING">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#GENERAL -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#GENERAL">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VITRO -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VITRO">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VIVO -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VIVO">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#MORE_THAN_TWO_FACTORS_EACH_WITH_TWO_TREATMENTS -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#MORE_THAN_TWO_FACTORS_EACH_WITH_TWO_TREATMENTS">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#OFFLINE -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#OFFLINE">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_MORE_THAN_TWO_TREATMENTS -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_MORE_THAN_TWO_TREATMENTS">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_TWO_TREATMENTS -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_TWO_TREATMENTS">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONLINE -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONLINE">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ORIGINAL -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ORIGINAL">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#PROFESSIONAL -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#PROFESSIONAL">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#QUOTA_SAMPLING -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#QUOTA_SAMPLING">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL_PROBLEMS -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL_PROBLEMS">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REPLICATED -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REPLICATED">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SIMPLE_RANDOM_SAMPLING -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SIMPLE_RANDOM_SAMPLING">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SPECIFIC -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SPECIFIC">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STRATIFIED_RANDOM_SAMPLING -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STRATIFIED_RANDOM_SAMPLING">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STUDENT -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STUDENT">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SYSTEMATIC_SAMPLING -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SYSTEMATIC_SAMPLING">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TOY -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TOY">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
-        </owl:NamedIndividual>
-            <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TWO_FACTORS_WITH_TWO_TREATMENTS -->
-        <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TWO_FACTORS_WITH_TWO_TREATMENTS">
-            <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
-        </owl:NamedIndividual>
-    </rdf:RDF>
-    <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+        -->
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#abstractBackground -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#abstractBackground">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#acknowledgements -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#acknowledgements">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#alternativeTechnologies -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#alternativeTechnologies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#analysisProcedure -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#analysisProcedure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#appendicies -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#appendicies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#artifactSPLused -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#artifactSPLused">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#authorship -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#authorship">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#conclusions -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#conclusions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#context -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#context">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#datasetPreparation -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#datasetPreparation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#descriptiveStatistics -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#descriptiveStatistics">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#deviations -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#deviations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#evaluationOfResultsAndImplications -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#evaluationOfResultsAndImplications">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentAnalysisBasedPValue -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentAnalysisBasedPValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDesign -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDesign">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDomain -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentDomain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalMaterial -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalMaterial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalUnits -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#experimentalUnits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#explicitQuasiExperimentInStudy -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#explicitQuasiExperimentInStudy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#futureWork -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#futureWork">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#goals -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#goals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hasQualitativeAnalysisOfExperiment -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hasQualitativeAnalysisOfExperiment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howDatahasBeenAnalyzed -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howDatahasBeenAnalyzed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howManyPilotProjectCarriedOut -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#howManyPilotProjectCarriedOut">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypotheses -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypotheses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypothesisTesting -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#hypothesisTesting">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAbstract -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAbstract">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAcknowledgements -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAcknowledgements">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAnalysis -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAnalysis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAppendices -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idAppendices">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idConclusionsFutureWork -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idConclusionsFutureWork">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussion -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussionSPL -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDiscussionSPL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDocumentation -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idDocumentation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idEvaluation -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idEvaluation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExecutionSection -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExecutionSection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperiment -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperiment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanning -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanning">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanningSPL -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentPlanningSPL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentSPL -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idExperimentSPL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idIntroduction -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idIntroduction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idPackage -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idPackage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idReferences -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idReferences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idRelatedWork -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#idRelatedWork">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#impact -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#impact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#inferences -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#inferences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isAQuasiExperiment -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isAQuasiExperiment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isExperimentalPackageInformed -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isExperimentalPackageInformed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isFollowThreatsByWohlin -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isFollowThreatsByWohlin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isLinkAvailable -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#isLinkAvailable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#keywords -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#keywords">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#lessonsLearned -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#lessonsLearned">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#limitations -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#limitations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#methods -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#methods">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#nameSPLUsed -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#nameSPLUsed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#objective -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#objective">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#observationsAboutTemplateUsed -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#observationsAboutTemplateUsed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pagesNumber -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pagesNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#parameters -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#parameters">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pilotProjectCarriedOut -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#pilotProjectCarriedOut">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#preparation -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#preparation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#problemStatement -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#problemStatement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#procedure -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#procedure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationType -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationVenue -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationVenue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationYear -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#publicationYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#references -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#references">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relatedStudies -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relatedStudies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relevancePractice -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#relevancePractice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#researchObjective -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#researchObjective">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#results -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#results">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#studyHasPerformMetaAnalysis -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#studyHasPerformMetaAnalysis">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#summary -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#summary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#tasks -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#tasks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#technologyUnderInvestigation -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#technologyUnderInvestigation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#template -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#template">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#theAuthorsConcernedEvaluatingTheQuality -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#theAuthorsConcernedEvaluatingTheQuality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValidity -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValidity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValiditySPL -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#threatsValiditySPL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#title -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#url -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#url">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#urlOfPackage -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#urlOfPackage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#useTemplate -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#useTemplate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#variables -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#variables">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wasTheSPLSourceUsedInformed -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wasTheSPLSourceUsedInformed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wastheSPLSourceUsedInformed -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#wastheSPLSourceUsedInformed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#whatQualitativeAnalysisPerformed -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#whatQualitativeAnalysisPerformed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+        <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+        -->
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Abstract"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Acknowledgements"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Analysis"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Appendices"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ConclusionsFutureWork"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#DiscussionSPL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Discussion"/>
+    </owl:Class>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Documentation"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Evaluation"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExecutionSection"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanningSPL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentPlanning"/>
+    </owl:Class>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ExperimentSPL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Experiment"/>
+    </owl:Class>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Introduction"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#Package"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#References"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#RelatedWork"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects -->
+    <owl:Class rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
+        <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+        -->
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ACADEMY -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ACADEMY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#CONVENIENCE_SAMPLING -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#CONVENIENCE_SAMPLING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#GENERAL -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#GENERAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VITRO -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VITRO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VIVO -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#IN_VIVO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextExperiment"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#MORE_THAN_TWO_FACTORS_EACH_WITH_TWO_TREATMENTS -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#MORE_THAN_TWO_FACTORS_EACH_WITH_TWO_TREATMENTS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#OFFLINE -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#OFFLINE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_MORE_THAN_TWO_TREATMENTS -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_MORE_THAN_TWO_TREATMENTS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_TWO_TREATMENTS -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONE_FACTOR_WITH_TWO_TREATMENTS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONLINE -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ONLINE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ORIGINAL -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#ORIGINAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#PROFESSIONAL -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#PROFESSIONAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#QUOTA_SAMPLING -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#QUOTA_SAMPLING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperimentSPL"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL_PROBLEMS -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REAL_PROBLEMS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REPLICATED -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#REPLICATED">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeExperiment"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SIMPLE_RANDOM_SAMPLING -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SIMPLE_RANDOM_SAMPLING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SPECIFIC -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SPECIFIC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STRATIFIED_RANDOM_SAMPLING -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STRATIFIED_RANDOM_SAMPLING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STUDENT -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#STUDENT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SYSTEMATIC_SAMPLING -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#SYSTEMATIC_SAMPLING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeSelectionParticipantsObjects"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TOY -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TOY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeContextSelection"/>
+    </owl:NamedIndividual>
+        <!-- http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TWO_FACTORS_WITH_TWO_TREATMENTS -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TWO_FACTORS_WITH_TWO_TREATMENTS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/henrique/ontologies/2019/3/experiemnt-spl-ontology#TypeDesignExperiment"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
 \end{verbatim}

@@ -1,2 +1,374 @@
-\appendix{Apêndice B: Código Fonte do Povoamento de Dados no Modelo OntoExper-SPL}
-\label{apendice:b}
+\appendix{Apêndice C: Código Fonte do Povoamento de Indíviduos na OntoExper-SPL}
+\label{apendice:c}
+
+\scriptsize
+\begin{verbatim}
+
+#!/usr/bin/env python
+# coding: utf-8
+# # CARREGA DADOS
+# In[ ]:
+
+import pandas as pd
+import re
+df = pd.read_excel("../../Dominio/systematic_mapping_SPL_experiments_extracted_data.xlsx", sheet_name="Extracted Data", index_col=0)
+df.shape
+    df.head()
+
+# In[ ]:
+
+# # normaliza os caracteres especiais
+# def removeUnicodeChar(s):
+#     if (type(s) == str):
+#         return re.sub('','', s)
+#     return s
+# In[ ]:
+
+# def filter_nonprintable(text):
+# #     import string
+# # Get the difference of all ASCII characters from the set of printable characters
+#     nonprintable = set([chr(i) for i in range(128)]).difference(string.printable)
+# # Use translate to remove all non-printable characters
+#     if (type(text) == str):
+#         return text.translate({ord(character):None for character in nonprintable})
+#     return text
+
+# In[ ]:
+
+# for c in df.columns:
+#     df[c] = df.apply(lambda row: filter_nonprintable(row[c]), axis=1)
+
+# In[ ]:
+
+# splita os campos com mais de um valor
+df['_informedSPL'] = df["Was the SPL source used informed? (Y/N) (If yes, which one?)"].str[0:1]
+    df['sourceSPL'] = df["Was the SPL source used informed? (Y/N) (If yes, which one?)"].str[1:]
+df["_hasPilot"] = df["The pilot project was carried out? (Y/N) If Yes, how many?"].str[0:1]
+    df["_howManyPilot"] = df["The pilot project was carried out? (Y/N) If Yes, how many?"].str[1:]
+df["_hasQuasiExperiment"] = df["Is it a quasi-experiment? (Y/N) If yes, is it explicit in the study?"].str[0:1]
+    df["quasiExperiment"] = df["Is it a quasi-experiment? (Y/N) If yes, is it explicit in the study?"].str[1:]
+
+    titleThreatsValidity = ('Threats to Validity (How is validity of the experimental results assured? '
+                            'How was the data actually validated?) (Follow are the 4 threats proposed by Wohlin: '
+                            'internal, external, construct and conclusion? (Y/N))')
+df["_hasThreatsValidityByWolin"] = df[titleThreatsValidity].str[0:1]
+    df["threatsValidity"] = df[titleThreatsValidity].str[1:]
+
+    titlePakage = ('Is the experimental package informed? (Y/N) '
+                   '(If yes, what URL? And the link is still available? (Y/N))')
+df["_hasPackage"] = df[titlePakage].str[0:1]
+    df["_package"] = df[titlePakage].str[1:]
+
+# In[ ]:
+
+# normaliza dados boolean
+def convertToBoolean(s):
+        return s in "Y" if True else False
+def convertStringEmpty(s):
+        if s == "---":
+            return ""
+        else:
+            return s
+def convertToNumber(s):
+        if s.strip() and s is not None:
+            return int(re.search('[0-9]', s).group())
+        else: return 0
+
+    df['informedSPL'] = df.apply(lambda row: convertToBoolean(row._informedSPL), axis=1)
+    df['useTemplate'] = df.apply(lambda row: convertToBoolean(row["Does it use template? (Y/N)?"]), axis=1)
+    df['template'] = df.apply(lambda row: convertStringEmpty(row["If yes, what template?"]), axis=1)
+df['hasAQuasiExperiment'] = df.apply(lambda row: convertToBoolean(row._hasQuasiExperiment), axis=1)
+df['hasPilot'] = df.apply(lambda row: convertToBoolean(row._hasPilot), axis=1)
+    df["howManyPilot"] = df.apply(lambda row: convertToNumber(row._howManyPilot), axis=1)
+df['hasQualitativeAnalysis'] = df.apply(lambda row: convertToBoolean(row["Do it have qualitative analysis of the experiment? (Y/N)"]), axis=1)
+    df['hasMetaAnalysis'] = df.apply(lambda row: convertToBoolean(row["Did the study perform meta-analysis? (Y/N)"]), axis=1)
+df['hasThreatsValidityByWolin'] = df.apply(lambda row: convertToBoolean(row._hasThreatsValidityByWolin), axis=1)
+df['hasAuthorEvaluating'] = df.apply(lambda row: convertToBoolean(row["The authors were concerned with evaluating "
+                                                                         "the quality of the experiments? (Y/N)"]), axis=1)
+df['hasExperimentalPackage'] = df.apply(lambda row: convertToBoolean(row._hasPackage), axis=1)
+
+# In[ ]:
+
+    df_spl = df.loc[(df["SPL Name used"] != '---') 
+                    | (df["Is it Real or Academic SPL?"] != '---') 
+                    | (df.informedSPL)]
+df_exp = pd.concat([df, df_spl]).drop_duplicates(keep=False)
+print(df_spl.shape, df_exp.shape)
+
+# # CARREGA ONTOLOGIA
+# In[ ]:
+
+def registreExperimentCommons(instance, r):
+        instance.title.append(r["Title"])
+        instance.authorship.append(r["Authorship"])
+        instance.publicationYear.append(r["Publication year"])
+        instance.publicationType.append(r["Publication type"])
+        instance.publicationVenue.append(r["Publication venue"])
+        instance.pagesNumber.append(r["Pages number"])
+def registreExperiment(i, r):
+        instance = onto.Experiment("experiment_{}".format(i))
+        instance.idExperiment.append(i)
+        registreExperimentCommons(instance, r)
+        return instance
+def registreExperimentSPL(i, r):
+        instance = onto.ExperimentSPL("experimentSPL_{}".format(i))
+        instance.idExperimentSPL.append(i)
+        registreExperimentCommons(instance, r)
+        instance.nameSPLUsed.append(r["SPL Name used"])
+        instance.wasTheSPLSourceUsedInformed.append(r.sourceSPL)
+        field_type_experiment_SPL = r["Is it Real or Academic SPL?"]
+        type_experiment = next((x for x in onto.TypeExperimentSPL.instances() 
+                                if x.name.lower() in field_type_experiment_SPL.lower()), onto.ACADEMY)
+        instance.typeExperimentSPL.append(type_experiment)
+        return instance
+
+# In[ ]:
+
+def registreDocumentation(i, r):
+        instance = onto.Documentation("documentation_{}".format(i))
+        instance.idDocumentation.append(i)
+        instance.useTemplate.append(r.useTemplate)
+        instance.template.append(r.template)
+        instance.observationsAboutTemplateUsed.append(r["Observations about the template used"])
+        return instance
+def registreAbstract(i, r):
+        instance = onto.Abstract("abstract_{}".format(i))
+        instance.idAbstract.append(i)
+        instance.objective.append(r["Objective (What is the question addressed with this research?)"])
+        instance.abstractBackground.append(r["Abstract - Background (Why is this research important?)"])
+        instance.methods.append(r["Methods (What is the statistical context and methods applied?)"])
+        instance.results.append(r["Results (What are the main findings?Practical implications?)"])
+        instance.limitations.append(r["Limitations (What are the weakness of this research?)"])
+        instance.conclusions.append(r["Conclusions (What is the conclusion?)"])
+        instance.keywords.append(r["Keywords"])  
+        return instance
+def registreIntroduction(i, r):
+        instance = onto.Introduction("introduction_{}".format(i))
+        instance.idIntroduction.append(i)
+        instance.problemStatement.append(r["Problem statement (What is the problem? Where does it occur? Who has observed it? Why is it important to be solved?)"])
+        instance.researchObjective.append(r["Research objective (GQM) (What is the research question to be answered by this study?)"])
+        instance.context.append(r["Context (What information is necessary to understand whether the research relates to a specific situation (environment)?)"])
+        return instance
+def registreRelatedWork(i, r):
+        instance = onto.RelatedWork("relatedWork_{}".format(i))
+        instance.idRelatedWork.append(i)
+        instance.technologyUnderInvestigation.append(r["Technology under investigation (What is necessary for a reader to know about the tecnology to reproduce its application?)"])
+        instance.alternativeTechnologies.append(r["Alternative technologies (How does this research relate to alternative technologies? What is the control treatment?)"])
+        instance.relatedStudies.append(r["Related studies (How this research relates to existing research (studies)? What were the results from these studies?)"])
+        instance.relevancePractice.append(r["Relevance to practice (How does it relate to state of the practice?)"])
+        return instance
+def registreConclusionsFutureWork(i, r):
+        instance = onto.ConclusionsFutureWork("conclusionsFutureWork_{}".format(i))
+        instance.idConclusionsFutureWork.append(i)
+        instance.summary.append(r["Technology under investigation (What is necessary for a reader to know about the tecnology to reproduce its application?)"])
+        instance.impact.append(r["Alternative technologies (How does this research relate to alternative technologies? What is the control treatment?)"])
+        instance.futureWork.append(r["Related studies (How this research relates to existing research (studies)? What were the results from these studies?)"])
+        return instance
+
+# In[ ]:
+
+def registreExperimentPlanningCommons(instance, r):
+        instance.goals.append(r["Goals (Formalization of goals, refine the important constructs of the experiment's goal)"])
+        instance.experimentalUnits.append(r["Experimental Units (From which population will the sample be drawn? How will the groups be formed (assignment to treatments)? Any kind of randomization and blinding has to be described?) "])
+        instance.experimentalMaterial.append(r["Experimental Material (Which objects are selected and why?)"])
+        instance.tasks.append(r["Tasks (Which tasks have to be performed by the subjects?)"])
+        instance.hypotheses.append(r["Hypotheses (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment)"])
+        instance.parameters.append(r["Parameters (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment)"])
+        instance.variables.append(r["Variables (What are the constructs and their operationalization? They have to be traceable derived from the research question respectively the goal of the experiment)"])
+        instance.experimentDesign.append(r["Experiment Design (What type of expimental design has been chosen?) "])
+        instance.procedure.append(r["Procedure (How will the experiment (i.e., data collection) be performed? What instruments, materials, tools will be used and how?)"])
+        instance.analysisProcedure.append(r["Analysis Procedure (How will the data be analyzed?)"])
+        instance.isAQuasiExperiment.append(r.hasAQuasiExperiment)
+        if (len(r["quasiExperiment"]) > 1):
+            instance.explicitQuasiExperimentInStudy.append(r.quasiExperiment.strip())
+    field_type_experiment = r["Is it an Original or Replicated Experiment?"]
+        type_experiment = next((x for x in onto.TypeExperiment.instances() if x.name.lower() in field_type_experiment.lower()), onto.ORIGINAL)
+        instance.typeExperiment.append(type_experiment)
+        field_selection_participant = r["How was the selection of participants/experimental objects? - Simple random sampling; - Systematic sampling; - Stratified random sampling; - Convenience sampling; - Quota sampling."]
+        type_selection_participants = next((x for x in onto.TypeSelectionParticipantsObjects.instances() if x.name.lower() in field_selection_participant.lower()), onto.CONVENIENCE_SAMPLING)
+        instance.typeSelectionOfParticipants.append(type_selection_participants)
+    field_type_context = r["Context of the experiment (in vivo, in vitro, ...)"]
+        type_context = next((x for x in onto.TypeContextExperiment.instances() if x.name.lower() in field_type_context.lower()), onto.IN_VITRO)
+        instance.typeContextExperiment.append(type_context)
+    field_type_design = r["Design Experimental: - One factor with two treatments; - One factor with more than two treatments; - Two factors with two treatments; - More than two factors each with two treatments."]
+        type_design = next((x for x in onto.TypeDesignExperiment.instances() if x.name.lower() in field_type_design.lower()), onto.ONE_FACTOR_WITH_TWO_TREATMENTS)
+        instance.typeDesignExperiment.append(type_design)
+def registreExperimentPlanning(i, r):
+        instance = onto.ExperimentPlanning("experimentPlanning{}".format(i))
+        instance.idExperimentPlanning.append(i)
+    registreExperimentPlanningCommons(instance, r)
+        return instance
+def registreExperimentPlanningSPL(i, r):
+        instance = onto.ExperimentPlanningSPL("experimentPlanningSPL_{}".format(i))
+        instance.idExperimentPlanningSPL.append(i)
+    registreExperimentPlanningCommons(instance, r)
+        instance.artifactSPLused.append(r["SPL artifact used"])
+        field_type_context_selection = r["Context Selection (Off-line vs. on-line, Student vs. professional, Toy vs. real problems, Specific vs. general)"]
+        type_context_selection = next((x for x in onto.TypeContextSelection.instances() if x.name.lower() in field_type_context_selection.lower()), onto.GENERAL)
+        instance.typeContextSelection.append(type_context_selection)
+        return instance
+
+# In[ ]:
+
+    def registreExecutionSection(i, r):
+        instance = onto.ExecutionSection("executionSection_{}".format(i))
+        instance.idExecutionSection.append(i)
+        instance.preparation.append(r["Preparation (What has been done to prepare the execution of the experiment (i.e., schedule, training)"])
+        instance.deviations.append(r["Deviations from the Plan (Describe any deviations from the plan, e.g., how was the data collection actually performed?) "])
+        instance.pilotProjectCarriedOut.append(r.hasPilot)
+        instance.howManyPilotProjectCarriedOut.append(r.howManyPilot)
+    return instance
+
+# In[ ]:
+
+    def registreAnalysis(i, r):
+        instance = onto.Analysis("analysis_{}".format(i))
+        instance.idAnalysis.append(i)
+        instance.descriptiveStatistics.append(r["Descriptive statistics (What are the results from descriptive statistics?)"])
+        instance.datasetPreparation.append(r["Data set preparation (What was done to prepare the data set, why, and how?)"])
+        instance.hypothesisTesting.append(r["Hypothesis testing (How was the data evaluated and was the analysis model validated?)"])
+        instance.howDatahasBeenAnalyzed.append(r["How the data has been analyzed? (Ex: Correlation, Hypothesis Test, meta-analysis)"])
+        instance.whatQualitativeAnalysisPerformed.append(r["If yes, what qualitative analysis was performed?"])
+        instance.hasQualitativeAnalysisOfExperiment.append(r.hasQualitativeAnalysis)
+        instance.studyHasPerformMetaAnalysis.append(r.hasMetaAnalysis)
+    return instance
+
+# In[ ]:
+
+    def registreDiscussionCommons(instance, r):
+        instance.evaluationOfResultsAndImplications.append(r["Evaluation of Results and Implications (Explain the results and the relation of the results to earlier research, especially those mentioned in the Background section)"])
+        instance.inferences.append(r["Inferences (Inferences drawn from the data to more general conditions)"])
+        instance.lessonsLearned.append(r["Lessons learned (Which experience was collected during the course of the experiment)"])
+        instance.isFollowThreatsByWohlin.append(r.hasThreatsValidityByWolin)
+        instance.threatsValidity.append(r.threatsValidity)
+
+    def registreDiscussion(i, r):
+        instance = onto.Discussion("discussion{}".format(i))
+        instance.idDiscussion.append(i)
+    registreDiscussionCommons(instance, r)
+    return instance
+def registreDiscussionSPL(i, r):
+        instance = onto.DiscussionSPL("discussionSPL_{}".format(i))
+        instance.idDiscussionSPL.append(i)
+    registreDiscussionCommons(instance, r)
+    instance.threatsValiditySPL.append(r["Threats to validity in SPL"])
+    return instance
+
+# In[ ]:
+
+    def registreAcknowledgements(i, r):
+        instance = onto.Acknowledgements("acknowledgements_{}".format(i))
+        instance.idAcknowledgements.append(i)
+        instance.acknowledgements.append(r["Acknowledgements Section (Sponsors, participants, and contributors who do not fulfit the requirements for authorship should be mentioned)"])
+    return instance
+    def registreReferences(i, r):
+        instance = onto.References("references_{}".format(i))
+        instance.idReferences.append(i)
+        instance.references.append(r["References Section (All cited literature has to be presented in the format requested by the publisher"])
+    return instance
+def registreAppendices(i, r):
+        instance = onto.Appendices("appendices_{}".format(i))
+        instance.idAppendices.append(i)
+        instance.appendicies.append(r["Appendices Section (Experimental materials, raw data, and detailed analyses, which might be helpful for others to build upon the reported work should be provided)"])
+    return instance
+def registreEvaluation(i, r):
+        instance = onto.Evaluation("evaluation_{}".format(i))
+        instance.idEvaluation.append(i)
+        instance.theAuthorsConcernedEvaluatingTheQuality.append(r.hasAuthorEvaluating)
+    return instance
+def registrePackage(i, r):
+        instance = onto.Package("package_{}".format(i))
+        instance.idPackage.append(i)
+        instance.isExperimentalPackageInformed.append(r.hasExperimentalPackage)
+    pks = r._package.split('\n')
+        instance.url.append(pks[len(pks) - 2])
+        instance.isLinkAvailable.append(convertToBoolean(pks[len(pks) - 1]))
+    return instance
+
+# In[ ]:
+
+    def registerCommons(exp, idx, row):
+        documentation = registreDocumentation(idx, row)
+        documentation.experiment.append(exp)
+        abstract = registreAbstract(idx, row)
+        abstract.documentation.append(documentation)
+        introduction = registreIntroduction(idx, row)
+        introduction.documentation.append(documentation)
+        relatedWork = registreRelatedWork(idx, row)
+        relatedWork.documentation.append(documentation)
+        conclusionsFutureWork = registreConclusionsFutureWork(idx, row)
+        conclusionsFutureWork.documentation.append(documentation)
+        executionSection = registreExecutionSection(idx, row)
+        executionSection.experiment.append(exp)
+        analysis = registreAnalysis(idx, row)
+        analysis.experiment.append(exp)
+        acknowledgements = registreAcknowledgements(idx, row)
+        acknowledgements.experiment.append(exp)
+        references = registreReferences(idx, row)
+        references.experiment.append(exp)
+        appendicies = registreAppendices(idx, row)
+        appendicies.experiment.append(exp)
+        evaluation = registreEvaluation(idx, row)
+        evaluation.experiment.append(exp)
+        package = registrePackage(idx, row)
+        package.experiment.append(exp)
+
+# In[ ]:
+
+    from owlready2 import *
+onto = get_ontology("file:///home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Source/Ontologia/protege/experiment-spl-ontology.owl").load()
+
+# In[ ]:
+
+    for idx, row in df_spl.iterrows():
+        experimentSPL = registreExperimentSPL(idx, row)
+        experimentPlanningSPL = registreExperimentPlanningSPL(idx, row)
+        experimentPlanningSPL.experiment.append(experimentSPL)
+        discussion = registreDiscussionSPL(idx, row)
+        discussion.experiment.append(experimentSPL)
+        registerCommons(experimentSPL, idx, row)
+
+# In[ ]:
+
+# with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+#     print(df)
+
+# In[ ]:
+
+    for idx, row in df_exp.iterrows():
+        experiment = registreExperiment(idx, row)
+        experimentPlanning = registreExperimentPlanning(idx, row)
+        experimentPlanning.experiment.append(experiment)
+        discussion = registreDiscussion(idx, row)
+        discussion.experiment.append(experiment)
+        registerCommons(experiment, idx, row)
+
+# In[ ]:
+
+    import sys; print(sys.getdefaultencoding())
+
+# In[ ]:
+
+    onto.save('/home/henrique/Dropbox/UEM-Mestrado/Pesquisa/Source/Ontologia/protege/experiment-spl-ontology-02072019.owl')
+
+# In[ ]:
+
+    assert len(onto.Experiment.instances()) == df.shape[0]
+
+# In[ ]:
+
+    for i in onto.Experiment.instances(): print(i, i.idExperiment)
+
+# In[ ]:
+
+    for i in onto.Package.instances(): print(i.idPackage, i.isExperimentalPackageInformed, i.url, i.isLinkAvailable)
+
+# In[ ]:
+
+    for i in onto.Discussion.instances(): print(i.isFollowThreatsByWohlin)
+
+# In[ ]:
+
+    for i in onto.ExperimentPlanning.instances(): print(i.isAQuasiExperiment, i.explicitQuasiExperimentInStudy)
+
+\end{verbatim}

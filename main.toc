@@ -92,6 +92,9 @@
 \contentsline {subsection}{\numberline {A.1.11}Metodologia MFPFO (LIM, LIU e LEE, 2011)}{123}{subsection.A.1.11}
 \contentsline {subsection}{\numberline {A.1.12}Ciclo de Vida de Schiessl e Br\"ascher (2011)}{123}{subsection.A.1.12}
 \contentsline {chapter}{\numberline {B}Ap\^endice B: C\'odigo Fonte da OntoExper-SPL}{125}{section*.3}
-\contentsline {chapter}{\numberline {C}Ap\^endice B: C\'odigo Fonte do Povoamento de Dados no Modelo OntoExper-SPL}{138}{section*.4}
-\contentsline {chapter}{\numberline {D}Ap\^endice D: Question\'ario de Avalia\c c\~ao e Respostas Aplicado \`a OntoExper-SPL}{139}{section*.5}
-\contentsline {chapter}{\numberline {E}Ap\^endice D: C\'odigo Fonte dos Exemplos de Aplica\c c\~ao de Recomenda\c c\~ao Usando OntoExper-SPL }{147}{section*.6}
+\contentsline {chapter}{\numberline {C}Ap\^endice C: C\'odigo Fonte do Povoamento de Ind\IeC {\'\i }viduos na OntoExper-SPL}{138}{section*.4}
+\contentsline {chapter}{\numberline {D}Ap\^endice D: Question\'ario de Avalia\c c\~ao e Respostas Aplicado \`a OntoExper-SPL}{146}{section*.5}
+\contentsline {chapter}{\numberline {E}Ap\^endice D: C\'odigo Fonte dos Exemplos de Aplica\c c\~ao de Recomenda\c c\~ao Usando OntoExper-SPL }{154}{section*.6}
+\contentsline {section}{\numberline {E.1}Arquivo \texttt {settings.py}}{154}{section.E.1}
+\contentsline {section}{\numberline {E.2}Arquivo \texttt {views.py}}{156}{section.E.2}
+\contentsline {section}{\numberline {E.3}Arquivo \texttt {collaborativeFilter.py}}{158}{section.E.3}
