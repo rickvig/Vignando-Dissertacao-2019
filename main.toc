@@ -1,97 +1,97 @@
 \babel@toc {brazil}{}
-\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{14}{chapter.1}
-\contentsline {section}{\numberline {1.1}Contextualiza\c c\~ao}{14}{section.1.1}
-\contentsline {section}{\numberline {1.2}Motiva\c c\~ao e Justificativa}{15}{section.1.2}
-\contentsline {section}{\numberline {1.3}Objetivos}{16}{section.1.3}
-\contentsline {section}{\numberline {1.4}Metodologia de Desenvolvimento}{16}{section.1.4}
-\contentsline {section}{\numberline {1.5}Organiza\c c\~ao do texto}{18}{section.1.5}
-\contentsline {chapter}{\numberline {2}Fundamenta\c c\~ao Te\'orica}{19}{chapter.2}
-\contentsline {section}{\numberline {2.1}Considera\c c\~oes Iniciais}{19}{section.2.1}
-\contentsline {section}{\numberline {2.2}Linha de Produto de Software}{19}{section.2.2}
-\contentsline {section}{\numberline {2.3}Experimenta\c c\~ao em Engenharia de Software}{22}{section.2.3}
-\contentsline {section}{\numberline {2.4}Experimentos de LPS}{26}{section.2.4}
-\contentsline {section}{\numberline {2.5}Ontologias}{26}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Ontologias para ES}{28}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Tipos de Ontologias}{30}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Metodologias para Constru\c c\~ao de Ontologias}{30}{subsection.2.5.3}
-\contentsline {section}{\numberline {2.6}Trabalhos Relacionados}{32}{section.2.6}
-\contentsline {section}{\numberline {2.7}Considera\c c\~oes Finais}{33}{section.2.7}
-\contentsline {chapter}{\numberline {3}Uma Ontologia para Experimentos em LPS - OntoExper-SPL}{35}{chapter.3}
-\contentsline {section}{\numberline {3.1}Considera\c c\~oes Iniciais}{35}{section.3.1}
-\contentsline {section}{\numberline {3.2}Concep\c c\~ao}{36}{section.3.2}
-\contentsline {section}{\numberline {3.3}Projeto}{47}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Modelagem com Prot\'eg\'e}{47}{subsection.3.3.1}
-\contentsline {subsubsection}{Defini\c c\~ao de classes}{48}{subsection.3.3.1}
-\contentsline {subsubsection}{Defini\c c\~ao das propriedades de objetos}{48}{figure.3.4}
-\contentsline {subsubsection}{Defini\c c\~ao das propriedades dos dados}{49}{figure.3.5}
-\contentsline {subsubsection}{Artefato gerado pelo Prot\'eg\'e}{50}{figure.3.6}
-\contentsline {subsection}{\numberline {3.3.2}Povoamento com Python}{51}{subsection.3.3.2}
-\contentsline {subsubsection}{Script}{52}{subsection.3.3.2}
-\contentsline {subsubsection}{Manipula\c c\~ao dos Dados}{54}{subsection.3.3.2}
-\contentsline {subsubsection}{Inser\c c\~ao do indiv\IeC {\'\i }duos e cria\c c\~ao dos relacionamentos}{56}{subsection.3.3.2}
-\contentsline {subsubsection}{Artefato e valida\c c\~ao}{59}{lstnumber.3.2.10}
-\contentsline {section}{\numberline {3.4}Exemplo de Aplica\c c\~ao}{59}{section.3.4}
-\contentsline {section}{\numberline {3.5}Avalia\c c\~ao Preliminar}{60}{section.3.5}
-\contentsline {section}{\numberline {3.6}Considera\c c\~oes Finais}{64}{section.3.6}
-\contentsline {chapter}{\numberline {4}Avalia\c c\~ao Emp\IeC {\'\i }rica da OntoExer-SPL}{66}{chapter.4}
-\contentsline {section}{\numberline {4.1}Considera\c c\~oes Iniciais}{66}{section.4.1}
-\contentsline {section}{\numberline {4.2}Defini\c c\~ao do Estudo}{66}{section.4.2}
-\contentsline {section}{\numberline {4.3}Planejamento do Estudo}{67}{section.4.3}
-\contentsline {subsubsection}{Crit\'erios de Avalia\c c\~ao}{67}{section.4.3}
-\contentsline {subsubsection}{Escala Likert}{69}{section.4.3}
-\contentsline {section}{\numberline {4.4}Execu\c c\~ao do Estudo}{70}{section.4.4}
-\contentsline {section}{\numberline {4.5}An\'alise dos Resultados}{70}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Perfil dos Especialistas}{71}{subsection.4.5.1}
+\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{15}{chapter.1}
+\contentsline {section}{\numberline {1.1}Contextualiza\c c\~ao}{15}{section.1.1}
+\contentsline {section}{\numberline {1.2}Motiva\c c\~ao e Justificativa}{16}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objetivos}{17}{section.1.3}
+\contentsline {section}{\numberline {1.4}Metodologia de Desenvolvimento}{17}{section.1.4}
+\contentsline {section}{\numberline {1.5}Organiza\c c\~ao do texto}{19}{section.1.5}
+\contentsline {chapter}{\numberline {2}Fundamenta\c c\~ao Te\'orica}{20}{chapter.2}
+\contentsline {section}{\numberline {2.1}Considera\c c\~oes Iniciais}{20}{section.2.1}
+\contentsline {section}{\numberline {2.2}Linha de Produto de Software}{20}{section.2.2}
+\contentsline {section}{\numberline {2.3}Experimenta\c c\~ao em Engenharia de Software}{23}{section.2.3}
+\contentsline {section}{\numberline {2.4}Experimentos de LPS}{27}{section.2.4}
+\contentsline {section}{\numberline {2.5}Ontologias}{27}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Ontologias para ES}{29}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Tipos de Ontologias}{31}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Metodologias para Constru\c c\~ao de Ontologias}{31}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}Trabalhos Relacionados}{33}{section.2.6}
+\contentsline {section}{\numberline {2.7}Considera\c c\~oes Finais}{34}{section.2.7}
+\contentsline {chapter}{\numberline {3}Uma Ontologia para Experimentos em LPS - OntoExper-SPL}{36}{chapter.3}
+\contentsline {section}{\numberline {3.1}Considera\c c\~oes Iniciais}{36}{section.3.1}
+\contentsline {section}{\numberline {3.2}Concep\c c\~ao}{37}{section.3.2}
+\contentsline {section}{\numberline {3.3}Projeto}{48}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Modelagem com Prot\'eg\'e}{48}{subsection.3.3.1}
+\contentsline {subsubsection}{Defini\c c\~ao de classes}{49}{subsection.3.3.1}
+\contentsline {subsubsection}{Defini\c c\~ao das propriedades de objetos}{49}{figure.3.4}
+\contentsline {subsubsection}{Defini\c c\~ao das propriedades dos dados}{50}{figure.3.5}
+\contentsline {subsubsection}{Artefato gerado pelo Prot\'eg\'e}{51}{figure.3.6}
+\contentsline {subsection}{\numberline {3.3.2}Povoamento com Python}{52}{subsection.3.3.2}
+\contentsline {subsubsection}{Script}{53}{subsection.3.3.2}
+\contentsline {subsubsection}{Manipula\c c\~ao dos Dados}{55}{subsection.3.3.2}
+\contentsline {subsubsection}{Inser\c c\~ao do indiv\IeC {\'\i }duos e cria\c c\~ao dos relacionamentos}{57}{subsection.3.3.2}
+\contentsline {subsubsection}{Artefato e valida\c c\~ao}{60}{lstnumber.3.2.10}
+\contentsline {section}{\numberline {3.4}Exemplo de Aplica\c c\~ao}{60}{section.3.4}
+\contentsline {section}{\numberline {3.5}Avalia\c c\~ao Preliminar}{61}{section.3.5}
+\contentsline {section}{\numberline {3.6}Considera\c c\~oes Finais}{65}{section.3.6}
+\contentsline {chapter}{\numberline {4}Avalia\c c\~ao Emp\IeC {\'\i }rica da OntoExer-SPL}{67}{chapter.4}
+\contentsline {section}{\numberline {4.1}Considera\c c\~oes Iniciais}{67}{section.4.1}
+\contentsline {section}{\numberline {4.2}Defini\c c\~ao do Estudo}{67}{section.4.2}
+\contentsline {section}{\numberline {4.3}Planejamento do Estudo}{68}{section.4.3}
+\contentsline {subsubsection}{Crit\'erios de Avalia\c c\~ao}{68}{section.4.3}
+\contentsline {subsubsection}{Escala Likert}{70}{section.4.3}
+\contentsline {section}{\numberline {4.4}Execu\c c\~ao do Estudo}{71}{section.4.4}
+\contentsline {section}{\numberline {4.5}An\'alise dos Resultados}{72}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Perfil dos Especialistas}{72}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Frequ\^encia Likert}{72}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Teste de Normalidade}{74}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Teste de Hip\'otese}{75}{subsection.4.5.4}
-\contentsline {subsection}{\numberline {4.5.5}Correla\c c\~ao dos Crit\'erios}{76}{subsection.4.5.5}
-\contentsline {section}{\numberline {4.6}Discuss\~ao dos Resultados}{79}{section.4.6}
-\contentsline {section}{\numberline {4.7}Amea\c cas \`a Validade}{80}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Amea\c cas \`a Validade Interna}{81}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Amea\c cas \`a Validade Externa}{81}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}Amea\c cas \`a Validade de \textit {Constructo}}{82}{subsection.4.7.3}
-\contentsline {subsection}{\numberline {4.7.4}Amea\c cas \`a Validade de Conclus\~ao}{82}{subsection.4.7.4}
-\contentsline {section}{\numberline {4.8}Empacotamento e Compartilhamento}{82}{section.4.8}
-\contentsline {section}{\numberline {4.9}Propostas de Melhorias com Base na Discuss\~ao dos Resultados}{82}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}Melhorias Apontada pelos Especialistas}{82}{subsection.4.9.1}
-\contentsline {subsection}{\numberline {4.9.2}Melhorias com Base em Armadilhas Identificadas na Ferramenta do OOPS!}{85}{subsection.4.9.2}
-\contentsline {section}{\numberline {4.10}Considera\c c\~oes Finais}{85}{section.4.10}
-\contentsline {chapter}{\numberline {5}Um Sistema de Recomenda\c c\~ao para Experimentos em LPS (Prova de Conceito) - RecSysExper-SPL}{87}{chapter.5}
-\contentsline {section}{\numberline {5.1}Considera\c c\~oes Iniciais}{87}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sistema de Recomenda\c c\~ao}{88}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}\textit {Collaborative Filtering}}{89}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Sistema de Recomenda\c c\~ao em Engenharia de Software}{89}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Concep\c c\~ao}{94}{section.5.3}
-\contentsline {section}{\numberline {5.4}Projeto}{95}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Fase 1: O Projeto de SR Usando Django Framework}{95}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Fase 2: Carregamento da OntoExper-SPL no SR}{97}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Fase 3: \textit {Ratings} dos Usu\'arios no SR}{99}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Fase 4: Modelagem de Recomenda\c c\~ao, Um Algoritmo para Filtragem Colaborativa}{100}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Banco de Dados}{102}{section.5.5}
-\contentsline {section}{\numberline {5.6}Ambiente de Desenvolvimento}{104}{section.5.6}
-\contentsline {section}{\numberline {5.7}Empacotamento e Compartilhamento}{104}{section.5.7}
-\contentsline {section}{\numberline {5.8}Considera\c c\~oes Finais}{104}{section.5.8}
-\contentsline {chapter}{\numberline {6}Conclus\~ao}{106}{chapter.6}
-\contentsline {section}{\numberline {6.1}Contribui\c c\~oes}{107}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limita\c c\~oes}{108}{section.6.2}
-\contentsline {section}{\numberline {6.3}Trabalhos Futuros}{108}{section.6.3}
-\contentsline {chapter}{REFER\^ENCIAS}{109}{chapter*.1}
-\contentsline {chapter}{\numberline {A}Ap\^endice A: Ontologias - Tipologias e Metodologias de Constru\c c\~ao}{115}{section*.2}
-\contentsline {section}{\numberline {A.1}Metodologias de Constru\c c\~ao}{115}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Metodologia TOVE (Gr\"uninger Fox, 1995)}{115}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Metodologia de Uschold e King - ENTERPRISE (USCHOLD e KING, 1995)}{116}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Methontology (G\'OMEZ-PEREZ, FERNANDEZ-LOPES e VICENTE, 1996)}{116}{subsection.A.1.3}
-\contentsline {subsection}{\numberline {A.1.4}M\'etodo Kactus (BERNARAS, LARESGOTTI, CORERA, 1996)}{117}{subsection.A.1.4}
-\contentsline {subsection}{\numberline {A.1.5}M\'etodo Sensus (SWARTOUT et al., 1996)}{118}{subsection.A.1.5}
-\contentsline {subsection}{\numberline {A.1.6}M\'etodo 101 (NOY e GUINESS, 2001)}{118}{subsection.A.1.6}
-\contentsline {subsection}{\numberline {A.1.7}M\'etodo CYC (REED, LENAT, 2002)}{119}{subsection.A.1.7}
-\contentsline {subsection}{\numberline {A.1.8}On-to-Knowledge Methodology (OTKM) (SURE, STAAB e STUBER, 2003)}{119}{subsection.A.1.8}
-\contentsline {subsection}{\numberline {A.1.9}Metodologia UP for ONtology (UPON) (DE NICOLA, MISSIKOFF e NAVIGLI, 2009)}{120}{subsection.A.1.9}
-\contentsline {subsection}{\numberline {A.1.10}Metodologia NeON (SUAR\'EZ - FIGUEROA, 2010)}{122}{subsection.A.1.10}
-\contentsline {subsection}{\numberline {A.1.11}Metodologia MFPFO (LIM, LIU e LEE, 2011)}{123}{subsection.A.1.11}
-\contentsline {subsection}{\numberline {A.1.12}Ciclo de Vida de Schiessl e Br\"ascher (2011)}{123}{subsection.A.1.12}
-\contentsline {chapter}{\numberline {B}Ap\^endice B: C\'odigo Fonte da OntoExper-SPL}{125}{section*.3}
-\contentsline {chapter}{\numberline {C}Ap\^endice B: C\'odigo Fonte do Povoamento de Dados no Modelo OntoExper-SPL}{138}{section*.4}
-\contentsline {chapter}{\numberline {D}Ap\^endice C: Question\'ario de Avalia\c c\~ao e Respostas Aplicado \`a OntoExper-SPL}{139}{section*.5}
-\contentsline {chapter}{\numberline {E}Ap\^endice D: C\'odigo Fonte dos Exemplos de Aplica\c c\~ao de Recomenda\c c\~ao Usando OntoExper-SPL }{140}{section*.6}
+\contentsline {subsection}{\numberline {4.5.3}Teste de Normalidade}{75}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Teste de Hip\'otese}{76}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Correla\c c\~ao dos Crit\'erios}{77}{subsection.4.5.5}
+\contentsline {section}{\numberline {4.6}Discuss\~ao dos Resultados}{80}{section.4.6}
+\contentsline {section}{\numberline {4.7}Amea\c cas \`a Validade}{81}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Amea\c cas \`a Validade Interna}{82}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Amea\c cas \`a Validade Externa}{82}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Amea\c cas \`a Validade de \textit {Constructo}}{83}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}Amea\c cas \`a Validade de Conclus\~ao}{83}{subsection.4.7.4}
+\contentsline {section}{\numberline {4.8}Empacotamento e Compartilhamento}{83}{section.4.8}
+\contentsline {section}{\numberline {4.9}Propostas de Melhorias com Base na Discuss\~ao dos Resultados}{83}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Melhorias Apontada pelos Especialistas}{83}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Melhorias com Base em Armadilhas Identificadas na Ferramenta do OOPS!}{86}{subsection.4.9.2}
+\contentsline {section}{\numberline {4.10}Considera\c c\~oes Finais}{86}{section.4.10}
+\contentsline {chapter}{\numberline {5}Um Sistema de Recomenda\c c\~ao para Experimentos em LPS (Prova de Conceito) - RecSysExper-SPL}{88}{chapter.5}
+\contentsline {section}{\numberline {5.1}Considera\c c\~oes Iniciais}{88}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sistema de Recomenda\c c\~ao}{89}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}\textit {Collaborative Filtering}}{90}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Sistema de Recomenda\c c\~ao em Engenharia de Software}{90}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Concep\c c\~ao}{95}{section.5.3}
+\contentsline {section}{\numberline {5.4}Projeto}{96}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Fase 1: O Projeto de SR Usando Django Framework}{96}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Fase 2: Carregamento da OntoExper-SPL no SR}{98}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Fase 3: \textit {Ratings} dos Usu\'arios no SR}{100}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Fase 4: Modelagem de Recomenda\c c\~ao, Um Algoritmo para Filtragem Colaborativa}{101}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Banco de Dados}{103}{section.5.5}
+\contentsline {section}{\numberline {5.6}Ambiente de Desenvolvimento}{105}{section.5.6}
+\contentsline {section}{\numberline {5.7}Empacotamento e Compartilhamento}{105}{section.5.7}
+\contentsline {section}{\numberline {5.8}Considera\c c\~oes Finais}{105}{section.5.8}
+\contentsline {chapter}{\numberline {6}Conclus\~ao}{107}{chapter.6}
+\contentsline {section}{\numberline {6.1}Contribui\c c\~oes}{108}{section.6.1}
+\contentsline {section}{\numberline {6.2}Limita\c c\~oes}{109}{section.6.2}
+\contentsline {section}{\numberline {6.3}Trabalhos Futuros}{109}{section.6.3}
+\contentsline {chapter}{REFER\^ENCIAS}{110}{chapter*.1}
+\contentsline {chapter}{\numberline {A}Ap\^endice A: Ontologias - Tipologias e Metodologias de Constru\c c\~ao}{116}{section*.2}
+\contentsline {section}{\numberline {A.1}Metodologias de Constru\c c\~ao}{116}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Metodologia TOVE (Gr\"uninger Fox, 1995)}{116}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Metodologia de Uschold e King - ENTERPRISE (USCHOLD e KING, 1995)}{117}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Methontology (G\'OMEZ-PEREZ, FERNANDEZ-LOPES e VICENTE, 1996)}{117}{subsection.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}M\'etodo Kactus (BERNARAS, LARESGOTTI, CORERA, 1996)}{118}{subsection.A.1.4}
+\contentsline {subsection}{\numberline {A.1.5}M\'etodo Sensus (SWARTOUT et al., 1996)}{119}{subsection.A.1.5}
+\contentsline {subsection}{\numberline {A.1.6}M\'etodo 101 (NOY e GUINESS, 2001)}{119}{subsection.A.1.6}
+\contentsline {subsection}{\numberline {A.1.7}M\'etodo CYC (REED, LENAT, 2002)}{120}{subsection.A.1.7}
+\contentsline {subsection}{\numberline {A.1.8}On-to-Knowledge Methodology (OTKM) (SURE, STAAB e STUBER, 2003)}{120}{subsection.A.1.8}
+\contentsline {subsection}{\numberline {A.1.9}Metodologia UP for ONtology (UPON) (DE NICOLA, MISSIKOFF e NAVIGLI, 2009)}{121}{subsection.A.1.9}
+\contentsline {subsection}{\numberline {A.1.10}Metodologia NeON (SUAR\'EZ - FIGUEROA, 2010)}{123}{subsection.A.1.10}
+\contentsline {subsection}{\numberline {A.1.11}Metodologia MFPFO (LIM, LIU e LEE, 2011)}{124}{subsection.A.1.11}
+\contentsline {subsection}{\numberline {A.1.12}Ciclo de Vida de Schiessl e Br\"ascher (2011)}{124}{subsection.A.1.12}
+\contentsline {chapter}{\numberline {B}Ap\^endice B: C\'odigo Fonte da OntoExper-SPL}{126}{section*.3}
+\contentsline {chapter}{\numberline {C}Ap\^endice B: C\'odigo Fonte do Povoamento de Dados no Modelo OntoExper-SPL}{139}{section*.4}
+\contentsline {chapter}{\numberline {D}Ap\^endice D: Question\'ario de Avalia\c c\~ao e Respostas Aplicado \`a OntoExper-SPL}{140}{section*.5}
+\contentsline {chapter}{\numberline {E}Ap\^endice D: C\'odigo Fonte dos Exemplos de Aplica\c c\~ao de Recomenda\c c\~ao Usando OntoExper-SPL }{148}{section*.6}
