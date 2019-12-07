@@ -41,10 +41,10 @@ A instrumentação fornecida aos especialistas foi suficiente para responder o que
 \subsubsection{Critérios de Avaliação}
 \label{sec:escala_likert}
 
-Os oito critérios de qualidade foram identificados e definidos na Parte I da tese \textit{Ontology Evaluation} de \citet{vrandecic2010ontology}, são eles:
+Os oito critérios de qualidade adotados se baseam nos trabalhos de \textit{Ontology Evaluation} de \citet{vrandecic2010ontology}:
 
 \begin{itemize}
-    \item \textbf{Precisão:} um critério que determina se os axiomas da ontologia estão em conformidade com o conhecimento das partes interessadas sobre o domínio. Uma maior precisão vem das definições e descrições corretas de classes, propriedades e indivíduos. A correção neste caso pode significar conformidade com ?padrões-ouro? definidos, sejam outras fontes de dados, conceituações ou mesmo realidade \cite{ceusters2006strategies}. introduz uma abordagem para usar a realidade como referência, ou seja, os termos da ontologia captura as partes pretendidas da realidade. Os axiomas devem restringir as possíveis interpretações de uma ontologia para que os modelos resultantes sejam compatíveis com as conceituações dos usuários;
+    \item \textbf{Precisão:} um critério que determina se os axiomas da ontologia estão em conformidade com o conhecimento das partes interessadas sobre o domínio. Uma maior precisão vem das definições e descrições corretas de classes, propriedades e indivíduos. A correção neste caso pode significar conformidade com ``padrões-ouro' definidos, sejam outras fontes de dados, conceituações ou mesmo realidade \cite{ceusters2006strategies}. introduz uma abordagem para usar a realidade como referência, ou seja, os termos da ontologia captura as partes pretendidas da realidade. Os axiomas devem restringir as possíveis interpretações de uma ontologia para que os modelos resultantes sejam compatíveis com as conceituações dos usuários;
 
     \item \textbf{Adaptabilidade:} mede até que ponto a ontologia antecipa seus usos. Uma ontologia deve oferecer a base conceitual para uma série de tarefas antecipadas (idealmente, na Web, também deve oferecer a base para tarefas nunca antecipadas). Deve ser possível estender e especializar a ontologia monotonicamente, ou seja, sem a necessidade de remover axiomas (observe que em OWL, a monotonicidade semântica é dada pela monotonicidade sintática, ou seja, para retrair inferências, axiomas explícitos e explícitos precisam ser retraídos). Uma ontologia deve reagir de forma previsível e intuitiva a pequenas mudanças nos axiomas. Deve permitir metodologias para extensão, integração e adaptação, ou seja, incluir metadados necessários. Novas ferramentas e situações inesperadas devem poder usar a ontologia;
 
@@ -239,7 +239,7 @@ Para descrever o teste de normalidade dos resultados foi aplicada uma abordagem 
     \source{o Autor}
 \end{table}
 
-Plotamos esses valores no gráfico de histograma apresentado na \ref{fig:histograma}. É necessário executar o teste de normalidade. Para isso foi usado o teste de Shapiro-Wilk \cite{shapiro1965analysis}. O teste Shapiro-Wilk testa a hipótese nula de que os dados foram extraídos de uma distribuição normal, considerando que \textit{p-value} $>$ 0,05. 
+Foram plotados esses valores no gráfico de histograma apresentado na \ref{fig:histograma}. É necessário executar o teste de normalidade. Para isso foi usado o teste de Shapiro-Wilk \cite{shapiro1965analysis}. O teste Shapiro-Wilk testa a hipótese nula de que os dados foram extraídos de uma distribuição normal, considerando que \textit{p-value} $>$ 0,05. 
 
 \begin{figure}[H]
 	\centering					
@@ -348,7 +348,7 @@ A \ref{fig:correlacao} apresenta um mapa de calor indicando o grau de correlação
     \source{o Autor}
 \end{table}
 
-A \ref{tab:correlacao-criterios} apresenta o \textit{ranking} de correlação dos critérios, segundo a interpretação de \citet{pearson} só será considerado as correlações de 1 a 8 no \textit{ranking}. Dessa forma pode-se afirmar que, com base nas correlações positivas na seguinte ordem de valor: 
+A \ref{tab:correlacao-criterios} apresenta o \textit{ranking} de correlação dos critérios. Segundo a interpretação de \citet{pearson} só serão consideradas as correlações de 1 a 8 no \textit{ranking}. Dessa forma, pode-se afirmar que: 
 
 \begin{itemize} 
     \item quanto melhor a \textbf{Completude} melhor a \textbf{Precisão};
@@ -361,7 +361,7 @@ A \ref{tab:correlacao-criterios} apresenta o \textit{ranking} de correlação dos 
     \item quanto melhor a \textbf{Consistência} melhor a \textbf{Completude}.
 \end{itemize}
 
-os valores de correlação negativa não foram o suficiente para serem considerados. Dessa forma, pode-se afirmar não existe  critérios com avaliações inversas, como por exemplo, quanto melhor a \textbf{Eficiência Computacional} pior a \textbf{Concisão}.
+Os valores de correlação negativa não foram o suficiente para serem considerados. Dessa forma, pode-se afirmar não existe  critérios com avaliações inversas, como por exemplo, quanto melhor a \textbf{Eficiência Computacional} pior a \textbf{Concisão}.
 
 
 \section{Discussão dos Resultados}

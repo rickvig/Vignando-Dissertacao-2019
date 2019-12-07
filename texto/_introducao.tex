@@ -7,11 +7,11 @@ Experimentação em Engenharia de Software (ES) tem se tornado fundamental para de
 
 Atualmente, não há diretrizes específicas para avaliar a qualidade de experimentos em ES especialmente. Para áreas emergentes e em processo de consolidação como é o caso de Linha de Produto de Software (LPS), em que aspectos específicos do domínio como, por exemplo, os artefatos utilizados como objetos experimentais, a complexidade do treinamento, a dificuldade de seleção de participantes qualificados e a falta de repositórios, podem influenciar os experimentos. Além disso, tem-se percebido uma constante carência de documentação adequada dos experimentos que acabam por inviabilizar a repetição e auditoria dos estudos em LPS \cite{Furtado2018}.
 
-Para permitir a repetição, reprodução e a replicação de experimento é necessária uma formalização dos principais conceitos. Para isso pode ser obter vantagem do uso de ontologias.
+Para permitir a repetição, reprodução e a replicação de experimento é necessária uma formalização dos principais conceitos. Para isso, pode-se obter vantagem do uso de ontologias.
 
 Ontologias estão entre os métodos mais utilizados para formalizar informações. Ontologias são representações formais de uma abstração contendo definições formais de nomenclatura, conceitos, propriedades e relações entre os conceitos, a fim de definir um vocabulário controlado de termos e relações de conceitos \cite{gruber1993ontology}. Assim, o uso de ontologias para representar informações sobre experimentos permite padronizar dados facilitando a interoperabilidade, a troca de informações e a replicação de experimentos.
 
-Por mais atraente que seja, uma solução geral de ontologia para experimento de ES é muito esparsa. Dadas as particularidades de cada tópico de pesquisa em ES, seria complexo projetar uma ontologia capaz de representar todas as características particulares de cada tópico. Dessa forma, este trabalho, concentra esforços no campo de LPS, devido a ampla gama de dados de experimentos neste assunto e experiência do grupo de pesquisa em experimentação de LPS \cite{Furtado2018}.
+Por mais atraente que seja, uma solução geral de ontologia para experimentos de ES é muito esparsa. Dadas as particularidades de cada tópico de pesquisa em ES, seria complexo projetar uma ontologia capaz de representar todas as características particulares de cada tópico. Dessa forma este trabalho, concentra esforços no campo de LPS, por causa da ampla gama de dados de experimentos neste assunto e experiência do grupo de pesquisa em experimentação de LPS da UEM \cite{Furtado2018}.
 
 % devido à nossa experiência em grupo, uma vez que um mapeamento sistemático foi realizado em centenas de experimentos publicados em LPS \cite{Furtado2018}. (Grupo de Pesquisa em Reutilização Sistemática de Software e Experimentação Contínua - GReater).
 
@@ -19,9 +19,9 @@ Por mais atraente que seja, uma solução geral de ontologia para experimento de E
 
 Experimentos no campo de LPS requerem considerável experiência em ES, pois durante o planejamento e execução dos experimentos vários artefatos específicos de ES e LPS podem ser gerados. Assim, a curva de aprendizado é longa o suficiente para extrair e apresentar os resultados de experimentos de LPS satisfatoriamente \cite{Furtado2018} e \cite{Furtado2019JCR}.
 
-Portanto, a definição de uma ontologia para experimentos de LPS, se destina a auxiliar pesquisadores e professores no desenvolvimento e replicação de experimentos, além de auxiliar na auditoria e validação de experimentos baseados em diretrizes determinadas pela ontologia.
+Portanto, a definição de uma ontologia para experimentos de LPS se destina a apoiar pesquisadores e profissionais no desenvolvimento e replicação de experimentos, além de auxiliar na auditoria e validação de experimentos baseados em diretrizes determinadas pela ontologia.
 
-Além disso, dados formalmente representados permitem o desenvolvimento de sistemas especialistas, como sistemas de recomendação. Um sistema de recomendação para experimentação ES poderia ser útil de duas maneiras: (i) didaticamente, para ajudar alunos, professores e profissionais a pesquisar experimentos relacionados; e, (ii) ajudar os profissionais da Engenharia de Software Experimental (ESE) a planejar e executar um experimento seguindo a experiência de outros, se baseando em consultas e recomendações de experimentos correlacionadas à sua área de atuação.
+Além disso, dados formalmente representados permitem o desenvolvimento de sistemas especialistas, como sistemas de recomendação. Um sistema de recomendação para experimentação ES poderia ser útil de duas maneiras: (i) didaticamente, para ajudar alunos, professores e profissionais a pesquisar experimentos relacionados; e, (ii) ajudar os profissionais da Engenharia de Software Experimental (ESE) a planejar e executar um experimento seguindo a experiência de outros, baseando-se em consultas e recomendações de experimentos correlacionadas à sua área de atuação.
 
 % Portanto, o objetivo deste trabalho de mestrado é propor uma ontologia para representar formalmente essa diretriz, a fim de padronizar os experimentos de SPL. Esperamos facilitar a representação dos dados de experimentos para aumentar o uso geral de experimentação em ES, aumentar o número de replicações e o compartilhamento de dados.
 
@@ -31,24 +31,24 @@ Além disso, dados formalmente representados permitem o desenvolvimento de sistem
 \section{Motivação e Justificativa}
 \label{sec:motivacao}
 
-Realizar um experimento em LPS exige alguns pontos de atenção específicos para garantir a qualidade do experimento. Estes pontos foram investigados no trabalho de mestrado de \citet{Furtado2018}. Nesse trabalho foram elaboradas diretrizes para a determinar qualidade de experimentos em LPS. Esta tarefa possui um árduo trabalho para garantir que, aspectos específicos do domínio como, por exemplo, os artefatos utilizados, que são, os objetos experimentais, a complexidade do treinamento, a dificuldade de seleção de participantes qualificados em LPS e a falta de repositórios de LPS, não influenciam nos experimentos ao ponto de invalidá-los. A falta de experimentos com qualidade afeta diretamente a possibilidade de repetição dos estudos em LPS.
+Realizar um experimento em LPS exige alguns pontos de atenção específicos para garantir a qualidade do experimento. Esses pontos foram investigados no trabalho de \citet{Furtado2018}. Nesse trabalho foram elaboradas diretrizes para determinar a qualidade de experimentos em LPS. Essa tarefa possui um árduo trabalho para garantir que, aspectos específicos do domínio como, por exemplo, os artefatos utilizados, que são, os objetos experimentais, a complexidade do treinamento, a dificuldade de seleção de participantes qualificados em LPS e a falta de repositórios de LPS, não influenciam nos experimentos ao ponto de invalidá-los. A falta de experimentos com qualidade afeta diretamente a possibilidade de repetição dos estudos em LPS.
 
-Sabendo que para realizar um experimento em LPS com qualidade exige-se seguir alguns modelos e diretrizes, construir uma modelagem formal por meio de uma ontologia para representação desse conhecimento adquirido pode proporcionar maior facilidade ao desenvolvimento dos mesmos, incentivando a cultura de desenvolvimento de experimentos na academia e indústria, seguindo um modelo formal de estrutura do conhecimento sobre experimento em LPS. Sendo assim, como uma oportunidade de pesquisa responder a seguinte questão: \textbf{Como formalizar o conhecimento de experimentação em LPS?}
+Sabendo que para realizar um experimento em LPS com qualidade exige-se seguir alguns modelos e diretrizes, construir uma modelagem formal por meio de uma ontologia para representação desse conhecimento adquirido pode proporcionar maior facilidade ao desenvolvimento dos mesmos, incentivando a cultura de desenvolvimento de experimentos na academia e indústria, seguindo um modelo formal de estrutura do conhecimento sobre experimento em LPS. Sendo assim, surge como uma oportunidade de pesquisa responder a seguinte questão: \textbf{Como formalizar o conhecimento de experimentação em LPS?}
 
-Além disso, tal ontologia, pode contribuir diretamente com o ensino e aprendizagem de experimentação em ES.
+% Além disso, tal ontologia, pode contribuir diretamente com o ensino e aprendizagem de experimentação em ES.
 
 
 \section{Objetivos}
 \label{sec:objetivos}
 
-Esta pesquisa tem como objetivo geral especificar uma ontologia que representa formalmente o conhecimento adquirido do estado da arte sobre experimentos de LPS. Nomeada \textbf{OntoExper-SPL}, uma ontologia para apoiar experimentos em LPS.
+Esta pesquisa tem como objetivo geral especificar uma ontologia que representa formalmente o conhecimento adquirido do estado da arte e do prático sobre experimentos de LPS. Nomeada \textbf{OntoExper-SPL}, uma ontologia para apoiar experimentos em LPS.
 
 Os objetivos específicos desta dissertação são:
 
 \begin{itemize}
 	\item gerar e representar um conjunto de metadados a partir de informações sobre experimentos de LPS;
 	\item definir um modelo de ontologia para experimentos de LPS; e
-	\item avaliar a ontologia proposta com um protótipo de sistema de recomendação.
+	\item avaliar empiricamente a ontologia proposta.
 	% \item provar ontologia com experimentos de LPS;
 	% \item avaliar a qualidade e viabilidade do modelo proposto;
 	% \item elaborar um sistema de recomendação como prova de conceito do modelo de ontologia; e
@@ -59,9 +59,7 @@ Os objetivos específicos desta dissertação são:
 \section{Metodologia de Desenvolvimento}
 \label{sec:metodologia}
 
-Para o desenvolvimento deste trabalho foi necessária uma pesquisa exploratória para definir um modelo de ontologia para experimentos de LPS. Para tal resultado: foi realizada um pesquisa não sistemática sobre ontologias para experimentos, foi desenvolvido um projeto de ontologia (OntoExper-SPL), foi criado um programa automatizado para povoar a mesma, foi realizada uma avaliação da qualidade e viabilidade do modelo, e em seguida, foi elaborado um protótipo de sistema de recomendação como prova de conceito. A \ref{fig:metodologia_flow} apresenta as etapas da metodologia utilizada neste trabalho, descritas a seguir:
-
-
+Para o desenvolvimento deste trabalho foi necessária uma pesquisa exploratória para definir um modelo de ontologia para experimentos de LPS. Para tal: foi realizada um pesquisa não sistemática sobre ontologias para experimentos, foi desenvolvido um projeto de ontologia (OntoExper-SPL), foi criado um programa automatizado para povoar a mesma, foi realizada uma avaliação da qualidade e viabilidade do modelo, e em seguida, foi elaborado um protótipo de sistema de recomendação como prova de conceito. A \ref{fig:metodologia_flow} apresenta as etapas da metodologia segundo neste trabalho, descritas a seguir:
 
 \begin{figure}[htb]
 	\centering					
@@ -72,18 +70,20 @@ Para o desenvolvimento deste trabalho foi necessária uma pesquisa exploratória p
 \end{figure}
 
 \begin{itemize}
-	\item \textbf{Pesquisa não sistemática sobre ontologias para experimentos:} foram realizado estudos não sistemático para encontrar trabalhos relacionados descrevendo ontologias para experimentos de ES e avaliação de ontologia. Alguns estudos encontrados serviram de apoio a essa pesquisa, estão descritos na Seção \ref{sec:trabalhos_relacionados} ;
+	\item \textbf{Pesquisa não sistemática sobre ontologias para experimentos:} foram realizado estudos não sistemáticos para encontrar trabalhos relacionados descrevendo ontologias para experimentos de ES e avaliação de ontologia. Alguns estudos encontrados serviram de apoio à essa pesquisa, estão descritos na Seção \ref{sec:trabalhos_relacionados};
 	
-	\item \textbf{Desenvolvimento do projeto de ontologia para OntoExper-SPL:} trata sobre desenvolvimento da OntoExper-SPL, que incluiu realizar a escolha das tecnologias e ferramenta de construção de ontologia, como por exemplo o Protégé, envolver os \textit{stakeholders} no projeto com experiência no domínio de experimentação, selecionar abordagens e modelos de ontologias relacionados, prototipação e diagramação do projeto;
+	\item \textbf{Desenvolvimento do projeto de ontologia:} trata do desenvolvimento da OntoExper-SPL, que incluiu realizar a escolha das tecnologias e ferramentas de construção de ontologia, como por exemplo o Protégé, envolver os \textit{stakeholders} no projeto com experiência no domínio de experimentação, selecionar abordagens e modelos de ontologias relacionados, prototipação e diagramação do projeto;
 	
 	\item \textbf{Desenvolvimento do programa automatizado para povoar OntoExper-SPL:} refere-se ao processo de desenvolvimento do programa automatizado de povoamento da ontologia. Para isso foi necessário o uso de ferramentas, bibliotecas e linguagens de programação. Foram mais de 200 experimentos encontrados na literatura. Em seguida foi executado o programa de extração de dados, povoando a ontologia por meio dos metadados mais o programa de extração;
 	
-	\item \textbf{Avaliação da qualidade e viabilidade do modelo:} refere-se ao estudo quali/quanti, com objetivo de avaliar a qualidade da OntoExper-SPL. Para isso foi elaborado um questionário com oito critérios de qualidade, enviado para especialistas responderem, e posteriormente realizada uma análise estatística das respostas, bem como pontos de melhorias encontrados durante a avaliação;
+	\item \textbf{Avaliação da qualidade e viabilidade do modelo:} refere-se ao estudo empírico, com objetivo de avaliar a qualidade da OntoExper-SPL. Para isso foi elaborado um questionário com oito critérios de qualidade, enviado para especialistas responderem, e posteriormente realizada uma análise estatística das respostas, bem como pontos de melhorias encontrados durante a avaliação; e
 	
-	\item \textbf{Desenvolvimento do protótipo de sistema de recomendação como prova de conceito:} após processar os indivíduos na OntoExper-SPL. Foi elaborado como prova de conceito, um protótipo de sistema de recomendação utilizando o modelos de recomendação \textit{Collaborative Filtering}, além de \textit{frameworks} e linguagens de programação.
+	\item \textbf{Desenvolvimento do protótipo de sistema de recomendação como prova de conceito:} após processar os indivíduos na OntoExper-SPL foi elaborado um protótipo de sistema de recomendação utilizando o modelos de recomendação \textit{Collaborative Filtering}, além de \textit{frameworks} e linguagens de programação.
 \end{itemize}
 
 
 \section{Organização do texto}
 
-Este capítulo apresentou a contextualização desta dissertação, a motivação e a justificativa, objetivos e metodologia. O restante da dissertação está estruturado da seguinte forma: o Capítulo \ref{sec:fundamentacao_teorica} apresenta a Fundamentação Teórica sobre LPS, experimentais e quasi-experimentos em ES, qualidade de experimentos e quasi-experimentos em ES, Ontologias e Sistemas de Recomendação; o Capítulo \ref{sec:ontologia} apresenta uma Ontologia para Experimentos em LPS - OntoExper-SPL, destacando desde a concepção ao povoamento da ontologia proposta e uma pré-análise de pontos de falha da ontologia; o Capítulo \ref{sec:avaliacao} apresenta uma avaliação quantitativa sobre a qualidade da OntoExper-SPL por especialistas da área; o Capítulo \ref{sec:recsys} apresenta um sistema de recomendação para experimentos em LPS, usando como modelo de dados a OntoExper-SPL; e o Capítulo \ref{sec:conclusao} apresenta as considerações finais acerca deste projeto de dissertação de mestrado, bom como as suas contribuições, limitações e trabalhos futuros.
+Este capítulo apresentou a contextualização desta dissertação, a motivação e a justificativa, objetivos e metodologia. O restante da dissertação está estruturado da seguinte forma: o Capítulo \ref{sec:fundamentacao_teorica} apresenta a fundamentação teórica sobre LPS, experimentos em ES, qualidade de experimentos em ES e ontologias; o Capítulo \ref{sec:ontologia} apresenta uma ontologia para experimentos de LPS - OntoExper-SPL, destacando desde a concepção ao povoamento da ontologia proposta e pré-análise de pontos de falha da ontologia; o Capítulo \ref{sec:avaliacao} apresenta uma avaliação empírica sobre a qualidade da OntoExper-SPL por especialistas da área; o Capítulo \ref{sec:recsys} apresenta um sistema de recomendação para experimentos de LPS, usando como modelo de dados a OntoExper-SPL; e o Capítulo \ref{sec:conclusao} apresenta a conclusão acerca deste trabalho e as suas contribuições, limitações e trabalhos futuros.
+
+

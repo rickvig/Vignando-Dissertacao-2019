@@ -127,6 +127,15 @@
   dissemina{\c{c}}{\~a}o de seus conceitos.\ \ \ 2007.
 \bibehook\relax
 
+\bibitem[{Furtado e OliveiraJr(2019)}]{Furtado2019JCR}
+
+\bibbhook\relax
+\textsc{Furtado, Henrique~Vignando, V.~F.; OliveiraJr, E.}\ \ \  Comparing
+  approaches for quality evaluation of software engineering experiments: An
+  empirical study on software product line experiments.\ \ \ \textit{Journal of
+  Computer Science}, \bblvol{}~15, \bblno{}~10, \bblpp{}~1396--1429, 2019.
+\bibehook\relax
+
 \bibitem[{Furtado(2018)}]{Furtado2018}
 
 \bibbhook\relax
@@ -499,16 +508,6 @@
 \bibbhook\relax
 \textsc{Sommerville, I.}\ \ \  Software engineering, boston, massachusetts:
   Pearson education.\ \ \ 2011.
-\bibehook\relax
-
-\bibitem[{Viviane R.~Furtado e OliveiraJr(2019)}]{Furtado2019JCR}
-
-\bibbhook\relax
-\textsc{Viviane R.~Furtado, Henrique~Vignando, V.~F.; OliveiraJr, E.}\ \ \
-  Comparing approaches for quality evaluation of software engineering
-  experiments: An empirical study on software product line experiments.\ \ \
-  \textit{Journal of Computer Science}, \bblvol{}~15, \bblno{}~10,
-  \bblpp{}~1396--1429, 2019.
 \bibehook\relax
 
 \bibitem[{Vrandecic(2010)}]{vrandecic2010ontology}
