@@ -1,7 +1,9 @@
 {
+    "editor.rulers": [80,120],
     "files.encoding": "iso88591",
     "cSpell.words": [
         "RESUMO",
         "concebida"
     ]
+
 }

@@ -128,49 +128,99 @@ Segundo \citet{wohlin2012experimentation} a realização de um experimento pode se
 \end{itemize}
 
 
+% ....apresentar um resumo do MS da Viviane, os trabalhos que ela leu, como foi construído o modelo conceitual para o leitor poderá entender como surgiu a sua ontologia...
 \section{Experimentos de LPS}
 \label{sec:experimento_de_lps}
 
-....apresentar um resumo do MS da Viviane, os trabalhos que ela leu, como foi construído o modelo conceitual para o leitor poderá entender como surgiu a sua ontologia...
+No trabalho de \citet{Furtado2018} foi realizado um mapeamento sistemático (MS) com o objetivo de apresentar uma panorama sobre experimentação em LPS. Foram elaboradas onze questões de pesquisa (QP):
 
-% \section{Qualidade de Experimentos em Engenharia de Software}
-% \label{sec:qualidade_de_experimento_em_engenharia_de_software}
+\begin{itemize}
+	\item \textbf{QP1:} Como os experimentos têm sido documentados no contexto de LPS?
+	\subitem \textbf{QP1.1:} Quais templates de documentação de experimentos têm sido utilizados?
+	\subitem \textbf{QP1.2:} Quais elementos experimentais têm sido documentados nos experimentos?
+	\subitem \textbf{QP1.3:} Existe uma preocupação em avaliar a qualidade dos experimentos?
+	\subitem \textbf{QP1.4:} Existe uma análise qualitativa dos resultados dos experimentos?
+	\item \textbf{QP2:} O pacote experimental foi informado e a fonte está dispon??vel?
+	\item \textbf{QP3:} Quais tipos de experimentos têm sido utilizados?
+	\item \textbf{QP4:} Quais design experimentais têm sido utilizados nos experimentos?
+	\item \textbf{QP5:} Como os participantes/objetos têm sido selecionados nos experimentos?
+	\item \textbf{QP6:} O projeto piloto tem sido realizado nos experimentos?
+	\item \textbf{QP7:} Como os dados têm sido analisados nos experimentos?
+	\item \textbf{QP8:} Quais tópicos de pesquisa investigados nos experimentos?
+	\item \textbf{QP9:} Quais LPSs e repositórios têm sido usados nos experimentos?
+	\item \textbf{QP10:} Quais artefatos de LPS têm sido usados nos experimentos?
+	\item \textbf{QP11:} Quais ameaças à validade em LPS têm sido identificadas nos experimentos e quais ações foram tomadas para mitigá-las?
+\end{itemize}
 
-% Segundo \citet{dieste2013challenges}, o conceito de qualidade de experimentos em ES pode ser visto em dois pontos de vista diferentes, o primeiro é considerar a qualidade como o resultado da validade interna de um bom experimento e o segundo é tornar a qualidade operacional assim como a quantidade de vieses nos resultados experimentais. Outro ponto colocado por \citeauthor{dieste2013challenges}, é a validade externa que também tem uma função chave ao analisar se um experimento tem boa qualidade, porém essa função é contrária à validade interna.
+Nesse estudo foram selecionados 174 estudos sobre experimentos de LPS. Após catalogados, foi realizado o processo de extração de dados baseando-se em uma lista de atributos, descritos na \ref{tab:atributos-lps}. Posteriormente foi realizado uma analise dos resultados obtidos do MS que categorizou a documentação dos experimentos de LPS, o pacote experimental, os tipos de experimentos, o \textit{design} experimentais, os participantes e objetos experimentais selecionados, o projeto piloto, a nálise dos dados coletados nos experimentos, o tópicos de pesquisa investigados nos experimentos, as LPSs e Repositórios e os artefatos de LPS.
 
-% Na \ref{tab:conceito_qualidade} são apresentadas as definições dos conceitos de qualidade citados anteriormente.
+\begin{table}[]
+	\centering
+	\tiny
+	\caption{Atributos para experimentos de LPS}
+	\label{tab:atributos-lps}
+	\begin{tabular}{@{}lll@{}}
+	\toprule
+	\multicolumn{1}{c}{\textbf{Tipo}} & \multicolumn{1}{c}{\textbf{Atributos}} &  \\ \hline
+Bibliográfica & \begin{tabular}[c]{@{}l@{}}Título; Autor(es); Ano; Tipo de publicação; Local de publicação; \\ Resumo; Palavras-chave; Número de páginas.\end{tabular} &  \\
+\textit{Template} Experimental & Template experimental utilizado &  \\
+Elementos Experimentais & \begin{tabular}[c]{@{}l@{}}Em relação à Seção de Resumo: Background; Objetivo; Métodos; \\ Resultados; Limitações; Conclusões. \\ Em relação à Seção de Introdução: Declaração do problema; \\ Objetivo da pesquisa; Contexto. \\ Em relação à Seção de Background: Tecnologia sob investigação; \\ Tecnologias alternativas; Estudos relacionados; Relevância para a prática.\\ Em relação à Seção de Planejamento do experimento: \\ Definição do objetivo; Seleção do contexto; Unidades experimentais; \\ Material experimental; Tarefas; Hipóteses; Parâmetros; Variáveis; \\ Projeto experimental; Procedimento; Procedimento de Análise.\\ Em relação à Seção de Execução: Preparação; Desvios do plano.\\ Em relação à Seção de Análise: Estatística descritiva; Preparação do \\ conjunto de dados; Teste de hipótese.\\ Em relação à Seção de Discussão: Avaliação dos resultados e implicações; \\ Ameaças à validade; Inferências; Lições aprendidas.\\ Em relação à Seção de Conclusões e trabalho futuro: Síntese;\\ Impacto; Trabalho futuro.\\ Agradecimentos; Referências; Apêndices.\end{tabular} &  \\
+Qualitativo & \begin{tabular}[c]{@{}l@{}}Os autores se preocuparam em avaliar a qualidade dos experimentos; \\ Se o experimento possui análise qualitativa dos resultados.\end{tabular} &  \\
+Experimento em geral & \begin{tabular}[c]{@{}l@{}}Se o pacote experimental está disponível com sua respectiva fonte para acesso; \\ Contexto do experimento; Se é um experimento original ou replicado; \\ Se é um quasi-experimento e se está explícito no estudo; Design experimental; \\ Como foi a seleção dos participantes/objetos experimentais; \\ Se foi realizado projeto piloto; Como os dados têm sido analisados; \\ Se a conclusão da análise do experimento é baseada no P-value; Dom??nio do experimento.\end{tabular} &  \\
+Linha de Produto de Software & \begin{tabular}[c]{@{}l@{}}Nome da LPS utilizada; Se é uma LPS real e/ou acadêmica; \\ Se é informada a fonte para acesso da LPS; Artefato de LPS utilizado; \\ Ameaças à validade em LPS.\end{tabular} &  \\ \hline
+\end{tabular}
+	\source{Adaptado de \citet{Furtado2018}}
+\end{table}
 
-% % Please add the following required packages to your document preamble:
-% % \usepackage{booktabs}
-% \begin{table}[]
-% 	\centering
-% 	\caption{Definições dos conceitos de qualidade em experimentos em Engenharia de
-% 		Software. Traduzido de \citet{kitchenham2007large}}
-% 	\label{tab:conceito_qualidade}
-% 	\begin{tabular}{@{}lll@{}}
-% 		\toprule
-% 		Termo & Sinônimo & Definição \\ \midrule
-% 		Viés & Erro sistemático & \begin{tabular}[c]{@{}l@{}}Uma tendência para produzir resultados \\ que partem sistematicamente de resultados \\ "verdadeiros". Resultados sem viés são\\ válidos internamente.\end{tabular} \\
-% 		Validade Interna & Validade & \begin{tabular}[c]{@{}l@{}}O alcance em que o projeto e a condução \\ do estudo são possíveis de evitar erro sistemático. \\ A validade interna é um pré-requisito \\ para a validade externa.\end{tabular} \\
-% 		Validade Externa & \begin{tabular}[c]{@{}l@{}}Generabilidade, \\ Aplicabilidade\end{tabular} & \begin{tabular}[c]{@{}l@{}}O alcance em que os efeitos observados no estudo \\ são aplicáveis fora do estudo.\end{tabular} \\ \bottomrule
-% 	\end{tabular}
-% \end{table}
+Por meio deste MS, \citet{Furtado2018} elabou 28 diretrizes, que estão descritos na \ref{tab:diretrizes-furtado} para avaliar a qualidade de experimentos de LPS. O objetivo dessas diretizes é responder as onze questões de pesquisa. Como apoio as diretrizes, foi elaborado um modelo conceitual usando um diagrama de classes UML para apresentar os conceitos de experimentos abordados, como pode ser visto na \ref{fig:modelo-conceitual-furtado}.
 
-% Segundo \citet{dieste2011systematic} os experimentos de boa qualidade são aqueles livres de vieses. O viés está relacionado com a validade interna, por exemplo, quão bem os experimentos são planejados, executados e analisados \cite{dieste2013challenges}. Para minimizar os vieses existem alguns métodos como, aleatorização para criar grupos experimentais homogêneos, imparcialidade para alocar os indivíduos. Desta forma os resultados podem ser analisados mesmo depois do experimento ter sido realizado com replicações. Enquanto os experimentos de baixa qualidade seriam os que usam pouco ou nenhum dos métodos citados \cite{dieste2011systematic}.
+\begin{table}[H]
+	\centering
+	\small
+	\caption{Diretrizes}
+	\label{tab:diretrizes-furtado}
+	\begin{tabular}{@{}ll@{}}
+	\toprule
+	\multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Diretriz}} \\ \midrule
+	D.1 & Defina o objetivo do experimento \\
+	D.2 & Declare as hipóteses do experimento \\
+	D.3 & Defina as variáveis do experimento \\
+	D.4 & Informe o tamanho da amostra \\
+	D.5 & \begin{tabular}[c]{@{}l@{}}Descreva como os participantes/objetos experimentais foram \\ definidos e selecionados\end{tabular} \\
+	D.6 & Identifique o tópico de pesquisa do experimento \\
+	D.7 & Descreva o design experimental escolhido \\
+	D.8 & \begin{tabular}[c]{@{}l@{}}Descreva como os materiais experimentais foram \\ definidos e selecionados\end{tabular} \\
+	D.8.1 & Descreva a LPS utilizada \\
+	D.8.1.1 & Informe a fonte de onde foi encontrada a LPS \\
+	D.8.2 & Descreva os artefatos de LPS utilizados no experimento \\
+	D.9 & Valide os materiais utilizados no experimento \\
+	D.10 & Descreva as tarefas do experimento \\
+	D.11 & Descreva os requisitos de treinamento aos participantes \\
+	D.12 & Descreva a condução do projeto piloto \\
+	D.13 & Descreva o ambiente da condução do experimento \\
+	D.14 & Informe a data em que o experimento foi realizado \\
+	D.15 & Descreva a condução do experimento \\
+	D.16 & Descreva como a coleta de dados foi realizada \\
+	D.17 & Descreva os procedimentos de análise dos dados coletados \\
+	D.18 & Descreva a taxa de mortalidade \\
+	D.19 & Informe a ferramenta estat??stica para análise dos dados \\
+	D.20 & Informe o tamanho de efeito \\
+	D.21 & \begin{tabular}[c]{@{}l@{}}Discuta os resultados obtidos do ponto de vista de \\ pesquisadores e de profissionais\end{tabular} \\
+	D.22 & Discuta as implicações dos tratamentos desenvolvidos \\
+	D.23 & Discuta as ameaças à validade identificadas no experimento \\
+	D.24 & Informe a fonte do pacote experimental \\
+	D.25 & \begin{tabular}[c]{@{}l@{}}Informe o template experimental utilizado para conduzir, \\ planejar ou documentar o experimento\end{tabular} \\ \bottomrule
+	\end{tabular}
+	\source{\citet{Furtado2018}}
+\end{table}
 
-% Como o viés não pode ser medido, existem algumas abordagens para avaliá-lo. Os instrumentos de Avaliação de Qualidade (AQ), são projetados para avaliar a validade interna e inferir a qualidade de experimentos, tais como, abordagens simples (questionários), \textit{checklists} (contém ou não contém), escalas de qualidade, opinião de especialista \cite{dieste2011systematic,dieste2013challenges,teixeira2014analise}.
-
-% Por outro lado a qualidade de um experimento em ES também pode ser avaliada considerando o projeto e análise dos experimentos, em termos de poder estatístico, análise do tamanho de efeito (resultado), \textit{quasi}-experimentais e relatório de experimento \cite{kampenes2007quality}.
-
-% Até o momento não se tem conhecimento de trabalhos que tratam a qualidade de experimentos em área específica de ES. Entretanto, foram recuperados alguns trabalhos, por meio de pesquisas não sistemáticas, que estão relacionados com a avaliação de qualidade dos experimentos em Engenharia de Software, descritos a seguir:
-
-% \begin{itemize}
-% 	\item \citet{kitchenham2007large} propõem um \textit{checklist} de avaliação de qualidade de experimentos em ES contendo cinquenta questões para avaliar a qualidade de experimentos, em que sugerem que os pesquisadores selecionam apenas as questões do \textit{checklist} mais adequadas ao contexto de suas próprias questões de pesquisa.
-	
-% 	\item \citet{kitchenham2015evidence} apresentam um \textit{checklist} de avaliação de qualidade de experimentos em ES com nove questões, onde cada questão possui subquestões	categorizadas em: (i) "Questões sobre objetivo", (ii) "Questões sobre o projeto, coleta de dados e análise do dados" e (iii) "Questões sobre o resultado do estudo".
-	
-% 	\item \citet{dieste2011systematic}  desenvolveram uma escala de qualidade para determinar a qualidade de experimentos, contendo dez questões baseadas nas cinco dimensões de \citet{kitchenham2007large}, sendo: contexto experimental, projeto experimental, análise, interpretação dos resultados e apresentação dos resultados. As respostas de cada questão são "sim" ou "não".	
-% \end{itemize}
+\begin{figure}[H]
+	\centering					
+	\caption{Modelo Conceitual de Apoio às Diretrizes}
+	{\includegraphics[scale=.35]{modelo-conceitual-furtado.pdf}}
+	\label{fig:modelo-conceitual-furtado}
+	\source{\citet{Furtado2018}}
+\end{figure}
 
 
 \section{Ontologias}
